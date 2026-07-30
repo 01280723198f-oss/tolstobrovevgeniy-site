@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" font-family="ui-monospace, Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16181f"/>
+      <stop offset="1" stop-color="#0c0d10"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6a2b"/>
+      <stop offset="1" stop-color="#ffb648"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="440" rx="20" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="200" fill="url(#fire)" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- terminal window -->
+  <rect x="70" y="70" width="660" height="300" rx="16" fill="#0e0f13" stroke="#262932"/>
+  <circle cx="100" cy="100" r="6" fill="#ff5f56"/>
+  <circle cx="122" cy="100" r="6" fill="#ffbd2e"/>
+  <circle cx="144" cy="100" r="6" fill="#27c93f"/>
+  <text x="180" y="105" fill="#6b6f7a" font-size="13">claude — твой проект</text>
+
+  <text x="100" y="155" font-size="16"><tspan fill="#7ee787">❯</tspan><tspan fill="#ECEDEE"> claude</tspan></text>
+  <text x="100" y="190" font-size="15" fill="#9498a3">  Привет 👋 Я готов. Чем займёмся?</text>
+  <text x="100" y="230" font-size="16"><tspan fill="#7ee787">❯</tspan><tspan fill="#ffb648"> /init</tspan></text>
+  <text x="100" y="262" font-size="15" fill="#9498a3">  Изучаю проект...</text>
+  <text x="100" y="292" font-size="15"><tspan fill="#9498a3">  ✓ создан </tspan><tspan fill="#ff6a2b">CLAUDE.md</tspan></text>
+  <text x="100" y="322" font-size="15"><tspan fill="#9498a3">  ✓ память включена · скиллы подключены</tspan></text>
+
+  <!-- right side: brain/spark -->
+  <g transform="translate(900,200)" filter="url(#glow)">
+    <text x="0" y="0" font-size="120" text-anchor="middle" fill="url(#fire)">🔥</text>
+  </g>
+  <text x="900" y="320" text-anchor="middle" font-size="22" fill="#ECEDEE" font-family="-apple-system, sans-serif" font-weight="700">Настроенный мозг</text>
+  <text x="900" y="350" text-anchor="middle" font-size="15" fill="#9498a3" font-family="-apple-system, sans-serif">контекст → скиллы → результат</text>
+</svg>

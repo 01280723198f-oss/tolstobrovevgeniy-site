@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" font-family="ui-monospace, Menlo, Consolas, monospace">
+  <rect width="1000" height="480" rx="14" fill="#0e0f13" stroke="#262932"/>
+  <rect x="0" y="0" width="1000" height="42" rx="14" fill="#16181f"/>
+  <rect x="0" y="28" width="1000" height="14" fill="#16181f"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="21" r="6" fill="#27c93f"/>
+  <text x="500" y="26" text-anchor="middle" fill="#6b6f7a" font-size="13">Где живут скиллы — структура папок</text>
+
+  <text x="30" y="85"  font-size="14"><tspan fill="#7ee787">~/.claude/</tspan><tspan fill="#6b6f7a">          ← глобально, для всех проектов</tspan></text>
+  <text x="55" y="113" font-size="14"><tspan fill="#9498a3">├─ </tspan><tspan fill="#ffb648">skills/</tspan></text>
+  <text x="80" y="141" font-size="14"><tspan fill="#9498a3">│  ├─ </tspan><tspan fill="#ECEDEE">pdf/</tspan><tspan fill="#6b6f7a">           ← официальный скилл</tspan></text>
+  <text x="80" y="169" font-size="14"><tspan fill="#9498a3">│  ├─ </tspan><tspan fill="#ECEDEE">pptx/</tspan></text>
+  <text x="80" y="197" font-size="14"><tspan fill="#9498a3">│  └─ </tspan><tspan fill="#ff6a2b">мой-скилл/</tspan><tspan fill="#6b6f7a">     ← ТВОЙ скилл под проект</tspan></text>
+  <text x="80" y="225" font-size="14"><tspan fill="#9498a3">│     ├─ </tspan><tspan fill="#7ee787">SKILL.md</tspan><tspan fill="#6b6f7a">    ← инструкция + правила</tspan></text>
+  <text x="80" y="253" font-size="14"><tspan fill="#9498a3">│     └─ </tspan><tspan fill="#ECEDEE">references/</tspan><tspan fill="#6b6f7a"> ← стиль, примеры, форматы</tspan></text>
+  <text x="55" y="281" font-size="14"><tspan fill="#9498a3">└─ </tspan><tspan fill="#ffb648">CLAUDE.md</tspan><tspan fill="#6b6f7a">       ← кто ты (общая память)</tspan></text>
+
+  <text x="30" y="335" font-size="14"><tspan fill="#7ee787">проект/.claude/</tspan><tspan fill="#6b6f7a">     ← только для этого проекта</tspan></text>
+  <text x="55" y="363" font-size="14"><tspan fill="#9498a3">└─ </tspan><tspan fill="#ffb648">skills/</tspan></text>
+
+  <text x="30" y="415" font-size="15"><tspan fill="#6b6f7a"># посмотреть установленные скиллы:</tspan></text>
+  <text x="30" y="445" font-size="15"><tspan fill="#7ee787">❯</tspan><tspan fill="#ffb648"> /plugin</tspan><tspan fill="#6b6f7a">   ← маркетплейс готовых наборов</tspan></text>
+</svg>

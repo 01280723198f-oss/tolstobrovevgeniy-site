@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="ui-monospace, Menlo, Consolas, monospace">
+  <rect width="1000" height="540" rx="14" fill="#0e0f13" stroke="#262932"/>
+  <rect x="0" y="0" width="1000" height="42" rx="14" fill="#16181f"/>
+  <rect x="0" y="28" width="1000" height="14" fill="#16181f"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="21" r="6" fill="#27c93f"/>
+  <text x="500" y="26" text-anchor="middle" fill="#6b6f7a" font-size="13">Где Claude хранит память и контекст</text>
+
+  <!-- global block -->
+  <text x="30" y="84" font-size="15"><tspan fill="#ffb648">~/.claude/</tspan><tspan fill="#6b6f7a">          ← ГЛОБАЛЬНО · про тебя, во всех проектах</tspan></text>
+  <text x="30" y="114" font-size="14"><tspan fill="#9498a3">├── </tspan><tspan fill="#ff6a2b">CLAUDE.md</tspan><tspan fill="#6b6f7a">       глобальная память (кто ты, общие правила)</tspan></text>
+  <text x="30" y="141" font-size="14"><tspan fill="#9498a3">├── </tspan><tspan fill="#ECEDEE">settings.json</tspan><tspan fill="#6b6f7a">   права, модель, настройки</tspan></text>
+  <text x="30" y="168" font-size="14"><tspan fill="#9498a3">├── </tspan><tspan fill="#ECEDEE">skills/</tspan><tspan fill="#6b6f7a">         твои навыки для всех проектов</tspan></text>
+  <text x="30" y="195" font-size="14"><tspan fill="#9498a3">├── </tspan><tspan fill="#ECEDEE">commands/</tspan><tspan fill="#6b6f7a">       свои команды / </tspan><tspan fill="#9498a3">slash-команды</tspan></text>
+  <text x="30" y="222" font-size="14"><tspan fill="#9498a3">└── </tspan><tspan fill="#ECEDEE">projects/</tspan><tspan fill="#6b6f7a">       история всех сессий и память проектов</tspan></text>
+
+  <line x1="30" y1="252" x2="970" y2="252" stroke="#262932"/>
+
+  <!-- project block -->
+  <text x="30" y="294" font-size="15"><tspan fill="#7ee787">~/Desktop/мой-проект/</tspan><tspan fill="#6b6f7a">  ← ПАПКА ПРОЕКТА · контекст этой работы</tspan></text>
+  <text x="30" y="324" font-size="14"><tspan fill="#9498a3">├── </tspan><tspan fill="#ff6a2b">CLAUDE.md</tspan><tspan fill="#6b6f7a">           паспорт проекта (Claude читает САМ)</tspan></text>
+  <text x="30" y="351" font-size="14"><tspan fill="#9498a3">├── </tspan><tspan fill="#ECEDEE">.claude/</tspan></text>
+  <text x="30" y="378" font-size="14"><tspan fill="#9498a3">│   ├── </tspan><tspan fill="#ECEDEE">settings.json</tspan><tspan fill="#6b6f7a">      права именно для проекта</tspan></text>
+  <text x="30" y="405" font-size="14"><tspan fill="#9498a3">│   └── </tspan><tspan fill="#ECEDEE">skills/</tspan><tspan fill="#6b6f7a">            навыки только этого проекта</tspan></text>
+  <text x="30" y="432" font-size="14"><tspan fill="#9498a3">└── </tspan><tspan fill="#ECEDEE">…твои файлы проекта</tspan></text>
+
+  <rect x="30" y="460" width="940" height="56" rx="10" fill="#16181f" stroke="#262932"/>
+  <text x="50" y="485" font-size="13"><tspan fill="#6b6f7a">💡 Правило: </tspan><tspan fill="#9498a3">общее про тебя → в </tspan><tspan fill="#ffb648">~/.claude/</tspan><tspan fill="#9498a3">.  Всё про конкретный проект → в папку проекта.</tspan></text>
+  <text x="50" y="506" font-size="13"><tspan fill="#6b6f7a">💡 Папки </tspan><tspan fill="#ECEDEE">.claude</tspan><tspan fill="#9498a3"> создаются сами при </tspan><tspan fill="#ff6a2b">/init</tspan><tspan fill="#9498a3"> и первых настройках — вручную делать не обязательно.</tspan></text>
+</svg>

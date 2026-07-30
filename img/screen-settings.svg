@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" font-family="ui-monospace, Menlo, Consolas, monospace">
+  <rect width="1000" height="480" rx="14" fill="#0e0f13" stroke="#262932"/>
+  <rect x="0" y="0" width="1000" height="42" rx="14" fill="#16181f"/>
+  <rect x="0" y="28" width="1000" height="14" fill="#16181f"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="21" r="6" fill="#27c93f"/>
+  <text x="500" y="26" text-anchor="middle" fill="#6b6f7a" font-size="13">.claude/settings.json — права и настройки</text>
+
+  <text x="40" y="90"  font-size="15" fill="#9498a3">{</text>
+  <text x="70" y="118" font-size="15"><tspan fill="#ffb648">"permissions"</tspan><tspan fill="#9498a3">: {</tspan></text>
+  <text x="100" y="146" font-size="15"><tspan fill="#ffb648">"allow"</tspan><tspan fill="#9498a3">: [</tspan></text>
+  <text x="130" y="174" font-size="15"><tspan fill="#7ee787">"Bash(npm run *)"</tspan><tspan fill="#9498a3">,</tspan></text>
+  <text x="130" y="202" font-size="15"><tspan fill="#7ee787">"Bash(git *)"</tspan><tspan fill="#9498a3">,</tspan></text>
+  <text x="130" y="230" font-size="15"><tspan fill="#7ee787">"Read"</tspan><tspan fill="#9498a3">, </tspan><tspan fill="#7ee787">"Edit"</tspan></text>
+  <text x="100" y="258" font-size="15" fill="#9498a3">],</text>
+  <text x="100" y="286" font-size="15"><tspan fill="#6b6f7a">// что всегда спрашивать</tspan></text>
+  <text x="100" y="314" font-size="15"><tspan fill="#ffb648">"ask"</tspan><tspan fill="#9498a3">: [</tspan><tspan fill="#7ee787">"Bash(rm *)"</tspan><tspan fill="#9498a3">]</tspan></text>
+  <text x="70" y="342" font-size="15" fill="#9498a3">},</text>
+  <text x="70" y="370" font-size="15"><tspan fill="#ffb648">"model"</tspan><tspan fill="#9498a3">: </tspan><tspan fill="#7ee787">"claude-opus-4-8"</tspan></text>
+  <text x="40" y="398" font-size="15" fill="#9498a3">}</text>
+
+  <text x="40" y="448" font-size="14"><tspan fill="#6b6f7a">💡 allow = не дёргает по мелочи · работа быстрее</tspan></text>
+</svg>

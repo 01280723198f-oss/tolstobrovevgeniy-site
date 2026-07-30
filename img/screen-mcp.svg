@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" font-family="ui-monospace, Menlo, Consolas, monospace">
+  <rect width="1000" height="440" rx="14" fill="#0e0f13" stroke="#262932"/>
+  <rect x="0" y="0" width="1000" height="42" rx="14" fill="#16181f"/>
+  <rect x="0" y="28" width="1000" height="14" fill="#16181f"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="21" r="6" fill="#27c93f"/>
+  <text x="500" y="26" text-anchor="middle" fill="#6b6f7a" font-size="13">Подключаем внешний инструмент (MCP)</text>
+
+  <text x="30" y="90"  font-size="15"><tspan fill="#6b6f7a"># добавить сервис одной командой</tspan></text>
+  <text x="30" y="122" font-size="15"><tspan fill="#7ee787">❯</tspan><tspan fill="#ECEDEE"> claude mcp add </tspan><tspan fill="#ffb648">имя-сервиса</tspan></text>
+
+  <text x="30" y="168" font-size="15"><tspan fill="#6b6f7a"># посмотреть подключённые</tspan></text>
+  <text x="30" y="200" font-size="15"><tspan fill="#7ee787">❯</tspan><tspan fill="#ECEDEE"> claude mcp list</tspan></text>
+  <text x="30" y="232" font-size="14"><tspan fill="#7ee787">  ✓</tspan><tspan fill="#9498a3"> canva       — дизайн</tspan></text>
+  <text x="30" y="260" font-size="14"><tspan fill="#7ee787">  ✓</tspan><tspan fill="#9498a3"> notion      — база знаний</tspan></text>
+  <text x="30" y="288" font-size="14"><tspan fill="#7ee787">  ✓</tspan><tspan fill="#9498a3"> playwright  — браузер</tspan></text>
+
+  <text x="30" y="338" font-size="15"><tspan fill="#6b6f7a"># внутри Claude — проверить инструменты</tspan></text>
+  <text x="30" y="370" font-size="15"><tspan fill="#7ee787">❯</tspan><tspan fill="#ffb648"> /mcp</tspan></text>
+
+  <text x="30" y="412" font-size="14"><tspan fill="#6b6f7a">💡 MCP = руки Claude во внешнем мире. Подключай по нужде.</tspan></text>
+</svg>

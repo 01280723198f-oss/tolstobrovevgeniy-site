@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="ui-monospace, Menlo, Consolas, monospace">
+  <rect width="1000" height="520" rx="14" fill="#0e0f13" stroke="#262932"/>
+  <rect x="0" y="0" width="1000" height="42" rx="14" fill="#16181f"/>
+  <rect x="0" y="28" width="1000" height="14" fill="#16181f"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="21" r="6" fill="#27c93f"/>
+  <text x="500" y="26" text-anchor="middle" fill="#6b6f7a" font-size="13">Терминал — установка Claude Code</text>
+
+  <text x="30" y="90"  font-size="15"><tspan fill="#6b6f7a"># 1. установка одной командой (macOS / Linux)</tspan></text>
+  <text x="30" y="120" font-size="15"><tspan fill="#7ee787">❯</tspan><tspan fill="#ECEDEE"> curl -fsSL https://claude.ai/install.sh | bash</tspan></text>
+  <text x="30" y="150" font-size="14" fill="#9498a3">  ⎿ Скачиваю и устанавливаю...</text>
+  <text x="30" y="177" font-size="14"><tspan fill="#7ee787">  ✓</tspan><tspan fill="#9498a3"> Claude Code установлен в </tspan><tspan fill="#ff6a2b">~/.local/bin</tspan></text>
+
+  <text x="30" y="225" font-size="15"><tspan fill="#6b6f7a"># 2. проверяем, что всё встало</tspan></text>
+  <text x="30" y="255" font-size="15"><tspan fill="#7ee787">❯</tspan><tspan fill="#ECEDEE"> claude --version</tspan></text>
+  <text x="30" y="285" font-size="14" fill="#9498a3">  2.x.x (Claude Code)</text>
+
+  <text x="30" y="333" font-size="15"><tspan fill="#6b6f7a"># 3. первый запуск — попросит войти в аккаунт</tspan></text>
+  <text x="30" y="363" font-size="15"><tspan fill="#7ee787">❯</tspan><tspan fill="#ffb648"> claude</tspan></text>
+  <text x="30" y="393" font-size="14" fill="#9498a3">  ⎿ Открываю браузер для входа...</text>
+  <text x="30" y="420" font-size="14"><tspan fill="#7ee787">  ✓</tspan><tspan fill="#9498a3"> Вход выполнен. Готов к работе 👋</tspan></text>
+
+  <text x="30" y="468" font-size="14"><tspan fill="#6b6f7a">  💡 альтернатива через Node: </tspan><tspan fill="#9498a3">npm install -g @anthropic-ai/claude-code</tspan></text>
+  <text x="30" y="495" font-size="14"><tspan fill="#6b6f7a">  💡 Windows (PowerShell): </tspan><tspan fill="#9498a3">irm https://claude.ai/install.ps1 | iex</tspan></text>
+</svg>
