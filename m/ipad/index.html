@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#EEF1F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A192C" media="(prefers-color-scheme: dark)">
+<title>Контент-завод на iPad — полная инструкция</title>
+<style>
+  :root {
+    --paper:      #EEF1F5;
+    --paper-2:    #E4E9F0;
+    --screen:     #FFFFFF;
+    --screen-2:   #F5F7FA;
+    --ink:        #0F2138;
+    --ink-soft:   #4A5D75;
+    --ink-faint:  #7C8DA3;
+    --rule:       #C6D1DE;
+    --rule-soft:  #DDE4EC;
+    --accent:     #C8501C;
+    --accent-ink: #FFFFFF;
+    --accent-wash:#F7E3D9;
+    --cyan:       #17657F;
+    --cyan-wash:  #DCEAF0;
+    --ok:         #256B4B;
+    --ok-wash:    #DCEDE4;
+    --red:        #A33A2E;
+    --btn-ink:    #FFFFFF;
+    --term-bg:    #0F2138;
+    --term-ink:   #D7E4F0;
+    --term-green: #6FCF97;
+
+    --f-text: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --f-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+    --shadow: 0 1px 2px rgba(15,33,56,.06), 0 8px 28px rgba(15,33,56,.07);
+    --maxw: 43rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:#0A192C; --paper-2:#0F2337; --screen:#12283E; --screen-2:#16314A;
+      --ink:#E2EAF3; --ink-soft:#9BB0C6; --ink-faint:#6F8AA5;
+      --rule:#24425F; --rule-soft:#1B334C;
+      --accent:#FF8552; --accent-ink:#21120A; --accent-wash:#2E1A10;
+      --cyan:#63C3E0; --cyan-wash:#10303F; --ok:#5CBE90; --ok-wash:#102C22;
+      --red:#F08A7C; --btn-ink:#06231A;
+      --term-bg:#06111E; --term-ink:#CFE0EF; --term-green:#7DE0A6;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#0A192C; --paper-2:#0F2337; --screen:#12283E; --screen-2:#16314A;
+    --ink:#E2EAF3; --ink-soft:#9BB0C6; --ink-faint:#6F8AA5;
+    --rule:#24425F; --rule-soft:#1B334C;
+    --accent:#FF8552; --accent-ink:#21120A; --accent-wash:#2E1A10;
+    --cyan:#63C3E0; --cyan-wash:#10303F; --ok:#5CBE90; --ok-wash:#102C22;
+    --red:#F08A7C; --btn-ink:#06231A;
+    --term-bg:#06111E; --term-ink:#CFE0EF; --term-green:#7DE0A6;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"] {
+    --paper:#EEF1F5; --paper-2:#E4E9F0; --screen:#FFFFFF; --screen-2:#F5F7FA;
+    --ink:#0F2138; --ink-soft:#4A5D75; --ink-faint:#7C8DA3;
+    --rule:#C6D1DE; --rule-soft:#DDE4EC;
+    --accent:#C8501C; --accent-ink:#FFFFFF; --accent-wash:#F7E3D9;
+    --cyan:#17657F; --cyan-wash:#DCEAF0; --ok:#256B4B; --ok-wash:#DCEDE4;
+    --red:#A33A2E; --btn-ink:#FFFFFF;
+    --term-bg:#0F2138; --term-ink:#D7E4F0; --term-green:#6FCF97;
+    --shadow: 0 1px 2px rgba(15,33,56,.06), 0 8px 28px rgba(15,33,56,.07);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--f-text); font-size: 17px; line-height: 1.62;
+    -webkit-text-size-adjust: 100%; overflow-x: hidden;
+  }
+
+  .rail { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 50; }
+  .rail > i { display: block; height: 100%; width: 0%; background: var(--accent); transition: width .12s linear; }
+  @media (prefers-reduced-motion: reduce) { .rail > i { transition: none; } }
+
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem 6rem; }
+  .col  { max-width: var(--maxw); margin-inline: auto; }
+
+  .mast { padding: 4.5rem 0 2.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 3rem; }
+  .stamp {
+    font-family: var(--f-mono); font-size: .69rem; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--cyan);
+    display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; margin-bottom: 1.75rem;
+  }
+  .stamp span { display: inline-flex; align-items: center; gap: .45rem; }
+  .stamp span::before { content: ""; width: 7px; height: 7px; flex: none; border: 1px solid var(--cyan); transform: rotate(45deg); }
+
+  h1 { font-size: clamp(2.1rem, 6.2vw, 3.4rem); line-height: 1.03; letter-spacing: -.028em; font-weight: 800; margin: 0 0 1.1rem; text-wrap: balance; }
+  .dek { font-size: clamp(1.02rem, 2.4vw, 1.2rem); color: var(--ink-soft); max-width: 36rem; margin: 0; text-wrap: pretty; }
+
+  h2 { font-size: clamp(1.35rem, 3.6vw, 1.72rem); line-height: 1.16; letter-spacing: -.02em; font-weight: 750; margin: 0 0 .85rem; text-wrap: balance; }
+  h3 { font-size: 1.06rem; font-weight: 700; letter-spacing: -.01em; margin: 2rem 0 .6rem; }
+  p { margin: 0 0 1.05rem; text-wrap: pretty; }
+  a { color: var(--cyan); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  strong { font-weight: 700; }
+  code { font-family: var(--f-mono); font-size: .86em; background: var(--paper-2); border: 1px solid var(--rule-soft); border-radius: 4px; padding: .08em .34em; word-break: break-word; }
+
+  .part {
+    margin: 4.5rem auto 2.25rem; max-width: var(--maxw);
+    display: flex; align-items: baseline; gap: .9rem;
+    border-top: 2px solid var(--ink); padding-top: .8rem;
+  }
+  .part b { font-family: var(--f-mono); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint); flex: none; }
+  .part h2 { margin: 0; }
+
+  .step { max-width: var(--maxw); margin: 0 auto 3.25rem; }
+  .step-head { margin-bottom: 1rem; position: relative; }
+  .eyebrow { font-family: var(--f-mono); font-size: .69rem; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: .45rem; }
+  .eyebrow em { font-style: normal; color: var(--ink-faint); }
+
+  .num { display: none; }
+  @media (min-width: 62rem) {
+    .num {
+      display: block; position: absolute; left: -5.25rem; top: -.15rem;
+      width: 4rem; text-align: right; font-family: var(--f-mono);
+      font-size: 2.1rem; font-weight: 500; color: var(--rule);
+      letter-spacing: -.04em; font-variant-numeric: tabular-nums;
+    }
+  }
+
+  figure { margin: 1.5rem 0 1.25rem; }
+  .plate { background: var(--paper-2); border: 1px solid var(--rule); border-radius: 10px; padding: 1.1rem; overflow-x: auto; box-shadow: var(--shadow); }
+  .plate svg { display: block; width: 100%; height: auto; min-width: 27rem; }
+  figcaption { font-family: var(--f-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); margin-top: .7rem; padding-left: .15rem; }
+  @media (min-width: 62rem) { .bleed { width: 52rem; margin-left: calc((var(--maxw) - 52rem) / 2); } }
+
+  ol.keys { list-style: none; counter-reset: k; padding: 0; margin: 1.1rem 0 0; }
+  ol.keys li { counter-increment: k; position: relative; padding-left: 2.15rem; margin-bottom: .55rem; color: var(--ink-soft); }
+  ol.keys li::before {
+    content: counter(k); position: absolute; left: 0; top: .16em;
+    width: 1.5rem; height: 1.5rem; display: grid; place-items: center;
+    background: var(--accent); color: var(--accent-ink); border-radius: 50%;
+    font-family: var(--f-mono); font-size: .74rem; font-weight: 700;
+  }
+  ol.keys li b { color: var(--ink); font-weight: 650; }
+
+  ul.plain { padding-left: 1.15rem; margin: 0 0 1.05rem; }
+  ul.plain li { margin-bottom: .4rem; }
+  ul.plain li::marker { color: var(--ink-faint); }
+
+  .cmd {
+    background: var(--term-bg); color: var(--term-ink); border-radius: 8px;
+    padding: .95rem 1.05rem; font-family: var(--f-mono); font-size: .82rem;
+    line-height: 1.8; overflow-x: auto; margin: 1rem 0; border: 1px solid var(--rule);
+  }
+  .cmd .p { color: var(--term-green); user-select: none; }
+  .cmd .c { color: #8FA5BC; }
+
+  .prompt {
+    background: var(--screen); border: 1px solid var(--rule); border-left: 3px solid var(--cyan);
+    border-radius: 6px; padding: .85rem 1.1rem 1rem; margin: 1.1rem 0;
+    font-size: .92rem; line-height: 1.6; color: var(--ink-soft);
+  }
+  .prompt .tag {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    font-family: var(--f-mono); font-size: .66rem; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--cyan);
+    margin-bottom: .6rem; padding-bottom: .5rem; border-bottom: 1px solid var(--rule-soft);
+  }
+  .prompt .ptext { margin: 0; white-space: pre-wrap; font-family: var(--f-text); font-size: .92rem; line-height: 1.6; color: var(--ink-soft); }
+  button.copy {
+    flex: none; font-family: var(--f-mono); font-size: .64rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--cyan); background: transparent;
+    border: 1px solid var(--rule); border-radius: 4px; padding: .22rem .5rem;
+    cursor: pointer; line-height: 1.4;
+  }
+  button.copy:hover { border-color: var(--cyan); }
+  button.copy[data-done="1"] { color: var(--ok); border-color: var(--ok); }
+
+  .note, .warn, .done { border-radius: 8px; padding: .9rem 1.05rem; margin: 1.15rem 0; font-size: .95rem; }
+  .note { background: var(--cyan-wash); border: 1px solid var(--rule); }
+  .warn { background: var(--accent-wash); border: 1px solid var(--rule); }
+  .done { background: var(--ok-wash); border: 1px solid var(--rule); }
+  .note p:last-child, .warn p:last-child, .done p:last-child { margin-bottom: 0; }
+  .note .lbl, .warn .lbl, .done .lbl { font-family: var(--f-mono); font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; display: block; margin-bottom: .35rem; }
+  .note .lbl { color: var(--cyan); }
+  .warn .lbl { color: var(--accent); }
+  .done .lbl { color: var(--ok); }
+
+  .tablewrap { overflow-x: auto; margin: 1.35rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .93rem; }
+  th, td { text-align: left; padding: .62rem .8rem; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  th { font-family: var(--f-mono); font-size: .67rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); border-bottom: 1px solid var(--rule); }
+  tbody tr:last-child td { border-bottom: none; }
+
+  .check { list-style: none; padding: 0; margin: 1.25rem 0 0; }
+  .check li { position: relative; padding-left: 2.1rem; margin-bottom: .6rem; }
+  .check li::before {
+    content: ""; position: absolute; left: 0; top: .3em; width: 1.15rem; height: 1.15rem;
+    border: 1.5px solid var(--rule); border-radius: 4px; background: var(--screen);
+  }
+
+  dl.gloss { margin: 1.25rem 0 0; }
+  dl.gloss dt { font-weight: 700; margin-top: 1rem; }
+  dl.gloss dd { margin: .2rem 0 0; color: var(--ink-soft); }
+
+  .foot { max-width: var(--maxw); margin: 5rem auto 0; border-top: 1px solid var(--rule); padding-top: 1.5rem; font-size: .87rem; color: var(--ink-faint); }
+
+  .s-frame  { fill: var(--screen); stroke: var(--rule); stroke-width: 1.5; }
+  .s-panel  { fill: var(--screen-2); stroke: var(--rule-soft); stroke-width: 1; }
+  .s-bar    { fill: var(--paper-2); stroke: none; }
+  .s-line   { stroke: var(--rule); stroke-width: 1.5; fill: none; }
+  .s-txt    { fill: var(--ink); font-family: var(--f-text); font-size: 13px; }
+  .s-txt-s  { fill: var(--ink-soft); font-family: var(--f-text); font-size: 11.5px; }
+  .s-mono   { fill: var(--ink-faint); font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .06em; }
+  .s-ghost  { fill: var(--rule-soft); }
+  .s-ghost2 { fill: var(--rule); }
+  .s-btn    { fill: var(--ok); }
+  .s-btn-t  { fill: var(--btn-ink); font-family: var(--f-text); font-size: 12px; font-weight: 600; }
+  .s-mark   { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-dasharray: 5 4; }
+  .s-key    { fill: var(--accent); }
+  .s-key-t  { fill: var(--accent-ink); font-family: var(--f-mono); font-size: 11px; font-weight: 700; }
+  .s-term-t { fill: var(--term-ink); font-family: var(--f-mono); font-size: 11.5px; }
+  .s-term-g { fill: var(--term-green); font-family: var(--f-mono); font-size: 11.5px; }
+</style>
+<style>html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+</head>
+<body>
+<div class="rail"><i id="railbar"></i></div>
+<div class="wrap">
+
+  <header class="mast col">
+    <div class="stamp">
+      <span>Модуль 00 · Фундамент</span><span>Для тех, у кого нет компьютера</span><span>Ревизия 30.07.2026</span>
+    </div>
+    <h1>Контент-завод на iPad</h1>
+    <p class="dek">У тебя только планшет — и этого достаточно. Внутри два способа собрать рабочую систему: оба доводят до одного результата, отличаются деньгами и удобством. Выбери свой и иди по инструкции.</p>
+  </header>
+
+  <div class="part" id="vybor"><b>Выбор</b><h2>С чего начать</h2></div>
+
+  <section class="step">
+    <p>Сразу главное: <strong>поставить Claude Code прямо на iPad нельзя.</strong> Apple не разрешает запускать на планшете программы для разработки. Приложения из App Store, которые выглядят как терминал, не помогут — не трать на них вечер.</p>
+    <p>Поэтому всё выполняется <strong>не на планшете</strong>. Разница между маршрутами только в том, <em>где именно</em>: на бесплатных мощностях GitHub или на машине, которую ты арендуешь.</p>
+
+    <div class="note">
+      <span class="lbl">Что общего у обоих</span>
+      <p>Система живёт <strong>в репозитории на GitHub</strong>, а не на устройстве. Планшет можно утопить, аккаунт заблокировать, сервер потерять — работа цела. Купишь потом ноутбук — подключишь к той же папке и продолжишь с той же строки.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th></th><th>Маршрут 1 · без аренды</th><th>Маршрут 2 · своя машина</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Сколько платишь</strong></td><td>только подписка, $20/мес</td><td>подписка + от 1&nbsp;700 ₽/мес</td></tr>
+          <tr><td><strong>Нужен ли VPN</strong></td><td>да, постоянно</td><td>нет: машина уже за границей</td></tr>
+          <tr><td><strong>Смена страны App&nbsp;Store</strong></td><td>нужна</td><td>не нужна</td></tr>
+          <tr><td><strong>Сколько настраивать</strong></td><td>ничего</td><td>один вечер</td></tr>
+          <tr><td><strong>Ограничение по времени</strong></td><td>запас часов в месяц</td><td>нет</td></tr>
+          <tr><td><strong>Работа по расписанию</strong></td><td>частично</td><td>да</td></tr>
+          <tr><td><strong>Автоматизация браузера</strong></td><td>нет</td><td>да</td></tr>
+          <tr><td><strong>Объём</strong></td><td>15 шагов, 14 схем</td><td>11 шагов, 12 схем</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Не знаешь, что выбрать</h3>
+    <p><strong>Начни с первого.</strong> Он бесплатный сверх подписки, и за первый вечер ты получишь готовый результат вместо вечера настройки. Этого маршрута хватает на весь фундамент и работу с текстом — то есть на первые недели программы целиком.</p>
+    <p><strong>Ко второму переходи, когда упрёшься</strong> в одно из трёх: перестанет хватать бесплатных часов, понадобится запускать конвейер по расписанию или потребуется автоматизация в браузере. Обычно это модуль 04.</p>
+
+    <div class="warn">
+      <span class="lbl">Выбор не окончательный</span>
+      <p>Перейти с маршрута на маршрут можно в любой момент и ничего не потеряв — система-то в репозитории. Подключаешь новую машину к той же папке и работаешь дальше. Не залипай на выборе.</p>
+    </div>
+
+    <p style="font-size:1.06rem;line-height:2">
+      <strong>→ <a href="#marshrut-1">Маршрут 1 — без аренды</a></strong><br>
+      <strong>→ <a href="#marshrut-2">Маршрут 2 — своя машина</a></strong>
+    </p>
+  </section>
+
+<div class="wrap">
+
+  <header class="mast col">
+    <div class="stamp">
+      <span>Модуль 00 · Фундамент</span>
+      <span>Рабочее место: только iPad</span>
+      <span>Ревизия 30.07.2026</span>
+    </div>
+    <h1>Завод без аренды сервера</h1>
+    <p class="dek">Второй маршрут: ничего не арендуешь и не настраиваешь. Работаешь с планшета через приложение и браузер, платишь только за подписку Claude. Каждый шаг со схемой экрана.</p>
+  </header>
+
+  <!-- ============ ЧАСТЬ 0 ============ -->
+  <div class="part" id="marshrut-1"><b>Маршрут 1</b><h2>Без аренды — платишь только за подписку</h2></div>
+  <div class="part"><b>Часть 0</b><h2>Как это устроено</h2></div>
+
+  <section class="step">
+    <p>Скажу сразу, чтобы ты не искал ответ в интернете и не потерял вечер: <strong>поставить Claude Code прямо на iPad нельзя.</strong> Apple не разрешает запускать на планшете программы для разработки — терминала в системе нет и не появится. Приложения из App Store, которые выглядят как терминал, не помогут.</p>
+
+    <p>И это не мешает. Всё выполняется <strong>в облаке</strong>, а планшет только показывает результат. Связывает эти два мира одна папка.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 340" role="img" aria-label="Схема: облако считает, планшет хранит тяжёлое, репозиторий связывает их">
+          <rect x="24" y="40" width="290" height="180" rx="10" class="s-frame"/>
+          <text x="44" y="70" class="s-txt" font-weight="700">Облако</text>
+          <text x="44" y="90" class="s-txt-s">это твой процессор</text>
+          <line x1="44" y1="104" x2="294" y2="104" class="s-line"/>
+          <text x="44" y="126" class="s-txt-s">• Claude думает и пишет</text>
+          <text x="44" y="146" class="s-txt-s">• терминал и редактор кода</text>
+          <text x="44" y="166" class="s-txt-s">• рендер картинок, сайт</text>
+          <text x="44" y="186" class="s-txt-s">• работает, пока планшет спит</text>
+          <text x="44" y="208" class="s-mono">ПРИЛОЖЕНИЕ CLAUDE · SAFARI</text>
+
+          <rect x="486" y="40" width="290" height="180" rx="10" class="s-frame"/>
+          <text x="506" y="70" class="s-txt" font-weight="700">iPad</text>
+          <text x="506" y="90" class="s-txt-s">это твой склад</text>
+          <line x1="506" y1="104" x2="756" y2="104" class="s-line"/>
+          <text x="506" y="126" class="s-txt-s">• съёмки и сырое видео</text>
+          <text x="506" y="146" class="s-txt-s">• фотобиблиотека</text>
+          <text x="506" y="166" class="s-txt-s">• монтаж и экспорт</text>
+          <text x="506" y="186" class="s-txt-s">• всё тяжёлое</text>
+          <text x="506" y="208" class="s-mono">ФАЙЛЫ · ФОТО</text>
+
+          <rect x="330" y="92" width="140" height="76" rx="8" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1.5"/>
+          <text x="400" y="122" text-anchor="middle" class="s-txt" font-weight="700">Репозиторий</text>
+          <text x="400" y="141" text-anchor="middle" class="s-txt-s">папка в интернете</text>
+          <text x="400" y="158" text-anchor="middle" class="s-mono">GITHUB</text>
+
+          <path d="M314 130 L330 130" class="s-line"/>
+          <path d="M470 130 L486 130" class="s-line"/>
+
+          <rect x="24" y="248" width="752" height="66" rx="8" class="s-panel"/>
+          <text x="48" y="277" class="s-txt" font-weight="700">В репозитории лежит сама система</text>
+          <text x="48" y="299" class="s-txt-s">CLAUDE.md — паспорт проекта · бизнес-контекст · память · скиллы</text>
+        </svg>
+      </div>
+      <figcaption>Схема 1 · Облако, планшет и репозиторий</figcaption>
+    </figure>
+
+    <p>Отсюда <strong>главное правило всей системы</strong>: она живёт в репозитории, а не на устройстве. Планшет можно утопить — завод цел. Купишь потом ноутбук или арендуешь сервер — подключишь к тому же репозиторию и продолжишь с той же строки.</p>
+
+    <h3>Сколько это стоит</h3>
+    <p>Коротко: <strong>кроме подписки Claude — ничего.</strong> Ни аренды, ни разовых вложений.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>За что</th><th>Сколько</th><th>Комментарий</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Claude Pro</strong></td><td>$20 в месяц</td><td>Единственный обязательный расход. Без него Claude Code не работает вообще</td></tr>
+          <tr><td>GitHub и репозиторий</td><td>0 ₽</td><td>Бесплатного аккаунта хватает на всю программу</td></tr>
+          <tr><td>Облачный компьютер в браузере</td><td>0 ₽</td><td>GitHub даёт бесплатный запас часов в месяц. Хватает, если не забывать выключать</td></tr>
+          <tr><td>Приложение Claude</td><td>0 ₽</td><td>—</td></tr>
+          <tr><td>VPN</td><td>свой</td><td>Нужен обязательно: Anthropic не работает из России</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <span class="lbl">В чём подвох бесплатного</span>
+      <p>Облачный компьютер даётся не безлимитно, а на ограниченное число часов в месяц. Забудешь выключить — запас сгорит за неделю, и до конца месяца придётся ждать или платить. Поэтому шаг «выключать после работы» здесь не занудство, а условие бесплатности.</p>
+      <p>Если начнёт мешать — есть <strong>второй маршрут</strong>: арендовать свою машину от 1 700 ₽ в месяц, без лимитов и с автоматизацией по расписанию. К нему стоит перейти на модуле 04, но не раньше.</p>
+    </div>
+
+    <div class="note">
+      <span class="lbl">Про картинки в этой инструкции</span>
+      <p>Все схемы — <strong>чертежи</strong>, а не фотографии экрана. Названия кнопок и их расположение настоящие, оформление условное. И почти всё будет по-английски: названия я специально оставил как в оригинале, переводить в голове не нужно.</p>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 1 ============ -->
+  <div class="part"><b>Часть 1</b><h2>Подготовка: доступы</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">01</span>
+      <span class="eyebrow">Шаг 01 <em>· 10 минут</em></span>
+      <h2>Включить VPN</h2>
+    </div>
+    <p>Anthropic — компания, которая делает Claude, — официально не работает в России. Без VPN сайт не откроется, а приложение покажет ошибку входа. В этом маршруте VPN нужен постоянно: ты обращаешься к Claude прямо с планшета.</p>
+
+    <div class="note">
+      <span class="lbl">Что использую я</span>
+      <p><strong>Mad VPN, страна — США.</strong> На нём проверено всё, что описано в этой инструкции: и сайт, и приложение, и вход из терминала. Бери его и не изобретай — сэкономишь вечер на переборе серверов.</p>
+    </div>
+
+    <ul class="plain">
+      <li><strong>Страну ставь США.</strong> Это важнее, чем сам сервис.</li>
+      <li>Включать нужно <strong>до</strong> открытия приложения, а не после.</li>
+      <li>Держи включённым всё время работы — иначе сессия оборвётся на середине.</li>
+      <li>Claude «завис» — первым делом проверяй VPN, а не пиши в чат потока.</li>
+    </ul>
+    <div class="done"><span class="lbl">Готово, если</span><p>В браузере открывается <code>claude.ai</code> и не показывает заглушку про недоступность.</p></div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">02</span>
+      <span class="eyebrow">Шаг 02 <em>· 15 минут</em></span>
+      <h2>Оплатить Claude Pro</h2>
+    </div>
+    <p>Нам нужен не обычный чат, а <strong>Claude Code</strong> — режим, где машина работает с файлами твоего проекта. Он открывается на планах <strong>Pro</strong> и <strong>Max</strong>.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 300" role="img" aria-label="Схема выбора тарифного плана на claude.ai с выделенным планом Pro">
+          <rect x="20" y="20" width="760" height="260" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v30 h-760 z" class="s-bar"/>
+          <line x1="20" y1="60" x2="780" y2="60" class="s-line"/>
+          <circle cx="46" cy="40" r="5" class="s-ghost2"/>
+          <text x="66" y="44" class="s-mono">CLAUDE.AI</text>
+
+          <text x="400" y="92" text-anchor="middle" class="s-txt" font-weight="700">Выбери план</text>
+
+          <rect x="52" y="112" width="216" height="140" rx="9" class="s-panel"/>
+          <text x="72" y="140" class="s-txt" font-weight="700">Free</text>
+          <text x="72" y="164" class="s-txt-s">обычный чат</text>
+          <text x="72" y="186" class="s-txt-s" fill="var(--red)">Claude Code недоступен</text>
+
+          <rect x="292" y="102" width="216" height="160" rx="9" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2"/>
+          <text x="312" y="132" class="s-txt" font-weight="700">Pro</text>
+          <text x="312" y="156" class="s-txt-s">актуальная цена — на сайте</text>
+          <text x="312" y="178" class="s-txt-s">Claude Code включён</text>
+          <rect x="312" y="196" width="120" height="32" rx="7" class="s-btn"/>
+          <text x="372" y="217" text-anchor="middle" class="s-btn-t">Subscribe</text>
+          <circle cx="272" cy="126" r="13" class="s-key"/>
+          <text x="272" y="130" text-anchor="middle" class="s-key-t">1</text>
+          <circle cx="464" cy="212" r="13" class="s-key"/>
+          <text x="464" y="216" text-anchor="middle" class="s-key-t">2</text>
+
+          <rect x="532" y="112" width="216" height="140" rx="9" class="s-panel"/>
+          <text x="552" y="140" class="s-txt" font-weight="700">Max</text>
+          <text x="552" y="164" class="s-txt-s">то же, но лимиты выше</text>
+          <text x="552" y="186" class="s-txt-s">для старта избыточно</text>
+          <circle cx="512" cy="126" r="13" class="s-key"/>
+          <text x="512" y="130" text-anchor="middle" class="s-key-t">3</text>
+        </svg>
+      </div>
+      <figcaption>Схема 2 · claude.ai — выбор плана</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Pro — твой план.</b> Именно на нём открывается Claude Code. На бесплатном его нет вовсе, и это не обходится никакими настройками.</li>
+      <li><b>Кнопка оплаты.</b> Цену смотри на сайте — она меняется, и я не хочу называть тебе устаревшую.</li>
+      <li><b>Max брать не надо.</b> Он отличается только размером лимитов; на старте ты в них не упрёшься, а платить будешь больше.</li>
+    </ol>
+
+    <h3>Если своей зарубежной карты нет</h3>
+    <p>Российская карта не пройдёт. Готовый аккаунт вместе с гугл-почтой продают здесь:</p>
+    <p><a href="https://plati.market/games/claude/1543/">plati.market → Claude</a></p>
+    <p>Рабочий обходной путь, им пользуются. Но купленный аккаунт — чужая учётка, и её могут заблокировать. Относись к нему как к арендованному.</p>
+
+    <div class="note">
+      <span class="lbl">Почему блокировка не страшна</span>
+      <p>Именно поэтому система с первого дня складывается <strong>в репозиторий на GitHub</strong>, а не «внутрь Claude». Аккаунт заблокируют — заведёшь новый, подключишь к тому же репозиторию, и вся работа на месте.</p>
+    </div>
+
+    <div class="warn">
+      <span class="lbl">Это стопор</span>
+      <p>Без Pro следующие шаги просто не откроются: нужного раздела в приложении не будет. Не иди дальше, пока подписка не активна.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">03</span>
+      <span class="eyebrow">Шаг 03 <em>· 20 минут</em></span>
+      <h2>Сменить страну App Store</h2>
+    </div>
+
+    <p>Заминка, о которой мало кто предупреждает: <strong>приложения Claude нет в российском App Store.</strong> Пока твой Apple ID привязан к России, ты его просто не найдёшь поиском — не потому что плохо ищешь, а потому что его там нет.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 330" role="img" aria-label="Схема: Настройки, раздел Медиаматериалы и покупки, смена страны на United States">
+          <rect x="20" y="20" width="360" height="290" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h340 a10 10 0 0 1 10 10 v28 h-360 z" class="s-bar"/>
+          <line x1="20" y1="58" x2="380" y2="58" class="s-line"/>
+          <text x="44" y="46" class="s-txt" font-weight="700">Настройки</text>
+
+          <rect x="44" y="78" width="312" height="46" rx="8" class="s-panel"/>
+          <circle cx="72" cy="101" r="14" class="s-ghost2"/>
+          <text x="98" y="98" class="s-txt" font-weight="600">Твоё имя</text>
+          <text x="98" y="115" class="s-txt-s">Apple ID, iCloud, Медиа</text>
+          <text x="342" y="106" class="s-txt-s">›</text>
+
+          <text x="44" y="158" class="s-mono">ВНУТРИ ЭТОГО РАЗДЕЛА</text>
+          <rect x="44" y="172" width="312" height="38" rx="8" fill="var(--accent-wash)"/>
+          <text x="60" y="196" class="s-txt" font-weight="700">Медиаматериалы и покупки</text>
+          <text x="342" y="196" class="s-txt-s">›</text>
+          <circle cx="392" cy="191" r="13" class="s-key"/>
+          <text x="392" y="195" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="44" y="238" class="s-txt-s">→ Просмотреть учётную запись</text>
+          <text x="44" y="262" class="s-txt-s">→ Страна / регион</text>
+          <text x="44" y="286" class="s-txt-s">→ Изменить страну или регион</text>
+
+          <path d="M414 165 L444 165" class="s-line"/>
+          <path d="M436 159 l8 6 l-8 6" class="s-line"/>
+
+          <rect x="456" y="20" width="324" height="290" rx="10" class="s-frame"/>
+          <path d="M456 30 a10 10 0 0 1 10 -10 h304 a10 10 0 0 1 10 10 v28 h-324 z" class="s-bar"/>
+          <line x1="456" y1="58" x2="780" y2="58" class="s-line"/>
+          <text x="480" y="46" class="s-txt" font-weight="700">Страна или регион</text>
+
+          <rect x="480" y="80" width="276" height="36" rx="8" fill="var(--accent-wash)"/>
+          <text x="496" y="103" class="s-txt" font-weight="700">United States</text>
+          <path d="M726 92 l7 7 l-7 7" class="s-line"/>
+          <circle cx="440" cy="98" r="13" class="s-key"/>
+          <text x="440" y="102" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="480" y="146" class="s-txt-s">Россия</text>
+          <text x="480" y="172" class="s-txt-s">Казахстан</text>
+
+          <line x1="480" y1="196" x2="756" y2="196" class="s-line"/>
+
+          <text x="480" y="224" class="s-mono">СПОСОБ ОПЛАТЫ</text>
+          <rect x="480" y="236" width="120" height="32" rx="7" class="s-panel"/>
+          <text x="496" y="257" class="s-txt" font-weight="700">None</text>
+          <circle cx="626" cy="252" r="13" class="s-key"/>
+          <text x="626" y="256" text-anchor="middle" class="s-key-t">3</text>
+          <text x="480" y="292" class="s-txt-s">Появляется, если баланс нулевой</text>
+        </svg>
+      </div>
+      <figcaption>Схема 3 · Настройки → смена страны App Store</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Настройки → твоё имя вверху → «Медиаматериалы и покупки» → «Просмотреть учётную запись».</b> Это настройки магазина, а не всего айпада.</li>
+      <li><b>Страна / регион → Изменить страну или регион → United States.</b> Дальше он попросит адрес — подойдёт любой реальный американский адрес, например адрес отеля; поле нужно для формальности.</li>
+      <li><b>Способ оплаты — «None» («Нет»).</b> Появляется только если на счету ноль и нет активных подписок. Есть российские подписки — сначала отмени их, иначе Apple не даст сменить страну.</li>
+    </ol>
+
+    <div class="note">
+      <span class="lbl">Как сделать это безопасно</span>
+      <p>Не хочешь трогать основной Apple ID — заведи <strong>второй, сразу с регионом США</strong>, и войди им <strong>только в App Store</strong>: Настройки → твоё имя → Медиаматериалы и покупки → <em>Выйти</em>, затем App Store → значок профиля → вход новым аккаунтом.</p>
+      <p><strong>В iCloud новым Apple ID входить нельзя.</strong> Фото, заметки и резервные копии останутся на основном аккаунте, ничего не потеряется. Меняется только магазин.</p>
+    </div>
+
+    <p>Теперь ставим приложение: App Store → поиск <strong>Claude by Anthropic</strong> → установить. На iPad ставится то же приложение, что и на iPhone, — так и должно быть, отдельного «айпадного» не существует. Поставь его и на телефон: айфон станет «пультом», сессии у них общие.</p>
+
+    <div class="done"><span class="lbl">Готово, если</span><p>Приложение установлено, открывается, и в нижней навигации виден раздел <strong>Code</strong>. Раздела нет — значит подписка не Pro, вернись к шагу 02.</p></div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">04</span>
+      <span class="eyebrow">Шаг 04 <em>· 8 минут</em></span>
+      <h2>Завести GitHub и создать репозиторий</h2>
+    </div>
+    <p>GitHub — место, где будет жить твоя рабочая папка. Забудь формулировку «для программистов»: для тебя это <strong>папка в интернете, к которой имеет доступ машина</strong>.</p>
+    <ul class="plain">
+      <li>Идёшь на <code>github.com</code> → <strong>Sign up</strong> → почта, пароль, имя пользователя.</li>
+      <li>Бесплатного аккаунта хватит на всю программу.</li>
+      <li>Имя пользователя — короткое и латиницей: оно будет частью всех адресов.</li>
+    </ul>
+
+    <p>Дальше создаёшь саму папку. Открой адрес <code>github.com/new</code>.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 440" role="img" aria-label="Схема формы создания репозитория на GitHub">
+          <rect x="20" y="20" width="760" height="400" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v30 h-760 z" class="s-bar"/>
+          <line x1="20" y1="60" x2="780" y2="60" class="s-line"/>
+          <circle cx="46" cy="40" r="5" class="s-ghost2"/>
+          <text x="66" y="44" class="s-mono">GITHUB.COM/NEW</text>
+
+          <text x="52" y="94" class="s-txt" font-weight="700">Create a new repository</text>
+
+          <text x="52" y="126" class="s-txt-s">Owner *</text>
+          <rect x="52" y="134" width="150" height="32" rx="6" class="s-panel"/>
+          <text x="66" y="155" class="s-txt-s">твоё-имя</text>
+          <text x="212" y="155" class="s-txt">/</text>
+          <text x="232" y="126" class="s-txt-s">Repository name *</text>
+          <rect x="232" y="134" width="250" height="32" rx="6" class="s-panel"/>
+          <text x="246" y="155" class="s-txt">content-factory</text>
+          <circle cx="512" cy="150" r="13" class="s-key"/>
+          <text x="512" y="154" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="52" y="194" class="s-txt-s">Description (optional)</text>
+          <rect x="52" y="202" width="430" height="32" rx="6" class="s-panel"/>
+
+          <circle cx="62" cy="256" r="7" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
+          <text x="80" y="253" class="s-txt-s">Public</text>
+          <text x="80" y="269" class="s-mono">ВИДНО ВСЕМ В ИНТЕРНЕТЕ</text>
+          <circle cx="62" cy="292" r="7" fill="var(--accent)"/>
+          <circle cx="62" cy="292" r="2.6" fill="var(--screen)"/>
+          <text x="80" y="289" class="s-txt" font-weight="700">Private</text>
+          <text x="80" y="305" class="s-mono">ВИДНО ТОЛЬКО ТЕБЕ</text>
+          <circle cx="330" cy="292" r="13" class="s-key"/>
+          <text x="330" y="296" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="52" y="340" class="s-txt-s">Initialize this repository with:</text>
+          <rect x="52" y="352" width="18" height="18" rx="4" fill="var(--accent)"/>
+          <path d="M56 361 l4 4 l7 -8" stroke="var(--screen)" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="80" y="366" class="s-txt">Add a README file</text>
+          <circle cx="272" cy="361" r="13" class="s-key"/>
+          <text x="272" y="365" text-anchor="middle" class="s-key-t">3</text>
+
+          <rect x="592" y="362" width="160" height="36" rx="7" class="s-btn"/>
+          <text x="672" y="385" text-anchor="middle" class="s-btn-t">Create repository</text>
+          <circle cx="570" cy="380" r="13" class="s-key"/>
+          <text x="570" y="384" text-anchor="middle" class="s-key-t">4</text>
+        </svg>
+      </div>
+      <figcaption>Схема 4 · github.com/new — форма создания папки</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Repository name</b> — имя папки. Латиницей, без пробелов, например <code>content-factory</code>. Слева в поле <b>Owner</b> уже стоит твоё имя, его не трогай.</li>
+      <li><b>Обязательно Private.</b> Иначе твой бизнес-контекст и заметки увидит любой прохожий.</li>
+      <li><b>Галочка «Add a README file».</b> Без неё папка создастся совсем пустой, и следующий шаг может не найти, за что зацепиться.</li>
+      <li><b>Зелёная кнопка «Create repository»</b> внизу справа.</li>
+    </ol>
+
+    <div class="note">
+      <span class="lbl">Три слова, и хватит</span>
+      <p><strong>Репозиторий</strong> — папка в интернете. <strong>Коммит</strong> — сохранил версию. <strong>Пуш</strong> — отправил её в интернет. Больше про git знать не нужно, остальное делает машина.</p>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 2 ============ -->
+  <div class="part"><b>Часть 2</b><h2>Первый результат — сегодня</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">05</span>
+      <span class="eyebrow">Шаг 05 <em>· 5 минут</em></span>
+      <h2>Подключить папку к Claude</h2>
+    </div>
+    <p>Открываешь приложение Claude и переходишь в раздел <strong>Code</strong>. При первом заходе он попросит подключить GitHub — соглашаешься, входишь своим аккаунтом и разрешаешь доступ. Ставится помощник <strong>Claude GitHub App</strong>, это нормально.</p>
+    <p>После подключения система сама создаст рабочее окружение с именем <strong>Default</strong>. Ничего в нём менять не нужно.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 418" role="img" aria-label="Схема экрана новой сессии Code: поле задачи, под ним селектор репозитория и ветки, режим Accept edits, раздел Code в навигации">
+          <rect x="200" y="20" width="400" height="360" rx="18" class="s-frame"/>
+          <text x="224" y="48" class="s-mono">9:41</text>
+
+          <text x="400" y="88" text-anchor="middle" class="s-txt" font-weight="700">Что нужно сделать?</text>
+
+          <rect x="224" y="106" width="352" height="94" rx="10" class="s-panel"/>
+          <text x="240" y="132" class="s-txt-s">Опиши задачу словами…</text>
+          <circle cx="546" cy="176" r="13" fill="var(--accent)"/>
+          <rect x="543" y="169" width="6" height="10" rx="3" fill="var(--accent-ink)"/>
+          <path d="M539 178 a7 7 0 0 0 14 0" stroke="var(--accent-ink)" stroke-width="1.6" fill="none"/>
+          <line x1="546" y1="185" x2="546" y2="188" stroke="var(--accent-ink)" stroke-width="1.6"/>
+          <circle cx="664" cy="176" r="13" class="s-key"/>
+          <text x="664" y="180" text-anchor="middle" class="s-key-t">3</text>
+          <path d="M650 176 L564 176" class="s-mark"/>
+
+          <rect x="224" y="214" width="186" height="32" rx="16" class="s-panel"/>
+          <text x="240" y="235" class="s-txt-s">content-factory</text>
+          <path d="M386 228 l6 7 l6 -7" class="s-line"/>
+          <rect x="420" y="214" width="96" height="32" rx="16" class="s-panel"/>
+          <text x="436" y="235" class="s-txt-s">main</text>
+          <path d="M494 228 l6 7 l6 -7" class="s-line"/>
+          <circle cx="664" cy="230" r="13" class="s-key"/>
+          <text x="664" y="234" text-anchor="middle" class="s-key-t">2</text>
+          <path d="M650 230 L534 230" class="s-mark"/>
+
+          <rect x="224" y="258" width="150" height="30" rx="15" class="s-panel"/>
+          <text x="240" y="278" class="s-txt-s">Accept edits</text>
+          <path d="M350 271 l6 7 l6 -7" class="s-line"/>
+          <circle cx="136" cy="273" r="13" class="s-key"/>
+          <text x="136" y="277" text-anchor="middle" class="s-key-t">4</text>
+          <path d="M150 273 L216 273" class="s-mark"/>
+
+          <line x1="200" y1="326" x2="600" y2="326" class="s-line"/>
+          <rect x="268" y="342" width="34" height="8" rx="4" class="s-ghost"/>
+          <text x="400" y="352" text-anchor="middle" class="s-txt" font-weight="700">Code</text>
+          <rect x="376" y="360" width="48" height="3" rx="2" fill="var(--accent)"/>
+          <rect x="498" y="342" width="34" height="8" rx="4" class="s-ghost"/>
+          <circle cx="400" cy="398" r="13" class="s-key"/>
+          <text x="400" y="402" text-anchor="middle" class="s-key-t">1</text>
+          <path d="M400 384 L400 368" class="s-mark"/>
+        </svg>
+      </div>
+      <figcaption>Схема 5 · Новая сессия Code в приложении Claude</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Раздел «Code»</b> в нижней навигации приложения. Соседние разделы — обычный чат, они нам сейчас не нужны.</li>
+      <li><b>Выбор репозитория и ветки — под полем ввода</b>, а не над ним. Нажимаешь и выбираешь свой <code>content-factory</code>, ветку оставляешь <code>main</code>. Ветка — это просто «основная версия папки».</li>
+      <li><b>Кнопка микрофона.</b> Сюда будешь диктовать. Не печатай: речь быстрее и переключает голову — ты не программируешь, ты объясняешь задачу.</li>
+      <li><b>Режим работы, по умолчанию «Accept edits».</b> Машина делает правки сама и приносит готовое. Оставь как есть. Второй режим, <em>Plan</em>, сначала показывает план и ждёт твоего «да» — пригодится позже.</li>
+    </ol>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">06</span>
+      <span class="eyebrow">Шаг 06 <em>· 30 минут</em></span>
+      <h2>Настроить проект голосом</h2>
+    </div>
+    <p>Микрофон живёт на экранной клавиатуре — маленькая иконка в нижнем ряду, рядом с пробелом. Нажал, говоришь обычным голосом, текст появляется сам.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 250" role="img" aria-label="Схема экранной клавиатуры iPad с выделенной кнопкой микрофона">
+          <rect x="20" y="20" width="760" height="210" rx="12" class="s-frame"/>
+          <g class="s-ghost">
+            <rect x="44" y="44" width="60" height="34" rx="6"/><rect x="114" y="44" width="60" height="34" rx="6"/>
+            <rect x="184" y="44" width="60" height="34" rx="6"/><rect x="254" y="44" width="60" height="34" rx="6"/>
+            <rect x="324" y="44" width="60" height="34" rx="6"/><rect x="394" y="44" width="60" height="34" rx="6"/>
+            <rect x="464" y="44" width="60" height="34" rx="6"/><rect x="534" y="44" width="60" height="34" rx="6"/>
+            <rect x="604" y="44" width="60" height="34" rx="6"/><rect x="674" y="44" width="82" height="34" rx="6"/>
+            <rect x="60" y="90" width="60" height="34" rx="6"/><rect x="130" y="90" width="60" height="34" rx="6"/>
+            <rect x="200" y="90" width="60" height="34" rx="6"/><rect x="270" y="90" width="60" height="34" rx="6"/>
+            <rect x="340" y="90" width="60" height="34" rx="6"/><rect x="410" y="90" width="60" height="34" rx="6"/>
+            <rect x="480" y="90" width="60" height="34" rx="6"/><rect x="550" y="90" width="60" height="34" rx="6"/>
+            <rect x="620" y="90" width="136" height="34" rx="6"/>
+            <rect x="44" y="136" width="88" height="34" rx="6"/><rect x="142" y="136" width="60" height="34" rx="6"/>
+            <rect x="212" y="136" width="60" height="34" rx="6"/><rect x="282" y="136" width="60" height="34" rx="6"/>
+            <rect x="352" y="136" width="60" height="34" rx="6"/><rect x="422" y="136" width="60" height="34" rx="6"/>
+            <rect x="492" y="136" width="60" height="34" rx="6"/><rect x="562" y="136" width="60" height="34" rx="6"/>
+            <rect x="632" y="136" width="124" height="34" rx="6"/>
+            <rect x="44" y="182" width="110" height="30" rx="6"/>
+            <rect x="164" y="182" width="380" height="30" rx="6"/>
+            <rect x="618" y="182" width="138" height="30" rx="6"/>
+          </g>
+          <rect x="554" y="182" width="54" height="30" rx="6" fill="var(--accent)"/>
+          <rect x="578" y="188" width="6" height="10" rx="3" fill="var(--accent-ink)"/>
+          <path d="M573 199 a8 8 0 0 0 16 0" stroke="var(--accent-ink)" stroke-width="1.8" fill="none"/>
+          <line x1="581" y1="203" x2="581" y2="207" stroke="var(--accent-ink)" stroke-width="1.8"/>
+          <circle cx="700" cy="234" r="13" class="s-key"/>
+          <text x="700" y="238" text-anchor="middle" class="s-key-t">1</text>
+          <path d="M690 226 L586 216" class="s-mark"/>
+        </svg>
+      </div>
+      <figcaption>Схема 6 · Кнопка диктовки на экранной клавиатуре</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Микрофон в нижнем ряду, справа от пробела.</b> Работаешь с внешней клавиатурой и микрофона не видно — вызови экранную клавиатуру или диктуй в приложении на телефоне.</li>
+    </ol>
+
+    <p>Копируй <strong>мастер-промт</strong> — он один настроит проект целиком. Это тот же самый промт, что у всех в потоке.</p>
+
+    <div class="prompt">
+      <span class="tag">Мастер-промт · настроить проект под ключ<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Ты — мой персональный архитектор проекта в Claude Code. Задача: за один заход настроить этот проект так, чтобы дальше я сразу работал над продуктом, а ты знал обо мне и деле всё нужное. Действуй по шагам. Не выдумывай за меня факты — чего не знаешь, спрашивай. Если я отвечаю «не знаю» — предложи разумный дефолт и иди дальше.
+
+ШАГ 1. Интервью-распаковка. Задавай мне вопросы по 1–3 за раз (не вываливай всё списком), пока не поймёшь:
+- кто я и чем занимаюсь — продукт/проект, на каком этапе;
+- кто моя аудитория/клиент, его главная боль и язык, на котором он говорит;
+- мой голос и правила: как писать, каких слов, штампов и приёмов избегать;
+- мои цели на ближайший горизонт и что для меня НЕ важно;
+- техническую часть (если это код): стек, структура, договорённости;
+- как мне удобно с тобой работать: автономно или с подтверждениями, тон, язык ответов.
+
+ШАГ 2. Pre-flight. До того как что-то создавать, покажи в чат краткую выжимку: как ты понял мой проект, аудиторию, голос и цели — по 1–3 строки на блок. Дай поправить. Создавай файлы только после моего «ок».
+
+ШАГ 3. Собери структуру проекта:
+- CLAUDE.md в корне — паспорт проекта (продукт, аудитория, голос/правила, цели, тех-детали, как со мной работать). Пиши плотно, без воды, только то, что ты не угадаешь сам;
+- папку для бизнес-контекста (продукт, аудитория, цели, экономика, маркетинг) с коротким INDEX-файлом внутри;
+- включи постоянную память: занеси кто я, ключевые решения по проекту и мои предпочтения по работе, заведи индекс памяти.
+
+ШАГ 4. Предложи следующий шаг: 1–2 скилла под мои задачи и какие права/настройки включить, чтобы ты не дёргал меня по мелочи. Предложи — и, если согласен, настрой сам.
+
+В финале выведи короткий чек-лист, что готово, и одну первую задачу, с которой мне логично начать работу над продуктом.</pre>
+    </div>
+
+    <p>Дальше он начнёт задавать вопросы. Отвечай голосом, спокойно, как живому человеку. Не знаешь ответа — так и скажи, он предложит вариант.</p>
+
+    <p>Не любишь «чёрный ящик» и хочешь собирать по частям — <a href="#a-promts">библиотека промтов ниже</a>.</p>
+
+    <div class="note">
+      <span class="lbl">Главное правило для всех промтов</span>
+      <p><strong>Claude не выдумывает за тебя факты, кейсы и цифры — только то, что ты подтвердил.</strong> Чего не знаешь — проси дефолт и иди дальше. Один выдуманный кейс в паспорте проекта потом всплывёт во всём контенте.</p>
+    </div>
+
+    <div class="note">
+      <span class="lbl">Почему это самый важный шаг недели</span>
+      <p>Claude из коробки — гений, который ничего о тебе не знает. Пока ты не собрал ему контекст, любой текст выходит средним и безликим. Сначала контекст, потом задачи — этот порядок не переставляется.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">07</span>
+      <span class="eyebrow">Шаг 07 <em>· 5 минут</em></span>
+      <h2>Принять работу</h2>
+    </div>
+    <p>Машина не переписывает твою папку молча. Она складывает готовое в сторонку — <strong>в отдельную ветку</strong> — и показывает, что именно изменилось. Принять это нужно в два касания.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 330" role="img" aria-label="Схема: окно различий с кнопкой Create PR, затем страница GitHub с кнопкой Merge pull request">
+          <rect x="20" y="20" width="360" height="290" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h340 a10 10 0 0 1 10 10 v22 h-360 z" class="s-bar"/>
+          <line x1="20" y1="52" x2="380" y2="52" class="s-line"/>
+          <text x="44" y="42" class="s-mono">СЕССИЯ В ПРИЛОЖЕНИИ</text>
+
+          <rect x="44" y="72" width="76" height="24" rx="6" class="s-panel"/>
+          <text x="56" y="89" class="s-txt-s" fill="var(--ok)">+42</text>
+          <text x="88" y="89" class="s-txt-s" fill="var(--red)">−18</text>
+          <circle cx="152" cy="84" r="13" class="s-key"/>
+          <text x="152" y="88" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="44" y="128" class="s-mono">ЧТО МАШИНА ДОБАВИЛА</text>
+          <text x="44" y="154" class="s-txt-s">CLAUDE.md</text>
+          <text x="44" y="178" class="s-txt-s">.business/INDEX.md</text>
+          <text x="44" y="202" class="s-txt-s">memory/MEMORY.md</text>
+          <text x="44" y="226" class="s-txt-s">.claude/settings.json</text>
+
+          <rect x="216" y="252" width="140" height="34" rx="7" class="s-btn"/>
+          <text x="286" y="274" text-anchor="middle" class="s-btn-t">Create PR</text>
+          <circle cx="194" cy="269" r="13" class="s-key"/>
+          <text x="194" y="273" text-anchor="middle" class="s-key-t">2</text>
+
+          <path d="M392 165 L426 165" class="s-line"/>
+          <path d="M418 159 l8 6 l-8 6" class="s-line"/>
+
+          <rect x="440" y="20" width="340" height="290" rx="10" class="s-frame"/>
+          <path d="M440 30 a10 10 0 0 1 10 -10 h320 a10 10 0 0 1 10 10 v22 h-340 z" class="s-bar"/>
+          <line x1="440" y1="52" x2="780" y2="52" class="s-line"/>
+          <text x="464" y="42" class="s-mono">GITHUB.COM/…/PULL/1</text>
+
+          <text x="464" y="84" class="s-txt" font-weight="700">Настроил проект под нишу</text>
+          <rect x="464" y="98" width="56" height="22" rx="11" fill="var(--ok-wash)" stroke="var(--ok)" stroke-width="1"/>
+          <text x="492" y="113" text-anchor="middle" class="s-mono" fill="var(--ok)">OPEN</text>
+          <text x="532" y="113" class="s-txt-s">Claude добавил 4 файла</text>
+
+          <line x1="464" y1="142" x2="756" y2="142" class="s-line"/>
+          <text x="464" y="170" class="s-txt-s">Здесь можно прочитать каждый</text>
+          <text x="464" y="190" class="s-txt-s">файл целиком до того, как примешь.</text>
+
+          <rect x="464" y="226" width="200" height="36" rx="7" class="s-btn"/>
+          <text x="564" y="249" text-anchor="middle" class="s-btn-t">Merge pull request</text>
+          <circle cx="690" cy="244" r="13" class="s-key"/>
+          <text x="690" y="248" text-anchor="middle" class="s-key-t">3</text>
+        </svg>
+      </div>
+      <figcaption>Схема 7 · Create PR в сессии → Merge pull request на GitHub</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Счётчик изменений</b> вида <code>+42 −18</code> — сколько строк добавлено и убрано. Нажми на него: откроется окно различий, слева список файлов, справа сам текст. Читай спокойно, ничего ещё не применилось.</li>
+      <li><b>Кнопка «Create PR»</b> сверху в окне различий. PR читается как «работа на подпись».</li>
+      <li><b>«Merge pull request»</b> — зелёная кнопка уже на сайте GitHub. Это и есть «принимаю, положи в основную папку».</li>
+    </ol>
+
+    <div class="note">
+      <span class="lbl">Не нравится результат?</span>
+      <p>Ничего не принимай. Вернись в ту же сессию и словами скажи, что переделать, — можно даже ткнуть в конкретную строку и оставить замечание к ней. Это и есть работа с машиной: правишь задачу, а не текст руками.</p>
+    </div>
+
+    <div class="done">
+      <span class="lbl">Готово, если</span>
+      <p>В репозитории появились <code>CLAUDE.md</code>, папка бизнес-контекста и память — а ты ни разу не открыл компьютер. Это фундамент недели 1.</p>
+    </div>
+  </section>
+
+  <section class="step" id="a-promts">
+    <h2>Библиотека промтов</h2>
+    <p>Мастер-промт делает всё за один заход. Хочешь держать процесс под контролем — те же части по отдельности. Порядок не переставляй: <strong>паспорт → папки → память → права.</strong></p>
+
+    <div class="prompt">
+      <span class="tag">Промт A · паспорт проекта CLAUDE.md<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Помоги собрать CLAUDE.md — паспорт моего проекта, который ты будешь читать в начале каждой сессии.
+
+Сначала задай мне вопросы по 1–3 за раз (не списком сразу), чтобы закрыть блоки: что за продукт/проект и на каком этапе; кто аудитория, её боль и язык; мой голос и правила (как писать, чего избегать); цели и что НЕ важно; тех-детали, если это код (стек, структура, договорённости); как мне удобно с тобой работать.
+
+Не выдумывай за меня факты, кейсы и цифры — бери только то, что я подтвердил. Чего не знаю — предложи дефолт и иди дальше.
+
+Когда соберёшь — покажи готовый CLAUDE.md в чат целиком. Пиши плотно и по делу: только то, чего ты не угадаешь сам, без воды и общих фраз. После моего «ок» сохрани его в корень проекта.</pre>
+    </div>
+
+    <div class="prompt">
+      <span class="tag">Промт B · каркас папок<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Собери каркас папок под мой проект, чтобы контекст лежал по местам, а не в одной куче. Опирайся на мой CLAUDE.md.
+
+Предложи структуру и кратко объясни, что лежит в каждой папке. Минимум:
+- папка бизнес-контекста (продукт, аудитория, цели, экономика, маркетинг, ассеты) с коротким INDEX-файлом-оглавлением внутри;
+- папка под скиллы проекта;
+- папка под память.
+
+Сначала покажи дерево папок в чат и спроси, что добавить или убрать под мою специфику. После согласия — создай папки и INDEX, разложи по ним то, что мы уже знаем о проекте.</pre>
+    </div>
+
+    <div class="prompt">
+      <span class="tag">Промт C · постоянная память<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Настрой постоянную память, чтобы ты помнил меня между сессиями и не начинал каждый раз с чистого листа.
+
+Занеси в память: кто я и над чем работаю, ключевые решения по проекту, мои предпочтения по работе (тон, автономность, язык). Заведи индекс памяти и добавляй в него по одной строке-ссылке на каждый факт.
+
+Не клади в память то, что и так есть в коде или в CLAUDE.md, — только то, что должно пережить перезапуск и что ты сам не восстановишь. Покажи, что занёс, в чат.</pre>
+    </div>
+
+    <div class="prompt">
+      <span class="tag">Промт D · права, чтобы не дёргал по мелочи<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Настрой права так, чтобы ты не спрашивал у меня разрешение на каждое мелкое и безопасное действие, но всё необратимое и внешнее по-прежнему подтверждал.
+
+Сначала посмотри, какие команды и действия в этом проекте реально повторяются и безопасны (чтение файлов, поиск, типовые команды стека), и предложи список того, что можно разрешить без вопросов. Покажи список в чат и объясни, почему каждый пункт безопасен.
+
+Не вноси в разрешённое ничего, что удаляет данные, тратит деньги или публикует наружу, — такое всегда через подтверждение. После моего «ок» пропиши права в настройки проекта.</pre>
+    </div>
+
+    <h3>Бонус: собрать свой первый скилл</h3>
+    <p>Задел на модуль 02, но попробовать можно уже сейчас.</p>
+
+    <div class="prompt">
+      <span class="tag">Промт E · первый скилл под себя<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Помоги собрать мой первый скилл под главную задачу, которую я повторяю чаще всего. Используй встроенный skill-creator (или build-skill).
+
+Сначала спроси, какая это задача, и задай по 1–3 вопроса за раз, чтобы вытащить из меня: как именно я её делаю по шагам, мои правила и табу, мой голос/стиль, 1–2 примера хорошего и плохого результата, чек-лист «готово».
+
+Не подменяй мой стиль усреднённым — фиксируй именно мой. Чего не знаю — предложи дефолт.
+
+Собери скилл со всем этим внутри (описание задачи, правила, примеры, чек-лист), покажи структуру в чат, после согласия сохрани в папку скиллов проекта. В конце дай одну тестовую задачу, чтобы сразу проверить скилл в деле.</pre>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 3 ============ -->
+  <div class="part"><b>Часть 3</b><h2>Мастерская: редактор в Safari</h2></div>
+
+  <section class="step">
+    <p>До сих пор ты разговаривал с машиной. Теперь открываем место, где видно все файлы сразу и есть <strong>терминал</strong> — чёрное окно, куда пишут короткие команды. Пугаться нечего: команд будет три, и все три даны целиком.</p>
+
+    <div class="warn">
+      <span class="lbl">Не в первый день</span>
+      <p>Эта часть — не для первого вечера. Сначала получи результат в приложении и увидь, что оно работает. Терминал открывай следующим заходом, когда пропадёт настороженность.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">08</span>
+      <span class="eyebrow">Шаг 08 <em>· 5 минут</em></span>
+      <h2>Запустить облачный компьютер</h2>
+    </div>
+    <p>GitHub выдаёт компьютер в аренду прямо в браузере — бесплатно, в пределах месячного запаса часов. Настоящий, с файлами и терминалом, только стоит он не у тебя на столе, а в дата-центре. Открывай в Safari страницу своего репозитория.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 310" role="img" aria-label="Схема: зелёная кнопка Code на GitHub, вкладка Codespaces, кнопка Create codespace on main">
+          <rect x="20" y="20" width="760" height="270" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v30 h-760 z" class="s-bar"/>
+          <line x1="20" y1="60" x2="780" y2="60" class="s-line"/>
+          <text x="46" y="44" class="s-mono">GITHUB.COM/ТВОЁ-ИМЯ/CONTENT-FACTORY</text>
+
+          <rect x="48" y="86" width="150" height="14" rx="4" class="s-ghost"/>
+          <rect x="48" y="112" width="240" height="10" rx="4" class="s-ghost"/>
+
+          <rect x="596" y="80" width="106" height="36" rx="7" class="s-btn"/>
+          <text x="636" y="103" text-anchor="middle" class="s-btn-t">Code</text>
+          <path d="M668 95 l7 8 l7 -8" stroke="var(--btn-ink)" stroke-width="2" fill="none"/>
+          <circle cx="572" cy="98" r="13" class="s-key"/>
+          <text x="572" y="102" text-anchor="middle" class="s-key-t">1</text>
+
+          <rect x="446" y="126" width="306" height="146" rx="9" class="s-frame"/>
+          <text x="474" y="154" class="s-txt-s">Local</text>
+          <text x="566" y="154" class="s-txt" font-weight="700">Codespaces</text>
+          <rect x="558" y="162" width="92" height="3" rx="2" fill="var(--accent)"/>
+          <circle cx="726" cy="150" r="13" class="s-key"/>
+          <text x="726" y="154" text-anchor="middle" class="s-key-t">2</text>
+
+          <line x1="466" y1="178" x2="732" y2="178" class="s-line"/>
+          <text x="474" y="202" class="s-txt-s">No codespaces</text>
+
+          <rect x="466" y="218" width="266" height="36" rx="7" class="s-btn"/>
+          <text x="599" y="241" text-anchor="middle" class="s-btn-t">Create codespace on main</text>
+          <circle cx="444" cy="236" r="13" class="s-key"/>
+          <text x="444" y="240" text-anchor="middle" class="s-key-t">3</text>
+        </svg>
+      </div>
+      <figcaption>Схема 8 · Code → вкладка Codespaces → Create codespace on main</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Зелёная кнопка «Code»</b> на странице твоего репозитория, справа над списком файлов.</li>
+      <li><b>Переключись на вкладку «Codespaces».</b> Она вторая. Первая, <em>Local</em>, — для тех, у кого есть компьютер.</li>
+      <li><b>«Create codespace on main».</b> Дальше минута ожидания — идёт сборка. Вкладку не закрывай.</li>
+    </ol>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">09</span>
+      <span class="eyebrow">Шаг 09 <em>· 2 минуты</em></span>
+      <h2>Разобраться в экране</h2>
+    </div>
+    <p>Откроется VS Code — редактор, в котором работают программисты всего мира. Выглядит сложно ровно до того момента, как узнаёшь: тут всего три области.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 420" role="img" aria-label="Схема VS Code: боковая панель файлов слева, редактор по центру, панель терминала внизу">
+          <defs>
+            <clipPath id="clipVscodeFree"><rect x="20" y="20" width="760" height="380" rx="10"/></clipPath>
+          </defs>
+          <g clip-path="url(#clipVscodeFree)">
+            <rect x="20" y="20" width="760" height="380" fill="var(--screen)"/>
+            <rect x="20" y="20" width="760" height="30" class="s-bar"/>
+            <rect x="20" y="50" width="190" height="350" class="s-panel"/>
+            <rect x="210" y="50" width="130" height="26" class="s-bar"/>
+            <rect x="210" y="232" width="570" height="168" fill="var(--term-bg)"/>
+            <rect x="210" y="232" width="570" height="26" class="s-bar"/>
+          </g>
+          <rect x="20" y="20" width="760" height="380" rx="10" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
+          <line x1="20" y1="50" x2="780" y2="50" class="s-line"/>
+          <text x="42" y="40" class="s-mono">☰   CONTENT-FACTORY  [CODESPACES]</text>
+
+          <text x="40" y="76" class="s-mono">EXPLORER</text>
+          <text x="40" y="104" class="s-txt-s">▾ CONTENT-FACTORY</text>
+          <text x="52" y="130" class="s-txt-s">▸ .business</text>
+          <text x="52" y="154" class="s-txt-s">▸ memory</text>
+          <text x="52" y="178" class="s-txt-s">CLAUDE.md</text>
+          <text x="52" y="202" class="s-txt-s">README.md</text>
+          <circle cx="176" cy="234" r="13" class="s-key"/>
+          <text x="176" y="238" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="226" y="68" class="s-mono">CLAUDE.MD</text>
+          <line x1="210" y1="76" x2="780" y2="76" class="s-line"/>
+          <g class="s-ghost">
+            <rect x="232" y="100" width="340" height="9" rx="4"/>
+            <rect x="232" y="120" width="420" height="9" rx="4"/>
+            <rect x="232" y="140" width="290" height="9" rx="4"/>
+            <rect x="232" y="160" width="380" height="9" rx="4"/>
+            <rect x="232" y="180" width="220" height="9" rx="4"/>
+          </g>
+          <circle cx="742" cy="140" r="13" class="s-key"/>
+          <text x="742" y="144" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="226" y="250" class="s-mono">PROBLEMS</text>
+          <text x="301" y="250" class="s-mono">OUTPUT</text>
+          <text x="362" y="250" class="s-mono">DEBUG CONSOLE</text>
+          <text x="472" y="250" class="s-mono" fill="var(--accent)" font-weight="700">TERMINAL</text>
+          <text x="547" y="250" class="s-mono">PORTS</text>
+          <rect x="470" y="256" width="60" height="2.5" rx="1" fill="var(--accent)"/>
+          <text x="232" y="292" class="s-term-g">@твоё-имя ➜ /workspaces/content-factory (main) $</text>
+          <rect x="232" y="304" width="9" height="14" fill="var(--term-green)"/>
+          <circle cx="742" cy="330" r="13" class="s-key"/>
+          <text x="742" y="334" text-anchor="middle" class="s-key-t">3</text>
+        </svg>
+      </div>
+      <figcaption>Схема 9 · Три области экрана VS Code</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Слева, под надписью EXPLORER, — твои файлы.</b> Вся папка целиком. Тыкаешь в файл — он открывается.</li>
+      <li><b>По центру — текст открытого файла.</b> Здесь можно читать и править руками.</li>
+      <li><b>Внизу — терминал.</b> Вкладка <em>TERMINAL</em>. Не видно панели: меню <strong>☰ → Terminal → New Terminal</strong>, либо <code>Ctrl</code> и клавиша с обратным апострофом слева от единицы.</li>
+    </ol>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">10</span>
+      <span class="eyebrow">Шаг 10 <em>· 5 минут</em></span>
+      <h2>Установить Claude Code</h2>
+    </div>
+    <p>Проверь, что VPN включён. Ткни внутрь чёрной области терминала, чтобы там замигал курсор, и вводи команды по очереди, каждый раз нажимая <code>Enter</code>.</p>
+
+    <div class="cmd"><span class="c"># 1. поставить</span>
+<span class="p">$</span> curl -fsSL https://claude.ai/install.sh | bash
+
+<span class="c"># 2. убедиться, что поставилось</span>
+<span class="p">$</span> claude --version
+
+<span class="c"># 3. запустить</span>
+<span class="p">$</span> claude</div>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 320" role="img" aria-label="Схема терминала: установка, проверка версии, запуск и вход по ссылке">
+          <rect x="20" y="20" width="760" height="280" rx="10" fill="var(--term-bg)" stroke="var(--rule)" stroke-width="1.5"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v18 h-760 z" class="s-bar"/>
+          <line x1="20" y1="48" x2="780" y2="48" class="s-line"/>
+          <text x="44" y="40" class="s-mono">TERMINAL</text>
+
+          <text x="44" y="80" class="s-term-g">$</text>
+          <text x="62" y="80" class="s-term-t">curl -fsSL https://claude.ai/install.sh | bash</text>
+          <circle cx="740" cy="76" r="13" class="s-key"/>
+          <text x="740" y="80" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="44" y="106" class="s-term-t" opacity=".55">Installing Claude Code…  done</text>
+
+          <text x="44" y="140" class="s-term-g">$</text>
+          <text x="62" y="140" class="s-term-t">claude --version</text>
+          <text x="44" y="164" class="s-term-t" opacity=".55">x.x.x (Claude Code)</text>
+          <circle cx="740" cy="136" r="13" class="s-key"/>
+          <text x="740" y="140" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="44" y="198" class="s-term-g">$</text>
+          <text x="62" y="198" class="s-term-t">claude</text>
+          <circle cx="740" cy="194" r="13" class="s-key"/>
+          <text x="740" y="198" text-anchor="middle" class="s-key-t">3</text>
+
+          <text x="44" y="232" class="s-term-t">Войти в аккаунт — открой ссылку:</text>
+          <text x="44" y="256" class="s-term-t" fill="var(--cyan)">https://claude.ai/oauth/authorize?…</text>
+          <rect x="44" y="270" width="220" height="22" rx="4" fill="none" stroke="var(--term-green)" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <text x="56" y="286" class="s-term-t" opacity=".7">вставь сюда код с сайта</text>
+          <circle cx="740" cy="264" r="13" class="s-key"/>
+          <text x="740" y="268" text-anchor="middle" class="s-key-t">4</text>
+        </svg>
+      </div>
+      <figcaption>Схема 10 · Установка и вход в терминале</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Установка.</b> Копируй строку целиком, вместе со всеми чёрточками и палочкой посередине. Полминуты будет бежать текст — так и надо.</li>
+      <li><b>Проверка.</b> В ответ появится номер версии и слова <code>(Claude Code)</code>. Написано <code>command not found</code> — закрой панель терминала и открой новую, почти всегда помогает.</li>
+      <li><b>Запуск.</b> Просто слово <code>claude</code>.</li>
+      <li><b>Вход в аккаунт.</b> Он выдаст ссылку — открой её в соседней вкладке Safari, войди аккаунтом Claude, получишь короткий код. Скопируй, вернись в терминал, вставь, <code>Enter</code>. Делается один раз. Надписи английские; если спросит тип аккаунта — выбирай вариант про подписку Claude, а не про Console.</li>
+    </ol>
+
+    <div class="note">
+      <span class="lbl">Чтобы не настраивать заново</span>
+      <p>Облачный компьютер можно останавливать и включать — всё сохраняется. Но если он однажды пересоберётся с нуля, установленное пропадёт. Попроси машину один раз:</p>
+    </div>
+
+    <div class="prompt">
+      <span class="tag">Диктуешь в терминал, где запущен claude<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Создай в репозитории файл .devcontainer/devcontainer.json так, чтобы при каждом создании Codespace автоматически ставился Node LTS и Claude Code. Объясни в двух строках, что ты сделал.</pre>
+    </div>
+
+    <div class="done"><span class="lbl">Готово, если</span><p>Claude запускается и видит твой проект. У тебя полноценная мастерская в браузере планшета.</p></div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">11</span>
+      <span class="eyebrow">Шаг 11 <em>· 1 минута</em></span>
+      <h2>Вынести мастерскую на домашний экран</h2>
+    </div>
+    <p>Мелочь, которая заметно улучшает жизнь. Safari забирает часть сочетаний клавиш себе, и в терминале это мешает. Страница, вынесенная на домашний экран, открывается без адресной строки: больше места и меньше конфликтов.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 300" role="img" aria-label="Схема: кнопка Поделиться в Safari и пункт На экран Домой">
+          <rect x="20" y="20" width="760" height="260" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v34 h-760 z" class="s-bar"/>
+          <line x1="20" y1="64" x2="780" y2="64" class="s-line"/>
+          <rect x="120" y="30" width="470" height="24" rx="12" class="s-panel"/>
+          <text x="140" y="47" class="s-mono">GITHUB.COM / CODESPACES…</text>
+
+          <rect x="618" y="30" width="28" height="24" rx="5" fill="var(--accent)"/>
+          <path d="M632 36 l0 13 M627 41 l5 -5 l5 5" stroke="var(--accent-ink)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <circle cx="680" cy="42" r="13" class="s-key"/>
+          <text x="680" y="46" text-anchor="middle" class="s-key-t">1</text>
+
+          <rect x="420" y="84" width="300" height="176" rx="10" class="s-frame"/>
+          <text x="444" y="114" class="s-txt-s">Скопировать</text>
+          <line x1="440" y1="130" x2="700" y2="130" class="s-line"/>
+          <text x="444" y="156" class="s-txt-s">Добавить в закладки</text>
+          <line x1="440" y1="172" x2="700" y2="172" class="s-line"/>
+          <rect x="432" y="180" width="276" height="30" rx="6" fill="var(--accent-wash)"/>
+          <text x="444" y="200" class="s-txt" font-weight="700">На экран «Домой»</text>
+          <line x1="440" y1="220" x2="700" y2="220" class="s-line"/>
+          <text x="444" y="244" class="s-txt-s">Напечатать</text>
+          <circle cx="746" cy="195" r="13" class="s-key"/>
+          <text x="746" y="199" text-anchor="middle" class="s-key-t">2</text>
+        </svg>
+      </div>
+      <figcaption>Схема 11 · Поделиться → На экран «Домой»</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Кнопка «Поделиться»</b> — квадрат со стрелкой вверх, в адресной строке Safari.</li>
+      <li><b>Пункт «На экран „Домой“»</b> в списке. Придётся немного прокрутить. Появится иконка, как у обычного приложения.</li>
+    </ol>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">12</span>
+      <span class="eyebrow">Шаг 12 <em>· 30 секунд, но каждый раз</em></span>
+      <h2>Выключать после работы</h2>
+    </div>
+    <p>Вот шаг, от которого зависит бесплатность всей затеи. Запас часов ограничен, и забытый включённым компьютер тикает всю ночь — съедает месячный лимит за неделю, а потом кажется, что «всё сломалось». Список смотри на <code>github.com/codespaces</code>.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 240" role="img" aria-label="Схема: список облачных компьютеров и меню с пунктом Stop codespace">
+          <rect x="20" y="20" width="760" height="200" rx="10" class="s-frame"/>
+          <text x="48" y="52" class="s-mono">GITHUB.COM/CODESPACES</text>
+          <rect x="48" y="70" width="704" height="52" rx="8" class="s-panel"/>
+          <circle cx="76" cy="96" r="6" fill="var(--ok)"/>
+          <text x="96" y="92" class="s-txt" font-weight="600">content-factory</text>
+          <text x="96" y="111" class="s-txt-s">Active · запущен 2 часа назад</text>
+          <text x="714" y="101" class="s-txt" font-weight="700">···</text>
+          <circle cx="690" cy="96" r="13" class="s-key"/>
+          <text x="690" y="100" text-anchor="middle" class="s-key-t">1</text>
+
+          <rect x="510" y="122" width="230" height="94" rx="8" class="s-frame"/>
+          <text x="528" y="146" class="s-txt-s">Open in browser</text>
+          <rect x="520" y="156" width="210" height="26" rx="5" fill="var(--accent-wash)"/>
+          <text x="528" y="174" class="s-txt" font-weight="700">Stop codespace</text>
+          <text x="528" y="202" class="s-txt-s" fill="var(--red)">Delete</text>
+          <circle cx="762" cy="169" r="13" class="s-key"/>
+          <text x="762" y="173" text-anchor="middle" class="s-key-t">2</text>
+        </svg>
+      </div>
+      <figcaption>Схема 12 · Три точки → Stop codespace</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Три точки справа</b> в строке твоего облачного компьютера.</li>
+      <li><b>«Stop codespace».</b> Не <em>Delete</em>: «стоп» просто усыпляет, все файлы на месте, завтра включишь за десять секунд. «Delete» удаляет всю машину.</li>
+    </ol>
+
+    <div class="warn">
+      <span class="lbl">Привычка, которая экономит деньги</span>
+      <p>Закончил работу — остановил. Заведи это в ритуал, как выключить свет, выходя из комнаты. Именно этот шаг держит маршрут бесплатным.</p>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 4 ============ -->
+  <div class="part"><b>Часть 4</b><h2>Мост: твои файлы в проекте</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">13</span>
+      <span class="eyebrow">Шаг 13 <em>· 10 минут</em></span>
+      <h2>Класть файлы в проект</h2>
+    </div>
+    <p>Рано или поздно понадобится закинуть в проект свои фото. Есть два пути — бесплатный и удобный.</p>
+
+    <h3>Бесплатный: прямо через сайт</h3>
+    <p>Открываешь свой репозиторий на github.com в Safari → <strong>Add file → Upload files</strong> → выбираешь фото из «Файлов» или галереи → <strong>Commit changes</strong>. Ничего ставить не нужно, работает с планшета как есть. Для десятка картинок в неделю этого достаточно.</p>
+
+    <h3>Удобный: приложение Working Copy</h3>
+    <p>Оно делает копию твоей папки прямо в «Файлах» на iPad — можно перетаскивать фото и править тексты офлайн.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 340" role="img" aria-label="Схема: Working Copy клонирует репозиторий, папка появляется в приложении Файлы">
+          <rect x="20" y="20" width="360" height="300" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h340 a10 10 0 0 1 10 10 v26 h-360 z" class="s-bar"/>
+          <line x1="20" y1="56" x2="380" y2="56" class="s-line"/>
+          <text x="44" y="45" class="s-txt" font-weight="700">Repositories</text>
+          <circle cx="346" cy="42" r="13" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+          <text x="346" y="47" text-anchor="middle" class="s-txt" font-weight="700" fill="var(--accent)">+</text>
+          <circle cx="392" cy="72" r="13" class="s-key"/>
+          <text x="392" y="76" text-anchor="middle" class="s-key-t">1</text>
+          <path d="M382 62 L356 50" class="s-mark"/>
+
+          <rect x="44" y="78" width="312" height="86" rx="8" class="s-panel"/>
+          <text x="62" y="102" class="s-txt-s">Clone repository</text>
+          <rect x="62" y="112" width="70" height="22" rx="11" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1"/>
+          <text x="97" y="127" text-anchor="middle" class="s-mono" fill="var(--cyan)">GITHUB</text>
+          <rect x="142" y="112" width="80" height="22" rx="11" class="s-panel"/>
+          <text x="182" y="127" text-anchor="middle" class="s-mono">BITBUCKET</text>
+          <rect x="246" y="108" width="94" height="30" rx="7" class="s-btn"/>
+          <text x="293" y="128" text-anchor="middle" class="s-btn-t">Clone</text>
+          <circle cx="392" cy="123" r="13" class="s-key"/>
+          <text x="392" y="127" text-anchor="middle" class="s-key-t">2</text>
+
+          <rect x="44" y="182" width="312" height="58" rx="8" fill="var(--cyan-wash)" stroke="var(--rule)" stroke-width="1"/>
+          <text x="62" y="206" class="s-txt" font-weight="600">content-factory</text>
+          <text x="62" y="227" class="s-txt-s">Синхронизирован</text>
+
+          <rect x="44" y="258" width="90" height="32" rx="7" class="s-btn"/>
+          <text x="89" y="279" text-anchor="middle" class="s-btn-t">Commit</text>
+          <rect x="144" y="258" width="90" height="32" rx="7" class="s-btn"/>
+          <text x="189" y="279" text-anchor="middle" class="s-btn-t">Push</text>
+          <circle cx="266" cy="274" r="13" class="s-key"/>
+          <text x="266" y="278" text-anchor="middle" class="s-key-t">4</text>
+
+          <path d="M414 170 L444 170" class="s-line"/>
+          <path d="M436 164 l8 6 l-8 6" class="s-line"/>
+
+          <rect x="456" y="20" width="324" height="300" rx="10" class="s-frame"/>
+          <path d="M456 30 a10 10 0 0 1 10 -10 h304 a10 10 0 0 1 10 10 v26 h-324 z" class="s-bar"/>
+          <line x1="456" y1="56" x2="780" y2="56" class="s-line"/>
+          <text x="480" y="45" class="s-txt" font-weight="700">Файлы</text>
+
+          <text x="480" y="88" class="s-txt-s">iCloud Drive</text>
+          <text x="480" y="116" class="s-txt-s">На iPad</text>
+          <rect x="470" y="128" width="296" height="30" rx="6" fill="var(--accent-wash)"/>
+          <text x="480" y="148" class="s-txt" font-weight="700">Working Copy › content-factory</text>
+          <circle cx="440" cy="143" r="13" class="s-key"/>
+          <text x="440" y="147" text-anchor="middle" class="s-key-t">3</text>
+
+          <text x="500" y="184" class="s-txt-s">.business</text>
+          <text x="500" y="210" class="s-txt-s">memory</text>
+          <text x="500" y="236" class="s-txt-s">CLAUDE.md</text>
+          <rect x="492" y="252" width="266" height="34" rx="7" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="5 4"/>
+          <text x="504" y="274" class="s-txt-s">перетащи сюда фото из галереи</text>
+        </svg>
+      </div>
+      <figcaption>Схема 13 · Working Copy → папка проекта в «Файлах»</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Кнопка «+»</b> в правом верхнем углу списка репозиториев.</li>
+      <li><b>Вкладка GitHub → кнопка «Clone».</b> Войдёшь своим аккаунтом, выберешь <code>content-factory</code>. «Клонировать» значит «скачать копию на планшет».</li>
+      <li><b>Папка появляется в «Файлах»</b> в разделе Working Copy. Теперь можно перетаскивать в неё фото прямо из галереи и править тексты офлайн — хоть в самолёте.</li>
+      <li><b>«Commit», потом «Push».</b> Сначала сохранил версию, потом отправил в интернет. Через пять секунд это видит и Claude, и облачный компьютер.</li>
+    </ol>
+
+    <div class="warn">
+      <span class="lbl">Два подводных камня</span>
+      <p><strong>Push — платная возможность.</strong> Скачивать и читать Working Copy позволяет бесплатно, а отправлять изменения обратно — только после разовой покупки внутри приложения. Не хочешь платить — пользуйся бесплатным путём через сайт, он делает то же самое.</p>
+      <p>Папка не появилась в «Файлах» — включи её: <strong>Файлы → Обзор → «···» → Изменить</strong> и переключи <strong>Working Copy</strong>. После обновлений приложения этот переключатель иногда слетает.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">14</span>
+      <span class="eyebrow">Шаг 14 <em>· правило на всю программу</em></span>
+      <h2>Что держать на планшете, а что в репозитории</h2>
+    </div>
+    <p>Единственное место, где легко всё сломать. Репозиторий — не файлохранилище: GitHub не принимает файлы тяжелее сотни мегабайт и начинает буксовать на больших папках. Закинешь исходники съёмки — всё встанет колом.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>На терабайте — «Файлы», «Фото», внешний диск</th><th>В репозитории</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Сырое видео со съёмок, исходники рилсов</td><td>Сценарии, тексты, посты, описания</td></tr>
+          <tr><td>Полная фотобиблиотека</td><td>10–20 отобранных сжатых фото под контент</td></tr>
+          <tr><td>Проекты монтажа и экспорт</td><td><code>CLAUDE.md</code>, бизнес-контекст, память, скиллы</td></tr>
+          <tr><td>Аудио, записи созвонов</td><td>Расшифровки и выжимки этих записей</td></tr>
+          <tr><td>Всё, что весит больше ~50 МБ</td><td>Всё, что машина должна читать и помнить</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Правило одной строкой: <strong>машина работает со смыслами, планшет — с килограммами.</strong></p>
+  </section>
+
+  <!-- ============ ЧАСТЬ 5 ============ -->
+  <div class="part"><b>Часть 5</b><h2>Рабочее место</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">15</span>
+      <span class="eyebrow">Шаг 15 <em>· 10 минут, один раз</em></span>
+      <h2>Разложить окна</h2>
+    </div>
+    <p>В свежих версиях iPadOS окна ведут себя как на компьютере: их можно двигать, тянуть за угол и держать несколько сразу. Разложи один раз — дальше просто возвращаешься к готовому столу.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 400" role="img" aria-label="Схема раскладки четырёх окон на экране iPad">
+          <rect x="20" y="20" width="760" height="360" rx="14" class="s-panel"/>
+
+          <rect x="44" y="40" width="436" height="240" rx="9" class="s-frame"/>
+          <path d="M44 49 a9 9 0 0 1 9 -9 h418 a9 9 0 0 1 9 9 v15 h-436 z" class="s-bar"/>
+          <line x1="44" y1="64" x2="480" y2="64" class="s-line"/>
+          <circle cx="60" cy="52" r="4" class="s-ghost2"/><circle cx="74" cy="52" r="4" class="s-ghost2"/><circle cx="88" cy="52" r="4" class="s-ghost2"/>
+          <text x="112" y="56" class="s-mono">РЕДАКТОР В SAFARI</text>
+          <rect x="56" y="76" width="90" height="192" rx="5" class="s-panel"/>
+          <rect x="158" y="76" width="310" height="112" rx="5" class="s-panel"/>
+          <rect x="158" y="196" width="310" height="72" rx="5" fill="var(--term-bg)"/>
+          <circle cx="30" cy="160" r="13" class="s-key"/>
+          <text x="30" y="164" text-anchor="middle" class="s-key-t">1</text>
+
+          <rect x="500" y="40" width="256" height="150" rx="9" class="s-frame"/>
+          <path d="M500 49 a9 9 0 0 1 9 -9 h238 a9 9 0 0 1 9 9 v15 h-256 z" class="s-bar"/>
+          <line x1="500" y1="64" x2="756" y2="64" class="s-line"/>
+          <text x="518" y="56" class="s-mono">CLAUDE</text>
+          <rect x="516" y="82" width="170" height="10" rx="5" class="s-ghost"/>
+          <rect x="516" y="102" width="210" height="10" rx="5" class="s-ghost"/>
+          <rect x="556" y="132" width="184" height="34" rx="8" fill="var(--cyan-wash)" stroke="var(--rule)" stroke-width="1"/>
+          <circle cx="776" cy="112" r="13" class="s-key"/>
+          <text x="776" y="116" text-anchor="middle" class="s-key-t">2</text>
+
+          <rect x="500" y="206" width="256" height="150" rx="9" class="s-frame"/>
+          <path d="M500 215 a9 9 0 0 1 9 -9 h238 a9 9 0 0 1 9 9 v15 h-256 z" class="s-bar"/>
+          <line x1="500" y1="230" x2="756" y2="230" class="s-line"/>
+          <text x="518" y="222" class="s-mono">WORKING COPY</text>
+          <text x="518" y="256" class="s-txt-s">.business</text>
+          <text x="518" y="282" class="s-txt-s">memory</text>
+          <text x="518" y="308" class="s-txt-s">CLAUDE.md</text>
+          <circle cx="776" cy="280" r="13" class="s-key"/>
+          <text x="776" y="284" text-anchor="middle" class="s-key-t">3</text>
+
+          <rect x="44" y="296" width="436" height="60" rx="9" class="s-frame"/>
+          <path d="M44 305 a9 9 0 0 1 9 -9 h418 a9 9 0 0 1 9 9 v13 h-436 z" class="s-bar"/>
+          <line x1="44" y1="318" x2="480" y2="318" class="s-line"/>
+          <text x="64" y="312" class="s-mono">ФАЙЛЫ · ФОТО</text>
+          <rect x="64" y="328" width="60" height="18" rx="4" class="s-ghost"/>
+          <rect x="132" y="328" width="60" height="18" rx="4" class="s-ghost"/>
+          <rect x="200" y="328" width="60" height="18" rx="4" class="s-ghost"/>
+          <circle cx="30" cy="326" r="13" class="s-key"/>
+          <text x="30" y="330" text-anchor="middle" class="s-key-t">4</text>
+        </svg>
+      </div>
+      <figcaption>Схема 14 · Рабочая раскладка на экране iPad</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Редактор — самое большое окно.</b> Основная работа идёт здесь.</li>
+      <li><b>Приложение Claude</b> рядом: задать быстрый вопрос голосом, не трогая мастерскую.</li>
+      <li><b>Working Copy</b> — видно файлы проекта, отсюда отправляешь изменения.</li>
+      <li><b>«Файлы» и «Фото»</b> — отсюда таскаешь материал в папку проекта.</li>
+    </ol>
+
+    <ul class="plain">
+      <li><strong>Внешняя клавиатура обязательна.</strong> В терминале нужны <code>Ctrl</code>, <code>Esc</code> и <code>Tab</code> — на экранной их нет.</li>
+      <li><strong>Есть монитор с USB-C?</strong> Подключай: получишь полноценный рабочий стол, планшет станет трекпадом.</li>
+      <li><strong>Мало терабайта под съёмки</strong> — внешний SSD в порт, он виден в «Файлах».</li>
+    </ul>
+  </section>
+
+  <!-- ============ ЧАСТЬ 6 ============ -->
+  <div class="part"><b>Часть 6</b><h2>Границы и правила</h2></div>
+
+  <section class="step">
+    <h3>Три вещи, которых на этом маршруте нет</h3>
+    <p>Знай заранее, чтобы в середине программы не решить, что у тебя что-то сломалось.</p>
+    <ul class="plain">
+      <li><strong>Локального терминала на iPad нет и не будет.</strong> Приложения из App Store, которые выглядят как терминал, Claude Code не запустят. Твой терминал — в облаке.</li>
+      <li><strong>Автоматизация браузера недоступна.</strong> Скрипты, которые сами ходят по сайтам под твоим логином, отсюда не работают. Пока делаешь эти шаги руками — дольше, но не блокирует.</li>
+      <li><strong>Работа по расписанию.</strong> Обходится бесплатным планировщиком GitHub, но полноценно закрывается только своей машиной. Разбираем на модуле 04.</li>
+    </ul>
+
+    <div class="note">
+      <span class="lbl">Когда пора на второй маршрут</span>
+      <p>Если начнёт не хватать часов, понадобится расписание или автоматизация браузера — переходишь на <strong>аренду своей машины</strong>. Это от 1 700 ₽ в месяц, без лимитов, с полноценным рабочим столом. Правильный момент — модуль 04, не раньше: сначала бесплатно доведи фундамент до результата.</p>
+    </div>
+
+    <h3>Правила, которые не зависят от железа</h3>
+    <ul class="plain">
+      <li><strong>Сначала контекст, потом задача.</strong> Пустому Claude не дают заданий.</li>
+      <li><strong>Одна задача — один чат.</strong> Дошёл до половины памяти — закрывай сессию, начинай новую.</li>
+      <li><strong>Правь контекст, а не результат.</strong> Не переписывай текст руками — переписывай задачу и паспорт проекта.</li>
+      <li><strong>Голос вместо клавиатуры.</strong> На планшете это даёт даже больше выигрыша, чем на компьютере.</li>
+      <li><strong>Всё ценное — в репозиторий.</strong> Чего нет в репозитории, того для машины не существует.</li>
+    </ul>
+  </section>
+
+  <section class="step">
+    <h2>Чек-лист: я готов работать</h2>
+    <ul class="check">
+      <li>VPN включён, страна США</li>
+      <li>Claude Pro оплачен (своей картой или готовым аккаунтом)</li>
+      <li>App Store переключён на США</li>
+      <li>Приложение Claude стоит, раздел <strong>Code</strong> виден</li>
+      <li>Создан приватный репозиторий, GitHub подключён к Claude</li>
+      <li>Прогнан мастер-промт: в репозитории лежат <code>CLAUDE.md</code>, бизнес-контекст, память</li>
+      <li>Облачный компьютер открывается, <code>claude --version</code> отвечает номером версии</li>
+      <li>Мастерская вынесена на домашний экран, подключена внешняя клавиатура</li>
+      <li>Умею класть свои файлы в репозиторий</li>
+      <li><strong>Умею останавливать облачный компьютер</strong> — от этого зависит бесплатность</li>
+      <li><strong>Первый контент, собранный машиной, — скрин в чат потока</strong></li>
+    </ul>
+  </section>
+
+  <section class="step">
+    <h2>Если застрял</h2>
+    <p>Скопируй текст ошибки <strong>целиком</strong> и вставь прямо в Claude — в восьми случаях из десяти он разберётся сам. Не разобрался — неси ошибку в чат потока.</p>
+    <p>Ошибки на установке — норма, через них проходят все. Запрещено одно: сидеть в тупике сутки и молчать.</p>
+  </section>
+
+  <section class="step">
+    <h2>Словарь</h2>
+    <dl class="gloss">
+      <dt>Репозиторий</dt><dd>Твоя рабочая папка, которая лежит в интернете и доступна машине.</dd>
+      <dt>Коммит</dt><dd>Сохранённая версия. Как «сохранить как» с подписью, что именно поменял.</dd>
+      <dt>Push / Pull</dt><dd>Отправить свои изменения в интернет / забрать оттуда новые.</dd>
+      <dt>Ветка, main</dt><dd>Основная версия папки. Машина работает в стороне и приносит результат на утверждение.</dd>
+      <dt>Pull Request, PR</dt><dd>Работа на подпись. Смотришь, что предлагает машина, и жмёшь Merge.</dd>
+      <dt>Терминал</dt><dd>Чёрное окно, куда пишут короткие команды. Живёт внизу редактора.</dd>
+      <dt>Облачный компьютер</dt><dd>Машина, которую GitHub выдаёт в браузере. Бесплатно в пределах месячного запаса часов.</dd>
+      <dt>CLAUDE.md</dt><dd>Паспорт проекта. Машина читает его в начале каждой сессии.</dd>
+    </dl>
+  </section>
+
+  <footer class="foot col">
+    <p>Приложение к модулю 00 «Фундамент» программы «Контент-завод на коде». Маршрут без аренды сервера. Схемы условные: названия кнопок и их расположение соответствуют реальным интерфейсам, оформление — нет. Ревизия 30.07.2026.</p>
+  </footer>
+
+</div>
+<section class="step"><p style="text-align:center"><a href="#vybor">↑ Вернуться к выбору маршрута</a></p></section>
+<div class="wrap">
+
+  <header class="mast col">
+    <div class="stamp">
+      <span>Модуль 00 · Фундамент</span>
+      <span>Рабочее место: iPad + облачный компьютер</span>
+      <span>Ревизия 30.07.2026</span>
+    </div>
+    <h1>Компьютер внутри планшета</h1>
+    <p class="dek">Сборка контент-завода для того, у кого нет компьютера. Арендуем машину за границей, подключаемся к ней с айпада — и работаем как за обычным столом. Каждый шаг со схемой экрана.</p>
+  </header>
+
+  <!-- ============ ЧАСТЬ 0 ============ -->
+  <div class="part" id="marshrut-2"><b>Маршрут 2</b><h2>Своя машина — компьютер внутри планшета</h2></div>
+  <div class="part"><b>Часть 0</b><h2>Как это устроено</h2></div>
+
+  <section class="step">
+    <p>Начну с того, что сэкономит тебе вечер поисков: <strong>поставить Claude Code прямо на iPad нельзя.</strong> Apple не разрешает запускать на планшете программы для разработки — терминала в системе нет и не появится. Приложения из App Store, которые выглядят как терминал, не помогут.</p>
+
+    <p>Поэтому мы не мучаем планшет, а даём тебе <strong>настоящий компьютер</strong> — просто он стоит не на столе, а в дата-центре в Европе. Ты подключаешься к нему с айпада и видишь обычный рабочий стол: окна, мышь, папки. Всё выполняется там.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 350" role="img" aria-label="Схема: iPad как экран, облачный компьютер как рабочая машина, GitHub как дом системы">
+          <rect x="24" y="30" width="200" height="170" rx="12" class="s-frame"/>
+          <text x="124" y="62" text-anchor="middle" class="s-txt" font-weight="700">iPad</text>
+          <text x="124" y="82" text-anchor="middle" class="s-txt-s">это только экран</text>
+          <line x1="48" y1="96" x2="200" y2="96" class="s-line"/>
+          <rect x="56" y="110" width="136" height="72" rx="8" class="s-panel"/>
+          <text x="124" y="140" text-anchor="middle" class="s-txt-s">приложение</text>
+          <text x="124" y="158" text-anchor="middle" class="s-txt-s">удалённого доступа</text>
+          <text x="124" y="176" text-anchor="middle" class="s-mono">RDP-КЛИЕНТ</text>
+
+          <path d="M236 115 L280 115" class="s-line"/>
+          <path d="M272 109 l8 6 l-8 6" class="s-line"/>
+          <text x="258" y="103" text-anchor="middle" class="s-mono">ИНТЕРНЕТ</text>
+
+          <rect x="292" y="30" width="484" height="170" rx="10" class="s-frame"/>
+          <path d="M292 40 a10 10 0 0 1 10 -10 h464 a10 10 0 0 1 10 10 v22 h-484 z" class="s-bar"/>
+          <line x1="292" y1="52" x2="776" y2="52" class="s-line"/>
+          <circle cx="310" cy="41" r="4" class="s-ghost2"/><circle cx="324" cy="41" r="4" class="s-ghost2"/><circle cx="338" cy="41" r="4" class="s-ghost2"/>
+          <text x="366" y="45" class="s-mono">ОБЛАЧНЫЙ КОМПЬЮТЕР · ЕВРОПА · 24/7</text>
+
+          <rect x="312" y="70" width="200" height="62" rx="6" fill="var(--term-bg)"/>
+          <text x="326" y="92" class="s-term-g">$ claude</text>
+          <rect x="326" y="100" width="8" height="12" fill="var(--term-green)"/>
+          <text x="328" y="150" class="s-mono">ТЕРМИНАЛ · CLAUDE CODE</text>
+
+          <rect x="530" y="70" width="226" height="62" rx="6" class="s-panel"/>
+          <rect x="542" y="80" width="202" height="10" rx="4" class="s-ghost"/>
+          <rect x="542" y="98" width="130" height="8" rx="4" class="s-ghost"/>
+          <rect x="542" y="112" width="160" height="8" rx="4" class="s-ghost"/>
+          <text x="546" y="150" class="s-mono">VS CODE · БРАУЗЕР · ФАЙЛЫ</text>
+
+          <rect x="312" y="164" width="444" height="26" rx="6" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1"/>
+          <text x="326" y="182" class="s-txt-s">Не выключается: задачи по расписанию идут сами</text>
+
+          <path d="M534 212 L534 240" class="s-line"/>
+          <path d="M528 232 l6 8 l6 -8" class="s-line"/>
+
+          <rect x="292" y="248" width="484" height="76" rx="8" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1.5"/>
+          <text x="316" y="276" class="s-txt" font-weight="700">GitHub — дом системы</text>
+          <text x="316" y="298" class="s-txt-s">CLAUDE.md · бизнес-контекст · память · скиллы</text>
+          <text x="316" y="315" class="s-mono">СЕРВЕР МОЖНО ПОТЕРЯТЬ — СИСТЕМА ОСТАНЕТСЯ</text>
+
+          <rect x="24" y="248" width="244" height="76" rx="8" class="s-panel"/>
+          <text x="48" y="276" class="s-txt" font-weight="700">Терабайт планшета</text>
+          <text x="48" y="298" class="s-txt-s">съёмки, фото, монтаж</text>
+          <text x="48" y="315" class="s-mono">ТЯЖЁЛОЕ ОСТАЁТСЯ ЗДЕСЬ</text>
+        </svg>
+      </div>
+      <figcaption>Схема 1 · Планшет, облачный компьютер и репозиторий</figcaption>
+    </figure>
+
+    <h3>Три вещи, которые надо развести в голове</h3>
+    <ul class="plain">
+      <li><strong>Планшет — экран.</strong> Его мощность здесь вообще не важна: он показывает картинку и передаёт нажатия.</li>
+      <li><strong>Облачный компьютер — рабочая машина.</strong> На нём стоят VS Code, Claude Code и браузер. Он не спит, поэтому конвейер может запускаться сам.</li>
+      <li><strong>GitHub — дом системы.</strong> Сюда складываются паспорт проекта, бизнес-контекст, память и скиллы. Это важнее, чем кажется: сервер арендованный, его можно потерять или перестать оплачивать. Всё, что лежит в репозитории, переживёт это спокойно.</li>
+    </ul>
+
+    <h3>Сколько это стоит</h3>
+    <p>Считаем честно, до начала работы. Это <strong>ежемесячные</strong> расходы, разовых вложений нет.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>За что</th><th>Сколько</th><th>Комментарий</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Claude Pro</strong></td>
+            <td>$20 в месяц<br><span class="s-mono">ИЛИ $17 ПРИ ГОДОВОЙ ОПЛАТЕ</span></td>
+            <td>Годовая берётся сразу за $200. Начни с помесячной</td>
+          </tr>
+          <tr>
+            <td><strong>Сервер на Linux</strong><br>2 ядра · 4 ГБ — для старта</td>
+            <td>около 1 700 ₽ в месяц</td>
+            <td>Разумный вход. Подрастить конфиг можно в пару кликов, когда упрёшься</td>
+          </tr>
+          <tr>
+            <td><strong>Сервер на Linux</strong><br>4 ядра · 8 ГБ — с запасом</td>
+            <td>около 3 400 ₽ в месяц</td>
+            <td>Рабочий стол ставится вручную, один раз, минут пятнадцать</td>
+          </tr>
+          <tr>
+            <td><strong>Сервер на Windows</strong><br>4 ядра · 8 ГБ</td>
+            <td>около 5 100 ₽ в месяц</td>
+            <td>Дороже на лицензию, зато готов к работе сразу</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Значит вход в систему — <strong>около 3 700 ₽ в месяц</strong>: подписка плюс младший сервер. Максимум, если хочешь мощнее и без возни с настройкой, — <strong>около 7 100 ₽</strong>. Между этими двумя цифрами ты выбираешь сам, и в шаге 03 разобрано, за что именно доплачиваешь.</p>
+
+    <p>Это плата за полноценную рабочую машину без покупки компьютера. Ноутбук того же класса стоит как год такой аренды — и его нельзя выключить в месяц, когда он не нужен. А если появится зарубежная карта, цена сервера падает ещё в разы — про это тоже в шаге 03.</p>
+
+    <div class="note">
+      <span class="lbl">Как посмотреть бесплатно, прежде чем платить</span>
+      <p>У RuVDS есть <strong>бесплатный тест на 3 дня</strong>, но он действует на серверы дешевле 3 000 ₽ — рабочий конфиг в него не попадает. Схема такая: берёшь на тест <strong>младший тариф</strong>, проверяешь на нём главное — открывается ли claude.ai и не тормозит ли курсор, — и только потом оплачиваешь нормальную машину. Мощность на этом этапе не важна, ты проверяешь связь, а не производительность.</p>
+    </div>
+
+    <div class="warn">
+      <span class="lbl">Главная ошибка новичка</span>
+      <p>Держать всё только на арендованной машине, потому что «так проще». Через полгода сервер отвалится — и уйдёт весь завод. <strong>Система живёт в репозитории</strong>, сервер лишь выполняет её. Это правило номер один.</p>
+    </div>
+
+    <div class="note">
+      <span class="lbl">Про картинки в этой инструкции</span>
+      <p>Все схемы — <strong>чертежи</strong>, а не фотографии экрана. Названия кнопок и их расположение настоящие, оформление условное. И почти всё будет по-английски: названия я специально оставил как в оригинале, переводить в голове не нужно.</p>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 1 ============ -->
+  <div class="part"><b>Часть 1</b><h2>Доступы</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">01</span>
+      <span class="eyebrow">Шаг 01 <em>· 15 минут</em></span>
+      <h2>Оплатить Claude Pro</h2>
+    </div>
+    <p>Нам нужен не обычный чат, а <strong>Claude Code</strong> — режим, где машина работает с файлами твоего проекта. Он открывается на планах <strong>Pro</strong> и <strong>Max</strong>.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 300" role="img" aria-label="Схема выбора тарифного плана на claude.ai с выделенным планом Pro">
+          <rect x="20" y="20" width="760" height="260" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v30 h-760 z" class="s-bar"/>
+          <line x1="20" y1="60" x2="780" y2="60" class="s-line"/>
+          <circle cx="46" cy="40" r="5" class="s-ghost2"/>
+          <text x="66" y="44" class="s-mono">CLAUDE.AI</text>
+
+          <text x="400" y="92" text-anchor="middle" class="s-txt" font-weight="700">Выбери план</text>
+
+          <rect x="52" y="112" width="216" height="140" rx="9" class="s-panel"/>
+          <text x="72" y="140" class="s-txt" font-weight="700">Free</text>
+          <text x="72" y="164" class="s-txt-s">обычный чат</text>
+          <text x="72" y="186" class="s-txt-s" fill="var(--red)">Claude Code недоступен</text>
+
+          <rect x="292" y="102" width="216" height="160" rx="9" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2"/>
+          <text x="312" y="132" class="s-txt" font-weight="700">Pro</text>
+          <text x="312" y="156" class="s-txt-s">актуальная цена — на сайте</text>
+          <text x="312" y="178" class="s-txt-s">Claude Code включён</text>
+          <rect x="312" y="196" width="120" height="32" rx="7" class="s-btn"/>
+          <text x="372" y="217" text-anchor="middle" class="s-btn-t">Subscribe</text>
+          <circle cx="272" cy="126" r="13" class="s-key"/>
+          <text x="272" y="130" text-anchor="middle" class="s-key-t">1</text>
+          <circle cx="464" cy="212" r="13" class="s-key"/>
+          <text x="464" y="216" text-anchor="middle" class="s-key-t">2</text>
+
+          <rect x="532" y="112" width="216" height="140" rx="9" class="s-panel"/>
+          <text x="552" y="140" class="s-txt" font-weight="700">Max</text>
+          <text x="552" y="164" class="s-txt-s">то же, но лимиты выше</text>
+          <text x="552" y="186" class="s-txt-s">для старта избыточно</text>
+          <circle cx="512" cy="126" r="13" class="s-key"/>
+          <text x="512" y="130" text-anchor="middle" class="s-key-t">3</text>
+        </svg>
+      </div>
+      <figcaption>Схема 2 · claude.ai — выбор плана</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Pro — твой план.</b> Именно на нём открывается Claude Code. На бесплатном его нет вовсе, и это не обходится никакими настройками.</li>
+      <li><b>Кнопка оплаты.</b> Цену смотри на сайте — она меняется, и я не хочу называть тебе устаревшую.</li>
+      <li><b>Max брать не надо.</b> Он отличается только размером лимитов; на старте ты в них не упрёшься, а платить будешь больше.</li>
+    </ol>
+
+    <h3>Путь 1: своя карта</h3>
+    <p>Заходишь на <code>claude.ai</code>, регистрируешься, выбираешь Pro. Российская карта не пройдёт — нужна зарубежная.</p>
+
+    <h3>Путь 2: купить готовый аккаунт</h3>
+    <p>Карты нет — берёшь готовый аккаунт вместе с гугл-почтой здесь:</p>
+    <p><a href="https://plati.market/games/claude/1543/">plati.market → Claude</a></p>
+    <p>Рабочий обходной путь, им пользуются. Но купленный аккаунт — чужая учётка, и её могут заблокировать. Относись к нему как к арендованному, а не как к своему навсегда.</p>
+
+    <div class="note">
+      <span class="lbl">Почему блокировка не страшна</span>
+      <p>Именно поэтому система с первого дня складывается <strong>в репозиторий на GitHub</strong>, а не «внутрь Claude». Аккаунт заблокируют — заведёшь новый, подключишь к тому же репозиторию, и вся работа на месте.</p>
+    </div>
+
+    <div class="note">
+      <span class="lbl">Про VPN</span>
+      <p>Для работы с Claude он <strong>не нужен</strong>: твой сервер и так стоит за границей, весь обмен с Anthropic идёт с его адреса. VPN понадобится только в одном случае — если твой провайдер не пропускает соединение до сервера. Проверишь на шаге 04; если подключение проходит, забудь про VPN совсем.</p>
+    </div>
+
+    <div class="warn">
+      <span class="lbl">Это стопор</span>
+      <p>Без Pro дальше идти бессмысленно: Claude Code не запустится. Не переходи к следующему шагу, пока подписка не активна.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">02</span>
+      <span class="eyebrow">Шаг 02 <em>· 8 минут</em></span>
+      <h2>Завести GitHub и создать репозиторий</h2>
+    </div>
+    <p>GitHub — место, где будет жить твоя рабочая папка. Забудь формулировку «для программистов»: для тебя это <strong>папка в интернете, к которой имеет доступ машина</strong>.</p>
+    <ul class="plain">
+      <li>Идёшь на <code>github.com</code> → <strong>Sign up</strong> → почта, пароль, имя пользователя.</li>
+      <li>Бесплатного аккаунта хватит на всю программу.</li>
+      <li>Имя пользователя — короткое и латиницей: оно будет частью всех адресов.</li>
+    </ul>
+
+    <p>Дальше создаёшь саму папку. Открой адрес <code>github.com/new</code>.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 440" role="img" aria-label="Схема формы создания репозитория на GitHub">
+          <rect x="20" y="20" width="760" height="400" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v30 h-760 z" class="s-bar"/>
+          <line x1="20" y1="60" x2="780" y2="60" class="s-line"/>
+          <circle cx="46" cy="40" r="5" class="s-ghost2"/>
+          <text x="66" y="44" class="s-mono">GITHUB.COM/NEW</text>
+
+          <text x="52" y="94" class="s-txt" font-weight="700">Create a new repository</text>
+
+          <text x="52" y="126" class="s-txt-s">Owner *</text>
+          <rect x="52" y="134" width="150" height="32" rx="6" class="s-panel"/>
+          <text x="66" y="155" class="s-txt-s">твоё-имя</text>
+          <text x="212" y="155" class="s-txt">/</text>
+          <text x="232" y="126" class="s-txt-s">Repository name *</text>
+          <rect x="232" y="134" width="250" height="32" rx="6" class="s-panel"/>
+          <text x="246" y="155" class="s-txt">content-factory</text>
+          <circle cx="512" cy="150" r="13" class="s-key"/>
+          <text x="512" y="154" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="52" y="194" class="s-txt-s">Description (optional)</text>
+          <rect x="52" y="202" width="430" height="32" rx="6" class="s-panel"/>
+
+          <circle cx="62" cy="256" r="7" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
+          <text x="80" y="253" class="s-txt-s">Public</text>
+          <text x="80" y="269" class="s-mono">ВИДНО ВСЕМ В ИНТЕРНЕТЕ</text>
+          <circle cx="62" cy="292" r="7" fill="var(--accent)"/>
+          <circle cx="62" cy="292" r="2.6" fill="var(--screen)"/>
+          <text x="80" y="289" class="s-txt" font-weight="700">Private</text>
+          <text x="80" y="305" class="s-mono">ВИДНО ТОЛЬКО ТЕБЕ</text>
+          <circle cx="330" cy="292" r="13" class="s-key"/>
+          <text x="330" y="296" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="52" y="340" class="s-txt-s">Initialize this repository with:</text>
+          <rect x="52" y="352" width="18" height="18" rx="4" fill="var(--accent)"/>
+          <path d="M56 361 l4 4 l7 -8" stroke="var(--screen)" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="80" y="366" class="s-txt">Add a README file</text>
+          <circle cx="272" cy="361" r="13" class="s-key"/>
+          <text x="272" y="365" text-anchor="middle" class="s-key-t">3</text>
+
+          <rect x="592" y="362" width="160" height="36" rx="7" class="s-btn"/>
+          <text x="672" y="385" text-anchor="middle" class="s-btn-t">Create repository</text>
+          <circle cx="570" cy="380" r="13" class="s-key"/>
+          <text x="570" y="384" text-anchor="middle" class="s-key-t">4</text>
+        </svg>
+      </div>
+      <figcaption>Схема 3 · github.com/new — форма создания папки</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Repository name</b> — имя папки. Латиницей, без пробелов, например <code>content-factory</code>. Слева в поле <b>Owner</b> уже стоит твоё имя, его не трогай.</li>
+      <li><b>Обязательно Private.</b> Иначе твой бизнес-контекст и заметки увидит любой прохожий.</li>
+      <li><b>Галочка «Add a README file».</b> Без неё папка создастся совсем пустой.</li>
+      <li><b>Зелёная кнопка «Create repository»</b> внизу справа.</li>
+    </ol>
+
+    <div class="note">
+      <span class="lbl">Три слова, и хватит</span>
+      <p><strong>Репозиторий</strong> — папка в интернете. <strong>Коммит</strong> — сохранил версию. <strong>Пуш</strong> — отправил её в интернет. Больше про git знать не нужно, остальное делает машина.</p>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 2 ============ -->
+  <div class="part"><b>Часть 2</b><h2>Машина</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">03</span>
+      <span class="eyebrow">Шаг 03 <em>· 20 минут</em></span>
+      <h2>Арендовать компьютер</h2>
+    </div>
+    <p>Берёшь у хостинг-провайдера виртуальный компьютер — это обычная услуга, оформляется как подписка на сервис. Форма заказа у всех примерно одинаковая: три решения и кнопка.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 380" role="img" aria-label="Схема формы заказа сервера: локация, образ системы, размер, кнопка создания и выданные доступы">
+          <rect x="20" y="20" width="760" height="230" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v28 h-760 z" class="s-bar"/>
+          <line x1="20" y1="58" x2="780" y2="58" class="s-line"/>
+          <text x="44" y="46" class="s-txt" font-weight="700">Создать сервер</text>
+
+          <text x="44" y="88" class="s-txt-s">Локация</text>
+          <rect x="44" y="98" width="200" height="34" rx="7" fill="var(--accent-wash)"/>
+          <text x="60" y="120" class="s-txt" font-weight="700">Амстердам</text>
+          <path d="M216 112 l6 7 l6 -7" class="s-line"/>
+          <circle cx="268" cy="115" r="13" class="s-key"/>
+          <text x="268" y="119" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="308" y="88" class="s-txt-s">Образ системы</text>
+          <rect x="308" y="98" width="230" height="34" rx="7" class="s-panel"/>
+          <text x="324" y="120" class="s-txt">Windows / Ubuntu Desktop</text>
+          <circle cx="562" cy="115" r="13" class="s-key"/>
+          <text x="562" y="119" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="44" y="170" class="s-txt-s">Размер</text>
+          <rect x="44" y="180" width="200" height="34" rx="7" class="s-panel"/>
+          <text x="60" y="202" class="s-txt">4 CPU · 8 GB · 100 GB</text>
+          <circle cx="268" cy="197" r="13" class="s-key"/>
+          <text x="268" y="201" text-anchor="middle" class="s-key-t">3</text>
+
+          <rect x="596" y="180" width="150" height="36" rx="7" class="s-btn"/>
+          <text x="671" y="203" text-anchor="middle" class="s-btn-t">Create server</text>
+
+          <path d="M400 262 L400 288" class="s-line"/>
+          <path d="M394 280 l6 8 l6 -8" class="s-line"/>
+
+          <rect x="20" y="296" width="760" height="70" rx="8" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="1.5"/>
+          <text x="44" y="322" class="s-txt" font-weight="700">Запиши это сразу — без них не подключишься</text>
+          <text x="44" y="346" class="s-mono">IP-АДРЕС   ·   ИМЯ ПОЛЬЗОВАТЕЛЯ   ·   ПАРОЛЬ</text>
+          <circle cx="744" cy="331" r="13" class="s-key"/>
+          <text x="744" y="335" text-anchor="middle" class="s-key-t">4</text>
+        </svg>
+      </div>
+      <figcaption>Схема 4 · Форма заказа сервера</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Локация — европейская.</b> Амстердам, Франкфурт, Хельсинки. Почему именно так — ниже.</li>
+      <li><b>Образ системы.</b> Windows или Linux с готовым рабочим столом. Разбор — в таблице ниже.</li>
+      <li><b>Размер.</b> 4 ядра, 8 ГБ памяти, 80–100 ГБ диска. Больше не нужно.</li>
+      <li><b>Доступы после создания.</b> Провайдер покажет их один раз. Не закрывай страницу, пока не переписал в заметки.</li>
+    </ol>
+
+    <h3>У кого брать</h3>
+    <p>Тебе нужен провайдер, который одновременно: держит серверы <strong>в Европе</strong>, даёт <strong>образ с рабочим столом</strong> и принимает <strong>российскую карту</strong>. Такие есть — это российские компании с дата-центрами за границей, оплата идёт через российский биллинг.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Провайдер</th><th>Локации в Европе</th><th>Конфиг 4 ядра / 8 ГБ</th><th>Windows</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Aeza</strong><br><span class="s-mono">aeza.ru</span><br><span class="s-mono">МИР · СБП</span></td>
+            <td>Амстердам, Франкфурт, Хельсинки</td>
+            <td><strong>3 394 ₽/мес</strong><br><span class="s-mono">120 ГБ NVMe · RYZEN</span><br>самый дешёвый и самый быстрый диск</td>
+            <td>лицензия не входит — <strong>это вариант под Linux</strong></td>
+          </tr>
+          <tr>
+            <td><strong>RuVDS</strong><br><span class="s-mono">ruvds.com</span><br><span class="s-mono">КАРТА РФ · МИР · USDT</span></td>
+            <td>Амстердам, Франкфурт, Цюрих, Лондон</td>
+            <td><strong>5 120 ₽/мес</strong><br><span class="s-mono">80 ГБ SSD</span><br>+ бесплатный тест 3 дня на тарифах до 3 000 ₽</td>
+            <td>включена в цену</td>
+          </tr>
+          <tr>
+            <td><strong>VDSina</strong><br><span class="s-mono">vdsina.com</span><br><span class="s-mono">КАРТА РФ</span></td>
+            <td>Амстердам</td>
+            <td>смотри в конфигураторе</td>
+            <td>включена начиная с тарифов 2 ядра / 4 ГБ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Что я советую.</strong> Бери <strong>Aeza на Linux за 3 394 ₽</strong> — это дешевле Windows почти на две тысячи в месяц, а конфигурация даже лучше: диск быстрее и в полтора раза больше. Взамен придётся один раз, минут за пятнадцать, поставить рабочий стол — команды ниже, копируются как есть.</p>
+
+    <p>Если возиться совсем не хочешь и лишние 1 700 ₽ в месяц не критичны — бери <strong>RuVDS на Windows</strong>: подключился и сразу работаешь. У них же есть бесплатный тест, которым удобно проверить связь перед оплатой.</p>
+
+    <h3>А нужны ли вообще 4 ядра и 8 ГБ?</h3>
+    <p>Честный ответ: на старте — нет. Claude Code почти не грузит машину, он больше ждёт ответа по сети, чем считает. VS Code и браузер тоже неприхотливы. По-настоящему память нужна позже, когда пойдёт отрисовка каруселей и работа с изображениями.</p>
+    <p>Поэтому есть смысл начать с младшего тарифа и подрасти потом — <strong>у всех провайдеров конфигурацию можно увеличить в пару кликов</strong>, ничего не переустанавливая.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Конфиг</th><th>Цена у Aeza</th><th>Кому</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>2 ядра · 4 ГБ · 60 ГБ</strong></td>
+            <td><strong>1 698 ₽/мес</strong></td>
+            <td>Старт. Хватает на всю первую неделю и работу с текстом. Самый разумный вход</td>
+          </tr>
+          <tr>
+            <td><strong>4 ядра · 8 ГБ · 120 ГБ</strong></td>
+            <td>3 394 ₽/мес</td>
+            <td>Комфорт с запасом. Сюда переезжаешь, когда начнёшь рендерить картинки</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Вход в систему получается 1 698 ₽ в месяц</strong> — вдвое дешевле, чем я насчитал выше, и вчетверо дешевле Windows. Начни с младшего и подними конфиг, когда реально упрёшься.</p>
+
+    <h3>Если появится зарубежная карта</h3>
+    <p>Тогда открывается ещё один этаж цен — европейские хостеры без российского посредника стоят в разы меньше.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Вариант</th><th>Цена за 4 ядра / 8 ГБ</th><th>Подвох</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Hetzner</strong> · Германия, Финляндия</td>
+            <td>около <strong>€7 в месяц</strong></td>
+            <td>Впятеро дешевле Aeza при той же мощности. Но известны случаи блокировок аккаунтов из России — не держи там единственную копию</td>
+          </tr>
+          <tr>
+            <td><strong>Contabo</strong> · Германия</td>
+            <td>около <strong>$7 в месяц</strong></td>
+            <td>Ещё дешевле по памяти, но диск заметно медленнее</td>
+          </tr>
+          <tr>
+            <td><strong>Oracle Cloud</strong> · бесплатный тариф</td>
+            <td><strong>0 ₽ навсегда</strong><br><span class="s-mono">2 ЯДРА · 12 ГБ</span></td>
+            <td>Карта нужна только для проверки личности, денег не спишут. Но процессор другой архитектуры, свободных мест часто нет, и в июне 2026 лимит урезали вдвое</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="warn">
+      <span class="lbl">Почему я не ставлю их первыми</span>
+      <p>Все три требуют зарубежную карту — то самое, чего у тебя, скорее всего, нет, раз аккаунт Claude покупается готовым. Если карта есть, бери Hetzner и экономь в разы. Если нет — твой выбор между Aeza и RuVDS, и это нормальные варианты, просто дороже.</p>
+      <p>И общее правило для любого из них: <strong>что бы ты ни арендовал, система живёт в репозитории.</strong> Тогда блокировка аккаунта у хостера — это досадный вечер на переезд, а не потеря работы.</p>
+    </div>
+
+    <h3>Если взял Linux: поставить рабочий стол</h3>
+    <p>Сразу после создания сервера рабочего стола на нём ещё нет — только текстовая консоль. Не пугайся и не ищи ошибку: так и должно быть, мы его сейчас поставим.</p>
+    <p>Тебе не нужны никакие дополнительные приложения. <strong>В панели провайдера есть веб-консоль</strong> — терминал сервера прямо в браузере (кнопка называется «Консоль» или VNC). Открываешь её на планшете и вводишь команды по очереди:</p>
+
+    <div class="cmd"><span class="c"># поставить рабочий стол и удалённый доступ</span>
+<span class="p">$</span> sudo apt update
+<span class="p">$</span> sudo apt install -y xfce4 xfce4-goodies xrdp
+
+<span class="c"># включить удалённый доступ и разрешить ему запускать рабочий стол</span>
+<span class="p">$</span> sudo adduser xrdp ssl-cert
+<span class="p">$</span> echo xfce4-session &gt; ~/.xsession
+<span class="p">$</span> sudo systemctl enable --now xrdp
+<span class="p">$</span> sudo systemctl restart xrdp</div>
+
+    <p>Установка займёт несколько минут — будет бежать текст, это нормально. После неё сервер готов принимать подключение, и дальше идёшь по шагу 04 как обычно.</p>
+
+    <div class="note">
+      <span class="lbl">Если подключение не проходит</span>
+      <p>Проверь в панели провайдера, открыт ли <strong>порт 3389</strong> — по нему работает удалённый рабочий стол. У некоторых хостеров есть встроенный сетевой экран, и его надо разрешить вручную. Это единственная типичная заминка на этом шаге.</p>
+    </div>
+
+    <div class="warn">
+      <span class="lbl">Первое, что проверить на тестовом сервере</span>
+      <p>Как только подключишься — <strong>открой на сервере браузер и зайди на claude.ai</strong>. Сервер стоит в Европе, поэтому сайт должен открыться без VPN. Если вдруг не открывается — не трать время на настройку дальше, бери сервер у другого провайдера или в другой локации. Это пятиминутная проверка, которая экономит месяц оплаты.</p>
+      <p>Вторая проверка — просто подвигай мышкой. Если курсор ощутимо запаздывает, поменяй локацию на более близкую, пока идёт бесплатный тест.</p>
+    </div>
+
+    <p>Теперь подробнее по каждому решению.</p>
+
+    <h3>Страна: Европа, не США</h3>
+    <p>Логика здесь обратная привычной. Нидерланды, Германия, Финляндия дают задержку обычно <strong>40–80 мс</strong> — курсор ходит живо. До США выходит 150–250 мс, и на удалённом рабочем столе это уже ощущается как «мышь плывёт за пальцем». Для Claude разницы нет, он доступен с обеих; разница только в твоих руках.</p>
+
+    <h3>Система: Windows проще, Linux дешевле</h3>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Windows</th><th>Linux</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Всё привычно, ставится в два клика</td><td>Дешевле в разы, для Claude Code роднее</td></tr>
+          <tr><td>Удалённый доступ уже встроен</td><td>Нужен образ <strong>с графическим рабочим столом</strong>, иначе VS Code ставить некуда</td></tr>
+          <tr><td>Дороже</td><td>Первая настройка чуть дольше</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Не уверен — <strong>бери Windows.</strong> Переплата небольшая, а вечер настройки сэкономишь. Для Claude Code разницы между системами почти нет.</p>
+
+    <h3>Мощность</h3>
+    <p>Ничего героического не нужно: 4 ядра, 8 ГБ памяти, 80–100 ГБ диска. Это не машина для монтажа — видео ты режешь на планшете. Сервер занимается текстом, кодом и картинками.</p>
+
+    <div class="warn">
+      <span class="lbl">Что записать и не потерять</span>
+      <p>После оплаты провайдер выдаст три вещи: <strong>IP-адрес</strong>, <strong>имя пользователя</strong> и <strong>пароль</strong>. Сохрани их в заметки сразу — без них не подключишься, а восстановление занимает время.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">04</span>
+      <span class="eyebrow">Шаг 04 <em>· 10 минут</em></span>
+      <h2>Подключиться с планшета</h2>
+    </div>
+    <p>На айпад ставится одно бесплатное приложение — клиент удалённого доступа. Подойдёт <strong>Windows App</strong> от Microsoft (раньше называлось Microsoft Remote Desktop) — он бесплатный и есть в российском магазине. Кто хочет удобнее управление мышью и жестами, берёт платный <strong>Jump Desktop</strong>.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 340" role="img" aria-label="Схема: форма подключения в клиенте удалённого доступа и сохранённая плитка сервера">
+          <rect x="20" y="20" width="360" height="300" rx="12" class="s-frame"/>
+          <path d="M20 32 a12 12 0 0 1 12 -12 h336 a12 12 0 0 1 12 12 v26 h-360 z" class="s-bar"/>
+          <line x1="20" y1="58" x2="380" y2="58" class="s-line"/>
+          <text x="44" y="46" class="s-txt" font-weight="700">Add PC</text>
+
+          <text x="44" y="90" class="s-txt-s">PC name</text>
+          <rect x="44" y="100" width="312" height="36" rx="7" class="s-panel"/>
+          <text x="60" y="123" class="s-txt">203.0.113.24</text>
+          <circle cx="392" cy="118" r="13" class="s-key"/>
+          <text x="392" y="122" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="44" y="164" class="s-txt-s">User account</text>
+          <rect x="44" y="174" width="312" height="36" rx="7" class="s-panel"/>
+          <text x="60" y="197" class="s-txt-s">имя пользователя · пароль</text>
+          <circle cx="392" cy="192" r="13" class="s-key"/>
+          <text x="392" y="196" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="44" y="238" class="s-txt-s">Devices &amp; audio</text>
+          <rect x="44" y="248" width="312" height="36" rx="7" fill="var(--accent-wash)"/>
+          <text x="60" y="271" class="s-txt" font-weight="700">Folders · Clipboard</text>
+          <circle cx="392" cy="266" r="13" class="s-key"/>
+          <text x="392" y="270" text-anchor="middle" class="s-key-t">3</text>
+
+          <rect x="252" y="292" width="104" height="16" rx="8" class="s-btn"/>
+          <text x="304" y="304" text-anchor="middle" class="s-btn-t" font-size="10">Save</text>
+
+          <path d="M414 170 L444 170" class="s-line"/>
+          <path d="M436 164 l8 6 l-8 6" class="s-line"/>
+
+          <rect x="456" y="20" width="324" height="300" rx="12" class="s-frame"/>
+          <path d="M456 32 a12 12 0 0 1 12 -12 h300 a12 12 0 0 1 12 12 v26 h-324 z" class="s-bar"/>
+          <line x1="456" y1="58" x2="780" y2="58" class="s-line"/>
+          <text x="480" y="46" class="s-txt" font-weight="700">Мои компьютеры</text>
+
+          <rect x="480" y="86" width="276" height="150" rx="10" class="s-panel"/>
+          <rect x="500" y="106" width="236" height="86" rx="6" fill="var(--term-bg)"/>
+          <circle cx="520" cy="122" r="4" fill="var(--term-green)"/>
+          <rect x="534" y="118" width="80" height="7" rx="3" fill="var(--term-ink)" opacity=".4"/>
+          <rect x="514" y="140" width="140" height="6" rx="3" fill="var(--term-ink)" opacity=".25"/>
+          <rect x="514" y="154" width="180" height="6" rx="3" fill="var(--term-ink)" opacity=".25"/>
+          <text x="500" y="216" class="s-txt" font-weight="700">content-factory</text>
+          <circle cx="752" cy="258" r="13" class="s-key"/>
+          <text x="752" y="262" text-anchor="middle" class="s-key-t">4</text>
+
+          <text x="480" y="268" class="s-txt-s">Одно касание — и ты за</text>
+          <text x="480" y="288" class="s-txt-s">рабочим столом своей машины.</text>
+        </svg>
+      </div>
+      <figcaption>Схема 5 · Клиент удалённого доступа: добавить компьютер</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>PC name</b> — сюда вставляешь IP-адрес, который выдал провайдер. Просто набор цифр через точки.</li>
+      <li><b>User account</b> — имя пользователя и пароль оттуда же. Сохрани их в приложении, чтобы не вводить каждый раз.</li>
+      <li><b>Folders и Clipboard — включи обязательно.</b> Это проброс папок и общий буфер обмена: без них ты не сможешь перетаскивать файлы с планшета на сервер и копировать текст между ними. Пункт легко пропустить, а потом мучиться.</li>
+      <li><b>Сохранённая плитка.</b> Дальше подключение — одно касание.</li>
+    </ol>
+
+    <div class="done">
+      <span class="lbl">Готово, если</span>
+      <p>На экране планшета появился рабочий стол сервера, и ты можешь двигать по нему курсор. Не подключается — сначала проверь, что правильно переписал IP; если верно, попробуй включить VPN: возможно, провайдер режет соединение.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">05</span>
+      <span class="eyebrow">Шаг 05 <em>· 15 минут</em></span>
+      <h2>Поставить VS Code</h2>
+    </div>
+    <p>Дальше всё происходит <strong>внутри</strong> удалённого рабочего стола — как на обычном компьютере. Открываешь браузер уже там, заходишь на <code>code.visualstudio.com</code> и скачиваешь VS Code под свою систему. Это настоящий десктопный редактор, не браузерная версия.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 400" role="img" aria-label="Схема VS Code: боковая панель файлов слева, редактор по центру, панель терминала внизу">
+          <defs>
+            <clipPath id="clipVscode"><rect x="20" y="20" width="760" height="360" rx="10"/></clipPath>
+          </defs>
+          <g clip-path="url(#clipVscode)">
+            <rect x="20" y="20" width="760" height="360" fill="var(--screen)"/>
+            <rect x="20" y="20" width="760" height="30" class="s-bar"/>
+            <rect x="20" y="50" width="190" height="330" class="s-panel"/>
+            <rect x="210" y="50" width="130" height="26" class="s-bar"/>
+            <rect x="210" y="222" width="570" height="158" fill="var(--term-bg)"/>
+            <rect x="210" y="222" width="570" height="26" class="s-bar"/>
+          </g>
+          <rect x="20" y="20" width="760" height="360" rx="10" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
+          <line x1="20" y1="50" x2="780" y2="50" class="s-line"/>
+          <text x="42" y="40" class="s-mono">☰   CONTENT-FACTORY</text>
+
+          <text x="40" y="76" class="s-mono">EXPLORER</text>
+          <text x="40" y="104" class="s-txt-s">▾ CONTENT-FACTORY</text>
+          <text x="52" y="130" class="s-txt-s">▸ .business</text>
+          <text x="52" y="154" class="s-txt-s">▸ memory</text>
+          <text x="52" y="178" class="s-txt-s">CLAUDE.md</text>
+          <circle cx="176" cy="212" r="13" class="s-key"/>
+          <text x="176" y="216" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="226" y="68" class="s-mono">CLAUDE.MD</text>
+          <line x1="210" y1="76" x2="780" y2="76" class="s-line"/>
+          <g class="s-ghost">
+            <rect x="232" y="100" width="340" height="9" rx="4"/>
+            <rect x="232" y="120" width="420" height="9" rx="4"/>
+            <rect x="232" y="140" width="290" height="9" rx="4"/>
+            <rect x="232" y="160" width="380" height="9" rx="4"/>
+            <rect x="232" y="180" width="220" height="9" rx="4"/>
+          </g>
+          <circle cx="742" cy="140" r="13" class="s-key"/>
+          <text x="742" y="144" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="226" y="240" class="s-mono">PROBLEMS</text>
+          <text x="301" y="240" class="s-mono">OUTPUT</text>
+          <text x="362" y="240" class="s-mono">DEBUG CONSOLE</text>
+          <text x="472" y="240" class="s-mono" fill="var(--accent)" font-weight="700">TERMINAL</text>
+          <text x="547" y="240" class="s-mono">PORTS</text>
+          <rect x="470" y="246" width="60" height="2.5" rx="1" fill="var(--accent)"/>
+          <text x="232" y="282" class="s-term-g">content-factory $</text>
+          <rect x="232" y="294" width="9" height="14" fill="var(--term-green)"/>
+          <circle cx="742" cy="320" r="13" class="s-key"/>
+          <text x="742" y="324" text-anchor="middle" class="s-key-t">3</text>
+        </svg>
+      </div>
+      <figcaption>Схема 6 · Три области экрана VS Code</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Слева, под надписью EXPLORER, — файлы.</b> Вся папка проекта. Тыкаешь в файл — он открывается.</li>
+      <li><b>По центру — текст открытого файла.</b> Здесь можно читать и править руками.</li>
+      <li><b>Внизу — терминал.</b> Вкладка <em>TERMINAL</em>. Не видно панели: меню <strong>☰ → Terminal → New Terminal</strong>, либо <code>Ctrl</code> и клавиша с обратным апострофом слева от единицы.</li>
+    </ol>
+
+    <div class="note">
+      <span class="lbl">Терминал — это не страшно</span>
+      <p>Чёрное окно, куда пишут короткие команды. Всего команд, которые тебе понадобятся, — пять штук, и все они ниже даны целиком: копируй как есть.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">06</span>
+      <span class="eyebrow">Шаг 06 <em>· 10 минут</em></span>
+      <h2>Установить Claude Code</h2>
+    </div>
+    <p>Открой терминал в VS Code (шаг 05, пункт 3) и введи команду под свою систему. После ввода — <code>Enter</code>, потом ждёшь, пока текст перестанет бежать.</p>
+
+    <div class="cmd"><span class="c"># Linux</span>
+<span class="p">$</span> curl -fsSL https://claude.ai/install.sh | bash
+
+<span class="c"># Windows — в окне PowerShell</span>
+<span class="p">&gt;</span> irm https://claude.ai/install.ps1 | iex</div>
+
+    <p>Проверяем, что установилось, и запускаем:</p>
+
+    <div class="cmd"><span class="p">$</span> claude --version   <span class="c"># должен ответить номером версии и словами (Claude Code)</span>
+<span class="p">$</span> claude             <span class="c"># запуск</span></div>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 320" role="img" aria-label="Схема терминала: установка, проверка версии, запуск и вход по ссылке">
+          <rect x="20" y="20" width="760" height="280" rx="10" fill="var(--term-bg)" stroke="var(--rule)" stroke-width="1.5"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v18 h-760 z" class="s-bar"/>
+          <line x1="20" y1="48" x2="780" y2="48" class="s-line"/>
+          <text x="44" y="40" class="s-mono">TERMINAL</text>
+
+          <text x="44" y="80" class="s-term-g">$</text>
+          <text x="62" y="80" class="s-term-t">curl -fsSL https://claude.ai/install.sh | bash</text>
+          <circle cx="740" cy="76" r="13" class="s-key"/>
+          <text x="740" y="80" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="44" y="106" class="s-term-t" opacity=".55">Installing Claude Code…  done</text>
+
+          <text x="44" y="140" class="s-term-g">$</text>
+          <text x="62" y="140" class="s-term-t">claude --version</text>
+          <text x="44" y="164" class="s-term-t" opacity=".55">x.x.x (Claude Code)</text>
+          <circle cx="740" cy="136" r="13" class="s-key"/>
+          <text x="740" y="140" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="44" y="198" class="s-term-g">$</text>
+          <text x="62" y="198" class="s-term-t">claude</text>
+          <circle cx="740" cy="194" r="13" class="s-key"/>
+          <text x="740" y="198" text-anchor="middle" class="s-key-t">3</text>
+
+          <text x="44" y="232" class="s-term-t">Войти в аккаунт — открой ссылку:</text>
+          <text x="44" y="256" class="s-term-t" fill="var(--cyan)">https://claude.ai/oauth/authorize?…</text>
+          <rect x="44" y="270" width="220" height="22" rx="4" fill="none" stroke="var(--term-green)" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <text x="56" y="286" class="s-term-t" opacity=".7">вставь сюда код с сайта</text>
+          <circle cx="740" cy="264" r="13" class="s-key"/>
+          <text x="740" y="268" text-anchor="middle" class="s-key-t">4</text>
+        </svg>
+      </div>
+      <figcaption>Схема 7 · Установка и вход в терминале</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Установка.</b> Копируй строку целиком, вместе со всеми чёрточками и палочкой посередине. Полминуты будет бежать текст — так и надо.</li>
+      <li><b>Проверка.</b> В ответ появится номер версии и слова <code>(Claude Code)</code>. Если написано <code>command not found</code> — закрой панель терминала и открой новую, почти всегда помогает.</li>
+      <li><b>Запуск.</b> Просто слово <code>claude</code>.</li>
+      <li><b>Вход в аккаунт.</b> Он выдаст ссылку — открой её в браузере <em>на этом же сервере</em>, войди аккаунтом Claude, получишь короткий код. Скопируй, вернись в терминал, вставь, <code>Enter</code>. Делается один раз. Надписи английские; если спросит тип аккаунта — выбирай вариант про подписку Claude, а не про Console.</li>
+    </ol>
+
+    <div class="note">
+      <span class="lbl">Бонус для удобства</span>
+      <p>В VS Code есть <strong>расширение Claude Code</strong> — ставится из вкладки Extensions по названию. Тогда он живёт прямо в редакторе, а не только в чёрном окне. Не обязательно, но приятно.</p>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 3 ============ -->
+  <div class="part"><b>Часть 3</b><h2>Система</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">07</span>
+      <span class="eyebrow">Шаг 07 <em>· 10 минут</em></span>
+      <h2>Подключить репозиторий</h2>
+    </div>
+    <p>Теперь связываем сервер с домом системы — папкой на GitHub. Проще всего через официальную утилиту: она сама проведёт через вход и не заставит возиться с ключами.</p>
+
+    <div class="cmd"><span class="c"># вход в GitHub</span>
+<span class="p">$</span> gh auth login
+
+<span class="c"># скачать свою папку на сервер</span>
+<span class="p">$</span> git clone https://github.com/твоё-имя/content-factory.git
+
+<span class="c"># зайти в неё и запустить Claude уже внутри</span>
+<span class="p">$</span> cd content-factory
+<span class="p">$</span> claude</div>
+
+    <p>Первая команда задаст несколько вопросов. Отвечаешь стрелками и <code>Enter</code> — вот как это выглядит.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 320" role="img" aria-label="Схема диалога gh auth login в терминале с одноразовым кодом">
+          <rect x="20" y="20" width="760" height="280" rx="10" fill="var(--term-bg)" stroke="var(--rule)" stroke-width="1.5"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h740 a10 10 0 0 1 10 10 v18 h-760 z" class="s-bar"/>
+          <line x1="20" y1="48" x2="780" y2="48" class="s-line"/>
+          <text x="44" y="40" class="s-mono">TERMINAL</text>
+
+          <text x="44" y="76" class="s-term-g">$</text>
+          <text x="62" y="76" class="s-term-t">gh auth login</text>
+
+          <text x="44" y="104" class="s-term-t" opacity=".6">? Where do you use GitHub?</text>
+          <text x="330" y="104" class="s-term-g">GitHub.com</text>
+          <circle cx="744" cy="100" r="13" class="s-key"/>
+          <text x="744" y="104" text-anchor="middle" class="s-key-t">1</text>
+
+          <text x="44" y="132" class="s-term-t" opacity=".6">? Preferred protocol</text>
+          <text x="330" y="132" class="s-term-g">HTTPS</text>
+          <circle cx="744" cy="128" r="13" class="s-key"/>
+          <text x="744" y="132" text-anchor="middle" class="s-key-t">2</text>
+
+          <text x="44" y="160" class="s-term-t" opacity=".6">? Authenticate Git with your credentials?</text>
+          <text x="400" y="160" class="s-term-g">Yes</text>
+
+          <text x="44" y="188" class="s-term-t" opacity=".6">? How would you like to authenticate?</text>
+          <text x="400" y="188" class="s-term-g">Login with a web browser</text>
+          <circle cx="744" cy="184" r="13" class="s-key"/>
+          <text x="744" y="188" text-anchor="middle" class="s-key-t">3</text>
+
+          <text x="44" y="226" class="s-term-t">! First copy your one-time code:</text>
+          <rect x="290" y="210" width="120" height="24" rx="4" fill="none" stroke="var(--term-green)" stroke-width="1.4"/>
+          <text x="350" y="227" text-anchor="middle" class="s-term-g" font-weight="700">A1B2-C3D4</text>
+          <circle cx="744" cy="222" r="13" class="s-key"/>
+          <text x="744" y="226" text-anchor="middle" class="s-key-t">4</text>
+
+          <text x="44" y="262" class="s-term-t" opacity=".6">- Press Enter to open github.com in your browser…</text>
+          <text x="44" y="286" class="s-term-t" fill="var(--cyan)">github.com/login/device</text>
+        </svg>
+      </div>
+      <figcaption>Схема 8 · Вход в GitHub из терминала</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>GitHub.com</b> — первый вариант в списке, он же нужный.</li>
+      <li><b>HTTPS</b> — второй вопрос. Выбирай его, а не SSH: не придётся возиться с ключами.</li>
+      <li><b>Login with a web browser</b> — вход через браузер, самый простой путь.</li>
+      <li><b>Одноразовый код.</b> Запомни или скопируй эти восемь символов, нажми <code>Enter</code> — откроется <code>github.com/login/device</code> в браузере <em>на сервере</em>. Вводишь код там, подтверждаешь — и терминал сам продолжит.</li>
+    </ol>
+
+    <div class="warn">
+      <span class="lbl">Запускай Claude только изнутри папки</span>
+      <p>Команда <code>cd content-factory</code> — не формальность. Claude работает с той папкой, в которой запущен. Запустишь его не там — он не увидит ни паспорта проекта, ни памяти, и будет отвечать «с чистого листа».</p>
+    </div>
+
+    <div class="done"><span class="lbl">Готово, если</span><p>В VS Code слева видна папка <code>content-factory</code> с файлом README, а в терминале внутри неё запускается <code>claude</code>.</p></div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">08</span>
+      <span class="eyebrow">Шаг 08 <em>· 30 минут</em></span>
+      <h2>Настроить проект под себя</h2>
+    </div>
+    <p>Самый важный шаг всей недели. Claude из коробки — гений, который ничего о тебе не знает. Пока ты не собрал ему контекст, любой текст выходит средним и безликим. Сначала контекст, потом задачи — этот порядок не переставляется.</p>
+
+    <p>Копируй <strong>мастер-промт</strong> и вставляй в запущенный <code>claude</code>. Он один настроит проект целиком.</p>
+
+    <div class="prompt">
+      <span class="tag">Мастер-промт · настроить проект под ключ<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Ты — мой персональный архитектор проекта в Claude Code. Задача: за один заход настроить этот проект так, чтобы дальше я сразу работал над продуктом, а ты знал обо мне и деле всё нужное. Действуй по шагам. Не выдумывай за меня факты — чего не знаешь, спрашивай. Если я отвечаю «не знаю» — предложи разумный дефолт и иди дальше.
+
+ШАГ 1. Интервью-распаковка. Задавай мне вопросы по 1–3 за раз (не вываливай всё списком), пока не поймёшь:
+- кто я и чем занимаюсь — продукт/проект, на каком этапе;
+- кто моя аудитория/клиент, его главная боль и язык, на котором он говорит;
+- мой голос и правила: как писать, каких слов, штампов и приёмов избегать;
+- мои цели на ближайший горизонт и что для меня НЕ важно;
+- техническую часть (если это код): стек, структура, договорённости;
+- как мне удобно с тобой работать: автономно или с подтверждениями, тон, язык ответов.
+
+ШАГ 2. Pre-flight. До того как что-то создавать, покажи в чат краткую выжимку: как ты понял мой проект, аудиторию, голос и цели — по 1–3 строки на блок. Дай поправить. Создавай файлы только после моего «ок».
+
+ШАГ 3. Собери структуру проекта:
+- CLAUDE.md в корне — паспорт проекта (продукт, аудитория, голос/правила, цели, тех-детали, как со мной работать). Пиши плотно, без воды, только то, что ты не угадаешь сам;
+- папку для бизнес-контекста (продукт, аудитория, цели, экономика, маркетинг) с коротким INDEX-файлом внутри;
+- включи постоянную память: занеси кто я, ключевые решения по проекту и мои предпочтения по работе, заведи индекс памяти.
+
+ШАГ 4. Предложи следующий шаг: 1–2 скилла под мои задачи и какие права/настройки включить, чтобы ты не дёргал меня по мелочи. Предложи — и, если согласен, настрой сам.
+
+В финале выведи короткий чек-лист, что готово, и одну первую задачу, с которой мне логично начать работу над продуктом.</pre>
+    </div>
+
+    <p>Дальше он начнёт задавать вопросы. Отвечай спокойно, как живому человеку. Не знаешь ответа — так и скажи, он предложит вариант.</p>
+
+    <p>Не любишь «чёрный ящик» и хочешь собирать по частям — <a href="#b-promts">библиотека промтов ниже</a>: четыре отдельных, по одному на блок.</p>
+
+    <div class="note">
+      <span class="lbl">Главное правило для всех промтов</span>
+      <p><strong>Claude не выдумывает за тебя факты, кейсы и цифры — только то, что ты подтвердил.</strong> Чего не знаешь — проси дефолт и иди дальше. Один выдуманный кейс в паспорте проекта потом всплывёт во всём контенте.</p>
+    </div>
+
+    <p>Когда всё соберётся — отправь результат в репозиторий, чтобы он не жил только на сервере:</p>
+
+    <div class="prompt">
+      <span class="tag">Диктуешь в claude<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Закоммить всё, что мы собрали, с понятным описанием и запушь в мой репозиторий на GitHub.</pre>
+    </div>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 300" role="img" aria-label="Схема: собранные файлы проекта видны и в редакторе на сервере, и в репозитории на GitHub">
+          <rect x="20" y="20" width="360" height="260" rx="10" class="s-frame"/>
+          <path d="M20 30 a10 10 0 0 1 10 -10 h340 a10 10 0 0 1 10 10 v26 h-360 z" class="s-bar"/>
+          <line x1="20" y1="56" x2="380" y2="56" class="s-line"/>
+          <text x="44" y="45" class="s-mono">VS CODE НА СЕРВЕРЕ</text>
+
+          <text x="44" y="88" class="s-txt-s">▾ CONTENT-FACTORY</text>
+          <text x="60" y="116" class="s-txt" font-weight="600">CLAUDE.md</text>
+          <text x="180" y="116" class="s-mono">ПАСПОРТ</text>
+          <text x="60" y="144" class="s-txt-s">▸ .business</text>
+          <text x="180" y="144" class="s-mono">КОНТЕКСТ</text>
+          <text x="60" y="172" class="s-txt-s">▸ memory</text>
+          <text x="180" y="172" class="s-mono">ПАМЯТЬ</text>
+          <text x="60" y="200" class="s-txt-s">▸ .claude</text>
+          <text x="180" y="200" class="s-mono">ПРАВА</text>
+          <text x="60" y="228" class="s-txt-s">README.md</text>
+          <circle cx="330" cy="116" r="13" class="s-key"/>
+          <text x="330" y="120" text-anchor="middle" class="s-key-t">1</text>
+
+          <path d="M394 145 L432 145" class="s-line"/>
+          <path d="M424 139 l8 6 l-8 6" class="s-line"/>
+          <text x="413" y="132" text-anchor="middle" class="s-mono">PUSH</text>
+          <circle cx="413" cy="182" r="13" class="s-key"/>
+          <text x="413" y="186" text-anchor="middle" class="s-key-t">2</text>
+
+          <rect x="446" y="20" width="334" height="260" rx="10" class="s-frame"/>
+          <path d="M446 30 a10 10 0 0 1 10 -10 h314 a10 10 0 0 1 10 10 v26 h-334 z" class="s-bar"/>
+          <line x1="446" y1="56" x2="780" y2="56" class="s-line"/>
+          <text x="470" y="45" class="s-mono">GITHUB.COM · ТВОЙ РЕПОЗИТОРИЙ</text>
+
+          <text x="470" y="88" class="s-txt-s">content-factory</text>
+          <rect x="462" y="100" width="300" height="132" rx="8" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1"/>
+          <text x="480" y="126" class="s-txt" font-weight="600">CLAUDE.md</text>
+          <text x="480" y="152" class="s-txt-s">.business</text>
+          <text x="480" y="178" class="s-txt-s">memory</text>
+          <text x="480" y="204" class="s-txt-s">.claude</text>
+          <text x="480" y="224" class="s-mono">ТЕ ЖЕ ФАЙЛЫ — ЗНАЧИТ СОХРАНЕНО</text>
+          <circle cx="752" cy="252" r="13" class="s-key"/>
+          <text x="752" y="256" text-anchor="middle" class="s-key-t">3</text>
+        </svg>
+      </div>
+      <figcaption>Схема 9 · Что должно получиться после настройки</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Четыре вещи в папке.</b> Паспорт проекта, бизнес-контекст, память и права — это и есть фундамент. Больше на этой неделе ничего не нужно.</li>
+      <li><b>Отправка в репозиторий.</b> Одна фраза Claude — и работа уезжает в надёжное место.</li>
+      <li><b>Проверка глазами.</b> Зайди на github.com и убедись, что файлы там. Пока их видно только на сервере — работа не сохранена по-настоящему.</li>
+    </ol>
+
+    <div class="done"><span class="lbl">Готово, если</span><p>В папке появились <code>CLAUDE.md</code>, бизнес-контекст и память — и всё это видно на github.com в твоём репозитории.</p></div>
+  </section>
+
+  <section class="step" id="b-promts">
+    <h2>Библиотека промтов</h2>
+    <p>Мастер-промт выше делает всё за один заход. Если хочешь держать процесс под контролем и собирать по блокам — те же части по отдельности. Порядок не переставляй: <strong>паспорт → папки → память → права.</strong></p>
+
+    <div class="prompt">
+      <span class="tag">Промт A · паспорт проекта CLAUDE.md<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Помоги собрать CLAUDE.md — паспорт моего проекта, который ты будешь читать в начале каждой сессии.
+
+Сначала задай мне вопросы по 1–3 за раз (не списком сразу), чтобы закрыть блоки: что за продукт/проект и на каком этапе; кто аудитория, её боль и язык; мой голос и правила (как писать, чего избегать); цели и что НЕ важно; тех-детали, если это код (стек, структура, договорённости); как мне удобно с тобой работать.
+
+Не выдумывай за меня факты, кейсы и цифры — бери только то, что я подтвердил. Чего не знаю — предложи дефолт и иди дальше.
+
+Когда соберёшь — покажи готовый CLAUDE.md в чат целиком. Пиши плотно и по делу: только то, чего ты не угадаешь сам, без воды и общих фраз. После моего «ок» сохрани его в корень проекта.</pre>
+    </div>
+
+    <div class="prompt">
+      <span class="tag">Промт B · каркас папок<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Собери каркас папок под мой проект, чтобы контекст лежал по местам, а не в одной куче. Опирайся на мой CLAUDE.md.
+
+Предложи структуру и кратко объясни, что лежит в каждой папке. Минимум:
+- папка бизнес-контекста (продукт, аудитория, цели, экономика, маркетинг, ассеты) с коротким INDEX-файлом-оглавлением внутри;
+- папка под скиллы проекта;
+- папка под память.
+
+Сначала покажи дерево папок в чат и спроси, что добавить или убрать под мою специфику. После согласия — создай папки и INDEX, разложи по ним то, что мы уже знаем о проекте.</pre>
+    </div>
+
+    <div class="prompt">
+      <span class="tag">Промт C · постоянная память<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Настрой постоянную память, чтобы ты помнил меня между сессиями и не начинал каждый раз с чистого листа.
+
+Занеси в память: кто я и над чем работаю, ключевые решения по проекту, мои предпочтения по работе (тон, автономность, язык). Заведи индекс памяти и добавляй в него по одной строке-ссылке на каждый факт.
+
+Не клади в память то, что и так есть в коде или в CLAUDE.md, — только то, что должно пережить перезапуск и что ты сам не восстановишь. Покажи, что занёс, в чат.</pre>
+    </div>
+
+    <div class="prompt">
+      <span class="tag">Промт D · права, чтобы не дёргал по мелочи<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Настрой права так, чтобы ты не спрашивал у меня разрешение на каждое мелкое и безопасное действие, но всё необратимое и внешнее по-прежнему подтверждал.
+
+Сначала посмотри, какие команды и действия в этом проекте реально повторяются и безопасны (чтение файлов, поиск, типовые команды стека), и предложи список того, что можно разрешить без вопросов. Покажи список в чат и объясни, почему каждый пункт безопасен.
+
+Не вноси в разрешённое ничего, что удаляет данные, тратит деньги или публикует наружу, — такое всегда через подтверждение. После моего «ок» пропиши права в настройки проекта.</pre>
+    </div>
+
+    <h3>Бонус: собрать свой первый скилл</h3>
+    <p>Задел на модуль 02, но попробовать можно уже сейчас — когда поймёшь, какую задачу повторяешь чаще всего.</p>
+
+    <div class="prompt">
+      <span class="tag">Промт E · первый скилл под себя<button class="copy" type="button">копировать</button></span>
+      <pre class="ptext">Помоги собрать мой первый скилл под главную задачу, которую я повторяю чаще всего. Используй встроенный skill-creator (или build-skill).
+
+Сначала спроси, какая это задача, и задай по 1–3 вопроса за раз, чтобы вытащить из меня: как именно я её делаю по шагам, мои правила и табу, мой голос/стиль, 1–2 примера хорошего и плохого результата, чек-лист «готово».
+
+Не подменяй мой стиль усреднённым — фиксируй именно мой. Чего не знаю — предложи дефолт.
+
+Собери скилл со всем этим внутри (описание задачи, правила, примеры, чек-лист), покажи структуру в чат, после согласия сохрани в папку скиллов проекта. В конце дай одну тестовую задачу, чтобы сразу проверить скилл в деле.</pre>
+    </div>
+  </section>
+
+  <!-- ============ ЧАСТЬ 4 ============ -->
+  <div class="part"><b>Часть 4</b><h2>Быт</h2></div>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">09</span>
+      <span class="eyebrow">Шаг 09 <em>· 10 минут</em></span>
+      <h2>Передавать файлы с планшета</h2>
+    </div>
+    <p>Рано или поздно понадобится закинуть в проект свои фото или забрать готовое. Работает это через тот самый проброс из шага 04, пункт 3.</p>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 320" role="img" aria-label="Схема: файлы с планшета через проброс папки попадают на сервер, затем в репозиторий">
+          <rect x="20" y="30" width="210" height="150" rx="10" class="s-frame"/>
+          <path d="M20 40 a10 10 0 0 1 10 -10 h190 a10 10 0 0 1 10 10 v22 h-210 z" class="s-bar"/>
+          <line x1="20" y1="52" x2="230" y2="52" class="s-line"/>
+          <text x="44" y="46" class="s-txt" font-weight="700">iPad · Файлы</text>
+          <text x="44" y="82" class="s-txt-s">съёмка.mov</text>
+          <text x="44" y="106" class="s-txt-s">портрет.jpg</text>
+          <text x="44" y="130" class="s-txt-s">заметки.txt</text>
+          <text x="44" y="162" class="s-mono">ТЕРАБАЙТ</text>
+
+          <path d="M242 105 L286 105" class="s-line"/>
+          <path d="M278 99 l8 6 l-8 6" class="s-line"/>
+          <text x="264" y="93" text-anchor="middle" class="s-mono">ПРОБРОС</text>
+          <circle cx="264" cy="140" r="13" class="s-key"/>
+          <text x="264" y="144" text-anchor="middle" class="s-key-t">1</text>
+
+          <rect x="298" y="30" width="230" height="150" rx="10" class="s-frame"/>
+          <path d="M298 40 a10 10 0 0 1 10 -10 h210 a10 10 0 0 1 10 10 v22 h-230 z" class="s-bar"/>
+          <line x1="298" y1="52" x2="528" y2="52" class="s-line"/>
+          <text x="322" y="46" class="s-txt" font-weight="700">Сервер</text>
+          <text x="322" y="82" class="s-txt-s">content-factory/</text>
+          <text x="338" y="106" class="s-txt-s">фото/портрет.jpg</text>
+          <rect x="322" y="122" width="184" height="30" rx="6" fill="var(--accent-wash)"/>
+          <text x="334" y="142" class="s-txt-s">только лёгкое и нужное</text>
+          <circle cx="546" cy="105" r="13" class="s-key"/>
+          <text x="546" y="109" text-anchor="middle" class="s-key-t">2</text>
+
+          <path d="M566 105 L610 105" class="s-line"/>
+          <path d="M602 99 l8 6 l-8 6" class="s-line"/>
+          <text x="588" y="93" text-anchor="middle" class="s-mono">PUSH</text>
+
+          <rect x="622" y="30" width="158" height="150" rx="10" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1.5"/>
+          <text x="646" y="62" class="s-txt" font-weight="700">GitHub</text>
+          <text x="646" y="86" class="s-txt-s">дом системы</text>
+          <line x1="646" y1="100" x2="756" y2="100" class="s-line"/>
+          <text x="646" y="124" class="s-txt-s">хранится вечно</text>
+          <text x="646" y="146" class="s-txt-s">и переживёт сервер</text>
+          <circle cx="752" cy="162" r="13" class="s-key"/>
+          <text x="752" y="166" text-anchor="middle" class="s-key-t">3</text>
+
+          <rect x="20" y="212" width="760" height="88" rx="8" class="s-panel"/>
+          <text x="44" y="240" class="s-txt" font-weight="700">Что где остаётся</text>
+          <text x="44" y="264" class="s-txt-s">Сырое видео, полная фотобиблиотека, монтаж — на планшете. Всё, что тяжелее ~50 МБ.</text>
+          <text x="44" y="286" class="s-txt-s">Тексты, сценарии, отобранные сжатые фото, паспорт, память — в репозиторий.</text>
+        </svg>
+      </div>
+      <figcaption>Схема 10 · Путь файла: планшет → сервер → репозиторий</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Проброшенная папка.</b> Ты включил её на шаге 04 — теперь папка с планшета видна прямо в проводнике сервера. Перетаскиваешь файл, и он там. Мелкое проще передавать через общий буфер обмена: скопировал на планшете — вставил на сервере.</li>
+      <li><b>Кладёшь в папку проекта только нужное.</b> Не всю съёмку, а один отобранный кадр.</li>
+      <li><b>Отправляешь в репозиторий.</b> Просто скажи Claude: «закоммить и запушь». Теперь файл переживёт и сервер, и планшет.</li>
+    </ol>
+
+    <div class="warn">
+      <span class="lbl">Здесь легко всё сломать</span>
+      <p>Репозиторий — не файлохранилище. GitHub не принимает файлы тяжелее сотни мегабайт и буксует на больших папках. Закинешь исходники съёмки — всё встанет колом. Правило одной строкой: <strong>машина работает со смыслами, планшет — с килограммами.</strong></p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">10</span>
+      <span class="eyebrow">Шаг 10 <em>· 15 минут, один раз</em></span>
+      <h2>Сделать работу удобной</h2>
+    </div>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 320" role="img" aria-label="Схема рабочего места: планшет на подставке, внешняя клавиатура, мышь, опционально монитор">
+          <rect x="20" y="20" width="760" height="220" rx="10" class="s-panel"/>
+
+          <rect x="212" y="44" width="290" height="152" rx="10" class="s-frame"/>
+          <rect x="224" y="56" width="266" height="128" rx="6" fill="var(--term-bg)"/>
+          <rect x="234" y="66" width="90" height="108" rx="4" fill="var(--screen-2)" opacity=".25"/>
+          <rect x="332" y="66" width="148" height="62" rx="4" fill="var(--screen-2)" opacity=".25"/>
+          <rect x="332" y="136" width="148" height="38" rx="4" fill="var(--term-green)" opacity=".18"/>
+          <text x="357" y="212" class="s-mono">ПОЛНЫЙ ЭКРАН · БЕЗ РАМОК</text>
+          <circle cx="188" cy="120" r="13" class="s-key"/>
+          <text x="188" y="124" text-anchor="middle" class="s-key-t">1</text>
+
+          <rect x="212" y="222" width="290" height="8" rx="4" class="s-ghost2"/>
+
+          <rect x="536" y="150" width="180" height="60" rx="8" class="s-frame"/>
+          <g class="s-ghost">
+            <rect x="548" y="160" width="24" height="14" rx="3"/><rect x="578" y="160" width="24" height="14" rx="3"/>
+            <rect x="608" y="160" width="24" height="14" rx="3"/><rect x="638" y="160" width="24" height="14" rx="3"/>
+            <rect x="668" y="160" width="36" height="14" rx="3"/>
+            <rect x="548" y="182" width="90" height="16" rx="3"/><rect x="644" y="182" width="60" height="16" rx="3"/>
+          </g>
+          <text x="536" y="228" class="s-mono">КЛАВИАТУРА — ОБЯЗАТЕЛЬНО</text>
+          <circle cx="736" cy="180" r="13" class="s-key"/>
+          <text x="736" y="184" text-anchor="middle" class="s-key-t">2</text>
+
+          <rect x="60" y="150" width="46" height="62" rx="20" class="s-frame"/>
+          <line x1="83" y1="158" x2="83" y2="176" class="s-line"/>
+          <text x="52" y="228" class="s-mono">МЫШЬ</text>
+          <circle cx="134" cy="180" r="13" class="s-key"/>
+          <text x="134" y="184" text-anchor="middle" class="s-key-t">3</text>
+
+          <rect x="20" y="258" width="760" height="46" rx="8" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1"/>
+          <text x="44" y="286" class="s-txt-s">Есть монитор с USB-C — подключай: планшет станет трекпадом, а работа переедет на большой экран</text>
+          <circle cx="752" cy="281" r="13" class="s-key"/>
+          <text x="752" y="285" text-anchor="middle" class="s-key-t">4</text>
+        </svg>
+      </div>
+      <figcaption>Схема 11 · Рабочее место</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Полноэкранный режим</b> в клиенте удалённого доступа: убирает рамки и адресные строки, экран становится целиком рабочим.</li>
+      <li><b>Внешняя клавиатура — не роскошь.</b> Без неё в терминале физически нет нужных клавиш.</li>
+      <li><b>Мышь или трекпад.</b> Удалённый рабочий стол рассчитан на курсор; пальцем можно, но быстро надоест.</li>
+      <li><b>Монитор — если есть.</b> Планшет в этой схеме превращается во второй экран и трекпад.</li>
+    </ol>
+
+    <ul class="plain">
+      <li><strong>Внешняя клавиатура обязательна.</strong> В терминале нужны <code>Ctrl</code>, <code>Esc</code> и <code>Tab</code> — на экранной клавиатуре их нет, и работать не выйдет физически.</li>
+      <li><strong>Мышь или трекпад.</strong> Удалённый рабочий стол рассчитан на курсор. Пальцем по нему тыкать можно, но быстро надоест.</li>
+      <li><strong>Полноэкранный режим</strong> в клиенте удалённого доступа: убирает рамки и даёт больше места.</li>
+      <li><strong>Монитор по USB-C</strong>, если есть: получишь полноценное рабочее место, планшет станет трекпадом.</li>
+      <li><strong>Общий буфер обмена</strong> — проверь, что включён. Копировать текст между планшетом и сервером понадобится каждый день.</li>
+    </ul>
+
+    <h3>Про голос</h3>
+    <p>Диктовка — твой главный ускоритель, но в удалённом рабочем столе она срабатывает не всегда: планшет отправляет на сервер нажатия клавиш, и не каждый клиент дружит с диктовкой. Надёжная схема такая: <strong>диктуешь в заметку на планшете, копируешь, вставляешь на сервере</strong> через общий буфер. Звучит громоздко, но занимает две секунды и работает всегда.</p>
+
+    <div class="note">
+      <span class="lbl">Планшет всё ещё умеет то, чего не умеет сервер</span>
+      <p>Съёмка, монтаж, обработка фото — на нём. У тебя терабайт и мощный процессор; на модулях про визуал это преимущество, а не ограничение. Сервер занимается текстом, кодом и логикой.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-head">
+      <span class="num">11</span>
+      <span class="eyebrow">Шаг 11 <em>· привычка</em></span>
+      <h2>Гигиена: чтобы не потерять работу</h2>
+    </div>
+
+    <figure class="bleed">
+      <div class="plate">
+        <svg viewBox="0 0 800 260" role="img" aria-label="Схема цикла: работа на сервере, отправка в репозиторий, восстановление на новой машине">
+          <rect x="24" y="40" width="200" height="110" rx="10" class="s-frame"/>
+          <text x="124" y="76" text-anchor="middle" class="s-txt" font-weight="700">Работаешь</text>
+          <text x="124" y="98" text-anchor="middle" class="s-txt-s">на сервере</text>
+          <text x="124" y="126" text-anchor="middle" class="s-mono">ДЕНЬ</text>
+
+          <path d="M236 95 L286 95" class="s-line"/>
+          <path d="M278 89 l8 6 l-8 6" class="s-line"/>
+          <text x="261" y="83" text-anchor="middle" class="s-mono">PUSH</text>
+          <circle cx="261" cy="128" r="13" class="s-key"/>
+          <text x="261" y="132" text-anchor="middle" class="s-key-t">1</text>
+
+          <rect x="298" y="40" width="204" height="110" rx="10" fill="var(--cyan-wash)" stroke="var(--cyan)" stroke-width="1.5"/>
+          <text x="400" y="76" text-anchor="middle" class="s-txt" font-weight="700">GitHub</text>
+          <text x="400" y="98" text-anchor="middle" class="s-txt-s">работа сохранена</text>
+          <text x="400" y="126" text-anchor="middle" class="s-mono">НАВСЕГДА</text>
+
+          <path d="M514 95 L564 95" class="s-line"/>
+          <path d="M556 89 l8 6 l-8 6" class="s-line"/>
+          <text x="539" y="83" text-anchor="middle" class="s-mono">CLONE</text>
+          <circle cx="539" cy="128" r="13" class="s-key"/>
+          <text x="539" y="132" text-anchor="middle" class="s-key-t">2</text>
+
+          <rect x="576" y="40" width="200" height="110" rx="10" class="s-frame"/>
+          <text x="676" y="70" text-anchor="middle" class="s-txt" font-weight="700">Любая машина</text>
+          <text x="676" y="92" text-anchor="middle" class="s-txt-s">новый сервер,</text>
+          <text x="676" y="110" text-anchor="middle" class="s-txt-s">потом ноутбук</text>
+          <text x="676" y="134" text-anchor="middle" class="s-mono">С ТОЙ ЖЕ СТРОКИ</text>
+
+          <rect x="24" y="180" width="752" height="56" rx="8" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="1.5"/>
+          <text x="48" y="206" class="s-txt" font-weight="700">Не запушил — значит работа существует только на арендованной машине</text>
+          <text x="48" y="228" class="s-txt-s">Сервер удалят за неоплату, и она уйдёт вместе с ним. Одна фраза в день закрывает этот риск.</text>
+        </svg>
+      </div>
+      <figcaption>Схема 12 · Петля сохранности</figcaption>
+    </figure>
+
+    <ol class="keys">
+      <li><b>Push — в конце каждого рабочего дня.</b> Скажи Claude «закоммить и запушь», больше ничего делать не нужно.</li>
+      <li><b>Clone — когда что-то случилось.</b> Сервер потерян, оплата не прошла, или ты наконец купил ноутбук: подключаешь новую машину к тому же репозиторию и продолжаешь с той же строки.</li>
+    </ol>
+
+    <ul class="plain">
+      <li><strong>Раз в день отправляй сделанное в репозиторий.</strong> Одна фраза Claude: «закоммить и запушь». Пока не запушил — работа существует только на арендованной машине.</li>
+      <li><strong>Не держи в проекте секреты открытым текстом.</strong> Пароли и ключи — мимо репозитория, даже приватного.</li>
+      <li><strong>Следи за оплатой сервера.</strong> Не продлил — машину могут удалить вместе с содержимым. Репозиторий это переживёт, локальные черновики — нет.</li>
+      <li><strong>Одна задача — один чат.</strong> Дошёл до половины памяти — закрывай сессию, начинай новую. На длинном диалоге качество падает.</li>
+    </ul>
+  </section>
+
+  <!-- ============ ЧАСТЬ 5 ============ -->
+  <div class="part"><b>Часть 5</b><h2>Правила и проверка</h2></div>
+
+  <section class="step">
+    <h3>Правила системы</h3>
+    <ul class="plain">
+      <li><strong>Сначала контекст, потом задача.</strong> Пустому Claude не дают заданий — сначала <code>CLAUDE.md</code>.</li>
+      <li><strong>Правь контекст, а не результат.</strong> Не переписывай текст руками — переписывай задачу и паспорт проекта. Иначе ты снова ручной работник.</li>
+      <li><strong>Всё ценное — в репозиторий.</strong> Чего нет в репозитории, того для машины не существует.</li>
+      <li><strong>Запускай Claude из папки проекта.</strong> Иначе он работает вслепую.</li>
+    </ul>
+
+    <h3>Единственное, чего здесь нет</h3>
+    <p>Локального терминала на самом iPad нет и не будет — но тебе он больше не нужен, у тебя есть целая машина. Всё остальное, что доступно человеку с ноутбуком, доступно и тебе: автоматизация, работа по расписанию, браузер с твоим профилем, любые программы.</p>
+
+    <h2>Чек-лист: я готов работать</h2>
+    <ul class="check">
+      <li>Claude Pro оплачен</li>
+      <li>Создан приватный репозиторий на GitHub</li>
+      <li>Арендован сервер в Европе, записаны IP, логин и пароль</li>
+      <li>С планшета открывается рабочий стол сервера</li>
+      <li>Включены проброс папок и общий буфер обмена</li>
+      <li>На сервере стоит VS Code, терминал открывается</li>
+      <li><code>claude --version</code> отвечает номером версии</li>
+      <li>Репозиторий скачан на сервер, <code>claude</code> запускается изнутри папки</li>
+      <li>Прогнан мастер-промт: есть <code>CLAUDE.md</code>, бизнес-контекст, память</li>
+      <li>Всё это видно на github.com — не только на сервере</li>
+      <li>Подключена внешняя клавиатура и мышь</li>
+      <li><strong>Первый контент, собранный машиной, — скрин в чат потока</strong></li>
+    </ul>
+  </section>
+
+  <section class="step">
+    <h2>Если застрял</h2>
+    <p>Скопируй текст ошибки <strong>целиком</strong> и вставь прямо в Claude — в восьми случаях из десяти он разберётся сам. Не разобрался — неси ошибку в чат потока.</p>
+    <p>Ошибки на установке — норма, через них проходят все. Запрещено одно: сидеть в тупике сутки и молчать.</p>
+  </section>
+
+  <section class="step">
+    <h2>Словарь</h2>
+    <dl class="gloss">
+      <dt>Удалённый рабочий стол</dt><dd>Экран чужого компьютера у тебя на планшете. Ты видишь его и управляешь им, но всё выполняется там.</dd>
+      <dt>Сервер</dt><dd>Тот самый компьютер в дата-центре. Обычная машина, просто не на столе.</dd>
+      <dt>Репозиторий</dt><dd>Рабочая папка, которая лежит в интернете и доступна машине.</dd>
+      <dt>Коммит</dt><dd>Сохранённая версия. Как «сохранить как» с подписью, что именно поменял.</dd>
+      <dt>Push</dt><dd>Отправить сохранённое в интернет, в репозиторий.</dd>
+      <dt>Клонировать</dt><dd>Скачать репозиторий на машину, чтобы работать с файлами.</dd>
+      <dt>Терминал</dt><dd>Чёрное окно, куда пишут короткие команды. Живёт внизу VS Code.</dd>
+      <dt>CLAUDE.md</dt><dd>Паспорт проекта. Машина читает его в начале каждой сессии.</dd>
+    </dl>
+  </section>
+
+  <footer class="foot col">
+    <p>Приложение к модулю 00 «Фундамент» программы «Контент-завод на коде». Схемы условные: названия кнопок и их расположение соответствуют реальным интерфейсам, оформление — нет. Ревизия 30.07.2026.</p>
+  </footer>
+
+</div>
+<section class="step"><p style="text-align:center"><a href="#vybor">↑ Вернуться к выбору маршрута</a></p></section>
+</div>
+<script>
+  (function () {
+    var bar = document.getElementById('railbar');
+    if (!bar) return;
+    var ticking = false;
+    function update() {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var p = h > 0 ? (window.scrollY / h) * 100 : 0;
+      bar.style.width = Math.min(100, Math.max(0, p)) + '%';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  })();
+
+  (function () {
+    document.querySelectorAll('button.copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var box = btn.closest('.prompt');
+        var body = box && box.querySelector('.ptext');
+        if (!body) return;
+        var select = function () {
+          var r = document.createRange();
+          r.selectNodeContents(body);
+          var s = window.getSelection();
+          s.removeAllRanges();
+          s.addRange(r);
+        };
+        var done = function () {
+          var was = btn.textContent;
+          btn.textContent = 'скопировано';
+          btn.setAttribute('data-done', '1');
+          window.setTimeout(function () {
+            btn.textContent = was;
+            btn.removeAttribute('data-done');
+          }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(body.innerText).then(done, select);
+        } else {
+          select();
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
