@@ -1,0 +1,24 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "anim.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/01280723198f-oss/tolstobrovevgeniy-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/01280723198f-oss/tolstobrovevgeniy-site/issues"
+  },
+  "homepage": "https://github.com/01280723198f-oss/tolstobrovevgeniy-site#readme",
+  "dependencies": {
+    "marked": "^14.1.4"
+  }
+}

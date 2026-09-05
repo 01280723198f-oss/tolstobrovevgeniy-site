@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Не проси Claude писать. Раздай ему роли внутри одного запроса — Евгений Толстобров</title>
+  <meta name="description" content="Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Не проси Claude писать. Раздай ему роли внутри одного запроса — Евгений Толстобров">
+  <meta property="og:description" content="Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Не проси Claude писать. Раздай ему роли внутри одного запроса — Евгений Толстобров">
+  <meta name="twitter:description" content="Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-06-30">
+  <meta property="article:modified_time" content="2026-06-30">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Не проси Claude писать. Раздай ему роли внутри одного запроса","name":"Не проси Claude писать. Раздай ему роли внутри одного запроса","description":"Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.","inLanguage":"ru","datePublished":"2026-06-30","dateModified":"2026-06-30","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/"},"url":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/","articleSection":"Инструкция","wordCount":316,"timeRequired":"PT4M"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Не проси Claude писать. Раздай ему роли внутри одного запроса","item":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Не проси Claude писать. Раздай ему роли внутри одного запроса</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-06-30">30 июня 2026</time>
+        <span>· 4 мин</span>
+      </div>
+      <h1>Не проси Claude писать. Раздай ему роли внутри одного запроса</h1>
+      <p class="lead">Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#pochemu-prompt-odnoy-strokoy-eto-vsegda-slabo">Почему «промпт одной строкой» — это всегда слабо</a></li><li><a href="#uroven-2-tri-roli-vnutri-odnogo-zaprosa">Уровень 2: три роли внутри одного запроса</a></li><li><a href="#shablon">Шаблон</a></li><li><a href="#kuda-eto-upiraetsya">Куда это упирается</a></li><li><a href="#hochesh-eto-pod-sebya">Хочешь это под себя</a></li><li><a href="#zabrat-shablon">Забрать шаблон</a></li></ol>
+      </nav>
+      <div class="content">
+<p>Карусель тизерила приём: один запрос, три роли внутри. Здесь — расшифровка с шаблоном и примерами.</p>
+<h2 id="pochemu-prompt-odnoy-strokoy-eto-vsegda-slabo">Почему «промпт одной строкой» — это всегда слабо</h2>
+<p>Когда ты пишешь «напиши пост про X» — Claude встречает задачу с нулевыми вводными. Он не знает, кто читатель, какой у тебя голос, что считается успехом. Он угадывает — и угадывает по средней статистике интернета.</p>
+<p>Результат тоже выходит средним. Не плохим — никогда «не плохим». Просто общим, как у всех.</p>
+<p>Дать ему длинный промпт с инструкцией решает только половину проблемы: одна голова, даже хорошо проинструктированная, всё равно одна. А значит — без внутренней критики.</p>
+<h2 id="uroven-2-tri-roli-vnutri-odnogo-zaprosa">Уровень 2: три роли внутри одного запроса</h2>
+<p>Приём простой. В одном промпте описываешь не задачу, а маленькую команду. Кто, зачем и в какой последовательности работает над ответом.</p>
+<p>Минимальный набор:</p>
+<ul>
+<li><strong>Архитектор.</strong> Смотрит сверху. Раскладывает задачу на куски, держит логику целого, видит риски и зависимости.</li>
+<li><strong>Исполнитель.</strong> Делает работу руками. Пишет, считает, кодит, рисует — по плану архитектора.</li>
+<li><strong>Ревьюер.</strong> Смотрит на готовое глазами читателя/клиента. Ловит, где упрощено до неправды, где сложно без нужды, где не закрыт основной вопрос.</li>
+</ul>
+<p>Внутри одного ответа Claude проходит цикл «архитектор → исполнитель → ревьюер» — и финальный артефакт уже отжат от трёх типов ошибок: системных, исполнительских, читательских.</p>
+<h2 id="shablon">Шаблон</h2>
+<pre><code>Ты — команда из трёх: архитектор, исполнитель, ревьюер.
+Задача: &lt;одно предложение, что нужно получить&gt;
+
+1. Архитектор: разложи задачу на 3–5 кусков, скажи, на что обратить внимание.
+2. Исполнитель: реализуй пункт за пунктом.
+3. Ревьюер: пройди по результату, скажи, где провисло, и поправь.
+
+Ответь сначала шагом 1, потом 2, потом 3. На каждом — короткий комментарий, что делаешь.
+</code></pre>
+<p>Этим шаблоном можно решать почти любую задачу: пост, лендинг, фрагмент кода, разбор кейса, описание продукта.</p>
+<h2 id="kuda-eto-upiraetsya">Куда это упирается</h2>
+<p>Минус приёма в одном: он живёт в рамках одного чата. Закрыл вкладку — команда забыла, кто она. Чтобы роли держались между сессиями, не растворялись и не путались — это уже задача скиллов и памяти проекта.</p>
+<p>Об этом — следующий уровень. См. статью под кодовым словом <strong><a href="guide.html?id=6-skills-claude-team">СКИЛЛЫ</a></strong>: как превратить «команду внутри промпта» в постоянную штатку.</p>
+<h2 id="hochesh-eto-pod-sebya">Хочешь это под себя</h2>
+<p>→ <strong>[МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</strong> — за вечер ставим Claude Code и подключаем первых «сотрудников».</p>
+<h2 id="zabrat-shablon">Забрать шаблон</h2>
+<p>Напиши кодовое слово <strong>РОЛИ</strong> — пришлю готовый шаблон промпта + примеры адаптации под задачи маркетинга, текстов и продукта.</p>
+<p>→ <strong><a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">Перейти в Telegram-канал @Evgeniy_Tolstobrov</a></strong></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/6-skills-claude-team/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">6 скиллов превращают Claude из универсала в команду</span>
+            <span class="related-sub">Штатка из шести ролей — маркетолог, дизайнер, SEO-инженер, сценарист, ревьюер и судья: как скиллы превращают универсала в отдел.</span>
+          </a>
+          <a class="related-card" href="/g/15-prompts-build-stages/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Один промпт даёт черновик. Пятнадцать промптов дают продукт</span>
+            <span class="related-sub">Пятнадцать команд Claude Code по стадиям сборки: замысел, данные, сборка, проверка, порядок и отдельно — что говорить, когда нейросеть уже наломала.</span>
+          </a>
+          <a class="related-card" href="/g/hour-from-bare-to-factory/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Час, за который голый Claude Code превращается в работающий завод</span>
+            <span class="related-sub">Шесть блоков по 10 минут: установка, CLAUDE.md, память, первые скиллы, хуки и первый прогон — от голой установки до среды работы.</span>
+          </a>
+          <a class="related-card" href="/g/10-repos-claude-team/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Арсенал: 10 репозиториев, которые превращают Claude Code в команду</span>
+            <span class="related-sub">Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

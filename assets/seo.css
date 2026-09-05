@@ -1,0 +1,69 @@
+/* ===== Дополнения СЕО-движка: крошки, оглавление, темы, перелинковка ===== */
+
+.breadcrumbs {
+  font-size: 14px; color: var(--muted-2);
+  margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+}
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--accent-2); }
+.breadcrumbs .sep { opacity: .45; }
+
+h1 { font-size: 34px; line-height: 1.2; margin: 6px 0 14px; letter-spacing: -0.02em; }
+.page-h1 { font-size: 32px; margin: 40px 0 10px; letter-spacing: -0.02em; }
+.page-lead { color: var(--muted); max-width: 62ch; margin: 0 0 26px; }
+
+.toc {
+  background: var(--bg-soft); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 22px; margin: 26px 0 30px;
+}
+.toc-title { margin: 0 0 10px; font-size: 13px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted-2); }
+.toc ol { margin: 0; padding-left: 20px; color: var(--muted); }
+.toc li { margin: 5px 0; }
+.toc a { color: var(--text); text-decoration: none; }
+.toc a:hover { color: var(--accent-2); }
+
+.content a.ctx-link {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-soft);
+  text-underline-offset: 3px;
+}
+.content a.ctx-link:hover { text-decoration-color: var(--accent); }
+
+.topics-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 34px; }
+.topic-chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 14px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--card);
+  color: var(--text); font-size: 14px; text-decoration: none;
+  transition: border-color .15s, background .15s;
+}
+.topic-chip:hover { border-color: var(--accent); background: var(--card-hover); text-decoration: none; }
+.topic-chip span { color: var(--muted-2); font-size: 12px; }
+
+a.tag { text-decoration: none; }
+a.tag:hover { color: var(--accent); }
+
+.related { margin: 46px 0 10px; }
+.related h2 { font-size: 21px; margin: 0 0 16px; }
+.related-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.related-card {
+  display: flex; flex-direction: column; gap: 7px;
+  padding: 16px 18px; border: 1px solid var(--border);
+  border-radius: 14px; background: var(--card); text-decoration: none;
+  transition: border-color .15s, background .15s, transform .15s;
+}
+.related-card:hover { border-color: var(--accent); background: var(--card-hover); transform: translateY(-2px); text-decoration: none; }
+.related-card .tag { font-size: 11px; }
+.related-title { color: var(--text); font-weight: 600; line-height: 1.35; }
+.related-sub { color: var(--muted-2); font-size: 14px; line-height: 1.45; }
+
+.footer-topics { font-size: 14px; margin: 6px 0 14px; color: var(--muted-2); }
+.footer-topics a { color: var(--muted); }
+
+@media (max-width: 640px) {
+  h1 { font-size: 27px; }
+  .page-h1 { font-size: 25px; }
+  .related-list { grid-template-columns: 1fr; }
+}

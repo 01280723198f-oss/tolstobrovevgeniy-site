@@ -3,67 +3,372 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Евгений Толстобров — инструкции по Claude Code и контент-заводу</title>
-  <meta name="description" content="Инструкции и разборы: как строить ИИ-контент-завод с нуля через Claude Code. Подготовка, скиллы, воронки, монетизация.">
-  <link rel="stylesheet" href="styles.css">
+  <title>Claude Code и контент-завод — инструкции Евгений Толстобров</title>
+  <meta name="description" content="Пошаговые инструкции: как собрать контент-завод на Claude Code — скиллы, промпты, автоматизация контента, воронки и монетизация трафика.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Claude Code и контент-завод — инструкции Евгений Толстобров">
+  <meta property="og:description" content="Пошаговые инструкции: как собрать контент-завод на Claude Code — скиллы, промпты, автоматизация контента, воронки и монетизация трафика.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Code и контент-завод — инструкции Евгений Толстобров">
+  <meta name="twitter:description" content="Пошаговые инструкции: как собрать контент-завод на Claude Code — скиллы, промпты, автоматизация контента, воронки и монетизация трафика.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  
+  
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Инструкции по Claude Code и контент-заводу","url":"https://tolstobrovevgeniy.ru/","inLanguage":"ru","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tolstobrovevgeniy.ru/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Инструкции","itemListElement":[{"@type":"ListItem","position":1,"url":"https://tolstobrovevgeniy.ru/g/content-department-build-order/","name":"Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается"},{"@type":"ListItem","position":2,"url":"https://tolstobrovevgeniy.ru/g/10-repos-claude-team/","name":"Арсенал: 10 репозиториев, которые превращают Claude Code в команду"},{"@type":"ListItem","position":3,"url":"https://tolstobrovevgeniy.ru/g/vibecode-app-first-real-user/","name":"Приложение работает ровно до первого живого пользователя"},{"@type":"ListItem","position":4,"url":"https://tolstobrovevgeniy.ru/g/claude-for-open-source-free-max/","name":"Anthropic раздаёт Claude Max на полгода. Кому дают на самом деле"},{"@type":"ListItem","position":5,"url":"https://tolstobrovevgeniy.ru/g/15-prompts-build-stages/","name":"Один промпт даёт черновик. Пятнадцать промптов дают продукт"},{"@type":"ListItem","position":6,"url":"https://tolstobrovevgeniy.ru/g/full-access-safety-net/","name":"Полный доступ нейросети — вопрос отката, а не смелости"},{"@type":"ListItem","position":7,"url":"https://tolstobrovevgeniy.ru/g/6-skills-claude-team/","name":"6 скиллов превращают Claude из универсала в команду"},{"@type":"ListItem","position":8,"url":"https://tolstobrovevgeniy.ru/g/ai-team-of-skills/","name":"ИИ-команда из скиллов: штатка на одного"},{"@type":"ListItem","position":9,"url":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/","name":"Не проси Claude писать. Раздай ему роли внутри одного запроса"},{"@type":"ListItem","position":10,"url":"https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/","name":"Один скилл вместо семи нод. Где Claude уже заменяет n8n"},{"@type":"ListItem","position":11,"url":"https://tolstobrovevgeniy.ru/g/8-real-skills-vs-50-hype/","name":"«50 скиллов Claude» — миф. Рабочих восемь, и почему этого хватает"},{"@type":"ListItem","position":12,"url":"https://tolstobrovevgeniy.ru/g/claude-3-levels-map/","name":"Карта Claude на три уровня: команда → агент → автопилот"},{"@type":"ListItem","position":13,"url":"https://tolstobrovevgeniy.ru/g/hour-from-bare-to-factory/","name":"Час, за который голый Claude Code превращается в работающий завод"},{"@type":"ListItem","position":14,"url":"https://tolstobrovevgeniy.ru/g/mini-apps-as-front-doors/","name":"Мини-приложения вместо PDF-лидмагнитов. Фронт-двери воронки на одном инструменте"},{"@type":"ListItem","position":15,"url":"https://tolstobrovevgeniy.ru/g/zero-saas-content-factory-stack/","name":"Мой стек контент-завода. Без инвестиций, без подписок «на автоматизацию»"},{"@type":"ListItem","position":16,"url":"https://tolstobrovevgeniy.ru/g/6-prompts-deck-pipeline/","name":"6 промптов вместо PowerPoint. Конвейер сборки презентации в Claude"},{"@type":"ListItem","position":17,"url":"https://tolstobrovevgeniy.ru/g/claude-code-os/","name":"Claude Code — это не чат. Это операционная система твоего бизнеса"},{"@type":"ListItem","position":18,"url":"https://tolstobrovevgeniy.ru/g/context-first-prompts/","name":"Ты винишь модель. А дело в одном промпте"},{"@type":"ListItem","position":19,"url":"https://tolstobrovevgeniy.ru/g/restart-zavod/","name":"Меня обнулил Instagram на 23 000. И почему я этому рад"},{"@type":"ListItem","position":20,"url":"https://tolstobrovevgeniy.ru/g/claude-code-setup/","name":"Как подготовить Claude Code к любому проекту"},{"@type":"ListItem","position":21,"url":"https://tolstobrovevgeniy.ru/g/claude-7-departments/","name":"Claude — не ассистент, а штат из семи отделов"},{"@type":"ListItem","position":22,"url":"https://tolstobrovevgeniy.ru/g/12-skills-install/","name":"12 скиллов, которые снимают рутину — и как их поставить"},{"@type":"ListItem","position":23,"url":"https://tolstobrovevgeniy.ru/g/content-team-5-roles/","name":"Контент-отдел из одного человека: пять ролей"},{"@type":"ListItem","position":24,"url":"https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/","name":"MCP: как дать модели руки, а не советы"},{"@type":"ListItem","position":25,"url":"https://tolstobrovevgeniy.ru/g/7-free-ai-sources/","name":"Семь бесплатных источников вместо платного курса по ИИ"},{"@type":"ListItem","position":26,"url":"https://tolstobrovevgeniy.ru/g/4-tools-vibecoder/","name":"Четыре станка, на которых стоит контент-завод"},{"@type":"ListItem","position":27,"url":"https://tolstobrovevgeniy.ru/g/context-not-agent/","name":"Дело не в модели. Дело в контексте"},{"@type":"ListItem","position":28,"url":"https://tolstobrovevgeniy.ru/g/6-skills-design-work/","name":"Шесть скиллов, которые делают работу дизайнера"},{"@type":"ListItem","position":29,"url":"https://tolstobrovevgeniy.ru/g/content-factory-os/","name":"Контент-завод как операционная система"},{"@type":"ListItem","position":30,"url":"https://tolstobrovevgeniy.ru/g/start-from-zero/","name":"Как собрать контент-завод, начав с нуля"}]}</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="/">
         <span class="logo">🔥</span>
-        <span id="brandName">Евгений Толстобров</span>
+        <span>Евгений Толстобров</span>
       </a>
-      <a class="btn-channel" id="headerChannel" target="_blank" rel="noopener">
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
         📲 <span class="full">Telegram-канал</span>
       </a>
     </div>
   </header>
-
   <main class="wrap">
-    <h2 class="section-title" style="margin-top:40px">Инструкции</h2>
-    <div class="guides" id="guidesList"></div>
+    <h1 class="page-h1">Инструкции по Claude Code и контент-заводу</h1>
+    <p class="page-lead">Маркетолог, автор контент-завода на Claude Code. Здесь — разборы и пошаговые инструкции: как отдать контент коду и довести человека от просмотра до оплаты.</p>
 
-    <section class="cta-block">
-      <h3>Хочешь видеть весь путь?</h3>
-      <p>Инструкции — это выжимка. Живой дневник стройки, разборы и анонсы новых инструментов — в Telegram-канале.</p>
-      <a class="btn-channel" id="ctaChannel" target="_blank" rel="noopener">📲 Подписаться на канал</a>
-    </section>
+    <nav class="topics-row" aria-label="Темы">
+      <a class="topic-chip" href="/tema/claude-code/">Claude Code <span>9</span></a><a class="topic-chip" href="/tema/instrukciya/">Инструкция <span>7</span></a><a class="topic-chip" href="/tema/razbor/">Разбор <span>6</span></a><a class="topic-chip" href="/tema/kontent-zavod/">Контент-завод <span>3</span></a><a class="topic-chip" href="/tema/build-in-public/">Build in public <span>2</span></a><a class="topic-chip" href="/tema/voronka/">Воронка <span>1</span></a><a class="topic-chip" href="/tema/obuchenie/">Обучение <span>1</span></a><a class="topic-chip" href="/tema/dnevnik-stroyki/">Дневник стройки <span>1</span></a>
+    </nav>
+
+    <h2 class="section-title">Все инструкции</h2>
+    <div class="guides">
+      
+      <a class="guide-card" href="/g/content-department-build-order/">
+        <div class="meta">
+          <span class="tag">Инструкция</span>
+          <time datetime="2026-09-05">5 сентября 2026</time>
+          <span>· 8 мин</span>
+        </div>
+        <h2>Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</h2>
+        <p>Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/10-repos-claude-team/">
+        <div class="meta">
+          <span class="tag">Инструкция</span>
+          <time datetime="2026-08-15">15 августа 2026</time>
+          <span>· 7 мин</span>
+        </div>
+        <h2>Арсенал: 10 репозиториев, которые превращают Claude Code в команду</h2>
+        <p>Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/vibecode-app-first-real-user/">
+        <div class="meta">
+          <span class="tag">Инструкция</span>
+          <time datetime="2026-07-31">31 июля 2026</time>
+          <span>· 6 мин</span>
+        </div>
+        <h2>Приложение работает ровно до первого живого пользователя</h2>
+        <p>Чек-лист обкатки: пять блоков, где вайбкод-проекты ложатся чаще всего, промпт под каждый и двадцать минут ручной проверки перед запуском.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/claude-for-open-source-free-max/">
+        <div class="meta">
+          <span class="tag">Разбор</span>
+          <time datetime="2026-07-31">31 июля 2026</time>
+          <span>· 6 мин</span>
+        </div>
+        <h2>Anthropic раздаёт Claude Max на полгода. Кому дают на самом деле</h2>
+        <p>Полные условия Claude for Open Source, второй трек без порога по звёздам, чего в программе нет — и ещё три места, где Anthropic открывает доступ бесплатно.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/15-prompts-build-stages/">
+        <div class="meta">
+          <span class="tag">Инструкция</span>
+          <time datetime="2026-07-31">31 июля 2026</time>
+          <span>· 7 мин</span>
+        </div>
+        <h2>Один промпт даёт черновик. Пятнадцать промптов дают продукт</h2>
+        <p>Пятнадцать команд Claude Code по стадиям сборки: замысел, данные, сборка, проверка, порядок и отдельно — что говорить, когда нейросеть уже наломала.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/full-access-safety-net/">
+        <div class="meta">
+          <span class="tag">Build in public</span>
+          <time datetime="2026-07-28">28 июля 2026</time>
+          <span>· 6 мин</span>
+        </div>
+        <h2>Полный доступ нейросети — вопрос отката, а не смелости</h2>
+        <p>Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/6-skills-claude-team/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>6 скиллов превращают Claude из универсала в команду</h2>
+        <p>Штатка из шести ролей — маркетолог, дизайнер, SEO-инженер, сценарист, ревьюер и судья: как скиллы превращают универсала в отдел.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/ai-team-of-skills/">
+        <div class="meta">
+          <span class="tag">Разбор</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>ИИ-команда из скиллов: штатка на одного</h2>
+        <p>Карта моей ИИ-штатки: какие роли держу, чем каждая занимается и как они собираются в один конвейер под задачу.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/three-roles-in-one-prompt/">
+        <div class="meta">
+          <span class="tag">Инструкция</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>Не проси Claude писать. Раздай ему роли внутри одного запроса</h2>
+        <p>Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/one-skill-instead-of-n8n/">
+        <div class="meta">
+          <span class="tag">Разбор</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>Один скилл вместо семи нод. Где Claude уже заменяет n8n</h2>
+        <p>Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/8-real-skills-vs-50-hype/">
+        <div class="meta">
+          <span class="tag">Разбор</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>«50 скиллов Claude» — миф. Рабочих восемь, и почему этого хватает</h2>
+        <p>Почему списки «50 скиллов» не переживают проверку, какие восемь крутятся у меня каждый день и как фильтровать новые.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/claude-3-levels-map/">
+        <div class="meta">
+          <span class="tag">Разбор</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>Карта Claude на три уровня: команда → агент → автопилот</h2>
+        <p>Команда → агент → автопилот: на каком уровне сидит большинство, что требует каждый переход и куда двигаться дальше.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/hour-from-bare-to-factory/">
+        <div class="meta">
+          <span class="tag">Инструкция</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>Час, за который голый Claude Code превращается в работающий завод</h2>
+        <p>Шесть блоков по 10 минут: установка, CLAUDE.md, память, первые скиллы, хуки и первый прогон — от голой установки до среды работы.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/mini-apps-as-front-doors/">
+        <div class="meta">
+          <span class="tag">Воронка</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>Мини-приложения вместо PDF-лидмагнитов. Фронт-двери воронки на одном инструменте</h2>
+        <p>PDF-лидмагниты умирают в загрузках. Мини-инструменты живут в браузере, работают как фронт-двери воронки и собираются за выходные.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/zero-saas-content-factory-stack/">
+        <div class="meta">
+          <span class="tag">Разбор</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 6 мин</span>
+        </div>
+        <h2>Мой стек контент-завода. Без инвестиций, без подписок «на автоматизацию»</h2>
+        <p>Пять уровней контент-завода одного человека — ядро, мозг, руки, касса, витрина — без подписок «на автоматизацию».</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/6-prompts-deck-pipeline/">
+        <div class="meta">
+          <span class="tag">Инструкция</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>6 промптов вместо PowerPoint. Конвейер сборки презентации в Claude</h2>
+        <p>Конвейер из шести промптов вместо PowerPoint: структура, раскладка, дизайн-система, визуал, редактура и защита — за вечер.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/claude-code-os/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-06-30">30 июня 2026</time>
+          <span>· 7 мин</span>
+        </div>
+        <h2>Claude Code — это не чат. Это операционная система твоего бизнеса</h2>
+        <p>Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/context-first-prompts/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-06-29">29 июня 2026</time>
+          <span>· 3 мин</span>
+        </div>
+        <h2>Ты винишь модель. А дело в одном промпте</h2>
+        <p>Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/restart-zavod/">
+        <div class="meta">
+          <span class="tag">Build in public</span>
+          <time datetime="2026-06-28">28 июня 2026</time>
+          <span>· 8 мин</span>
+        </div>
+        <h2>Меня обнулил Instagram на 23 000. И почему я этому рад</h2>
+        <p>История рестарта: как бан сетки заставил меня перестать делать контент руками и собрать завод на коде — и почему систему уже не забанить.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/claude-code-setup/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-06-18">18 июня 2026</time>
+          <span>· 11 мин</span>
+        </div>
+        <h2>Как подготовить Claude Code к любому проекту</h2>
+        <p>Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/claude-7-departments/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>Claude — не ассистент, а штат из семи отделов</h2>
+        <p>42 скилла, разложенные по отделам: разработка, дизайн, маркетинг, контент, финансы, операции, право.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/12-skills-install/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>12 скиллов, которые снимают рутину — и как их поставить</h2>
+        <p>Что такое скилл, куда он кладётся, как проверить, что он подхватился, и в каком порядке ставить первые двенадцать.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/content-team-5-roles/">
+        <div class="meta">
+          <span class="tag">Контент-завод</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>Контент-отдел из одного человека: пять ролей</h2>
+        <p>Стратег, арт-директор, копирайтер, продакшн и редактор — что каждая роль забирает на вход и что отдаёт.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/mcp-connectors-guide/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>MCP: как дать модели руки, а не советы</h2>
+        <p>Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/7-free-ai-sources/">
+        <div class="meta">
+          <span class="tag">Обучение</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>Семь бесплатных источников вместо платного курса по ИИ</h2>
+        <p>Где реально учиться работать с ИИ: первоисточники, чужой код, разборы экрана и собственные логи.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/4-tools-vibecoder/">
+        <div class="meta">
+          <span class="tag">Контент-завод</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>Четыре станка, на которых стоит контент-завод</h2>
+        <p>Скиллы, радар чужих виралок, клон дизайна и воронка на кодовом слове — что делает каждый и зачем.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/context-not-agent/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 5 мин</span>
+        </div>
+        <h2>Дело не в модели. Дело в контексте</h2>
+        <p>Почему ИИ-агент, прикрученный к бизнесу, не работает — и пять шагов, которые превращают его в систему.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/6-skills-design-work/">
+        <div class="meta">
+          <span class="tag">Claude Code</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>Шесть скиллов, которые делают работу дизайнера</h2>
+        <p>Карусель, ареопаг, humaniser, статья-воронка, веб-сайт и разбор сессии — что каждый делает и как проверить.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/content-factory-os/">
+        <div class="meta">
+          <span class="tag">Контент-завод</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>Контент-завод как операционная система</h2>
+        <p>Из чего состоит конвейер: радар, клон дизайна, тексты, воронка — и в каком порядке это собирается.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+      <a class="guide-card" href="/g/start-from-zero/">
+        <div class="meta">
+          <span class="tag">Дневник стройки</span>
+          <time datetime="2026-07-25">25 июля 2026</time>
+          <span>· 4 мин</span>
+        </div>
+        <h2>Как собрать контент-завод, начав с нуля</h2>
+        <p>Шесть шагов после бана сетки: система вместо рук, чужая форма, кодовые слова, расписание и честная метрика.</p>
+        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
+      </a>
+    </div>
+
+    
+      <section class="cta-block">
+        <h3>Хочешь видеть весь путь?</h3>
+        <p>Инструкции — это выжимка. Живой дневник стройки, разборы и анонсы новых инструментов — в Telegram-канале.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
   </main>
-
   <footer class="site-footer">
     <div class="wrap">
       <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
-      <p>© <span id="year"></span> <span id="footerBrand">Евгений Толстобров</span> · Строим вместе 🔥<br>
-      <a id="footerChannel" target="_blank" rel="noopener">Telegram-канал</a></p>
+      <nav class="footer-topics"><a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
     </div>
   </footer>
-
-  <script src="guides.js"></script>
-  <script>
-    // Брендинг и ссылки из CONFIG
-    document.getElementById('brandName').textContent = CONFIG.brand;
-    document.getElementById('footerBrand').textContent = CONFIG.brand;
-    document.getElementById('year').textContent = new Date().getFullYear();
-    ['headerChannel','ctaChannel','footerChannel'].forEach(id => {
-      document.getElementById(id).href = CONFIG.channelUrl;
-    });
-
-    // Карточки инструкций
-    const list = document.getElementById('guidesList');
-    list.innerHTML = GUIDES.map(g => `
-      <a class="guide-card" href="guide.html?id=${g.id}">
-        <div class="meta">
-          <span class="tag">${g.tag}</span>
-          <span>${g.date}</span>
-          <span>· ${g.readingTime}</span>
-        </div>
-        <h2>${g.title}</h2>
-        <p>${g.subtitle}</p>
-        <p style="margin-top:14px"><span class="arrow">Читать →</span></p>
-      </a>
-    `).join('');
-  </script>
-  <script type="module" src="anim.js"></script>
+  <script src="/assets/analytics.js" defer></script>
 </body>
 </html>

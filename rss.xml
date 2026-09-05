@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Инструкции по Claude Code и контент-заводу</title>
+    <link>https://tolstobrovevgeniy.ru/</link>
+    <description>Маркетолог, автор контент-завода на Claude Code</description>
+    <language>ru</language>
+    <lastBuildDate>Sat, 05 Sep 2026 04:32:03 GMT</lastBuildDate>
+    <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</title>
+      <link>https://tolstobrovevgeniy.ru/g/content-department-build-order/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-department-build-order/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</description>
+    </item>
+    <item>
+      <title>Арсенал: 10 репозиториев, которые превращают Claude Code в команду</title>
+      <link>https://tolstobrovevgeniy.ru/g/10-repos-claude-team/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/10-repos-claude-team/</guid>
+      <pubDate>Sat, 15 Aug 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</description>
+    </item>
+    <item>
+      <title>Приложение работает ровно до первого живого пользователя</title>
+      <link>https://tolstobrovevgeniy.ru/g/vibecode-app-first-real-user/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vibecode-app-first-real-user/</guid>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Чек-лист обкатки: пять блоков, где вайбкод-проекты ложатся чаще всего, промпт под каждый и двадцать минут ручной проверки перед запуском.</description>
+    </item>
+    <item>
+      <title>Anthropic раздаёт Claude Max на полгода. Кому дают на самом деле</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-for-open-source-free-max/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-for-open-source-free-max/</guid>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Полные условия Claude for Open Source, второй трек без порога по звёздам, чего в программе нет — и ещё три места, где Anthropic открывает доступ бесплатно.</description>
+    </item>
+    <item>
+      <title>Один промпт даёт черновик. Пятнадцать промптов дают продукт</title>
+      <link>https://tolstobrovevgeniy.ru/g/15-prompts-build-stages/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/15-prompts-build-stages/</guid>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Пятнадцать команд Claude Code по стадиям сборки: замысел, данные, сборка, проверка, порядок и отдельно — что говорить, когда нейросеть уже наломала.</description>
+    </item>
+    <item>
+      <title>Полный доступ нейросети — вопрос отката, а не смелости</title>
+      <link>https://tolstobrovevgeniy.ru/g/full-access-safety-net/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/full-access-safety-net/</guid>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
+      <category>Build in public</category>
+      <description>Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</description>
+    </item>
+    <item>
+      <title>6 скиллов превращают Claude из универсала в команду</title>
+      <link>https://tolstobrovevgeniy.ru/g/6-skills-claude-team/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/6-skills-claude-team/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Штатка из шести ролей — маркетолог, дизайнер, SEO-инженер, сценарист, ревьюер и судья: как скиллы превращают универсала в отдел.</description>
+    </item>
+    <item>
+      <title>ИИ-команда из скиллов: штатка на одного</title>
+      <link>https://tolstobrovevgeniy.ru/g/ai-team-of-skills/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ai-team-of-skills/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Карта моей ИИ-штатки: какие роли держу, чем каждая занимается и как они собираются в один конвейер под задачу.</description>
+    </item>
+    <item>
+      <title>Не проси Claude писать. Раздай ему роли внутри одного запроса</title>
+      <link>https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.</description>
+    </item>
+    <item>
+      <title>Один скилл вместо семи нод. Где Claude уже заменяет n8n</title>
+      <link>https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.</description>
+    </item>
+    <item>
+      <title>«50 скиллов Claude» — миф. Рабочих восемь, и почему этого хватает</title>
+      <link>https://tolstobrovevgeniy.ru/g/8-real-skills-vs-50-hype/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/8-real-skills-vs-50-hype/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Почему списки «50 скиллов» не переживают проверку, какие восемь крутятся у меня каждый день и как фильтровать новые.</description>
+    </item>
+    <item>
+      <title>Карта Claude на три уровня: команда → агент → автопилот</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-3-levels-map/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-3-levels-map/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Команда → агент → автопилот: на каком уровне сидит большинство, что требует каждый переход и куда двигаться дальше.</description>
+    </item>
+    <item>
+      <title>Час, за который голый Claude Code превращается в работающий завод</title>
+      <link>https://tolstobrovevgeniy.ru/g/hour-from-bare-to-factory/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/hour-from-bare-to-factory/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Шесть блоков по 10 минут: установка, CLAUDE.md, память, первые скиллы, хуки и первый прогон — от голой установки до среды работы.</description>
+    </item>
+    <item>
+      <title>Мини-приложения вместо PDF-лидмагнитов. Фронт-двери воронки на одном инструменте</title>
+      <link>https://tolstobrovevgeniy.ru/g/mini-apps-as-front-doors/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/mini-apps-as-front-doors/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Воронка</category>
+      <description>PDF-лидмагниты умирают в загрузках. Мини-инструменты живут в браузере, работают как фронт-двери воронки и собираются за выходные.</description>
+    </item>
+    <item>
+      <title>Мой стек контент-завода. Без инвестиций, без подписок «на автоматизацию»</title>
+      <link>https://tolstobrovevgeniy.ru/g/zero-saas-content-factory-stack/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zero-saas-content-factory-stack/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Пять уровней контент-завода одного человека — ядро, мозг, руки, касса, витрина — без подписок «на автоматизацию».</description>
+    </item>
+    <item>
+      <title>6 промптов вместо PowerPoint. Конвейер сборки презентации в Claude</title>
+      <link>https://tolstobrovevgeniy.ru/g/6-prompts-deck-pipeline/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/6-prompts-deck-pipeline/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Конвейер из шести промптов вместо PowerPoint: структура, раскладка, дизайн-система, визуал, редактура и защита — за вечер.</description>
+    </item>
+    <item>
+      <title>Claude Code — это не чат. Это операционная система твоего бизнеса</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-os/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-os/</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</description>
+    </item>
+    <item>
+      <title>Ты винишь модель. А дело в одном промпте</title>
+      <link>https://tolstobrovevgeniy.ru/g/context-first-prompts/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/context-first-prompts/</guid>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</description>
+    </item>
+    <item>
+      <title>Меня обнулил Instagram на 23 000. И почему я этому рад</title>
+      <link>https://tolstobrovevgeniy.ru/g/restart-zavod/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/restart-zavod/</guid>
+      <pubDate>Sun, 28 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Build in public</category>
+      <description>История рестарта: как бан сетки заставил меня перестать делать контент руками и собрать завод на коде — и почему систему уже не забанить.</description>
+    </item>
+    <item>
+      <title>Как подготовить Claude Code к любому проекту</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-setup/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-setup/</guid>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</description>
+    </item>
+  </channel>
+</rss>

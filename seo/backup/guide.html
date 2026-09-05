@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инструкция — Евгений Толстобров</title>
+  <meta name="description" content="Инструкция от Евгения Толстоброва">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="logo">🔥</span>
+        <span id="brandName">Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" id="headerChannel" target="_blank" rel="noopener">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="article">
+      <a class="back-link" href="index.html">← Все инструкции</a>
+      <div class="meta" id="articleMeta"></div>
+      <p class="lead" id="articleLead"></p>
+      <div class="content" id="articleContent"></div>
+
+      <!-- Мостик в канал — авто-добавляется в конце КАЖДОЙ инструкции -->
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" id="ctaChannel" target="_blank" rel="noopener">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <p>© <span id="year"></span> <span id="footerBrand">Евгений Толстобров</span> · Строим вместе 🔥<br>
+      <a id="footerChannel" target="_blank" rel="noopener">Telegram-канал</a></p>
+    </div>
+  </footer>
+
+  <script src="guides.js"></script>
+  <script>
+    document.getElementById('brandName').textContent = CONFIG.brand;
+    document.getElementById('footerBrand').textContent = CONFIG.brand;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    ['headerChannel','ctaChannel','footerChannel'].forEach(id => {
+      document.getElementById(id).href = CONFIG.channelUrl;
+    });
+
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id');
+    const guide = GUIDES.find(g => g.id === id) || GUIDES[0];
+
+    if (guide) {
+      document.title = guide.title + ' — ' + CONFIG.brand;
+      document.getElementById('articleMeta').innerHTML =
+        `<span class="tag">${guide.tag}</span><span>${guide.date}</span><span>· ${guide.readingTime}</span>`;
+      document.getElementById('articleLead').textContent = guide.subtitle;
+      document.getElementById('articleContent').innerHTML = marked.parse(guide.markdown);
+    } else {
+      document.getElementById('articleContent').innerHTML =
+        '<p>Инструкция не найдена. <a href="index.html">Вернуться к списку</a>.</p>';
+    }
+  </script>
+  <script type="module" src="anim.js"></script>
+</body>
+</html>

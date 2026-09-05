@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Полный доступ нейросети — вопрос отката, а не смелости — Евгений Толстобров</title>
+  <meta name="description" content="Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/full-access-safety-net/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Полный доступ нейросети — вопрос отката, а не смелости — Евгений Толстобров">
+  <meta property="og:description" content="Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/full-access-safety-net/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Полный доступ нейросети — вопрос отката, а не смелости — Евгений Толстобров">
+  <meta name="twitter:description" content="Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-07-28">
+  <meta property="article:modified_time" content="2026-07-28">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Полный доступ нейросети — вопрос отката, а не смелости","name":"Полный доступ нейросети — вопрос отката, а не смелости","description":"Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.","inLanguage":"ru","datePublished":"2026-07-28","dateModified":"2026-07-28","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/full-access-safety-net/"},"url":"https://tolstobrovevgeniy.ru/g/full-access-safety-net/","articleSection":"Build in public","wordCount":970,"timeRequired":"PT6M"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Build in public","item":"https://tolstobrovevgeniy.ru/tema/build-in-public/"},{"@type":"ListItem","position":3,"name":"Полный доступ нейросети — вопрос отката, а не смелости","item":"https://tolstobrovevgeniy.ru/g/full-access-safety-net/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/build-in-public/">Build in public</a><span class="sep">/</span><span>Полный доступ нейросети — вопрос отката, а не смелости</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/build-in-public/">Build in public</a>
+        <time datetime="2026-07-28">28 июля 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Полный доступ нейросети — вопрос отката, а не смелости</h1>
+      <p class="lead">Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#pochemu-razresheniya-ne-zaschischayut">Почему разрешения не защищают</a></li><li><a href="#uzel-1-vsya-sistema-pod-kontrolem-versiy">Узел 1. Вся система под контролем версий</a></li><li><a href="#uzel-2-bekap-uezzhaet-sam">Узел 2. Бэкап уезжает сам</a></li><li><a href="#uzel-3-fayl-pravil-proekta">Узел 3. Файл правил проекта</a></li><li><a href="#uzel-4-pamyat-mezhdu-sessiyami">Узел 4. Память между сессиями</a></li><li><a href="#uzel-5-perehvatchiki-poryadka">Узел 5. Перехватчики порядка</a></li><li><a href="#i-tolko-teper-snimat-ogranichiteli">И только теперь — снимать ограничители</a></li><li><a href="#s-chego-nachat-segodnya">С чего начать сегодня</a></li><li><a href="#esli-hochesh-eto-pod-sebya-a-ne-sobirat-po-kuskam">Если хочешь это под себя, а не собирать по кускам</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я сказал, что убрал у нейросети кнопку «спросить разрешение», и что дело не в смелости, а в откате. Здесь — как эта сетка устроена и в <a href="/g/12-skills-install/" class="ctx-link"><a href="/g/content-factory-os/" class="ctx-link">каком порядке</a></a> её ставить.</p>
+<h2 id="pochemu-razresheniya-ne-zaschischayut">Почему разрешения не защищают</h2>
+<p>Разрешения выглядят как защита. На деле они защищают ровно до сотого окна.</p>
+<p>Первые десять раз ты читаешь, что именно тебя спрашивают. Дальше начинается кликанье «да» на автомате — потому что двадцать вопросов подряд были безобидные, и двадцать первый ты пропускаешь не глядя. Это не разгильдяйство, это усталость от подтверждений, и она приходит ко всем.</p>
+<p>Получается ловушка. Подтверждения тормозят работу постоянно, а спасают только в тот единственный раз, когда ты ещё не устал.</p>
+<p>Настоящая защита работает иначе: не «не дать сломать», а «сделать поломку дешёвой». Как только любое действие отменяется одной командой, вопрос «а вдруг испортит» просто перестаёт стоять. Не потому что не испортит. А потому что цена испорченного упала до пары секунд.</p>
+<p>Поэтому порядок обратный привычному: сначала сетка, потом снимаешь ограничители. Не наоборот.</p>
+<h2 id="uzel-1-vsya-sistema-pod-kontrolem-versiy">Узел 1. Вся система под контролем версий</h2>
+<p>Первое и главное. Папка проекта — это не просто папка, это репозиторий: каждое состояние зафиксировано, к любому можно вернуться.</p>
+<p>Что это даёт на практике: нейросеть переписала двадцать файлов, результат тебе не нравится — одна команда, и всё как было пять минут назад. Не «восстанавливать по памяти», а именно как было.</p>
+<p>Как поставить:</p>
+<ul>
+<li>в папке проекта выполнить <code>git init</code> — один раз</li>
+<li>сказать Claude, чтобы фиксировал изменения после каждой законченной задачи</li>
+<li>перед крупной затеей делать отдельную ветку, чтобы основная оставалась нетронутой</li>
+</ul>
+<p>Без этого узла остальные четыре не имеют смысла. Это фундамент, и он ставится за пять минут.</p>
+<h2 id="uzel-2-bekap-uezzhaet-sam">Узел 2. Бэкап уезжает сам</h2>
+<p>Локальный репозиторий спасает от нейросети, но не спасает от диска. Второй узел — копия за пределами машины.</p>
+<p>У меня система уходит в приватный репозиторий по расписанию, без моего участия. Не «когда вспомню», а по таймеру — потому что бэкап, который надо не забыть сделать, это не бэкап.</p>
+<p>Что стоит вынести за скобки: то, где лежат открытые развилки и чувствительное. У меня в облако едет не всё — часть папок сознательно остаётся только на машине.</p>
+<p>Приватный репозиторий, ключ доступа, задание в планировщике — вечер работы. Дальше оно живёт само.</p>
+<h2 id="uzel-3-fayl-pravil-proekta">Узел 3. Файл правил проекта</h2>
+<p>Дальше начинается не защита, а управление. Нейросети с полным доступом нужно знать рамки, иначе она будет каждый раз изобретать их заново.</p>
+<p>Файл правил лежит в корне проекта и читается в начале каждой сессии. Автоматически, без напоминаний.</p>
+<p>Что туда идёт:</p>
+<ul>
+<li>кто ты и что за проект — чтобы не объяснять при каждом запуске</li>
+<li>где лежит контекст: какие папки за что отвечают</li>
+<li>как с тобой работать: что делать самостоятельно, а что выносить на обсуждение</li>
+<li>чего не делать никогда</li>
+</ul>
+<p>Последний пункт — самый недооценённый. Одна строка «эти папки не трогать без спроса» стоит сотни всплывающих окон, потому что она работает всегда, а не только когда ты внимателен.</p>
+<h2 id="uzel-4-pamyat-mezhdu-sessiyami">Узел 4. Память между сессиями</h2>
+<p>Четвёртый узел — то, из-за чего полный доступ вообще окупается.</p>
+<p>По умолчанию каждый новый чат — чистый лист. Ты заново рассказываешь, что за проект, что уже решено и почему пошли этим путём. На длинной дистанции ты половину времени тратишь на пересказ самого себя.</p>
+<p>Память это чинит: важные решения и договорённости лежат файлами и подтягиваются сами. Одна мысль — один файл, плюс индекс, который загружается в каждую сессию.</p>
+<p>Что стоит записывать: принятые решения и причину, повторяющиеся ошибки, чтобы не наступать дважды, договорённости о том, как работаем.</p>
+<p>Чего не стоит: то, что и так видно в коде и в истории проекта. Память — не свалка, а отобранное.</p>
+<h2 id="uzel-5-perehvatchiki-poryadka">Узел 5. Перехватчики порядка</h2>
+<p>Пятый узел — тонкий, и до него доходят немногие.</p>
+<p>Правила в файле — это просьба. Сильная, но просьба: нейросеть может её обойти, особенно на длинном контексте, когда начало сессии уже далеко.</p>
+<p>Перехватчик — не просьба, а замок. Он срабатывает до действия и физически не даёт сделать шаг не в том порядке.</p>
+<p>Пример из моей системы: сборка сайта заперта так, что нельзя писать код, пока не утверждена структура, и нельзя деплоить, пока не пройден финальный этап. Не «не рекомендуется» — именно нельзя, попытка обрывается.</p>
+<p>Ставится это на самые дорогие ошибки. Не на всё подряд: два-три замка в правильных местах закрывают почти весь риск.</p>
+<h2 id="i-tolko-teper-snimat-ogranichiteli">И только теперь — снимать ограничители</h2>
+<p>Когда пять узлов на месте, подтверждения можно убирать. Это делается списком: какие действия разрешены без вопросов.</p>
+<p>Начни с безопасного и обратимого — чтение файлов, поиск, запуск тестов. Дальше расширяй по мере того, как видишь, что система ведёт себя предсказуемо.</p>
+<p>Разница до и после — не в скорости печати. Она в том, что задачу можно поставить и уйти. Мой конвейер контента запускается по расписанию утром, разбор дня — вечером, и меня в этот момент за компьютером нет.</p>
+<p>Вот что на самом деле означает «полный доступ». Не безрассудство, а то, что ты наконец перестал быть узким местом собственной системы.</p>
+<h2 id="s-chego-nachat-segodnya">С чего начать сегодня</h2>
+<p>Если ставить всё сразу — не поставишь ничего. Порядок такой:</p>
+<ol>
+<li><code>git init</code> в папке проекта — пять минут, и откат у тебя есть</li>
+<li>Файл правил: кто ты, что за проект, чего не делать — полчаса</li>
+<li>Разрешения на чтение и поиск — сними подтверждения хотя бы там</li>
+<li>Память — по мере накопления решений, не заранее</li>
+<li>Перехватчики и внешний бэкап — когда система устоялась</li>
+</ol>
+<p>Первые три пункта — один вечер. Этого уже хватает, чтобы работать без страха.</p>
+<h2 id="esli-hochesh-eto-pod-sebya-a-ne-sobirat-po-kuskam">Если хочешь это под себя, а не собирать по кускам</h2>
+<p>Всё выше — фундамент, и он собирается руками за несколько вечеров, если знаешь порядок. Знать порядок — и есть самая дорогая часть: я его собирал не с первого раза.</p>
+<p>Чтобы получить настроенную систему за один вечер, без сбора по кускам и без моих граблей — есть [МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<ul>
+<li><a href="guide.html?id=hour-from-bare-to-factory">Час: из голого Claude в контент-завод</a> — что успеваешь за шесть блоков по десять минут</li>
+<li><a href="guide.html?id=claude-code-os">Claude Code как операционная система</a> — почему память и правила важнее модели</li>
+<li><a href="guide.html?id=claude-3-levels-map">Карта трёх уровней</a> — команда, агент, автопилот: где ты сейчас</li>
+</ul>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/15-prompts-build-stages/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Один промпт даёт черновик. Пятнадцать промптов дают продукт</span>
+            <span class="related-sub">Пятнадцать команд Claude Code по стадиям сборки: замысел, данные, сборка, проверка, порядок и отдельно — что говорить, когда нейросеть уже наломала.</span>
+          </a>
+          <a class="related-card" href="/g/content-department-build-order/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</span>
+            <span class="related-sub">Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-setup/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Как подготовить Claude Code к любому проекту</span>
+            <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
+          </a>
+          <a class="related-card" href="/g/vibecode-app-first-real-user/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Приложение работает ровно до первого живого пользователя</span>
+            <span class="related-sub">Чек-лист обкатки: пять блоков, где вайбкод-проекты ложатся чаще всего, промпт под каждый и двадцать минут ручной проверки перед запуском.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

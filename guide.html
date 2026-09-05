@@ -2,73 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Инструкция — Евгений Толстобров</title>
-  <meta name="description" content="Инструкция от Евгения Толстоброва">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <title>Переход к инструкции — Евгений Толстобров</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/">
+  <link rel="stylesheet" href="/styles.css">
+  <script>
+    // Совместимость со старыми ссылками из постов, бота и воронок.
+    var MAP = {"content-department-build-order":"/g/content-department-build-order/","10-repos-claude-team":"/g/10-repos-claude-team/","vibecode-app-first-real-user":"/g/vibecode-app-first-real-user/","claude-for-open-source-free-max":"/g/claude-for-open-source-free-max/","15-prompts-build-stages":"/g/15-prompts-build-stages/","full-access-safety-net":"/g/full-access-safety-net/","6-skills-claude-team":"/g/6-skills-claude-team/","ai-team-of-skills":"/g/ai-team-of-skills/","three-roles-in-one-prompt":"/g/three-roles-in-one-prompt/","one-skill-instead-of-n8n":"/g/one-skill-instead-of-n8n/","8-real-skills-vs-50-hype":"/g/8-real-skills-vs-50-hype/","claude-3-levels-map":"/g/claude-3-levels-map/","hour-from-bare-to-factory":"/g/hour-from-bare-to-factory/","mini-apps-as-front-doors":"/g/mini-apps-as-front-doors/","zero-saas-content-factory-stack":"/g/zero-saas-content-factory-stack/","6-prompts-deck-pipeline":"/g/6-prompts-deck-pipeline/","claude-code-os":"/g/claude-code-os/","context-first-prompts":"/g/context-first-prompts/","restart-zavod":"/g/restart-zavod/","claude-code-setup":"/g/claude-code-setup/","claude-7-departments":"/g/claude-7-departments/","12-skills-install":"/g/12-skills-install/","content-team-5-roles":"/g/content-team-5-roles/","mcp-connectors-guide":"/g/mcp-connectors-guide/","7-free-ai-sources":"/g/7-free-ai-sources/","4-tools-vibecoder":"/g/4-tools-vibecoder/","context-not-agent":"/g/context-not-agent/","6-skills-design-work":"/g/6-skills-design-work/","content-factory-os":"/g/content-factory-os/","start-from-zero":"/g/start-from-zero/"};
+    var id = new URLSearchParams(location.search).get("id");
+    var to = (id && MAP[id]) || "/";
+    location.replace(to + location.hash);
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">
-        <span class="logo">🔥</span>
-        <span id="brandName">Евгений Толстобров</span>
-      </a>
-      <a class="btn-channel" id="headerChannel" target="_blank" rel="noopener">
-        📲 <span class="full">Telegram-канал</span>
-      </a>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <article class="article">
-      <a class="back-link" href="index.html">← Все инструкции</a>
-      <div class="meta" id="articleMeta"></div>
-      <p class="lead" id="articleLead"></p>
-      <div class="content" id="articleContent"></div>
-
-      <!-- Мостик в канал — авто-добавляется в конце КАЖДОЙ инструкции -->
-      <section class="cta-block">
-        <h3>Это только фундамент. А дальше?</h3>
-        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
-        <a class="btn-channel" id="ctaChannel" target="_blank" rel="noopener">📲 Зайти в канал и идти рядом 🔥</a>
-      </section>
-    </article>
+  <main class="wrap" style="padding:60px 22px">
+    <p>Инструкция переехала на постоянный адрес. <a href="/">Открыть библиотеку инструкций</a>.</p>
   </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
-      <p>© <span id="year"></span> <span id="footerBrand">Евгений Толстобров</span> · Строим вместе 🔥<br>
-      <a id="footerChannel" target="_blank" rel="noopener">Telegram-канал</a></p>
-    </div>
-  </footer>
-
-  <script src="guides.js"></script>
-  <script>
-    document.getElementById('brandName').textContent = CONFIG.brand;
-    document.getElementById('footerBrand').textContent = CONFIG.brand;
-    document.getElementById('year').textContent = new Date().getFullYear();
-    ['headerChannel','ctaChannel','footerChannel'].forEach(id => {
-      document.getElementById(id).href = CONFIG.channelUrl;
-    });
-
-    const params = new URLSearchParams(location.search);
-    const id = params.get('id');
-    const guide = GUIDES.find(g => g.id === id) || GUIDES[0];
-
-    if (guide) {
-      document.title = guide.title + ' — ' + CONFIG.brand;
-      document.getElementById('articleMeta').innerHTML =
-        `<span class="tag">${guide.tag}</span><span>${guide.date}</span><span>· ${guide.readingTime}</span>`;
-      document.getElementById('articleLead').textContent = guide.subtitle;
-      document.getElementById('articleContent').innerHTML = marked.parse(guide.markdown);
-    } else {
-      document.getElementById('articleContent').innerHTML =
-        '<p>Инструкция не найдена. <a href="index.html">Вернуться к списку</a>.</p>';
-    }
-  </script>
-  <script type="module" src="anim.js"></script>
 </body>
 </html>

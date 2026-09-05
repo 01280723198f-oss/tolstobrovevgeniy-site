@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Один скилл вместо семи нод. Где Claude уже заменяет n8n — Евгений Толстобров</title>
+  <meta name="description" content="Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Один скилл вместо семи нод. Где Claude уже заменяет n8n — Евгений Толстобров">
+  <meta property="og:description" content="Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Один скилл вместо семи нод. Где Claude уже заменяет n8n — Евгений Толстобров">
+  <meta name="twitter:description" content="Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-06-30">
+  <meta property="article:modified_time" content="2026-06-30">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Один скилл вместо семи нод. Где Claude уже заменяет n8n","name":"Один скилл вместо семи нод. Где Claude уже заменяет n8n","description":"Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.","inLanguage":"ru","datePublished":"2026-06-30","dateModified":"2026-06-30","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/"},"url":"https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/","articleSection":"Разбор","wordCount":477,"timeRequired":"PT5M"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"Один скилл вместо семи нод. Где Claude уже заменяет n8n","item":"https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>Один скилл вместо семи нод. Где Claude уже заменяет n8n</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-06-30">30 июня 2026</time>
+        <span>· 5 мин</span>
+      </div>
+      <h1>Один скилл вместо семи нод. Где Claude уже заменяет n8n</h1>
+      <p class="lead">Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#otkuda-vzyalas-privychka-risovat-nody">Откуда взялась привычка «рисовать ноды»</a></li><li><a href="#chto-zakryvaet-odin-skill-v-claude">Что закрывает один скилл в Claude</a></li><li><a href="#gde-n8n-vse-esche-luchshe">Где n8n всё ещё лучше</a></li><li><a href="#chto-vyigraesh-kogda-pereedesh">Что выиграешь, когда переедешь</a></li><li><a href="#hochesh-eto-pod-sebya">Хочешь это под себя</a></li><li><a href="#zabrat-razbor">Забрать разбор</a></li></ol>
+      </nav>
+      <div class="content">
+<p>Карусель тизерила приём: где визуальная автоматизация в n8n — это уже привычка, а не необходимость. Здесь — расшифровка, какие задачи реально закрываются одним скиллом, а где n8n всё ещё нужен.</p>
+<h2 id="otkuda-vzyalas-privychka-risovat-nody">Откуда взялась привычка «рисовать ноды»</h2>
+<p>В 2023–2024 я сам жил в n8n и Make. Это была революция: вместо кода — визуальные блоки, между ними стрелки, и оно работает. Можно было «автоматизировать» что угодно за вечер.</p>
+<p>Но у визуальных схем была обратная сторона. Чем больше ты строил — тем больше у тебя становилось точек, в которых что-то могло порваться. Webhook прислал не то, API сменил формат, лимит закончился. Половина времени уходила не на работу, а на починку.</p>
+<p>И в этот момент пришёл LLM, который умеет делать всё то же самое <a href="/g/three-roles-in-one-prompt/" class="ctx-link">внутри одного запроса</a>. И многие схемы из «рисуем ноды» превратились в «один промпт + один скилл».</p>
+<h2 id="chto-zakryvaet-odin-skill-v-claude">Что закрывает один скилл в Claude</h2>
+<ul>
+<li><strong>Парсинг + чистка + выгрузка.</strong> Раньше: HTTP-нода → Code-нода для regex → Set-нода → Sheets-нода. Сейчас: один скилл, который принимает URL/файл, парсит, чистит и пишет в нужный формат.</li>
+<li><strong>Сортировка входящих сообщений.</strong> Раньше: webhook → switch-нода с правилами → ветки. Сейчас: скилл, который классифицирует по смыслу, а не по ключевым словам.</li>
+<li><strong>Генерация и рассылка контента по шаблону.</strong> Раньше: триггер по расписанию → шаблон → отправка. Сейчас: один скилл, который сам понимает контекст недели и собирает сообщения под него.</li>
+<li><strong>Поиск, агрегация, ресайз.</strong> Любая цепочка из 4–7 нод, где между блоками только перекладывание данных, сворачивается в один промпт.</li>
+</ul>
+<p>Общее правило простое: если между нодами в основном «перенеси значение из A в B и поменяй формат» — это уже LLM-задача.</p>
+<h2 id="gde-n8n-vse-esche-luchshe">Где n8n всё ещё лучше</h2>
+<p>Честно: не везде один скилл побеждает.</p>
+<ul>
+<li><strong>Стабильные расписания и cron&#39;ы.</strong> Если задача — «раз в час дёрнуть API и записать в базу» — n8n или нативный cron надёжнее. Скилл — это всё-таки запрос, а не сервис.</li>
+<li><strong>Низкоуровневые интеграции, где важна каждая миллисекунда.</strong> Биржевые боты, мониторинг ставок, оптимизация задержки — LLM-обёртка лишняя.</li>
+<li><strong>Сложные ветвистые сценарии с долгим состоянием.</strong> Если у тебя 30 шагов и каждый меняет состояние большой сделки — визуальная карта в n8n всё ещё нагляднее.</li>
+</ul>
+<p>Так что выбирай по принципу: где задача — «подумать и сделать», там скилл. Где задача — «дёрнуть и записать без раздумий, постоянно», там n8n или нативные тулзы.</p>
+<h2 id="chto-vyigraesh-kogda-pereedesh">Что выиграешь, когда переедешь</h2>
+<ul>
+<li>Меньше подписок на отдельные SaaS-сервисы.</li>
+<li>Меньше «починки скотча» и ручного дебага.</li>
+<li>Сценарии живут в коде/тексте — их можно версионировать в git, переносить между проектами, шарить.</li>
+<li>Один и тот же навык работает на десятке проектов: «парсер тендеров» один раз написан — подключается куда угодно.</li>
+</ul>
+<h2 id="hochesh-eto-pod-sebya">Хочешь это под себя</h2>
+<p>→ <strong>[МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</strong> — за вечер ставим Claude Code, заводим первый скилл-автоматизацию вместо n8n.</p>
+<h2 id="zabrat-razbor">Забрать разбор</h2>
+<p>Напиши кодовое слово <strong>ПОТОК</strong> — пришлю карточки: 7 типичных сценариев из n8n, к которым один скилл подходит лучше, и 3, где n8n всё ещё впереди.</p>
+<p>→ <strong><a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">Перейти в Telegram-канал @Evgeniy_Tolstobrov</a></strong></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/zero-saas-content-factory-stack/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Мой стек контент-завода. Без инвестиций, без подписок «на автоматизацию»</span>
+            <span class="related-sub">Пять уровней контент-завода одного человека — ядро, мозг, руки, касса, витрина — без подписок «на автоматизацию».</span>
+          </a>
+          <a class="related-card" href="/g/10-repos-claude-team/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Арсенал: 10 репозиториев, которые превращают Claude Code в команду</span>
+            <span class="related-sub">Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</span>
+          </a>
+          <a class="related-card" href="/g/8-real-skills-vs-50-hype/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">«50 скиллов Claude» — миф. Рабочих восемь, и почему этого хватает</span>
+            <span class="related-sub">Почему списки «50 скиллов» не переживают проверку, какие восемь крутятся у меня каждый день и как фильтровать новые.</span>
+          </a>
+          <a class="related-card" href="/g/content-department-build-order/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</span>
+            <span class="related-sub">Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
