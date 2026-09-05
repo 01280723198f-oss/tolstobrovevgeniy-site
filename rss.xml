@@ -5,8 +5,40 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 05 Sep 2026 20:45:11 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 20:54:56 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Субагент или скилл: что когда заводить</title>
+      <link>https://tolstobrovevgeniy.ru/g/subagent-or-skill/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/subagent-or-skill/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Два способа расширить систему выглядят похоже, а решают разное. Разбор по признакам, таблица выбора и три ошибки, из-за которых заводят не то.</description>
+    </item>
+    <item>
+      <title>Claude или ChatGPT: разница видна не в ответах, а в работе с проектом</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-vs-chatgpt-project/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-vs-chatgpt-project/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Сравнение не по «кто умнее», а по способу работы: разовый диалог против системы с памятью, правилами и руками. Где каждый выигрывает и что это значит для контента.</description>
+    </item>
+    <item>
+      <title>Кончились лимиты Claude: что происходит и как перестать в них упираться</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-limits-explained/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-limits-explained/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Две независимые системы ограничений, почему пятичасовое окно важнее недельного, и восемь привычек, которые растягивают одну подписку на весь рабочий день.</description>
+    </item>
+    <item>
+      <title>Claude Code или Cursor: чем они вообще отличаются</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-vs-cursor/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-vs-cursor/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Не «что лучше», а что каждый делает по своей природе — агент-исполнитель против усилителя в редакторе. Разбор по задачам, с честными минусами обоих.</description>
+    </item>
     <item>
       <title>Совет из 21 мастера вместо одного мнения</title>
       <link>https://tolstobrovevgeniy.ru/g/council-of-masters/</link>
@@ -134,38 +166,6 @@
       <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
       <category>Claude Code</category>
       <description>Штатка из шести ролей — маркетолог, дизайнер, SEO-инженер, сценарист, ревьюер и судья: как скиллы превращают универсала в отдел.</description>
-    </item>
-    <item>
-      <title>ИИ-команда из скиллов: штатка на одного</title>
-      <link>https://tolstobrovevgeniy.ru/g/ai-team-of-skills/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ai-team-of-skills/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Карта моей ИИ-штатки: какие роли держу, чем каждая занимается и как они собираются в один конвейер под задачу.</description>
-    </item>
-    <item>
-      <title>Не проси Claude писать. Раздай ему роли внутри одного запроса</title>
-      <link>https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.</description>
-    </item>
-    <item>
-      <title>Один скилл вместо семи нод. Где Claude уже заменяет n8n</title>
-      <link>https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/one-skill-instead-of-n8n/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Какие цепочки из n8n и Make сворачиваются в один скилл Claude — и три случая, где визуальная автоматизация всё ещё выигрывает.</description>
-    </item>
-    <item>
-      <title>«50 скиллов Claude» — миф. Рабочих восемь, и почему этого хватает</title>
-      <link>https://tolstobrovevgeniy.ru/g/8-real-skills-vs-50-hype/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/8-real-skills-vs-50-hype/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Почему списки «50 скиллов» не переживают проверку, какие восемь крутятся у меня каждый день и как фильтровать новые.</description>
     </item>
   </channel>
 </rss>

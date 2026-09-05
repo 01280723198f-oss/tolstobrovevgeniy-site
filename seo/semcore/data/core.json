@@ -5,8 +5,8 @@
  "totals": {
   "queries": 612,
   "clusters": 418,
-  "covered": 5,
-  "gaps": 413
+  "covered": 11,
+  "gaps": 407
  },
  "clusters": [
   {
@@ -71,11 +71,12 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "claude-code-vs-cursor",
    "signal": 358,
    "source": "подсказки поиска",
    "suggestedTitle": "Claude Code против Cursor: для чего каждый",
-   "group": "Сравнения и выбор"
+   "group": "Сравнения и выбор",
+   "matchScore": 0.85
   },
   {
    "id": "subagenty-claude-code",
@@ -134,11 +135,12 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "subagent-or-skill",
    "signal": 260,
    "source": "подсказки поиска",
    "suggestedTitle": "Субагенты: когда нужен отдельный агент, а когда скилл",
-   "group": "Новое в Claude Code"
+   "group": "Новое в Claude Code",
+   "matchScore": 0.94
   },
   {
    "id": "kak-oplatit-claude-iz-rossii",
@@ -235,11 +237,12 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "claude-vs-chatgpt-project",
    "signal": 200,
    "source": "подсказки поиска",
    "suggestedTitle": "Claude Code против ChatGPT для работы с проектом",
-   "group": "Сравнения и выбор"
+   "group": "Сравнения и выбор",
+   "matchScore": 0.74
   },
   {
    "id": "limity-claude-code",
@@ -337,7 +340,7 @@
      "signal": 20
     }
    ],
-   "page": "zero-saas-content-factory-stack",
+   "page": "content-factory-real-cost",
    "signal": 175,
    "source": "подсказки поиска",
    "suggestedTitle": "Сколько стоит Claude Code в месяц на практике",
@@ -842,9 +845,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "zero-saas-content-factory-stack",
    "signal": 100,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.74
   },
   {
    "id": "claude-ai-ne-rabotaet",
@@ -1613,9 +1617,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "claude-limits-explained",
    "signal": 60,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.85
   },
   {
    "id": "kak-ekonomit-tokeny-v-claude",
@@ -9988,9 +9993,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "codeword-funnel-chain",
    "signal": 20,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.89
   },
   {
    "id": "domashnie-zhivotnye-prezentaciya",

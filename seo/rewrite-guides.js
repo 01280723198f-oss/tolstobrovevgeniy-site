@@ -138,10 +138,20 @@ function main() {
   const applied = [];
   for (const f of files) {
     const id = f.replace(/\.md$/, "");
-    const g = GUIDES.find(x => x.id === id);
-    if (!g) { console.log(`  ⚠ ${id}: такой статьи нет в guides.js`); continue; }
-
     const { meta, body } = parseDraft(fs.readFileSync(path.join(DRAFTS, f), "utf8"));
+
+    let g = GUIDES.find(x => x.id === id);
+    if (!g) {
+      // Новая статья: в черновике должны быть title, subtitle и tag.
+      if (!meta.title || !meta.subtitle || !meta.tag) {
+        console.log(`  ⚠ ${id}: нет такой статьи, а для новой не хватает title/subtitle/tag`);
+        continue;
+      }
+      g = { id, title: meta.title, subtitle: meta.subtitle, tag: meta.tag, date: todayHuman(), markdown: "" };
+      GUIDES.unshift(g);              // свежее — наверх списка
+      console.log(`  + новая статья: ${id}`);
+    }
+
     const before = words(g.markdown);
 
     // Маркеры подстановки исходного текста — чтобы дописывать разделы,
@@ -159,6 +169,7 @@ function main() {
     if (meta.keywords) g.keywords = meta.keywords;
     if (meta.title) g.title = meta.title;
     if (meta.subtitle) g.subtitle = meta.subtitle;
+    if (meta.tag) g.tag = meta.tag;
 
     applied.push({ id, before, after: words(merged) });
   }
