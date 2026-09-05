@@ -73,14 +73,9 @@ async function setupMetrika() {
 
   const created = await api("https://api-metrika.yandex.net/management/v1/counters", {
     method: "POST",
-    body: {
-      counter: {
-        name: C.brand,
-        site: DOMAIN,
-        webvisor: { urls: "", arch_enabled: true, arch_type: "proxy", load_player_type: "proxy" },
-        code_options: { async: 1, informer: { enabled: false } }
-      }
-    }
+    // Создаём минимальный счётчик: лишние поля API отвергает целиком.
+    // Вебвизор включаем отдельным запросом ниже.
+    body: { counter: { name: C.brand, site2: { site: DOMAIN } } }
   });
   if (!created.ok) {
     console.error("✗ Не удалось создать счётчик:", JSON.stringify(created.data).slice(0, 300));
@@ -88,6 +83,13 @@ async function setupMetrika() {
   }
   const id = created.data.counter.id;
   console.log(`✓ Счётчик Метрики создан: #${id}`);
+
+  // Вебвизор: без него не видно, как люди читают статьи.
+  const wv = await api(`https://api-metrika.yandex.net/management/v1/counter/${id}`, {
+    method: "PUT",
+    body: { counter: { webvisor: { arch_enabled: true, arch_type: "proxy", load_player_type: "proxy" } } }
+  });
+  console.log(wv.ok ? "  ✓ вебвизор включён" : "  · вебвизор включи вручную в настройках счётчика");
   return id;
 }
 
