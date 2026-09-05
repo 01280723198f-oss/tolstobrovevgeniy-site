@@ -3,31 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Не проси Claude писать. Раздай ему роли внутри одного запроса — Евгений Толстобров</title>
-  <meta name="description" content="Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.">
+  <title>Промпт с ролями: шаблон «архитектор — исполнитель — ревьюер»</title>
+  <meta name="description" content="Готовый шаблон промпта, где нейросеть работает как команда из трёх ролей. Почему запрос одной строкой даёт средний ответ и как три роли внутри одного запроса вытягивают качество.">
   <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="Не проси Claude писать. Раздай ему роли внутри одного запроса — Евгений Толстобров">
-  <meta property="og:description" content="Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.">
+  <meta property="og:title" content="Промпт с ролями: шаблон «архитектор — исполнитель — ревьюер»">
+  <meta property="og:description" content="Готовый шаблон промпта, где нейросеть работает как команда из трёх ролей. Почему запрос одной строкой даёт средний ответ и как три роли внутри одного запроса вытягивают качество.">
   <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/">
-  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/three-roles-in-one-prompt.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Не проси Claude писать. Раздай ему роли внутри одного запроса — Евгений Толстобров">
-  <meta name="twitter:description" content="Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.">
-  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:title" content="Промпт с ролями: шаблон «архитектор — исполнитель — ревьюер»">
+  <meta name="twitter:description" content="Готовый шаблон промпта, где нейросеть работает как команда из трёх ролей. Почему запрос одной строкой даёт средний ответ и как три роли внутри одного запроса вытягивают качество.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/three-roles-in-one-prompt.jpg">
   <meta property="article:published_time" content="2026-06-30">
-  <meta property="article:modified_time" content="2026-06-30">
+  <meta property="article:modified_time" content="2026-09-05">
   
   
   <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/assets/seo.css">
   <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Не проси Claude писать. Раздай ему роли внутри одного запроса","name":"Не проси Claude писать. Раздай ему роли внутри одного запроса","description":"Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.","inLanguage":"ru","datePublished":"2026-06-30","dateModified":"2026-06-30","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/"},"url":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/","articleSection":"Инструкция","wordCount":316,"timeRequired":"PT4M"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Промпт с ролями: шаблон «архитектор — исполнитель — ревьюер»","name":"Не проси Claude писать. Раздай ему роли внутри одного запроса","description":"Готовый шаблон промпта, где нейросеть работает как команда из трёх ролей. Почему запрос одной строкой даёт средний ответ и как три роли внутри одного запроса вытягивают качество.","inLanguage":"ru","datePublished":"2026-06-30","dateModified":"2026-09-05","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/"},"url":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/","articleSection":"Инструкция","wordCount":989,"timeRequired":"PT5M","keywords":"промпт с ролями, шаблон промпта, как писать промпты для нейросети, промпт архитектор исполнитель ревьюер, промпт инженерия","image":["/img/og/three-roles-in-one-prompt.jpg"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Не проси Claude писать. Раздай ему роли внутри одного запроса","item":"https://tolstobrovevgeniy.ru/g/three-roles-in-one-prompt/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Работает ли приём с ролями на других моделях?","acceptedAnswer":{"@type":"Answer","text":"Да, механика универсальная: она заставляет модель пройти задачу разными оптиками, а не выдать первый правдоподобный вариант. Формулировки шаблона могут отличаться, суть одна."}},{"@type":"Question","name":"Не проще ли задать три отдельных запроса?","acceptedAnswer":{"@type":"Answer","text":"Иногда проще, но дольше и хуже: при разбиении теряется связь между шагами, и ревьюеру приходится заново объяснять, что задумывал архитектор. В одном запросе контекст не теряется."}},{"@type":"Question","name":"Зачем ревьюер, если можно просто попросить «проверь ещё раз»?","acceptedAnswer":{"@type":"Answer","text":"«Проверь ещё раз» не задаёт точку зрения, и модель перечитывает текст той же оптикой, которой писала. Ревьюер описывается как конкретный человек с конкретным интересом — тогда появляется взгляд со стороны."}},{"@type":"Question","name":"Как понять, что тройка ролей подобрана удачно?","acceptedAnswer":{"@type":"Answer","text":"По третьему шагу. Если ревьюер нашёл что то содержательное и переписал, а не похвалил — оптики разные. Если он только соглашается, роли дублируют друг друга."}}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -50,14 +51,14 @@
       <div class="meta">
         <a class="tag" href="/tema/instrukciya/">Инструкция</a>
         <time datetime="2026-06-30">30 июня 2026</time>
-        <span>· 4 мин</span>
+        <span>· 5 мин</span>
       </div>
       <h1>Не проси Claude писать. Раздай ему роли внутри одного запроса</h1>
       <p class="lead">Шаблон промпта «архитектор → исполнитель → ревьюер»: как три роли внутри одного запроса вытягивают ответ выше среднего.</p>
       
       <nav class="toc" aria-label="Содержание">
         <p class="toc-title">В этой инструкции</p>
-        <ol><li><a href="#pochemu-prompt-odnoy-strokoy-eto-vsegda-slabo">Почему «промпт одной строкой» — это всегда слабо</a></li><li><a href="#uroven-2-tri-roli-vnutri-odnogo-zaprosa">Уровень 2: три роли внутри одного запроса</a></li><li><a href="#shablon">Шаблон</a></li><li><a href="#kuda-eto-upiraetsya">Куда это упирается</a></li><li><a href="#hochesh-eto-pod-sebya">Хочешь это под себя</a></li><li><a href="#zabrat-shablon">Забрать шаблон</a></li></ol>
+        <ol><li><a href="#pochemu-prompt-odnoy-strokoy-eto-vsegda-slabo">Почему «промпт одной строкой» — это всегда слабо</a></li><li><a href="#chto-ne-tak-s-odnoy-golovoy">Что не так с одной головой</a></li><li><a href="#uroven-2-tri-roli-vnutri-odnogo-zaprosa">Уровень 2: три роли внутри одного запроса</a></li><li><a href="#shablon">Шаблон</a></li><li><a href="#kak-podobrat-roli-pod-zadachu">Как подобрать роли под задачу</a></li><li><a href="#tri-oshibki-pri-rabote-s-rolyami">Три ошибки при работе с ролями</a></li><li><a href="#kuda-eto-upiraetsya">Куда это упирается</a></li><li><a href="#primer-razbora-odnoy-zadachi">Пример разбора одной задачи</a></li><li><a href="#kogda-roli-ne-nuzhny">Когда роли не нужны</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#chto-zapomnit">Что запомнить</a></li><li><a href="#chto-zapomnit-15">Что запомнить</a></li><li><a href="#zabrat-shablon">Забрать шаблон</a></li></ol>
       </nav>
       <div class="content">
 <p>Карусель тизерила приём: один запрос, три роли внутри. Здесь — расшифровка с шаблоном и примерами.</p>
@@ -65,13 +66,19 @@
 <p>Когда ты пишешь «напиши пост про X» — Claude встречает задачу с нулевыми вводными. Он не знает, кто читатель, какой у тебя голос, что считается успехом. Он угадывает — и угадывает по средней статистике интернета.</p>
 <p>Результат тоже выходит средним. Не плохим — никогда «не плохим». Просто общим, как у всех.</p>
 <p>Дать ему длинный промпт с инструкцией решает только половину проблемы: одна голова, даже хорошо проинструктированная, всё равно одна. А значит — без внутренней критики.</p>
+<h2 id="chto-ne-tak-s-odnoy-golovoy">Что не так с одной головой</h2>
+<p>Любой текст, план или кусок кода имеет три разных типа брака, и ловятся они разной оптикой.</p>
+<p><strong>Системный брак.</strong> Задача разложена неправильно: не хватает куска, порядок шагов ломает логику, решается не та проблема. Видно только сверху, до начала работы.</p>
+<p><strong>Исполнительский брак.</strong> План нормальный, но реализовано криво: рыхлые формулировки, пропущенные детали, оборванные примеры. Видно в процессе.</p>
+<p><strong>Читательский брак.</strong> Всё логично и аккуратно, но человеку непонятно или неинтересно. Видно только со стороны, глазами того, кто это будет читать.</p>
+<p>Один проход одной головой ловит в лучшем случае один тип из трёх. Поэтому и появляется ощущение «вроде всё правильно, а не то».</p>
 <h2 id="uroven-2-tri-roli-vnutri-odnogo-zaprosa">Уровень 2: три роли внутри одного запроса</h2>
 <p>Приём простой. В одном промпте описываешь не задачу, а маленькую команду. Кто, зачем и в какой последовательности работает над ответом.</p>
 <p>Минимальный набор:</p>
 <ul>
 <li><strong>Архитектор.</strong> Смотрит сверху. Раскладывает задачу на куски, держит логику целого, видит риски и зависимости.</li>
 <li><strong>Исполнитель.</strong> Делает работу руками. Пишет, считает, кодит, рисует — по плану архитектора.</li>
-<li><strong>Ревьюер.</strong> Смотрит на готовое глазами читателя/клиента. Ловит, где упрощено до неправды, где сложно без нужды, где не закрыт основной вопрос.</li>
+<li><strong>Ревьюер.</strong> Смотрит на готовое глазами читателя или клиента. Ловит, где упрощено до неправды, где сложно без нужды, где не закрыт основной вопрос.</li>
 </ul>
 <p>Внутри одного ответа Claude проходит цикл «архитектор → исполнитель → ревьюер» — и финальный артефакт уже отжат от трёх типов ошибок: системных, исполнительских, читательских.</p>
 <h2 id="shablon">Шаблон</h2>
@@ -85,13 +92,81 @@
 Ответь сначала шагом 1, потом 2, потом 3. На каждом — короткий комментарий, что делаешь.
 </code></pre>
 <p>Этим шаблоном можно решать почти любую задачу: пост, лендинг, фрагмент кода, разбор кейса, описание продукта.</p>
+<h2 id="kak-podobrat-roli-pod-zadachu">Как подобрать роли под задачу</h2>
+<p>Тройка «архитектор — исполнитель — ревьюер» универсальна, но под конкретную работу роли лучше назвать точнее. Смысл не в красивых названиях, а в том, что каждая роль приносит свою оптику.</p>
+<table>
+<thead>
+<tr>
+<th>Задача</th>
+<th>Роль 1</th>
+<th>Роль 2</th>
+<th>Роль 3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Продающий текст</td>
+<td>стратег оффера</td>
+<td>копирайтер</td>
+<td>скептичный покупатель</td>
+</tr>
+<tr>
+<td>Лендинг</td>
+<td>продуктовый дизайнер</td>
+<td>верстальщик</td>
+<td>пользователь с телефона</td>
+</tr>
+<tr>
+<td>Код</td>
+<td>архитектор</td>
+<td>разработчик</td>
+<td>ревьюер на баги</td>
+</tr>
+<tr>
+<td>Разбор конкурента</td>
+<td>аналитик</td>
+<td>составитель отчёта</td>
+<td>заказчик отчёта</td>
+</tr>
+</tbody></table>
+<p>Третья роль почти всегда самая ценная и почти всегда пропускается. Именно она отвечает на вопрос «а зачем это читать», который автор себе не задаёт.</p>
+<h2 id="tri-oshibki-pri-rabote-s-rolyami">Три ошибки при работе с ролями</h2>
+<p><strong>Слишком много ролей.</strong> Пять и больше — ответ распухает, а качество не растёт. Три роли — рабочий минимум, который даёт заметный эффект.</p>
+<p><strong>Роли без разной оптики.</strong> «Копирайтер, редактор и корректор» — это три взгляда на одно и то же. Хорошая тройка смотрит с разных сторон: сверху, изнутри, снаружи.</p>
+<p><strong>Ревьюер без права переписывать.</strong> Если в промпте не сказано «поправь», третья роль напишет вежливый список замечаний и на этом остановится. Формулировка должна требовать исправленной версии, а не рецензии.</p>
 <h2 id="kuda-eto-upiraetsya">Куда это упирается</h2>
 <p>Минус приёма в одном: он живёт в рамках одного чата. Закрыл вкладку — команда забыла, кто она. Чтобы роли держались между сессиями, не растворялись и не путались — это уже задача скиллов и памяти проекта.</p>
-<p>Об этом — следующий уровень. См. статью под кодовым словом <strong><a href="guide.html?id=6-skills-claude-team">СКИЛЛЫ</a></strong>: как превратить «команду внутри промпта» в постоянную штатку.</p>
-<h2 id="hochesh-eto-pod-sebya">Хочешь это под себя</h2>
-<p>→ <strong>[МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</strong> — за вечер ставим Claude Code и подключаем первых «сотрудников».</p>
+<p>Об этом — следующий уровень. См. статью под кодовым словом <strong><a href="/g/6-skills-claude-team/">СКИЛЛЫ</a></strong>: как превратить «команду внутри промпта» в постоянную штатку.</p>
+<h2 id="primer-razbora-odnoy-zadachi">Пример разбора одной задачи</h2>
+<p>Задача: описание продукта для страницы.</p>
+<p><strong>Архитектор</strong> раскладывает: кому продаём, какая боль, какой результат, чем отличаемся, какие возражения закрыть, чем закончить. Уже на этом шаге видно, что про отличия сказать нечего, — и это самая полезная находка за весь прогон.</p>
+<p><strong>Исполнитель</strong> пишет по плану. Текст получается ровный, с внятной структурой, но с двумя местами, где формулировка обтекаемая: там, где архитектор оставил дыру.</p>
+<p><strong>Ревьюер</strong> читает как покупатель и задаёт неудобное: почему я должен верить, что это работает, и что произойдёт, если не сработает. После его правок текст короче на четверть и конкретнее вдвое.</p>
+<p>Заметь, где произошло главное: не в тексте, а на первом шаге, где выяснилось, чего в продукте не хватает. Приём с ролями ценен не только качеством формулировок — он вскрывает дыры в самой задаче до того, как ты потратил вечер на её оформление.</p>
+<h2 id="kogda-roli-ne-nuzhny">Когда роли не нужны</h2>
+<p>Приём стоит времени, поэтому полезно знать, где он лишний.</p>
+<p>Простые фактические вопросы. «Как называется эта команда» не выиграет от трёх точек зрения — только удлинит ответ.</p>
+<p>Задачи с одним очевидным критерием. Перевод, форматирование, извлечение данных: здесь нет места для взгляда со стороны, есть правильный результат и неправильный.</p>
+<p>Черновики для себя. Если текст всё равно пойдёт в переработку твоими руками, ревьюер сделает лишний круг.</p>
+<p>Роли окупаются там, где результат уходит наружу и где «правильно» не определяется формулой: продающий текст, структура страницы, разбор ситуации, план работы.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h3 id="rabotaet-li-priem-s-rolyami-na-drugih-modelyah">Работает ли приём с ролями на других моделях?</h3>
+<p>Да, механика универсальная: она заставляет модель пройти задачу разными оптиками, а не выдать первый правдоподобный вариант. Формулировки шаблона могут отличаться, суть одна.</p>
+<h3 id="ne-prosche-li-zadat-tri-otdelnyh-zaprosa">Не проще ли задать три отдельных запроса?</h3>
+<p>Иногда проще, но дольше и хуже: при разбиении теряется связь между шагами, и ревьюеру приходится заново объяснять, что задумывал архитектор. В одном запросе контекст не теряется.</p>
+<h3 id="zachem-revyuer-esli-mozhno-prosto-poprosit-prover-esche-raz">Зачем ревьюер, если можно просто попросить «проверь ещё раз»?</h3>
+<p>«Проверь ещё раз» не задаёт точку зрения, и модель перечитывает текст той же оптикой, которой писала. Ревьюер описывается как конкретный человек с конкретным интересом — тогда появляется взгляд со стороны.</p>
+<h3 id="kak-ponyat-chto-troyka-roley-podobrana-udachno">Как понять, что тройка ролей подобрана удачно?</h3>
+<p>По третьему шагу. Если ревьюер нашёл что-то содержательное и переписал, а не похвалил — оптики разные. Если он только соглашается, роли дублируют друг друга.</p>
+<h2 id="chto-zapomnit">Что запомнить</h2>
+<h2 id="chto-zapomnit-15">Что запомнить</h2>
+<ul>
+<li>Один промпт даёт средний ответ, потому что одна голова ловит один тип брака из трёх.</li>
+<li>Три роли — рабочий минимум: сверху, изнутри, снаружи.</li>
+<li>Ревьюер должен переписывать, а не рецензировать: это пишется в промпте прямо.</li>
+<li>Приём вскрывает дыры в самой задаче раньше, чем ты потратил вечер на её оформление.</li>
+</ul>
 <h2 id="zabrat-shablon">Забрать шаблон</h2>
-<p>Напиши кодовое слово <strong>РОЛИ</strong> — пришлю готовый шаблон промпта + примеры адаптации под задачи маркетинга, текстов и продукта.</p>
+<p>Напиши кодовое слово <strong>РОЛИ</strong> — пришлю готовый шаблон промпта и примеры адаптации под задачи маркетинга, текстов и продукта.</p>
 <p>→ <strong><a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">Перейти в Telegram-канал @Evgeniy_Tolstobrov</a></strong></p>
 
       </div>
@@ -105,25 +180,25 @@
       <section class="related">
         <h2>Читайте дальше</h2>
         <div class="related-list">
-          <a class="related-card" href="/g/6-skills-claude-team/">
-            <span class="tag">Claude Code</span>
-            <span class="related-title">6 скиллов превращают Claude из универсала в команду</span>
-            <span class="related-sub">Штатка из шести ролей — маркетолог, дизайнер, SEO-инженер, сценарист, ревьюер и судья: как скиллы превращают универсала в отдел.</span>
-          </a>
-          <a class="related-card" href="/g/context-first-prompts/">
-            <span class="tag">Claude Code</span>
-            <span class="related-title">Ты винишь модель. А дело в одном промпте</span>
-            <span class="related-sub">Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</span>
-          </a>
           <a class="related-card" href="/g/six-prompting-moves/">
             <span class="tag">Инструкция</span>
             <span class="related-title">Шесть приёмов промптинга, которые работают каждый день</span>
             <span class="related-sub">Роль вместо задачи, план до работы, жёсткий формат, примеры вместо объяснений, запреты и файл правил — с готовыми формулировками и парами «до / после».</span>
           </a>
+          <a class="related-card" href="/g/6-skills-claude-team/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">6 скиллов превращают Claude из универсала в команду</span>
+            <span class="related-sub">Штатка из шести ролей — маркетолог, дизайнер, SEO-инженер, сценарист, ревьюер и судья: как скиллы превращают универсала в отдел.</span>
+          </a>
           <a class="related-card" href="/g/15-prompts-build-stages/">
             <span class="tag">Инструкция</span>
             <span class="related-title">Один промпт даёт черновик. Пятнадцать промптов дают продукт</span>
             <span class="related-sub">Пятнадцать команд Claude Code по стадиям сборки: замысел, данные, сборка, проверка, порядок и отдельно — что говорить, когда нейросеть уже наломала.</span>
+          </a>
+          <a class="related-card" href="/g/6-prompts-deck-pipeline/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">6 промптов вместо PowerPoint. Конвейер сборки презентации в Claude</span>
+            <span class="related-sub">Конвейер из шести промптов вместо PowerPoint: структура, раскладка, дизайн-система, визуал, редактура и защита — за вечер.</span>
           </a></div>
       </section>
     </article>

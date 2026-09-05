@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Почему Claude плохо отвечает: дело в контексте, а не в модели — Евгений Толстобров</title>
+  <title>Почему Claude плохо отвечает: дело в контексте, а не в модели</title>
   <meta name="description" content="Разбор, почему нейросеть даёт слабый результат: что такое контекст промпта, как заложить его один раз и получать стабильные ответы вместо угадывания.">
   <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/context-first-prompts/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="Почему Claude плохо отвечает: дело в контексте, а не в модели — Евгений Толстобров">
+  <meta property="og:title" content="Почему Claude плохо отвечает: дело в контексте, а не в модели">
   <meta property="og:description" content="Разбор, почему нейросеть даёт слабый результат: что такое контекст промпта, как заложить его один раз и получать стабильные ответы вместо угадывания.">
   <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/context-first-prompts/">
-  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/context-first-prompts.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Почему Claude плохо отвечает: дело в контексте, а не в модели — Евгений Толстобров">
+  <meta name="twitter:title" content="Почему Claude плохо отвечает: дело в контексте, а не в модели">
   <meta name="twitter:description" content="Разбор, почему нейросеть даёт слабый результат: что такое контекст промпта, как заложить его один раз и получать стабильные ответы вместо угадывания.">
-  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/context-first-prompts.jpg">
   <meta property="article:published_time" content="2026-06-29">
   <meta property="article:modified_time" content="2026-09-05">
   
@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/assets/seo.css">
   <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Почему Claude плохо отвечает: дело в контексте, а не в модели","name":"Ты винишь модель. А дело в одном промпте","description":"Разбор, почему нейросеть даёт слабый результат: что такое контекст промпта, как заложить его один раз и получать стабильные ответы вместо угадывания.","inLanguage":"ru","datePublished":"2026-06-29","dateModified":"2026-09-05","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/context-first-prompts/"},"url":"https://tolstobrovevgeniy.ru/g/context-first-prompts/","articleSection":"Claude Code","wordCount":1066,"timeRequired":"PT6M","keywords":"почему нейросеть плохо отвечает, контекст для нейросети, как правильно писать промпты, claude code контекст, промпт не работает"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Почему Claude плохо отвечает: дело в контексте, а не в модели","name":"Ты винишь модель. А дело в одном промпте","description":"Разбор, почему нейросеть даёт слабый результат: что такое контекст промпта, как заложить его один раз и получать стабильные ответы вместо угадывания.","inLanguage":"ru","datePublished":"2026-06-29","dateModified":"2026-09-05","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/context-first-prompts/"},"url":"https://tolstobrovevgeniy.ru/g/context-first-prompts/","articleSection":"Claude Code","wordCount":1066,"timeRequired":"PT6M","keywords":"почему нейросеть плохо отвечает, контекст для нейросети, как правильно писать промпты, claude code контекст, промпт не работает","image":["/img/og/context-first-prompts.jpg"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Claude Code","item":"https://tolstobrovevgeniy.ru/tema/claude-code/"},{"@type":"ListItem","position":3,"name":"Ты винишь модель. А дело в одном промпте","item":"https://tolstobrovevgeniy.ru/g/context-first-prompts/"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чем контекст отличается от промпта?","acceptedAnswer":{"@type":"Answer","text":"Промпт — это разовая просьба, она живёт одну сессию. Контекст — постоянные вводные о тебе и проекте, они читаются перед каждой задачей. Промпт отвечает на вопрос «что сделать», контекст — на вопросы «для кого, каким голосом и по каким правилам»."}},{"@type":"Question","name":"Сколько контекста давать, чтобы не перегрузить модель?","acceptedAnswer":{"@type":"Answer","text":"Ровно столько, сколько относится к типу задачи. Общие правила проекта — короткая страница, а не десять. Узкие детали лучше вынести в отдельные файлы, которые подтягиваются только когда тема всплыла. Перегруженный контекст вредит так же, как его отсутствие: важное тонет в неважном."}},{"@type":"Question","name":"Почему нейросеть выдумывает факты, даже когда я дал контекст?","acceptedAnswer":{"@type":"Answer","text":"Потому что в контексте не было запрета. Правило «нет факта в проекте — ставь пропуск, а не догадку» нужно написать явно. Без него модель заполняет дыры правдоподобным текстом, это её нормальное поведение."}},{"@type":"Question","name":"Нужно ли переписывать контекст под каждую новую задачу?","acceptedAnswer":{"@type":"Answer","text":"Нет. Общий слой пишется один раз и правится редко — когда меняется продукт или позиционирование. Под конкретные типы задач заводятся отдельные инструкции, и они дописываются по мере того, как ты натыкаешься на грабли."}}]}</script>
 </head>
@@ -155,25 +155,25 @@
       <section class="related">
         <h2>Читайте дальше</h2>
         <div class="related-list">
-          <a class="related-card" href="/g/three-setup-files/">
-            <span class="tag">Инструкция</span>
-            <span class="related-title">Три файла, которые делают из Claude сотрудника</span>
-            <span class="related-sub">Правила проекта, память и голос: что писать внутри каждого файла, чего писать не надо, в каком порядке собирать и почему нормально они заработают только через неделю.</span>
-          </a>
           <a class="related-card" href="/g/claude-code-setup/">
             <span class="tag">Claude Code</span>
             <span class="related-title">Как подготовить Claude Code к любому проекту</span>
             <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
           </a>
-          <a class="related-card" href="/g/full-access-safety-net/">
-            <span class="tag">Build in public</span>
-            <span class="related-title">Полный доступ нейросети — вопрос отката, а не смелости</span>
-            <span class="related-sub">Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</span>
+          <a class="related-card" href="/g/claude-code-os/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Claude Code — это не чат. Это операционная система твоего бизнеса</span>
+            <span class="related-sub">Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</span>
           </a>
-          <a class="related-card" href="/g/15-prompts-build-stages/">
+          <a class="related-card" href="/g/context-not-agent/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Дело не в модели. Дело в контексте</span>
+            <span class="related-sub">Почему ИИ-агент, прикрученный к бизнесу, не работает — и пять шагов, которые превращают его в систему.</span>
+          </a>
+          <a class="related-card" href="/g/three-setup-files/">
             <span class="tag">Инструкция</span>
-            <span class="related-title">Один промпт даёт черновик. Пятнадцать промптов дают продукт</span>
-            <span class="related-sub">Пятнадцать команд Claude Code по стадиям сборки: замысел, данные, сборка, проверка, порядок и отдельно — что говорить, когда нейросеть уже наломала.</span>
+            <span class="related-title">Три файла, которые делают из Claude сотрудника</span>
+            <span class="related-sub">Правила проекта, память и голос: что писать внутри каждого файла, чего писать не надо, в каком порядке собирать и почему нормально они заработают только через неделю.</span>
           </a></div>
       </section>
     </article>

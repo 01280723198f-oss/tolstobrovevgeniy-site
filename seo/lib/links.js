@@ -31,6 +31,7 @@ function related(pages, count) {
   }
 
   const out = new Map();
+  const ranking = new Map();
   for (const p of pages) {
     const a = vecs.get(p.slug);
     const scores = [];
@@ -45,8 +46,36 @@ function related(pages, count) {
     }
     scores.sort((x, y) => y[1] - x[1]);
     out.set(p.slug, scores.slice(0, count).map(([q]) => q));
+    ranking.set(p.slug, scores);
   }
+
+  ensureNoOrphans(pages, out, ranking, count);
   return out;
+}
+
+/** Ни одна страница не должна остаться без входящих ссылок: вес до неё
+    просто не дойдёт. Сироту подставляем на последнее место в списке
+    самой близкой к ней статьи. */
+function ensureNoOrphans(pages, out, ranking, count) {
+  const inbound = new Map(pages.map(p => [p.slug, 0]));
+  for (const list of out.values()) for (const r of list) inbound.set(r.slug, (inbound.get(r.slug) || 0) + 1);
+
+  for (const p of pages) {
+    if (inbound.get(p.slug) > 0) continue;
+
+    // Кто считает эту страницу самой близкой к себе — тот её и приютит.
+    let host = null, hostScore = -1;
+    for (const q of pages) {
+      if (q.slug === p.slug) continue;
+      const entry = (ranking.get(q.slug) || []).find(([r]) => r.slug === p.slug);
+      if (entry && entry[1] > hostScore) { hostScore = entry[1]; host = q; }
+    }
+    if (!host) continue;
+
+    const list = out.get(host.slug);
+    list[Math.max(0, count - 1)] = p;
+    inbound.set(p.slug, 1);
+  }
 }
 
 /** Контекстные ссылки прямо в тексте: первое подходящее словосочетание → ссылка.

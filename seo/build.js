@@ -98,7 +98,11 @@ function buildPages(GUIDES, semcore) {
       words: words(g.markdown),
       html: md.html, toc: md.toc, faq: g.faq || md.faq,
       plainBody: body,
-      image: firstRaster ? (firstRaster.startsWith("/") ? firstRaster : "/" + firstRaster.replace(/^\.?\//, "")) : null,
+      // Своя обложка 1200×630, если отрисована; иначе первая растровая
+      // картинка статьи; иначе общая заглушка из конфига.
+      image: fs.existsSync(R("img/og/" + slug + ".jpg"))
+        ? `/img/og/${slug}.jpg`
+        : firstRaster ? (firstRaster.startsWith("/") ? firstRaster : "/" + firstRaster.replace(/^\.?\//, "")) : null,
       related: []
     };
   });
@@ -142,10 +146,12 @@ function anchorsFor(p) {
   return [...new Set(out)].sort((a, b) => b.length - a.length).slice(0, 24);
 }
 
+/** Заголовок вкладки и выдачи: бренд дописывается, только если строка
+    после этого не уйдёт за 80 символов — дальше выдача её обрежет. */
 function buildMetaTitle(title) {
   const t = String(title).trim();
   const suffix = " — " + C.brand;
-  return (t.length + suffix.length <= C.seo.titleMax + 20) ? t + suffix : t;
+  return (t.length + suffix.length <= 80) ? t + suffix : t;
 }
 
 function buildTopics(pages) {

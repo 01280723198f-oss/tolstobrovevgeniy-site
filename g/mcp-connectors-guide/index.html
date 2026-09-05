@@ -3,31 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCP: как дать модели руки, а не советы — Евгений Толстобров</title>
-  <meta name="description" content="Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.">
+  <title>MCP-коннекторы: что это, какие ставить и как подключить — Евгений Толстобров</title>
+  <meta name="description" content="Как дать нейросети доступ к твоим данным через MCP: устройство протокола, пять коннекторов для старта, установка за пять минут и три частые ошибки.">
   <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="MCP: как дать модели руки, а не советы — Евгений Толстобров">
-  <meta property="og:description" content="Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.">
+  <meta property="og:title" content="MCP-коннекторы: что это, какие ставить и как подключить — Евгений Толстобров">
+  <meta property="og:description" content="Как дать нейросети доступ к твоим данным через MCP: устройство протокола, пять коннекторов для старта, установка за пять минут и три частые ошибки.">
   <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/">
-  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/mcp-connectors-guide.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MCP: как дать модели руки, а не советы — Евгений Толстобров">
-  <meta name="twitter:description" content="Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.">
-  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:title" content="MCP-коннекторы: что это, какие ставить и как подключить — Евгений Толстобров">
+  <meta name="twitter:description" content="Как дать нейросети доступ к твоим данным через MCP: устройство протокола, пять коннекторов для старта, установка за пять минут и три частые ошибки.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/mcp-connectors-guide.jpg">
   <meta property="article:published_time" content="2026-07-25">
-  <meta property="article:modified_time" content="2026-07-25">
+  <meta property="article:modified_time" content="2026-09-05">
   
   
   <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/assets/seo.css">
   <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"MCP: как дать модели руки, а не советы","name":"MCP: как дать модели руки, а не советы","description":"Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.","inLanguage":"ru","datePublished":"2026-07-25","dateModified":"2026-07-25","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/"},"url":"https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/","articleSection":"Claude Code","wordCount":250,"timeRequired":"PT4M"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"MCP-коннекторы: что это, какие ставить и как подключить","name":"MCP: как дать модели руки, а не советы","description":"Как дать нейросети доступ к твоим данным через MCP: устройство протокола, пять коннекторов для старта, установка за пять минут и три частые ошибки.","inLanguage":"ru","datePublished":"2026-07-25","dateModified":"2026-09-05","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/"},"url":"https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/","articleSection":"Claude Code","wordCount":1050,"timeRequired":"PT6M","keywords":"mcp коннекторы, claude code mcp, как подключить mcp, mcp сервер что это, доступ нейросети к данным","image":["/img/og/mcp-connectors-guide.jpg"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Claude Code","item":"https://tolstobrovevgeniy.ru/tema/claude-code/"},{"@type":"ListItem","position":3,"name":"MCP: как дать модели руки, а не советы","item":"https://tolstobrovevgeniy.ru/g/mcp-connectors-guide/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое MCP простыми словами?","acceptedAnswer":{"@type":"Answer","text":"Это общий протокол, по которому нейросеть подключается к внешним сервисам: твоим файлам, репозиторию, базе, браузеру. Вместо того чтобы советовать, модель получает возможность посмотреть настоящие данные и выполнить действие."}},{"@type":"Question","name":"Безопасно ли давать модели доступ к своим данным?","acceptedAnswer":{"@type":"Answer","text":"Ровно настолько, насколько ты этот доступ ограничил. Правило простое: сначала только чтение, право на запись — отдельным решением и только там, где оно нужно. Ключи хранятся в файле с секретами, а не в конфиге проекта."}},{"@type":"Question","name":"Сколько коннекторов ставить на старте?","acceptedAnswer":{"@type":"Answer","text":"Один. Потом второй, когда первый прижился. Двадцать одновременно — самый быстрый способ ухудшить работу модели: она начинает выбирать инструмент наугад из длинного списка."}},{"@type":"Question","name":"Почему коннектор перестал работать?","acceptedAnswer":{"@type":"Answer","text":"Чаще всего истёк ключ доступа или обновился сервер и поменялся формат запуска. Проверяется одной короткой задачей, которая требует настоящих данных: пришёл живой ответ — коннект в порядке, пришёл общий текст — отвалился."}}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -50,20 +51,23 @@
       <div class="meta">
         <a class="tag" href="/tema/claude-code/">Claude Code</a>
         <time datetime="2026-07-25">25 июля 2026</time>
-        <span>· 4 мин</span>
+        <span>· 6 мин</span>
       </div>
       <h1>MCP: как дать модели руки, а не советы</h1>
       <p class="lead">Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.</p>
       
       <nav class="toc" aria-label="Содержание">
         <p class="toc-title">В этой инструкции</p>
-        <ol><li><a href="#kak-ustroeno">Как устроено</a></li><li><a href="#pyat-universalnyh">Пять универсальных</a></li><li><a href="#nabory-pod-zadachu">Наборы под задачу</a></li><li><a href="#ustanovka-za-pyat-minut">Установка за пять минут</a></li><li><a href="#tri-oshibki">Три ошибки</a></li></ol>
+        <ol><li><a href="#kak-ustroeno">Как устроено</a></li><li><a href="#pyat-universalnyh">Пять универсальных</a></li><li><a href="#nabory-pod-zadachu">Наборы под задачу</a></li><li><a href="#ustanovka-za-pyat-minut">Установка за пять минут</a></li><li><a href="#tri-oshibki">Три ошибки</a></li><li><a href="#chto-podklyuchit-pervym-pod-kontent">Что подключить первым под контент</a></li><li><a href="#kak-ponyat-chto-konnektor-nuzhen">Как понять, что коннектор нужен</a></li><li><a href="#chem-konnektor-otlichaetsya-ot-skilla">Чем коннектор отличается от скилла</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li></ol>
       </nav>
       <div class="content">
 <p>Модель без доступа к твоим данным — это очень начитанный человек, запертый в комнате без окон. Он даёт разумные советы, но не может ничего проверить и ничего сделать.</p>
 <p>MCP решает ровно это: общий протокол, по которому модель ходит во внешние сервисы сама.</p>
+<p>До появления общего протокола каждая интеграция была отдельной поделкой: свой формат, свои ключи, своя починка после обновления. MCP сделал то же, что USB сделал с проводами, — договорённость, как разъём выглядит с обеих сторон.</p>
 <h2 id="kak-ustroeno">Как устроено</h2>
 <p><strong>Сервер</strong> — маленькая программа-переходник к конкретному сервису. <strong>Клиент</strong> — тот, кто ей пользуется: Claude Code, Codex, Gemini. <strong>Доступ</strong> — то, что ты открываешь осознанно и в любой момент закрываешь.</p>
+<p>Работает это так: клиент при запуске спрашивает у сервера, что тот умеет, и получает список инструментов с описаниями. Дальше модель сама решает, когда инструмент нужен, вызывает его и получает настоящие данные — не пересказ из обучающей выборки, а то, что лежит в сервисе прямо сейчас.</p>
+<p>Ключевая деталь: сервер работает от твоего имени и с твоими правами. Что ты ему открыл, то модель и может. Ничего сверх этого она не достанет, даже если её очень попросить.</p>
 <h2 id="pyat-universalnyh">Пять универсальных</h2>
 <p>С них стоит начать, они окупаются в первый день:</p>
 <ul>
@@ -73,17 +77,54 @@
 <li><strong>Файлы</strong> — доступ за пределы текущей папки.</li>
 <li><strong>Поиск</strong> — ищет в вебе, не заставляя тебя открывать вкладки.</li>
 </ul>
+<p>Самый недооценённый из пятёрки — документация. Большая часть выдуманных методов и несуществующих параметров лечится именно им: модель перестаёт вспоминать, как было год назад, и читает, как есть сегодня.</p>
+<p>Второй по недооценённости — браузер. Он превращает проверку работы из «посмотри сам и расскажи мне» в «модель открыла страницу, увидела ошибку в консоли и починила».</p>
 <h2 id="nabory-pod-zadachu">Наборы под задачу</h2>
 <p><strong>Контент:</strong> база знаний, макеты, календарь публикаций, мессенджер для выдачи материалов.
 <strong>Деньги:</strong> платежи, таблицы, база клиентов, аналитика воронки.
 <strong>Разработка:</strong> база данных, контейнеры, мониторинг ошибок, деплой.
 <strong>Автоматизация:</strong> сценарии, почта, командный чат, планировщик.</p>
+<p>Набор собирается под то, чем ты реально занимаешься каждый день. Если ты не трогаешь контейнеры раз в месяц — коннектор к ним будет висеть мёртвым грузом и отъедать внимание модели.</p>
 <h2 id="ustanovka-za-pyat-minut">Установка за пять минут</h2>
 <p>Открываешь конфиг клиента, добавляешь блок сервера — команда запуска и ключ доступа, перезапускаешь клиент, проверяешь простой задачей вроде «покажи мои последние issues». Если ответ пришёл с реальными данными — коннект живой.</p>
+<p>Порядок проверки, который экономит вечер:</p>
+<ol>
+<li>Поставил один сервер — сразу проверил его отдельной задачей.</li>
+<li>Задача должна требовать настоящих данных. «Расскажи, что такое issue» проверяет не коннект, а память модели.</li>
+<li>Убедился, что данные правда твои: увидел знакомое название, свой репозиторий, свою запись.</li>
+<li>Только после этого ставишь следующий.</li>
+</ol>
+<p>Ключи держи в отдельном файле с секретами, а не внутри конфига, который однажды уедет в публичный репозиторий. Это та ошибка, которую совершают один раз и запоминают надолго.</p>
 <h2 id="tri-oshibki">Три ошибки</h2>
 <p><strong>Двадцать коннекторов сразу.</strong> Модель тонет в инструментах и выбирает не то. Ставь по одному.</p>
-<p><strong>Полный доступ.</strong> Открывай ровно то, что нужно задаче. Это не паранойя, а гигиена.</p>
+<p><strong>Полный доступ.</strong> Открывай ровно то, что нужно задаче. Это не паранойя, а гигиена: коннектор с правом записи в боевую базу однажды воспользуется этим правом ровно тогда, когда ты этого не ждёшь.</p>
 <p><strong>Отсутствие проверки.</strong> Коннект молча отвалился — а ты думаешь, что модель стала хуже. Заведи привычку проверять его одной короткой задачей.</p>
+<p>Четвёртая ошибка, про которую говорят реже: коннектор ставят вместо того, чтобы разобраться в задаче. Если ты сам не знаешь, где лежат нужные данные и в каком они виде, доступ к сервису не поможет — модель будет блуждать по нему так же, как блуждал бы ты.</p>
+<h2 id="chto-podklyuchit-pervym-pod-kontent">Что подключить первым под контент</h2>
+<p>Если ты не разработчик, а делаешь контент, порядок другой, чем у программиста.</p>
+<p><strong>База знаний.</strong> Всё, что ты когда-то придумал и записал, становится доступным модели: старые разборы, формулировки, найденные приёмы. Это самый быстрый способ перестать объяснять одно и то же.</p>
+<p><strong>Мессенджер.</strong> Готовый материал уезжает туда, где ты его увидишь, — а не остаётся лежать в папке на диске, о которой ты вспомнишь через неделю.</p>
+<p><strong>Браузер.</strong> Проверка чужих страниц, разбор чужих посадочных, снятие референсов. Всё то, что ты сейчас делаешь вкладками.</p>
+<p><strong>Файлы за пределами проекта.</strong> Фото, видео, исходники — они почти никогда не лежат внутри рабочей папки, и без этого доступа половина задач упирается в «покажи мне путь».</p>
+<p>Разработческие коннекторы к базам и контейнерам при этом можно не ставить вовсе. Они не станут полезнее оттого, что о них много пишут.</p>
+<h2 id="kak-ponyat-chto-konnektor-nuzhen">Как понять, что коннектор нужен</h2>
+<p>Простой признак: ты второй раз подряд копируешь что-то из сервиса и вставляешь в чат руками. Копипаста — это и есть недостающий коннектор, который ты пока отрабатываешь собой.</p>
+<p>Обратный признак тоже полезен. Если коннектор стоит месяц и ты не помнишь, когда он последний раз пригодился, — снеси. Каждый лишний инструмент в списке чуть-чуть ухудшает выбор модели.</p>
+<h2 id="chem-konnektor-otlichaetsya-ot-skilla">Чем коннектор отличается от скилла</h2>
+<p>Их часто путают, а разница простая и важная.</p>
+<p><strong>Коннектор даёт доступ.</strong> Это дверь в сервис: он умеет читать issues, писать в базу, открывать страницы. Что с этим делать — коннектор не знает.</p>
+<p><strong>Скилл даёт порядок действий.</strong> Это инструкция под задачу: когда включиться, в <a href="/g/content-factory-os/" class="ctx-link">каком порядке</a> шагать, где обычно ломается, чем проверить результат.</p>
+<p>Один без другого работает плохо. Коннектор без скилла — руки без плана: модель дотянется до данных, но каждый раз будет действовать по-своему. Скилл без коннектора — план без рук: инструкция описывает шаги, которые нечем выполнить.</p>
+<p>Рабочая связка выглядит так: коннектор открывает доступ к базе знаний, скилл описывает, как именно туда складывать заметки — в какую папку, с какими заголовками, что делать при дубле. Тогда результат повторяем, а не зависит от формулировки запроса.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h3 id="chto-takoe-mcp-prostymi-slovami">Что такое MCP простыми словами?</h3>
+<p>Это общий протокол, по которому нейросеть подключается к внешним сервисам: твоим файлам, репозиторию, базе, браузеру. Вместо того чтобы советовать, модель получает возможность посмотреть настоящие данные и выполнить действие.</p>
+<h3 id="bezopasno-li-davat-modeli-dostup-k-svoim-dannym">Безопасно ли давать модели доступ к своим данным?</h3>
+<p>Ровно настолько, насколько ты этот доступ ограничил. Правило простое: сначала только чтение, право на запись — отдельным решением и только там, где оно нужно. Ключи хранятся в файле с секретами, а не в конфиге проекта.</p>
+<h3 id="skolko-konnektorov-stavit-na-starte">Сколько коннекторов ставить на старте?</h3>
+<p>Один. Потом второй, когда первый прижился. Двадцать одновременно — самый быстрый способ ухудшить работу модели: она начинает выбирать инструмент наугад из длинного списка.</p>
+<h3 id="pochemu-konnektor-perestal-rabotat">Почему коннектор перестал работать?</h3>
+<p>Чаще всего истёк ключ доступа или обновился сервер и поменялся формат запуска. Проверяется одной короткой задачей, которая требует настоящих данных: пришёл живой ответ — коннект в порядке, пришёл общий текст — отвалился.</p>
 
       </div>
       
@@ -96,25 +137,25 @@
       <section class="related">
         <h2>Читайте дальше</h2>
         <div class="related-list">
-          <a class="related-card" href="/g/context-first-prompts/">
-            <span class="tag">Claude Code</span>
-            <span class="related-title">Ты винишь модель. А дело в одном промпте</span>
-            <span class="related-sub">Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</span>
-          </a>
-          <a class="related-card" href="/g/full-access-safety-net/">
-            <span class="tag">Build in public</span>
-            <span class="related-title">Полный доступ нейросети — вопрос отката, а не смелости</span>
-            <span class="related-sub">Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</span>
-          </a>
           <a class="related-card" href="/g/claude-code-setup/">
             <span class="tag">Claude Code</span>
             <span class="related-title">Как подготовить Claude Code к любому проекту</span>
             <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
           </a>
-          <a class="related-card" href="/g/vibecode-app-first-real-user/">
+          <a class="related-card" href="/g/claude-code-os/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Claude Code — это не чат. Это операционная система твоего бизнеса</span>
+            <span class="related-sub">Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</span>
+          </a>
+          <a class="related-card" href="/g/12-skills-install/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">12 скиллов, которые снимают рутину — и как их поставить</span>
+            <span class="related-sub">Что такое скилл, куда он кладётся, как проверить, что он подхватился, и в каком порядке ставить первые двенадцать.</span>
+          </a>
+          <a class="related-card" href="/g/10-repos-claude-team/">
             <span class="tag">Инструкция</span>
-            <span class="related-title">Приложение работает ровно до первого живого пользователя</span>
-            <span class="related-sub">Чек-лист обкатки: пять блоков, где вайбкод-проекты ложатся чаще всего, промпт под каждый и двадцать минут ручной проверки перед запуском.</span>
+            <span class="related-title">Арсенал: 10 репозиториев, которые превращают Claude Code в команду</span>
+            <span class="related-sub">Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</span>
           </a></div>
       </section>
     </article>
