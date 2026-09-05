@@ -87,7 +87,8 @@ async function setupMetrika() {
   // Вебвизор: без него не видно, как люди читают статьи.
   const wv = await api(`https://api-metrika.yandex.net/management/v1/counter/${id}`, {
     method: "PUT",
-    body: { counter: { webvisor: { arch_enabled: true, arch_type: "proxy", load_player_type: "proxy" } } }
+    // arch_enabled — число, а не булево; arch_type допускает "load" (запись страниц)
+    body: { counter: { webvisor: { arch_enabled: 1, arch_type: "load", load_player_type: "proxy" } } }
   });
   console.log(wv.ok ? "  ✓ вебвизор включён" : "  · вебвизор включи вручную в настройках счётчика");
   return id;
@@ -133,9 +134,20 @@ async function setupWebmaster() {
     console.log("· Сайт в Вебмастере уже есть");
   }
 
+  // Сначала смотрим состояние: повторный запуск проверки у подтверждённого
+  // сайта сбрасывает его в IN_PROGRESS — лишний круг на ровном месте.
+  const state = await api(
+    `https://api.webmaster.yandex.net/v4/user/${userId}/hosts/${encodeURIComponent(host.host_id)}/verification/`
+  );
+  if (state.data?.verification_state === "VERIFIED") {
+    console.log("· Права на сайт уже подтверждены");
+    await submitSitemap(userId, host.host_id);
+    return;
+  }
+
   // Подтверждение прав мета-тегом: движок вставит его в <head> при сборке.
   const verif = await api(
-    `https://api.webmaster.yandex.net/v4/user/${userId}/hosts/${host.host_id}/verification/?verification_type=META_TAG`,
+    `https://api.webmaster.yandex.net/v4/user/${userId}/hosts/${encodeURIComponent(host.host_id)}/verification/?verification_type=META_TAG`,
     { method: "POST" }
   );
   const uin = verif.data?.uin || verif.data?.verification_uin;
@@ -148,11 +160,26 @@ async function setupWebmaster() {
     console.log("· Код подтверждения не выдан (возможно, права уже подтверждены)");
   }
 
-  const sitemap = await api(
-    `https://api.webmaster.yandex.net/v4/user/${userId}/hosts/${host.host_id}/user-added-sitemaps`,
-    { method: "POST", body: { url: C.origin + "/sitemap.xml" } }
+  await submitSitemap(userId, host.host_id);
+}
+
+/** Карта сайта. Отправляется только после подтверждения прав —
+    иначе Вебмастер отвечает HOST_NOT_VERIFIED. */
+async function submitSitemap(userId, hostId) {
+  const have = await api(
+    `https://api.webmaster.yandex.net/v4/user/${userId}/hosts/${encodeURIComponent(hostId)}/user-added-sitemaps`
   );
-  console.log(sitemap.ok ? "✓ Карта сайта отправлена в Вебмастер" : "· Карта сайта: " + JSON.stringify(sitemap.data).slice(0, 160));
+  const url = C.origin + "/sitemap.xml";
+  if ((have.data?.sitemaps || []).some(s => s.sitemap_url === url)) {
+    console.log("· Карта сайта уже отправлена");
+    return;
+  }
+  const sitemap = await api(
+    `https://api.webmaster.yandex.net/v4/user/${userId}/hosts/${encodeURIComponent(hostId)}/user-added-sitemaps`,
+    { method: "POST", body: { url } }
+  );
+  console.log(sitemap.ok ? "✓ Карта сайта отправлена в Вебмастер"
+                         : "· Карта сайта: " + JSON.stringify(sitemap.data).slice(0, 160));
 }
 
 /* ── Прогон ────────────────────────────────────────────────────────── */
