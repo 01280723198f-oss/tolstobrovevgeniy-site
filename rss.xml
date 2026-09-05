@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 05 Sep 2026 09:54:52 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 10:10:55 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Совет из 21 мастера вместо одного мнения</title>
+      <link>https://tolstobrovevgeniy.ru/g/council-of-masters/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/council-of-masters/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Шесть опор, на которых держится продающий текст, правило обязательного спора и разбор заголовка до и после — как я заставляю систему возражать, а не поддакивать.</description>
+    </item>
+    <item>
+      <title>Шесть звеньев между комментарием и подписчиком</title>
+      <link>https://tolstobrovevgeniy.ru/g/codeword-funnel-chain/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/codeword-funnel-chain/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Воронка</category>
+      <description>Что писать на последнем слайде, каким должно быть кодовое слово, что отдавать в ответ и три дожима — плюс четыре места, где эта цепочка рвётся чаще всего.</description>
+    </item>
+    <item>
+      <title>Анимированная карусель на коде: что двигать и как записать</title>
+      <link>https://tolstobrovevgeniy.ru/g/animate-carousel-in-code/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/animate-carousel-in-code/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Три вещи, которые стоит оживлять, точные тайминги, способ записи видео прямо из браузера и четыре ошибки, каждая из которых стоила мне вечера.</description>
+    </item>
+    <item>
+      <title>Свой скилл для Claude за один вечер</title>
+      <link>https://tolstobrovevgeniy.ru/g/write-your-own-skill/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/write-your-own-skill/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Из чего состоит скилл, почему описание — главная строка файла, какие запреты работают лучше просьб и как проверить всё это тремя задачами.</description>
+    </item>
+    <item>
+      <title>Сколько на самом деле стоит контент-завод</title>
+      <link>https://tolstobrovevgeniy.ru/g/content-factory-real-cost/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-factory-real-cost/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Смета по счетам: что стоит ноль, за что я плачу, что перестал покупать и почему главная статья расходов вообще не деньги.</description>
+    </item>
     <item>
       <title>Личная ОС на Claude Code: четыре части и порядок сборки</title>
       <link>https://tolstobrovevgeniy.ru/g/personal-os-four-parts/</link>
@@ -126,46 +166,6 @@
       <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Почему списки «50 скиллов» не переживают проверку, какие восемь крутятся у меня каждый день и как фильтровать новые.</description>
-    </item>
-    <item>
-      <title>Карта Claude на три уровня: команда → агент → автопилот</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-3-levels-map/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-3-levels-map/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Команда → агент → автопилот: на каком уровне сидит большинство, что требует каждый переход и куда двигаться дальше.</description>
-    </item>
-    <item>
-      <title>Час, за который голый Claude Code превращается в работающий завод</title>
-      <link>https://tolstobrovevgeniy.ru/g/hour-from-bare-to-factory/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/hour-from-bare-to-factory/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Шесть блоков по 10 минут: установка, CLAUDE.md, память, первые скиллы, хуки и первый прогон — от голой установки до среды работы.</description>
-    </item>
-    <item>
-      <title>Мини-приложения вместо PDF-лидмагнитов. Фронт-двери воронки на одном инструменте</title>
-      <link>https://tolstobrovevgeniy.ru/g/mini-apps-as-front-doors/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/mini-apps-as-front-doors/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Воронка</category>
-      <description>PDF-лидмагниты умирают в загрузках. Мини-инструменты живут в браузере, работают как фронт-двери воронки и собираются за выходные.</description>
-    </item>
-    <item>
-      <title>Мой стек контент-завода. Без инвестиций, без подписок «на автоматизацию»</title>
-      <link>https://tolstobrovevgeniy.ru/g/zero-saas-content-factory-stack/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zero-saas-content-factory-stack/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Пять уровней контент-завода одного человека — ядро, мозг, руки, касса, витрина — без подписок «на автоматизацию».</description>
-    </item>
-    <item>
-      <title>6 промптов вместо PowerPoint. Конвейер сборки презентации в Claude</title>
-      <link>https://tolstobrovevgeniy.ru/g/6-prompts-deck-pipeline/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/6-prompts-deck-pipeline/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Конвейер из шести промптов вместо PowerPoint: структура, раскладка, дизайн-система, визуал, редактура и защита — за вечер.</description>
     </item>
   </channel>
 </rss>
