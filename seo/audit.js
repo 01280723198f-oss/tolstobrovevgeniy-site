@@ -97,9 +97,17 @@ function audit() {
     const covered = new Set(semcore.clusters.filter(c => c.page).map(c => c.id));
     const uncovered = semcore.clusters.filter(c => !c.page)
       .sort((x, y) => (y.frequency || 0) - (x.frequency || 0));
+    // Ядро может быть собрано из Вордстата (есть частоты) или из проверки
+    // спроса (частот нет, есть сигнал подсказок). Не смешиваем одно с другим.
+    const bySignal = semcore.clusters.some(c => c.frequency == null && c.signal != null);
+    const weight = c => (bySignal ? (c.signal || 0) : (c.frequency || 0));
+    const unit = bySignal ? "сигнал" : "/мес";
+    uncovered.sort((x, y) => weight(y) - weight(x));
     if (uncovered.length) add("критично", "gap",
-      `Кластеров без страницы: ${uncovered.length} (суммарная частота ${sum(uncovered.map(c => c.frequency || 0))}/мес)`,
-      uncovered.slice(0, 30).map(c => `${c.name} — ${c.frequency || 0}/мес`));
+      bySignal
+        ? `Тем без страницы: ${uncovered.length} (спрос подтверждён подсказками, частот пока нет — нужен Вордстат)`
+        : `Кластеров без страницы: ${uncovered.length} (суммарная частота ${sum(uncovered.map(c => c.frequency || 0))}/мес)`,
+      uncovered.slice(0, 30).map(c => `${c.suggestedTitle || c.name} — ${unit} ${weight(c)}`));
 
     const noCluster = pages.filter(p => !p.cluster).map(p => p.slug);
     if (noCluster.length) add("важно", "no-cluster",
