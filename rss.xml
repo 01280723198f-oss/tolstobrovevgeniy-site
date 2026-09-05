@@ -5,8 +5,40 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 05 Sep 2026 04:32:03 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 04:57:04 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Личная ОС на Claude Code: четыре части и порядок сборки</title>
+      <link>https://tolstobrovevgeniy.ru/g/personal-os-four-parts/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/personal-os-four-parts/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Движок, память, голос, часы — что именно писать внутри каждой части, с какой начинать и на каких трёх правилах расписания я обжёгся.</description>
+    </item>
+    <item>
+      <title>289 скиллов установлено, работают 12. Как я отбирал</title>
+      <link>https://tolstobrovevgeniy.ru/g/289-skills-keep-12/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/289-skills-keep-12/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Почему набор скиллов перестаёт работать при трёх сотнях, процедура чистки за вечер, три вопроса к каждому скиллу и список тех двенадцати, что остались.</description>
+    </item>
+    <item>
+      <title>Шесть приёмов промптинга, которые работают каждый день</title>
+      <link>https://tolstobrovevgeniy.ru/g/six-prompting-moves/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/six-prompting-moves/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Роль вместо задачи, план до работы, жёсткий формат, примеры вместо объяснений, запреты и файл правил — с готовыми формулировками и парами «до / после».</description>
+    </item>
+    <item>
+      <title>Три файла, которые делают из Claude сотрудника</title>
+      <link>https://tolstobrovevgeniy.ru/g/three-setup-files/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/three-setup-files/</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Правила проекта, память и голос: что писать внутри каждого файла, чего писать не надо, в каком порядке собирать и почему нормально они заработают только через неделю.</description>
+    </item>
     <item>
       <title>Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</title>
       <link>https://tolstobrovevgeniy.ru/g/content-department-build-order/</link>
@@ -134,38 +166,6 @@
       <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Конвейер из шести промптов вместо PowerPoint: структура, раскладка, дизайн-система, визуал, редактура и защита — за вечер.</description>
-    </item>
-    <item>
-      <title>Claude Code — это не чат. Это операционная система твоего бизнеса</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-os/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-os/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</description>
-    </item>
-    <item>
-      <title>Ты винишь модель. А дело в одном промпте</title>
-      <link>https://tolstobrovevgeniy.ru/g/context-first-prompts/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/context-first-prompts/</guid>
-      <pubDate>Mon, 29 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</description>
-    </item>
-    <item>
-      <title>Меня обнулил Instagram на 23 000. И почему я этому рад</title>
-      <link>https://tolstobrovevgeniy.ru/g/restart-zavod/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/restart-zavod/</guid>
-      <pubDate>Sun, 28 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Build in public</category>
-      <description>История рестарта: как бан сетки заставил меня перестать делать контент руками и собрать завод на коде — и почему систему уже не забанить.</description>
-    </item>
-    <item>
-      <title>Как подготовить Claude Code к любому проекту</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-setup/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-setup/</guid>
-      <pubDate>Thu, 18 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</description>
     </item>
   </channel>
 </rss>
