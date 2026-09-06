@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code права и разрешения: что безопасно отдавать — Евгений Толстобров</title>
+  <meta name="description" content="Какие права давать агенту: три уровня доступа, что безопасно на каждом, где реальный риск и почему главный предохранитель — контроль версий, а не запреты.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/claude-permissions/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Claude Code права и разрешения: что безопасно отдавать — Евгений Толстобров">
+  <meta property="og:description" content="Какие права давать агенту: три уровня доступа, что безопасно на каждом, где реальный риск и почему главный предохранитель — контроль версий, а не запреты.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/claude-permissions/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/claude-permissions.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Code права и разрешения: что безопасно отдавать — Евгений Толстобров">
+  <meta name="twitter:description" content="Какие права давать агенту: три уровня доступа, что безопасно на каждом, где реальный риск и почему главный предохранитель — контроль версий, а не запреты.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/claude-permissions.jpg">
+  <meta property="article:published_time" content="2026-09-06">
+  <meta property="article:modified_time" content="2026-09-06">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Claude Code права и разрешения: что безопасно отдавать","name":"Права и разрешения: что можно отдать нейросети без риска","description":"Какие права давать агенту: три уровня доступа, что безопасно на каждом, где реальный риск и почему главный предохранитель — контроль версий, а не запреты.","inLanguage":"ru","datePublished":"2026-09-06","dateModified":"2026-09-06","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/claude-permissions/"},"url":"https://tolstobrovevgeniy.ru/g/claude-permissions/","articleSection":"Claude Code","wordCount":783,"timeRequired":"PT4M","keywords":"claude code разрешения, настройка прав claude, безопасность нейросети доступ, полный доступ нейросети, откатить изменения claude","image":["/img/og/claude-permissions.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Claude Code","item":"https://tolstobrovevgeniy.ru/tema/claude-code/"},{"@type":"ListItem","position":3,"name":"Права и разрешения: что можно отдать нейросети без риска","item":"https://tolstobrovevgeniy.ru/g/claude-permissions/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Опасно ли давать нейросети полный доступ к проекту?","acceptedAnswer":{"@type":"Answer","text":"Опасность зависит не от объёма прав, а от наличия отката. С контролем версий широкий доступ к файлам — рабочая практика: любой неудачный заход возвращается одной командой."}},{"@type":"Question","name":"Что нельзя отдавать без подтверждения?","acceptedAnswer":{"@type":"Answer","text":"Всё, что уходит наружу и не отменяется: публикации, сообщения людям, письма, платежи, удаление в облачных хранилищах."}},{"@type":"Question","name":"Как откатить то, что наломала нейросеть?","acceptedAnswer":{"@type":"Answer","text":"Не фиксировать изменения, посмотреть список правок и вернуть нужные файлы к предыдущему состоянию. Именно поэтому контроль версий заводится до выдачи прав, а не после первого происшествия."}},{"@type":"Question","name":"Стоит ли подтверждать каждое действие?","acceptedAnswer":{"@type":"Answer","text":"Нет, это убивает смысл: работа становится медленнее ручной. Разумнее дать свободу на обратимое и оставить подтверждение на необратимое."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/claude-code/">Claude Code</a><span class="sep">/</span><span>Права и разрешения: что можно отдать нейросети без риска</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/claude-code/">Claude Code</a>
+        <time datetime="2026-09-06">6 сентября 2026</time>
+        <span>· 4 мин</span>
+      </div>
+      <h1>Права и разрешения: что можно отдать нейросети без риска</h1>
+      <p class="lead">Три уровня доступа, что безопасно на каждом, где начинается настоящий риск и почему главный предохранитель — это не настройки, а контроль версий.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#tri-urovnya-dostupa">Три уровня доступа</a></li><li><a href="#gde-risk-nastoyaschiy-a-gde-vydumannyy">Где риск настоящий, а где выдуманный</a></li><li><a href="#glavnoe-pravilo">Главное правило</a></li><li><a href="#pochemu-kontrol-versiy-vazhnee-nastroek">Почему контроль версий важнее настроек</a></li><li><a href="#kak-nastroit-po-umu">Как настроить по уму</a></li><li><a href="#chto-delat-esli-uzhe-nalomal">Что делать, если уже наломал</a></li><li><a href="#chto-ya-otdal-i-chto-derzhu">Что я отдал и что держу</a></li><li><a href="#huk-kak-zamena-zapretam">Хук как замена запретам</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li></ol>
+      </nav>
+      <div class="content">
+<p>Вопрос, который возникает у всех на второй день: сколько прав давать. Одни отдают всё сразу и однажды получают сюрприз, другие подтверждают каждое действие и через неделю бросают, потому что это медленнее ручной работы.</p>
+<p>Разберу, где проходит разумная граница.</p>
+<h2 id="tri-urovnya-dostupa">Три уровня доступа</h2>
+<p><strong>Уровень 1. Только чтение.</strong> Агент видит файлы, но ничего не меняет. Безопасно полностью, полезно ограниченно: он может объяснить и предложить, но всё делаешь ты.</p>
+<p><strong>Уровень 2. Правка файлов проекта.</strong> Может менять то, что лежит в рабочей папке. Здесь и появляется польза — и здесь же начинается настоящий разговор о рисках.</p>
+<p><strong>Уровень 3. Команды в системе.</strong> Может запускать что угодно: устанавливать, удалять, отправлять. Самый мощный и самый требовательный к дисциплине.</p>
+<p>Большинство работы живёт на втором уровне. Третий нужен для конвейеров, которые сами публикуют и деплоят.</p>
+<h2 id="gde-risk-nastoyaschiy-a-gde-vydumannyy">Где риск настоящий, а где выдуманный</h2>
+<p><strong>Выдуманный риск:</strong> «он украдёт мой код». <a href="/g/context-not-agent/" class="ctx-link">Агент работает</a> по твоей задаче в твоей папке — это не то, чего стоит бояться.</p>
+<p><strong>Настоящий риск</strong> — три штуки:</p>
+<table>
+<thead>
+<tr>
+<th>Риск</th>
+<th>Как выглядит</th>
+<th>Цена</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Массовая правка не туда</td>
+<td>«наведи порядок» → изменены 40 файлов</td>
+<td>час на разбор</td>
+</tr>
+<tr>
+<td>Удаление</td>
+<td>вычистил «лишнее», а оно было нужно</td>
+<td>зависит от бэкапа</td>
+</tr>
+<tr>
+<td>Действие вовне</td>
+<td>отправил, опубликовал, написал</td>
+<td>необратимо</td>
+</tr>
+</tbody></table>
+<p>Первые две обратимы, если есть контроль версий. Третья — нет. Отсюда и главное правило.</p>
+<h2 id="glavnoe-pravilo">Главное правило</h2>
+<blockquote>
+<p>Отдавай широко всё, что откатывается. Держи узко всё, что уходит наружу.</p>
+</blockquote>
+<p>Правка файлов, установка зависимостей, переименования, рефакторинг — это откатывается одной командой. Тут можно и нужно давать свободу: подтверждение каждой правки убивает всю ценность.</p>
+<p>Публикация, отправка сообщений, письма, платежи, удаление в облаке — не откатывается. Тут подтверждение обязательно, даже когда доверяешь.</p>
+<h2 id="pochemu-kontrol-versiy-vazhnee-nastroek">Почему контроль версий важнее настроек</h2>
+<p>Самый частый способ обезопасить себя — накрутить запретов. Это работает плохо: запреты либо мешают работать, либо обходятся формулировкой задачи.</p>
+<p>Настоящий предохранитель другой: <strong>всё лежит в системе контроля версий</strong>, и любой заход откатывается одной командой.</p>
+<p>С ним меняется сам подход. Ты не спрашиваешь «а вдруг он сломает» — ты пробуешь, смотришь на изменения и либо принимаешь, либо откатываешь. Смелость становится дешёвой.</p>
+<p>Без него любой широкий доступ — это игра в рулетку, и осторожность оправдана.</p>
+<h2 id="kak-nastroit-po-umu">Как настроить по уму</h2>
+<ol>
+<li><strong>Заведи контроль версий до того, как давать права.</strong> Это единственный порядок, который работает.</li>
+<li><strong>Дай свободу на правку файлов проекта.</strong> Без этого агент бесполезен.</li>
+<li><strong>Оставь подтверждение на всё, что уходит вовне.</strong> Публикации, сообщения, деньги.</li>
+<li><strong>Запрети удаление вне проекта.</strong> Не из недоверия, а чтобы опечатка в пути не стоила дорого.</li>
+<li><strong>Проверяй изменения перед фиксацией.</strong> Взгляд на список правок занимает секунды и ловит почти всё.</li>
+</ol>
+<p>Пятый пункт заменяет собой десяток запретов.</p>
+<h2 id="chto-delat-esli-uzhe-nalomal">Что делать, если уже наломал</h2>
+<p>Порядок спокойный, паника только мешает.</p>
+<p><strong>Не фиксируй изменения.</strong> Пока правки не зафиксированы, они откатываются целиком.</p>
+<p><strong>Посмотри, что изменилось.</strong> Список файлов почти всегда объясняет масштаб: сорок файлов вместо трёх — понятно, что пошло не так.</p>
+<p><strong>Откати выборочно.</strong> Часть правок наверняка нужна. Возвращать всё подряд обычно не требуется.</p>
+<p><strong>Сузь задачу и повтори.</strong> Причина почти всегда в широкой формулировке, а не в правах.</p>
+<h2 id="chto-ya-otdal-i-chto-derzhu">Что я отдал и что держу</h2>
+<p>Правка файлов проекта, установка зависимостей, запуск скриптов, сборка сайта — полная свобода. Всё это откатывается, а подтверждать каждый шаг означало бы делать руками.</p>
+<p>Публикация в канал, отправка сообщений людям, всё, что связано с деньгами и внешними аккаунтами, — только через подтверждение. Не потому что не доверяю, а потому что опубликованное обратно не забирается.</p>
+<h2 id="huk-kak-zamena-zapretam">Хук как замена запретам</h2>
+<p>Есть способ лучше, чем список разрешённого: автоматическая проверка перед действием.</p>
+<p>Работает это так: перед определённой операцией срабатывает твой скрипт и решает, пропускать или нет. Например: перед публикацией проверить, что в тексте нет плейсхолдеров; перед удалением — что путь лежит внутри проекта; перед отправкой — что получатель из белого списка.</p>
+<p>Разница с запретами принципиальная. Запрет говорит «нельзя» и останавливает работу. Проверка говорит «нельзя вот в этом конкретном случае» и пропускает остальные девяносто девять.</p>
+<p>Три проверки, которые окупаются в первую неделю:</p>
+<ul>
+<li><strong>путь внутри проекта</strong> — ловит опечатки, из-за которых удаление уезжает не туда;</li>
+<li><strong>нет незаполненных заготовок</strong> — ловит публикацию с квадратными скобками вместо ссылки;</li>
+<li><strong>не тронуты файлы секретов</strong> — ловит случайную запись ключей в репозиторий.</li>
+</ul>
+<p>Каждая — несколько строк. Вместе они закрывают почти все сценарии, ради которых люди накручивают десятки запретов.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h3 id="opasno-li-davat-neyroseti-polnyy-dostup-k-proektu">Опасно ли давать нейросети полный доступ к проекту?</h3>
+<p>Опасность зависит не от объёма прав, а от наличия отката. С контролем версий широкий доступ к файлам — рабочая практика: любой неудачный заход возвращается одной командой.</p>
+<h3 id="chto-nelzya-otdavat-bez-podtverzhdeniya">Что нельзя отдавать без подтверждения?</h3>
+<p>Всё, что уходит наружу и не отменяется: публикации, сообщения людям, письма, платежи, удаление в облачных хранилищах.</p>
+<h3 id="kak-otkatit-to-chto-nalomala-neyroset">Как откатить то, что наломала нейросеть?</h3>
+<p>Не фиксировать изменения, посмотреть список правок и вернуть нужные файлы к предыдущему состоянию. Именно поэтому контроль версий заводится до выдачи прав, а не после первого происшествия.</p>
+<h3 id="stoit-li-podtverzhdat-kazhdoe-deystvie">Стоит ли подтверждать каждое действие?</h3>
+<p>Нет, это убивает смысл: работа становится медленнее ручной. Разумнее дать свободу на обратимое и оставить подтверждение на необратимое.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/full-access-safety-net/">
+            <span class="tag">Build in public</span>
+            <span class="related-title">Полный доступ нейросети — вопрос отката, а не смелости</span>
+            <span class="related-sub">Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-setup/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Как подготовить Claude Code к любому проекту</span>
+            <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
+          </a>
+          <a class="related-card" href="/g/mcp-connectors-guide/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">MCP: как дать модели руки, а не советы</span>
+            <span class="related-sub">Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.</span>
+          </a>
+          <a class="related-card" href="/g/claude-3-levels-map/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Карта Claude на три уровня: команда → агент → автопилот</span>
+            <span class="related-sub">Команда → агент → автопилот: на каком уровне сидит большинство, что требует каждый переход и куда двигаться дальше.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Память Claude Code: чем отличается от памяти чата и что куда класть</title>
+  <meta name="description" content="Три места, где живёт контекст: правила проекта, память между сессиями и скиллы. Что в каждое класть, почему не стоит сваливать всё в один файл.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/project-memory-vs-chat/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Память Claude Code: чем отличается от памяти чата и что куда класть">
+  <meta property="og:description" content="Три места, где живёт контекст: правила проекта, память между сессиями и скиллы. Что в каждое класть, почему не стоит сваливать всё в один файл.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/project-memory-vs-chat/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/project-memory-vs-chat.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Память Claude Code: чем отличается от памяти чата и что куда класть">
+  <meta name="twitter:description" content="Три места, где живёт контекст: правила проекта, память между сессиями и скиллы. Что в каждое класть, почему не стоит сваливать всё в один файл.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/project-memory-vs-chat.jpg">
+  <meta property="article:published_time" content="2026-09-06">
+  <meta property="article:modified_time" content="2026-09-06">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Память Claude Code: чем отличается от памяти чата и что куда класть","name":"Память проекта и память чата: чем отличаются и что куда класть","description":"Три места, где живёт контекст: правила проекта, память между сессиями и скиллы. Что в каждое класть, почему не стоит сваливать всё в один файл.","inLanguage":"ru","datePublished":"2026-09-06","dateModified":"2026-09-06","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/project-memory-vs-chat/"},"url":"https://tolstobrovevgeniy.ru/g/project-memory-vs-chat/","articleSection":"Claude Code","wordCount":876,"timeRequired":"PT5M","keywords":"память claude code, claude md память проекта, контекст между сессиями, что писать в claude md, как настроить память нейросети","image":["/img/og/project-memory-vs-chat.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Claude Code","item":"https://tolstobrovevgeniy.ru/tema/claude-code/"},{"@type":"ListItem","position":3,"name":"Память проекта и память чата: чем отличаются и что куда класть","item":"https://tolstobrovevgeniy.ru/g/project-memory-vs-chat/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чем память проекта отличается от памяти чата?","acceptedAnswer":{"@type":"Answer","text":"Память чата живёт внутри одного разговора и заканчивается вместе с ним. Память проекта лежит в файлах, читается на каждом запуске или по теме и переживает любые перезапуски."}},{"@type":"Question","name":"Что писать в правилах проекта?","acceptedAnswer":{"@type":"Answer","text":"Только то, что нужно в любой задаче: кто ты, что за проект, кто аудитория, как с тобой работать, где что лежит. Узкие инструкции под конкретные задачи выносятся в скиллы."}},{"@type":"Question","name":"Какого размера должен быть файл правил?","acceptedAnswer":{"@type":"Answer","text":"Ориентир — одна страница. Он читается на каждом запуске, поэтому каждая лишняя страница делает дороже любую мелкую задачу и повышает риск внутренних противоречий."}},{"@type":"Question","name":"Как часто чистить память?","acceptedAnswer":{"@type":"Answer","text":"Раз в месяц имеет смысл перечитать правила целиком: вычистить неактуальное, свести дубли и вынести узкое в отдельные места. Разрастание происходит незаметно."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/claude-code/">Claude Code</a><span class="sep">/</span><span>Память проекта и память чата: чем отличаются и что куда класть</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/claude-code/">Claude Code</a>
+        <time datetime="2026-09-06">6 сентября 2026</time>
+        <span>· 5 мин</span>
+      </div>
+      <h1>Память проекта и память чата: чем отличаются и что куда класть</h1>
+      <p class="lead">Три разных места, где живёт контекст, что в каждое класть, почему всё в один файл — плохая идея и как понять, что память пора чистить.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#tri-vida-pamyati">Три вида памяти</a></li><li><a href="#chto-kuda-klast">Что куда класть</a></li><li><a href="#pochemu-ne-stoit-valit-vse-v-odin-fayl">Почему не стоит валить всё в один файл</a></li><li><a href="#kak-ustroena-pamyat-mezhdu-sessiyami">Как устроена память между сессиями</a></li><li><a href="#priznaki-chto-pamyat-pora-chistit">Признаки, что память пора чистить</a></li><li><a href="#kak-proverit-chto-pamyat-rabotaet">Как проверить, что память работает</a></li><li><a href="#kak-eto-vyglyadit-u-menya">Как это выглядит у меня</a></li><li><a href="#odna-oshibka-kotoraya-stoit-dorozhe-ostalnyh">Одна ошибка, которая стоит дороже остальных</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li></ol>
+      </nav>
+      <div class="content">
+<p>Слово «память» в работе с агентом означает три разные вещи, и их постоянно смешивают. Отсюда типичная картина: один огромный файл, в который свалено всё, и ощущение, что модель то помнит, то не помнит.</p>
+<p>Разложу по местам.</p>
+<h2 id="tri-vida-pamyati">Три вида памяти</h2>
+<p><strong>Правила проекта.</strong> Кто ты, что за проект, как с тобой работать. Читаются <strong>на каждом запуске</strong>, целиком.</p>
+<p><strong>Память между сессиями.</strong> Факты, решения, грабли, которые нельзя терять. Подтягиваются <strong>по теме</strong>, когда всплыла.</p>
+<p><strong>Скиллы.</strong> Порядок действий под конкретный тип задачи. Включаются <strong>по совпадению</strong> с описанием.</p>
+<p>Разница в том, <strong>когда это читается</strong>. Из неё и растёт правило: то, что нужно всегда, — в правила; то, что иногда, — в память; то, что под задачу, — в скилл.</p>
+<h2 id="chto-kuda-klast">Что куда класть</h2>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>Куда</th>
+<th>Почему</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Кто ты, ниша, аудитория</td>
+<td>правила проекта</td>
+<td>нужно в любой задаче</td>
+</tr>
+<tr>
+<td>Как с тобой работать, тон, запреты</td>
+<td>правила проекта</td>
+<td>влияет на каждый ответ</td>
+</tr>
+<tr>
+<td>Где что лежит в проекте</td>
+<td>правила проекта</td>
+<td>навигация нужна всегда</td>
+</tr>
+<tr>
+<td>Решения и почему их приняли</td>
+<td>память</td>
+<td>всплывает по теме</td>
+</tr>
+<tr>
+<td>Грабли конкретного сервиса</td>
+<td>память</td>
+<td>нужно, когда трогаешь этот сервис</td>
+</tr>
+<tr>
+<td>Порядок сборки карусели</td>
+<td>скилл</td>
+<td>только под эту задачу</td>
+</tr>
+<tr>
+<td>Цены, реквизиты, факты</td>
+<td>отдельные файлы</td>
+<td>их читают по ссылке из правил</td>
+</tr>
+</tbody></table>
+<p>Строка про решения — самая недооценённая. Через месяц ты не помнишь, почему настройка сделана именно так, и переделываешь обратно. Записанное «почему» стоит дороже записанного «что».</p>
+<h2 id="pochemu-ne-stoit-valit-vse-v-odin-fayl">Почему не стоит валить всё в один файл</h2>
+<p>Соблазн понятный: один файл, всё под рукой. Три причины, почему это плохо кончается.</p>
+<p><strong>Дорого.</strong> Правила читаются на каждом запуске. Десять страниц вместо одной — это налог, который платится с каждой мелкой задачи, включая «поправь опечатку».</p>
+<p><strong>Шумно.</strong> Половина инструкций не относится к текущей работе, но внимание всё равно тратится. Важное тонет в неважном.</p>
+<p><strong>Противоречиво.</strong> Большой файл разрастается кусками, и через месяц в нём мирно живут «пиши коротко» и «раскрывай подробно». Модель выбирает случайно, ты видишь нестабильность и винишь модель.</p>
+<p>Рабочий ориентир: <strong>правила проекта — одна страница</strong>. Всё остальное — по ссылкам и в отдельных местах.</p>
+<h2 id="kak-ustroena-pamyat-mezhdu-sessiyami">Как устроена память между сессиями</h2>
+<p>Смысл в том, чтобы завтрашняя работа начиналась не с нуля.</p>
+<p>Разумная схема — два уровня. <strong>Журнал</strong>: сырые итоги сессий, длинно, для истории. <strong>Дистиллят</strong>: короткая выжимка повторяющихся уроков, только она читается каждый раз.</p>
+<p>Без разделения память превращается в архив, который слишком дорого перечитывать, и перестаёт работать.</p>
+<p>Что попадает в дистиллят: то, что случилось <strong>больше одного раза</strong>. Разовая ошибка — это событие, повторяющаяся — правило.</p>
+<h2 id="priznaki-chto-pamyat-pora-chistit">Признаки, что память пора чистить</h2>
+<ul>
+<li>Правила проекта не помещаются на экран.</li>
+<li>Ты сам не помнишь, что в них написано.</li>
+<li>Модель ведёт себя нестабильно на похожих задачах.</li>
+<li>В файле есть инструкции про то, чем ты больше не занимаешься.</li>
+<li>Одно и то же написано в двух местах разными словами.</li>
+</ul>
+<p>Последний пункт — самый вредный: два описания одного правила рано или поздно разъезжаются, и получается противоречие.</p>
+<p>Уборка занимает полчаса раз в месяц: перечитать целиком, вычистить неактуальное, свести дубли, вынести узкое в скиллы.</p>
+<h2 id="kak-proverit-chto-pamyat-rabotaet">Как проверить, что память работает</h2>
+<p>Задай вопрос, ответ на который зависит от твоего проекта, а не от общих знаний: чем твой подход отличается от конкурентов, кто твоя аудитория, какие решения вы уже принимали.</p>
+<p>Ответ общий и обтекаемый — памяти нет, всё держится на том, что ты объясняешь заново каждый раз. Ответ конкретный, твоими формулировками — фундамент на месте.</p>
+<p>Проверку полезно повторять раз в месяц: память тихо деградирует, когда файлы разрастаются.</p>
+<h2 id="kak-eto-vyglyadit-u-menya">Как это выглядит у меня</h2>
+<p>Чтобы не абстрактно. Структура, к которой я пришёл за несколько месяцев:</p>
+<p><strong>Файл правил в корне проекта</strong> — одна страница. Кто я, чем занимаюсь, как со мной работать, куда идти за деталями. Никаких подробностей: только навигация и принципы.</p>
+<p><strong>Папка с бизнес-контекстом</strong> — продукты, аудитория, цели, экономика, голос. Каждый файл читается только когда тема всплыла, а не постоянно.</p>
+<p><strong>Память отдельными файлами</strong> — один факт, один файл. Индекс со ссылками загружается всегда, сами файлы — по надобности.</p>
+<p><strong>Скиллы</strong> — по одному на тип работы, со своими шагами и своим списком граблей.</p>
+<p>Ключевое решение здесь — индекс. Одна строка на файл памяти: название и намёк, о чём он. Модель видит весь список и открывает нужное, а не тащит всё сразу.</p>
+<h2 id="odna-oshibka-kotoraya-stoit-dorozhe-ostalnyh">Одна ошибка, которая стоит дороже остальных</h2>
+<p>Держать знание в голове и не записывать.</p>
+<p>Выглядит это безобидно: ты объяснил в разговоре, получил результат, пошёл дальше. Завтра объясняешь заново, послезавтра снова. Каждый раз это кажется мелочью в две минуты.</p>
+<p>За месяц набегают часы, а главное — система не растёт. Она остаётся ровно такой же умной, какой была в первый день, потому что весь опыт остался у тебя, а не в файлах.</p>
+<p>Признак, по которому ловить: <strong>объяснил одно и то же второй раз — записывай</strong>. Не «мне это часто нужно», а именно повтор объяснения.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h3 id="chem-pamyat-proekta-otlichaetsya-ot-pamyati-chata">Чем память проекта отличается от памяти чата?</h3>
+<p>Память чата живёт внутри одного разговора и заканчивается вместе с ним. Память проекта лежит в файлах, читается на каждом запуске или по теме и переживает любые перезапуски.</p>
+<h3 id="chto-pisat-v-pravilah-proekta">Что писать в правилах проекта?</h3>
+<p>Только то, что нужно в любой задаче: кто ты, что за проект, кто аудитория, как с тобой работать, где что лежит. Узкие инструкции под конкретные задачи выносятся в скиллы.</p>
+<h3 id="kakogo-razmera-dolzhen-byt-fayl-pravil">Какого размера должен быть файл правил?</h3>
+<p>Ориентир — одна страница. Он читается на каждом запуске, поэтому каждая лишняя страница делает дороже любую мелкую задачу и повышает риск внутренних противоречий.</p>
+<h3 id="kak-chasto-chistit-pamyat">Как часто чистить память?</h3>
+<p>Раз в месяц имеет смысл перечитать правила целиком: вычистить неактуальное, свести дубли и вынести узкое в отдельные места. Разрастание происходит незаметно.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/context-first-prompts/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Ты винишь модель. А дело в одном промпте</span>
+            <span class="related-sub">Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-setup/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Как подготовить Claude Code к любому проекту</span>
+            <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
+          </a>
+          <a class="related-card" href="/g/three-setup-files/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Три файла, которые делают из Claude сотрудника</span>
+            <span class="related-sub">Правила проекта, память и голос: что писать внутри каждого файла, чего писать не надо, в каком порядке собирать и почему нормально они заработают только через неделю.</span>
+          </a>
+          <a class="related-card" href="/g/context-not-agent/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Дело не в модели. Дело в контексте</span>
+            <span class="related-sub">Почему ИИ-агент, прикрученный к бизнесу, не работает — и пять шагов, которые превращают его в систему.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

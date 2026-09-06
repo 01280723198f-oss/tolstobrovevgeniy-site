@@ -5,8 +5,56 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 06 Sep 2026 19:40:14 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 19:47:27 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Память проекта и память чата: чем отличаются и что куда класть</title>
+      <link>https://tolstobrovevgeniy.ru/g/project-memory-vs-chat/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/project-memory-vs-chat/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Три разных места, где живёт контекст, что в каждое класть, почему всё в один файл — плохая идея и как понять, что память пора чистить.</description>
+    </item>
+    <item>
+      <title>Как находить чужие виральные посты и не залипать в ленте</title>
+      <link>https://tolstobrovevgeniy.ru/g/find-viral-posts/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/find-viral-posts/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Контент-завод</category>
+      <description>Почему ручной поиск референсов съедает час в день, по каким признакам отбирать доноров и как собрать радар, который приносит готовый список к завтраку.</description>
+    </item>
+    <item>
+      <title>Сколько стоит Claude Code на практике</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-pricing/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-pricing/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Из чего складывается цена, чем подписка отличается от оплаты по ключу, что реально ест бюджет и когда переход на дорогой тариф оправдан, а когда это лечение симптома.</description>
+    </item>
+    <item>
+      <title>Своя база вместо подписчиков площадки</title>
+      <link>https://tolstobrovevgeniy.ru/g/own-base-vs-platform/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/own-base-vs-platform/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Воронка</category>
+      <description>Почему подписчик тебе не принадлежит, что считать настоящей базой, как её собирать без раздражения и что делать, если аккаунт всё-таки отобрали.</description>
+    </item>
+    <item>
+      <title>Дожимы 24/48/72: что писать в каждом и чего не делать</title>
+      <link>https://tolstobrovevgeniy.ru/g/followup-24-48-72/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/followup-24-48-72/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Воронка</category>
+      <description>Три сообщения после выдачи материала — это не три напоминания, а три разные работы. Разбор каждого с примерами и разбор четырёх причин, по которым дожимы бесят.</description>
+    </item>
+    <item>
+      <title>Права и разрешения: что можно отдать нейросети без риска</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-permissions/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-permissions/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Три уровня доступа, что безопасно на каждом, где начинается настоящий риск и почему главный предохранитель — это не настройки, а контроль версий.</description>
+    </item>
     <item>
       <title>Приём оплат без платформы: как это устроено и что учесть</title>
       <link>https://tolstobrovevgeniy.ru/g/payments-in-bot/</link>
@@ -118,54 +166,6 @@
       <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Что стоит за панелью показателей: как отбираются доноры, куда уходят сорок минут моего времени, в каком порядке собирать систему и на каких граблях она встаёт.</description>
-    </item>
-    <item>
-      <title>Субагент или скилл: что когда заводить</title>
-      <link>https://tolstobrovevgeniy.ru/g/subagent-or-skill/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/subagent-or-skill/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Два способа расширить систему выглядят похоже, а решают разное. Разбор по признакам, таблица выбора и три ошибки, из-за которых заводят не то.</description>
-    </item>
-    <item>
-      <title>Claude или ChatGPT: разница видна не в ответах, а в работе с проектом</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-vs-chatgpt-project/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-vs-chatgpt-project/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Сравнение не по «кто умнее», а по способу работы: разовый диалог против системы с памятью, правилами и руками. Где каждый выигрывает и что это значит для контента.</description>
-    </item>
-    <item>
-      <title>Кончились лимиты Claude: что происходит и как перестать в них упираться</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-limits-explained/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-limits-explained/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Две независимые системы ограничений, почему пятичасовое окно важнее недельного, и восемь привычек, которые растягивают одну подписку на весь рабочий день.</description>
-    </item>
-    <item>
-      <title>Claude Code или Cursor: чем они вообще отличаются</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-vs-cursor/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-vs-cursor/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Не «что лучше», а что каждый делает по своей природе — агент-исполнитель против усилителя в редакторе. Разбор по задачам, с честными минусами обоих.</description>
-    </item>
-    <item>
-      <title>Совет из 21 мастера вместо одного мнения</title>
-      <link>https://tolstobrovevgeniy.ru/g/council-of-masters/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/council-of-masters/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Шесть опор, на которых держится продающий текст, правило обязательного спора и разбор заголовка до и после — как я заставляю систему возражать, а не поддакивать.</description>
-    </item>
-    <item>
-      <title>Шесть звеньев между комментарием и подписчиком</title>
-      <link>https://tolstobrovevgeniy.ru/g/codeword-funnel-chain/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/codeword-funnel-chain/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Воронка</category>
-      <description>Что писать на последнем слайде, каким должно быть кодовое слово, что отдавать в ответ и три дожима — плюс четыре места, где эта цепочка рвётся чаще всего.</description>
     </item>
   </channel>
 </rss>

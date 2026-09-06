@@ -5,8 +5,8 @@
  "totals": {
   "queries": 612,
   "clusters": 418,
-  "covered": 18,
-  "gaps": 400
+  "covered": 21,
+  "gaps": 397
  },
  "clusters": [
   {
@@ -846,10 +846,10 @@
      "signal": 20
     }
    ],
-   "page": "zero-saas-content-factory-stack",
+   "page": "claude-code-pricing",
    "signal": 100,
    "source": "подсказки поиска",
-   "matchScore": 0.74
+   "matchScore": 0.94
   },
   {
    "id": "claude-ai-ne-rabotaet",
@@ -2893,9 +2893,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "claude-permissions",
    "signal": 40,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.71
   },
   {
    "id": "neyroset-dlya-napisaniya-teksta-besplatno-onlayn-bez-registr",
@@ -6247,9 +6248,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "zero-saas-content-factory-stack",
    "signal": 20,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.74
   },
   {
    "id": "skolko-stoit-podpiska-claude-na-mesyac",
@@ -10000,7 +10002,7 @@
      "signal": 20
     }
    ],
-   "page": "codeword-funnel-chain",
+   "page": "followup-24-48-72",
    "signal": 20,
    "source": "подсказки поиска",
    "matchScore": 0.89
@@ -10062,9 +10064,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "own-base-vs-platform",
    "signal": 20,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.85
   },
   {
    "id": "claude-napisat-kod-www-business-gazeta-ru",
