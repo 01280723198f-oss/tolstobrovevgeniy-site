@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 05 Sep 2026 20:54:56 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 11:42:39 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Контент-завод в цифрах: откуда берутся 10 каруселей в день</title>
+      <link>https://tolstobrovevgeniy.ru/g/content-factory-in-numbers/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-factory-in-numbers/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Что стоит за панелью показателей: как отбираются доноры, куда уходят сорок минут моего времени, в каком порядке собирать систему и на каких граблях она встаёт.</description>
+    </item>
     <item>
       <title>Субагент или скилл: что когда заводить</title>
       <link>https://tolstobrovevgeniy.ru/g/subagent-or-skill/</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
       <category>Build in public</category>
       <description>Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</description>
-    </item>
-    <item>
-      <title>6 скиллов превращают Claude из универсала в команду</title>
-      <link>https://tolstobrovevgeniy.ru/g/6-skills-claude-team/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/6-skills-claude-team/</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Штатка из шести ролей — маркетолог, дизайнер, SEO-инженер, сценарист, ревьюер и судья: как скиллы превращают универсала в отдел.</description>
     </item>
   </channel>
 </rss>

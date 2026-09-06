@@ -60,7 +60,7 @@ function card(g, idx) {
     <h1>${title}</h1>
   </div>
   <footer>
-    <span><span class="brand">${escapeHtml(C.brand)}</span> <span class="dot">·</span> tolstobrovevgeniy.ru</span>
+    <span><span class="brand">${escapeHtml(C.brand)}</span> <span class="dot">·</span> ${escapeHtml(new URL(C.origin).host)}</span>
     <span>${escapeHtml(g.readingTime)}</span>
   </footer>
 </body></html>`;
