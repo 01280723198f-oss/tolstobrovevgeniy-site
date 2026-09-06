@@ -5,8 +5,8 @@
  "totals": {
   "queries": 612,
   "clusters": 418,
-  "covered": 16,
-  "gaps": 402
+  "covered": 18,
+  "gaps": 400
  },
  "clusters": [
   {
@@ -730,9 +730,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "telegram-autopost-bot",
    "signal": 120,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.88
   },
   {
    "id": "n8n-neyroset",
@@ -2601,9 +2602,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "avatar-from-photo",
    "signal": 40,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.89
   },
   {
    "id": "claude-code-ultrathink",

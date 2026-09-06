@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автопостинг в Telegram: как настроить своим ботом — Евгений Толстобров</title>
+  <meta name="description" content="Как настроить публикацию постов в Telegram по расписанию своим ботом: токен, права в канале, очередь, картинки и обработка ошибок. Без сервисов и подписок.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Автопостинг в Telegram: как настроить своим ботом — Евгений Толстобров">
+  <meta property="og:description" content="Как настроить публикацию постов в Telegram по расписанию своим ботом: токен, права в канале, очередь, картинки и обработка ошибок. Без сервисов и подписок.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/telegram-autopost-bot.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Автопостинг в Telegram: как настроить своим ботом — Евгений Толстобров">
+  <meta name="twitter:description" content="Как настроить публикацию постов в Telegram по расписанию своим ботом: токен, права в канале, очередь, картинки и обработка ошибок. Без сервисов и подписок.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/telegram-autopost-bot.jpg">
+  <meta property="article:published_time" content="2026-09-06">
+  <meta property="article:modified_time" content="2026-09-06">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Автопостинг в Telegram: как настроить своим ботом","name":"Автопостинг в Telegram своим ботом: без сервисов и подписок","description":"Как настроить публикацию постов в Telegram по расписанию своим ботом: токен, права в канале, очередь, картинки и обработка ошибок. Без сервисов и подписок.","inLanguage":"ru","datePublished":"2026-09-06","dateModified":"2026-09-06","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/"},"url":"https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/","articleSection":"Инструкция","wordCount":862,"timeRequired":"PT5M","keywords":"автопостинг в телеграмме как сделать, автопостинг телеграм бот, отложенный постинг телеграм, публикация постов автоматически, бот для канала","image":["/img/og/telegram-autopost-bot.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Автопостинг в Telegram своим ботом: без сервисов и подписок","item":"https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Как настроить автопостинг в Telegram без сервисов?","acceptedAnswer":{"@type":"Answer","text":"Нужен свой бот с токеном, права администратора в канале и планировщик задач. Публикация — это один запрос к платформе, всё остальное обвязка: очередь постов, реестр отправленного и лог."}},{"@type":"Question","name":"Можно ли постить картинки и видео?","acceptedAnswer":{"@type":"Answer","text":"Да, теми же запросами, только другими методами. Ограничения по размеру файла есть, но для обычных постов с картинками они не мешают."}},{"@type":"Question","name":"Что делать, если бот перестал публиковать?","acceptedAnswer":{"@type":"Answer","text":"Проверить три вещи по порядку: остались ли у бота права администратора, не поехала ли разметка в посте, дошёл ли запрос вообще. Ответ платформы всегда содержит причину отказа — его надо логировать."}},{"@type":"Question","name":"Безопасно ли хранить токен бота?","acceptedAnswer":{"@type":"Answer","text":"Токен — это полный доступ к боту, обращаться с ним надо как с паролем: файл секретов вне репозитория, никаких публичных хостингов. Утёкший токен отзывается и выпускается заново."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Автопостинг в Telegram своим ботом: без сервисов и подписок</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-06">6 сентября 2026</time>
+        <span>· 5 мин</span>
+      </div>
+      <h1>Автопостинг в Telegram своим ботом: без сервисов и подписок</h1>
+      <p class="lead">Что нужно, чтобы посты уходили в канал по расписанию: токен, права, очередь и обработка ошибок — плюс четыре места, где такая связка обычно ломается.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-ponadobitsya">Что понадобится</a></li><li><a href="#kak-ustroena-otpravka">Как устроена отправка</a></li><li><a href="#ochered-vmesto-kalendarya">Очередь вместо календаря</a></li><li><a href="#chto-dolzhno-byt-v-obvyazke">Что должно быть в обвязке</a></li><li><a href="#chetyre-mesta-gde-lomaetsya">Четыре места, где ломается</a></li><li><a href="#poryadok-sborki-za-polchasa">Порядок сборки за полчаса</a></li><li><a href="#chto-eto-daet-pomimo-ekonomii">Что это даёт помимо экономии</a></li><li><a href="#chem-eto-otlichaetsya-ot-otlozhennyh-postov-platformy">Чем это отличается от отложенных постов платформы</a></li><li><a href="#chto-polozhit-v-ochered-krome-teksta">Что положить в очередь, кроме текста</a></li></ol>
+      </nav>
+      <div class="content">
+<p>Сервисов автопостинга много, и все они делают одно и то же: берут твой текст и отправляют его в канал по расписанию. За это просят подписку и требуют доступ к каналу.</p>
+<p>Между тем это два десятка строк кода и полчаса настройки. Разберу, как собрать своё.</p>
+<h2 id="chto-ponadobitsya">Что понадобится</h2>
+<p><strong>Бот.</strong> Создаётся в служебном боте платформы за минуту, на выходе — токен вида <code>1234567890:AAxxxx</code>. Токен это ключ: кто им владеет, тот управляет ботом.</p>
+<p><strong>Права в канале.</strong> Бота нужно добавить администратором с правом публикации. Без этого он будет получать отказ на каждую отправку.</p>
+<p><strong>Идентификатор канала.</strong> Либо публичное имя вида <code>@mychannel</code>, либо числовой идентификатор для приватного.</p>
+<p><strong>Планировщик.</strong> Штатный в системе — тот же, что запускает любые задачи по времени. Ничего дополнительного ставить не нужно.</p>
+<h2 id="kak-ustroena-otpravka">Как устроена отправка</h2>
+<p>Публикация — это один запрос к платформе. Ни библиотек, ни фреймворков:</p>
+<pre><code class="language-bash">curl -s &quot;https://api.telegram.org/bot&lt;ТОКЕН&gt;/sendMessage&quot; \
+  -d chat_id=&quot;@mychannel&quot; \
+  -d parse_mode=&quot;HTML&quot; \
+  -d text=&quot;Текст поста&quot;
+</code></pre>
+<p>Картинка отправляется тем же способом, только другим методом и с файлом. Всё остальное — обвязка вокруг этого запроса: откуда брать текст, когда отправлять, что делать при ошибке.</p>
+<h2 id="ochered-vmesto-kalendarya">Очередь вместо календаря</h2>
+<p>Главное архитектурное решение, которое отличает работающую связку от игрушки.</p>
+<p><strong>Плохо:</strong> жёсткое расписание «в 10:00 отправить пост номер три». Пропустил день, что-то сломалось — и вся конструкция едет.</p>
+<p><strong>Хорошо:</strong> очередь. Папка с готовыми постами, планировщик берёт следующий по списку и отправляет. Нет поста — ничего не происходит и никто не паникует.</p>
+<p>Очередь снимает главную боль автопостинга: необходимость держать её заполненной ровно под календарь. Наполняешь пачками, когда есть материал, расходуется по одному.</p>
+<h2 id="chto-dolzhno-byt-v-obvyazke">Что должно быть в обвязке</h2>
+<table>
+<thead>
+<tr>
+<th>Часть</th>
+<th>Зачем</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Реестр отправленного</td>
+<td>чтобы один пост не ушёл дважды</td>
+</tr>
+<tr>
+<td>Проверка ответа платформы</td>
+<td>молчаливый отказ хуже видимой ошибки</td>
+</tr>
+<tr>
+<td>Повтор при сбое сети</td>
+<td>одна попытка через минуту решает 90 % случаев</td>
+</tr>
+<tr>
+<td>Лог с датой и результатом</td>
+<td>без него не разберёшься, почему пусто</td>
+</tr>
+<tr>
+<td>Уведомление себе при провале</td>
+<td>иначе узнаешь через неделю</td>
+</tr>
+</tbody></table>
+<p>Последняя строка важнее, чем кажется. Тихо сломавшийся автопостинг — это неделя молчания в канале, о которой ты узнаёшь случайно.</p>
+<h2 id="chetyre-mesta-gde-lomaetsya">Четыре места, где ломается</h2>
+<p><strong>Права отозвались.</strong> Бота случайно разжаловали из администраторов — отправка перестала работать. Проверяется одним тестовым сообщением раз в неделю.</p>
+<p><strong>Разметка поехала.</strong> Незакрытый тег или лишний символ — платформа отвечает отказом на весь пост. Лечится проверкой разметки перед отправкой.</p>
+<p><strong>Токен в репозитории.</strong> Классика: залил код с токеном на публичный хостинг, через день бот принадлежит не тебе. Токен живёт в файле секретов, который никогда не попадает в репозиторий.</p>
+<p><strong>Расписание не сработало.</strong> Компьютер спал, задача не запустилась. Тут либо сервер, который не спит, либо смириться и проверять.</p>
+<h2 id="poryadok-sborki-za-polchasa">Порядок сборки за полчаса</h2>
+<ol>
+<li>Создай бота, сохрани токен в файл секретов вне репозитория.</li>
+<li>Добавь бота администратором в канал с правом публикации.</li>
+<li>Отправь одно тестовое сообщение командой из терминала — убедись, что доходит.</li>
+<li>Заведи папку очереди: один файл — один пост.</li>
+<li>Напиши скрипт: взять следующий файл, отправить, отметить в реестре, записать в лог.</li>
+<li>Повесь скрипт на планировщик.</li>
+<li>Проверь весь путь целиком, положив в очередь настоящий пост.</li>
+</ol>
+<p>Седьмой шаг обязателен. Связка, проверенная только тестовым «привет», ломается на первом же посте с картинкой и разметкой.</p>
+<h2 id="chto-eto-daet-pomimo-ekonomii">Что это даёт помимо экономии</h2>
+<p>Экономия на подписке — приятный побочный эффект, но не главный.</p>
+<p>Главное — <strong>это твоя часть конвейера</strong>. Скилл написал пост, скрипт положил в очередь, планировщик отправил. Нет разрыва, где надо руками копировать текст в чужой интерфейс. А значит, весь путь от идеи до публикации может идти без тебя.</p>
+<p>И второе: доступ к каналу остаётся только у тебя. Ни один внешний сервис не держит права на публикацию от твоего имени.</p>
+<h2 id="chem-eto-otlichaetsya-ot-otlozhennyh-postov-platformy">Чем это отличается от отложенных постов платформы</h2>
+<p>Отложенная публикация есть и в самом мессенджере — можно поставить пост на время руками. Разница в трёх вещах.</p>
+<p><strong>Источник.</strong> Встроенная отложка требует, чтобы ты открыл приложение и вставил текст. Своя связка берёт готовый пост из папки, куда его положил скилл. Ручного шага нет вовсе.</p>
+<p><strong>Объём.</strong> Поставить десять постов руками — это десять раз повторить одну процедуру. Положить десять файлов в очередь — одна операция.</p>
+<p><strong>Повторяемость.</strong> Твоя связка знает, что уже отправлено, ведёт лог и умеет уведомить о сбое. Встроенная отложка ничего про это не знает.</p>
+<p>Вывод простой: пока постов один-два в неделю, встроенной хватает с запасом. Как только появляется поток и производство отдано коду — нужен свой конвейер, иначе ручной шаг становится узким местом всей цепочки.</p>
+<h2 id="chto-polozhit-v-ochered-krome-teksta">Что положить в очередь, кроме текста</h2>
+<p>Пост редко бывает только текстом. Поэтому файл в очереди удобно делать не голым текстом, а с шапкой:</p>
+<pre><code>---
+время: 10:00
+картинка: img/карусель-01.png
+кодовое слово: ЗАВОД
+---
+Текст поста...
+</code></pre>
+<p>Скрипт читает шапку и решает, чем отправлять: текстом, картинкой с подписью или альбомом. <a href="/g/codeword-funnel-chain/" class="ctx-link">Кодовое слово</a> попадает в реестр автоматически — не придётся вспоминать, какое уже занято.</p>
+<h3 id="kak-nastroit-avtoposting-v-telegram-bez-servisov">Как настроить автопостинг в Telegram без сервисов?</h3>
+<p>Нужен свой бот с токеном, права администратора в канале и планировщик задач. Публикация — это один запрос к платформе, всё остальное обвязка: очередь постов, реестр отправленного и лог.</p>
+<h3 id="mozhno-li-postit-kartinki-i-video">Можно ли постить картинки и видео?</h3>
+<p>Да, теми же запросами, только другими методами. Ограничения по размеру файла есть, но для обычных постов с картинками они не мешают.</p>
+<h3 id="chto-delat-esli-bot-perestal-publikovat">Что делать, если бот перестал публиковать?</h3>
+<p>Проверить три вещи по порядку: остались ли у бота права администратора, не поехала ли разметка в посте, дошёл ли запрос вообще. Ответ платформы всегда содержит причину отказа — его надо логировать.</p>
+<h3 id="bezopasno-li-hranit-token-bota">Безопасно ли хранить токен бота?</h3>
+<p>Токен — это полный доступ к боту, обращаться с ним надо как с паролем: файл секретов вне репозитория, никаких публичных хостингов. Утёкший токен отзывается и выпускается заново.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/10-repos-claude-team/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Арсенал: 10 репозиториев, которые превращают Claude Code в команду</span>
+            <span class="related-sub">Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</span>
+          </a>
+          <a class="related-card" href="/g/personal-os-four-parts/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Личная ОС на Claude Code: четыре части и порядок сборки</span>
+            <span class="related-sub">Движок, память, голос, часы — что именно писать внутри каждой части, с какой начинать и на каких трёх правилах расписания я обжёгся.</span>
+          </a>
+          <a class="related-card" href="/g/mcp-connectors-guide/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">MCP: как дать модели руки, а не советы</span>
+            <span class="related-sub">Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.</span>
+          </a>
+          <a class="related-card" href="/g/vibecode-app-first-real-user/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Приложение работает ровно до первого живого пользователя</span>
+            <span class="related-sub">Чек-лист обкатки: пять блоков, где вайбкод-проекты ложатся чаще всего, промпт под каждый и двадцать минут ручной проверки перед запуском.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

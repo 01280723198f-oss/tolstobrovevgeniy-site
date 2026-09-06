@@ -5,8 +5,32 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 06 Sep 2026 12:21:05 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 12:31:18 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Описание под видео: формула, которая работает на любой площадке</title>
+      <link>https://tolstobrovevgeniy.ru/g/video-description-formula/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-description-formula/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Зачем описанию первые две строки, что писать дальше, куда ставить призыв и почему одно и то же описание нельзя копировать в три площадки сразу.</description>
+    </item>
+    <item>
+      <title>Автопостинг в Telegram своим ботом: без сервисов и подписок</title>
+      <link>https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Что нужно, чтобы посты уходили в канал по расписанию: токен, права, очередь и обработка ошибок — плюс четыре места, где такая связка обычно ломается.</description>
+    </item>
+    <item>
+      <title>Аватар из фото: два способа сделать видео без съёмок</title>
+      <link>https://tolstobrovevgeniy.ru/g/avatar-from-photo/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/avatar-from-photo/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Говорящая голова из одного снимка против безликого формата с озвучкой — что где ломается, сколько стоит и какой из них выдерживает поток.</description>
+    </item>
     <item>
       <title>Claude Code из России: что работает, что ломается и чего стоит опасаться</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-payment-russia/</link>
@@ -142,30 +166,6 @@
       <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Почему набор скиллов перестаёт работать при трёх сотнях, процедура чистки за вечер, три вопроса к каждому скиллу и список тех двенадцати, что остались.</description>
-    </item>
-    <item>
-      <title>Шесть приёмов промптинга, которые работают каждый день</title>
-      <link>https://tolstobrovevgeniy.ru/g/six-prompting-moves/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/six-prompting-moves/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Роль вместо задачи, план до работы, жёсткий формат, примеры вместо объяснений, запреты и файл правил — с готовыми формулировками и парами «до / после».</description>
-    </item>
-    <item>
-      <title>Три файла, которые делают из Claude сотрудника</title>
-      <link>https://tolstobrovevgeniy.ru/g/three-setup-files/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/three-setup-files/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Правила проекта, память и голос: что писать внутри каждого файла, чего писать не надо, в каком порядке собирать и почему нормально они заработают только через неделю.</description>
-    </item>
-    <item>
-      <title>Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</title>
-      <link>https://tolstobrovevgeniy.ru/g/content-department-build-order/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-department-build-order/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</description>
     </item>
   </channel>
 </rss>
