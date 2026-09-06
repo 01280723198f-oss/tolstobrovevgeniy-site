@@ -1,12 +1,12 @@
 {
- "updated": "2026-09-05",
+ "updated": "2026-09-06",
  "source": "подсказки поиска (Яндекс + Google)",
  "note": "Частот нет — только сигнал спроса 0–100. Настоящие цифры даст выгрузка Вордстата.",
  "totals": {
   "queries": 612,
   "clusters": 418,
-  "covered": 11,
-  "gaps": 407
+  "covered": 16,
+  "gaps": 402
  },
  "clusters": [
   {
@@ -1458,9 +1458,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "claude-payment-russia",
    "signal": 60,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.85
   },
   {
    "id": "cursor-vs-claude-code-vs-codex",
@@ -1522,9 +1523,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "voice-clone-local",
    "signal": 60,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.89
   },
   {
    "id": "kak-sdelat-oblozhku-dlya-vk-gruppy",
@@ -2108,9 +2110,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "content-plan-one-evening",
    "signal": 40,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 1
   },
   {
    "id": "claude-code-plugin-marketplace",
@@ -2541,9 +2544,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "vk-cover-in-code",
    "signal": 40,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.89
   },
   {
    "id": "sgenerirovat-avatarku-neyrosetyu-onlayn-besplatno-po-foto",
@@ -2650,9 +2654,10 @@
      "signal": 20
     }
    ],
-   "page": null,
+   "page": "claude-plugins-guide",
    "signal": 40,
-   "source": "подсказки поиска"
+   "source": "подсказки поиска",
+   "matchScore": 0.94
   },
   {
    "id": "claude-code-cena-tokena",
