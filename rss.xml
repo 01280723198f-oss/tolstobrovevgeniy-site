@@ -5,8 +5,40 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 06 Sep 2026 19:38:15 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 19:40:14 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Приём оплат без платформы: как это устроено и что учесть</title>
+      <link>https://tolstobrovevgeniy.ru/g/payments-in-bot/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/payments-in-bot/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Воронка</category>
+      <description>Из чего состоит цепочка оплаты, зачем нужен вебхук, почему нельзя доверять редиректу и что делать с доступом после платежа.</description>
+    </item>
+    <item>
+      <title>n8n: что это, кому нужен и где он проигрывает коду</title>
+      <link>https://tolstobrovevgeniy.ru/g/n8n-or-code/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/n8n-or-code/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Честный разбор визуальной автоматизации: что она даёт, где начинает мешать и в какой момент проще написать двадцать строк, чем собирать схему из тридцати блоков.</description>
+    </item>
+    <item>
+      <title>Микро-продукт за вечер: что это и из чего собирается</title>
+      <link>https://tolstobrovevgeniy.ru/g/micro-product-evening/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/micro-product-evening/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Воронка</category>
+      <description>Зачем нужен дешёвый первый продукт, чем он отличается от лид-магнита, что в него класть и почему цена в две тысячи работает лучше бесплатного.</description>
+    </item>
+    <item>
+      <title>Claude не работает: разбор по симптомам</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-not-working/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-not-working/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Семь разных поломок, которые люди называют одной фразой, и порядок проверки — от очевидного к редкому, чтобы не чинить не то.</description>
+    </item>
     <item>
       <title>Сито: как из 534 чужих каруселей остаётся десять</title>
       <link>https://tolstobrovevgeniy.ru/g/how-i-pick-donors/</link>
@@ -134,38 +166,6 @@
       <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
       <category>Воронка</category>
       <description>Что писать на последнем слайде, каким должно быть кодовое слово, что отдавать в ответ и три дожима — плюс четыре места, где эта цепочка рвётся чаще всего.</description>
-    </item>
-    <item>
-      <title>Анимированная карусель на коде: что двигать и как записать</title>
-      <link>https://tolstobrovevgeniy.ru/g/animate-carousel-in-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/animate-carousel-in-code/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Три вещи, которые стоит оживлять, точные тайминги, способ записи видео прямо из браузера и четыре ошибки, каждая из которых стоила мне вечера.</description>
-    </item>
-    <item>
-      <title>Свой скилл для Claude за один вечер</title>
-      <link>https://tolstobrovevgeniy.ru/g/write-your-own-skill/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/write-your-own-skill/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Из чего состоит скилл, почему описание — главная строка файла, какие запреты работают лучше просьб и как проверить всё это тремя задачами.</description>
-    </item>
-    <item>
-      <title>Сколько на самом деле стоит контент-завод</title>
-      <link>https://tolstobrovevgeniy.ru/g/content-factory-real-cost/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-factory-real-cost/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Смета по счетам: что стоит ноль, за что я плачу, что перестал покупать и почему главная статья расходов вообще не деньги.</description>
-    </item>
-    <item>
-      <title>Личная ОС на Claude Code: четыре части и порядок сборки</title>
-      <link>https://tolstobrovevgeniy.ru/g/personal-os-four-parts/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/personal-os-four-parts/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Движок, память, голос, часы — что именно писать внутри каждой части, с какой начинать и на каких трёх правилах расписания я обжёгся.</description>
     </item>
   </channel>
 </rss>
