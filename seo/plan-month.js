@@ -72,6 +72,55 @@ function main() {
   L.push(`> Трафик копится нелинейно: первые 2 месяца почти ноль, дальше кривая идёт вверх, ` +
          `потому что старые статьи набирают возраст, пока выходят новые`, "");
 
+  /* ── Помесячный прогноз ──────────────────────────────────────────── */
+  const forecast = buildForecast(strong.length, need, perArticle(base));
+  L.push(`## Прогноз по месяцам`, "");
+  L.push(`Статья не начинает приносить трафик сразу: примерно ${M.indexLagWeeks} недель уходит на`);
+  L.push(`индексацию, до полной отдачи — около ${M.rankLagMonths} месяцев. Поэтому кривая идёт`);
+  L.push(`с задержкой: пишешь в первый месяц, получаешь в третий-четвёртый.`, "");
+  L.push("| Месяц | Опубликовано всего | Созрело статей | Визитов/мес | Визитов/день | % цели |");
+  L.push("|---|---|---|---|---|---|");
+  for (const f of forecast) {
+    L.push(`| ${f.month} | ${f.published.toLocaleString("ru")} | ${f.mature.toLocaleString("ru")} | ` +
+           `${f.visitsMonth.toLocaleString("ru")} | **${f.visitsDay.toLocaleString("ru")}** | ${f.pct} % |`);
+  }
+  L.push("");
+  const hit = forecast.find(f => f.visitsDay >= niche.goal.visitsPerDay);
+  L.push(hit
+    ? `Цель **${niche.goal.visitsPerDay}/день** достигается на **${hit.month}-м месяце** при темпе ${perDay} статей в день.`
+    : `За ${M.forecastMonths} месяцев цель не достигается: нужно либо выше темп, либо кластеры пожирнее.`);
+  L.push("");
+
+  /* ── Хватит ли тем под такой темп ────────────────────────────────── */
+  const freeClusters = semcore.clusters.filter(c => !c.page).length;
+  const daysOfTopics = perDay > 0 ? Math.floor(freeClusters / perDay) : 0;
+  L.push(`## Хватит ли тем`, "");
+  L.push(`Тем в ядре без страницы: **${freeClusters}**. При темпе ${perDay} в день это **${daysOfTopics} дней** работы.`);
+  if (freeClusters < need - strong.length) {
+    L.push("");
+    L.push(`⚠ До цели нужно **${need - strong.length}** статей, а тем в ядре только **${freeClusters}**. ` +
+           `Разрыв — **${need - strong.length - freeClusters}**. Ядро надо расширять параллельно с письмом: ` +
+           `новый прогон проверки спроса по хвостам, выгрузка Вордстата, соседние ниши. ` +
+           `Иначе конвейер упрётся в темы раньше, чем в объём.`);
+  }
+  L.push("");
+
+  /* ── Риски темпа ─────────────────────────────────────────────────── */
+  if (perDay >= 10) {
+    L.push(`## Риски такого темпа`, "");
+    L.push(`- **Скачок объёма.** Сейчас на сайте ${pages.length} страниц. ${perDay} в день это ` +
+           `рост в ${((pages.length + perDay * 30) / pages.length).toFixed(0)} раз за месяц. ` +
+           `Резкий взрывной рост однотипных страниц на молодом домене — известный триггер ` +
+           `фильтров за малополезный контент. Безопаснее наращивать: неделя по 5, неделя по 10, дальше по ${perDay}.`);
+    L.push(`- **Объём текста.** ${perDay} статей по ${M.minWords} слов это ` +
+           `**${(perDay * M.minWords).toLocaleString("ru")} слов в день**. Это не «побольше промптов», ` +
+           `это отдельная производственная задача с ревью.`);
+    L.push(`- **Каннибализация.** Чем быстрее пишешь, тем выше шанс сделать две страницы под один кластер. ` +
+           `Перед каждой партией — сверка с \`core.json\`, одна страница на кластер.`);
+    L.push(`- **Ревью не масштабируется линейно.** Пять минут на статью × ${perDay} = ` +
+           `${Math.round(perDay * 5 / 60 * 10) / 10} часа в день только на приёмку.`, "");
+  }
+
   /* ── Что делать в первый месяц ───────────────────────────────────── */
   L.push(`## Первый месяц: два потока одновременно`, "");
   L.push(`**Поток А — доработка.** ${weak.length} статей короче ${M.minWords} слов. ` +
@@ -131,5 +180,39 @@ function main() {
   темп: ${perDay}/день → цель примерно через ${Math.ceil(monthsToWrite + M.rankLagMonths)} мес`);
 }
 
+/** Помесячная кривая: статьи копятся, каждая созревает со своей задержкой.
+    Опубликованная сегодня статья не даёт трафик сегодня — она входит в силу
+    между индексацией и выходом в топ, поэтому кривая всегда отстаёт от темпа. */
+function buildForecast(startStrong, need, perArticleVisits) {
+  const perMonth = M.articlesPerDay * 30;
+  const indexLag = M.indexLagWeeks / 4.35;          // недели → месяцы
+  const rankLag = M.rankLagMonths;
+  const months = M.forecastMonths || 14;
+  const rows = [];
+
+  const publishedBy = k => Math.min(need, startStrong + perMonth * k);
+
+  for (let m = 1; m <= months; m++) {
+    let mature = 0;
+    for (let k = 0; k <= m; k++) {
+      const cohort = k === 0 ? startStrong : publishedBy(k) - publishedBy(k - 1);
+      if (cohort <= 0) continue;
+      const age = m - k;
+      const share = age <= indexLag ? 0 : Math.min(1, (age - indexLag) / (rankLag - indexLag));
+      mature += cohort * share;
+    }
+    const visitsMonth = Math.round(mature * perArticleVisits);
+    rows.push({
+      month: m,
+      published: publishedBy(m),
+      mature: Math.round(mature),
+      visitsMonth,
+      visitsDay: Math.round(visitsMonth / 30),
+      pct: ((visitsMonth / (niche.goal.visitsPerDay * 30)) * 100).toFixed(0)
+    });
+  }
+  return rows;
+}
+
 if (require.main === module) main();
-module.exports = { main };
+module.exports = { main, buildForecast };
