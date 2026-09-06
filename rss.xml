@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 06 Sep 2026 12:31:18 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 19:38:15 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Сито: как из 534 чужих каруселей остаётся десять</title>
+      <link>https://tolstobrovevgeniy.ru/g/how-i-pick-donors/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/how-i-pick-donors/</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Пять фильтров отбора доноров, почему комментарии важнее лайков, что не ловят пороги — и что делать в день, когда не нашлось ничего.</description>
+    </item>
     <item>
       <title>Описание под видео: формула, которая работает на любой площадке</title>
       <link>https://tolstobrovevgeniy.ru/g/video-description-formula/</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Движок, память, голос, часы — что именно писать внутри каждой части, с какой начинать и на каких трёх правилах расписания я обжёгся.</description>
-    </item>
-    <item>
-      <title>289 скиллов установлено, работают 12. Как я отбирал</title>
-      <link>https://tolstobrovevgeniy.ru/g/289-skills-keep-12/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/289-skills-keep-12/</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Почему набор скиллов перестаёт работать при трёх сотнях, процедура чистки за вечер, три вопроса к каждому скиллу и список тех двенадцати, что остались.</description>
     </item>
   </channel>
 </rss>
