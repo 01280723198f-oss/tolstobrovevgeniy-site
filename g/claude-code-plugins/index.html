@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Плагины и расширения Claude Code — Евгений Толстобров</title>
+  <meta name="description" content="Типы плагинов Claude Code: встроенные команды, MCP-интеграции, скилы, локальные скрипты. Как устанавливать и писать свои.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/claude-code-plugins/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Плагины и расширения Claude Code — Евгений Толстобров">
+  <meta property="og:description" content="Типы плагинов Claude Code: встроенные команды, MCP-интеграции, скилы, локальные скрипты. Как устанавливать и писать свои.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/claude-code-plugins/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Плагины и расширения Claude Code — Евгений Толстобров">
+  <meta name="twitter:description" content="Типы плагинов Claude Code: встроенные команды, MCP-интеграции, скилы, локальные скрипты. Как устанавливать и писать свои.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-07">
+  <meta property="article:modified_time" content="2026-09-07">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Плагины и расширения Claude Code","name":"Плагины Claude Code","description":"Типы плагинов Claude Code: встроенные команды, MCP-интеграции, скилы, локальные скрипты. Как устанавливать и писать свои.","inLanguage":"ru","datePublished":"2026-09-07","dateModified":"2026-09-07","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/claude-code-plugins/"},"url":"https://tolstobrovevgeniy.ru/g/claude-code-plugins/","articleSection":"Инструкция","wordCount":640,"timeRequired":"PT4M","keywords":"claude code плагины, mcp claude, claude code skills, claude code extensions, интеграция claude"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Плагины Claude Code","item":"https://tolstobrovevgeniy.ru/g/claude-code-plugins/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Плагины Claude Code</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-07">7 сентября 2026</time>
+        <span>· 4 мин</span>
+      </div>
+      <h1>Плагины Claude Code</h1>
+      <p class="lead">Четыре типа расширений: встроенные, MCP, скилы, локальные скрипты. Как ставить, как писать свой, где копать</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-takoe-plagin-v-claude-code">Что такое плагин в Claude Code</a></li><li><a href="#chetyre-tipa-plaginov">Четыре типа плагинов</a></li><li><a href="#gde-nayti-plaginy">Где найти плагины</a></li><li><a href="#keys-1-integraciya-s-obsidian-zametki-v-kontekst">Кейс 1: Интеграция с Obsidian (заметки в контекст)</a></li><li><a href="#keys-2-skill-dlya-generacii-koda-svoy-shablon">Кейс 2: Скилл для генерации кода (свой шаблон)</a></li><li><a href="#keys-3-mcp-dlya-svoego-api">Кейс 3: MCP для своего API</a></li><li><a href="#chasto-sprashivayut">Часто спрашивают</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li></ol>
+      </nav>
+      <div class="content">
+<h1 id="plaginy-claude-code-rasshiryay-vozmozhnosti-svoego-boevogo-i">Плагины Claude Code: расширяй возможности своего боевого инструмента</h1>
+<p>Claude Code — это не просто интерфейс для Claude, это платформа, которую можно расширить. Плагины добавляют новые команды, интеграции с вашими сервисами, полностью меняют рабочий процесс. Разберу четыре типа плагинов и как их ставить.</p>
+<h2 id="chto-takoe-plagin-v-claude-code">Что такое плагин в Claude Code</h2>
+<p>Плагин — это небольшая программа, которая:</p>
+<ol>
+<li>Перехватывает команду (например, <code>/fetch</code> для загрузки данных с URL)</li>
+<li>Передаёт эти данные в Claude</li>
+<li>Показывает результат обратно в интерфейсе</li>
+</ol>
+<p>Пример: официальный плагин <code>fetch</code> позволяет скачать содержимое веб-страницы и положить в контекст беседы, вместо того, чтобы копировать-вставлять вручную.</p>
+<h2 id="chetyre-tipa-plaginov">Четыре типа плагинов</h2>
+<h3 id="tip-1-vstroennye-plaginy-ispolzuy-kak-est">Тип 1: Встроенные плагины (используй как есть)</h3>
+<p>Это плагины, которые идут вместе с Claude Code или устанавливаются одной командой.</p>
+<p><strong>Примеры:</strong></p>
+<ul>
+<li><code>fetch</code> — скачивает содержимое веб-страницы</li>
+<li><code>grep</code> — поиск текста в файлах</li>
+<li><code>shell</code> — выполнение bash-команд</li>
+<li><code>read</code> — чтение файлов</li>
+</ul>
+<p>Они уже активны, просто вводишь команду:</p>
+<pre><code>/fetch https://example.com
+</code></pre>
+<p>или через Bash:</p>
+<pre><code class="language-bash">grep -r &quot;todo&quot; ~/project/
+</code></pre>
+<h3 id="tip-2-plaginy-mcp-model-context-protocol">Тип 2: Плагины MCP (Model Context Protocol)</h3>
+<p>MCP — это стандарт для интеграции внешних сервисов. Через MCP ты подключаешь, например, Obsidian, Google Drive, свой API.</p>
+<p><strong>Примеры MCP:</strong></p>
+<ul>
+<li><code>obsidian</code> — доступ к заметкам в Obsidian</li>
+<li><code>google-drive</code> — чтение/запись файлов в Google Drive</li>
+<li><code>slack</code> — отправка сообщений в Slack</li>
+<li><code>github</code> — интеграция с GitHub</li>
+</ul>
+<p><strong>Как установить MCP-плагин:</strong></p>
+<ol>
+<li>В Claude Code откроешь Settings (⚙️)</li>
+<li>Ищешь раздел MCP или Integrations</li>
+<li>Вводишь путь или URL MCP-сервера</li>
+</ol>
+<p>Пример для Obsidian (если у тебя уже установлен):</p>
+<pre><code class="language-json">{
+  &quot;mcpServers&quot;: {
+    &quot;obsidian&quot;: {
+      &quot;command&quot;: &quot;node&quot;,
+      &quot;args&quot;: [&quot;~/.claude/mcp/obsidian.js&quot;]
+    }
+  }
+}
+</code></pre>
+<p>После этого в беседе станет доступна команда:</p>
+<pre><code>@obsidian search: мои заметки про Claude
+</code></pre>
+<h3 id="tip-3-skily-skills-plaginy-pod-tvoyu-zadachu">Тип 3: Скилы (Skills) — плагины под твою задачу</h3>
+<p>Скилы — это готовые сценарии для решения конкретных проблем. Они пишутся человеком и живут в репозитории.</p>
+<p><strong>Примеры скилов:</strong></p>
+<ul>
+<li><code>/сео</code> — генерирует статьи по SEO-ядру</li>
+<li><code>/carousel</code> — создаёт карусель для Instagram</li>
+<li><code>/postodel</code> — пишет посты для Telegram</li>
+<li><code>/код-ревью</code> — проверяет код на ошибки</li>
+</ul>
+<p>Скилы обычно ставятся командой:</p>
+<pre><code class="language-bash">claude skill install carousel
+</code></pre>
+<p>или скачиванием папки в <code>~/.claude/skills/</code>.</p>
+<h3 id="tip-4-lokalnye-skripty-vstraivay-svoyu-logiku">Тип 4: Локальные скрипты (встраивай свою логику)</h3>
+<p>Если ты программист, можешь написать свой плагин, который запускается локально и получает доступ к файлам/API.</p>
+<p>Простой пример плагина на Node.js (расширяет <code>/fetch</code>):</p>
+<pre><code class="language-javascript">// ~/.claude/plugins/my-fetch.js
+module.exports = {
+  name: &#39;my-fetch&#39;,
+  command: &#39;fetch-cached&#39;,
+  description: &#39;Fetch с кешем на день&#39;,
+  async run(url) {
+    const cache = require(&#39;fs&#39;).readFileSync(&#39;.cache.json&#39;);
+    if (cache[url]) return cache[url];
+    
+    const response = await fetch(url);
+    const content = await response.text();
+    cache[url] = content;
+    require(&#39;fs&#39;).writeFileSync(&#39;.cache.json&#39;, cache);
+    return content;
+  }
+};
+</code></pre>
+<p>Потом можешь использовать как:</p>
+<pre><code>/fetch-cached https://example.com
+</code></pre>
+<h2 id="gde-nayti-plaginy">Где найти плагины</h2>
+<ol>
+<li><strong>Официальные</strong> — <a href="https://github.com/anthropics/claude-code/tree/main/plugins" target="_blank" rel="noopener">https://github.com/anthropics/claude-code/tree/main/plugins</a></li>
+<li><strong>Экосистема MCP</strong> — <a href="https://modelcontextprotocol.io/servers" target="_blank" rel="noopener">https://modelcontextprotocol.io/servers</a></li>
+<li><strong>Community</strong> — GitHub ищешь <code>claude-code-plugin</code></li>
+<li><strong>Свои</strong> — пишешь под свои нужды</li>
+</ol>
+<h2 id="keys-1-integraciya-s-obsidian-zametki-v-kontekst">Кейс 1: Интеграция с Obsidian (заметки в контекст)</h2>
+<pre><code class="language-bash"># 1. Установки MCP Obsidian
+npm install -g @anthropic-ai/mcp-obsidian
+
+# 2. Добавляешь в settings.json Claude Code
+{
+  &quot;mcpServers&quot;: {
+    &quot;obsidian&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;@anthropic-ai/mcp-obsidian&quot;]
+    }
+  }
+}
+
+# 3. Перезагружаешь Claude Code
+
+# 4. Теперь можно:
+@obsidian search: методология контент-завода
+</code></pre>
+<p>Результат: Claude читает твою заметку из Obsidian и может помочь её расширить, переписать или соединить с другой заметкой.</p>
+<h2 id="keys-2-skill-dlya-generacii-koda-svoy-shablon">Кейс 2: Скилл для генерации кода (свой шаблон)</h2>
+<p>Если у тебя часто повторяется одно и то же — пишешь скилл:</p>
+<pre><code class="language-javascript">// ~/.claude/skills/my-component.js
+module.exports = {
+  name: &#39;my-component&#39;,
+  trigger: &#39;/component&#39;,
+  description: &#39;Генерирует React-компонент с моим style guide&#39;,
+  async run(componentName, props) {
+    return `
+import styles from &#39;./${componentName}.module.css&#39;;
+
+export function ${componentName}(${props}) {
+  return (
+    &lt;div className={styles.root}&gt;
+      {/* Твой шаблон */}
+    &lt;/div&gt;
+  );
+}`;
+  }
+};
+</code></pre>
+<h2 id="keys-3-mcp-dlya-svoego-api">Кейс 3: MCP для своего API</h2>
+<p>Если у тебя есть свой бэкенд (например, сервис аналитики), можешь подключить его:</p>
+<pre><code class="language-json">{
+  &quot;mcpServers&quot;: {
+    &quot;my-api&quot;: {
+      &quot;command&quot;: &quot;node&quot;,
+      &quot;args&quot;: [&quot;./my-api-mcp.js&quot;],
+      &quot;env&quot;: {
+        &quot;API_KEY&quot;: &quot;твой-секретный-ключ&quot;
+      }
+    }
+  }
+}
+</code></pre>
+<p>Дальше в Claude Code:</p>
+<pre><code>@my-api: покажи топ-10 страниц по трафику за сегодня
+</code></pre>
+<p><a href="/g/mcp-connectors-guide/" class="ctx-link">MCP-сервер</a> достанет данные из твоего API и вернёт их Claude.</p>
+<h2 id="chasto-sprashivayut">Часто спрашивают</h2>
+<p><strong>Опасны ли сторонние плагины?</strong>
+Опасны, если ты не знаешь, что они делают. Читай исходный код перед установкой. Если плагин просит доступ к ключам API или к файлам — проверь, куда они идут. Официальные плагины от Anthropic — безопасны.</p>
+<p><strong>Могу ли я отключить плагин?</strong>
+Да. В Settings найдёшь список активных плагинов — отключаешь тот, что не нужен. Или удаляешь строку из settings.json.</p>
+<p><strong>Как написать свой плагин?</strong>
+Можно на Node.js, Python, Go — любой язык, который поддерживает stdio. Основная идея: плагин получает JSON на входе, возвращает JSON на выходе. Документация: <a href="https://github.com/anthropics/claude-code/blob/main/docs/PLUGINS.md" target="_blank" rel="noopener">https://github.com/anthropics/claude-code/blob/main/docs/PLUGINS.md</a></p>
+<p><strong>Может ли плагин украсть мои данные?</strong>
+Если плагин отправляет данные на сторонний сервер — да. Поэтому проверяй исходный код. Локальные плагины (которые работают только на твоей машине) — безопасны.</p>
+<p><strong>Сколько плагинов можно одновременно?</strong>
+Технически неограниченно, но каждый плагин замедляет запуск Claude Code на 0,5–1 секунду. Если их больше 10 — может быть заметно.</p>
+<p><strong>Можно ли делать плагин для своей команды?</strong>
+Да, распространяй через GitHub или локально. Каждый член команды установит в свой Claude Code.</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<ul>
+<li><a href="/g/claude-code-first-day/">Claude Code: первый день</a> — база для новичков.</li>
+<li><a href="/g/claude-api-setup/">Встраивание Claude в свой сервис</a> — если нужна программная интеграция.</li>
+<li><a href="/g/automation-scripts/">Контент-завод: автоматизация</a> — где плагины экономят время.</li>
+</ul>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/claude-code-setup/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Как подготовить Claude Code к любому проекту</span>
+            <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
+          </a>
+          <a class="related-card" href="/g/10-repos-claude-team/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Арсенал: 10 репозиториев, которые превращают Claude Code в команду</span>
+            <span class="related-sub">Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</span>
+          </a>
+          <a class="related-card" href="/g/claude-plugins-guide/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Плагины Claude Code: что это, зачем и как поставить</span>
+            <span class="related-sub">Чем плагин отличается от скилла и коннектора, что внутри пакета, как поставить и снять, и почему свой маркетплейс полезнее чужого набора.</span>
+          </a>
+          <a class="related-card" href="/g/mcp-connectors-guide/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">MCP: как дать модели руки, а не советы</span>
+            <span class="related-sub">Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

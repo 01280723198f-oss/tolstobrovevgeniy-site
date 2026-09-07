@@ -5,8 +5,64 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 07 Sep 2026 05:14:37 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 09:12:31 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Контент-план за вечер</title>
+      <link>https://tolstobrovevgeniy.ru/g/content-plan-evening/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-plan-evening/</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>За два часа вечером AI пишет идеи на месяц, потом месяц ты просто исполняешь, никакого творческого кризиса</description>
+    </item>
+    <item>
+      <title>Описание видео AI-ом</title>
+      <link>https://tolstobrovevgeniy.ru/g/video-description-ai/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-description-ai/</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>За 5 минут через Claude: рабочие способы через транскрипт, кадры или анализ звука, автоматизация для регулярного контента</description>
+    </item>
+    <item>
+      <title>Плагины Claude Code</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-plugins/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-plugins/</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Четыре типа расширений: встроенные, MCP, скилы, локальные скрипты. Как ставить, как писать свой, где копать</description>
+    </item>
+    <item>
+      <title>Клон своего голоса бесплатно</title>
+      <link>https://tolstobrovevgeniy.ru/g/free-voice-clone/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/free-voice-clone/</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Запись один раз за минуту, потом модель читает любой текст твоим голосом, локально на машине, никуда не загружается</description>
+    </item>
+    <item>
+      <title>Обложка ВКонтакте кодом</title>
+      <link>https://tolstobrovevgeniy.ru/g/vk-cover-code/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vk-cover-code/</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Четыре готовых кейса от простого текста на градиенте до анимированной плитки, никакого Фотошопа, просто HTML + CSS</description>
+    </item>
+    <item>
+      <title>Лимиты Claude и как их преодолеть</title>
+      <link>https://tolstobrovevgeniy.ru/g/token-limits-saving/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/token-limits-saving/</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</description>
+    </item>
+    <item>
+      <title>Как платить за Claude из России</title>
+      <link>https://tolstobrovevgeniy.ru/g/russia-claude-payment/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/russia-claude-payment/</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Четыре способа платежа для российских юзеров, где копаются грабли, когда каждый имеет смысл, рубли или крипто</description>
+    </item>
     <item>
       <title>Конвейер рилсов без камеры: семь звеньев и где они рвутся</title>
       <link>https://tolstobrovevgeniy.ru/g/faceless-reels-pipeline/</link>
@@ -110,62 +166,6 @@
       <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Зачем описанию первые две строки, что писать дальше, куда ставить призыв и почему одно и то же описание нельзя копировать в три площадки сразу.</description>
-    </item>
-    <item>
-      <title>Автопостинг в Telegram своим ботом: без сервисов и подписок</title>
-      <link>https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/telegram-autopost-bot/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Что нужно, чтобы посты уходили в канал по расписанию: токен, права, очередь и обработка ошибок — плюс четыре места, где такая связка обычно ломается.</description>
-    </item>
-    <item>
-      <title>Аватар из фото: два способа сделать видео без съёмок</title>
-      <link>https://tolstobrovevgeniy.ru/g/avatar-from-photo/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/avatar-from-photo/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Говорящая голова из одного снимка против безликого формата с озвучкой — что где ломается, сколько стоит и какой из них выдерживает поток.</description>
-    </item>
-    <item>
-      <title>Claude Code из России: что работает, что ломается и чего стоит опасаться</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-payment-russia/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-payment-russia/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Честный разбор ситуации с доступом и оплатой: какие способы существуют, где реальные риски, на чём разводят и что делать, если подписка слетела посреди работы.</description>
-    </item>
-    <item>
-      <title>Озвучка своим голосом: клон локально и бесплатно</title>
-      <link>https://tolstobrovevgeniy.ru/g/voice-clone-local/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/voice-clone-local/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Что нужно для клона голоса, сколько записывать, где ломается русский и почему локальная модель честнее подписки — с разбором качества по задачам.</description>
-    </item>
-    <item>
-      <title>Обложка сообщества ВК: размеры, безопасные зоны и сборка кодом</title>
-      <link>https://tolstobrovevgeniy.ru/g/vk-cover-in-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vk-cover-in-code/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Точные размеры под все экраны, где обрежет мобильная версия, и как собирать обложку скриптом вместо редактора — чтобы менять текст за минуту, а не за вечер.</description>
-    </item>
-    <item>
-      <title>Контент-план на месяц за один вечер</title>
-      <link>https://tolstobrovevgeniy.ru/g/content-plan-one-evening/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-plan-one-evening/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Контент-завод</category>
-      <description>Почему обычный контент-план не доживает до второй недели, из чего он должен состоять на самом деле и как собрать его так, чтобы производство шло без тебя.</description>
-    </item>
-    <item>
-      <title>Плагины Claude Code: что это, зачем и как поставить</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-plugins-guide/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-plugins-guide/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Чем плагин отличается от скилла и коннектора, что внутри пакета, как поставить и снять, и почему свой маркетплейс полезнее чужого набора.</description>
     </item>
   </channel>
 </rss>

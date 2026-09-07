@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лимиты Claude: RPM, токены, контекст. Как экономить? — Евгений Толстобров</title>
+  <meta name="description" content="Разбираемся в лимитах Claude: суточные лимиты в браузере, RPM на API, стоимость токенов, как их отследить и как экономить.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/token-limits-saving/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Лимиты Claude: RPM, токены, контекст. Как экономить? — Евгений Толстобров">
+  <meta property="og:description" content="Разбираемся в лимитах Claude: суточные лимиты в браузере, RPM на API, стоимость токенов, как их отследить и как экономить.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/token-limits-saving/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Лимиты Claude: RPM, токены, контекст. Как экономить? — Евгений Толстобров">
+  <meta name="twitter:description" content="Разбираемся в лимитах Claude: суточные лимиты в браузере, RPM на API, стоимость токенов, как их отследить и как экономить.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-07">
+  <meta property="article:modified_time" content="2026-09-07">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Лимиты Claude: RPM, токены, контекст. Как экономить?","name":"Лимиты Claude и как их преодолеть","description":"Разбираемся в лимитах Claude: суточные лимиты в браузере, RPM на API, стоимость токенов, как их отследить и как экономить.","inLanguage":"ru","datePublished":"2026-09-07","dateModified":"2026-09-07","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/token-limits-saving/"},"url":"https://tolstobrovevgeniy.ru/g/token-limits-saving/","articleSection":"Разбор","wordCount":938,"timeRequired":"PT5M","keywords":"claude лимиты, claude token limits, claude rpl, экономия токенов claude, сколько стоит claude api"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"Лимиты Claude и как их преодолеть","item":"https://tolstobrovevgeniy.ru/g/token-limits-saving/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>Лимиты Claude и как их преодолеть</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-09-07">7 сентября 2026</time>
+        <span>· 5 мин</span>
+      </div>
+      <h1>Лимиты Claude и как их преодолеть</h1>
+      <p class="lead">Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#limity-v-claude-ru-veb-interfeys">Лимиты в Claude.ru (веб-интерфейс)</a></li><li><a href="#limity-v-claude-api-programmnyy-dostup">Лимиты в Claude API (программный доступ)</a></li><li><a href="#maksimalnaya-dlina-konteksta-okno">Максимальная длина контекста (окно)</a></li><li><a href="#kak-ekonomit-tokeny">Как экономить токены</a></li><li><a href="#kak-otsledit-skolko-ya-potratil">Как отследить, сколько я потратил</a></li><li><a href="#sluchai-kogda-limity-podkaraulyat">Случаи, когда лимиты подкараулят</a></li><li><a href="#chasto-sprashivayut">Часто спрашивают</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li></ol>
+      </nav>
+      <div class="content">
+<h1 id="limity-claude-i-kak-ih-ne-preodolet-tokeny-ogranicheniya-eko">Лимиты Claude и как их не преодолеть: токены, ограничения, экономия</h1>
+<p>Первый лимит, который замечают новички, — это лимит на просмотр в браузере. Второй — на использование API. Разберу оба: где они прячутся, как их видишь, когда их достигаешь.</p>
+<h2 id="limity-v-claude-ru-veb-interfeys">Лимиты в Claude.ru (веб-интерфейс)</h2>
+<p><strong>Лимит на количество сообщений в день:</strong> ~200 сообщений для Pro-подписки, ~40 для Free. Это не просто число, а ограничение, которое можно выбить одним большим контекстом.</p>
+<p><strong>Как видишь лимит:</strong> откроешь Claude, напишешь сообщение, а в ответ не сообщение, а уведомление: «У вас исчерпаны лимиты на сегодня». Обычно это происходит в 22–23 часа по времени сервера (Pacific Time).</p>
+<p><strong>Что это означает:</strong> не одно сообщение в день, а суммарный размер всех сообщений и ответов, пересчитанный в токены. Для Pro это примерно 200K токенов в день. Если ты отправляешь контекст на 100K и получаешь ответ на 50K — это 150K токенов, половина твоего дневного бюджета в одном запросе.</p>
+<p><strong>Кейсы, где часто упираются:</strong></p>
+<ul>
+<li>Заливаешь 500-строчный код, просишь переписать — вот и половина дневного лимита.</li>
+<li>Каждое сообщение включает весь контекст боковой панели — это накапливается.</li>
+<li>Работаешь с большими промптами (3K+ слов инструкций).</li>
+</ul>
+<h2 id="limity-v-claude-api-programmnyy-dostup">Лимиты в Claude API (программный доступ)</h2>
+<p>Если ты платишь за API — вводятся другие лимиты: не на сообщения, а на количество запросов в минуту и на токены в месяц (если есть платный план).</p>
+<p><strong>RPM-лимиты (Requests Per Minute):</strong></p>
+<ul>
+<li>Free: 5 запросов в минуту</li>
+<li>Pro через API: 300+ запросов в минуту (зависит от плана)</li>
+<li>Enterprise: без лимита, но с договором</li>
+</ul>
+<p><strong>Что это означает:</strong> если ты запускаешь 10 запросов одновременно — 5 пройдут, 5 встанут в очередь и будут ждать минуту. Используется для защиты от автоматического спама.</p>
+<p><strong>Лимиты на токены:</strong></p>
+<ul>
+<li>Free: 1M токенов в месяц (примерно одна 1000-словная статья в день на Opus)</li>
+<li>Pro/бизнес: платишь за каждый использованный токен ($0.003 за 1K input, $0.015 за 1K output для Opus)</li>
+</ul>
+<h2 id="maksimalnaya-dlina-konteksta-okno">Максимальная длина контекста (окно)</h2>
+<p>Это совсем другой лимит, но часто его путают с RPM.</p>
+<p><strong>Размер окна в токенах:</strong></p>
+<ul>
+<li>Claude 3.5 Sonnet: 200K токенов</li>
+<li>Opus 4: 200K токенов</li>
+<li>Opus 5: 200K токенов</li>
+</ul>
+<p>Это означает: ты можешь одновременно положить в контекст боте 200K токенов текста, кода, памяти, документов. Но есть нюанс.</p>
+<p><strong>Prompt Caching в Claude API:</strong> если ты кешируешь промпт (например, большую систему инструкций), первые 1024 токена чистого промпта стоят 25% от обычной цены, дальнейшие использования того же промпта — 10%. Это экономит деньги на API при частых запросах к одному контексту.</p>
+<h2 id="kak-ekonomit-tokeny">Как экономить токены</h2>
+<p><strong>Способ 1: Меньше пересылок контекста</strong></p>
+<p>Плохо:</p>
+<pre><code>Привет, я пишу статью про Claude API.
+Помоги переписать первый абзац.
+[ждёшь ответ]
+Теперь второй абзац.
+[отправляешь весь текст заново]
+</code></pre>
+<p>Хорошо:</p>
+<pre><code>Помоги переписать статью про Claude API (весь текст).
+Вот абзацы в порядке [1, 2, 3]. Переписать.
+</code></pre>
+<p>Вторая версия отправляет контекст один раз, первая — трижды.</p>
+<p><strong>Способ 2:压缩контекста</strong></p>
+<p>Если ты кормишь модель 50 страницами документации, но нужна информация только из 5:</p>
+<ul>
+<li>Вместо всего документа — передай только релевантные разделы</li>
+<li>Вместо полного исходного кода — передай только функции, которые меняются</li>
+<li>Вместо истории всего чата — передай последние 10 сообщений + главный промпт</li>
+</ul>
+<p><strong>Способ 3: Распредели работу</strong></p>
+<p>Вместо одного большого запроса — два маленьких:</p>
+<ul>
+<li>Сначала выпиши тезисы</li>
+<li>Потом расширь каждый в статью</li>
+</ul>
+<p>Первый запрос: 50K токенов контекста + 10K ответ = 60K.
+Второй запрос: 20K контекста для каждого тезиса × 3 = 60K всего.
+Итого: 120K вместо потенциальных 200K.</p>
+<p><strong>Способ 4: Кеширование на уровне приложения</strong></p>
+<p>Если ты строишь свой сервис на Claude API, кеши результаты:</p>
+<ul>
+<li>Один раз запросил анализ документа — сохранил результат в БД</li>
+<li>Второй раз кто-то просит тот же анализ — отдаёшь из кеша</li>
+<li>Экономишь деньги, ускоряешь ответ</li>
+</ul>
+<h2 id="kak-otsledit-skolko-ya-potratil">Как отследить, сколько я потратил</h2>
+<p><strong>В Claude.ru (браузер):</strong> нет счётчика. Только сообщение «лимиты исчерпаны». Нужно считать условно: если в день пишу 50 сообщений в среднем по 2K токенов каждое + получаю ответы по 1K — это примерно 150K в день.</p>
+<p><strong>В Claude API:</strong> есть полная аналитика в консоли Anthropic. Там видишь:</p>
+<ul>
+<li>Сколько запросов в день/неделю/месяц</li>
+<li>Сколько токенов потрачено (input vs output)</li>
+<li>Сколько денег вышло</li>
+</ul>
+<h2 id="sluchai-kogda-limity-podkaraulyat">Случаи, когда лимиты подкараулят</h2>
+<p><strong>Случай 1: Ты запускаешь автоматизацию</strong></p>
+<p>Пишешь скрипт, который каждый час отправляет запрос в Claude API. На 10-й день месяца видишь счёт на $500 — потому что какой-то запрос цикликулся и отправлял одно и то же 1000 раз.</p>
+<p>Защита: всегда ставь максимум токенов в ответе, проверяй логи, запускай на малом объёме прежде, чем масштабировать.</p>
+<p><strong>Случай 2: Ты кешируешь огромный контекст</strong></p>
+<p>Положил в промпт 200K токенов инструкций, кешировал. Каждый следующий запрос с этим кешем обходится в 10% от цены. Но сам кеш стоит как полный запрос первый раз. Если делаешь это для одноразового использования — не экономно.</p>
+<p>Защита: кешируй только то, что переиспользуется минимум 10 раз в месяц.</p>
+<p><strong>Случай 3: Ты заливаешь видеофайлы</strong></p>
+<p>В некоторых версиях Claude можно передать видео (через Vision API). Видеофайл в 10 минут — это 50K+ токенов. Если ты это делаешь часто, счёт пойдёт вверх.</p>
+<p>Защита: извлеки из видео только кадры, которые нужны для анализа.</p>
+<h2 id="chasto-sprashivayut">Часто спрашивают</h2>
+<p><strong>Что произойдёт, если я превышу лимит?</strong>
+В браузере (Claude.ru) — просто не сможешь писать до следующего дня. На API — запрос вернёт ошибку 429 (Too Many Requests) или упадёт со статусом «Rate Limit Exceeded». Никакой штрафной платёж.</p>
+<p><strong>Могу ли я увеличить лимиты?</strong>
+На Claude.ru — нет. На API — да, свяжись с Anthropic и они подрегулируют RPM под твой трафик. Для Enterprise лимитов вообще нет, но нужен минимальный контракт.</p>
+<p><strong>Какой самый дешёвый способ использовать Claude?</strong>
+Free уровень на Claude.ru — максимум 40 сообщений в день, бесплатно, без ограничений на модели (можно пробовать Opus). На API — платишь только за токены, что дешевле подписки на малых объёмах (&lt; 5M токенов в месяц).</p>
+<p><strong>Может ли Anthropic неожиданно повысить цены?</strong>
+Технически да, но редко. Обычно цены понижают (как было с Opus в 2025). Критическое изменение — они объявляют месяцем заранее для Enterprise и за две недели — для публичного API.</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<ul>
+<li><a href="/g/claude-model-choice/">Когда переходить на Opus вместо Pro</a> — цена vs скорость.</li>
+<li><a href="/g/russia-claude-payment/">Как платить за Claude из России</a> — четыре способа.</li>
+<li><a href="/g/claude-api-setup/">Встраивание Claude в свой сервис</a> — платишь за токены.</li>
+</ul>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/russia-claude-payment/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Как платить за Claude из России</span>
+            <span class="related-sub">Четыре способа платежа для российских юзеров, где копаются грабли, когда каждый имеет смысл, рубли или крипто</span>
+          </a>
+          <a class="related-card" href="/g/claude-limits-explained/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Кончились лимиты Claude: что происходит и как перестать в них упираться</span>
+            <span class="related-sub">Две независимые системы ограничений, почему пятичасовое окно важнее недельного, и восемь привычек, которые растягивают одну подписку на весь рабочий день.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-pricing/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Сколько стоит Claude Code на практике</span>
+            <span class="related-sub">Из чего складывается цена, чем подписка отличается от оплаты по ключу, что реально ест бюджет и когда переход на дорогой тариф оправдан, а когда это лечение симптома.</span>
+          </a>
+          <a class="related-card" href="/g/content-factory-real-cost/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Сколько на самом деле стоит контент-завод</span>
+            <span class="related-sub">Смета по счетам: что стоит ноль, за что я плачу, что перестал покупать и почему главная статья расходов вообще не деньги.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
