@@ -334,5 +334,38 @@ function main() {
   return { pages, topics };
 }
 
-if (require.main === module) main();
-module.exports = { main, buildPages, buildTopics, loadGuides, loadSemcore, loadAnalyticsSecrets };
+/* ── 6. AI-SEO интеграция ──────────────────────────────────────── */
+
+async function integrateAISEO(articleId, keyword) {
+  const { spawn } = require("child_process");
+  return new Promise((resolve) => {
+    const proc = spawn("node", ["seo/ai-optimize.js", articleId, keyword || "Claude Code"], {
+      cwd: ROOT,
+      stdio: "inherit",
+    });
+    proc.on("close", (code) => resolve(code === 0));
+  });
+}
+
+async function integrateVariants(articleId, variantType = "audience") {
+  const { spawn } = require("child_process");
+  return new Promise((resolve) => {
+    const proc = spawn("node", ["seo/programmatic-variants.js", articleId, variantType], {
+      cwd: ROOT,
+      stdio: "inherit",
+    });
+    proc.on("close", (code) => resolve(code === 0));
+  });
+}
+
+if (require.main === module) {
+  const args = process.argv.slice(2);
+  if (args[0] === "--ai-optimize") {
+    integrateAISEO(args[1], args[2]).catch(console.error);
+  } else if (args[0] === "--variants") {
+    integrateVariants(args[1], args[2]).catch(console.error);
+  } else {
+    main();
+  }
+}
+module.exports = { main, buildPages, buildTopics, loadGuides, loadSemcore, loadAnalyticsSecrets, integrateAISEO, integrateVariants };

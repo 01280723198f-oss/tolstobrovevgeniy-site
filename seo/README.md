@@ -44,3 +44,20 @@
 
 Ключи лежат в `~/.claude/secrets/site-analytics.env` и подставляются на сборке
 (в репозиторий не попадают). Пусто → счётчик просто не вставляется в страницы.
+
+## AI-SEO: оптимизация и варианты
+
+Два новых скрипта используют Claude API для улучшения контента:
+
+| Команда | Что делает |
+|---|---|
+| `node seo/ai-optimize.js <id> [keyword]` | Оптимизирует title, description, плотность ключей, FAQ через Claude |
+| `node seo/build.js --ai-optimize <id> [keyword]` | То же, но в конвейере сборки |
+| `node seo/programmatic-variants.js <id> [type]` | Генерирует варианты статьи для разных аудиторий/продуктов |
+| `node seo/build.js --variants <id> [type]` | То же, в конвейере |
+
+**Типы вариантов:** `audience` (новичок/разработчик/профи), `product` (Фундамент/Ареопаг)
+
+**Требование:** заполнить `ANTHROPIC_API_KEY` в `~/.claude/secrets/site-analytics.env`
+
+Результаты сохраняются в `seo/variants/` и готовы для добавления в `guides.js`.
