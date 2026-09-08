@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCP (Model Context Protocol) — как Claude подключается к твоей системе</title>
-  <meta name="description" content="Один стандарт для всех интеграций. Claude знает про твою БД и может работать с ней без API-обвязки.">
+  <title>MCP (Model Context Protocol) в Claude Code — интеграция без API</title>
+  <meta name="description" content="Как работает MCP (Model Context Protocol) в Claude Code. Интеграция с БД, GitHub, Notion без REST API. Пример на практике и как начать.">
   <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="MCP (Model Context Protocol) — как Claude подключается к твоей системе">
-  <meta property="og:description" content="Один стандарт для всех интеграций. Claude знает про твою БД и может работать с ней без API-обвязки.">
+  <meta property="og:title" content="MCP (Model Context Protocol) в Claude Code — интеграция без API">
+  <meta property="og:description" content="Как работает MCP (Model Context Protocol) в Claude Code. Интеграция с БД, GitHub, Notion без REST API. Пример на практике и как начать.">
   <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/">
   <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MCP (Model Context Protocol) — как Claude подключается к твоей системе">
-  <meta name="twitter:description" content="Один стандарт для всех интеграций. Claude знает про твою БД и может работать с ней без API-обвязки.">
+  <meta name="twitter:title" content="MCP (Model Context Protocol) в Claude Code — интеграция без API">
+  <meta name="twitter:description" content="Как работает MCP (Model Context Protocol) в Claude Code. Интеграция с БД, GitHub, Notion без REST API. Пример на практике и как начать.">
   <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
   <meta property="article:published_time" content="2026-09-08">
   <meta property="article:modified_time" content="2026-09-08">
@@ -37,9 +37,8 @@ window.__METRIKA_ID__=112316546;
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
   <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"MCP (Model Context Protocol) — как Claude подключается к твоей системе","name":"MCP (Model Context Protocol) — как Claude подключается к твоей системе","description":"Один стандарт для всех интеграций. Claude знает про твою БД и может работать с ней без API-обвязки.","inLanguage":"ru","datePublished":"2026-09-08","dateModified":"2026-09-08","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/"},"url":"https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/","articleSection":"Инструкция","wordCount":212,"timeRequired":"PT4M"}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"MCP (Model Context Protocol) — как Claude подключается к твоей системе","item":"https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что это?","acceptedAnswer":{"@type":"Answer","text":"Раньше интеграция была типа: \"Claude вызывает REST API\". Теперь это встроено прямо в протокол общения . Claude может подключиться к твоей БД, к GitHub, к любому сервису через единый стандарт. Вместо написания wrapper'ов."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"MCP (Model Context Protocol) в Claude Code — интеграция без API","name":"MCP (Model Context Protocol) в Claude Code: интеграция без API","description":"Как работает MCP (Model Context Protocol) в Claude Code. Интеграция с БД, GitHub, Notion без REST API. Пример на практике и как начать.","inLanguage":"ru","datePublished":"2026-09-08","dateModified":"2026-09-08","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/"},"url":"https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/","articleSection":"Инструкция","wordCount":322,"timeRequired":"PT8M","keywords":"mcp, model context protocol, claude code, интеграция, api, claude integration"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"MCP (Model Context Protocol) в Claude Code: интеграция без API","item":"https://tolstobrovevgeniy.ru/g/mcp-claude-protocol/"}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -57,48 +56,99 @@ window.__METRIKA_ID__=112316546;
     <article class="article">
       
       <nav class="breadcrumbs" aria-label="Хлебные крошки">
-        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>MCP (Model Context Protocol) — как Claude подключается к твоей системе</span>
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>MCP (Model Context Protocol) в Claude Code: интеграция без API</span>
       </nav>
       <div class="meta">
         <a class="tag" href="/tema/instrukciya/">Инструкция</a>
         <time datetime="2026-09-08">8 сентября 2026</time>
-        <span>· 4 мин</span>
+        <span>· 8 мин</span>
       </div>
-      <h1>MCP (Model Context Protocol) — как Claude подключается к твоей системе</h1>
-      <p class="lead">Один стандарт для всех интеграций. Claude знает про твою БД и может работать с ней без API-обвязки.</p>
+      <h1>MCP (Model Context Protocol) в Claude Code: интеграция без API</h1>
+      <p class="lead">Единый стандарт для подключения Claude к БД, GitHub, Notion. Прямо, без REST API обвязки.</p>
       
       <nav class="toc" aria-label="Содержание">
         <p class="toc-title">В этой инструкции</p>
-        <ol><li><a href="#chto-eto">Что это?</a></li><li><a href="#pochemu-eto-menyaet-igru">Почему это меняет игру</a></li><li><a href="#kak-eto-vyglyadit-na-praktike">Как это выглядит на практике</a></li><li><a href="#komu-eto-polezno">Кому это полезно</a></li><li><a href="#kak-nachat">Как начать</a></li></ol>
+        <ol><li><a href="#chto-izmenilos">Что изменилось</a></li><li><a href="#kak-eto-rabotaet-tehnicheski">Как это работает технически</a></li><li><a href="#zachem-eto-nuzhno">Зачем это нужно</a></li><li><a href="#prakticheskie-primery">Практические примеры</a></li><li><a href="#kak-nachat-s-mcp">Как начать с MCP</a></li></ol>
       </nav>
       <div class="content">
-<h1 id="mcp-model-context-protocol-kak-claude-podklyuchaetsya-k-tvoe">MCP (Model Context Protocol) — как Claude подключается к твоей системе</h1>
-<p>Model Context Protocol — это новый стандарт, как <a href="/g/cex/" class="ctx-link">Claude Code</a> интегрируется с любой системой.</p>
-<h2 id="chto-eto">Что это?</h2>
-<p>Раньше интеграция была типа: &quot;Claude вызывает REST API&quot;. Теперь это <strong>встроено прямо в протокол общения</strong>. Claude может подключиться к твоей БД, к GitHub, к любому сервису через единый стандарт. Вместо написания wrapper&#39;ов.</p>
-<h2 id="pochemu-eto-menyaet-igru">Почему это меняет игру</h2>
-<ul>
-<li>Один стандарт для всех сервисов (нет пяти разных способов интегрировать)</li>
-<li>Claude работает со своей БД без посредников (быстро, безопасно)</li>
-<li>Меньше кода, больше работает из коробки</li>
-</ul>
-<h2 id="kak-eto-vyglyadit-na-praktike">Как это выглядит на практике</h2>
-<p>Claude знает про твою БД → спрашивает &quot;Сколько пользователей заказали за день?&quot; → сам составляет SQL → выполняет → видит результат (1,243) → пишет ответ</p>
-<p>Раньше все эти шаги писались вручную. Теперь Claude сам.</p>
-<h2 id="komu-eto-polezno">Кому это полезно</h2>
-<ul>
-<li>Стартапы, которые хотят замыкать процессы на Claude</li>
-<li>Компании, которые используют несколько сервисов (Notion, GitHub, Google Docs)</li>
-<li>Любой, кто хочет &quot;включить Claude в инфраструктуру&quot;</li>
-</ul>
-<h2 id="kak-nachat">Как начать</h2>
+<h1 id="mcp-model-context-protocol-v-claude-code-polnyy-gayd">MCP (Model Context Protocol) в Claude Code: полный гайд</h1>
+<p>Model Context Protocol (MCP) — это новый стандарт, как Claude напрямую подключается к твоей системе: БД, сервисам, приватным данным. Не через REST API обвязку. Прямо.</p>
+<h2 id="chto-izmenilos">Что изменилось</h2>
+<p><strong>До MCP (старый способ):</strong></p>
 <ol>
-<li>Посмотри видео у Jack Roberts (кодовое слово MCP-CLAUDE в Telegram)</li>
-<li>Добавь свой первый MCP-сервер (даже простой: список файлов в папке)</li>
-<li>Дай Claude доступ к нему через Claude Code</li>
-<li>Готово — теперь Claude может работать с твоей системой</li>
+<li>Ты пишешь функцию, которая вызывает REST API</li>
+<li>Claude вызывает эту функцию</li>
+<li>Функция отправляет запрос в облако</li>
+<li>Ответ приходит назад</li>
+<li>Claude видит результат</li>
 </ol>
+<p>Это работает, но:</p>
+<ul>
+<li>Три слоя обвязки (функция → API → БД)</li>
+<li>Каждый сервис — свой способ интеграции</li>
+<li>Безопасность: тебе нужны API-ключи везде</li>
+</ul>
+<p><strong>После MCP (новый способ):</strong>
+Claude знает твою БД напрямую. Видит схему. Может писать SQL. Видит результат. Никакой промежуточной обвязки.</p>
+<h2 id="kak-eto-rabotaet-tehnicheski">Как это работает технически</h2>
+<ol>
+<li><strong>MCP сервер</strong> — это программа на твоём компьютере или сервере, которая знает, как общаться с Claude</li>
+<li><strong>Инструменты</strong> — что MCP сервер может делать (например, &quot;выполнить SQL запрос&quot;)</li>
+<li><strong>Claude видит инструменты</strong> и использует их, когда нужно</li>
+</ol>
+<p>Пример:</p>
+<pre><code>Ты: &quot;Сколько пользователей заказали за день?&quot;
+
+Claude видит инструмент &quot;execute_sql&quot;
+Claude пишет: SELECT COUNT(*) FROM orders WHERE date &gt; NOW() - INTERVAL 1 DAY
+MCP сервер выполняет SQL
+MCP возвращает: 1,243
+Claude говорит: &quot;За день заказало 1 243 пользователя&quot;
+</code></pre>
+<p>Всё в одном процессе. Без API вызовов. Быстро.</p>
+<h2 id="zachem-eto-nuzhno">Зачем это нужно</h2>
+<h3 id="skorost">Скорость</h3>
+<p>REST API → сетевая задержка → ответ.
+MCP → выполнить локально → ответ моментально.</p>
+<h3 id="bezopasnost">Безопасность</h3>
+<p>С REST API тебе нужны ключи везде.
+С MCP <a href="/g/claude-not-working/" class="ctx-link"><a href="/g/<a href="/g/cex/" class="ctx-link">claude-code</a>-setup/" class="ctx-link">Claude работает</a></a> через единую точку входа.</p>
+<h3 id="edinstvo">Единство</h3>
+<p>Вместо &quot;пять разных способов интегрировать Notion, GitHub, Slack, Google Docs&quot; — один стандарт MCP.</p>
+<h3 id="masshtabiruemost">Масштабируемость</h3>
+<p>Claude может работать с несколькими MCP серверами одновременно.</p>
+<h2 id="prakticheskie-primery">Практические примеры</h2>
+<h3 id="primer-1-vsya-informaciya-pro-klienta-v-odnom-zaprose">Пример 1: вся информация про клиента в одном запросе</h3>
+<pre><code>Ты даёшь Claude имя клиента.
+Claude через MCP:
+  - Смотрит в БД (таблица clients)
+  - Смотрит в GitHub (его репо)
+  - Смотрит в Google Docs (его документы)
+  - Смотрит в Slack (его сообщения в приватном канале)
+
+На выходе: полный профиль, собранный из пяти источников.
+</code></pre>
+<h2 id="kak-nachat-s-mcp">Как начать с MCP</h2>
+<h3 id="shag-1-vyberi-s-chem-integrirovatsya">Шаг 1: выбери, с чем интегрироваться</h3>
+<p>Популярные варианты:</p>
+<ul>
+<li>Собственная БД (PostgreSQL, MySQL)</li>
+<li>GitHub (читать репо, issue, pull requests)</li>
+<li>Notion (читать/писать в БД)</li>
+<li>Google Docs (читать документы)</li>
+<li>Slack (читать каналы, отправлять сообщения)</li>
+</ul>
+<h3 id="shag-2-naydi-mcp-server-ili-napishi-svoy">Шаг 2: найди MCP сервер или напиши свой</h3>
+<p>Готовые серверы:</p>
+<ul>
+<li><code>mcp-postgres</code> — для PostgreSQL</li>
+<li><code>mcp-notion</code> — для Notion</li>
+<li><code>mcp-github</code> — для GitHub</li>
+</ul>
+<h3 id="shag-3-podklyuchi-k-claude-code">Шаг 3: подключи к Claude Code</h3>
+<p>Две строки в конфиг → Claude видит инструменты → готово.</p>
 <p><strong>Главное:</strong> это сдвиг от &quot;Claude вызывает функции&quot; к &quot;Claude это часть твоей системы&quot;.</p>
+<p>Кодовое слово: <strong>MCP-CLAUDE</strong></p>
 
       </div>
       
@@ -116,20 +166,20 @@ window.__METRIKA_ID__=112316546;
             <span class="related-title">Плагины Claude Code</span>
             <span class="related-sub">Четыре типа расширений: встроенные, MCP, скилы, локальные скрипты. Как ставить, как писать свой, где копать</span>
           </a>
-          <a class="related-card" href="/g/claude-code-setup/">
-            <span class="tag">Claude Code</span>
-            <span class="related-title">Как подготовить Claude Code к любому проекту</span>
-            <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
-          </a>
           <a class="related-card" href="/g/mcp-connectors-guide/">
             <span class="tag">Claude Code</span>
             <span class="related-title">MCP: как дать модели руки, а не советы</span>
             <span class="related-sub">Что такое коннекторы, какие ставить первыми, как подключить за пять минут и три ошибки новичка.</span>
           </a>
-          <a class="related-card" href="/g/zero-saas-content-factory-stack/">
+          <a class="related-card" href="/g/claude-code-setup/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Как подготовить Claude Code к любому проекту</span>
+            <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
+          </a>
+          <a class="related-card" href="/g/token-limits-saving/">
             <span class="tag">Разбор</span>
-            <span class="related-title">Мой стек контент-завода. Без инвестиций, без подписок «на автоматизацию»</span>
-            <span class="related-sub">Пять уровней контент-завода одного человека — ядро, мозг, руки, касса, витрина — без подписок «на автоматизацию».</span>
+            <span class="related-title">Лимиты Claude и как их преодолеть</span>
+            <span class="related-sub">Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</span>
           </a></div>
       </section>
     </article>
