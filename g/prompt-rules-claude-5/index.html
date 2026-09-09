@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 новых правил для промптов Claude 5 от Anthropic — Евгений Толстобров</title>
+  <meta name="description" content="Официальные правила для промптов Claude 5: структура контекста, форматирование, цепочка мыслей.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/prompt-rules-claude-5/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="7 новых правил для промптов Claude 5 от Anthropic — Евгений Толстобров">
+  <meta property="og:description" content="Официальные правила для промптов Claude 5: структура контекста, форматирование, цепочка мыслей.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/prompt-rules-claude-5/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="7 новых правил для промптов Claude 5 от Anthropic — Евгений Толстобров">
+  <meta name="twitter:description" content="Официальные правила для промптов Claude 5: структура контекста, форматирование, цепочка мыслей.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-09">
+  <meta property="article:modified_time" content="2026-09-09">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"7 новых правил для промптов Claude 5 от Anthropic","name":"7 новых правил для промптов Claude 5 от Anthropic","description":"Официальные правила для промптов Claude 5: структура контекста, форматирование, цепочка мыслей.","inLanguage":"ru","datePublished":"2026-09-09","dateModified":"2026-09-09","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/prompt-rules-claude-5/"},"url":"https://tolstobrovevgeniy.ru/g/prompt-rules-claude-5/","articleSection":"Инструкция","wordCount":134,"timeRequired":"PT4M","keywords":"claude 5, промпты, prompt engineering, anthropic"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"7 новых правил для промптов Claude 5 от Anthropic","item":"https://tolstobrovevgeniy.ru/g/prompt-rules-claude-5/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>7 новых правил для промптов Claude 5 от Anthropic</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-09">9 сентября 2026</time>
+        <span>· 4 мин</span>
+      </div>
+      <h1>7 новых правил для промптов Claude 5 от Anthropic</h1>
+      <p class="lead">Официальные изменения, которые меняют результат на 20–30%.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#pravila">Правила</a></li><li><a href="#kak-eto-primenyat">Как это применять</a></li><li><a href="#glavnoe">Главное</a></li></ol>
+      </nav>
+      <div class="content">
+<h1 id="7-novyh-pravil-dlya-promptov-claude-5-ot-anthropic">7 новых правил для промптов Claude 5 от Anthropic</h1>
+<p>Anthropic раскрыла семь официальных правил для промптов Claude 5. Это не советы. Это изменения, которые меняют результат.</p>
+<p>Если ты не переделал промпты под эти правила, результаты падают на 20–30%.</p>
+<h2 id="pravila">Правила</h2>
+<ol>
+<li><strong>Контекст ПЕРЕД примерами.</strong> Раньше можно было в любом порядке. Теперь порядок имеет значение.</li>
+<li><strong>Структурированный вывод → точнее.</strong> Используй XML, JSON. Неструктурированный текст менее точен.</li>
+<li><strong>Цепочка мыслей.</strong> Попроси Claude думать вслух, прежде чем отвечать.</li>
+<li><strong>Ограничь длину вывода.</strong> Без лимита Claude пишет часами.</li>
+<li><strong>Negative примеры работают лучше.</strong> Показывай, что делать НЕ нужно.</li>
+<li><strong>Few-shot лучше zero-shot.</strong> Два-три примера вместо объяснения.</li>
+<li><strong>Система промптов.</strong> Несколько маленьких промптов вместо одного большого.</li>
+</ol>
+<h2 id="kak-eto-primenyat">Как это применять</h2>
+<pre><code>Правильно:
+Контекст → Примеры → Задача → Формат ответа (JSON) → Инструкции по длине
+
+Неправильно:
+Задача → Примеры → Контекст
+</code></pre>
+<h2 id="glavnoe">Главное</h2>
+<p>Если твой промпт написан старым способом, обнови его. Результат будет заметно лучше.</p>
+<p><a href="/g/codeword-funnel-chain/" class="ctx-link">Кодовое слово</a>: <strong>PROMPT-RULES</strong></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/six-prompting-moves/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Шесть приёмов промптинга, которые работают каждый день</span>
+            <span class="related-sub">Роль вместо задачи, план до работы, жёсткий формат, примеры вместо объяснений, запреты и файл правил — с готовыми формулировками и парами «до / после».</span>
+          </a>
+          <a class="related-card" href="/g/15-prompts-build-stages/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Один промпт даёт черновик. Пятнадцать промптов дают продукт</span>
+            <span class="related-sub">Пятнадцать команд Claude Code по стадиям сборки: замысел, данные, сборка, проверка, порядок и отдельно — что говорить, когда нейросеть уже наломала.</span>
+          </a>
+          <a class="related-card" href="/g/token-limits-saving/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Лимиты Claude и как их преодолеть</span>
+            <span class="related-sub">Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</span>
+          </a>
+          <a class="related-card" href="/g/context-first-prompts/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Ты винишь модель. А дело в одном промпте</span>
+            <span class="related-sub">Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
