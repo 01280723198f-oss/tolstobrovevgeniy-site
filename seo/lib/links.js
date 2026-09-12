@@ -99,6 +99,9 @@ function injectContextual(html, targets, max = 3) {
 
     // Работаем только с текстовыми кусками, теги внутри абзаца не трогаем.
     const parts = inner.split(/(<[^>]+>)/);
+    // Кусок, в который уже вставили ссылку, второй раз не трогаем —
+    // иначе следующая ссылка режет по индексам внутри уже вставленного <a>.
+    const linkedParts = new Set();
 
     for (const t of prepared) {
       if (placed >= max || usedTargets.has(t.url)) continue;
@@ -106,12 +109,13 @@ function injectContextual(html, targets, max = 3) {
 
       for (const anchor of t.anchors) {
         for (let i = 0; i < parts.length && !done; i++) {
-          if (parts[i].startsWith("<")) continue;
+          if (parts[i].startsWith("<") || linkedParts.has(i)) continue;
           const hit = findStems(parts[i], anchor.stems);
           if (!hit) continue;
           parts[i] = parts[i].slice(0, hit.start)
             + `<a href="${t.url}" class="ctx-link">` + parts[i].slice(hit.start, hit.end) + `</a>`
             + parts[i].slice(hit.end);
+          linkedParts.add(i);
           usedTargets.add(t.url);
           placed++;
           done = true;
