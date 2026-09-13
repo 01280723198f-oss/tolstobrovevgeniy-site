@@ -11090,19 +11090,19 @@ GPT-6 Astra вышла две недели назад. Это голос + ви�
 
 ,
   {
-    id: "selfhost-ai-tools",
+    id: "kopiya-ai-tools",
     title: "5 open source AI tools: экономим $320/месяц на облаке",
     subtitle: "Self-hosted версии ChatGPT. Ollama, OpenHands, Headroom — как это работает и сколько реально экономить.",
     tag: "Инструкция",
     date: "13 сентября 2026",
     readingTime: "6 мин",
-    seoTitle: "5 open source AI tools для self-hosting: экономия $320/месяц",
+    seoTitle: "5 инструментов для своего ИИ: экономия $320/месяц",
     seoDescription: "Самостоятельное размещение моделей AI (Ollama, OpenHands, Headroom). Как заменить облачный стек и сэкономить на токенах.",
     keywords: ["self-hosted", "ai tools", "ollama", "open source", "экономия", "chatgpt альтернатива"],
     updated: "13 сентября 2026",
     markdown: `# 5 open source AI tools: как заменить облачный стек и сэкономить $320/месяц
 
-OpenAI берёт $20/месяц за API, плюс токены. Есть альтернатива — self-hosting. Fireship разобрал пять инструментов, которые заменяют весь облачный стек.
+OpenAI берёт $20/месяц за API, плюс токены. Есть альтернатива — собственное ИИ. Fireship разобрал пять инструментов, которые заменяют весь облачный стек.
 
 ## Почему это актуально
 
@@ -11218,7 +11218,7 @@ Self-hosting это не хобби для гиков. Это экономика
 
 Если твой продукт работает на API, переходи на self-hosted — окупится за месяц.
 
-Кодовое слово: **SELFHOST-AI**
+Кодовое слово: **КОПИЯ**
 `
   },
 
