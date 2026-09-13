@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 open source AI tools для self-hosting: экономия $320/месяц</title>
+  <meta name="description" content="Самостоятельное размещение моделей AI (Ollama, OpenHands, Headroom). Как заменить облачный стек и сэкономить на токенах.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/selfhost-ai-tools/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="5 open source AI tools для self-hosting: экономия $320/месяц">
+  <meta property="og:description" content="Самостоятельное размещение моделей AI (Ollama, OpenHands, Headroom). Как заменить облачный стек и сэкономить на токенах.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/selfhost-ai-tools/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="5 open source AI tools для self-hosting: экономия $320/месяц">
+  <meta name="twitter:description" content="Самостоятельное размещение моделей AI (Ollama, OpenHands, Headroom). Как заменить облачный стек и сэкономить на токенах.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-13">
+  <meta property="article:modified_time" content="2026-09-13">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"5 open source AI tools для self-hosting: экономия $320/месяц","name":"5 open source AI tools: экономим $320/месяц на облаке","description":"Самостоятельное размещение моделей AI (Ollama, OpenHands, Headroom). Как заменить облачный стек и сэкономить на токенах.","inLanguage":"ru","datePublished":"2026-09-13","dateModified":"2026-09-13","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/selfhost-ai-tools/"},"url":"https://tolstobrovevgeniy.ru/g/selfhost-ai-tools/","articleSection":"Инструкция","wordCount":356,"timeRequired":"PT6M","keywords":"self-hosted, ai tools, ollama, open source, экономия, chatgpt альтернатива"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"5 open source AI tools: экономим $320/месяц на облаке","item":"https://tolstobrovevgeniy.ru/g/selfhost-ai-tools/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>5 open source AI tools: экономим $320/месяц на облаке</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-13">13 сентября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>5 open source AI tools: экономим $320/месяц на облаке</h1>
+      <p class="lead">Self-hosted версии ChatGPT. Ollama, OpenHands, Headroom — как это работает и сколько реально экономить.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#pochemu-eto-aktualno">Почему это актуально</a></li><li><a href="#5-instrumentov">5 инструментов</a></li><li><a href="#kak-eto-vse-vmeste-rabotaet">Как это всё вместе работает</a></li><li><a href="#skolko-realno-ekonomit">Сколько реально экономить</a></li><li><a href="#minusy">Минусы</a></li><li><a href="#glavnoe">Главное</a></li></ol>
+      </nav>
+      <div class="content">
+<h1 id="5-open-source-ai-tools-kak-zamenit-oblachnyy-stek-i-sekonomi">5 open source AI tools: как заменить облачный стек и сэкономить $320/месяц</h1>
+<p>OpenAI берёт $20/месяц за API, плюс токены. Есть альтернатива — self-hosting. Fireship разобрал пять инструментов, которые заменяют весь облачный стек.</p>
+<h2 id="pochemu-eto-aktualno">Почему это актуально</h2>
+<ul>
+<li>Месячный стек CloudFlare + OpenAI = $300–400</li>
+<li>Self-hosted: один раз $5–20/месяц за сервер, больше ничего</li>
+<li>Полный контроль над данными (локально)</li>
+<li>Скорость выше (нет задержки API)</li>
+</ul>
+<p>Но есть трейд-офф: нужно самому управлять сервером.</p>
+<h2 id="5-instrumentov">5 инструментов</h2>
+<h3 id="1-ollama-lokalnaya-model">1. Ollama — локальная модель</h3>
+<p>ChatGPT на твоём компе. Моментальный ответ, никакой сети.</p>
+<p><strong>Работает:</strong></p>
+<ul>
+<li>7B модели (Llama, Mistral) — на ноутбуке</li>
+<li>13B — на видеокарте (RTX 3060+)</li>
+<li>70B — только на серьёзных серверах</li>
+</ul>
+<p><strong>Установка:</strong> <code>curl https://ollama.ai/install.sh | sh</code> (на macOS/Linux)</p>
+<p><strong>Цена:</strong> 0. Серверу только ток.</p>
+<h3 id="2-9router-router-dlya-modeley">2. 9router — роутер для моделей</h3>
+<p>Запросы идут в правильную модель в нужное время.</p>
+<ul>
+<li>ChatGPT для творчества → Claude</li>
+<li>Перевод → Mistral</li>
+<li>Кодинг → DeepSeek</li>
+</ul>
+<p><strong>Пример конфига:</strong></p>
+<pre><code>if prompt contains &quot;code&quot; → DeepSeek-Coder
+else if prompt contains &quot;translate&quot; → Mistral
+else → Ollama (Llama 2)
+</code></pre>
+<h3 id="3-headroom-ekonomiya-tokenov">3. Headroom — экономия токенов</h3>
+<p>Кэширует повторяющиеся части промптов.</p>
+<p><strong>Сценарий:</strong>
+Ты отправляешь системный промпт + документ 100K слов + вопрос.</p>
+<ul>
+<li>Без кэша: платишь за все 100K слов × 10 запросов = 1M слов</li>
+<li>С Headroom: платишь 100K один раз, потом только за новые вопросы</li>
+</ul>
+<p><strong>Экономия:</strong> 70–90% на токенах.</p>
+<h3 id="4-diffy-sravnenie-modeley">4. Diffy — сравнение моделей</h3>
+<p>Какая модель лучше для твоей задачи?</p>
+<p><strong>Тестируешь:</strong></p>
+<ul>
+<li>Один промпт → 5 разных моделей одновременно</li>
+<li>Видишь результаты рядом</li>
+<li>Платишь только за то, что протестировал</li>
+</ul>
+<p>Удобно для выбора между GPT vs Claude vs Mistral.</p>
+<h3 id="5-openhands-ai-agent">5. OpenHands — AI агент</h3>
+<p>Агент, который сам кодит.</p>
+<p><strong>Команда:</strong>
+&quot;Собери лендинг на React, дай мне ссылку&quot;</p>
+<p>Агент:</p>
+<ul>
+<li>Пишет код</li>
+<li>Тестирует</li>
+<li>Деплоит на Vercel</li>
+<li>Пишет тебе ссылку</li>
+</ul>
+<p><strong>Цена:</strong> бесплатный инструмент, платишь только за облако (Vercel).</p>
+<h2 id="kak-eto-vse-vmeste-rabotaet">Как это всё вместе работает</h2>
+<pre><code>Твой запрос
+    ↓
+9router (выбирает модель)
+    ↓
+Headroom (кэш проверяет)
+    ↓
+Ollama (или выбранная модель)
+    ↓
+Ответ (быстро, дёшево)
+</code></pre>
+<h2 id="skolko-realno-ekonomit">Сколько реально экономить</h2>
+<p><strong>Облачный стек (традиционный):</strong></p>
+<ul>
+<li>OpenAI API: $200–300/месяц</li>
+<li>CloudFlare: $100/месяц</li>
+<li>Прочее: $50/месяц</li>
+<li><strong>Итого: $350–450</strong></li>
+</ul>
+<p><strong>Self-hosted:</strong></p>
+<ul>
+<li>Сервер (Hetzner, Linode): $10–20/месяц</li>
+<li>Время на управление: твоё</li>
+<li>Прочее: $0</li>
+<li><strong>Итого: $10–20</strong></li>
+</ul>
+<p><strong>Экономия: $330–430/месяц.</strong></p>
+<p>Если ты запускаешь AI продукт, это сразу прибыль.</p>
+<h2 id="minusy">Минусы</h2>
+<ul>
+<li>Нужно разбираться в серверах (Docker, Linux)</li>
+<li>Поддержка модели на тебе (обновления, patching)</li>
+<li>Если сервер упадёт — нет сервиса (облако надёжнее)</li>
+</ul>
+<h2 id="glavnoe">Главное</h2>
+<p>Self-hosting это не хобби для гиков. Это экономика.</p>
+<p>Если твой продукт работает на API, переходи на self-hosted — окупится за месяц.</p>
+<p><a href="/g/codeword-funnel-chain/" class="ctx-link">Кодовое слово</a>: <strong>SELFHOST-AI</strong></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/token-limits-saving/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Лимиты Claude и как их преодолеть</span>
+            <span class="related-sub">Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</span>
+          </a>
+          <a class="related-card" href="/g/mcp-claude-protocol/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">MCP (Model Context Protocol) в Claude Code: интеграция без API</span>
+            <span class="related-sub">Единый стандарт для подключения Claude к БД, GitHub, Notion. Прямо, без REST API обвязки.</span>
+          </a>
+          <a class="related-card" href="/g/free-voice-clone/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Клон своего голоса бесплатно</span>
+            <span class="related-sub">Запись один раз за минуту, потом модель читает любой текст твоим голосом, локально на машине, никуда не загружается</span>
+          </a>
+          <a class="related-card" href="/g/boring-automations/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Девять автоматизаций, которые зарабатывают $400/месяц</span>
+            <span class="related-sub">Не все автоматизации выглядят круто. Но скучные часто приносят больше денег. Платежи, синхронизация, архивы.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

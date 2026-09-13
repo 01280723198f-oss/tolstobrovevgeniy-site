@@ -18,7 +18,12 @@ function parseDump(raw) {
     if (!line) continue;
     if (/^(фраза|запрос|keyword|phrase)\b/i.test(line)) continue;   // шапка таблицы
 
-    const m = line.match(/^(.*?)[\t;,—–]?\s*([\d][\d\s ]*)$/);
+    // С табом частота — строго после последнего таба: иначе «размеры 2026<TAB>847»
+    // склеивается в 2 026 847.
+    const tab = line.lastIndexOf("\t");
+    const m = tab > 0 && /^\d[\d\s ]*$/.test(line.slice(tab + 1).trim())
+      ? [null, line.slice(0, tab), line.slice(tab + 1).trim()]
+      : line.match(/^(.*?)[\t;,—–]?\s*([\d][\d\s ]*)$/);
     if (!m) continue;
     const q = m[1].replace(/^["']|["']$/g, "").replace(/\s+/g, " ").trim().toLowerCase();
     const freq = parseInt(m[2].replace(/[\s ]/g, ""), 10);
