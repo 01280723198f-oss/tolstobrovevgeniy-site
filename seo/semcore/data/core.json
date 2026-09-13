@@ -49,7 +49,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "ozvuchka-svoim-golosom",
@@ -206,7 +207,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-oplatit-claude-iz-rossii",
@@ -294,7 +296,8 @@
      "intent": "инструкция"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "ozvuchka-svoim-golosom-onlayn",
@@ -376,7 +379,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-vk-razmery-2026",
@@ -491,7 +495,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "nuzhnyy-razmer-dlya-oblozhki-vk",
@@ -510,7 +515,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-oblozhki-v-vk-dlya-gruppy",
@@ -579,7 +585,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-code-plaginy",
@@ -888,7 +895,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-kak-polzovatsya-v-rossii-2026",
@@ -937,7 +945,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "zhivaya-oblozhka-vk-razmery",
@@ -1030,7 +1039,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-api-free",
@@ -1140,7 +1150,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "publikaciya-postov-vkontakte",
@@ -1183,7 +1194,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-v-vk-dlya-stranicy-razmery",
@@ -1492,7 +1504,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-oblozhki-dlya-vk-soobschestva-2026",
@@ -1512,7 +1525,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "ozvuchka-svoim-golosom-na-russkom",
@@ -1639,7 +1653,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-api-key-free",
@@ -1713,7 +1728,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kakoy-nuzhen-razmer-foto-dlya-oblozhki-vk",
@@ -1733,7 +1749,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-mobilnoy-oblozhki-vk-gruppy",
@@ -1753,7 +1770,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-code-cena",
@@ -1978,7 +1996,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-fotki-dlya-oblozhki-vk",
@@ -2002,7 +2021,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-code-v-rossii-2026",
@@ -2042,7 +2062,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-oplatit-podpisku-claude-iz-rossii",
@@ -2083,7 +2104,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-vk-malenkiy-razmer",
@@ -2102,7 +2124,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-oblozhki-vk-v-pikselyah",
@@ -2121,7 +2144,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-code-kupit-akkaunt",
@@ -2329,7 +2353,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-prilozheniya-vk-razmery",
@@ -2491,7 +2516,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-foto-dlya-oblozhki-vk-onlayn",
@@ -2755,7 +2781,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-zarabotat-svoim-golosom-na-ozvuchke",
@@ -2796,7 +2823,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-podklyuchit-claude-code-v-rossii",
@@ -2837,7 +2865,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "analogi-claude-code-v-rossii",
@@ -2876,7 +2905,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "sdelat-ozvuchku-teksta-svoim-golosom",
@@ -2916,7 +2946,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "vertikalnaya-oblozhka-vk-razmer",
@@ -2935,7 +2966,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-sdelat-ozvuchku-video-svoim-golosom",
@@ -2975,7 +3007,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-oblozhki-vk-gruppy-dlya-kompyutera",
@@ -2995,7 +3028,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-gorizontalnoy-oblozhki-vk",
@@ -3014,7 +3048,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-v-vk-razmer-1920",
@@ -3033,7 +3068,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "publikacii-postov-v-soc-setyah",
@@ -3072,7 +3108,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "zhivaya-oblozhka-soobschestva-vk-razmery",
@@ -3092,7 +3129,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-dlya-vk-profilya-razmery-1920-768",
@@ -3153,7 +3191,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "mobilnaya-oblozhka-vk-razmery-2026",
@@ -3173,7 +3212,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-code-kak-ispolzovat-v-rossii-2026",
@@ -3215,7 +3255,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-dlya-menyu-soobschestva-v-vk-razmer",
@@ -3235,7 +3276,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmery-vk-oblozhek-shapki",
@@ -3273,7 +3315,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-code-v-rossii-besplatno",
@@ -3492,7 +3535,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-foto-dlya-oblozhki-gruppy-vk",
@@ -3512,7 +3556,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-oblozhki-pleylista-vk",
@@ -3593,7 +3638,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmery-oblozhki-razdelov-vk",
@@ -3612,7 +3658,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "programma-dlya-publikacii-postov",
@@ -3670,7 +3717,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "sdelat-razmer-foto-dlya-oblozhki-v-vk",
@@ -3754,7 +3802,8 @@
      "intent": "проблемный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-zaregistrirovatsya-v-claude-code-iz-rossii",
@@ -3854,7 +3903,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmery-glavnoy-oblozhki-vk",
@@ -4038,7 +4088,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "oblozhka-pablik-vk-razmery",
@@ -4057,7 +4108,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kupit-verificirovannyy-akkaunt-claude",
@@ -4097,7 +4149,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmery-oblozhki-fotoalboma-vk",
@@ -4137,7 +4190,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-nastroit-claude-code-v-rossii",
@@ -4243,7 +4297,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "podognat-razmer-dlya-oblozhki-v-vk",
@@ -4382,7 +4437,8 @@
      "intent": "проблемный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kak-postavit-oblozhku-v-vk-razmer",
@@ -4604,7 +4660,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "izmenit-razmer-kartinki-onlayn-oblozhka-vk",
@@ -4645,7 +4702,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-code-cli-v-rossii",
@@ -4763,7 +4821,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "skachat-prilozhenie-ozvuchka-video-svoim-golosom-besplatno",
@@ -4807,7 +4866,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "kakoy-razmer-verhney-oblozhki-v-vk",
@@ -4826,7 +4886,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-kak-polzovatsya-v-rossii-polnaya-instrukciya",
@@ -4866,7 +4927,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "razmer-oblozhki-podborki-uslug-vk",
@@ -4907,7 +4969,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-cover-size-guide",
+   "matchScore": 1
   },
   {
    "id": "claude-kak-polzovatsya-v-rossii-gayd",

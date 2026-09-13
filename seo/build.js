@@ -34,7 +34,7 @@ function loadSemcore() {
   const core = JSON.parse(fs.readFileSync(f, "utf8"));
   const byPage = {};
   for (const cl of core.clusters || []) {
-    if (cl.page) byPage[cl.page] = cl;
+    if (cl.page && (!byPage[cl.page] || cl.frequency > byPage[cl.page].frequency)) byPage[cl.page] = cl;
   }
   return { clusters: core.clusters || [], byPage };
 }
