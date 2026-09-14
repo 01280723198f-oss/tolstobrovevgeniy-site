@@ -335,7 +335,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-post-scheduling-autopilot",
+   "matchScore": 1
   },
   {
    "id": "kupit-akkaunt-claude",
@@ -1170,7 +1171,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-post-scheduling-autopilot",
+   "matchScore": 1
   },
   {
    "id": "vk-izmenil-razmer-oblozhki",
@@ -2556,7 +2558,8 @@
      "intent": "информационный"
     }
    ],
-   "page": null
+   "page": "vk-post-scheduling-autopilot",
+   "matchScore": 1
   },
   {
    "id": "razmer-oblozhki-dlya-kanala-vk-video",

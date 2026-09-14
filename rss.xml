@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 13 Sep 2026 07:04:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 13:40:31 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте</title>
+      <link>https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Как поставить пост во ВКонтакте на время, когда публиковать и как у меня до 10 постов в день уходят в сообщество без моего участия. Три уровня, от кнопки до своего конвейера</description>
+    </item>
+    <item>
+      <title>Бизнес без сотрудников: 5 бесплатных ИИ-инструментов соло-основателя</title>
+      <link>https://tolstobrovevgeniy.ru/g/solo-business-5-free-ai-tools/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/solo-business-5-free-ai-tools/</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Сабрина Рамонова в одиночку ведёт свой продукт и называет пять бесплатных инструментов, на которых он держится. Разбираю каждый и показываю, чем я закрываю те же задачи в своём контент-заводе</description>
+    </item>
+    <item>
+      <title>Фото в стиле 80-х через ChatGPT: промпт и как сохранить своё лицо</title>
+      <link>https://tolstobrovevgeniy.ru/g/photo-80s-chatgpt-prompt/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/photo-80s-chatgpt-prompt/</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Тренд собрал почти 2 миллиона просмотров за неделю. Даю промпт на русском и английском, разбираю, почему лицо получается чужим, и как превратить картинку в контент для блога</description>
+    </item>
+    <item>
+      <title>Как понять, что видео сделано нейросетью: 8 признаков и почему детекторы ошибаются</title>
+      <link>https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Мэтт Вулф поручил ИИ-агенту собрать детектор ИИ-видео. Агент работал больше восьми часов и застрял. Разбираю, что это значит, и даю чек-лист, по которому видео проверяется глазами за минуту</description>
+    </item>
+    <item>
+      <title>GPT-6 Astra в ChatGPT Work: что умеет и нужна ли она эксперту</title>
+      <link>https://tolstobrovevgeniy.ru/g/chatgpt-work-gpt-6-astra/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-work-gpt-6-astra/</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>OpenAI научила ChatGPT самому кликать по программам на компьютере. Разбираю по официальному описанию, что это меняет для эксперта и блогера, где риски и когда всё равно брать Claude</description>
+    </item>
     <item>
       <title>Контент-план за вечер</title>
       <link>https://tolstobrovevgeniy.ru/g/content-plan-evening/</link>
@@ -56,12 +96,12 @@
       <description>Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</description>
     </item>
     <item>
-      <title>Как платить за Claude из России</title>
+      <title>Как оплатить Claude из России и не остаться без аккаунта</title>
       <link>https://tolstobrovevgeniy.ru/g/russia-claude-payment/</link>
       <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/russia-claude-payment/</guid>
       <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
-      <description>Четыре способа платежа для российских юзеров, где копаются грабли, когда каждый имеет смысл, рубли или крипто</description>
+      <description>Что правила Anthropic говорят про Россию, как устроена оплата зарубежной картой, что продают на Plati и что делать, если платёж не прошёл</description>
     </item>
     <item>
       <title>Конвейер рилсов без камеры: семь звеньев и где они рвутся</title>
@@ -126,46 +166,6 @@
       <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
       <category>Воронка</category>
       <description>Из чего состоит цепочка оплаты, зачем нужен вебхук, почему нельзя доверять редиректу и что делать с доступом после платежа.</description>
-    </item>
-    <item>
-      <title>n8n: что это, кому нужен и где он проигрывает коду</title>
-      <link>https://tolstobrovevgeniy.ru/g/n8n-or-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/n8n-or-code/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Честный разбор визуальной автоматизации: что она даёт, где начинает мешать и в какой момент проще написать двадцать строк, чем собирать схему из тридцати блоков.</description>
-    </item>
-    <item>
-      <title>Микро-продукт за вечер: что это и из чего собирается</title>
-      <link>https://tolstobrovevgeniy.ru/g/micro-product-evening/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/micro-product-evening/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Воронка</category>
-      <description>Зачем нужен дешёвый первый продукт, чем он отличается от лид-магнита, что в него класть и почему цена в две тысячи работает лучше бесплатного.</description>
-    </item>
-    <item>
-      <title>Claude не работает: разбор по симптомам</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-not-working/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-not-working/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Семь разных поломок, которые люди называют одной фразой, и порядок проверки — от очевидного к редкому, чтобы не чинить не то.</description>
-    </item>
-    <item>
-      <title>Сито: как из 534 чужих каруселей остаётся десять</title>
-      <link>https://tolstobrovevgeniy.ru/g/how-i-pick-donors/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/how-i-pick-donors/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Пять фильтров отбора доноров, почему комментарии важнее лайков, что не ловят пороги — и что делать в день, когда не нашлось ничего.</description>
-    </item>
-    <item>
-      <title>Описание под видео: формула, которая работает на любой площадке</title>
-      <link>https://tolstobrovevgeniy.ru/g/video-description-formula/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-description-formula/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Зачем описанию первые две строки, что писать дальше, куда ставить призыв и почему одно и то же описание нельзя копировать в три площадки сразу.</description>
     </item>
   </channel>
 </rss>

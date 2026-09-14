@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Публикация постов в ВК: отложенные записи и автопостинг — Евгений Толстобров</title>
+  <meta name="description" content="Как настроить публикацию постов в ВК: отложенная запись в интерфейсе, выбор времени публикации, сервисы и свой автопостинг через API. Реальный кейс до 10 постов в день.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Публикация постов в ВК: отложенные записи и автопостинг — Евгений Толстобров">
+  <meta property="og:description" content="Как настроить публикацию постов в ВК: отложенная запись в интерфейсе, выбор времени публикации, сервисы и свой автопостинг через API. Реальный кейс до 10 постов в день.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/vk-post-scheduling-autopilot.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Публикация постов в ВК: отложенные записи и автопостинг — Евгений Толстобров">
+  <meta name="twitter:description" content="Как настроить публикацию постов в ВК: отложенная запись в интерфейсе, выбор времени публикации, сервисы и свой автопостинг через API. Реальный кейс до 10 постов в день.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/vk-post-scheduling-autopilot.jpg">
+  <meta property="article:published_time" content="2026-09-14">
+  <meta property="article:modified_time" content="2026-09-14">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Публикация постов в ВК: отложенные записи и автопостинг","name":"Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте","description":"Как настроить публикацию постов в ВК: отложенная запись в интерфейсе, выбор времени публикации, сервисы и свой автопостинг через API. Реальный кейс до 10 постов в день.","inLanguage":"ru","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/"},"url":"https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/","articleSection":"Инструкция","wordCount":754,"timeRequired":"PT4M","keywords":"публикация постов в вк, отложенная публикация вк, публикация постов вконтакте, автопостинг вк, как запланировать пост в вк","image":["/img/og/vk-post-scheduling-autopilot.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте","item":"https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Как сделать отложенный пост во ВК?","acceptedAnswer":{"@type":"Answer","text":"При создании записи в сообществе выбери время публикации в настройках записи и сохрани. Пост попадёт в отложенные и выйдет сам в указанное время."}},{"@type":"Question","name":"Можно ли редактировать отложенную запись во ВК?","acceptedAnswer":{"@type":"Answer","text":"Да, пока запись не вышла, её можно открыть в разделе отложенных, изменить текст, вложения или время."}},{"@type":"Question","name":"В какое время лучше публиковать посты во ВК?","acceptedAnswer":{"@type":"Answer","text":"Общего ответа нет. Проверь три слота по две недели и сравни охват в статистике своего сообщества, лучшее время у каждой аудитории своё."}},{"@type":"Question","name":"Как настроить автопостинг во ВК без сервисов?","acceptedAnswer":{"@type":"Answer","text":"Нужен ключ доступа сообщества и скрипт, который ставит записи с временем выхода через API ВК. Такой скрипт можно поручить написать Claude Code, а контент готовить конвейером."}},{"@type":"Question","name":"Сколько постов в день публиковать во ВК?","acceptedAnswer":{"@type":"Answer","text":"Столько, сколько выдерживает качество. Я держу сетку до 10 карусельных постов с шагом полтора часа, но начинать лучше с одного двух и смотреть на охват. Кодовое слово: ГРАФИК"}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-14">14 сентября 2026</time>
+        <span>· 4 мин</span>
+      </div>
+      <h1>Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте</h1>
+      <p class="lead">Как поставить пост во ВКонтакте на время, когда публиковать и как у меня до 10 постов в день уходят в сообщество без моего участия. Три уровня, от кнопки до своего конвейера</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#uroven-1-otlozhennaya-zapis-v-interfeyse">Уровень 1: отложенная запись в интерфейсе</a></li><li><a href="#kogda-publikovat-posty-vo-vk">Когда публиковать посты во ВК</a></li><li><a href="#uroven-2-servisy-otlozhennogo-postinga">Уровень 2: сервисы отложенного постинга</a></li><li><a href="#uroven-3-svoy-avtoposting">Уровень 3: свой автопостинг</a></li><li><a href="#kakoy-uroven-vybrat">Какой уровень выбрать</a></li><li><a href="#grabli-na-kotorye-ya-nastupil">Грабли, на которые я наступил</a></li><li><a href="#kak-sdelat-otlozhennyy-post-vo-vk">Как сделать отложенный пост во ВК?</a></li><li><a href="#mozhno-li-redaktirovat-otlozhennuyu-zapis-vo-vk">Можно ли редактировать отложенную запись во ВК?</a></li><li><a href="#v-kakoe-vremya-luchshe-publikovat-posty-vo-vk">В какое время лучше публиковать посты во ВК?</a></li><li><a href="#kak-nastroit-avtoposting-vo-vk-bez-servisov">Как настроить автопостинг во ВК без сервисов?</a></li><li><a href="#skolko-postov-v-den-publikovat-vo-vk">Сколько постов в день публиковать во ВК?</a></li></ol>
+      </nav>
+      <div class="content">
+<h1 id="otlozhennaya-publikaciya-postov-vo-vk-rukami-po-raspisaniyu-">Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте</h1>
+<p>У меня в сообществе ВКонтакте карусели выходят по сетке до 10 постов в день. Руками я их не ставлю: утром конвейер собирает материалы, днём они сами раскладываются в отложенные записи.</p>
+<p>Но начинать с конвейера не нужно. Ниже три уровня публикации постов во ВК. Бери тот, который закрывает твою задачу сейчас.</p>
+<h2 id="uroven-1-otlozhennaya-zapis-v-interfeyse">Уровень 1: отложенная запись в интерфейсе</h2>
+<p>Самый простой способ, без сервисов и кода.</p>
+<ol>
+<li>Открой своё сообщество и начни создавать запись.</li>
+<li>Добавь текст, фото, видео или клип.</li>
+<li>В настройках записи выбери время публикации: дату и час.</li>
+<li>Сохрани. Запись появится в разделе отложенных и выйдет сама.</li>
+</ol>
+<p>Отложенные записи можно открыть и поправить до выхода. Если пост уже вышел, редактировать его придётся на стене.</p>
+<p><strong>Кому подходит.</strong> Когда постов 3–5 в неделю и ты готовишь их за один вечер.</p>
+<h2 id="kogda-publikovat-posty-vo-vk">Когда публиковать посты во ВК</h2>
+<p>Универсального «лучшего времени» нет, и таблицы из интернета с часами для всех ниш обычно врут. Время зависит от твоей аудитории: у мам в декрете и у айтишников разные вечера.</p>
+<p>Рабочий способ такой:</p>
+<ul>
+<li>Выбери 3 разных слота, например утро, обед и вечер</li>
+<li>Две недели публикуй похожие по силе посты в эти слоты по очереди</li>
+<li>Сравни охват в статистике сообщества</li>
+<li>Оставь лучшие слоты и повтори проверку через месяц</li>
+</ul>
+<p>Для старта у себя я разнёс посты по дню с шагом полтора часа: 09:00, 10:30, 12:00 и дальше до 22:30. Так посты не толкаются в ленте подписчика.</p>
+<h2 id="uroven-2-servisy-otlozhennogo-postinga">Уровень 2: сервисы отложенного постинга</h2>
+<p>Когда площадок несколько, удобнее планировщик вроде SMMplanner: один раз загрузил пост, выбрал ВК, Телеграм и другие сети, поставил время.</p>
+<p><strong>Плюсы.</strong> Не надо заходить в каждую соцсеть, есть календарь и командный доступ.</p>
+<p><strong>Минусы.</strong> Ежемесячная подписка, и контент всё равно готовишь ты. Сервис публикует, но не пишет.</p>
+<h2 id="uroven-3-svoy-avtoposting">Уровень 3: свой автопостинг</h2>
+<p>Мой вариант. <a href="/g/cex/" class="ctx-link">Контент-завод</a> на Claude Code каждый день собирает карусели, а отдельный скрипт раскладывает их в отложенные записи ВК. Никаких подписок: только ключ доступа сообщества и код, который Claude Code написал за вечер.</p>
+<p>Как это устроено по шагам:</p>
+<ol>
+<li><strong>Ключ сообщества.</strong> В управлении сообществом создаётся ключ доступа к API. Он хранится отдельно от проекта.</li>
+<li><strong>Готовые пакеты.</strong> Каждая карусель лежит в своей папке: слайды, подпись, кодовое слово.</li>
+<li><strong>Сетка слотов.</strong> Скрипт знает 10 времён в сутки и берёт первое свободное.</li>
+<li><strong>Отложенная запись.</strong> Метод публикации принимает время выхода, и пост встаёт в очередь сам.</li>
+<li><strong>Реестр.</strong> Скрипт записывает, что и когда уже поставил, поэтому один пакет не уйдёт дважды.</li>
+</ol>
+<h2 id="kakoy-uroven-vybrat">Какой уровень выбрать</h2>
+<table>
+<thead>
+<tr>
+<th>Ситуация</th>
+<th>Что брать</th>
+<th>Почему</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>До 5 постов в неделю, одна соцсеть</td>
+<td>отложенная запись ВК</td>
+<td>бесплатно и без настройки</td>
+</tr>
+<tr>
+<td>Несколько соцсетей, контент готовишь сам</td>
+<td>сервис планирования</td>
+<td>один календарь на все площадки</td>
+</tr>
+<tr>
+<td>Контент выпускается потоком каждый день</td>
+<td>свой автопостинг</td>
+<td>нет подписки, публикация встроена в конвейер</td>
+</tr>
+</tbody></table>
+<p>Не перескакивай через ступень. Автопостинг без стабильного потока контента будет публиковать пустоту, а сервис без контент-плана превращается в дорогой календарь.</p>
+<h2 id="grabli-na-kotorye-ya-nastupil">Грабли, на которые я наступил</h2>
+<p><strong>Ключ сообщества не всё умеет.</strong> Грузить фото на стену через него нельзя, API отвечает ошибкой. Решение нашлось обходом: фото загружаются через канал сообщений сообщества и прикрепляются к записи.</p>
+<p><strong>Два запуска одновременно теряют посты.</strong> ВК режет слишком частые публикации, а два процесса перезаписывают реестр друг друга. Теперь скрипт делает паузу и перечитывает реестр перед записью.</p>
+<p><strong>Пост без статьи сжигает охват.</strong> В подписи стоит <a href="/g/codeword-funnel-chain/" class="ctx-link">кодовое слово</a>, и если статьи под ним ещё нет, человек получает пустоту. Поэтому карусель без живой статьи скрипт придерживает.</p>
+<p><strong>Автопилот без уведомлений врёт.</strong> Однажды конвейер две недели выдавал пустые папки, а снаружи всё выглядело живым. Теперь каждый провал присылает сообщение в Телеграм.</p>
+<p>Как у меня связаны карусели, слова и статьи, разбирал в <a href="/g/codeword-funnel-chain/">цепочке воронки кодового слова</a>. А тексты на месяц вперёд проще готовить по <a href="/g/content-plan-evening/">контент-плану за вечер</a>.</p>
+<h2 id="kak-sdelat-otlozhennyy-post-vo-vk">Как сделать отложенный пост во ВК?</h2>
+<p>При создании записи в сообществе выбери время публикации в настройках записи и сохрани. Пост попадёт в отложенные и выйдет сам в указанное время.</p>
+<h2 id="mozhno-li-redaktirovat-otlozhennuyu-zapis-vo-vk">Можно ли редактировать отложенную запись во ВК?</h2>
+<p>Да, пока запись не вышла, её можно открыть в разделе отложенных, изменить текст, вложения или время.</p>
+<h2 id="v-kakoe-vremya-luchshe-publikovat-posty-vo-vk">В какое время лучше публиковать посты во ВК?</h2>
+<p>Общего ответа нет. Проверь три слота по две недели и сравни охват в статистике своего сообщества, лучшее время у каждой аудитории своё.</p>
+<h2 id="kak-nastroit-avtoposting-vo-vk-bez-servisov">Как настроить автопостинг во ВК без сервисов?</h2>
+<p>Нужен ключ доступа сообщества и скрипт, который ставит записи с временем выхода через API ВК. Такой скрипт можно поручить написать <a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a>, а контент готовить конвейером.</p>
+<h2 id="skolko-postov-v-den-publikovat-vo-vk">Сколько постов в день публиковать во ВК?</h2>
+<p>Столько, сколько выдерживает качество. Я держу сетку до 10 карусельных постов с шагом полтора часа, но начинать лучше с одного-двух и смотреть на охват.</p>
+<p>Кодовое слово: ГРАФИК</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/telegram-autopost-bot/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Автопостинг в Telegram своим ботом: без сервисов и подписок</span>
+            <span class="related-sub">Что нужно, чтобы посты уходили в канал по расписанию: токен, права, очередь и обработка ошибок — плюс четыре места, где такая связка обычно ломается.</span>
+          </a>
+          <a class="related-card" href="/g/content-department-build-order/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</span>
+            <span class="related-sub">Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</span>
+          </a>
+          <a class="related-card" href="/g/content-plan-evening/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Контент-план за вечер</span>
+            <span class="related-sub">За два часа вечером AI пишет идеи на месяц, потом месяц ты просто исполняешь, никакого творческого кризиса</span>
+          </a>
+          <a class="related-card" href="/g/4-tools-vibecoder/">
+            <span class="tag">Контент-завод</span>
+            <span class="related-title">Четыре станка, на которых стоит контент-завод</span>
+            <span class="related-sub">Скиллы, радар чужих виралок, клон дизайна и воронка на кодовом слове — что делает каждый и зачем.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

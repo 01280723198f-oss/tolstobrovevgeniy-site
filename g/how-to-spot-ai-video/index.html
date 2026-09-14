@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как отличить видео нейросети от настоящего: 8 признаков — Евгений Толстобров</title>
+  <meta name="description" content="Как понять, что видео сделано нейросетью: 8 признаков, которые видно глазами, проверка источника и почему автоматические детекторы ИИ-видео ненадёжны. Разбор кейса Matt Wolfe.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Как отличить видео нейросети от настоящего: 8 признаков — Евгений Толстобров">
+  <meta property="og:description" content="Как понять, что видео сделано нейросетью: 8 признаков, которые видно глазами, проверка источника и почему автоматические детекторы ИИ-видео ненадёжны. Разбор кейса Matt Wolfe.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/how-to-spot-ai-video.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Как отличить видео нейросети от настоящего: 8 признаков — Евгений Толстобров">
+  <meta name="twitter:description" content="Как понять, что видео сделано нейросетью: 8 признаков, которые видно глазами, проверка источника и почему автоматические детекторы ИИ-видео ненадёжны. Разбор кейса Matt Wolfe.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/how-to-spot-ai-video.jpg">
+  <meta property="article:published_time" content="2026-09-14">
+  <meta property="article:modified_time" content="2026-09-14">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Как отличить видео нейросети от настоящего: 8 признаков","name":"Как понять, что видео сделано нейросетью: 8 признаков и почему детекторы ошибаются","description":"Как понять, что видео сделано нейросетью: 8 признаков, которые видно глазами, проверка источника и почему автоматические детекторы ИИ-видео ненадёжны. Разбор кейса Matt Wolfe.","inLanguage":"ru","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/"},"url":"https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/","articleSection":"Разбор","wordCount":793,"timeRequired":"PT4M","keywords":"как понять что видео сделано нейросетью, как отличить ии видео, видео нейросети признаки, детектор ии видео, проверить видео на нейросеть","image":["/img/og/how-to-spot-ai-video.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"Как понять, что видео сделано нейросетью: 8 признаков и почему детекторы ошибаются","item":"https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Как понять, что видео сделано нейросетью?","acceptedAnswer":{"@type":"Answer","text":"Смотри на руки, текст в кадре, физику предметов, людей на фоне, рот и зубы, свет и отражения. Затем проверь источник: кто выложил первым и есть ли о событии новости."}},{"@type":"Question","name":"Есть ли надёжный детектор ИИ-видео?","acceptedAnswer":{"@type":"Answer","text":"Надёжного бесплатного детектора на всё нет. Даже у Мэтта Вулфа ИИ агент больше восьми часов пытался собрать его и в итоге предложил подключить готовый платный инструмент через API."}},{"@type":"Question","name":"Можно ли отличить ИИ-видео по звуку?","acceptedAnswer":{"@type":"Answer","text":"Иногда да: голос звучит ровно, без дыхания, губы не совпадают со словами. Но озвучку часто делают отдельно, поэтому звук стоит проверять вместе с картинкой."}},{"@type":"Question","name":"Нужно ли помечать свои видео, сделанные нейросетью?","acceptedAnswer":{"@type":"Answer","text":"Правила площадок про маркировку ИИ контента меняются, проверяй справку своей соцсети. Даже там, где пометка не обязательна, открытость бережёт доверие аудитории."}},{"@type":"Question","name":"Что делать, если уже переслал фейковое видео?","acceptedAnswer":{"@type":"Answer","text":"Напиши короткую поправку тем же, кому отправил. Для блогера это плюс к доверию: люди видят, что ты проверяешь информацию. Кодовое слово: ПОДДЕЛКА"}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>Как понять, что видео сделано нейросетью: 8 признаков и почему детекторы ошибаются</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-09-14">14 сентября 2026</time>
+        <span>· 4 мин</span>
+      </div>
+      <h1>Как понять, что видео сделано нейросетью: 8 признаков и почему детекторы ошибаются</h1>
+      <p class="lead">Мэтт Вулф поручил ИИ-агенту собрать детектор ИИ-видео. Агент работал больше восьми часов и застрял. Разбираю, что это значит, и даю чек-лист, по которому видео проверяется глазами за минуту</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-sluchilos-s-detektorom">Что случилось с детектором</a></li><li><a href="#8-priznakov-chto-video-sdelano-neyrosetyu">8 признаков, что видео сделано нейросетью</a></li><li><a href="#proverka-istochnika-chto-rabotaet-luchshe-detektora">Проверка источника: что работает лучше детектора</a></li><li><a href="#pochemu-eto-kasaetsya-eksperta-i-blogera">Почему это касается эксперта и блогера</a></li><li><a href="#razbor-na-primere-izobretenie-kotoroe-prislal-drug">Разбор на примере: «изобретение», которое прислал друг</a></li><li><a href="#mini-chek-list-pered-repostom">Мини-чек-лист перед репостом</a></li><li><a href="#kak-ponyat-chto-video-sdelano-neyrosetyu">Как понять, что видео сделано нейросетью?</a></li><li><a href="#est-li-nadezhnyy-detektor-ii-video">Есть ли надёжный детектор ИИ-видео?</a></li><li><a href="#mozhno-li-otlichit-ii-video-po-zvuku">Можно ли отличить ИИ-видео по звуку?</a></li><li><a href="#nuzhno-li-pomechat-svoi-video-sdelannye-neyrosetyu">Нужно ли помечать свои видео, сделанные нейросетью?</a></li><li><a href="#chto-delat-esli-uzhe-pereslal-feykovoe-video">Что делать, если уже переслал фейковое видео?</a></li></ol>
+      </nav>
+      <div class="content">
+<h1 id="kak-ponyat-chto-video-sdelano-neyrosetyu-8-priznakov-i-poche">Как понять, что видео сделано нейросетью: 8 признаков и почему детекторы ошибаются</h1>
+<p>Мэтт Вулф ведёт один из крупнейших англоязычных каналов про ИИ-инструменты. 9 сентября он выпустил ролик «I Built A Tool To Detect AI Slop». Задача звучала просто: сайт, куда вставляешь ссылку на рилс или ролик, и он говорит, сделано видео нейросетью или нет.</p>
+<p>Мэтт признаётся, что его самого обманывают такие видео: он пересматривает ролик два-три раза, прежде чем понимает, что это ИИ. Родители и друзья присылают ему «крутые изобретения», которых не существует.</p>
+<h2 id="chto-sluchilos-s-detektorom">Что случилось с детектором</h2>
+<p>Мэтт поставил ИИ-агенту задачу крутиться и тестировать себя, пока детектор не заработает. По его словам, агент работал больше восьми часов, создал четыре документа, прогнал кучу тестов и в итоге выдал статус «goal stalled», то есть цель застряла.</p>
+<p>Дальше агент снова и снова проверял свои варианты, признавал «недостаточно надёжно» и в конце пришёл к выводу: взять готовый чужой инструмент, который уже умеет это делать, и подключить его через API. В таймкодах ролика есть и отдельная глава о том, что такая проверка быстро становится дорогой.</p>
+<p>Вывод для нас простой. Если агент крупного ИИ-обозревателя не собрал надёжный детектор за восемь часов, то волшебной кнопки «это ИИ» у тебя тоже нет. Проверять видео придётся головой.</p>
+<h2 id="8-priznakov-chto-video-sdelano-neyrosetyu">8 признаков, что видео сделано нейросетью</h2>
+<p><strong>1. Руки и пальцы.</strong> Лишний палец, пальцы сливаются с предметом, кисть меняет форму при движении.</p>
+<p><strong>2. Текст в кадре.</strong> Вывески, этикетки, номера машин. Буквы плывут, превращаются в кашу или меняются от кадра к кадру.</p>
+<p><strong>3. Физика предметов.</strong> Чашка проходит сквозь руку, вода течёт странно, предмет исчезает, когда его заслонили.</p>
+<p><strong>4. Люди на заднем плане.</strong> Лица размыты или похожи друг на друга, прохожие двигаются рывками или растворяются.</p>
+<p><strong>5. Рот и зубы.</strong> Губы не попадают в звук, зубы сливаются в одну белую полосу, язык пропадает.</p>
+<p><strong>6. Свет и отражения.</strong> Тень падает не туда, в зеркале или очках отражается не то, что в кадре.</p>
+<p><strong>7. Слишком гладко.</strong> Камера плывёт идеально, кожа без текстуры, всё чуть красивее, чем бывает в жизни.</p>
+<p><strong>8. Короткие склейки.</strong> Ролик собран из кусков по несколько секунд: длинный цельный план нейросети держат хуже.</p>
+<p>Один признак ещё ничего не доказывает. Три и больше уже серьёзный повод не пересылать.</p>
+<h2 id="proverka-istochnika-chto-rabotaet-luchshe-detektora">Проверка источника: что работает лучше детектора</h2>
+<p>Глаза иногда обманываются. Источник обманывает реже.</p>
+<ul>
+<li><strong>Кто выложил первым.</strong> Открой аккаунт: там реальная жизнь человека или сплошь «невероятные изобретения»</li>
+<li><strong>Есть ли новость.</strong> Если в ролике революционный гаджет, о нём напишут крупные СМИ. Нет ни одной публикации, скорее всего подделка</li>
+<li><strong>Поиск по кадру.</strong> Сделай скриншот и поищи картинкой в Яндексе или Google, часто находится первоисточник</li>
+<li><strong>Подпись и метки.</strong> Некоторые генераторы ставят свой знак в углу, а площадки добавляют пометку об ИИ</li>
+</ul>
+<h2 id="pochemu-eto-kasaetsya-eksperta-i-blogera">Почему это касается эксперта и блогера</h2>
+<p>Твоя репутация стоит на доверии. Один перепост фейкового «прорыва» в канал, и часть аудитории запоминает тебя как человека, которого легко развести.</p>
+<p>Обратная сторона тоже важна. Если ты сам делаешь ролики с помощью ИИ, говори об этом прямо. Я, например, не скрываю, что мои <a href="/g/faceless-reels-pipeline/">рилсы собираются конвейером</a>, а описания проходят через проверку текста. Честность здесь работает на тебя, а не против.</p>
+<h2 id="razbor-na-primere-izobretenie-kotoroe-prislal-drug">Разбор на примере: «изобретение», которое прислал друг</h2>
+<p>Возьмём типичный ролик из ленты: человек показывает гаджет, который складывает бельё за секунду. Проходим по признакам.</p>
+<p>Сначала руки: в момент, когда вещь попадает в устройство, пальцы на долю секунды сливаются с тканью. Потом текст: на коробке логотип, но буквы разные в начале и в конце ролика. Дальше фон: на кухне позади стоят два одинаковых человека. Три признака из восьми уже есть.</p>
+<p>Теперь источник. Аккаунт создан месяц назад, в нём только такие «чудеса». Поиск по кадру не находит ни магазина, ни новости. Вывод: не пересылаем.</p>
+<p>На такой разбор уходит около минуты. Это дешевле, чем объяснять подписчикам, почему ты показал им несуществующую вещь.</p>
+<h2 id="mini-chek-list-pered-repostom">Мини-чек-лист перед репостом</h2>
+<ol>
+<li>Посмотри видео дважды: второй раз только на руки, текст и фон.</li>
+<li>Найди, кто выложил первым.</li>
+<li>Поищи новость о событии.</li>
+<li>Сомневаешься, не пересылай.</li>
+</ol>
+<h2 id="kak-ponyat-chto-video-sdelano-neyrosetyu">Как понять, что видео сделано нейросетью?</h2>
+<p>Смотри на руки, текст в кадре, физику предметов, людей на фоне, рот и зубы, свет и отражения. Затем проверь источник: кто выложил первым и есть ли о событии новости.</p>
+<h2 id="est-li-nadezhnyy-detektor-ii-video">Есть ли надёжный детектор ИИ-видео?</h2>
+<p>Надёжного бесплатного детектора на всё нет. Даже у Мэтта Вулфа ИИ-агент больше восьми часов пытался собрать его и в итоге предложил подключить готовый платный инструмент через API.</p>
+<h2 id="mozhno-li-otlichit-ii-video-po-zvuku">Можно ли отличить ИИ-видео по звуку?</h2>
+<p>Иногда да: голос звучит ровно, без дыхания, губы не совпадают со словами. Но озвучку часто делают отдельно, поэтому звук стоит проверять вместе с картинкой.</p>
+<h2 id="nuzhno-li-pomechat-svoi-video-sdelannye-neyrosetyu">Нужно ли помечать свои видео, сделанные нейросетью?</h2>
+<p>Правила площадок про маркировку ИИ-контента меняются, проверяй справку своей соцсети. Даже там, где пометка не обязательна, открытость бережёт доверие аудитории.</p>
+<h2 id="chto-delat-esli-uzhe-pereslal-feykovoe-video">Что делать, если уже переслал фейковое видео?</h2>
+<p>Напиши короткую поправку тем же, кому отправил. Для блогера это плюс к доверию: люди видят, что ты проверяешь информацию.</p>
+<p><a href="/g/codeword-funnel-chain/" class="ctx-link">Кодовое слово</a>: ПОДДЕЛКА</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/avatar-from-photo/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Аватар из фото: два способа сделать видео без съёмок</span>
+            <span class="related-sub">Говорящая голова из одного снимка против безликого формата с озвучкой — что где ломается, сколько стоит и какой из них выдерживает поток.</span>
+          </a>
+          <a class="related-card" href="/g/video-description-formula/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Описание под видео: формула, которая работает на любой площадке</span>
+            <span class="related-sub">Зачем описанию первые две строки, что писать дальше, куда ставить призыв и почему одно и то же описание нельзя копировать в три площадки сразу.</span>
+          </a>
+          <a class="related-card" href="/g/photo-80s-chatgpt-prompt/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Фото в стиле 80-х через ChatGPT: промпт и как сохранить своё лицо</span>
+            <span class="related-sub">Тренд собрал почти 2 миллиона просмотров за неделю. Даю промпт на русском и английском, разбираю, почему лицо получается чужим, и как превратить картинку в контент для блога</span>
+          </a>
+          <a class="related-card" href="/g/content-department-build-order/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</span>
+            <span class="related-sub">Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
