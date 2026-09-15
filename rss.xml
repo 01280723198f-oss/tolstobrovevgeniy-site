@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 14 Sep 2026 13:40:31 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 20:01:53 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Цифровой двойник эксперта: как собрать и не потерять доверие</title>
+      <link>https://tolstobrovevgeniy.ru/g/ai-twin-for-expert/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ai-twin-for-expert/</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>ИИ-актриса Тилли Норвуд дала интервью британскому ТВ и запуталась в собственных ответах. Разбираю, из чего собран такой двойник, где он ломается и как эксперту использовать своего без риска для репутации</description>
+    </item>
+    <item>
+      <title>Монтаж видео текстом: как эксперту резать ролики без монтажёра</title>
+      <link>https://tolstobrovevgeniy.ru/g/video-editing-with-text/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-editing-with-text/</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Нейт Херк монтирует видео в Codex, просто описывая словами, что нужно. Разбираю, как это устроено, какие исходники снимать и где нейросеть пока режет лишнее</description>
+    </item>
+    <item>
+      <title>PDF-гайд на Claude: как эксперту упаковать знания и продать</title>
+      <link>https://tolstobrovevgeniy.ru/g/pdf-guide-with-claude/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/pdf-guide-with-claude/</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Блогер Леон продаёт PDF-гайды, которые пишет Claude. Разбираю его схему по шагам, где она ломается и как собрать гайд из своей экспертизы, а не из чужих фактов</description>
+    </item>
+    <item>
+      <title>Сайт эксперта с видео на первом экране: собираем в чате</title>
+      <link>https://tolstobrovevgeniy.ru/g/expert-site-video-hero/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/expert-site-video-hero/</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Пол Липски собрал в ChatGPT на GPT-6 Astra сайт с кино вместо первого экрана. Разбираю порядок промптов, приём с прокруткой и какие блоки нужны, чтобы красивый сайт ещё и продавал</description>
+    </item>
+    <item>
+      <title>Claude Code без кода: бриф из четырёх вопросов, который решает всё</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-brief-non-coder/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-brief-non-coder/</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Не программист Сандип Свадиа собрал в Claude Code свою мини-CRM. Разбираю его метод BITE, фразу, которая избавляет от технических вопросов, и три первых инструмента для эксперта</description>
+    </item>
     <item>
       <title>Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте</title>
       <link>https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/</link>
@@ -126,46 +166,6 @@
       <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
       <category>Контент-завод</category>
       <description>Почему ручной поиск референсов съедает час в день, по каким признакам отбирать доноров и как собрать радар, который приносит готовый список к завтраку.</description>
-    </item>
-    <item>
-      <title>Сколько стоит Claude Code на практике</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-pricing/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-pricing/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Из чего складывается цена, чем подписка отличается от оплаты по ключу, что реально ест бюджет и когда переход на дорогой тариф оправдан, а когда это лечение симптома.</description>
-    </item>
-    <item>
-      <title>Своя база вместо подписчиков площадки</title>
-      <link>https://tolstobrovevgeniy.ru/g/own-base-vs-platform/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/own-base-vs-platform/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Воронка</category>
-      <description>Почему подписчик тебе не принадлежит, что считать настоящей базой, как её собирать без раздражения и что делать, если аккаунт всё-таки отобрали.</description>
-    </item>
-    <item>
-      <title>Дожимы 24/48/72: что писать в каждом и чего не делать</title>
-      <link>https://tolstobrovevgeniy.ru/g/followup-24-48-72/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/followup-24-48-72/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Воронка</category>
-      <description>Три сообщения после выдачи материала — это не три напоминания, а три разные работы. Разбор каждого с примерами и разбор четырёх причин, по которым дожимы бесят.</description>
-    </item>
-    <item>
-      <title>Права и разрешения: что можно отдать нейросети без риска</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-permissions/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-permissions/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Три уровня доступа, что безопасно на каждом, где начинается настоящий риск и почему главный предохранитель — это не настройки, а контроль версий.</description>
-    </item>
-    <item>
-      <title>Приём оплат без платформы: как это устроено и что учесть</title>
-      <link>https://tolstobrovevgeniy.ru/g/payments-in-bot/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/payments-in-bot/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Воронка</category>
-      <description>Из чего состоит цепочка оплаты, зачем нужен вебхук, почему нельзя доверять редиректу и что делать с доступом после платежа.</description>
     </item>
   </channel>
 </rss>

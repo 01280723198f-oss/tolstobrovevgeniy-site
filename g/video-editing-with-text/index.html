@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Монтаж видео с помощью ИИ текстом: без монтажёра, для экспертов</title>
+  <meta name="description" content="Как монтировать видео нейросетью текстовыми командами: разбор подхода Codex + Hyperframes, какие исходники снимать, как сохранить свой стиль монтажа и что проверять глазами.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/video-editing-with-text/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Монтаж видео с помощью ИИ текстом: без монтажёра, для экспертов">
+  <meta property="og:description" content="Как монтировать видео нейросетью текстовыми командами: разбор подхода Codex + Hyperframes, какие исходники снимать, как сохранить свой стиль монтажа и что проверять глазами.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/video-editing-with-text/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Монтаж видео с помощью ИИ текстом: без монтажёра, для экспертов">
+  <meta name="twitter:description" content="Как монтировать видео нейросетью текстовыми командами: разбор подхода Codex + Hyperframes, какие исходники снимать, как сохранить свой стиль монтажа и что проверять глазами.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-15">
+  <meta property="article:modified_time" content="2026-09-15">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Монтаж видео с помощью ИИ текстом: без монтажёра, для экспертов","name":"Монтаж видео текстом: как эксперту резать ролики без монтажёра","description":"Как монтировать видео нейросетью текстовыми командами: разбор подхода Codex + Hyperframes, какие исходники снимать, как сохранить свой стиль монтажа и что проверять глазами.","inLanguage":"ru","datePublished":"2026-09-15","dateModified":"2026-09-15","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/video-editing-with-text/"},"url":"https://tolstobrovevgeniy.ru/g/video-editing-with-text/","articleSection":"Инструкция","wordCount":723,"timeRequired":"PT5M","keywords":"монтаж видео нейросетью, ии монтаж видео, монтаж видео без монтажера, автоматический монтаж видео, монтаж рилсов ии"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Монтаж видео текстом: как эксперту резать ролики без монтажёра","item":"https://tolstobrovevgeniy.ru/g/video-editing-with-text/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Можно ли монтировать видео нейросетью без навыков монтажа?","acceptedAnswer":{"@type":"Answer","text":"Да, в подходе Нейта Херка монтаж задаётся текстовыми командами. Навыки монтажа заменяет умение внятно описать, какой результат нужен."}},{"@type":"Question","name":"Что нужно, чтобы монтировать видео текстом?","acceptedAnswer":{"@type":"Answer","text":"По разбору: Codex от OpenAI и инструмент Hyperframes, плюс записи с хорошим звуком. Похожий подход собирается и в Claude Code через скиллы."}},{"@type":"Question","name":"Заменит ли ИИ монтажёра?","acceptedAnswer":{"@type":"Answer","text":"Для типовых роликов эксперта, говорящая голова плюс экран, уже во многом заменяет. Для сложного сторителлинга и рекламы с идеей человек пока нужен."}},{"@type":"Question","name":"Сколько времени занимает монтаж нейросетью?","acceptedAnswer":{"@type":"Answer","text":"В разборе второй вариант ролика с анимацией и субтитрами занял около 10 минут работы нейросети, без учёта твоего просмотра и правок."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Монтаж видео текстом: как эксперту резать ролики без монтажёра</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-15">15 сентября 2026</time>
+        <span>· 5 мин</span>
+      </div>
+      <h1>Монтаж видео текстом: как эксперту резать ролики без монтажёра</h1>
+      <p class="lead">Нейт Херк монтирует видео в Codex, просто описывая словами, что нужно. Разбираю, как это устроено, какие исходники снимать и где нейросеть пока режет лишнее</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-pokazal-neyt-herk">Что показал Нейт Херк</a></li><li><a href="#glavnoe-v-rolike-ne-montazh-a-skill">Главное в ролике не монтаж, а скилл</a></li><li><a href="#kak-ekspertu-pereyti-na-montazh-slovami">Как эксперту перейти на монтаж словами</a></li><li><a href="#gde-neyroset-poka-rezhet-lishnee">Где нейросеть пока режет лишнее</a></li><li><a href="#s-chego-nachat-na-etoy-nedele">С чего начать на этой неделе</a></li><li><a href="#mozhno-li-montirovat-video-neyrosetyu-bez-navykov-montazha">Можно ли монтировать видео нейросетью без навыков монтажа?</a></li><li><a href="#chto-nuzhno-chtoby-montirovat-video-tekstom">Что нужно, чтобы монтировать видео текстом?</a></li><li><a href="#zamenit-li-ii-montazhera">Заменит ли ИИ монтажёра?</a></li><li><a href="#skolko-vremeni-zanimaet-montazh-neyrosetyu">Сколько времени занимает монтаж нейросетью?</a></li><li><a href="#esli-hochesh-eto-pod-sebya">Если хочешь это под себя</a></li></ol>
+      </nav>
+      <div class="content">
+<h1 id="montazh-video-tekstom-kak-ekspertu-rezat-roliki-bez-montazhe">Монтаж видео текстом: как эксперту резать ролики без монтажёра</h1>
+<p>В рилсе я пообещал рассказать, как перейти на монтаж словами и где нейросеть пока режет лишнее. Начну с того, что показал автор разбора, а потом переложу на задачи эксперта.</p>
+<h2 id="chto-pokazal-neyt-herk">Что показал Нейт Херк</h2>
+<p>Нейт Херк ведёт англоязычный канал про ИИ-автоматизацию. 8 сентября он выложил разбор, как монтирует видео в Codex от OpenAI вместе с инструментом Hyperframes. За неделю ролик собрал больше 270 тысяч просмотров.</p>
+<p>Суть подхода: вместо таймлайна и склеек ты пишешь, что хочешь получить.</p>
+<p><strong>Черновой монтаж.</strong> Он даёт две записи: камеру с лицом и запись экрана. Нейросеть расшифровывает речь, вырезает оговорки, запинки и паузы. У него запись на 14 минут после этого стала 9-минутной.</p>
+<p><strong>Оформление.</strong> Между смысловыми блоками появляются карточки с заголовками. Когда на экране ничего не происходит, а он говорит, картинка приближается к лицу. Когда начинается показ, возвращается раскладка «экран плюс камера».</p>
+<p><strong>Правки.</strong> Он смотрит первый вариант и пишет замечания обычным языком: текст мелковат, первые две секунды скучные, сделай что-нибудь в стиле канала. Второй вариант с анимацией и субтитрами пришёл примерно через 10 минут.</p>
+<h2 id="glavnoe-v-rolike-ne-montazh-a-skill">Главное в ролике не монтаж, а скилл</h2>
+<p>Самое ценное в разборе легко пропустить. Удачный стиль монтажа Нейт сохраняет как скилл, то есть инструкцию, которую нейросеть читает на каждом новом видео. Там описано, когда давать полный экран, когда приближать, как выглядят карточки.</p>
+<p>Получается, ты один раз объясняешь, как должны выглядеть твои ролики, и дальше это повторяется без пересказа. У меня так живёт конвейер рилсов: формат, заголовок, музыка и проверка кадров описаны один раз, и ролики выходят по расписанию. Как это устроено целиком, писал в <a href="/g/faceless-reels-pipeline/">Конвейер рилсов без камеры</a>.</p>
+<h2 id="kak-ekspertu-pereyti-na-montazh-slovami">Как эксперту перейти на монтаж словами</h2>
+<p><strong>Шаг 1. Сними исходники под машину.</strong> Нейросеть режет по речи, поэтому звук важнее картинки. Петличка или хотя бы тихая комната. Говори блоками с паузой между мыслями, так проще резать.</p>
+<p><strong>Шаг 2. Разложи исходники по папкам.</strong> Отдельно камера, отдельно экран, отдельно заставки и музыка. Чем понятнее структура, тем меньше нейросеть гадает.</p>
+<p><strong>Шаг 3. Опиши стиль один раз.</strong> Возьми два-три своих ролика, которые нравятся, и распиши словами:</p>
+<ul>
+<li>какой длины ролик и сколько секунд на крючок</li>
+<li>где субтитры, какого размера, какого цвета</li>
+<li>когда приближение, когда общий план</li>
+<li>какие карточки между блоками</li>
+<li>что нельзя: музыка громче голоса, мелкий текст, резкие переходы</li>
+</ul>
+<p><strong>Шаг 4. Первый прогон и правки словами.</strong> Смотришь результат и пишешь замечания так, как написал бы живому монтажёру. Удачные правки сразу дописываешь в описание стиля.</p>
+<p><strong>Шаг 5. Проверка глазами.</strong> Об этом ниже, это обязательный шаг.</p>
+<h2 id="gde-neyroset-poka-rezhet-lishnee">Где нейросеть пока режет лишнее</h2>
+<table>
+<thead>
+<tr>
+<th>Что бывает</th>
+<th>Почему</th>
+<th>Как ловить</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Вырезана нужная пауза перед важной фразой</td>
+<td>для машины пауза это мусор</td>
+<td>помечай в описании стиля, что паузы перед выводами оставлять</td>
+</tr>
+<tr>
+<td>Субтитры с ошибками в терминах</td>
+<td>расшифровка не знает твоих слов</td>
+<td>дай список своих терминов и имён</td>
+</tr>
+<tr>
+<td>Анимация перекрывает лицо или текст</td>
+<td>модель не видит кадр как зритель</td>
+<td>смотри ролик на телефоне целиком</td>
+</tr>
+<tr>
+<td>Шутка или интонация пропала</td>
+<td>резка по тексту, а не по смыслу</td>
+<td>финальный просмотр со звуком</td>
+</tr>
+</tbody></table>
+<p>Правило простое: ни один ролик не уходит в публикацию, пока ты не посмотрел его целиком.</p>
+<h2 id="s-chego-nachat-na-etoy-nedele">С чего начать на этой неделе</h2>
+<p>Не переводи на монтаж словами весь поток сразу. Возьми один тип роликов, который выходит чаще всего, например ответы на вопросы подписчиков. Смонтируй три ролика по новой схеме и засеки время: сколько ушло на исходники, сколько на правки, сколько на финальный просмотр. Если на третьем ролике правок стало заметно меньше, чем на первом, описание стиля работает и его можно переносить на остальные форматы. Если нет, дописывай в него то, что <a href="/g/claude-vs-chatgpt-project/" class="ctx-link">правил руками</a>.</p>
+<h2 id="mozhno-li-montirovat-video-neyrosetyu-bez-navykov-montazha">Можно ли монтировать видео нейросетью без навыков монтажа?</h2>
+<p>Да, в подходе Нейта Херка монтаж задаётся текстовыми командами. Навыки монтажа заменяет умение внятно описать, какой результат нужен.</p>
+<h2 id="chto-nuzhno-chtoby-montirovat-video-tekstom">Что нужно, чтобы монтировать видео текстом?</h2>
+<p>По разбору: Codex от OpenAI и инструмент Hyperframes, плюс записи с хорошим звуком. Похожий подход собирается и в <a href="/g/cex/" class="ctx-link">Claude Code</a> через скиллы.</p>
+<h2 id="zamenit-li-ii-montazhera">Заменит ли ИИ монтажёра?</h2>
+<p>Для типовых роликов эксперта, говорящая голова плюс экран, уже во многом заменяет. Для сложного сторителлинга и рекламы с идеей человек пока нужен.</p>
+<h2 id="skolko-vremeni-zanimaet-montazh-neyrosetyu">Сколько времени занимает монтаж нейросетью?</h2>
+<p>В разборе второй вариант ролика с анимацией и субтитрами занял около 10 минут работы нейросети, без учёта твоего просмотра и правок.</p>
+<h2 id="esli-hochesh-eto-pod-sebya">Если хочешь это под себя</h2>
+<p>Описание стиля, папки и проверка это фундамент, без которого монтаж словами превращается в лотерею. Как собрать его под свою нишу за вечер, показываю в [МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]. А если ролики ещё и описывать, пригодится <a href="/g/video-description-formula/">Описание под видео: формула</a>.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/expert-site-video-hero/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Сайт эксперта с видео на первом экране: собираем в чате</span>
+            <span class="related-sub">Пол Липски собрал в ChatGPT на GPT-6 Astra сайт с кино вместо первого экрана. Разбираю порядок промптов, приём с прокруткой и какие блоки нужны, чтобы красивый сайт ещё и продавал</span>
+          </a>
+          <a class="related-card" href="/g/faceless-reels-pipeline/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Конвейер рилсов без камеры: семь звеньев и где они рвутся</span>
+            <span class="related-sub">Как выходят ежедневные видео без съёмки: поиск темы по цифрам, проверка фактов, формула заголовка, клон голоса — и почему всё упирается в видеоряд, а не в темы.</span>
+          </a>
+          <a class="related-card" href="/g/video-description-formula/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Описание под видео: формула, которая работает на любой площадке</span>
+            <span class="related-sub">Зачем описанию первые две строки, что писать дальше, куда ставить призыв и почему одно и то же описание нельзя копировать в три площадки сразу.</span>
+          </a>
+          <a class="related-card" href="/g/animate-carousel-in-code/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Анимированная карусель на коде: что двигать и как записать</span>
+            <span class="related-sub">Три вещи, которые стоит оживлять, точные тайминги, способ записи видео прямо из браузера и четыре ошибки, каждая из которых стоила мне вечера.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
