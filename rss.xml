@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 15 Sep 2026 20:01:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 07:37:53 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Не склад промптов, а файл о себе: что в нём должно лежать</title>
+      <link>https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Почему чужие промпты дают средний текст и какие 6 разделов записать в один файл, чтобы нейросеть писала под тебя. С шаблоном для заполнения и тремя ошибками, из-за которых файл не работает</description>
+    </item>
     <item>
       <title>Цифровой двойник эксперта: как собрать и не потерять доверие</title>
       <link>https://tolstobrovevgeniy.ru/g/ai-twin-for-expert/</link>
@@ -158,14 +166,6 @@
       <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
       <category>Claude Code</category>
       <description>Три разных места, где живёт контекст, что в каждое класть, почему всё в один файл — плохая идея и как понять, что память пора чистить.</description>
-    </item>
-    <item>
-      <title>Как находить чужие виральные посты и не залипать в ленте</title>
-      <link>https://tolstobrovevgeniy.ru/g/find-viral-posts/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/find-viral-posts/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Контент-завод</category>
-      <description>Почему ручной поиск референсов съедает час в день, по каким признакам отбирать доноров и как собрать радар, который приносит готовый список к завтраку.</description>
     </item>
   </channel>
 </rss>

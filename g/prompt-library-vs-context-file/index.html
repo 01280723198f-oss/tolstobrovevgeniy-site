@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Готовые промпты не работают: что записать в файл о себе для нейросети</title>
+  <meta name="description" content="Чем плохи библиотеки готовых промптов и как заменить их одним файлом о себе. 6 разделов, шаблон для заполнения, проверка за 5 минут и три ошибки. Для Claude, Claude Code и ChatGPT.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Готовые промпты не работают: что записать в файл о себе для нейросети">
+  <meta property="og:description" content="Чем плохи библиотеки готовых промптов и как заменить их одним файлом о себе. 6 разделов, шаблон для заполнения, проверка за 5 минут и три ошибки. Для Claude, Claude Code и ChatGPT.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/prompt-library-vs-context-file.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Готовые промпты не работают: что записать в файл о себе для нейросети">
+  <meta name="twitter:description" content="Чем плохи библиотеки готовых промптов и как заменить их одним файлом о себе. 6 разделов, шаблон для заполнения, проверка за 5 минут и три ошибки. Для Claude, Claude Code и ChatGPT.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/prompt-library-vs-context-file.jpg">
+  <meta property="article:published_time" content="2026-09-19">
+  <meta property="article:modified_time" content="2026-09-19">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"ssr":true,"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Готовые промпты не работают: что записать в файл о себе для нейросети","name":"Не склад промптов, а файл о себе: что в нём должно лежать","description":"Чем плохи библиотеки готовых промптов и как заменить их одним файлом о себе. 6 разделов, шаблон для заполнения, проверка за 5 минут и три ошибки. Для Claude, Claude Code и ChatGPT.","inLanguage":"ru","datePublished":"2026-09-19","dateModified":"2026-09-19","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/"},"url":"https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/","articleSection":"Инструкция","wordCount":848,"timeRequired":"PT6M","keywords":"готовые промпты, библиотека промптов, промпты не работают, контекст для нейросети, файл claude.md, инструкции для chatgpt, промпты для экспертов","image":["/img/og/prompt-library-vs-context-file.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Не склад промптов, а файл о себе: что в нём должно лежать","item":"https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чем файл о себе отличается от готового промпта?","acceptedAnswer":{"@type":"Answer","text":"Промпт описывает одну задачу, файл описывает тебя. Промпт меняется каждый раз, файл остаётся и работает для всех задач сразу, поэтому сами запросы становятся короткими."}},{"@type":"Question","name":"Можно ли вообще не пользоваться готовыми промптами?","acceptedAnswer":{"@type":"Answer","text":"Можно брать их как идею для формулировки задачи. Но результат будет твоим только когда рядом лежит файл о тебе, иначе ты получаешь тот же текст, что и все, кто взял этот промпт."}},{"@type":"Question","name":"Какой длины должен быть файл?","acceptedAnswer":{"@type":"Answer","text":"Лучше коротко: одна две страницы. Всё подробное вынеси в отдельные файлы и дай ссылки в разделе «Где лежит остальное». Большой файл нейросеть читает хуже."}},{"@type":"Question","name":"Это работает только в Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Нет. В ChatGPT и в приложении Claude тот же текст кладётся в инструкции проекта. Claude Code удобнее тем, что сам читает файл при каждом запуске и может дополнять его по ходу работы. Как устроена такая система целиком, я разбирал в статье Claude Code — это не чат."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Не склад промптов, а файл о себе: что в нём должно лежать</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-19">19 сентября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Не склад промптов, а файл о себе: что в нём должно лежать</h1>
+      <p class="lead">Почему чужие промпты дают средний текст и какие 6 разделов записать в один файл, чтобы нейросеть писала под тебя. С шаблоном для заполнения и тремя ошибками, из-за которых файл не работает</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#pochemu-chuzhoy-prompt-ne-pomogaet">Почему чужой промпт не помогает</a></li><li><a href="#gde-zhivet-fayl-o-sebe">Где живёт файл о себе</a></li><li><a href="#6-razdelov-kotorye-dolzhny-lezhat-v-fayle">6 разделов, которые должны лежать в файле</a></li><li><a href="#shablon-dlya-zapolneniya">Шаблон для заполнения</a></li><li><a href="#kak-proverit-chto-fayl-rabotaet">Как проверить, что файл работает</a></li><li><a href="#tri-oshibki-iz-za-kotoryh-fayl-ne-rabotaet">Три ошибки, из-за которых файл не работает</a></li><li><a href="#chem-fayl-o-sebe-otlichaetsya-ot-gotovogo-prompta">Чем файл о себе отличается от готового промпта?</a></li><li><a href="#mozhno-li-voobsche-ne-polzovatsya-gotovymi-promptami">Можно ли вообще не пользоваться готовыми промптами?</a></li><li><a href="#kakoy-dliny-dolzhen-byt-fayl">Какой длины должен быть файл?</a></li><li><a href="#eto-rabotaet-tolko-v-claude-code">Это работает только в Claude Code?</a></li><li><a href="#chto-dalshe">Что дальше</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я закончил на том, что после одного файла о себе даже кривой промпт даёт нормальный результат. Здесь показываю, что именно лежит в этом файле. Шаблон в конце, его можно забрать и заполнить за вечер.</p>
+<h2 id="pochemu-chuzhoy-prompt-ne-pomogaet">Почему чужой промпт не помогает</h2>
+<p>Промпт из библиотеки это последняя строка чужой работы. Автор держал в голове свой продукт, своих клиентов и свою манеру речи, а в карточку попала только просьба «напиши пост про X». Всё, что делало результат хорошим, осталось у него.</p>
+<p>Когда ты вставляешь такой промпт, нейросеть ничего о тебе не знает и заполняет пробелы средним по интернету. Отсюда вода, одинаковые обороты и тексты, которые правишь дольше, чем писал бы сам.</p>
+<p>Проблема не в формулировке. Ты можешь найти промпт идеальнее, результат упрётся в тот же потолок. Не хватает не слов в запросе, а вводных о тебе.</p>
+<h2 id="gde-zhivet-fayl-o-sebe">Где живёт файл о себе</h2>
+<p>Это обычный текстовый файл, который нейросеть читает перед каждой задачей.</p>
+<ul>
+<li><strong>Claude Code.</strong> Файл CLAUDE.md в папке проекта. Claude Code подгружает его сам при каждом запуске, повторять ничего не нужно</li>
+<li><strong>Claude в браузере или приложении.</strong> Раздел проектов: инструкции проекта и загруженные файлы действуют на все чаты внутри проекта</li>
+<li><strong>ChatGPT.</strong> Пользовательские инструкции в настройках или инструкции внутри проекта</li>
+</ul>
+<p>Я работаю в <a href="/g/cex/" class="ctx-link">Claude Code</a>, поэтому дальше примеры из моего CLAUDE.md. Разделы одинаково работают в любом из трёх мест.</p>
+<h2 id="6-razdelov-kotorye-dolzhny-lezhat-v-fayle">6 разделов, которые должны лежать в файле</h2>
+<h3 id="1-kto-ya">1. Кто я</h3>
+<p>Ниша, продукт, на какой ты стадии. Три-четыре строки, не резюме. У меня первой строкой записано, что я веду канал про вайбкодинг и <a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a>, был контент-завод в Instagram, сетку забанили и я начал заново. Нейросеть сразу понимает, из какой точки я говорю, и не пишет от лица миллионера.</p>
+<h3 id="2-dlya-kogo">2. Для кого</h3>
+<p>Кто твой читатель или клиент, что у него болит и что он уже знает. Например, у меня записано: эксперты и блогеры, не программисты. Одна эта строка убирает из текстов технический жаргон, который я раньше вычищал руками.</p>
+<h3 id="3-golos">3. Голос</h3>
+<p>Как ты говоришь и чего никогда не говоришь. Прилагательные вроде «живо и по-дружески» почти не работают, работают правила и примеры. У меня там записано, что я не ставлю точку в конце строки, пишу на «ты» и не использую обороты вроде «в современном мире». Если есть 3–5 твоих лучших текстов, положи их рядом и дай ссылку.</p>
+<h3 id="4-fakty">4. Факты</h3>
+<p>Цены, цифры, даты, названия продуктов. И правило: если факта нет в файле, нейросеть ставит пропуск, а не придумывает. Это главный раздел для эксперта. Выдуманная цифра в посте бьёт по доверию сильнее, чем слабый текст.</p>
+<h3 id="5-kak-so-mnoy-rabotat">5. Как со мной работать</h3>
+<p>Правила процесса. Мои, дословно из файла:</p>
+<ul>
+<li>Сначала стратегия, потом внедрение</li>
+<li>Очевидный и обратимый шаг делай сразу, не спрашивай</li>
+<li>Спрашивай только про необратимое</li>
+</ul>
+<p>Без этого раздела нейросеть либо засыпает тебя уточнениями, либо делает не то и молчит.</p>
+<h3 id="6-gde-lezhit-ostalnoe">6. Где лежит остальное</h3>
+<p>Ссылки на папки и файлы, которые нужны не всегда: профиль голоса, описание аудитории, прошлые посты. Сам файл остаётся коротким, а подробности подтягиваются по теме. Подробнее про такие слои я писал в статье <a href="/g/context-first-prompts/">Ты винишь модель. А дело в одном промпте</a>, а как вынести память и голос в отдельные файлы, разобрал в <a href="/g/three-setup-files/">Три файла, которые делают из Claude сотрудника</a>.</p>
+<h2 id="shablon-dlya-zapolneniya">Шаблон для заполнения</h2>
+<p>Скопируй, заполни своими словами и положи туда, где работаешь.</p>
+<pre><code>## Кто я
+[ниша, продукт, стадия — 3-4 строки]
+
+## Для кого
+[кто клиент, что у него болит, что он уже знает]
+
+## Голос
+[на «ты» или на «вы», длина фраз, любимые слова]
+[чего никогда не пишу: слова, обороты, знаки]
+[ссылки на 3-5 моих лучших текстов]
+
+## Факты
+[цены, цифры, даты, названия]
+Если факта нет в этом файле — ставь пропуск [УТОЧНИТЬ], не выдумывай
+
+## Как со мной работать
+[порядок: сначала что, потом что]
+[когда спрашивать, когда делать сразу]
+
+## Где лежит остальное
+[папка или файл → что там]
+</code></pre>
+<h2 id="kak-proverit-chto-fayl-rabotaet">Как проверить, что файл работает</h2>
+<p>Возьми одну короткую просьбу, например «напиши пост про мой продукт». Запусти её дважды: в пустом чате и там, где подключён файл. Сравни, сколько правок нужно каждому тексту.</p>
+<p>Если разницы нет, файл слишком общий. Вернись к разделам «Для кого» и «Голос», там почти всегда причина.</p>
+<h2 id="tri-oshibki-iz-za-kotoryh-fayl-ne-rabotaet">Три ошибки, из-за которых файл не работает</h2>
+<p><strong>Файл-резюме.</strong> Регалии, годы опыта, список проектов. Нейросети это не помогает писать, ей нужны правила работы, а не биография.</p>
+<p><strong>Нет запретов.</strong> Все пишут, что любят, и забывают, что ненавидят. А самые заметные ошибки нейросети как раз в словах и оборотах, которые ты никогда бы не сказал.</p>
+<p><strong>Файл не растёт.</strong> Если ты поправил нейросеть одним и тем же замечанием второй раз, это замечание должно стать строкой в файле. Мой файл вырос из таких правок, а не из вдохновения за один вечер.</p>
+<h2 id="chem-fayl-o-sebe-otlichaetsya-ot-gotovogo-prompta">Чем файл о себе отличается от готового промпта?</h2>
+<p>Промпт описывает одну задачу, файл описывает тебя. Промпт меняется каждый раз, файл остаётся и работает для всех задач сразу, поэтому сами запросы становятся короткими.</p>
+<h2 id="mozhno-li-voobsche-ne-polzovatsya-gotovymi-promptami">Можно ли вообще не пользоваться готовыми промптами?</h2>
+<p>Можно брать их как идею для формулировки задачи. Но результат будет твоим только когда рядом лежит файл о тебе, иначе ты получаешь тот же текст, что и все, кто взял этот промпт.</p>
+<h2 id="kakoy-dliny-dolzhen-byt-fayl">Какой длины должен быть файл?</h2>
+<p>Лучше коротко: одна-две страницы. Всё подробное вынеси в отдельные файлы и дай ссылки в разделе «Где лежит остальное». Большой файл нейросеть читает хуже.</p>
+<h2 id="eto-rabotaet-tolko-v-claude-code">Это работает только в Claude Code?</h2>
+<p>Нет. В ChatGPT и в приложении Claude тот же текст кладётся в инструкции проекта. Claude Code удобнее тем, что сам читает файл при каждом запуске и может дополнять его по ходу работы. Как устроена такая система целиком, я разбирал в статье <a href="/g/claude-code-os/">Claude Code — это не чат</a>.</p>
+<h2 id="chto-dalshe">Что дальше</h2>
+<p>Я строю контент-завод на таком файле с нуля и показываю каждый шаг в Telegram-канале. Туда же выкладываю свой файл целиком по мере того, как он растёт.</p>
+<p>👉 <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">Заходи в канал @Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/three-setup-files/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Три файла, которые делают из Claude сотрудника</span>
+            <span class="related-sub">Правила проекта, память и голос: что писать внутри каждого файла, чего писать не надо, в каком порядке собирать и почему нормально они заработают только через неделю.</span>
+          </a>
+          <a class="related-card" href="/g/context-first-prompts/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Ты винишь модель. А дело в одном промпте</span>
+            <span class="related-sub">Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</span>
+          </a>
+          <a class="related-card" href="/g/hour-from-bare-to-factory/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Час, за который голый Claude Code превращается в работающий завод</span>
+            <span class="related-sub">Шесть блоков по 10 минут: установка, CLAUDE.md, память, первые скиллы, хуки и первый прогон — от голой установки до среды работы.</span>
+          </a>
+          <a class="related-card" href="/g/write-your-own-skill/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Свой скилл для Claude за один вечер</span>
+            <span class="related-sub">Из чего состоит скилл, почему описание — главная строка файла, какие запреты работают лучше просьб и как проверить всё это тремя задачами.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
