@@ -5,8 +5,40 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 19 Sep 2026 09:55:43 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 15:07:59 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Сайт — это путь, а не дизайн. Показываю свою структуру</title>
+      <link>https://tolstobrovevgeniy.ru/g/site-is-a-path-not-design/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/site-is-a-path-not-design/</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Красивую страницу нейросеть соберёт за десять минут, но заявок она не принесёт. Разбираю, из каких шагов состоит путь человека от «случайно попал» до «оставил контакт», и как проверить его в Метрике</description>
+    </item>
+    <item>
+      <title>Я перестал бегать за новыми сервисами. 5 вопросов перед тем, как строить в инструменте</title>
+      <link>https://tolstobrovevgeniy.ru/g/own-stack-no-subscriptions/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/own-stack-no-subscriptions/</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Новый конструктор выходит каждую неделю, а задача остаётся той же. Почему погоня за инструментами съедает месяцы, как проверить сервис до того, как вкладываться, и что у меня лежит на своём коде</description>
+    </item>
+    <item>
+      <title>Начни со списка, а не с установки. Мой список первых задач для Claude Code</title>
+      <link>https://tolstobrovevgeniy.ru/g/start-with-list-not-install/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/start-with-list-not-install/</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Установить Claude Code можно за пять минут, а потом люди сидят перед пустым экраном. Как составить список задач, которые стоит отдать первыми, какие отдал я и шаблон, чтобы собрать свой за вечер</description>
+    </item>
+    <item>
+      <title>Закрыл подписки на автоматизацию. Что заменил своим кодом и где сервис всё ещё выгоднее</title>
+      <link>https://tolstobrovevgeniy.ru/g/own-automations-on-code/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/own-automations-on-code/</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Claude Code собирает связки по описанию словами. Разбираю, что я перенёс на свой код, как считать стоимость Zapier и n8n и в каких случаях подписка остаётся разумным выбором</description>
+    </item>
     <item>
       <title>Порог входа рухнул. Куда переехала ценность и куда смотрю я</title>
       <link>https://tolstobrovevgeniy.ru/g/entry-barrier-collapsed/</link>
@@ -134,38 +166,6 @@
       <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>За 5 минут через Claude: рабочие способы через транскрипт, кадры или анализ звука, автоматизация для регулярного контента</description>
-    </item>
-    <item>
-      <title>Плагины Claude Code</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-plugins/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-plugins/</guid>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Четыре типа расширений: встроенные, MCP, скилы, локальные скрипты. Как ставить, как писать свой, где копать</description>
-    </item>
-    <item>
-      <title>Клон своего голоса бесплатно</title>
-      <link>https://tolstobrovevgeniy.ru/g/free-voice-clone/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/free-voice-clone/</guid>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Запись один раз за минуту, потом модель читает любой текст твоим голосом, локально на машине, никуда не загружается</description>
-    </item>
-    <item>
-      <title>Обложка ВКонтакте кодом</title>
-      <link>https://tolstobrovevgeniy.ru/g/vk-cover-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vk-cover-code/</guid>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Четыре готовых кейса от простого текста на градиенте до анимированной плитки, никакого Фотошопа, просто HTML + CSS</description>
-    </item>
-    <item>
-      <title>Лимиты Claude и как их преодолеть</title>
-      <link>https://tolstobrovevgeniy.ru/g/token-limits-saving/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/token-limits-saving/</guid>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</description>
     </item>
   </channel>
 </rss>
