@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 19 Sep 2026 09:34:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 09:55:43 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Порог входа рухнул. Куда переехала ценность и куда смотрю я</title>
+      <link>https://tolstobrovevgeniy.ru/g/entry-barrier-collapsed/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/entry-barrier-collapsed/</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Сервисы, которые собирают приложение по описанию, выходят каждый месяц. Разбираю, что это значит для эксперта: почему инструмент больше не преимущество, какие задачи сейчас покупают и 3 вопроса, чтобы проверить свою нишу</description>
+    </item>
     <item>
       <title>Вайбкодинг — это навык объяснять. С чего начать, если ты не программист</title>
       <link>https://tolstobrovevgeniy.ru/g/vibecoding-is-explaining/</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Суточные лимиты в браузере, RPM на API, размер окна контекста, как читать счётчик и не разорить себя на токенах</description>
-    </item>
-    <item>
-      <title>Как оплатить Claude из России и не остаться без аккаунта</title>
-      <link>https://tolstobrovevgeniy.ru/g/russia-claude-payment/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/russia-claude-payment/</guid>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Что правила Anthropic говорят про Россию, как устроена оплата зарубежной картой, что продают на Plati и что делать, если платёж не прошёл</description>
     </item>
   </channel>
 </rss>
