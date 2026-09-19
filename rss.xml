@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 19 Sep 2026 07:54:25 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 09:34:20 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Вайбкодинг — это навык объяснять. С чего начать, если ты не программист</title>
+      <link>https://tolstobrovevgeniy.ru/g/vibecoding-is-explaining/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vibecoding-is-explaining/</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Машина делает ровно то, что ты сказал, поэтому весь вайбкодинг упирается в одно умение: объяснить задачу. Какую задачу отдать первой, 5 вопросов перед любым запросом и пример «было и стало»</description>
+    </item>
     <item>
       <title>Сначала проверь, что идею кто-то хочет. Потом собирай за вечер</title>
       <link>https://tolstobrovevgeniy.ru/g/validate-before-you-build/</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Что правила Anthropic говорят про Россию, как устроена оплата зарубежной картой, что продают на Plati и что делать, если платёж не прошёл</description>
-    </item>
-    <item>
-      <title>Конвейер рилсов без камеры: семь звеньев и где они рвутся</title>
-      <link>https://tolstobrovevgeniy.ru/g/faceless-reels-pipeline/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/faceless-reels-pipeline/</guid>
-      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Как выходят ежедневные видео без съёмки: поиск темы по цифрам, проверка фактов, формула заголовка, клон голоса — и почему всё упирается в видеоряд, а не в темы.</description>
     </item>
   </channel>
 </rss>
