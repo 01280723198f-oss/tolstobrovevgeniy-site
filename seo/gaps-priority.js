@@ -18,31 +18,38 @@ const COUNT = Number(ARGS[ARGS.indexOf("--count") + 1] || 30) || 30;
 
 const core = JSON.parse(fs.readFileSync(R("seo/semcore/data/core.json"), "utf8"));
 
-// Кластеры без страницы, отсортированы по сигналу спроса
-const gaps = core.clusters
-  .filter(c => !c.page)
-  .sort((a, b) => (b.signal || 0) - (a.signal || 0))
-  .slice(0, COUNT);
+// Спрос кластера: частотность Вордстата, старый «сигнал» или сумма по запросам
+const demand = c => {
+  if (Number.isFinite(c.frequency)) return c.frequency;
+  if (Number.isFinite(c.signal)) return c.signal;
+  return (c.queries || []).reduce((s, q) => s + (Number(q.freq) || Number(q.signal) || 0), 0);
+};
 
-console.log(`# Незакрытые кластеры · ${gaps.length} из ${core.totals.gaps}\n`);
-console.log(`| # | Сигнал | Название | Интент | Запросов | Готовый title |`);
+// Кластеры без страницы, отсортированы по спросу
+const allGaps = core.clusters
+  .filter(c => !c.page)
+  .sort((a, b) => demand(b) - demand(a));
+const gaps = allGaps.slice(0, COUNT);
+
+console.log(`# Незакрытые кластеры · показаны ${gaps.length} из ${allGaps.length}\n`);
+console.log(`| # | Спрос/мес | Название | Интент | Запросов | Готовый title |`);
 console.log(`|---|---|---|---|---|---|`);
 
 let week = [];
 gaps.forEach((c, i) => {
   const q = (c.queries || []).length;
   const t = (c.suggestedTitle || c.name || "").slice(0, 50);
-  console.log(`| ${i + 1} | **${c.signal}** | ${c.name} | ${c.intent} | ${q} | ${t} |`);
+  console.log(`| ${i + 1} | **${demand(c)}** | ${c.name} | ${c.intent} | ${q} | ${t} |`);
   if (i < 7) week.push(c);
 });
 
 console.log(`\n## Первая неделя — TOP 7\n`);
-console.log("Напиши эти 7 статей, остальные подтянутся. Начни с **#1** — сигнал 358 это горячо.\n");
+console.log(`Напиши эти 7 статей, остальные подтянутся. Начни с **#1** — спрос ${demand(week[0] || {})} показов в месяц.\n`);
 
 week.forEach((c, i) => {
   const slug = c.id || c.name.toLowerCase().replace(/[^а-яa-z0-9]/g, "-");
   const title = c.suggestedTitle || c.name;
-  console.log(`${i + 1}. **${title}** (сигнал ${c.signal})`);
+  console.log(`${i + 1}. **${title}** (спрос ${demand(c)}/мес)`);
   console.log(`   Кодовое слово: \`${slug}\``);
   console.log(`   Интент: ${c.intent}`);
   console.log(`   Главный запрос: "${(c.queries[0] || {}).q}"`);
@@ -50,15 +57,13 @@ week.forEach((c, i) => {
   console.log();
 });
 
-// Статистика
-const bySigal = [100, 80, 60, 40, 20, 0];
-const buckets = {};
-for (const s of bySigal) buckets[s] = gaps.filter(c => c.signal >= s && c.signal < (s + 20)).length;
+// Статистика по спросу
+const inRange = (lo, hi) => gaps.filter(c => demand(c) >= lo && (hi === null || demand(c) < hi)).length;
 
-console.log(`## По сигналу спроса\n`);
-console.log(`| Сигнал 100–81 | 80–61 | 60–41 | 40–21 | 20–0 |`);
+console.log(`## По спросу (показов в месяц)\n`);
+console.log(`| 10000+ | 3000–9999 | 1000–2999 | 300–999 | < 300 |`);
 console.log(`|---|---|---|---|---|`);
-console.log(`| ${gaps.filter(c => c.signal >= 80).length} | ${gaps.filter(c => c.signal >= 60 && c.signal < 80).length} | ${gaps.filter(c => c.signal >= 40 && c.signal < 60).length} | ${gaps.filter(c => c.signal >= 20 && c.signal < 40).length} | ${gaps.filter(c => c.signal < 20).length} |`);
+console.log(`| ${inRange(10000, null)} | ${inRange(3000, 10000)} | ${inRange(1000, 3000)} | ${inRange(300, 1000)} | ${inRange(0, 300)} |`);
 
 console.log(`\n## Как писать — три режима\n`);
 console.log(`**Режим 1: полный текст**`);
