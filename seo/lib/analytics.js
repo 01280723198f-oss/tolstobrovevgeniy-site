@@ -8,7 +8,7 @@ function metrika() {
   if (!id) return "";
   const o = C.analytics.metrikaOptions || {};
   const opts = JSON.stringify({
-    ssr: true, webvisor: !!o.webvisor, clickmap: !!o.clickmap,
+    webvisor: !!o.webvisor, clickmap: !!o.clickmap,
     ecommerce: "dataLayer", accurateTrackBounce: !!o.accurateTrackBounce, trackLinks: true
   });
   return `<script>
