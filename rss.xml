@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 21 Sep 2026 14:11:39 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 14:28:12 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>18 команд Claude Code, которыми я управляю контент-заводом</title>
+      <link>https://tolstobrovevgeniy.ru/g/18-claude-commands-content-factory/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/18-claude-commands-content-factory/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Вместо того чтобы каждый раз объяснять модели контекст заново, я вынес повторяющиеся задачи в короткие команды. Разбираю все 18: что делает каждая, когда её дёргать и как собрать свои</description>
+    </item>
+    <item>
+      <title>Семь агентов Claude, которые делают контент вместо меня</title>
+      <link>https://tolstobrovevgeniy.ru/g/7-claude-agents-content-factory/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/7-claude-agents-content-factory/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разведчик, смысловик, копирайтер, дизайнер, вороночник, диспетчер и публикатор. Разбираю, за что отвечает каждый, в каком порядке они работают и как собрать такую же сборку у себя</description>
+    </item>
+    <item>
+      <title>Как снять чужой дизайн карусели и поставить в него свой текст</title>
+      <link>https://tolstobrovevgeniy.ru/g/how-factory-clones-design/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/how-factory-clones-design/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Зарубежная виралка уже прошла проверку рынком — её вёрстка держит внимание, это измеренный факт. Разбираю протокол: что снимать с донора, как ставить кириллицу и где проходит граница копирования</description>
+    </item>
+    <item>
+      <title>Шесть линз, через которые я прогоняю каждый текст перед публикацией</title>
+      <link>https://tolstobrovevgeniy.ru/g/six-copywriting-lenses/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/six-copywriting-lenses/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Шварц, Огилви, Хальберт, Хормози, Чиалдини, Кеннеди. Каждая линза смотрит только на своё и правит только своё — разбираю, что проверяет каждая и в каком порядке их запускать</description>
+    </item>
+    <item>
+      <title>Десять каруселей за одно утро: весь конвейер по шагам</title>
+      <link>https://tolstobrovevgeniy.ru/g/10-carousels-one-morning/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/10-carousels-one-morning/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Я не умею рисовать и не плачу дизайнеру. Беру дизайн, который уже прошёл проверку рынком, и ставлю в него свой смысл. Разбираю шесть шагов конвейера от поиска донора до доставки пакета</description>
+    </item>
     <item>
       <title>Режим разработчика в ChatGPT: как подключить свои приложения</title>
       <link>https://tolstobrovevgeniy.ru/g/chatgpt-developer-mode-plugins/</link>
@@ -126,46 +166,6 @@
       <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Сравнение не по бенчмаркам, а по устройству работы — кто где живёт, кто кем управляет, что происходит с контекстом проекта и под какие задачи каждый из трёх подходит.</description>
-    </item>
-    <item>
-      <title>Бесплатный API Claude: что существует, а что выдумка</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-api-free/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-api-free/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбор запроса «claude api key free» — почему постоянного бесплатного тарифа нет, где берутся стартовые кредиты, чем опасны чужие ключи и какие честные способы работать почти без бюджета.</description>
-    </item>
-    <item>
-      <title>Автоматическая публикация постов: сервис, бот или свой код</title>
-      <link>https://tolstobrovevgeniy.ru/g/avtomaticheskaya-publikaciya-postov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/avtomaticheskaya-publikaciya-postov/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Три способа поставить публикации на автопилот в Telegram, ВК и Instagram — чем они отличаются по цене, надёжности и рискам, и как собрать свою схему, которая не падает и не стоит помесячно.</description>
-    </item>
-    <item>
-      <title>Claude Code с телефона: как управлять компьютером из кармана</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-from-phone/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-from-phone/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Режим Remote Control связывает приложение Claude на телефоне с сеансом, который работает на твоём компьютере. Настройка за десять минут, разбор по шагам, границы и типичные ошибки</description>
-    </item>
-    <item>
-      <title>Сайт — это путь, а не дизайн. Показываю свою структуру</title>
-      <link>https://tolstobrovevgeniy.ru/g/site-is-a-path-not-design/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/site-is-a-path-not-design/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Красивую страницу нейросеть соберёт за десять минут, но заявок она не принесёт. Разбираю, из каких шагов состоит путь человека от «случайно попал» до «оставил контакт», и как проверить его в Метрике</description>
-    </item>
-    <item>
-      <title>Я перестал бегать за новыми сервисами. 5 вопросов перед тем, как строить в инструменте</title>
-      <link>https://tolstobrovevgeniy.ru/g/own-stack-no-subscriptions/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/own-stack-no-subscriptions/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Новый конструктор выходит каждую неделю, а задача остаётся той же. Почему погоня за инструментами съедает месяцы, как проверить сервис до того, как вкладываться, и что у меня лежит на своём коде</description>
     </item>
   </channel>
 </rss>
