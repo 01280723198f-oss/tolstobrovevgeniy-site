@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 20 Sep 2026 10:53:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 09:57:59 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claude Code с телефона: как управлять компьютером из кармана</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-from-phone/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-from-phone/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Режим Remote Control связывает приложение Claude на телефоне с сеансом, который работает на твоём компьютере. Настройка за десять минут, разбор по шагам, границы и типичные ошибки</description>
+    </item>
     <item>
       <title>Сайт — это путь, а не дизайн. Показываю свою структуру</title>
       <link>https://tolstobrovevgeniy.ru/g/site-is-a-path-not-design/</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>За два часа вечером AI пишет идеи на месяц, потом месяц ты просто исполняешь, никакого творческого кризиса</description>
-    </item>
-    <item>
-      <title>Описание видео AI-ом</title>
-      <link>https://tolstobrovevgeniy.ru/g/video-description-ai/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-description-ai/</guid>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>За 5 минут через Claude: рабочие способы через транскрипт, кадры или анализ звука, автоматизация для регулярного контента</description>
     </item>
   </channel>
 </rss>
