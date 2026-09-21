@@ -5,8 +5,88 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 21 Sep 2026 09:57:59 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 10:54:22 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Время публикации постов: как найти своё, а не чужое</title>
+      <link>https://tolstobrovevgeniy.ru/g/vremya-publikacii-postov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vremya-publikacii-postov/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Почему таблицы «лучшего времени» из интернета не работают, как за две недели вычислить собственные окна в Telegram, ВК и Instagram и что важнее времени публикации.</description>
+    </item>
+    <item>
+      <title>Сайты для озвучки своим голосом: что выбрать и где подвох</title>
+      <link>https://tolstobrovevgeniy.ru/g/sayt-dlya-ozvuchki-svoim-golosom/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sayt-dlya-ozvuchki-svoim-golosom/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Сравнение подходов — облачные сервисы, локальные модели и гибрид. Чем они отличаются по качеству, цене и правам на голос, и что выбрать под задачу: ролики, курсы, озвучку статей.</description>
+    </item>
+    <item>
+      <title>Озвучка видео своим голосом: конвейер вместо микрофона</title>
+      <link>https://tolstobrovevgeniy.ru/g/ozvuchka-video-svoim-golosom/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ozvuchka-video-svoim-golosom/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Как собрать цепочку «текст → клон голоса → дорожка в ролике», чтобы выпускать видео каждый день и не садиться к микрофону. Тайминг, липсинк, типичные ошибки и проверка на слух.</description>
+    </item>
+    <item>
+      <title>Купить аккаунт Claude: что получаешь на самом деле</title>
+      <link>https://tolstobrovevgeniy.ru/g/kupit-akkaunt-claude/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kupit-akkaunt-claude/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбор рынка перепродажи доступов — почему такие аккаунты блокируют, что теряется вместе с ними, сколько это стоит на дистанции и какие легальные варианты решают ту же задачу.</description>
+    </item>
+    <item>
+      <title>Как заработать своим голосом на озвучке в эпоху клонов</title>
+      <link>https://tolstobrovevgeniy.ru/g/kak-zarabotat-golosom-na-ozvuchke/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kak-zarabotat-golosom-na-ozvuchke/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Где берут заказы, что изменил синтез речи, какие ниши он не забрал и почему собственный голос выгоднее сдавать в аренду не поштучно, а внутри своего контента.</description>
+    </item>
+    <item>
+      <title>Как пользоваться Claude в России: доступ, регистрация и что ломается</title>
+      <link>https://tolstobrovevgeniy.ru/g/kak-polzovatsya-claude-v-rossii/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kak-polzovatsya-claude-v-rossii/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Разбор по шагам — что нужно для входа, почему регистрация срывается на номере телефона, чем отличается веб-версия от приложения и терминала, и какие ошибки вылезают у всех.</description>
+    </item>
+    <item>
+      <title>Как экономить токены: из чего складывается счёт</title>
+      <link>https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Claude Code</category>
+      <description>Разбор цены запроса по частям — вход, выход, кэш и повторное чтение контекста. Девять приёмов, которые снижают расход в разы, и способ увидеть, куда именно уходят токены.</description>
+    </item>
+    <item>
+      <title>Claude Code, Codex и Cursor: три разных способа работать</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-vs-codex-vs-cursor/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-vs-codex-vs-cursor/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Сравнение не по бенчмаркам, а по устройству работы — кто где живёт, кто кем управляет, что происходит с контекстом проекта и под какие задачи каждый из трёх подходит.</description>
+    </item>
+    <item>
+      <title>Бесплатный API Claude: что существует, а что выдумка</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-api-free/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-api-free/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбор запроса «claude api key free» — почему постоянного бесплатного тарифа нет, где берутся стартовые кредиты, чем опасны чужие ключи и какие честные способы работать почти без бюджета.</description>
+    </item>
+    <item>
+      <title>Автоматическая публикация постов: сервис, бот или свой код</title>
+      <link>https://tolstobrovevgeniy.ru/g/avtomaticheskaya-publikaciya-postov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/avtomaticheskaya-publikaciya-postov/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Три способа поставить публикации на автопилот в Telegram, ВК и Instagram — чем они отличаются по цене, надёжности и рискам, и как собрать свою схему, которая не падает и не стоит помесячно.</description>
+    </item>
     <item>
       <title>Claude Code с телефона: как управлять компьютером из кармана</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-code-from-phone/</link>
@@ -86,86 +166,6 @@
       <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>ИИ-актриса Тилли Норвуд дала интервью британскому ТВ и запуталась в собственных ответах. Разбираю, из чего собран такой двойник, где он ломается и как эксперту использовать своего без риска для репутации</description>
-    </item>
-    <item>
-      <title>Монтаж видео текстом: как эксперту резать ролики без монтажёра</title>
-      <link>https://tolstobrovevgeniy.ru/g/video-editing-with-text/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-editing-with-text/</guid>
-      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Нейт Херк монтирует видео в Codex, просто описывая словами, что нужно. Разбираю, как это устроено, какие исходники снимать и где нейросеть пока режет лишнее</description>
-    </item>
-    <item>
-      <title>PDF-гайд на Claude: как эксперту упаковать знания и продать</title>
-      <link>https://tolstobrovevgeniy.ru/g/pdf-guide-with-claude/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/pdf-guide-with-claude/</guid>
-      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Блогер Леон продаёт PDF-гайды, которые пишет Claude. Разбираю его схему по шагам, где она ломается и как собрать гайд из своей экспертизы, а не из чужих фактов</description>
-    </item>
-    <item>
-      <title>Сайт эксперта с видео на первом экране: собираем в чате</title>
-      <link>https://tolstobrovevgeniy.ru/g/expert-site-video-hero/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/expert-site-video-hero/</guid>
-      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Пол Липски собрал в ChatGPT на GPT-6 Astra сайт с кино вместо первого экрана. Разбираю порядок промптов, приём с прокруткой и какие блоки нужны, чтобы красивый сайт ещё и продавал</description>
-    </item>
-    <item>
-      <title>Claude Code без кода: бриф из четырёх вопросов, который решает всё</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-brief-non-coder/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-brief-non-coder/</guid>
-      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Не программист Сандип Свадиа собрал в Claude Code свою мини-CRM. Разбираю его метод BITE, фразу, которая избавляет от технических вопросов, и три первых инструмента для эксперта</description>
-    </item>
-    <item>
-      <title>Отложенная публикация постов во ВК: руками, по расписанию и на автопилоте</title>
-      <link>https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vk-post-scheduling-autopilot/</guid>
-      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Как поставить пост во ВКонтакте на время, когда публиковать и как у меня до 10 постов в день уходят в сообщество без моего участия. Три уровня, от кнопки до своего конвейера</description>
-    </item>
-    <item>
-      <title>Бизнес без сотрудников: 5 бесплатных ИИ-инструментов соло-основателя</title>
-      <link>https://tolstobrovevgeniy.ru/g/solo-business-5-free-ai-tools/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/solo-business-5-free-ai-tools/</guid>
-      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Сабрина Рамонова в одиночку ведёт свой продукт и называет пять бесплатных инструментов, на которых он держится. Разбираю каждый и показываю, чем я закрываю те же задачи в своём контент-заводе</description>
-    </item>
-    <item>
-      <title>Фото в стиле 80-х через ChatGPT: промпт и как сохранить своё лицо</title>
-      <link>https://tolstobrovevgeniy.ru/g/photo-80s-chatgpt-prompt/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/photo-80s-chatgpt-prompt/</guid>
-      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Тренд собрал почти 2 миллиона просмотров за неделю. Даю промпт на русском и английском, разбираю, почему лицо получается чужим, и как превратить картинку в контент для блога</description>
-    </item>
-    <item>
-      <title>Как понять, что видео сделано нейросетью: 8 признаков и почему детекторы ошибаются</title>
-      <link>https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/how-to-spot-ai-video/</guid>
-      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Мэтт Вулф поручил ИИ-агенту собрать детектор ИИ-видео. Агент работал больше восьми часов и застрял. Разбираю, что это значит, и даю чек-лист, по которому видео проверяется глазами за минуту</description>
-    </item>
-    <item>
-      <title>GPT-6 Astra в ChatGPT Work: что умеет и нужна ли она эксперту</title>
-      <link>https://tolstobrovevgeniy.ru/g/chatgpt-work-gpt-6-astra/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-work-gpt-6-astra/</guid>
-      <pubDate>Mon, 14 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>OpenAI научила ChatGPT самому кликать по программам на компьютере. Разбираю по официальному описанию, что это меняет для эксперта и блогера, где риски и когда всё равно брать Claude</description>
-    </item>
-    <item>
-      <title>Контент-план за вечер</title>
-      <link>https://tolstobrovevgeniy.ru/g/content-plan-evening/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/content-plan-evening/</guid>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>За два часа вечером AI пишет идеи на месяц, потом месяц ты просто исполняешь, никакого творческого кризиса</description>
     </item>
   </channel>
 </rss>

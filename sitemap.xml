@@ -14,13 +14,13 @@
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/tema/razbor/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/tema/claude-code/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -59,6 +59,66 @@
     <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/vremya-publikacii-postov/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/sayt-dlya-ozvuchki-svoim-golosom/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/ozvuchka-video-svoim-golosom/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/kupit-akkaunt-claude/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/kak-zarabotat-golosom-na-ozvuchke/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/kak-polzovatsya-claude-v-rossii/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/claude-code-vs-codex-vs-cursor/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/claude-api-free/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/avtomaticheskaya-publikaciya-postov/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/g/claude-code-from-phone/</loc>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как экономить токены в Claude: разбор расхода и 9 приёмов — Евгений Толстобров</title>
+  <meta name="description" content="Из чего складывается расход токенов: входной контекст, вывод, кэширование и повторное чтение истории. Девять приёмов экономии, выбор модели и способ найти главную утечку.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Как экономить токены в Claude: разбор расхода и 9 приёмов — Евгений Толстобров">
+  <meta property="og:description" content="Из чего складывается расход токенов: входной контекст, вывод, кэширование и повторное чтение истории. Девять приёмов экономии, выбор модели и способ найти главную утечку.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/og/kak-ekonomit-tokeny.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Как экономить токены в Claude: разбор расхода и 9 приёмов — Евгений Толстобров">
+  <meta name="twitter:description" content="Из чего складывается расход токенов: входной контекст, вывод, кэширование и повторное чтение истории. Девять приёмов экономии, выбор модели и способ найти главную утечку.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/og/kak-ekonomit-tokeny.jpg">
+  <meta property="article:published_time" content="2026-09-21">
+  <meta property="article:modified_time" content="2026-09-21">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Как экономить токены в Claude: разбор расхода и 9 приёмов","name":"Как экономить токены: из чего складывается счёт","description":"Из чего складывается расход токенов: входной контекст, вывод, кэширование и повторное чтение истории. Девять приёмов экономии, выбор модели и способ найти главную утечку.","inLanguage":"ru","datePublished":"2026-09-21","dateModified":"2026-09-21","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/"},"url":"https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/","articleSection":"Claude Code","wordCount":1091,"timeRequired":"PT6M","keywords":"как экономить токены, экономия токенов claude, расход токенов, кэширование промпта, сколько стоит запрос к нейросети","image":["/img/og/kak-ekonomit-tokeny.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Claude Code","item":"https://tolstobrovevgeniy.ru/tema/claude-code/"},{"@type":"ListItem","position":3,"name":"Как экономить токены: из чего складывается счёт","item":"https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое токен и сколько это символов?","acceptedAnswer":{"@type":"Answer","text":"Токен — фрагмент текста, на которые модель режет ввод и вывод. В русском языке один токен обычно составляет примерно половину слова, в английском — почти слово целиком."}},{"@type":"Question","name":"Что тратит больше токенов: вопрос или контекст?","acceptedAnswer":{"@type":"Answer","text":"Контекст. Сам вопрос весит копейки, а вместе с ним прогоняются правила проекта, вся история разговора и приложенные файлы."}},{"@type":"Question","name":"Помогает ли просить короткие ответы?","acceptedAnswer":{"@type":"Answer","text":"Да. Вывод оплачивается дороже ввода, поэтому ограничение формата ответа даёт заметную экономию и обычно улучшает качество."}},{"@type":"Question","name":"Что такое кэширование промпта и когда оно окупается?","acceptedAnswer":{"@type":"Answer","text":"Это пометка повторяющейся части запроса, после которой её повторное чтение стоит дешевле. Окупается, когда инструкция или справочник одинаковы во многих запросах подряд."}},{"@type":"Question","name":"Стоит ли переходить на дешёвую модель ради экономии?","acceptedAnswer":{"@type":"Answer","text":"На простых задачах — да, разница в цене кратная, а качество не страдает. На сложной работе с кодом и длинными рассуждениями экономия оборачивается переделками."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/claude-code/">Claude Code</a><span class="sep">/</span><span>Как экономить токены: из чего складывается счёт</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/claude-code/">Claude Code</a>
+        <time datetime="2026-09-21">21 сентября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Как экономить токены: из чего складывается счёт</h1>
+      <p class="lead">Разбор цены запроса по частям — вход, выход, кэш и повторное чтение контекста. Девять приёмов, которые снижают расход в разы, и способ увидеть, куда именно уходят токены.</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#otkuda-beretsya-rashod">Откуда берётся расход</a></li><li><a href="#devyat-priemov-otsortirovannyh-po-otdache">Девять приёмов, отсортированных по отдаче</a></li><li><a href="#chto-daet-ekonomiyu-a-chto-tolko-kazhetsya">Что даёт экономию, а что только кажется</a></li><li><a href="#kak-nayti-svoyu-utechku-za-pyat-minut">Как найти свою утечку за пять минут</a></li><li><a href="#gde-smotret-realnye-cifry">Где смотреть реальные цифры</a></li><li><a href="#pro-tarif">Про тариф</a></li><li><a href="#tri-scenariya-i-chto-ekonomit-v-kazhdom">Три сценария и что экономит в каждом</a></li><li><a href="#chto-stoit-dorozhe-dumat-ili-pisat">Что стоит дороже: думать или писать</a></li><li><a href="#gigiena-konteksta-kak-privychka">Гигиена контекста как привычка</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li></ol>
+      </nav>
+      <div class="content">
+<p>Токен — не слово и не символ. Это кусочек текста, на которые модель режет всё, что читает и пишет. В русском языке один токен — примерно половина слова, иногда меньше. Счёт складывается из двух частей: сколько модель прочитала и сколько написала.</p>
+<p><a href="/g/validate-before-you-build/" class="ctx-link">Главная ошибка</a> в экономии — считать сообщения. Расход определяется не числом вопросов, а <strong>объёмом контекста, который прогоняется на каждом шаге</strong>.</p>
+<h2 id="otkuda-beretsya-rashod">Откуда берётся расход</h2>
+<p>Разложу запрос на части. Цифры условные, важны пропорции.</p>
+<table>
+<thead>
+<tr>
+<th>Часть запроса</th>
+<th>Что туда входит</th>
+<th>Сколько весит</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Системная инструкция</td>
+<td>правила проекта, роль, формат ответа</td>
+<td>читается каждый раз</td>
+</tr>
+<tr>
+<td>История разговора</td>
+<td>все предыдущие сообщения целиком</td>
+<td>растёт линейно</td>
+</tr>
+<tr>
+<td>Приложенные материалы</td>
+<td>файлы, логи, выгрузки</td>
+<td>обычно самое тяжёлое</td>
+</tr>
+<tr>
+<td>Твой вопрос</td>
+<td>собственно задача</td>
+<td>крохи</td>
+</tr>
+<tr>
+<td>Ответ модели</td>
+<td>текст, код, рассуждения</td>
+<td>оплачивается дороже входа</td>
+</tr>
+</tbody></table>
+<p>Отсюда главный вывод: <strong>твой вопрос почти ничего не весит, платишь ты за то, что лежит вокруг него</strong>. Один и тот же вопрос в чистом разговоре и в разговоре на третий час стоит по-разному в разы.</p>
+<h2 id="devyat-priemov-otsortirovannyh-po-otdache">Девять приёмов, отсортированных по отдаче</h2>
+<p><strong>1. Новый разговор под новую задачу.</strong> Самый сильный приём из всех. История тащится в каждый запрос целиком, поэтому закрытая задача в открытом разговоре — это налог, который ты платишь до конца дня.</p>
+<p><strong>2. Не читать большие файлы целиком.</strong> Лог на десять тысяч строк, выгрузка, длинный конфиг. Почти всегда нужен фрагмент. Просить нужный кусок — минута, читать всё — самый дорогой шаг рабочего дня.</p>
+<p><strong>3. Кэшировать повторяющуюся часть.</strong> Если в каждый запрос идёт один и тот же справочник или свод правил, его можно пометить как кэшируемый: повторное чтение стоит заметно дешевле обычного. На конвейерах, где инструкция одна, а данные меняются, это главная статья экономии.</p>
+<p><strong>4. Короткие правила проекта.</strong> Файл правил читается на каждом запуске. Страница — нормально. Десять страниц — плата за каждую мелочь, включая «поправь опечатку».</p>
+<p><strong>5. Грязную разведку — в отдельную голову.</strong> Поиск по репозиторию, обход папок, просмотр логов дают гору вывода. Если это делает подагент, гора остаётся у него, а тебе возвращается вывод в несколько строк.</p>
+<p><strong>6. Младшая модель на простых задачах.</strong> Разметка, классификация, переименование, короткие ответы не требуют старшей модели. Разница в цене между линейками — не проценты, а кратность.</p>
+<p><strong>7. Просить короткий ответ.</strong> Вывод стоит дороже ввода. «Ответь списком из пяти пунктов» экономит больше, чем кажется, и заодно делает ответ полезнее.</p>
+<p><strong>8. Пакетная обработка.</strong> Сто однотипных задач одним заходом дешевле, чем сто заходов, — и по токенам, и по времени. Если ответ терпит ожидание, пакетный режим API дешевле обычного.</p>
+<p><strong>9. Инструкция вместо повторных объяснений.</strong> Третий раз объясняешь модели одно и то же — заводи скилл или файл с правилами. Повтор вводных руками оплачивается каждый раз заново.</p>
+<h2 id="chto-daet-ekonomiyu-a-chto-tolko-kazhetsya">Что даёт экономию, а что только кажется</h2>
+<table>
+<thead>
+<tr>
+<th>Кажется экономией</th>
+<th>На деле</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>писать короткие вопросы</td>
+<td>вопрос весит копейки</td>
+</tr>
+<tr>
+<td>убирать вежливые слова</td>
+<td>ноль эффекта</td>
+</tr>
+<tr>
+<td>открыть новый чат после исчерпания лимита</td>
+<td>квота общая, не помогает</td>
+</tr>
+<tr>
+<td>просить «отвечай кратко»</td>
+<td>работает: вывод дороже ввода</td>
+</tr>
+<tr>
+<td>сжать разговор, когда он разросся</td>
+<td>работает: выкидывает промежуточное</td>
+</tr>
+<tr>
+<td>разложить работу на разговоры по задачам</td>
+<td>работает сильнее всего</td>
+</tr>
+</tbody></table>
+<p>Первые три пункта — самые популярные советы в интернете, и они бесполезны.</p>
+<h2 id="kak-nayti-svoyu-utechku-za-pyat-minut">Как найти свою утечку за пять минут</h2>
+<p>Разбор делается по памяти, без инструментов.</p>
+<ol>
+<li>Сколько разговоров ты открыл за день? Один длинный — вот и ответ.</li>
+<li>Читал ли что-то большое целиком? Логи и данные — главные пожиратели.</li>
+<li>Какого объёма файл правил проекта? Больше экрана — режь.</li>
+<li>Сколько раз объяснял одно и то же? Каждый повтор оплачен.</li>
+<li>Сколько сделанного было разведкой, а не работой? Разведка должна уходить вниз.</li>
+</ol>
+<p>Обычно основную утечку даёт один пункт из пяти. У меня это была привычка открывать файл целиком вместо нужного фрагмента.</p>
+<h2 id="gde-smotret-realnye-cifry">Где смотреть реальные цифры</h2>
+<p>Если работаешь по ключу API — в консоли есть расход по дням и моделям, это точные деньги. Если по подписке — точного счётчика токенов нет, ориентир косвенный: как быстро ты упираешься в лимит при одинаковом объёме работы.</p>
+<p>Полезная привычка: раз в неделю сравнивать «сколько сделал» и «во сколько упёрся». Рост второго при том же первом означает, что где-то завёлся мусор в контексте.</p>
+<h2 id="pro-tarif">Про тариф</h2>
+<p>Порядок действий такой: сначала гигиена контекста, потом тариф. Если купить больше лимита и продолжать жечь его так же неаккуратно, ты просто отодвинешь стену на пару часов.</p>
+<h2 id="tri-scenariya-i-chto-ekonomit-v-kazhdom">Три сценария и что экономит в каждом</h2>
+<p>Универсальных советов здесь нет: расход по-разному устроен у разговора, конвейера и разовой обработки данных.</p>
+<p><strong>Диалог с правками файлов.</strong> Основной вес — история и прочитанные файлы. Работает: короткие сессии, точные пути, чтение фрагментов. Не работает: попытки писать лаконичные вопросы.</p>
+<p><strong>Конвейер по расписанию.</strong> Инструкция одинакова, меняются только данные. Работает: кэширование постоянной части, младшая модель, жёсткий потолок вывода. Именно здесь экономия считается не процентами, а разами.</p>
+<p><strong>Разовая обработка большого списка.</strong> Работает: пакетный режим, предварительный прогон на десяти строках, ограничение формата ответа одной строкой на элемент.</p>
+<p>Ошибка — переносить приёмы из одного сценария в другой. Кэш бесполезен в живом разговоре, где контекст меняется каждый шаг, а короткие сессии не помогают конвейеру, у которого сессии и так нет.</p>
+<h2 id="chto-stoit-dorozhe-dumat-ili-pisat">Что стоит дороже: думать или писать</h2>
+<p>Полезно помнить, что рассуждения модели — это тоже выход, и он оплачивается. Просьба «распиши ход мыслей подробно» на каждой мелочи удваивает счёт на ровном месте.</p>
+<p>Разумный баланс: развёрнутое рассуждение — там, где решение неочевидно и цена ошибки высокая. Короткий ответ — везде, где задача механическая. На конвейере, который делает одно и то же тысячу раз, экономия от одного этого правила больше, чем от смены тарифа.</p>
+<h2 id="gigiena-konteksta-kak-privychka">Гигиена контекста как привычка</h2>
+<p>Экономия токенов — не разовая настройка, а три привычки, которые въедаются за неделю.</p>
+<ol>
+<li><strong>Закрыл задачу — закрыл разговор.</strong> Самое сильное правило из всех.</li>
+<li><strong>Спрашивай про кусок, а не про файл.</strong> «Покажи функцию X» вместо «прочитай весь модуль».</li>
+<li><strong>Третий повтор — в инструкцию.</strong> Если объясняешь одно и то же трижды, это не разговор, а недописанный скилл.</li>
+</ol>
+<p>Эти три строки экономят больше, чем любые тонкие настройки, — и работают одинаково на подписке и на ключе.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h3 id="chto-takoe-token-i-skolko-eto-simvolov">Что такое токен и сколько это символов?</h3>
+<p>Токен — фрагмент текста, на которые модель режет ввод и вывод. В русском языке один токен обычно составляет примерно половину слова, в английском — почти слово целиком.</p>
+<h3 id="chto-tratit-bolshe-tokenov-vopros-ili-kontekst">Что тратит больше токенов: вопрос или контекст?</h3>
+<p>Контекст. Сам вопрос весит копейки, а вместе с ним прогоняются правила проекта, вся история разговора и приложенные файлы.</p>
+<h3 id="pomogaet-li-prosit-korotkie-otvety">Помогает ли просить короткие ответы?</h3>
+<p>Да. Вывод оплачивается дороже ввода, поэтому ограничение формата ответа даёт заметную экономию и обычно улучшает качество.</p>
+<h3 id="chto-takoe-keshirovanie-prompta-i-kogda-ono-okupaetsya">Что такое кэширование промпта и когда оно окупается?</h3>
+<p>Это пометка повторяющейся части запроса, после которой её повторное чтение стоит дешевле. Окупается, когда инструкция или справочник одинаковы во многих запросах подряд.</p>
+<h3 id="stoit-li-perehodit-na-deshevuyu-model-radi-ekonomii">Стоит ли переходить на дешёвую модель ради экономии?</h3>
+<p>На простых задачах — да, разница в цене кратная, а качество не страдает. На сложной работе с кодом и длинными рассуждениями экономия оборачивается переделками.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/claude-limits-explained/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Кончились лимиты Claude: что происходит и как перестать в них упираться</span>
+            <span class="related-sub">Две независимые системы ограничений, почему пятичасовое окно важнее недельного, и восемь привычек, которые растягивают одну подписку на весь рабочий день.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-pricing/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Сколько стоит Claude Code на практике</span>
+            <span class="related-sub">Из чего складывается цена, чем подписка отличается от оплаты по ключу, что реально ест бюджет и когда переход на дорогой тариф оправдан, а когда это лечение симптома.</span>
+          </a>
+          <a class="related-card" href="/g/claude-api-free/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Бесплатный API Claude: что существует, а что выдумка</span>
+            <span class="related-sub">Разбор запроса «claude api key free» — почему постоянного бесплатного тарифа нет, где берутся стартовые кредиты, чем опасны чужие ключи и какие честные способы работать почти без бюджета.</span>
+          </a>
+          <a class="related-card" href="/g/claude-not-working/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Claude не работает: разбор по симптомам</span>
+            <span class="related-sub">Семь разных поломок, которые люди называют одной фразой, и порядок проверки — от очевидного к редкому, чтобы не чинить не то.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
