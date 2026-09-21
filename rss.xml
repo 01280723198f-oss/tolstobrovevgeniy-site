@@ -5,8 +5,64 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 21 Sep 2026 10:54:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 14:11:39 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Режим разработчика в ChatGPT: как подключить свои приложения</title>
+      <link>https://tolstobrovevgeniy.ru/g/chatgpt-developer-mode-plugins/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-developer-mode-plugins/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Developer mode открывает полный доступ к MCP: ChatGPT не только читает данные сервиса, но и выполняет в нём действия. Разбираю настройку по шагам, тарифы и риски, о которых молчат в роликах</description>
+    </item>
+    <item>
+      <title>ИИ-психолог забирает не клиентов, а первый вопрос</title>
+      <link>https://tolstobrovevgeniy.ru/g/ii-psiholog-i-klienty-eksperta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-psiholog-i-klienty-eksperta/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Подборки «25 нейросетей-психологов» уже в топе, и ночной вопрос уходит чат-боту. Разбираю, что на самом деле меняется в воронке эксперта и как перестроить контент</description>
+    </item>
+    <item>
+      <title>Штрафы за куки и формы на сайте: три ловушки эксперта</title>
+      <link>https://tolstobrovevgeniy.ru/g/shtraf-za-kuki-i-formu-na-sayte/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/shtraf-za-kuki-i-formu-na-sayte/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Суммы по статье 13.11 КоАП выросли с 30 мая 2025 года. Разбираю три ошибки, за которые штрафуют психологов, коучей и наставников с обычным лендингом, и как закрыть их за вечер</description>
+    </item>
+    <item>
+      <title>Обложка с твоим лицом за минуту: что умеет ChatGPT Images 2.5</title>
+      <link>https://tolstobrovevgeniy.ru/g/oblozhka-s-litsom-chatgpt-images/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/oblozhka-s-litsom-chatgpt-images/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Обновление от 8 сентября 2026 лучше держит лицо с референсного фото, генерирует до двух раз быстрее и правит только то, о чём просишь. Разбираю, как собрать серию обложек в одном стиле</description>
+    </item>
+    <item>
+      <title>Как попасть в ответы Алисы AI: что показывает Яндекс Вебмастер</title>
+      <link>https://tolstobrovevgeniy.ru/g/otvety-alisy-ai-dlya-eksperta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/otvety-alisy-ai-dlya-eksperta/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Алиса собирает ответ со страниц, которые Яндекс и так держит высоко. Разбираю раздел «Видимость сайта в Алисе AI» и правила для страниц, которые она цитирует</description>
+    </item>
+    <item>
+      <title>Закон об ИИ 243-ФЗ: что он меняет для эксперта и блогера</title>
+      <link>https://tolstobrovevgeniy.ru/g/zakon-ob-ii-243-fz-dlya-eksperta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zakon-ob-ii-243-fz-dlya-eksperta/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Общие правила заработали с 1 сентября 2026, маркировка начнётся 1 марта 2027 и остаётся правом, а не обязанностью. Разбираю по статьям, без пересказа страшилок</description>
+    </item>
+    <item>
+      <title>Озвучка своим голосом: как озвучить видео без студии и без подписки</title>
+      <link>https://tolstobrovevgeniy.ru/g/ozvuchka-svoim-golosom/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ozvuchka-svoim-golosom/</guid>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Модель Chatterbox клонирует голос по образцу в 16 секунд, работает на твоём компьютере и разрешена в коммерции. Разбираю, как это устроено, сколько ждать и где качество проседает</description>
+    </item>
     <item>
       <title>Время публикации постов: как найти своё, а не чужое</title>
       <link>https://tolstobrovevgeniy.ru/g/vremya-publikacii-postov/</link>
@@ -110,62 +166,6 @@
       <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Новый конструктор выходит каждую неделю, а задача остаётся той же. Почему погоня за инструментами съедает месяцы, как проверить сервис до того, как вкладываться, и что у меня лежит на своём коде</description>
-    </item>
-    <item>
-      <title>Начни со списка, а не с установки. Мой список первых задач для Claude Code</title>
-      <link>https://tolstobrovevgeniy.ru/g/start-with-list-not-install/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/start-with-list-not-install/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Установить Claude Code можно за пять минут, а потом люди сидят перед пустым экраном. Как составить список задач, которые стоит отдать первыми, какие отдал я и шаблон, чтобы собрать свой за вечер</description>
-    </item>
-    <item>
-      <title>Закрыл подписки на автоматизацию. Что заменил своим кодом и где сервис всё ещё выгоднее</title>
-      <link>https://tolstobrovevgeniy.ru/g/own-automations-on-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/own-automations-on-code/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Claude Code собирает связки по описанию словами. Разбираю, что я перенёс на свой код, как считать стоимость Zapier и n8n и в каких случаях подписка остаётся разумным выбором</description>
-    </item>
-    <item>
-      <title>Порог входа рухнул. Куда переехала ценность и куда смотрю я</title>
-      <link>https://tolstobrovevgeniy.ru/g/entry-barrier-collapsed/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/entry-barrier-collapsed/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Сервисы, которые собирают приложение по описанию, выходят каждый месяц. Разбираю, что это значит для эксперта: почему инструмент больше не преимущество, какие задачи сейчас покупают и 3 вопроса, чтобы проверить свою нишу</description>
-    </item>
-    <item>
-      <title>Вайбкодинг — это навык объяснять. С чего начать, если ты не программист</title>
-      <link>https://tolstobrovevgeniy.ru/g/vibecoding-is-explaining/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vibecoding-is-explaining/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Машина делает ровно то, что ты сказал, поэтому весь вайбкодинг упирается в одно умение: объяснить задачу. Какую задачу отдать первой, 5 вопросов перед любым запросом и пример «было и стало»</description>
-    </item>
-    <item>
-      <title>Сначала проверь, что идею кто-то хочет. Потом собирай за вечер</title>
-      <link>https://tolstobrovevgeniy.ru/g/validate-before-you-build/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/validate-before-you-build/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Приложение по описанию собирается за вечер, поэтому главная ошибка теперь не в сборке, а в том, что продукт никому не нужен. Проверка спроса за 10 личных сообщений: шаблон, правило трёх «хочу» и что делать с ответами</description>
-    </item>
-    <item>
-      <title>Не склад промптов, а файл о себе: что в нём должно лежать</title>
-      <link>https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/prompt-library-vs-context-file/</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Почему чужие промпты дают средний текст и какие 6 разделов записать в один файл, чтобы нейросеть писала под тебя. С шаблоном для заполнения и тремя ошибками, из-за которых файл не работает</description>
-    </item>
-    <item>
-      <title>Цифровой двойник эксперта: как собрать и не потерять доверие</title>
-      <link>https://tolstobrovevgeniy.ru/g/ai-twin-for-expert/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ai-twin-for-expert/</guid>
-      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>ИИ-актриса Тилли Норвуд дала интервью британскому ТВ и запуталась в собственных ответах. Разбираю, из чего собран такой двойник, где он ломается и как эксперту использовать своего без риска для репутации</description>
     </item>
   </channel>
 </rss>
