@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Воронка эксперта: схема из пяти узлов и сортировка заявок — Евгений Толстобров</title>
+  <meta name="description" content="Вход, сортировка, горячие, тёплые, отказ: пять узлов воронки эксперта. Что делает модель-сортировщик Jev, как собрать схему за выходные и какие три цифры мерить.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/voronka-iz-pyati-uzlov/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Воронка эксперта: схема из пяти узлов и сортировка заявок — Евгений Толстобров">
+  <meta property="og:description" content="Вход, сортировка, горячие, тёплые, отказ: пять узлов воронки эксперта. Что делает модель-сортировщик Jev, как собрать схему за выходные и какие три цифры мерить.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/voronka-iz-pyati-uzlov/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Воронка эксперта: схема из пяти узлов и сортировка заявок — Евгений Толстобров">
+  <meta name="twitter:description" content="Вход, сортировка, горячие, тёплые, отказ: пять узлов воронки эксперта. Что делает модель-сортировщик Jev, как собрать схему за выходные и какие три цифры мерить.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-22">
+  <meta property="article:modified_time" content="2026-09-22">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Воронка эксперта: схема из пяти узлов и сортировка заявок","name":"Воронка из пяти узлов: почему она ломается на входе, а не на продаже","description":"Вход, сортировка, горячие, тёплые, отказ: пять узлов воронки эксперта. Что делает модель-сортировщик Jev, как собрать схему за выходные и какие три цифры мерить.","inLanguage":"ru","datePublished":"2026-09-22","dateModified":"2026-09-22","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/voronka-iz-pyati-uzlov/"},"url":"https://tolstobrovevgeniy.ru/g/voronka-iz-pyati-uzlov/","articleSection":"Разбор","wordCount":735,"timeRequired":"PT7M","keywords":"воронка продаж эксперта, сортировка заявок, классификация лидов, jev typesafe, автоматизация воронки, заявки в телеграм"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"Воронка из пяти узлов: почему она ломается на входе, а не на продаже","item":"https://tolstobrovevgeniy.ru/g/voronka-iz-pyati-uzlov/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Нужна ли CRM для такой воронки?","acceptedAnswer":{"@type":"Answer","text":"Нет. На старте хватает таблицы с полями «откуда, что спросил, метка, дата ответа». CRM нужна, когда в переписке участвует не один человек."}},{"@type":"Question","name":"Что такое Jev и можно ли им пользоваться сейчас?","acceptedAnswer":{"@type":"Answer","text":"Это модель TypeSafe AI, которая отдаёт типизированное решение с вероятностью вместо текста. Доступ ранний, по списку ожидания на сайте компании."}},{"@type":"Question","name":"Можно ли доверить сортировку обычной языковой модели?","acceptedAnswer":{"@type":"Answer","text":"Да, и на малых объёмах так и делают. Отличие специализированных моделей — в цене и скорости на потоке, а не в самой возможности."}},{"@type":"Question","name":"Куда девать тёплых, если у меня нет рассылки?","acceptedAnswer":{"@type":"Answer","text":"В канал и в статьи под кодовые слова. Человек получает материал под свой вопрос и остаётся читателем до момента, когда задача станет срочной."}},{"@type":"Question","name":"Сколько обращений должно быть, чтобы это имело смысл?","acceptedAnswer":{"@type":"Answer","text":"От двадцати в неделю. Меньше — разбирай руками, автоматизация съест больше времени, чем сэкономит. Кодовое слово: ВОРОНКА"}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>Воронка из пяти узлов: почему она ломается на входе, а не на продаже</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-09-22">22 сентября 2026</time>
+        <span>· 7 мин</span>
+      </div>
+      <h1>Воронка из пяти узлов: почему она ломается на входе, а не на продаже</h1>
+      <p class="lead">Сто сообщений в неделю и одинаковое внимание каждому. Схема из пяти узлов, что ставить на сортировке и как собрать это за выходные</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#gde-imenno-lomaetsya">Где именно ломается</a></li><li><a href="#shema-iz-pyati-uzlov">Схема из пяти узлов</a></li><li><a href="#chto-novogo-na-uzle-sortirovki">Что нового на узле сортировки</a></li><li><a href="#kak-sobrat-eto-za-vyhodnye">Как собрать это за выходные</a></li><li><a href="#kak-ponyat-chto-voronka-rabotaet">Как понять, что воронка работает</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#nuzhna-li-crm-dlya-takoy-voronki">Нужна ли CRM для такой воронки?</a></li><li><a href="#chto-takoe-jev-i-mozhno-li-im-polzovatsya-seychas">Что такое Jev и можно ли им пользоваться сейчас?</a></li><li><a href="#mozhno-li-doverit-sortirovku-obychnoy-yazykovoy-modeli">Можно ли доверить сортировку обычной языковой модели?</a></li><li><a href="#kuda-devat-teplyh-esli-u-menya-net-rassylki">Куда девать тёплых, если у меня нет рассылки?</a></li><li><a href="#skolko-obrascheniy-dolzhno-byt-chtoby-eto-imelo-smysl">Сколько обращений должно быть, чтобы это имело смысл?</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В рилсе я сказал, что воронка эксперта ломается на входе, а не на продаже. Здесь — схема из пяти узлов, что ставить на каждом и где в ней место дешёвым моделям-сортировщикам.</p>
+<h2 id="gde-imenno-lomaetsya">Где именно ломается</h2>
+<p>Пока заявок пять в неделю, воронки нет и не надо: ты разбираешь всё руками и помнишь каждого.</p>
+<p>Провал начинается на сотне сообщений. Внимание распределяется поровну: человек, готовый платить сегодня, ждёт в очереди наравне со случайным вопросом. Ты выгораешь, а до разговора о деньгах доходят единицы, хотя людей в канале стало больше.</p>
+<p>Вывод неочевидный: чинить надо не продажу в конце, а сортировку в начале.</p>
+<h2 id="shema-iz-pyati-uzlov">Схема из пяти узлов</h2>
+<p><strong>Узел 1. Вход.</strong> Одно место, куда стекаются все обращения: комментарии, личные сообщения, форма на странице, <a href="/g/codeword-funnel-chain/" class="ctx-link">кодовое слово</a> в боте. Если входов пять и все разные — сортировать нечего, ты каждый раз ищешь, где что.</p>
+<p>Практический минимум: комментарии и бот сводятся в один список с полями «откуда, что спросил, когда».</p>
+<p><strong>Узел 2. Сортировка.</strong> Здесь решается, кто горячий, кто тёплый и кто мимо. Признаки простые: названа задача, назван срок, был платный контакт раньше.</p>
+<p>Этот узел и есть тот, который раньше делали руками, а теперь отдают дешёвой модели.</p>
+<p><strong>Узел 3. Горячие — к человеку.</strong> Всё, что похоже на готовность платить, идёт лично тебе, в течение часа. Никаких автоответов: на этом узле автоматизация вредит.</p>
+<p><strong>Узел 4. Тёплые — в прогрев.</strong> Человек интересуется, но срока нет. Он попадает в базу и получает статью под его вопрос, а дальше видит твой канал. Задача узла не продать, а остаться в поле зрения до момента, когда задача станет срочной.</p>
+<p><strong>Узел 5. Мимо — вежливый отказ со ссылкой.</strong> Коллеги, студенты, не твоя ниша. Короткий ответ и ссылка на бесплатный материал. Этот узел экономит больше всего времени и при этом не портит отношения.</p>
+<h2 id="chto-novogo-na-uzle-sortirovki">Что нового на узле сортировки</h2>
+<p>На прошлой неделе компания TypeSafe AI показала модель Jev. Она устроена иначе, чем привычные чат-модели: не пишет текст, а получает сообщение со списком вариантов и возвращает выбор вместе с вероятностью.</p>
+<p>Заявления компании: рабочий цикл примерно за одну десятую секунды, 42 доллара за миллиард входных токенов, и что на таких задачах она в сотни раз быстрее и дешевле обычной модели. Доступ пока ранний, по списку ожидания.</p>
+<p>В разборе у Грега Айзенберга автор модели рассортировал 1700 писем за 18 центов, а рядом показал оценку лидов и маршрутизацию обращений в поддержку.</p>
+<p>Цифры чужие, я их не замерял. Но идея важнее цифр: сортировка — это не творческая задача, и держать на ней дорогую думающую модель незачем. Дорогая модель включается дальше, там, где нужно понять человека и собрать ответ.</p>
+<p>Если доступа к Jev нет, узел всё равно собирается: любая лёгкая модель или даже правила по ключевым словам работают лучше, чем отсутствие сортировки.</p>
+<h2 id="kak-sobrat-eto-za-vyhodnye">Как собрать это за выходные</h2>
+<p><strong>Суббота.</strong> Сводишь входы в один список. Заводишь три метки: горячий, тёплый, мимо. Размечаешь руками последние пятьдесят обращений — это одновременно и разметка, и обучающий набор для будущей автоматики.</p>
+<p><strong>Воскресенье.</strong> Пишешь три шаблона ответа под три метки и правило распределения. Дальше автоматизируешь только третий узел — отказы, потому что он самый безопасный: ошибка стоит мало.</p>
+<p>Горячих продолжаешь вести руками. Автоматизировать их — последнее, что стоит делать, и то не полностью.</p>
+<h2 id="kak-ponyat-chto-voronka-rabotaet">Как понять, что воронка работает</h2>
+<p>Три цифры, которые считаются по журналу и не требуют аналитики.</p>
+<p>Время до первого ответа горячему — цель до часа. Доля горячих от всех обращений — если она ниже десяти процентов, проблема не в воронке, а в контенте: ты зовёшь не тех. Доля дошедших до оплаты от горячих — если она низкая, дело в оффере или цене, а не в сортировке.</p>
+<p>Меряй раз в неделю по десяти последним обращениям. Этого достаточно, чтобы видеть направление.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="nuzhna-li-crm-dlya-takoy-voronki">Нужна ли CRM для такой воронки?</h2>
+<p>Нет. На старте хватает таблицы с полями «откуда, что спросил, метка, дата ответа». CRM нужна, когда в переписке участвует не один человек.</p>
+<h2 id="chto-takoe-jev-i-mozhno-li-im-polzovatsya-seychas">Что такое Jev и можно ли им пользоваться сейчас?</h2>
+<p>Это модель TypeSafe AI, которая отдаёт типизированное решение с вероятностью вместо текста. Доступ ранний, по списку ожидания на сайте компании.</p>
+<h2 id="mozhno-li-doverit-sortirovku-obychnoy-yazykovoy-modeli">Можно ли доверить сортировку обычной языковой модели?</h2>
+<p>Да, и на малых объёмах так и делают. Отличие специализированных моделей — в цене и скорости на потоке, а не в самой возможности.</p>
+<h2 id="kuda-devat-teplyh-esli-u-menya-net-rassylki">Куда девать тёплых, если у меня нет рассылки?</h2>
+<p>В канал и в статьи под кодовые слова. Человек получает материал под свой вопрос и остаётся читателем до момента, когда задача станет срочной.</p>
+<h2 id="skolko-obrascheniy-dolzhno-byt-chtoby-eto-imelo-smysl">Сколько обращений должно быть, чтобы это имело смысл?</h2>
+<p>От двадцати в неделю. Меньше — разбирай руками, автоматизация съест больше времени, чем сэкономит.</p>
+<p><a href="/g/start-from-zero/" class="ctx-link">Кодовое слово: ВОРОНКА</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/claude-api-free/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Бесплатный API Claude: что существует, а что выдумка</span>
+            <span class="related-sub">Разбор запроса «claude api key free» — почему постоянного бесплатного тарифа нет, где берутся стартовые кредиты, чем опасны чужие ключи и какие честные способы работать почти без бюджета.</span>
+          </a>
+          <a class="related-card" href="/g/mini-apps-as-front-doors/">
+            <span class="tag">Воронка</span>
+            <span class="related-title">Мини-приложения вместо PDF-лидмагнитов. Фронт-двери воронки на одном инструменте</span>
+            <span class="related-sub">PDF-лидмагниты умирают в загрузках. Мини-инструменты живут в браузере, работают как фронт-двери воронки и собираются за выходные.</span>
+          </a>
+          <a class="related-card" href="/g/4-tools-vibecoder/">
+            <span class="tag">Контент-завод</span>
+            <span class="related-title">Четыре станка, на которых стоит контент-завод</span>
+            <span class="related-sub">Скиллы, радар чужих виралок, клон дизайна и воронка на кодовом слове — что делает каждый и зачем.</span>
+          </a>
+          <a class="related-card" href="/g/kak-zarabotat-golosom-na-ozvuchke/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Как заработать своим голосом на озвучке в эпоху клонов</span>
+            <span class="related-sub">Где берут заказы, что изменил синтез речи, какие ниши он не забрал и почему собственный голос выгоднее сдавать в аренду не поштучно, а внутри своего контента.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

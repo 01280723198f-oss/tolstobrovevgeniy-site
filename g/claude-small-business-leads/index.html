@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск клиентов через Claude: сценарий «Лиды» и онбординг плагина</title>
+  <meta name="description" content="Как настроить сценарий «Лиды» в плагине Claude for Small Business: команда /smb-onboard, семь ответов про клиента, режим подтверждения и проверка списка руками.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/claude-small-business-leads/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Поиск клиентов через Claude: сценарий «Лиды» и онбординг плагина">
+  <meta property="og:description" content="Как настроить сценарий «Лиды» в плагине Claude for Small Business: команда /smb-onboard, семь ответов про клиента, режим подтверждения и проверка списка руками.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/claude-small-business-leads/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Поиск клиентов через Claude: сценарий «Лиды» и онбординг плагина">
+  <meta name="twitter:description" content="Как настроить сценарий «Лиды» в плагине Claude for Small Business: команда /smb-onboard, семь ответов про клиента, режим подтверждения и проверка списка руками.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-22">
+  <meta property="article:modified_time" content="2026-09-22">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Поиск клиентов через Claude: сценарий «Лиды» и онбординг плагина","name":"Сценарий «Лиды» в Claude: как перестать собирать не тех клиентов","description":"Как настроить сценарий «Лиды» в плагине Claude for Small Business: команда /smb-onboard, семь ответов про клиента, режим подтверждения и проверка списка руками.","inLanguage":"ru","datePublished":"2026-09-22","dateModified":"2026-09-22","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/claude-small-business-leads/"},"url":"https://tolstobrovevgeniy.ru/g/claude-small-business-leads/","articleSection":"Инструкция","wordCount":838,"timeRequired":"PT7M","keywords":"поиск клиентов с ии, claude for small business, плагин claude для бизнеса, лидогенерация claude, как найти клиентов эксперту, claude cowork"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Сценарий «Лиды» в Claude: как перестать собирать не тех клиентов","item":"https://tolstobrovevgeniy.ru/g/claude-small-business-leads/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Нужен ли платный тариф Claude для плагина?","acceptedAnswer":{"@type":"Answer","text":"Да, плагин доступен на платных планах. Для одного человека хватает личной подписки, для команды Anthropic советует тариф Team, чтобы доступы и данные были общими."}},{"@type":"Question","name":"Claude сам напишет клиентам?","acceptedAnswer":{"@type":"Answer","text":"Нет, если не выключать режим подтверждения. По умолчанию он готовит сообщения и ждёт твоей команды на отправку."}},{"@type":"Question","name":"Можно ли это делать без плагина, в обычном чате?","acceptedAnswer":{"@type":"Answer","text":"Частично. Собрать портрет клиента и написать первое сообщение можно и в чате. Плагин отличается тем, что подтягивает данные из подключённых сервисов и держит сценарий одинаковым от запуска к запуску."}},{"@type":"Question","name":"Сколько лидов в неделю реально обработать одному эксперту?","acceptedAnswer":{"@type":"Answer","text":"Если ты сам ведёшь переписку — тридцать. Дальше упирается не в сбор, а в твои ответы: больше тридцати живых диалогов в неделю один человек не тянет."}},{"@type":"Question","name":"Подойдёт ли это для мягких ниш, где нет CRM?","acceptedAnswer":{"@type":"Answer","text":"Да. Вместо CRM подключаются почта и таблицы. Сценарий работает так же, просто данные лежат в таблице, а не в системе. Кодовое слово: ЛИДЫ"}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Сценарий «Лиды» в Claude: как перестать собирать не тех клиентов</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-22">22 сентября 2026</time>
+        <span>· 7 мин</span>
+      </div>
+      <h1>Сценарий «Лиды» в Claude: как перестать собирать не тех клиентов</h1>
+      <p class="lead">Плагин Claude for Small Business умеет собирать список потенциальных клиентов и готовить первое сообщение каждому. Качество списка решается на онбординге: разбираю семь ответов, которые стоит подготовить заранее</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#gde-eto-zhivet">Где это живёт</a></li><li><a href="#pochemu-onbording-vazhnee-samogo-scenariya">Почему онбординг важнее самого сценария</a></li><li><a href="#sem-otvetov-kotorye-stoit-podgotovit-zaranee">Семь ответов, которые стоит подготовить заранее</a></li><li><a href="#rezhim-podtverzhdeniya-pochemu-eto-vazhno-imenno-ekspertu">Режим подтверждения: почему это важно именно эксперту</a></li><li><a href="#kak-ya-proveryayu-nishu-za-vecher">Как я проверяю нишу за вечер</a></li><li><a href="#pervye-desyat-strok-proveryay-rukami">Первые десять строк проверяй руками</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#nuzhen-li-platnyy-tarif-claude-dlya-plagina">Нужен ли платный тариф Claude для плагина?</a></li><li><a href="#claude-sam-napishet-klientam">Claude сам напишет клиентам?</a></li><li><a href="#mozhno-li-eto-delat-bez-plagina-v-obychnom-chate">Можно ли это делать без плагина, в обычном чате?</a></li><li><a href="#skolko-lidov-v-nedelyu-realno-obrabotat-odnomu-ekspertu">Сколько лидов в неделю реально обработать одному эксперту?</a></li><li><a href="#podoydet-li-eto-dlya-myagkih-nish-gde-net-crm">Подойдёт ли это для мягких ниш, где нет CRM?</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В рилсе я показал, что у плагина Claude для малого бизнеса есть готовый сценарий «Лиды». Здесь — что отвечать на онбординге, чтобы он собирал твоих людей, а не всех подряд.</p>
+<h2 id="gde-eto-zhivet">Где это живёт</h2>
+<p>Плагин называется Claude for Small Business и работает в Claude Cowork — десктопном приложении, где Claude видит твои файлы и подключённые сервисы. 15 сентября 2026 Anthropic расширила его до 43 рабочих сценариев и добавила 27 новых интеграций: Shopify, Salesforce, Stripe, Square, Xero, Zapier, Notion, Apollo, HubSpot, Clay и другие.</p>
+<p>Сценариев там много, но эксперту из мягкой ниши в первый месяц нужны два: «Лиды» и «<a href="/g/otvet-na-zayavku-eksperta/" class="ctx-link">Коммерческое предложение</a>». Остальное — бухгалтерия, найм, склад — подождёт.</p>
+<p>Ставится плагин в приложении, потом ты набираешь команду /smb-onboard, и Claude начинает задавать вопросы. Вот на этих вопросах всё и решается.</p>
+<h2 id="pochemu-onbording-vazhnee-samogo-scenariya">Почему онбординг важнее самого сценария</h2>
+<p>Сценарий «Лиды» делает три вещи: собирает список людей, похожих на твоих клиентов, дополняет его данными из подключённых сервисов и готовит первое сообщение под каждого.</p>
+<p>Слово «похожих» тут главное. Похожих на кого? Если ты ответил на онбординге общо — «я психолог, работаю со взрослыми» — то и список будет общий: все, кто хоть раз написал слово «тревога». Ты получишь двести строк, из которых твоих там десять.</p>
+<p>Ответил узко — получишь тридцать строк, и двадцать из них рабочие.</p>
+<h2 id="sem-otvetov-kotorye-stoit-podgotovit-zaranee">Семь ответов, которые стоит подготовить заранее</h2>
+<p>Выпиши их в блокнот до того, как запустишь команду. Займёт двадцать минут, сэкономит неделю.</p>
+<p><strong>1. Кто платит, а не кто читает.</strong> Не «женщины 25–45», а «руководитель отдела, которого повысили полгода назад и который впервые собирает команду». Читают тебя одни, платят другие.</p>
+<p><strong>2. Признак, который видно снаружи.</strong> По чему ты отличишь такого человека в ленте или в каталоге? Должность в шапке, недавний пост о переезде, открытая вакансия в компании, свежий запуск. Если признак не виден снаружи — он бесполезен для сбора.</p>
+<p><strong>3. Стоп-признаки.</strong> Кого не брать. Коллег по цеху, студентов, охотников за бесплатным, людей из ниши, где ты не работаешь. Этот пункт пропускают чаще всего, а он режет мусор сильнее остальных.</p>
+<p><strong>4. Откуда брать.</strong> Один-два источника, не десять. Каталог, профессиональное сообщество, комментарии под разбором конкурента, участники конференции.</p>
+<p><strong>5. Сколько.</strong> Назови число. Тридцать в неделю — нормальный темп для одного человека, который сам ведёт переписку. Триста — это уже не лидген, а рассылка, и отвечать ты на них не будешь.</p>
+<p><strong>6. Тон первого касания.</strong> Не «продающий скрипт», а как ты реально пишешь незнакомому человеку. Дай Claude два своих настоящих сообщения из переписки — он заберёт ритм и лексику лучше, чем из описания.</p>
+<p><strong>7. Что считается успехом.</strong> Ответ? Созвон? Подписка на канал? От этого зависит, чем заканчивается первое сообщение.</p>
+<h2 id="rezhim-podtverzhdeniya-pochemu-eto-vazhno-imenno-ekspertu">Режим подтверждения: почему это важно именно эксперту</h2>
+<p>По умолчанию каждый сценарий стоит в режиме подтверждения. Claude готовит работу, показывает её и ждёт. Ничего не отправляется, не публикуется и не оплачивается, пока ты не разрешил.</p>
+<p>Для эксперта это не мелкая настройка, а условие, при котором вообще можно подпускать агента к переписке. Репутация у тебя одна, и она держится на том, что твои сообщения пишет человек. Агент собирает, ты правишь и отправляешь.</p>
+<p>Не выключай этот режим ради скорости. Скорость в лидгене даёт не автоотправка, а то, что список уже собран и первое сообщение уже написано.</p>
+<h2 id="kak-ya-proveryayu-nishu-za-vecher">Как я проверяю нишу за вечер</h2>
+<p>Отдельный способ применить тот же сценарий не для продаж, а для разведки.</p>
+<p>Прошу собрать тридцать профилей по признакам из пункта 2 и вытащить из их собственных публикаций, о чём они пишут чаще всего: какие вопросы задают, на что жалуются, что покупали недавно.</p>
+<p>Получается срез болей их словами, а не моими догадками. Дальше две проверки: встречается ли одна и та же формулировка хотя бы у пяти человек из тридцати, и платят ли они уже кому-то за решение. Если формулировка одна и деньги ходят — нишу можно брать, оффер пишется почти сам.</p>
+<p>Неделю опросов это не заменяет, но экономит первые три дня.</p>
+<h2 id="pervye-desyat-strok-proveryay-rukami">Первые десять строк проверяй руками</h2>
+<p>Когда список готов, не запускай переписку целиком. Возьми первые десять карточек и открой их вручную.</p>
+<p>Смотришь три вещи: человек действительно подходит под признак, данные свежие, первое сообщение не выглядит как рассылка. Если из десяти мимо больше трёх — возвращайся к онбордингу и сужай признаки. Это быстрее, чем чинить результат на трёхстах строках.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="nuzhen-li-platnyy-tarif-claude-dlya-plagina">Нужен ли платный тариф Claude для плагина?</h2>
+<p>Да, плагин доступен на платных планах. Для одного человека хватает личной подписки, для команды Anthropic советует тариф Team, чтобы доступы и данные были общими.</p>
+<h2 id="claude-sam-napishet-klientam">Claude сам напишет клиентам?</h2>
+<p>Нет, если не выключать режим подтверждения. По умолчанию он готовит сообщения и ждёт твоей команды на отправку.</p>
+<h2 id="mozhno-li-eto-delat-bez-plagina-v-obychnom-chate">Можно ли это делать без плагина, в обычном чате?</h2>
+<p>Частично. Собрать портрет клиента и написать первое сообщение можно и в чате. <a href="/g/claude-plugins-guide/" class="ctx-link">Плагин отличается</a> тем, что подтягивает данные из подключённых сервисов и держит сценарий одинаковым от запуска к запуску.</p>
+<h2 id="skolko-lidov-v-nedelyu-realno-obrabotat-odnomu-ekspertu">Сколько лидов в неделю реально обработать одному эксперту?</h2>
+<p>Если ты сам ведёшь переписку — тридцать. Дальше упирается не в сбор, а в твои ответы: больше тридцати живых диалогов в неделю один человек не тянет.</p>
+<h2 id="podoydet-li-eto-dlya-myagkih-nish-gde-net-crm">Подойдёт ли это для мягких ниш, где нет CRM?</h2>
+<p>Да. Вместо CRM подключаются почта и таблицы. Сценарий работает так же, просто данные лежат в таблице, а не в системе.</p>
+<p><a href="/g/codeword-funnel-chain/" class="ctx-link">Кодовое слово</a>: ЛИДЫ</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/otvet-na-zayavku-eksperta/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Ответ на заявку за час: что писать и три вопроса до разговора о цене</span>
+            <span class="related-sub">Продажа эксперта рушится не на прайсе, а на сутках молчания. Схема первого ответа из четырёх строк, три вопроса, которые отсеивают не твоих, и что отвечать на «дорого»</span>
+          </a>
+          <a class="related-card" href="/g/chatgpt-developer-mode-plugins/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Режим разработчика в ChatGPT: как подключить свои приложения</span>
+            <span class="related-sub">Developer mode открывает полный доступ к MCP: ChatGPT не только читает данные сервиса, но и выполняет в нём действия. Разбираю настройку по шагам, тарифы и риски, о которых молчат в роликах</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-os/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Claude Code — это не чат. Это операционная система твоего бизнеса</span>
+            <span class="related-sub">Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</span>
+          </a>
+          <a class="related-card" href="/g/chatgpt-work-gpt-6-astra/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">GPT-6 Astra в ChatGPT Work: что умеет и нужна ли она эксперту</span>
+            <span class="related-sub">OpenAI научила ChatGPT самому кликать по программам на компьютере. Разбираю по официальному описанию, что это меняет для эксперта и блогера, где риски и когда всё равно брать Claude</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
