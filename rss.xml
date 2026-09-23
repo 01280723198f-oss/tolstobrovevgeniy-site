@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 23 Sep 2026 08:41:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 08:56:48 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Пять сервисов, которые собирают ролик из обычного текста</title>
+      <link>https://tolstobrovevgeniy.ru/g/video-iz-teksta-5-servisov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-iz-teksta-5-servisov/</guid>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Вставляешь сценарий, статью или пост — забираешь видео со сценами, субтитрами и озвучкой. Разбираю все пять: что каждый умеет, под какую задачу его брать и где начинаются ограничения</description>
+    </item>
     <item>
       <title>Протокол: как собрать свою команду в Claude Code за вечер</title>
       <link>https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Разбор по шагам — что нужно для входа, почему регистрация срывается на номере телефона, чем отличается веб-версия от приложения и терминала, и какие ошибки вылезают у всех.</description>
-    </item>
-    <item>
-      <title>Как экономить токены: из чего складывается счёт</title>
-      <link>https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kak-ekonomit-tokeny/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Claude Code</category>
-      <description>Разбор цены запроса по частям — вход, выход, кэш и повторное чтение контекста. Девять приёмов, которые снижают расход в разы, и способ увидеть, куда именно уходят токены.</description>
     </item>
   </channel>
 </rss>
