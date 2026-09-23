@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 22 Sep 2026 15:16:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 08:41:04 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Протокол: как собрать свою команду в Claude Code за вечер</title>
+      <link>https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/</guid>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Команда — это не длинный промпт, а папка с текстовым файлом. Разбираю протокол сборки по пунктам и показываю на пяти своих командах, которые каждый день делают карусели, рилсы, статьи, посты и разборы каналов</description>
+    </item>
     <item>
       <title>18 команд Claude Code, которыми я управляю контент-заводом</title>
       <link>https://tolstobrovevgeniy.ru/g/18-claude-commands-content-factory/</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
       <category>Claude Code</category>
       <description>Разбор цены запроса по частям — вход, выход, кэш и повторное чтение контекста. Девять приёмов, которые снижают расход в разы, и способ увидеть, куда именно уходят токены.</description>
-    </item>
-    <item>
-      <title>Claude Code, Codex и Cursor: три разных способа работать</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-vs-codex-vs-cursor/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-vs-codex-vs-cursor/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Сравнение не по бенчмаркам, а по устройству работы — кто где живёт, кто кем управляет, что происходит с контекстом проекта и под какие задачи каждый из трёх подходит.</description>
     </item>
   </channel>
 </rss>

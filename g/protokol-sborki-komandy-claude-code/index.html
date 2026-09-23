@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как создать свою команду (скилл) в Claude Code: протокол сборки</title>
+  <meta name="description" content="Пошаговый протокол: из чего состоит скилл Claude Code, как написать описание-триггер, какие правила вшить и как проверить команду на живой задаче. С разбором пяти рабочих команд контент-завода.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Как создать свою команду (скилл) в Claude Code: протокол сборки">
+  <meta property="og:description" content="Пошаговый протокол: из чего состоит скилл Claude Code, как написать описание-триггер, какие правила вшить и как проверить команду на живой задаче. С разбором пяти рабочих команд контент-завода.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Как создать свою команду (скилл) в Claude Code: протокол сборки">
+  <meta name="twitter:description" content="Пошаговый протокол: из чего состоит скилл Claude Code, как написать описание-триггер, какие правила вшить и как проверить команду на живой задаче. С разбором пяти рабочих команд контент-завода.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-23">
+  <meta property="article:modified_time" content="2026-09-23">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Как создать свою команду (скилл) в Claude Code: протокол сборки","name":"Протокол: как собрать свою команду в Claude Code за вечер","description":"Пошаговый протокол: из чего состоит скилл Claude Code, как написать описание-триггер, какие правила вшить и как проверить команду на живой задаче. С разбором пяти рабочих команд контент-завода.","inLanguage":"ru","datePublished":"2026-09-23","dateModified":"2026-09-23","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/"},"url":"https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/","articleSection":"Инструкция","wordCount":870,"timeRequired":"PT9M","keywords":"claude code скиллы, как создать скилл claude code, своя команда claude code, skill md claude, автоматизация контента claude code, claude code для эксперта"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Протокол: как собрать свою команду в Claude Code за вечер","item":"https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Протокол: как собрать свою команду в Claude Code за вечер</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-23">23 сентября 2026</time>
+        <span>· 9 мин</span>
+      </div>
+      <h1>Протокол: как собрать свою команду в Claude Code за вечер</h1>
+      <p class="lead">Команда — это не длинный промпт, а папка с текстовым файлом. Разбираю протокол сборки по пунктам и показываю на пяти своих командах, которые каждый день делают карусели, рилсы, статьи, посты и разборы каналов</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#komanda-eto-papka-a-ne-dlinnyy-prompt">Команда — это папка, а не длинный промпт</a></li><li><a href="#chto-lezhit-vnutri-fayla">Что лежит внутри файла</a></li><li><a href="#protokol-sborki-shest-punktov">Протокол сборки: шесть пунктов</a></li><li><a href="#pyat-komand-kotorye-ya-gonyayu-kazhdyy-den">Пять команд, которые я гоняю каждый день</a></li><li><a href="#tri-oshibki-na-kotoryh-ya-poteryal-vremya">Три ошибки, на которых я потерял время</a></li><li><a href="#chto-sdelat-segodnya">Что сделать сегодня</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li><li><a href="#esli-hochesh-takoy-zhe-nabor-pod-sebya">Если хочешь такой же набор под себя</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В карусели я показал пять команд и то, что каждая выдаёт на выходе. Здесь — протокол: из чего команда собрана внутри и как написать первую свою, не будучи программистом.</p>
+<h2 id="komanda-eto-papka-a-ne-dlinnyy-prompt">Команда — это папка, а не длинный промпт</h2>
+<p>Первые месяцы я работал так: открывал чат и писал простыню. Кто я, какая ниша, каким голосом пишем, что нельзя, какие цифры настоящие. Три-четыре абзаца перед каждой задачей.</p>
+<p>Результат плавал. Сегодня попал в голос, завтра нет — потому что простыня каждый раз получалась чуть другой.</p>
+<p>Команда убирает эту случайность. Физически это папка с одним текстовым файлом внутри. В файле записано то, что я раньше диктовал голосом: что делаем, в каком порядке, на какие грабли не наступаем. Дальше вместо простыни я пишу одно слово — и <a href="/g/free-voice-clone/" class="ctx-link">модель читает</a> файл сама.</p>
+<p>Никакого кода там нет. Обычный текст, который вы бы надиктовали помощнику в первый рабочий день.</p>
+<h2 id="chto-lezhit-vnutri-fayla">Что лежит внутри файла</h2>
+<p>Разберу по слоям, в том порядке, в котором их читает модель.</p>
+<p><strong>Описание-триггер.</strong> Самая верхняя часть файла отвечает на один вопрос: когда эту команду вообще звать. Пишется не для красоты — по этим словам модель решает, подходит ли команда к задаче. Поэтому туда идут живые формулировки, которыми вы сами просите: «сделай карусель», «напиши пост», «разбери канал». Чем ближе к вашей речи, тем точнее срабатывает.</p>
+<p><strong>Порядок шагов.</strong> Что делаем первым, что вторым. Не «напиши хорошо», а «сначала подними контекст, потом собери смысл, потом текст, в конце проверь по чек-листу».</p>
+<p><strong>Жёсткие правила.</strong> Короткие запреты и обязательства. У меня это, например: цифры только из своих логов, чужие — со ссылкой на источник. Нет цифры — нет строчки.</p>
+<p><strong>Грабли.</strong> Отдельный раздел, куда я дописываю каждый провал. Один раз конвейер отдал полностью чёрный кадр, и он ушёл дальше как готовый. Теперь в файле стоит проверка: смотреть глазами до отправки. Такие строчки стоят дороже всего остального — они написаны кровью.</p>
+<p><strong>Чек-лист на выходе.</strong> Пять-семь пунктов, по которым видно: работа готова или нет.</p>
+<h2 id="protokol-sborki-shest-punktov">Протокол сборки: шесть пунктов</h2>
+<p>Это то, что я повторяю каждый раз, когда завожу новую команду.</p>
+<p><strong>1. Берём задачу, которую делали руками минимум три раза.</strong> Не гипотетическую, а ту, что уже надоела. Первая команда из любопытства обычно умирает: её не к чему применить.</p>
+<p><strong>2. Делаем задачу ещё раз и записываем, что делали.</strong> Прямо по шагам, своими словами. Это и есть черновик файла. Не пытайтесь сразу писать красиво — красиво потом.</p>
+<p><strong>3. Выносим правила отдельно.</strong> Всё, что вы держите в голове по умолчанию: где брать факты, чего никогда не делать, каким голосом говорить. Модель этого не знает и додумает по-своему.</p>
+<p><strong>4. Пишем описание-триггер.</strong> Перечислите пять-шесть фраз, которыми вы обычно ставите эту задачу. Именно они включают команду.</p>
+<p><strong>5. Прогоняем на живой задаче.</strong> Не на выдуманной. Первый прогон почти всегда вскрывает две-три дыры — это нормально, для того он и нужен.</p>
+<p><strong>6. Дописываем после первой ошибки.</strong> Команда становится рабочей не в момент, когда вы её написали, а после третьего-четвёртого прогона, когда грабли собраны.</p>
+<h2 id="pyat-komand-kotorye-ya-gonyayu-kazhdyy-den">Пять команд, которые я гоняю каждый день</h2>
+<p>Чтобы протокол не висел в воздухе — вот что из него выросло.</p>
+<p><strong>Карусель.</strong> На входе тема, на выходе восемь слайдов формата 1080×1350 в готовом стиле. Шрифты, сетка и палитра зашиты внутрь, поэтому выбирать нечего: команда не спрашивает, каким кеглем набрать заголовок.</p>
+<p><strong>Рилс.</strong> Берёт моё видео, ставит крупный заголовок, подкладывает музыку и пишет описание под пост. Дальше я только смотрю и выкладываю.</p>
+<p><strong>Статья.</strong> Под каждое <a href="/g/codeword-funnel-chain/" class="ctx-link">кодовое слово</a> выпускает страницу на сайте. Пост греет, статья дожимает — эта, кстати, собрана той же командой.</p>
+<p><strong>Постодел.</strong> Пишет пост моим голосом, а не обобщённым нейросетевым. Внутри вшит профиль голоса: длина фраз, любимые обороты, запрет на канцелярит.</p>
+<p><strong>Разбор канала.</strong> Читает архив канала и собирает отчёт: где читатель теряется по пути к покупке, какие проблемы и что делать на неделе.</p>
+<p>Пятёрка закрывает весь цикл: придумать, собрать, оформить, выложить, посмотреть что зашло.</p>
+<h2 id="tri-oshibki-na-kotoryh-ya-poteryal-vremya">Три ошибки, на которых я потерял время</h2>
+<p><strong>Слишком широкая команда.</strong> «Делай мне контент» не работает. Команда должна закрывать один конкретный шаг, иначе она превращается в ту же простыню, только в файле.</p>
+<p><strong>Нет раздела «чего не делать».</strong> Без запретов модель каждый раз изобретает новый вариант. Один абзац запретов экономит часы правок.</p>
+<p><strong>Цифры внутри команды.</strong> Если вшить в файл конкретные числа, через месяц они устареют и начнут расходиться с правдой. В файле должно стоять правило «бери из логов», а не само число.</p>
+<h2 id="chto-sdelat-segodnya">Что сделать сегодня</h2>
+<p>Выберите одну задачу, которую делали руками три раза и больше. Не самую сложную — самую надоевшую.</p>
+<p>Сделайте её ещё раз и параллельно запишите шаги в обычный текстовый файл. Добавьте пять запретов и пять фраз, которыми вы эту задачу ставите.</p>
+<p>Всё. Первая команда готова к первому прогону, дальше она дорастёт сама.</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<ul>
+<li><a href="guide.html?id=18-claude-commands-content-factory">18 команд Claude Code, которыми я управляю контент-заводом</a> — весь список целиком</li>
+<li><a href="guide.html?id=10-carousels-one-morning">Как завод собирает десять каруселей за одно утро</a> — что происходит после того, как команда написана</li>
+<li><a href="guide.html?id=how-factory-clones-design">Как завод клонирует чужой дизайн</a> — откуда берётся форма для слайдов</li>
+</ul>
+<h2 id="esli-hochesh-takoy-zhe-nabor-pod-sebya">Если хочешь такой же набор под себя</h2>
+<p>Протокол выше — рабочий, но он про одну команду. Когда их становится пять и они начинают дёргать друг друга по расписанию, нужен уже не файл, а система: какие команды заводить первыми, как они передают работу дальше и где всё это хранится.</p>
+<p>Это я собрал в [<a href="/g/micro-product-evening/" class="ctx-link">МИКРО-ПРОДУКТ</a>]: [ССЫЛКА-МИКРО]</p>
+<p>А если хочешь просто смотреть, как завод строится дальше — я показываю каждый шаг, включая те, что не сработали.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/write-your-own-skill/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Свой скилл для Claude за один вечер</span>
+            <span class="related-sub">Из чего состоит скилл, почему описание — главная строка файла, какие запреты работают лучше просьб и как проверить всё это тремя задачами.</span>
+          </a>
+          <a class="related-card" href="/g/content-department-build-order/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</span>
+            <span class="related-sub">Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</span>
+          </a>
+          <a class="related-card" href="/g/three-setup-files/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Три файла, которые делают из Claude сотрудника</span>
+            <span class="related-sub">Правила проекта, память и голос: что писать внутри каждого файла, чего писать не надо, в каком порядке собирать и почему нормально они заработают только через неделю.</span>
+          </a>
+          <a class="related-card" href="/g/hour-from-bare-to-factory/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Час, за который голый Claude Code превращается в работающий завод</span>
+            <span class="related-sub">Шесть блоков по 10 минут: установка, CLAUDE.md, память, первые скиллы, хуки и первый прогон — от голой установки до среды работы.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
