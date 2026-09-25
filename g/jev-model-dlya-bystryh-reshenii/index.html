@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jev + Claude Code: что за модель и зачем она нужна вайбкодеру</title>
+  <meta name="description" content="Jev — модель для быстрых дешёвых решений внутри автоматизаций. Разбираю, как её сочетают с Claude Code, в чём разница подходов и стоит ли добавлять связку себе.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Jev + Claude Code: что за модель и зачем она нужна вайбкодеру">
+  <meta property="og:description" content="Jev — модель для быстрых дешёвых решений внутри автоматизаций. Разбираю, как её сочетают с Claude Code, в чём разница подходов и стоит ли добавлять связку себе.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jev + Claude Code: что за модель и зачем она нужна вайбкодеру">
+  <meta name="twitter:description" content="Jev — модель для быстрых дешёвых решений внутри автоматизаций. Разбираю, как её сочетают с Claude Code, в чём разница подходов и стоит ли добавлять связку себе.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-26">
+  <meta property="article:modified_time" content="2026-09-26">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Jev + Claude Code: что за модель и зачем она нужна вайбкодеру","name":"Jev — модель для быстрых решений, которую пристёгивают к Claude Code","description":"Jev — модель для быстрых дешёвых решений внутри автоматизаций. Разбираю, как её сочетают с Claude Code, в чём разница подходов и стоит ли добавлять связку себе.","inLanguage":"ru","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/"},"url":"https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/","articleSection":"Разбор","wordCount":726,"timeRequired":"PT6M","keywords":"jev модель, jev claude code, быстрая ии модель для автоматизаций, связка моделей ии, claude code автоматизация, дешёвая модель для решений"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"Jev — модель для быстрых решений, которую пристёгивают к Claude Code","item":"https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>Jev — модель для быстрых решений, которую пристёгивают к Claude Code</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-09-26">26 сентября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Jev — модель для быстрых решений, которую пристёгивают к Claude Code</h1>
+      <p class="lead">Разбираю, что такое Jev на самом деле, зачем её сочетают с Claude Code и стоит ли тащить эту связку в свои автоматизации</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-takoe-jev-na-samom-dele">Что такое Jev на самом деле</a></li><li><a href="#pochemu-eto-voobsche-vazhno-dlya-vaybkodera">Почему это вообще важно для вайбкодера</a></li><li><a href="#kak-eto-sootnositsya-s-tem-chto-ya-delayu-v-skillah">Как это соотносится с тем, что я делаю в скиллах</a></li><li><a href="#chto-ya-planiruyu-delat-dalshe">Что я планирую делать дальше</a></li><li><a href="#stoit-li-taschit-k-sebe-pryamo-seychas">Стоит ли тащить к себе прямо сейчас</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li><li><a href="#esli-hochesh-stroit-sistemu-a-ne-testirovat-instrumenty-po-o">Если хочешь строить систему, а не тестировать инструменты по одному</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я обещал разобрать, что за модель Jev и стоит ли тащить её к себе в связку с <a href="/g/cex/" class="ctx-link">Claude Code</a>. Смотри, что удалось выяснить.</p>
+<h2 id="chto-takoe-jev-na-samom-dele">Что такое Jev на самом деле</h2>
+<p>Jev — это не ещё один чат-бот и не конкурент Claude в написании текстов. Разработчики описывают её предельно узко: модель для быстрых и дешёвых решений внутри автоматизаций, а не для диалога или генерации контента.</p>
+<p>То есть Jev не пишет тебе пост и не объясняет код — она отвечает на вопросы вида &quot;какой из этих десяти вариантов выбрать&quot; за доли секунды и по минимальной цене. Это принципиально другая задача, чем у Claude или GPT.</p>
+<p>Блогеры, которые тестировали связку — в частности разборы на каналах Jay E | RoboNuggets и Nate Herk — уже пристёгивают Jev к <a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a> как второй мозг: мелкие решения и рутинную маршрутизацию отдают ей, а сложную работу — написание кода, архитектурные решения, объяснения — оставляют Claude.</p>
+<p>По их словам, скорость на такой связке вырастает кратно. Это заявление блогеров, не официальная цифра от разработчиков — поэтому дальше я показываю, как проверить это на своих задачах, а не полагаться на чужой бенчмарк.</p>
+<h2 id="pochemu-eto-voobsche-vazhno-dlya-vaybkodera">Почему это вообще важно для вайбкодера</h2>
+<p>Есть узнаваемая боль: половину времени в <a href="/g/ai-agent-10-minutes/" class="ctx-link">Claude Code</a> уходит не на сам код, а на то, чтобы решить, какой из вариантов реализации выбрать, какой файл трогать первым, стоит ли переписывать функцию или патчить точечно.</p>
+<p>Каждое такое микро-решение стоит денег (токены дорогой модели), времени (модель &quot;думает&quot; над тем, что можно решить правилом) и, честно говоря, твоего терпения — ты ждёшь ответа на вопрос, который сам мог бы решить за секунду, если бы не было пятнадцати похожих вопросов до этого за день.</p>
+<p>Идея Jev ровно про снятие этой боли: дешёвая быстрая модель разгружает дорогую от мелочи, а дорогая модель наконец занимается только тем, ради чего её и держат — сложной работой.</p>
+<h2 id="kak-eto-sootnositsya-s-tem-chto-ya-delayu-v-skillah">Как это соотносится с тем, что я делаю в скиллах</h2>
+<p>По сути, это тот же принцип, что я уже использую у себя в скиллах контент-завода: не гонять дорогую модель туда, где хватит короткого правила, скрипта на Python или дешёвого прогона. Гейт тишины в сборке роликов, проверка длины текста, фильтр клише — всё это специально вынесено в обычный код, чтобы не тратить дорогие токены на то, что решается if-ом.</p>
+<p>Jev делает похожую вещь, но на уровне отдельной модели, а не скрипта: там, где раньше приходилось звать большую модель ради простого выбора, теперь можно позвать маленькую и быструю.</p>
+<h2 id="chto-ya-planiruyu-delat-dalshe">Что я планирую делать дальше</h2>
+<p>Пока я смотрю на связку Jev + Claude Code со стороны и тестирую на автоматизациях для собственного завода — не хочу тащить в рабочий процесс инструмент, который проверил только по чужим роликам. Как только будет что показать на своих задачах, а не на пересказе блогеров, покажу честно, с цифрами и без прикрас.</p>
+<p>Если ты уже щупал Jev на своих сценариях — это ровно тот случай, где раннее тестирование даёт преимущество: инструмент новый, конкуренция за то, чтобы понять его первым, ещё не устаканилась.</p>
+<h2 id="stoit-li-taschit-k-sebe-pryamo-seychas">Стоит ли тащить к себе прямо сейчас</h2>
+<p>Если у тебя в Claude Code уже есть автоматизации с явными точками &quot;выбери один из нескольких вариантов&quot; — да, есть смысл попробовать Jev именно в этих точках, а не переписывать весь пайплайн. Если таких точек ещё нет и ты в основном пишешь код руками через диалог — сначала наведи порядок в самом процессе, а уже потом добавляй вторую модель.</p>
+<p>Про то, как выбрать инструмент под задачу, а не тащить всё подряд, я писал в разборе <a href="guide.html?id=claude-code-vs-codex-vs-cursor">Claude Code vs Codex vs Cursor</a>. А если токены и так утекают быстрее, чем хочется — начни с <a href="guide.html?id=kak-ekonomit-tokeny">экономии токенов в Claude Code</a>, это база, которая работает независимо от того, добавляешь ты вторую модель или нет.</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<ul>
+<li><a href="guide.html?id=claude-code-vs-codex-vs-cursor">Claude Code vs Codex vs Cursor</a> — как выбирать инструмент под конкретную задачу</li>
+<li><a href="guide.html?id=kak-ekonomit-tokeny">Как экономить токены в Claude Code</a> — база, которая работает с любой связкой моделей</li>
+<li><a href="guide.html?id=own-automations-on-code">Свои автоматизации на коде, а не на подписках</a> — общий принцип &quot;код вместо дорогой модели там, где можно&quot;</li>
+</ul>
+<h2 id="esli-hochesh-stroit-sistemu-a-ne-testirovat-instrumenty-po-o">Если хочешь строить систему, а не тестировать инструменты по одному</h2>
+<p>Собрать связку моделей, скриптов и правил в единый конвейер — задача не на один вечер, если делать её с нуля методом проб. Я прохожу этот путь на собственном заводе и показываю, что реально работает, а что оказалось шумихой.</p>
+<p>Всю логику постройки такого конвейера собрал в [МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</p>
+<p>А если пока просто любопытно смотреть на процесс — залетай в канал, показываю каждый шаг вживую.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/claude-opus-5-5-limity/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Anthropic подняла лимиты вместе с выходом Opus 5.5</span>
+            <span class="related-sub">Разбираю официальный анонс: что реально изменилось в модели, почему выросли лимиты на Pro/Max/Team и как это использовать в вайбкодинге, а не просто радоваться цифрам</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-vs-codex-vs-cursor/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Claude Code, Codex и Cursor: три разных способа работать</span>
+            <span class="related-sub">Сравнение не по бенчмаркам, а по устройству работы — кто где живёт, кто кем управляет, что происходит с контекстом проекта и под какие задачи каждый из трёх подходит.</span>
+          </a>
+          <a class="related-card" href="/g/zarabotok-na-sessiyah-claude-code/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Как получать деньги за обычные сессии в Claude Code</span>
+            <span class="related-sub">Разбираю сервис Trajector от PublicAI: как подключиться, что он видит в твоём репозитории и на что смотреть перед тем, как давать доступ</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-vs-cursor/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Claude Code или Cursor: чем они вообще отличаются</span>
+            <span class="related-sub">Не «что лучше», а что каждый делает по своей природе — агент-исполнитель против усилителя в редакторе. Разбор по задачам, с честными минусами обоих.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

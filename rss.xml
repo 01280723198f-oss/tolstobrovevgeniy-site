@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 23 Sep 2026 08:56:48 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 22:51:31 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Anthropic подняла лимиты вместе с выходом Opus 5.5</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-opus-5-5-limity/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-opus-5-5-limity/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю официальный анонс: что реально изменилось в модели, почему выросли лимиты на Pro/Max/Team и как это использовать в вайбкодинге, а не просто радоваться цифрам</description>
+    </item>
+    <item>
+      <title>Jev — модель для быстрых решений, которую пристёгивают к Claude Code</title>
+      <link>https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю, что такое Jev на самом деле, зачем её сочетают с Claude Code и стоит ли тащить эту связку в свои автоматизации</description>
+    </item>
+    <item>
+      <title>ИИ-агенту 12 дней — он сам написал профессору с просьбой о работе</title>
+      <link>https://tolstobrovevgeniy.ru/g/ii-agent-pip-ishet-rabotu/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-agent-pip-ishet-rabotu/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю сюжет CNN про агента Пипа с платформы iLands: что значит постоянная жизнь у ИИ-агента и почему это касается не только исследователей</description>
+    </item>
+    <item>
+      <title>Разбор схемы заработка на ИИ-персонажах из ролика на 3 млн просмотров</title>
+      <link>https://tolstobrovevgeniy.ru/g/zarabotok-na-ii-personazhah/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zarabotok-na-ii-personazhah/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Раскладываю по шагам схему Марка Тилбери: фото, голос, оживление и запуск аккаунта без единой живой съёмки — и что из неё реально стоит забирать себе</description>
+    </item>
+    <item>
+      <title>Как получать деньги за обычные сессии в Claude Code</title>
+      <link>https://tolstobrovevgeniy.ru/g/zarabotok-na-sessiyah-claude-code/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zarabotok-na-sessiyah-claude-code/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю сервис Trajector от PublicAI: как подключиться, что он видит в твоём репозитории и на что смотреть перед тем, как давать доступ</description>
+    </item>
     <item>
       <title>Пять сервисов, которые собирают ролик из обычного текста</title>
       <link>https://tolstobrovevgeniy.ru/g/video-iz-teksta-5-servisov/</link>
@@ -126,46 +166,6 @@
       <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Почему таблицы «лучшего времени» из интернета не работают, как за две недели вычислить собственные окна в Telegram, ВК и Instagram и что важнее времени публикации.</description>
-    </item>
-    <item>
-      <title>Сайты для озвучки своим голосом: что выбрать и где подвох</title>
-      <link>https://tolstobrovevgeniy.ru/g/sayt-dlya-ozvuchki-svoim-golosom/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sayt-dlya-ozvuchki-svoim-golosom/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Сравнение подходов — облачные сервисы, локальные модели и гибрид. Чем они отличаются по качеству, цене и правам на голос, и что выбрать под задачу: ролики, курсы, озвучку статей.</description>
-    </item>
-    <item>
-      <title>Озвучка видео своим голосом: конвейер вместо микрофона</title>
-      <link>https://tolstobrovevgeniy.ru/g/ozvuchka-video-svoim-golosom/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ozvuchka-video-svoim-golosom/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Как собрать цепочку «текст → клон голоса → дорожка в ролике», чтобы выпускать видео каждый день и не садиться к микрофону. Тайминг, липсинк, типичные ошибки и проверка на слух.</description>
-    </item>
-    <item>
-      <title>Купить аккаунт Claude: что получаешь на самом деле</title>
-      <link>https://tolstobrovevgeniy.ru/g/kupit-akkaunt-claude/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kupit-akkaunt-claude/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбор рынка перепродажи доступов — почему такие аккаунты блокируют, что теряется вместе с ними, сколько это стоит на дистанции и какие легальные варианты решают ту же задачу.</description>
-    </item>
-    <item>
-      <title>Как заработать своим голосом на озвучке в эпоху клонов</title>
-      <link>https://tolstobrovevgeniy.ru/g/kak-zarabotat-golosom-na-ozvuchke/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kak-zarabotat-golosom-na-ozvuchke/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Где берут заказы, что изменил синтез речи, какие ниши он не забрал и почему собственный голос выгоднее сдавать в аренду не поштучно, а внутри своего контента.</description>
-    </item>
-    <item>
-      <title>Как пользоваться Claude в России: доступ, регистрация и что ломается</title>
-      <link>https://tolstobrovevgeniy.ru/g/kak-polzovatsya-claude-v-rossii/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kak-polzovatsya-claude-v-rossii/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Разбор по шагам — что нужно для входа, почему регистрация срывается на номере телефона, чем отличается веб-версия от приложения и терминала, и какие ошибки вылезают у всех.</description>
     </item>
   </channel>
 </rss>
