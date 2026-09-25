@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Торговый бот на Claude Code: разбор и риски автоматизации — Евгений Толстобров</title>
+  <meta name="description" content="Разбираю, как через Claude Code собирают алгоритмического торгового бота без написания кода руками. Все шаги, риски автоматической торговли и что проверить перед реальным счётом.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Торговый бот на Claude Code: разбор и риски автоматизации — Евгений Толстобров">
+  <meta property="og:description" content="Разбираю, как через Claude Code собирают алгоритмического торгового бота без написания кода руками. Все шаги, риски автоматической торговли и что проверить перед реальным счётом.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Торговый бот на Claude Code: разбор и риски автоматизации — Евгений Толстобров">
+  <meta name="twitter:description" content="Разбираю, как через Claude Code собирают алгоритмического торгового бота без написания кода руками. Все шаги, риски автоматической торговли и что проверить перед реальным счётом.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-26">
+  <meta property="article:modified_time" content="2026-09-26">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Торговый бот на Claude Code: разбор и риски автоматизации","name":"Собрали торгового бота на бирже, не написав ни строчки кода руками","description":"Разбираю, как через Claude Code собирают алгоритмического торгового бота без написания кода руками. Все шаги, риски автоматической торговли и что проверить перед реальным счётом.","inLanguage":"ru","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/"},"url":"https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/","articleSection":"Разбор","wordCount":742,"timeRequired":"PT6M","keywords":"торговый бот claude code, алгоритмическая торговля ии, грид стратегия ии, вайбкодинг для трейдинга, claude code автоматизация, claude code delta exchange"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"Собрали торгового бота на бирже, не написав ни строчки кода руками","item":"https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>Собрали торгового бота на бирже, не написав ни строчки кода руками</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-09-26">26 сентября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Собрали торгового бота на бирже, не написав ни строчки кода руками</h1>
+      <p class="lead">Разбираю партнёрский ролик Delta Exchange: как грид-стратегия на BTC собирается через Claude Code, и на что смотреть перед тем, как подключать реальный счёт</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-za-rolik-i-kto-ego-sdelal">Что за ролик и кто его сделал</a></li><li><a href="#shagi-po-poryadku">Шаги по порядку</a></li><li><a href="#pochemu-eto-rabotaet-ne-tolko-dlya-treydinga">Почему это работает не только для трейдинга</a></li><li><a href="#gde-zdes-nastoyaschiy-risk">Где здесь настоящий риск</a></li><li><a href="#chto-ya-delayu-sam-s-takimi-zadachami">Что я делаю сам с такими задачами</a></li><li><a href="#chto-stoit-sdelat-pered-tem-kak-povtoryat-eto-u-sebya">Что стоит сделать перед тем, как повторять это у себя</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li><li><a href="#esli-hochesh-stroit-avtomatizacii-osoznanno-a-ne-po-gotovomu">Если хочешь строить автоматизации осознанно, а не по готовому шаблону</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я обещал разобрать все шаги сборки торгового бота и сказать, на что смотреть перед тем, как подключать реальный счёт. Вот разбор.</p>
+<h2 id="chto-za-rolik-i-kto-ego-sdelal">Что за ролик и кто его сделал</h2>
+<p>Разбор опубликован от лица биржи Delta Exchange India — это партнёрский контент самой площадки, а не независимый обзор стороннего блогера. В описании к видео стоит реферальная ссылка на открытие счёта. Это не значит, что информация недостоверна, но при чтении любых цифр доходности стоит держать в голове, кто заинтересован в том, чтобы ты открыл счёт.</p>
+<p>Суть ролика: превратить торговую идею в рабочую автоматическую систему на BTC через связку <a href="/g/cex/" class="ctx-link">Claude Code</a>, VS Code и API самой биржи — без написания кода вручную.</p>
+<h2 id="shagi-po-poryadku">Шаги по порядку</h2>
+<p><strong>Сформулировать торговую идею.</strong> Отправная точка — не код, а понятная человеку идея стратегии: в данном случае грид-стратегия, то есть расстановка ордеров на покупку и продажу через равные ценовые интервалы, независимо от направления движения цены.</p>
+<p><strong>Настроить окружение.</strong> VS Code и <a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a> ставятся как рабочая среда, куда дальше будут поступать инструкции по разработке.</p>
+<p><strong>Подключить живые данные.</strong> Система подключается к живым котировкам с биржи, чтобы алгоритм видел реальную цену, а не тестовые данные.</p>
+<p><strong>Передать <a href="/g/ai-agent-10-minutes/" class="ctx-link">Claude Code</a> правила стратегии.</strong> Здесь происходит основная работа — правила грид-стратегии формулируются человеком и передаются модели, которая пишет код, реализующий эту логику.</p>
+<p><strong>Получить панель управления.</strong> Claude Code собирает интерфейс, через который можно наблюдать за работой стратегии и управлять ей, не копаясь в коде напрямую.</p>
+<p><strong>Подключить счёт через API.</strong> Система связывается с реальным торговым счётом через программный интерфейс биржи.</p>
+<p><strong>Запустить и наблюдать за ордерами в реальном времени.</strong> Финальный шаг — грид запускается, и ордера начинают выставляться и исполняться автоматически.</p>
+<h2 id="pochemu-eto-rabotaet-ne-tolko-dlya-treydinga">Почему это работает не только для трейдинга</h2>
+<p>Убери из этой схемы слово &quot;биржа&quot; — и увидишь универсальный паттерн вайбкодинга: ты не пишешь код построчно, а формулируешь правила и логику на человеческом языке, а модель превращает это в работающую систему. Ровно то же самое происходит, когда собираешь автоматизацию публикации постов, сборку карусели или любой другой рабочий конвейер.</p>
+<p>Разница с обычными задачами вайбкодинга в том, что здесь на кону реальные деньги на реальном счёте, работающие без остановки и без твоего контроля в моменте.</p>
+<h2 id="gde-zdes-nastoyaschiy-risk">Где здесь настоящий риск</h2>
+<p>Ошибка в обычном скрипте обычно видна сразу: программа падает, выдаёт неправильный результат, ты замечаешь и чинишь. Ошибка в правилах торгового алгоритма работает иначе — система может продолжать исполнять сделки по неверной логике часами или днями, тихо теряя деньги, прежде чем кто-то заметит проблему по балансу счёта.</p>
+<p>Это принципиальное отличие финансовых автоматизаций от большинства других задач, которые обычно решают вайбкодингом. Здесь цена молчаливой ошибки не потерянное время, а потерянные деньги, причём в реальном времени.</p>
+<h2 id="chto-ya-delayu-sam-s-takimi-zadachami">Что я делаю сам с такими задачами</h2>
+<p>Я собираю автоматизации для контента и рабочих процессов завода, но не запускаю торговых ботов на реальный счёт без долгого тестового периода на бумажной торговле. Правило простое: если ошибка в системе может напрямую забрать деньги без возможности быстро её заметить, тестовый период обязателен, каким бы привлекательным ни выглядел ролик с готовым решением за пятнадцать минут.</p>
+<h2 id="chto-stoit-sdelat-pered-tem-kak-povtoryat-eto-u-sebya">Что стоит сделать перед тем, как повторять это у себя</h2>
+<p>Три вещи обязательны: протестировать стратегию на бумажном счёте достаточно долго, чтобы увидеть её поведение в разных рыночных условиях, а не только в удачный день из демонстрации; заложить автоматическую остановку при превышении заданной просадки, а не полагаться на то, что заметишь проблему вручную; и трезво оценить размер суммы, которую готов потерять полностью, прежде чем подключать реальный счёт к автоматической системе.</p>
+<p>Ещё один момент, который в подобных роликах почти никогда не показывают: как система ведёт себя не в спокойном боковике, а в резком движении рынка. Грид-стратегии особенно уязвимы именно к сильным трендовым движениям — это стоит проверить на исторических данных за период, когда рынок реально штормило, а не только за последние спокойные недели.</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<p>Если тема автоматизаций на коде вместо готовых сервисов интересна шире торговли — у меня есть разбор <a href="guide.html?id=own-automations-on-code">своих автоматизаций на коде, а не на подписках</a>. А если интересно, как вообще устроен путь от идеи до готовой системы без ручного написания кода — читай про <a href="guide.html?id=vibecoding-is-explaining">вайбкодинг как объяснение, а не магию</a>.</p>
+<h2 id="esli-hochesh-stroit-avtomatizacii-osoznanno-a-ne-po-gotovomu">Если хочешь строить автоматизации осознанно, а не по готовому шаблону</h2>
+<p>Схема из ролика рабочая, но она собрана в интересах биржи, которая хочет, чтобы ты открыл счёт. Я показываю, как оценивать риски таких систем трезво и строить автоматизации, которые не сольют бюджет при первой же ошибке в логике.</p>
+<p>Как я подхожу к таким задачам у себя — в [МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</p>
+<p>А если пока просто интересно смотреть на процесс — показываю каждый шаг в канале, включая то, что не получилось с первого раза.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/jev-model-dlya-bystryh-reshenii/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Jev — модель для быстрых решений, которую пристёгивают к Claude Code</span>
+            <span class="related-sub">Разбираю, что такое Jev на самом деле, зачем её сочетают с Claude Code и стоит ли тащить эту связку в свои автоматизации</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-vs-codex-vs-cursor/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Claude Code, Codex и Cursor: три разных способа работать</span>
+            <span class="related-sub">Сравнение не по бенчмаркам, а по устройству работы — кто где живёт, кто кем управляет, что происходит с контекстом проекта и под какие задачи каждый из трёх подходит.</span>
+          </a>
+          <a class="related-card" href="/g/zero-saas-content-factory-stack/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Мой стек контент-завода. Без инвестиций, без подписок «на автоматизацию»</span>
+            <span class="related-sub">Пять уровней контент-завода одного человека — ядро, мозг, руки, касса, витрина — без подписок «на автоматизацию».</span>
+          </a>
+          <a class="related-card" href="/g/zarabotok-na-ii-personazhah/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Разбор схемы заработка на ИИ-персонажах из ролика на 3 млн просмотров</span>
+            <span class="related-sub">Раскладываю по шагам схему Марка Тилбери: фото, голос, оживление и запуск аккаунта без единой живой съёмки — и что из неё реально стоит забирать себе</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

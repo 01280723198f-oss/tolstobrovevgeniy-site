@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 25 Sep 2026 22:51:31 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 23:16:23 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CBS сообщили, что Claude помог найти новый инструмент редактирования генов</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-gene-editing-cbs/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-gene-editing-cbs/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю сюжет CBS News: что заявила Anthropic, при чём здесь взлом австралийского госсайта в том же выпуске и что из этого подтверждено, а что пока только заявление</description>
+    </item>
+    <item>
+      <title>У Stripe треть кода теперь стартует с промпта, а не с клавиатуры</title>
+      <link>https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю разговор CEO Stripe Патрика Коллисона про Claude Code: 36% пул-реквестов от промпта, 600 правок и один откат, и что из этой практики можно перенести на свой масштаб</description>
+    </item>
+    <item>
+      <title>Куда девать 200 долларов подписки на Claude после урезания лимитов</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-limity-14-sentyabrya-alternativy/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-limity-14-sentyabrya-alternativy/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю варианты из ролика Devsplainers на случай урезания лимитов Claude: раздел бюджета, связка моделей, локальный запуск — и что изменилось уже через неделю</description>
+    </item>
+    <item>
+      <title>Собрали торгового бота на бирже, не написав ни строчки кода руками</title>
+      <link>https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю партнёрский ролик Delta Exchange: как грид-стратегия на BTC собирается через Claude Code, и на что смотреть перед тем, как подключать реальный счёт</description>
+    </item>
+    <item>
+      <title>1200 ИИ-агентов на тесте сговорились и захватили сервер Hugging Face</title>
+      <link>https://tolstobrovevgeniy.ru/g/1200-ii-agentov-sgovor-hugging-face/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/1200-ii-agentov-sgovor-hugging-face/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю официальное расследование METR по дням: как агенты нашли канал связи, скоординировались, взломали Hugging Face и что это значит для тех, кто работает с ИИ-агентами</description>
+    </item>
     <item>
       <title>Anthropic подняла лимиты вместе с выходом Opus 5.5</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-opus-5-5-limity/</link>
@@ -126,46 +166,6 @@
       <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Суммы по статье 13.11 КоАП выросли с 30 мая 2025 года. Разбираю три ошибки, за которые штрафуют психологов, коучей и наставников с обычным лендингом, и как закрыть их за вечер</description>
-    </item>
-    <item>
-      <title>Обложка с твоим лицом за минуту: что умеет ChatGPT Images 2.5</title>
-      <link>https://tolstobrovevgeniy.ru/g/oblozhka-s-litsom-chatgpt-images/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/oblozhka-s-litsom-chatgpt-images/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Обновление от 8 сентября 2026 лучше держит лицо с референсного фото, генерирует до двух раз быстрее и правит только то, о чём просишь. Разбираю, как собрать серию обложек в одном стиле</description>
-    </item>
-    <item>
-      <title>Как попасть в ответы Алисы AI: что показывает Яндекс Вебмастер</title>
-      <link>https://tolstobrovevgeniy.ru/g/otvety-alisy-ai-dlya-eksperta/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/otvety-alisy-ai-dlya-eksperta/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Алиса собирает ответ со страниц, которые Яндекс и так держит высоко. Разбираю раздел «Видимость сайта в Алисе AI» и правила для страниц, которые она цитирует</description>
-    </item>
-    <item>
-      <title>Закон об ИИ 243-ФЗ: что он меняет для эксперта и блогера</title>
-      <link>https://tolstobrovevgeniy.ru/g/zakon-ob-ii-243-fz-dlya-eksperta/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zakon-ob-ii-243-fz-dlya-eksperta/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Общие правила заработали с 1 сентября 2026, маркировка начнётся 1 марта 2027 и остаётся правом, а не обязанностью. Разбираю по статьям, без пересказа страшилок</description>
-    </item>
-    <item>
-      <title>Озвучка своим голосом: как озвучить видео без студии и без подписки</title>
-      <link>https://tolstobrovevgeniy.ru/g/ozvuchka-svoim-golosom/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ozvuchka-svoim-golosom/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Модель Chatterbox клонирует голос по образцу в 16 секунд, работает на твоём компьютере и разрешена в коммерции. Разбираю, как это устроено, сколько ждать и где качество проседает</description>
-    </item>
-    <item>
-      <title>Время публикации постов: как найти своё, а не чужое</title>
-      <link>https://tolstobrovevgeniy.ru/g/vremya-publikacii-postov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/vremya-publikacii-postov/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Почему таблицы «лучшего времени» из интернета не работают, как за две недели вычислить собственные окна в Telegram, ВК и Instagram и что важнее времени публикации.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code в Stripe: 36% кода от промпта, разбор практик — Евгений Толстобров</title>
+  <meta name="description" content="CEO Stripe рассказал, как компания использует Claude Code: 36% пул-реквестов от промпта, 600 правок и один откат. Разбираю практики и что из них взять себе.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Claude Code в Stripe: 36% кода от промпта, разбор практик — Евгений Толстобров">
+  <meta property="og:description" content="CEO Stripe рассказал, как компания использует Claude Code: 36% пул-реквестов от промпта, 600 правок и один откат. Разбираю практики и что из них взять себе.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Code в Stripe: 36% кода от промпта, разбор практик — Евгений Толстобров">
+  <meta name="twitter:description" content="CEO Stripe рассказал, как компания использует Claude Code: 36% пул-реквестов от промпта, 600 правок и один откат. Разбираю практики и что из них взять себе.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-26">
+  <meta property="article:modified_time" content="2026-09-26">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Claude Code в Stripe: 36% кода от промпта, разбор практик","name":"У Stripe треть кода теперь стартует с промпта, а не с клавиатуры","description":"CEO Stripe рассказал, как компания использует Claude Code: 36% пул-реквестов от промпта, 600 правок и один откат. Разбираю практики и что из них взять себе.","inLanguage":"ru","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/"},"url":"https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/","articleSection":"Разбор","wordCount":790,"timeRequired":"PT6M","keywords":"claude code stripe, патрик коллисон claude, claude code в бизнесе, ии в разработке кода, claude code практики, надёжность кода ии"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"У Stripe треть кода теперь стартует с промпта, а не с клавиатуры","item":"https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>У Stripe треть кода теперь стартует с промпта, а не с клавиатуры</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-09-26">26 сентября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>У Stripe треть кода теперь стартует с промпта, а не с клавиатуры</h1>
+      <p class="lead">Разбираю разговор CEO Stripe Патрика Коллисона про Claude Code: 36% пул-реквестов от промпта, 600 правок и один откат, и что из этой практики можно перенести на свой масштаб</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#kto-i-o-chem-govoril">Кто и о чём говорил</a></li><li><a href="#cifry-kotorye-prozvuchali">Цифры, которые прозвучали</a></li><li><a href="#kak-eto-ustroeno-tehnicheski">Как это устроено технически</a></li><li><a href="#chto-eto-snimaet-kak-vozrazhenie">Что это снимает как возражение</a></li><li><a href="#chto-iz-etogo-stoit-zabirat-sebe">Что из этого стоит забирать себе</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li><li><a href="#esli-hochesh-vystroit-process-urovnya-stripe-u-sebya">Если хочешь выстроить процесс уровня Stripe у себя</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я обещал разобрать остальные цифры из разговора Патрика Коллисона с Борисом и что из подхода Stripe можно взять себе. Вот разбор.</p>
+<h2 id="kto-i-o-chem-govoril">Кто и о чём говорил</h2>
+<p>Патрик Коллисон, CEO Stripe, пришёл на официальный канал Claude поговорить с Борисом о том, как Stripe реально работает с <a href="/g/cex/" class="ctx-link">Claude Code</a> — не в формате рекламного кейса, а в формате конкретных цифр и практик.</p>
+<p>Это важно проговорить сразу: Stripe — компания, которая обрабатывает платежи на миллиарды долларов для миллионов бизнесов по всему миру. Цена ошибки в их коде — это не упавший скрипт на выходных, а реальные деньги реальных людей. Именно поэтому их практики стоит воспринимать серьёзнее, чем истории от инди-разработчиков.</p>
+<h2 id="cifry-kotorye-prozvuchali">Цифры, которые прозвучали</h2>
+<p><strong>Около 36% пул-реквестов в Stripe теперь начинаются с промпта.</strong> Не с ручного написания кода, а с формулировки задачи для <a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a>, который затем работает в изолированном dev-боксе — отдельной защищённой среде, где ошибка агента не может напрямую задеть продакшен.</p>
+<p><strong>600 правок от <a href="/g/ai-agent-10-minutes/" class="ctx-link">Claude Code</a> — один откат.</strong> Один инженер за шесть месяцев смержил 600 пул-реквестов, написанных Claude Code, и откатывать пришлось лишь один раз. Для контекста: в обычной разработке откаты случаются регулярно даже у опытных инженеров, пишущих код руками. Соотношение 600 к 1 — это не &quot;модель иногда ошибается&quot;, это уровень надёжности, которому позавидует немало команд, работающих полностью вручную.</p>
+<p><strong>Новые стартапы растут вдвое быстрее с ИИ.</strong> В разговоре прозвучала статистика Stripe о том, что новые компании, активно использующие ИИ в разработке, показывают удвоенный рост по сравнению с теми, кто им не пользуется. Это данные самой Stripe по их клиентской базе, а не абстрактная оценка со стороны.</p>
+<h2 id="kak-eto-ustroeno-tehnicheski">Как это устроено технически</h2>
+<p>Коллисон описал несколько конкретных практик, которые Stripe встроили в процесс:</p>
+<p><strong>Изолированные dev-боксы.</strong> Каждая задача для Claude Code выполняется в отдельной защищённой среде, а не напрямую в основной кодовой базе. Это ключевой момент — доверие к модели не означает отказ от инфраструктурных гарантий безопасности.</p>
+<p><strong>AI-гардрейлы как часть инфраструктуры.</strong> Ограничения и проверки для ИИ-агентов встроены в саму архитектуру, а не держатся на честном слове модели или ручной проверке каждого шага.</p>
+<p><strong>До 10 параллельных dev-боксов и режим планирования.</strong> Claude Code у Stripe работает не в режиме одной задачи за раз — несколько независимых сред запускаются параллельно, а режим планирования (plan mode) позволяет сначала согласовать подход, а потом уже выполнять.</p>
+<p><strong>&quot;Каждая кодовая база — это промпт&quot;.</strong> Формулировка из разговора, которая описывает сдвиг в мышлении: команда думает не только &quot;как написать код&quot;, но и &quot;как описать код так, чтобы модель могла его качественно сгенерировать и поддерживать&quot;.</p>
+<h2 id="chto-eto-snimaet-kak-vozrazhenie">Что это снимает как возражение</h2>
+<p>Самое частое возражение против серьёзного использования ИИ в разработке звучит так: &quot;это игрушки для пет-проектов, в серьёзном бизнесе так не работают&quot;. История Stripe — это конкретный, названный по имени пример компании с миллиардными оборотами, которая пошла на треть кода через промпты и получила соотношение надёжности 600 к 1.</p>
+<p>Отдельно Коллисон отметил, что ожидает роста качества кода Stripe в целом благодаря ИИ, а не только роста скорости. Это контринтуитивно для тех, кто уверен, что ИИ обязательно пишет неряшливо: на практике при правильной инфраструктуре вокруг модели результат может быть чище, а не грязнее.</p>
+<p>Логика здесь простая, если задуматься: человек-разработчик тоже устаёт, отвлекается и пропускает мелкие несостыковки к концу дня. Модель в изолированном dev-боксе с гардрейлами вокруг не устаёт и не срезает углы, когда дедлайн горит, а code review остаётся на человеке — просто смещается с проверки каждой строчки на проверку архитектурных решений.</p>
+<h2 id="chto-iz-etogo-stoit-zabirat-sebe">Что из этого стоит забирать себе</h2>
+<p>Даже если твой масштаб далёк от Stripe, три практики переносимы на любой размер проекта: изолируй среду выполнения для агентных задач, а не давай ему прямой доступ к продакшену; встраивай проверки в процесс заранее, а не полагайся на то, что модель &quot;и так не ошибётся&quot;; используй режим планирования перед выполнением на сложных задачах, а не сразу бросай агента в бой.</p>
+<p>Ни одна из этих трёх практик не требует бюджета уровня Stripe. Изолированная среда — это может быть просто отдельная ветка и песочница для тестов. Гардрейлы — это чек-лист, который агент проходит перед тем, как правка уходит дальше. Планирование — это привычка сначала спросить модель &quot;как ты будешь это делать&quot;, а не сразу &quot;сделай&quot;.</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<p>Если тема лимитов и того, как эффективно распределять бюджет между инструментами, тебе интересна — у меня есть разбор <a href="guide.html?id=token-limits-saving">где искать альтернативы при урезании лимитов Claude</a>, и отдельный материал про <a href="guide.html?id=claude-opus-5-5-limity">подъём лимитов вместе с Opus 5.5</a>.</p>
+<h2 id="esli-hochesh-vystroit-process-urovnya-stripe-u-sebya">Если хочешь выстроить процесс уровня Stripe у себя</h2>
+<p>Собрать инфраструктуру вокруг ИИ-агентов — изоляцию, гардрейлы, режим планирования — задача не на один вечер, если делать это интуитивно и без системы. Я показываю, как выстраиваю подобные практики у себя на заводе, в масштабе одного человека, а не команды разработчиков Stripe.</p>
+<p>Как я это делаю — в [МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</p>
+<p>А если пока просто интересно смотреть на процесс — показываю каждый шаг в канале.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/claude-limity-14-sentyabrya-alternativy/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Куда девать 200 долларов подписки на Claude после урезания лимитов</span>
+            <span class="related-sub">Разбираю варианты из ролика Devsplainers на случай урезания лимитов Claude: раздел бюджета, связка моделей, локальный запуск — и что изменилось уже через неделю</span>
+          </a>
+          <a class="related-card" href="/g/1200-ii-agentov-sgovor-hugging-face/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">1200 ИИ-агентов на тесте сговорились и захватили сервер Hugging Face</span>
+            <span class="related-sub">Разбираю официальное расследование METR по дням: как агенты нашли канал связи, скоординировались, взломали Hugging Face и что это значит для тех, кто работает с ИИ-агентами</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-vs-codex-vs-cursor/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Claude Code, Codex и Cursor: три разных способа работать</span>
+            <span class="related-sub">Сравнение не по бенчмаркам, а по устройству работы — кто где живёт, кто кем управляет, что происходит с контекстом проекта и под какие задачи каждый из трёх подходит.</span>
+          </a>
+          <a class="related-card" href="/g/claude-opus-5-5-limity/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Anthropic подняла лимиты вместе с выходом Opus 5.5</span>
+            <span class="related-sub">Разбираю официальный анонс: что реально изменилось в модели, почему выросли лимиты на Pro/Max/Team и как это использовать в вайбкодинге, а не просто радоваться цифрам</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
