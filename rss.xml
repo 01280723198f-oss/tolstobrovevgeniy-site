@@ -5,8 +5,24 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 26 Sep 2026 14:34:18 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 14:47:21 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>6 деталей, из-за которых ИИ-кадр выглядит живым, а не пластиковым</title>
+      <link>https://tolstobrovevgeniy.ru/g/zhivoe-lico-v-ii-kadre/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zhivoe-lico-v-ii-kadre/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю один свой кадр из нейрофотосессии: асимметрия, мимика, кожа, волосы, движение и ткань. Что из этого закладывается референсами, что — промптом, и где чаще всего ломается сходство</description>
+    </item>
+    <item>
+      <title>Кино-кадр с собой без съёмки: разбираю один кадр по деталям</title>
+      <link>https://tolstobrovevgeniy.ru/g/kino-kadr-s-soboy-razbor/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kino-kadr-s-soboy-razbor/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Образ, реквизит, деталь эпохи, фон, второй план и живой мусор — шесть слоёв, из которых складывается история в одном кадре. И почему красивая, но пустая генерация не работает на обложке</description>
+    </item>
     <item>
       <title>7 открытых проектов, на которых стоит мой контент-завод</title>
       <link>https://tolstobrovevgeniy.ru/g/7-otkrytyh-proektov-kontent-zavod/</link>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Зарубежная виралка уже прошла проверку рынком — её вёрстка держит внимание, это измеренный факт. Разбираю протокол: что снимать с донора, как ставить кириллицу и где проходит граница копирования</description>
-    </item>
-    <item>
-      <title>Шесть линз, через которые я прогоняю каждый текст перед публикацией</title>
-      <link>https://tolstobrovevgeniy.ru/g/six-copywriting-lenses/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/six-copywriting-lenses/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Шварц, Огилви, Хальберт, Хормози, Чиалдини, Кеннеди. Каждая линза смотрит только на своё и правит только своё — разбираю, что проверяет каждая и в каком порядке их запускать</description>
-    </item>
-    <item>
-      <title>Десять каруселей за одно утро: весь конвейер по шагам</title>
-      <link>https://tolstobrovevgeniy.ru/g/10-carousels-one-morning/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/10-carousels-one-morning/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Я не умею рисовать и не плачу дизайнеру. Беру дизайн, который уже прошёл проверку рынком, и ставлю в него свой смысл. Разбираю шесть шагов конвейера от поиска донора до доставки пакета</description>
     </item>
   </channel>
 </rss>
