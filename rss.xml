@@ -5,8 +5,32 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 25 Sep 2026 23:16:23 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 14:34:18 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>7 открытых проектов, на которых стоит мой контент-завод</title>
+      <link>https://tolstobrovevgeniy.ru/g/7-otkrytyh-proektov-kontent-zavod/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/7-otkrytyh-proektov-kontent-zavod/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Голос, расшифровка, разведка, монтаж, слайды, лицо, обложки — всё крутится на моём Маке и не просит подписку. Разбираю, что делает каждый проект и в каком месте конвейера стоит</description>
+    </item>
+    <item>
+      <title>Как я собрал свой сайт-воронку за вечер — без вёрстки и хостинг-панели</title>
+      <link>https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Дневник стройки</category>
+      <description>Статьи в одном файле, страницы собираются сами, публикация — одна команда, хостинг бесплатный. Разбираю, из чего устроен мой сайт гайдов и почему каждое кодовое слово ведёт именно туда</description>
+    </item>
+    <item>
+      <title>8 автоматов, которые выпускают мой контент по расписанию</title>
+      <link>https://tolstobrovevgeniy.ru/g/8-avtomatov-kontent-zavoda/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/8-avtomatov-kontent-zavoda/</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Контент-завод</category>
+      <description>От рилсов в 07:00 до разбора дня в 22:30 — что запускается каждые сутки, в каком порядке и почему прогоны разнесены по часам</description>
+    </item>
     <item>
       <title>CBS сообщили, что Claude помог найти новый инструмент редактирования генов</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-gene-editing-cbs/</link>
@@ -142,30 +166,6 @@
       <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Я не умею рисовать и не плачу дизайнеру. Беру дизайн, который уже прошёл проверку рынком, и ставлю в него свой смысл. Разбираю шесть шагов конвейера от поиска донора до доставки пакета</description>
-    </item>
-    <item>
-      <title>Режим разработчика в ChatGPT: как подключить свои приложения</title>
-      <link>https://tolstobrovevgeniy.ru/g/chatgpt-developer-mode-plugins/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-developer-mode-plugins/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Developer mode открывает полный доступ к MCP: ChatGPT не только читает данные сервиса, но и выполняет в нём действия. Разбираю настройку по шагам, тарифы и риски, о которых молчат в роликах</description>
-    </item>
-    <item>
-      <title>ИИ-психолог забирает не клиентов, а первый вопрос</title>
-      <link>https://tolstobrovevgeniy.ru/g/ii-psiholog-i-klienty-eksperta/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-psiholog-i-klienty-eksperta/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Подборки «25 нейросетей-психологов» уже в топе, и ночной вопрос уходит чат-боту. Разбираю, что на самом деле меняется в воронке эксперта и как перестроить контент</description>
-    </item>
-    <item>
-      <title>Штрафы за куки и формы на сайте: три ловушки эксперта</title>
-      <link>https://tolstobrovevgeniy.ru/g/shtraf-za-kuki-i-formu-na-sayte/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/shtraf-za-kuki-i-formu-na-sayte/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Суммы по статье 13.11 КоАП выросли с 30 мая 2025 года. Разбираю три ошибки, за которые штрафуют психологов, коучей и наставников с обычным лендингом, и как закрыть их за вечер</description>
     </item>
   </channel>
 </rss>

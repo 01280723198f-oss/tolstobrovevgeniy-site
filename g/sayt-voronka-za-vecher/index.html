@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт-воронка за вечер без программиста: GitHub Pages и Claude Code</title>
+  <meta name="description" content="Как собрать сайт со статьями под кодовые слова за один вечер: данные в одном файле, статические страницы, публикация через git push и бесплатный хостинг GitHub Pages.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Сайт-воронка за вечер без программиста: GitHub Pages и Claude Code">
+  <meta property="og:description" content="Как собрать сайт со статьями под кодовые слова за один вечер: данные в одном файле, статические страницы, публикация через git push и бесплатный хостинг GitHub Pages.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Сайт-воронка за вечер без программиста: GitHub Pages и Claude Code">
+  <meta name="twitter:description" content="Как собрать сайт со статьями под кодовые слова за один вечер: данные в одном файле, статические страницы, публикация через git push и бесплатный хостинг GitHub Pages.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-26">
+  <meta property="article:modified_time" content="2026-09-26">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Сайт-воронка за вечер без программиста: GitHub Pages и Claude Code","name":"Как я собрал свой сайт-воронку за вечер — без вёрстки и хостинг-панели","description":"Как собрать сайт со статьями под кодовые слова за один вечер: данные в одном файле, статические страницы, публикация через git push и бесплатный хостинг GitHub Pages.","inLanguage":"ru","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/"},"url":"https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/","articleSection":"Дневник стройки","wordCount":731,"timeRequired":"PT8M","keywords":"сайт за вечер без программиста, сайт на github pages, сайт воронка для эксперта, бесплатный хостинг для сайта, сайт со статьями под кодовые слова, claude code сделать сайт"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Дневник стройки","item":"https://tolstobrovevgeniy.ru/tema/dnevnik-stroyki/"},{"@type":"ListItem","position":3,"name":"Как я собрал свой сайт-воронку за вечер — без вёрстки и хостинг-панели","item":"https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/dnevnik-stroyki/">Дневник стройки</a><span class="sep">/</span><span>Как я собрал свой сайт-воронку за вечер — без вёрстки и хостинг-панели</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/dnevnik-stroyki/">Дневник стройки</a>
+        <time datetime="2026-09-26">26 сентября 2026</time>
+        <span>· 8 мин</span>
+      </div>
+      <h1>Как я собрал свой сайт-воронку за вечер — без вёрстки и хостинг-панели</h1>
+      <p class="lead">Статьи в одном файле, страницы собираются сами, публикация — одна команда, хостинг бесплатный. Разбираю, из чего устроен мой сайт гайдов и почему каждое кодовое слово ведёт именно туда</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#zachem-voobsche-svoy-sayt">Зачем вообще свой сайт</a></li><li><a href="#zadacha-hab-gaydov">Задача: хаб гайдов</a></li><li><a href="#sborka-odna-papka-odin-fayl-dannyh">Сборка: одна папка, один файл данных</a></li><li><a href="#publikaciya-git-push">Публикация: git push</a></li><li><a href="#cena-nol-rubley-v-mesyac">Цена: ноль рублей в месяц</a></li><li><a href="#voronka-kazhdoe-slovo-vedet-na-stranicu">Воронка: каждое слово ведёт на страницу</a></li><li><a href="#chto-okazalos-slozhnee-chem-kazalos">Что оказалось сложнее, чем казалось</a></li><li><a href="#kak-povtorit-za-vecher">Как повторить за вечер</a></li><li><a href="#chto-vnutri-odnoy-stati">Что внутри одной статьи</a></li><li><a href="#dalshe-po-teme">Дальше по теме</a></li><li><a href="#esli-hochesh-takoy-zhe-sayt-pod-sebya">Если хочешь такой же сайт под себя</a></li></ol>
+      </nav>
+      <div class="content">
+<p>У меня есть сайт, на котором сейчас больше 130 статей. Каждая открывается по <a href="/g/4-tools-vibecoder/" class="ctx-link">кодовому слову</a> из карусели или ролика и ведёт человека дальше: в канал, в бота, к продукту.</p>
+<p>Собрал я его за вечер. Верстать не пришлось, панели хостинга нет, в месяц он стоит ноль рублей.</p>
+<p>Разбираю, как он устроен, — так, чтобы вы могли повторить.</p>
+<h2 id="zachem-voobsche-svoy-sayt">Зачем вообще свой сайт</h2>
+<p><a href="/g/codeword-funnel-chain/" class="ctx-link">Кодовые слова</a> работали и раньше: человек пишет слово — бот присылает материал. Проблема была в том, куда этот материал вести.</p>
+<p>Документ в облаке выглядит временно. Длинный пост в канале теряется в ленте. А площадку, на которой всё держалось, у меня уже закрывали за сутки: сетку на 23 тысячи подписчиков снесли без предупреждения.</p>
+<p>Нужна была <a href="/g/otvety-alisy-ai-dlya-eksperta/" class="ctx-link">страница, которая</a> принадлежит мне, живёт годами и ещё собирает людей из поиска.</p>
+<h2 id="zadacha-hab-gaydov">Задача: хаб гайдов</h2>
+<p>Требования я уложил в одну фразу для Claude Code: главная со списком статей, страница под каждую статью, темы, поиск, счётчик посещений.</p>
+<p>Первый прогон выдал рабочий каркас. Дальше я только правил тексты и внешний вид.</p>
+<h2 id="sborka-odna-papka-odin-fayl-dannyh">Сборка: одна папка, один файл данных</h2>
+<p>Главное решение — все статьи лежат в одном файле данных. Каждая статья — это объект: заголовок, описание, дата, текст.</p>
+<p>Добавил объект — запускаю сборку одной командой, и она делает всё остальное:</p>
+<ul>
+<li>страницу статьи со своим адресом;</li>
+<li>запись в карте сайта для поисковиков;</li>
+<li>перелинковку со статьями той же темы;</li>
+<li>заголовки и описания для поиска.</li>
+</ul>
+<p>Никакой вёрстки руками. Я пишу текст, система превращает его в страницу.</p>
+<h2 id="publikaciya-git-push">Публикация: git push</h2>
+<p>Сайт лежит в репозитории на GitHub. Публикация — это отправка изменений:</p>
+<ul>
+<li>добавил статью;</li>
+<li>собрал страницы;</li>
+<li>отправил в репозиторий.</li>
+</ul>
+<p>Через минуту-две страница открывается в интернете. Нет FTP, нет панели, нет кнопки «опубликовать».</p>
+<p>Перед тем как отдать ссылку в бота, я проверяю, что страница отвечает кодом 200. Иначе человек напишет слово и получит пустую страницу — хуже, чем ничего.</p>
+<h2 id="cena-nol-rubley-v-mesyac">Цена: ноль рублей в месяц</h2>
+<p>Хостинг — GitHub Pages, он бесплатный для таких сайтов. Сертификат для https выдаётся сам. Домен свой, за него я плачу раз в год.</p>
+<p>Больше ни за что. Ни конструктора, ни подписки, ни разработчика на поддержке.</p>
+<h2 id="voronka-kazhdoe-slovo-vedet-na-stranicu">Воронка: каждое слово ведёт на страницу</h2>
+<p>Сайт стоит в середине цепочки:</p>
+<ul>
+<li><strong>Карусель или ролик</strong> обрывает тему и даёт кодовое слово.</li>
+<li><strong>Бот</strong> на слово присылает ссылку на статью.</li>
+<li><strong>Статья</strong> дораскрывает тему и показывает следующий шаг.</li>
+<li><strong>Через сутки, двое и трое</strong> бот напоминает о себе.</li>
+</ul>
+<p>Пост греет. Страница дожимает и остаётся в поиске, когда пост уже утонул в ленте.</p>
+<p>Каждое слово записано в реестр: какое слово, какая статья, откуда пришло. Так видно, какие темы реально забирают.</p>
+<h2 id="chto-okazalos-slozhnee-chem-kazalos">Что оказалось сложнее, чем казалось</h2>
+<p><strong>Поиск не приходит сразу.</strong> Первые недели страницы почти не индексируются. Трафик идёт по кодовым словам, поиск подтягивается позже.</p>
+<p><strong>Статья под слово — обязательна.</strong> Однажды слово ушло в карусель раньше, чем страница стала живой. Люди писали слово и ждали. Теперь правило простое: сначала живая страница, потом публикация.</p>
+<p><strong>Сайт — это путь, а не дизайн.</strong> Я долго двигал блоки на главной. Люди на главную почти не заходят — они приходят сразу на статью.</p>
+<h2 id="kak-povtorit-za-vecher">Как повторить за вечер</h2>
+<ol>
+<li>Сформулируйте, что должно быть на сайте, одной фразой.</li>
+<li>Попросите Claude Code собрать статический сайт, где статьи лежат в одном файле.</li>
+<li>Заведите репозиторий на GitHub и включите Pages.</li>
+<li>Напишите первую статью под своё кодовое слово.</li>
+<li>Опубликуйте и проверьте, что страница открывается.</li>
+</ol>
+<p>Этого достаточно, чтобы первое кодовое слово вело не в пустоту, а на вашу страницу.</p>
+<h2 id="chto-vnutri-odnoy-stati">Что внутри одной статьи</h2>
+<p>Каждая статья на сайте устроена одинаково, и это не случайно.</p>
+<p><strong>Первый абзац</strong> — сразу о том, ради чего человек пришёл. Он написал слово под каруселью и ждёт обещанное, а не вступление.</p>
+<p><strong>Середина</strong> — дораскрытие темы: то, что не влезло в слайды. Здесь конкретика, шаги, грабли.</p>
+<p><strong>Блок «Дальше по теме»</strong> — три-четыре ссылки на соседние статьи. Человек, которому зашла одна тема, читает ещё две.</p>
+<p><strong>Финал</strong> — следующий шаг: канал, бот или продукт. Без него статья остаётся просто полезным текстом, который прочитали и закрыли.</p>
+<p>Такой шаблон пишется один раз. Дальше каждая новая статья просто встаёт в него.</p>
+<h2 id="dalshe-po-teme">Дальше по теме</h2>
+<ul>
+<li><a href="guide.html?id=site-is-a-path-not-design">Сайт — это путь, а не дизайн</a> — почему главная почти не важна</li>
+<li><a href="guide.html?id=codeword-funnel-chain">Цепочка кодового слова</a> — от комментария до продажи</li>
+<li><a href="guide.html?id=own-base-vs-platform">Своя база против чужой площадки</a> — зачем уводить людей к себе</li>
+</ul>
+<h2 id="esli-hochesh-takoy-zhe-sayt-pod-sebya">Если хочешь такой же сайт под себя</h2>
+<p>Сайт за вечер — это каркас. Работать он начинает, когда вокруг него выстроена воронка: слово, бот, статья, касания и продукт на выходе.</p>
+<p>Эту сборку целиком я разложил в [МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</p>
+<p>А стройку в реальном времени показываю в канале @Evgeniy_Tolstobrov.</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/start-from-zero/">
+            <span class="tag">Дневник стройки</span>
+            <span class="related-title">Как собрать контент-завод, начав с нуля</span>
+            <span class="related-sub">Шесть шагов после бана сетки: система вместо рук, чужая форма, кодовые слова, расписание и честная метрика.</span>
+          </a>
+          <a class="related-card" href="/g/codeword-funnel-chain/">
+            <span class="tag">Воронка</span>
+            <span class="related-title">Шесть звеньев между комментарием и подписчиком</span>
+            <span class="related-sub">Что писать на последнем слайде, каким должно быть кодовое слово, что отдавать в ответ и три дожима — плюс четыре места, где эта цепочка рвётся чаще всего.</span>
+          </a>
+          <a class="related-card" href="/g/site-is-a-path-not-design/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Сайт — это путь, а не дизайн. Показываю свою структуру</span>
+            <span class="related-sub">Красивую страницу нейросеть соберёт за десять минут, но заявок она не принесёт. Разбираю, из каких шагов состоит путь человека от «случайно попал» до «оставил контакт», и как проверить его…</span>
+          </a>
+          <a class="related-card" href="/g/mini-apps-as-front-doors/">
+            <span class="tag">Воронка</span>
+            <span class="related-title">Мини-приложения вместо PDF-лидмагнитов. Фронт-двери воронки на одном инструменте</span>
+            <span class="related-sub">PDF-лидмагниты умирают в загрузках. Мини-инструменты живут в браузере, работают как фронт-двери воронки и собираются за выходные.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

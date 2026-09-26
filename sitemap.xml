@@ -25,14 +25,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tolstobrovevgeniy.ru/tema/kontent-zavod/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tolstobrovevgeniy.ru/tema/voronka/</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tolstobrovevgeniy.ru/tema/kontent-zavod/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://tolstobrovevgeniy.ru/tema/dnevnik-stroyki/</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -49,16 +55,28 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tolstobrovevgeniy.ru/tema/dnevnik-stroyki/</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tolstobrovevgeniy.ru/tema/sistema/</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/7-otkrytyh-proektov-kontent-zavod/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/sayt-voronka-za-vecher/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/8-avtomatov-kontent-zavoda/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/g/claude-gene-editing-cbs/</loc>
