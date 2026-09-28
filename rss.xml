@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 28 Sep 2026 16:02:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 16:20:27 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Средний режим Opus 5.5 обгоняет прошлый максимум. Какой уровень под какую задачу</title>
+      <link>https://tolstobrovevgeniy.ru/g/opus-5-5-uroven-usiliy/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/opus-5-5-uroven-usiliy/</guid>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Anthropic сама написала, что дорогой режим не всегда лучший. Разбираю, где хватает среднего, где нужен максимум и как не сжигать лимит на пустом</description>
+    </item>
+    <item>
+      <title>ИИ-агент Muse обогнал ChatGPT. Что проверить на своей странице, чтобы агент клиента выбрал тебя</title>
+      <link>https://tolstobrovevgeniy.ru/g/meta-muse-agent-klienty-eksperta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/meta-muse-agent-klienty-eksperta/</guid>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Агенты начинают заполнять формы и бронировать за людей. Разбираю, что это меняет для эксперта, и даю чек-лист страницы из восьми пунктов</description>
+    </item>
+    <item>
+      <title>ChatGPT Sites: что написать, чтобы сайт эксперта сразу собирал заявки</title>
+      <link>https://tolstobrovevgeniy.ru/g/chatgpt-sites-sayt-s-zayavkami/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-sites-sayt-s-zayavkami/</guid>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>ChatGPT научился собирать сайт с формой и доменом прямо в чате. Каркас он сделает сам, а вот смысл придётся дать ему ты. Разбираю бриф из шести блоков</description>
+    </item>
+    <item>
+      <title>Новые Projects в Claude Code: как разложить свой контент на проекты и потоки</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-projects-shtab-agentov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-projects-shtab-agentov/</guid>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Главный агент раздаёт задачи потокам, у всех общая память. Показываю, как эксперту разложить контент на два-три проекта, чтобы нейронка перестала писать мимо</description>
+    </item>
+    <item>
+      <title>Как заставить ИИ проверять свою работу: готовый список проверки для постов</title>
+      <link>https://tolstobrovevgeniy.ru/g/proverka-raboty-ii-spisok/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/proverka-raboty-ii-spisok/</guid>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Anthropic советует дать модели способ проверить результат. Для кода это тесты, для текстов список проверки. Даю готовый и показываю, как подключить</description>
+    </item>
     <item>
       <title>6 деталей, из-за которых ИИ-кадр выглядит живым, а не пластиковым</title>
       <link>https://tolstobrovevgeniy.ru/g/zhivoe-lico-v-ii-kadre/</link>
@@ -126,46 +166,6 @@
       <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Разбираю сервис Trajector от PublicAI: как подключиться, что он видит в твоём репозитории и на что смотреть перед тем, как давать доступ</description>
-    </item>
-    <item>
-      <title>Пять сервисов, которые собирают ролик из обычного текста</title>
-      <link>https://tolstobrovevgeniy.ru/g/video-iz-teksta-5-servisov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/video-iz-teksta-5-servisov/</guid>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Вставляешь сценарий, статью или пост — забираешь видео со сценами, субтитрами и озвучкой. Разбираю все пять: что каждый умеет, под какую задачу его брать и где начинаются ограничения</description>
-    </item>
-    <item>
-      <title>Протокол: как собрать свою команду в Claude Code за вечер</title>
-      <link>https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/protokol-sborki-komandy-claude-code/</guid>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Команда — это не длинный промпт, а папка с текстовым файлом. Разбираю протокол сборки по пунктам и показываю на пяти своих командах, которые каждый день делают карусели, рилсы, статьи, посты и разборы каналов</description>
-    </item>
-    <item>
-      <title>18 команд Claude Code, которыми я управляю контент-заводом</title>
-      <link>https://tolstobrovevgeniy.ru/g/18-claude-commands-content-factory/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/18-claude-commands-content-factory/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Вместо того чтобы каждый раз объяснять модели контекст заново, я вынес повторяющиеся задачи в короткие команды. Разбираю все 18: что делает каждая, когда её дёргать и как собрать свои</description>
-    </item>
-    <item>
-      <title>Семь агентов Claude, которые делают контент вместо меня</title>
-      <link>https://tolstobrovevgeniy.ru/g/7-claude-agents-content-factory/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/7-claude-agents-content-factory/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разведчик, смысловик, копирайтер, дизайнер, вороночник, диспетчер и публикатор. Разбираю, за что отвечает каждый, в каком порядке они работают и как собрать такую же сборку у себя</description>
-    </item>
-    <item>
-      <title>Как снять чужой дизайн карусели и поставить в него свой текст</title>
-      <link>https://tolstobrovevgeniy.ru/g/how-factory-clones-design/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/how-factory-clones-design/</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Зарубежная виралка уже прошла проверку рынком — её вёрстка держит внимание, это измеренный факт. Разбираю протокол: что снимать с донора, как ставить кириллицу и где проходит граница копирования</description>
     </item>
   </channel>
 </rss>

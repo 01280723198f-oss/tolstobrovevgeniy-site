@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Самопроверка ИИ: список проверки постов для Claude и ChatGPT</title>
+  <meta name="description" content="Как научить ИИ проверять свою работу до того, как показать вам. Совет Anthropic про петлю проверки, готовый список проверки постов и как его подключить.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/proverka-raboty-ii-spisok/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Самопроверка ИИ: список проверки постов для Claude и ChatGPT">
+  <meta property="og:description" content="Как научить ИИ проверять свою работу до того, как показать вам. Совет Anthropic про петлю проверки, готовый список проверки постов и как его подключить.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/proverka-raboty-ii-spisok/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Самопроверка ИИ: список проверки постов для Claude и ChatGPT">
+  <meta name="twitter:description" content="Как научить ИИ проверять свою работу до того, как показать вам. Совет Anthropic про петлю проверки, готовый список проверки постов и как его подключить.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-09-28">
+  <meta property="article:modified_time" content="2026-09-28">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Самопроверка ИИ: список проверки постов для Claude и ChatGPT","name":"Как заставить ИИ проверять свою работу: готовый список проверки для постов","description":"Как научить ИИ проверять свою работу до того, как показать вам. Совет Anthropic про петлю проверки, готовый список проверки постов и как его подключить.","inLanguage":"ru","datePublished":"2026-09-28","dateModified":"2026-09-28","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/proverka-raboty-ii-spisok/"},"url":"https://tolstobrovevgeniy.ru/g/proverka-raboty-ii-spisok/","articleSection":"Инструкция","wordCount":716,"timeRequired":"PT5M","keywords":"как заставить ии проверять себя, проверка текста нейросетью, claude проверка работы, чек-лист поста, промпт проверки текста, claude code verification"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Как заставить ИИ проверять свою работу: готовый список проверки для постов","item":"https://tolstobrovevgeniy.ru/g/proverka-raboty-ii-spisok/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Модель правда найдёт свои ошибки?","acceptedAnswer":{"@type":"Answer","text":"Часть найдёт, особенно если пункт конкретный: длина, запрещённое слово, количество призывов. Размытые пункты вроде «сделай интересно» она проверить не может."}},{"@type":"Question","name":"Это работает в ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Да. Список проверки не привязан к модели. Совет Anthropic про Claude Code, но механика общая."}},{"@type":"Question","name":"Сколько пунктов ставить?","acceptedAnswer":{"@type":"Answer","text":"Начни с 5–8. Длинный список модель начинает выполнять небрежно."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Как заставить ИИ проверять свою работу: готовый список проверки для постов</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-09-28">28 сентября 2026</time>
+        <span>· 5 мин</span>
+      </div>
+      <h1>Как заставить ИИ проверять свою работу: готовый список проверки для постов</h1>
+      <p class="lead">Anthropic советует дать модели способ проверить результат. Для кода это тесты, для текстов список проверки. Даю готовый и показываю, как подключить</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-pokazala-anthropic">Что показала Anthropic</a></li><li><a href="#pri-chem-tut-teksty">При чём тут тексты</a></li><li><a href="#gotovyy-spisok-proverki-dlya-posta">Готовый список проверки для поста</a></li><li><a href="#kak-podklyuchit-chtoby-ne-vstavlyat-kazhdyy-raz">Как подключить, чтобы не вставлять каждый раз</a></li><li><a href="#kak-eto-ustroeno-u-menya">Как это устроено у меня</a></li><li><a href="#kak-ponyat-chto-spisok-rabotaet">Как понять, что список работает</a></li><li><a href="#primer-iz-praktiki">Пример из практики</a></li><li><a href="#gde-petlya-proverki-ne-spaset">Где петля проверки не спасёт</a></li><li><a href="#spisok-proverki-dlya-drugih-formatov">Список проверки для других форматов</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#model-pravda-naydet-svoi-oshibki">Модель правда найдёт свои ошибки?</a></li><li><a href="#eto-rabotaet-v-chatgpt">Это работает в ChatGPT?</a></li><li><a href="#skolko-punktov-stavit">Сколько пунктов ставить?</a></li><li><a href="#esli-hochesh-chtoby-proverka-shla-sama-na-kazhdom-tekste">Если хочешь, чтобы проверка шла сама на каждом тексте</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я обещал готовый список проверки для постов. Он ниже, его можно копировать. Сначала о том, откуда вообще идея.</p>
+<h2 id="chto-pokazala-anthropic">Что показала Anthropic</h2>
+<p>25 сентября на официальном канале Claude вышло видео «Building verification loops in <a href="/g/cex/" class="ctx-link">Claude Code</a>». За три дня больше 230 тысяч просмотров. Идея из трёх шагов:</p>
+<ol>
+<li><strong>Отдай ручные проверки.</strong> Всё, что ты проверяешь глазами после ИИ, можно передать ему.</li>
+<li><strong>Запиши их правилами.</strong> Не «сделай хорошо», а конкретные пункты.</li>
+<li><strong>Замкни петлю.</strong> Модель делает → проверяет по правилам → правит → и только потом показывает тебе.</li>
+</ol>
+<p>В документации <a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a> это вынесено в главные советы: дай модели способ проверить свою работу.</p>
+<h2 id="pri-chem-tut-teksty">При чём тут тексты</h2>
+<p>Ролик про код, но механика одна. Программист проверяет, запускается ли программа. Эксперт проверяет, звучит ли пост как он, нет ли выдуманных цифр, есть ли призыв.</p>
+<p>Обычно это выглядит так: попросил пост, получил, сам нашёл три ошибки, отправил назад, получил две новые. Круг за кругом, и время уходит твоё. Петля проверки переносит этот круг внутрь модели.</p>
+<h2 id="gotovyy-spisok-proverki-dlya-posta">Готовый список проверки для поста</h2>
+<p>Скопируй и допиши под себя:</p>
+<pre><code>Перед тем как показать мне текст, проверь его по списку.
+Если хоть один пункт не выполнен, перепиши и проверь снова.
+
+1. Длина: [например, 800–1200 знаков]
+2. Первая строка цепляет и понятна без продолжения
+3. Нет цифр, фактов и имён, которых нет в моём материале
+4. Один призыв в конце, не два
+5. Нет фраз: «в современном мире», «важно отметить», «давайте разберёмся», «знакомо?»
+6. Нет длинных тире
+7. Короткие абзацы, пустая строка между ними
+8. Звучит как мои образцы ниже, а не как статья из журнала
+
+Мои образцы: [2–3 своих поста]
+
+В конце напиши, по каким пунктам пришлось переделывать.
+</code></pre>
+<p>Последняя строка полезна: сразу видно, где модель спотыкается чаще всего. Эти пункты стоит усилить.</p>
+<h2 id="kak-podklyuchit-chtoby-ne-vstavlyat-kazhdyy-raz">Как подключить, чтобы не вставлять каждый раз</h2>
+<ul>
+<li><strong>В ChatGPT или Claude в браузере:</strong> положи список в инструкции проекта. Он будет применяться к каждому запросу внутри проекта.</li>
+<li><strong>В Claude Code:</strong> оформи список как скилл. Тогда проверка запускается сама. Как написать свой скилл за вечер: <a href="guide.html?id=write-your-own-skill">свой скилл для Claude</a>.</li>
+<li><strong>Совсем надёжно:</strong> часть пунктов проверяется скриптом, а не моделью. Длину, запрещённые слова и тире машина считает без ошибок, а модель иногда пропускает.</li>
+</ul>
+<h2 id="kak-eto-ustroeno-u-menya">Как это устроено у меня</h2>
+<p>Описания к рилсам у меня проходят проверку скриптом. Он ловит длинные тире, точки в конце абзацев, штампы и отклонение от длины. Если хоть что-то не так, текст до меня не доходит, модель переписывает. Сегодняшние описания тоже через него прошли: первый прогон вернул все пять, потому что каждое было короче нормы.</p>
+<p>Раньше я находил эти ошибки глазами, уже после публикации. Сейчас нахожу их в отчёте, до.</p>
+<h2 id="kak-ponyat-chto-spisok-rabotaet">Как понять, что список работает</h2>
+<p>Прогони через него пять своих обычных запросов подряд. Смотри на отчёт в конце каждого ответа: по каким пунктам модель переделывала.</p>
+<ul>
+<li>Если один пункт срабатывает каждый раз, значит, это устойчивая слабость. Поставь его в список первым и опиши подробнее, с примером «плохо» и «хорошо».</li>
+<li>Если пункт не сработал ни разу за пять прогонов, возможно, он не нужен. Короткий список модель выполняет внимательнее.</li>
+<li>Если ты всё равно находишь ошибки глазами, запиши их новым пунктом. Список должен расти из твоих реальных правок, а не из чужих советов.</li>
+</ul>
+<h2 id="primer-iz-praktiki">Пример из практики</h2>
+<p>Самые частые пункты, которые у меня срабатывают, скучные: длина и концевые точки. Кажется, мелочь. Но именно по таким мелочам читатель за секунду понимает, что текст писала машина. Поэтому проверка формы окупается сильнее, чем кажется: она убирает всё, что выдаёт нейросеть, и оставляет читателю только мысль. Чем скучнее пункт, тем надёжнее его проверяет скрипт, а не модель.</p>
+<h2 id="gde-petlya-proverki-ne-spaset">Где петля проверки не спасёт</h2>
+<p>Проверка ловит нарушения формы: длину, запрещённые слова, структуру. Она плохо ловит скучную мысль. Модель может выполнить все восемь пунктов и выдать правильный, но пустой текст. Смысл и тему по-прежнему выбираешь ты, проверка только снимает с тебя рутину вычитки.</p>
+<h2 id="spisok-proverki-dlya-drugih-formatov">Список проверки для других форматов</h2>
+<p>Тот же принцип переносится на всё, что ты регулярно отдаёшь нейросети.</p>
+<p><strong>Для описания рилса:</strong> длина в нужном коридоре, первая строка отдельно цепляет, одно <a href="/g/codeword-funnel-chain/" class="ctx-link">кодовое слово</a> заглавными в конце, никаких фактов, которых нет в источнике.</p>
+<p><strong>Для ответа клиенту:</strong> ответ на его вопрос стоит в первой строке, цена и следующий шаг названы прямо, нет обещаний, которые ты не даёшь, тон такой же, как в твоих прошлых ответах.</p>
+<p><strong>Для карусели:</strong> на каждом слайде одна мысль, текст читается с телефона без увеличения, последний слайд говорит, что делать дальше.</p>
+<p>Каждый такой список пишется один раз, а экономит время на каждом следующем тексте. Начни с того формата, который делаешь чаще всего.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="model-pravda-naydet-svoi-oshibki">Модель правда найдёт свои ошибки?</h2>
+<p>Часть найдёт, особенно если пункт конкретный: длина, запрещённое слово, количество призывов. Размытые пункты вроде «сделай интересно» она проверить не может.</p>
+<h2 id="eto-rabotaet-v-chatgpt">Это работает в ChatGPT?</h2>
+<p>Да. Список проверки не привязан к модели. Совет Anthropic про Claude Code, но механика общая.</p>
+<h2 id="skolko-punktov-stavit">Сколько пунктов ставить?</h2>
+<p>Начни с 5–8. Длинный список модель начинает выполнять небрежно.</p>
+<h2 id="esli-hochesh-chtoby-proverka-shla-sama-na-kazhdom-tekste">Если хочешь, чтобы проверка шла сама на каждом тексте</h2>
+<p>У меня такие проверки встроены в весь контент-завод: посты, описания, статьи.</p>
+<p>Как собрать так же: [МИКРО-ПРОДУКТ]: [ССЫЛКА-МИКРО]</p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/protokol-sborki-komandy-claude-code/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Протокол: как собрать свою команду в Claude Code за вечер</span>
+            <span class="related-sub">Команда — это не длинный промпт, а папка с текстовым файлом. Разбираю протокол сборки по пунктам и показываю на пяти своих командах, которые каждый день делают карусели, рилсы, статьи…</span>
+          </a>
+          <a class="related-card" href="/g/personal-os-four-parts/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Личная ОС на Claude Code: четыре части и порядок сборки</span>
+            <span class="related-sub">Движок, память, голос, часы — что именно писать внутри каждой части, с какой начинать и на каких трёх правилах расписания я обжёгся.</span>
+          </a>
+          <a class="related-card" href="/g/content-department-build-order/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</span>
+            <span class="related-sub">Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</span>
+          </a>
+          <a class="related-card" href="/g/10-repos-claude-team/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Арсенал: 10 репозиториев, которые превращают Claude Code в команду</span>
+            <span class="related-sub">Что реально стоит у меня в ~/.claude/skills, какую роль закрывает каждый репо, где два из них оказались одним и тем же, и три склада, откуда берётся всё остальное.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
