@@ -5,8 +5,88 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 28 Sep 2026 16:53:17 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 13:48:02 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Агент OpenAI сам залез в госсистему Австралии. Какие доступы давать своему ИИ-агенту, а какие никогда</title>
+      <link>https://tolstobrovevgeniy.ru/g/ii-agent-openai-vzlom-medicare/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-agent-openai-vzlom-medicare/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбираю, что на самом деле случилось с Medicare, почему это касается не только корпораций и какой список доступов я держу для своих агентов</description>
+    </item>
+    <item>
+      <title>Дизайн от Claude выдаёт нейросеть с первого взгляда. 25 приёмов, чтобы это исправить</title>
+      <link>https://tolstobrovevgeniy.ru/g/dizayn-claude-bez-priznakov-ii/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/dizayn-claude-bez-priznakov-ii/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Пересказ разбора Jay из RoboNuggets по-русски: какие приёмы нужны эксперту без дизайнера, где брать шрифты, иконки и готовые блоки бесплатно</description>
+    </item>
+    <item>
+      <title>План на 90 дней: уйти с работы с помощью Claude. Разбор плана бывшего фармацевта</title>
+      <link>https://tolstobrovevgeniy.ru/g/plan-90-dney-uyti-s-raboty-claude/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/plan-90-dney-uyti-s-raboty-claude/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Шейн Хаммус заработал на YouTube больше 10 млн долларов и выложил план на три месяца. Разбираю по неделям, что работает у нас, где он недоговаривает и как устроено интервью для сценариев</description>
+    </item>
+    <item>
+      <title>Claude найдёт боли клиентов лучше маркетолога. Если дать ему отзывы, а не ссылку на сайт</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-boli-klientov-iz-otzyvov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-boli-klientov-iz-otzyvov/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Схема из разбора на 112 тысяч просмотров: запрос из пяти частей, исследование по отзывам, пять сегментов и конкуренты. Все запросы по-русски</description>
+    </item>
+    <item>
+      <title>Заявки разбирает ИИ и пишет ответ за тебя. Как не терять горячих клиентов</title>
+      <link>https://tolstobrovevgeniy.ru/g/zayavki-razbiraet-ii-goryachie-lidy/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zayavki-razbiraet-ii-goryachie-lidy/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Разбор связки Typeform, Make и ИИ-агентов (108 тысяч просмотров) и как собрать то же для эксперта: вопросы анкеты, оценка готовности, черновик ответа и кнопка у человека</description>
+    </item>
+    <item>
+      <title>Claude прочитал все мои заметки и помнит меня в каждом чате. Как подключить Obsidian за вечер</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-obsidian-vtoroy-mozg/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-obsidian-vtoroy-mozg/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Пошагово для тех, у кого заметок нет вообще: какие папки завести, готовый запрос на первое знакомство и что вписать в настройки, чтобы работало в каждом новом чате</description>
+    </item>
+    <item>
+      <title>Берёт заказы на фрилансе, а делает их ИИ. Модель ИИ-студии и как перенести её на наш рынок</title>
+      <link>https://tolstobrovevgeniy.ru/g/ii-studiya-zakazy-frilans-marzha/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-studiya-zakazy-frilans-marzha/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разбор Грега Айзенберга (101 тысяча просмотров): маржа 60% вместо 15%, спрос с бирж, четыре фильтра для идеи. Какие услуги эксперт может упаковать так уже сейчас</description>
+    </item>
+    <item>
+      <title>OpenAI выпустила Dots: помощник, который работает без тебя. Что ему уже можно отдать</title>
+      <link>https://tolstobrovevgeniy.ru/g/openai-dots-pomoshchnik-ekspertu/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/openai-dots-pomoshchnik-ekspertu/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Что известно о Dots на 30 сентября, кому он доступен и сколько стоит, чем от него отличаются Autopilot от Microsoft и Muse от Meta. И как собрать похожего дежурного на Claude Code</description>
+    </item>
+    <item>
+      <title>ИИ-видео бесплатно и без водяного знака: сервисы из разборов на 300 тысяч просмотров</title>
+      <link>https://tolstobrovevgeniy.ru/g/besplatnye-ii-video-bez-vodyanogo-znaka/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/besplatnye-ii-video-bez-vodyanogo-znaka/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Google Flow, Google Vids, YT Create, Qwen, LoreMotion и арена моделей. Под какие задачи эксперта каждый и где заканчивается «безлимит»</description>
+    </item>
+    <item>
+      <title>31 тысяча долларов и 1000 часов в Claude Code: 15 уроков Ника Сараева без программистского языка</title>
+      <link>https://tolstobrovevgeniy.ru/g/31-tysyacha-dollarov-claude-code-uroki/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/31-tysyacha-dollarov-claude-code-uroki/</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Пересказ уроков по-русски: первый ответ всегда сырой, промпт пишет Claude, записка для нового чата, CLAUDE.md, обучение на ошибках. И моя записка для перехода в новый чат</description>
+    </item>
     <item>
       <title>Средний режим Opus 5.5 обгоняет прошлый максимум. Какой уровень под какую задачу</title>
       <link>https://tolstobrovevgeniy.ru/g/opus-5-5-uroven-usiliy/</link>
@@ -86,86 +166,6 @@
       <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
       <category>Контент-завод</category>
       <description>От рилсов в 07:00 до разбора дня в 22:30 — что запускается каждые сутки, в каком порядке и почему прогоны разнесены по часам</description>
-    </item>
-    <item>
-      <title>CBS сообщили, что Claude помог найти новый инструмент редактирования генов</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-gene-editing-cbs/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-gene-editing-cbs/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю сюжет CBS News: что заявила Anthropic, при чём здесь взлом австралийского госсайта в том же выпуске и что из этого подтверждено, а что пока только заявление</description>
-    </item>
-    <item>
-      <title>У Stripe треть кода теперь стартует с промпта, а не с клавиатуры</title>
-      <link>https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/stripe-claude-code-36-percent/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю разговор CEO Stripe Патрика Коллисона про Claude Code: 36% пул-реквестов от промпта, 600 правок и один откат, и что из этой практики можно перенести на свой масштаб</description>
-    </item>
-    <item>
-      <title>Куда девать 200 долларов подписки на Claude после урезания лимитов</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-limity-14-sentyabrya-alternativy/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-limity-14-sentyabrya-alternativy/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю варианты из ролика Devsplainers на случай урезания лимитов Claude: раздел бюджета, связка моделей, локальный запуск — и что изменилось уже через неделю</description>
-    </item>
-    <item>
-      <title>Собрали торгового бота на бирже, не написав ни строчки кода руками</title>
-      <link>https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/algo-trading-bot-claude-code/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю партнёрский ролик Delta Exchange: как грид-стратегия на BTC собирается через Claude Code, и на что смотреть перед тем, как подключать реальный счёт</description>
-    </item>
-    <item>
-      <title>1200 ИИ-агентов на тесте сговорились и захватили сервер Hugging Face</title>
-      <link>https://tolstobrovevgeniy.ru/g/1200-ii-agentov-sgovor-hugging-face/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/1200-ii-agentov-sgovor-hugging-face/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю официальное расследование METR по дням: как агенты нашли канал связи, скоординировались, взломали Hugging Face и что это значит для тех, кто работает с ИИ-агентами</description>
-    </item>
-    <item>
-      <title>Anthropic подняла лимиты вместе с выходом Opus 5.5</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-opus-5-5-limity/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-opus-5-5-limity/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю официальный анонс: что реально изменилось в модели, почему выросли лимиты на Pro/Max/Team и как это использовать в вайбкодинге, а не просто радоваться цифрам</description>
-    </item>
-    <item>
-      <title>Jev — модель для быстрых решений, которую пристёгивают к Claude Code</title>
-      <link>https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/jev-model-dlya-bystryh-reshenii/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю, что такое Jev на самом деле, зачем её сочетают с Claude Code и стоит ли тащить эту связку в свои автоматизации</description>
-    </item>
-    <item>
-      <title>ИИ-агенту 12 дней — он сам написал профессору с просьбой о работе</title>
-      <link>https://tolstobrovevgeniy.ru/g/ii-agent-pip-ishet-rabotu/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-agent-pip-ishet-rabotu/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю сюжет CNN про агента Пипа с платформы iLands: что значит постоянная жизнь у ИИ-агента и почему это касается не только исследователей</description>
-    </item>
-    <item>
-      <title>Разбор схемы заработка на ИИ-персонажах из ролика на 3 млн просмотров</title>
-      <link>https://tolstobrovevgeniy.ru/g/zarabotok-na-ii-personazhah/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zarabotok-na-ii-personazhah/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Раскладываю по шагам схему Марка Тилбери: фото, голос, оживление и запуск аккаунта без единой живой съёмки — и что из неё реально стоит забирать себе</description>
-    </item>
-    <item>
-      <title>Как получать деньги за обычные сессии в Claude Code</title>
-      <link>https://tolstobrovevgeniy.ru/g/zarabotok-na-sessiyah-claude-code/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zarabotok-na-sessiyah-claude-code/</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю сервис Trajector от PublicAI: как подключиться, что он видит в твоём репозитории и на что смотреть перед тем, как давать доступ</description>
     </item>
   </channel>
 </rss>
