@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формула MAPS для задач ИИ: шаблон и примеры по-русски — Евгений Толстобров</title>
+  <meta name="description" content="Формула MAPS Дэна Мартелла: миссия, запрос, параметры, форма. Шаблон задания для ИИ по-русски, пять примеров для эксперта и принцип «мозг свой, модели в аренду».">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/formula-maps-zadanie-dlya-ii/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Формула MAPS для задач ИИ: шаблон и примеры по-русски — Евгений Толстобров">
+  <meta property="og:description" content="Формула MAPS Дэна Мартелла: миссия, запрос, параметры, форма. Шаблон задания для ИИ по-русски, пять примеров для эксперта и принцип «мозг свой, модели в аренду».">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/formula-maps-zadanie-dlya-ii/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Формула MAPS для задач ИИ: шаблон и примеры по-русски — Евгений Толстобров">
+  <meta name="twitter:description" content="Формула MAPS Дэна Мартелла: миссия, запрос, параметры, форма. Шаблон задания для ИИ по-русски, пять примеров для эксперта и принцип «мозг свой, модели в аренду».">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-10-01">
+  <meta property="article:modified_time" content="2026-10-01">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Формула MAPS для задач ИИ: шаблон и примеры по-русски","name":"Формула MAPS: четыре буквы, по которым Дэн Мартелл ставит задачи ИИ. Шаблон по-русски с примерами","description":"Формула MAPS Дэна Мартелла: миссия, запрос, параметры, форма. Шаблон задания для ИИ по-русски, пять примеров для эксперта и принцип «мозг свой, модели в аренду».","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-01","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/formula-maps-zadanie-dlya-ii/"},"url":"https://tolstobrovevgeniy.ru/g/formula-maps-zadanie-dlya-ii/","articleSection":"Инструкция","wordCount":718,"timeRequired":"PT6M","keywords":"формула maps, как ставить задачу нейросети, шаблон промпта, дэн мартелл ии, лучшие ии инструменты 2026"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Формула MAPS: четыре буквы, по которым Дэн Мартелл ставит задачи ИИ. Шаблон по-русски с примерами","item":"https://tolstobrovevgeniy.ru/g/formula-maps-zadanie-dlya-ii/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"MAPS лучше других формул?","acceptedAnswer":{"@type":"Answer","text":"Он не лучше, он короче. Суть у всех одна: цель, действие, ограничения, формат."}},{"@type":"Question","name":"Обязательно писать все четыре части?","acceptedAnswer":{"@type":"Answer","text":"Для мелочи хватит запроса и формы. Для задачи длиннее пяти минут пиши все четыре."}},{"@type":"Question","name":"Что делать, если ИИ всё равно делает не то?","acceptedAnswer":{"@type":"Answer","text":"Чаще всего не хватает параметров. Добавь пример результата и список того, чего делать не надо."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Формула MAPS: четыре буквы, по которым Дэн Мартелл ставит задачи ИИ. Шаблон по-русски с примерами</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-10-01">1 октября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Формула MAPS: четыре буквы, по которым Дэн Мартелл ставит задачи ИИ. Шаблон по-русски с примерами</h1>
+      <p class="lead">Миссия, запрос, параметры, форма. Разбираю формулу из ролика на 277 тысяч просмотров, даю шаблон и пять готовых заданий для эксперта. И почему «мозг свой, модели в аренду»</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#o-chem-rolik-martella">О чём ролик Мартелла</a></li><li><a href="#formula-maps">Формула MAPS</a></li><li><a href="#ego-primer">Его пример</a></li><li><a href="#shablon-po-russki">Шаблон по-русски</a></li><li><a href="#pyat-zadaniy-dlya-eksperta">Пять заданий для эксперта</a></li><li><a href="#priem-s-obucheniem-pokazom">Приём с обучением показом</a></li><li><a href="#mozg-svoy-modeli-v-arendu">«Мозг свой, модели в аренду»</a></li><li><a href="#kak-prevratit-udachnoe-zadanie-v-shablon">Как превратить удачное задание в шаблон</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#maps-luchshe-drugih-formul">MAPS лучше других формул?</a></li><li><a href="#obyazatelno-pisat-vse-chetyre-chasti">Обязательно писать все четыре части?</a></li><li><a href="#chto-delat-esli-ii-vse-ravno-delaet-ne-to">Что делать, если ИИ всё равно делает не то?</a></li><li><a href="#prodolzhenie-v-telegram">Продолжение в Telegram</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я пообещал шаблон MAPS по-русски с примерами. Он ниже. Сначала контекст.</p>
+<h2 id="o-chem-rolik-martella">О чём ролик Мартелла</h2>
+<p>Дэн Мартелл, предприниматель и автор книги про выкуп своего времени, выпустил ролик «Лучшие ИИ-инструменты 2026 года». За неделю 277 тысяч просмотров.</p>
+<p>Начинает он не с инструментов, а с проблемы. Каждый месяц выходит новая модель, все спорят, какая лучше. А проигрывают те, кто с каждой новой моделью начинает с нуля: заново объясняет, кто он и чем занимается. Под инструментами у них ничего своего нет.</p>
+<p>Дальше он показывает свой набор. Важная оговорка: в конце ролика он рекламирует собственный сервис. Поэтому я беру из ролика то, что работает без его продукта: формулу и принцип.</p>
+<h2 id="formula-maps">Формула MAPS</h2>
+<p>Четыре буквы, четыре части любого задания.</p>
+<p><strong>M, миссия.</strong> Чего ты добиваешься в итоге. Не «напиши письмо», а «хочу вернуть клиентов, которые пропали после первой консультации».</p>
+<p><strong>A, запрос.</strong> Что конкретно сделать. Одно действие, сформулированное ясно.</p>
+<p><strong>P, параметры.</strong> Файлы, правила, запреты. Что использовать, чего не трогать, что пропустить.</p>
+<p><strong>S, форма.</strong> В каком виде вернуть результат и как сообщить, что готово.</p>
+<h2 id="ego-primer">Его пример</h2>
+<blockquote>
+<p>Собери все чеки за прошлый месяц. Открой папку с чеками, прочитай каждый, переименуй файл по дате и продавцу, чеки из командировок пропусти, посчитай общую сумму и отправь руководителю аппарата.</p>
+</blockquote>
+<p>Разложим:</p>
+<table>
+<thead>
+<tr>
+<th>Часть</th>
+<th>В примере</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Миссия</td>
+<td>учёт чеков за месяц</td>
+</tr>
+<tr>
+<td>Запрос</td>
+<td>прочитать, переименовать, посчитать</td>
+</tr>
+<tr>
+<td>Параметры</td>
+<td>папка с чеками; командировки пропустить</td>
+</tr>
+<tr>
+<td>Форма</td>
+<td>сумма сообщением конкретному человеку</td>
+</tr>
+</tbody></table>
+<p>Один абзац заменяет час ручной работы. И заметь: параметр «командировки пропусти» это то, что человек обычно забывает сказать, а потом удивляется результату.</p>
+<h2 id="shablon-po-russki">Шаблон по-русски</h2>
+<blockquote>
+<p><strong>Миссия:</strong> я хочу [итог, ради которого всё делается].
+<strong>Запрос:</strong> сделай [одно конкретное действие].
+<strong>Параметры:</strong> используй [файлы, данные]. Соблюдай [правила]. Не делай [запреты]. Пропусти [исключения].
+<strong>Форма:</strong> верни [таблицу, список, текст на N знаков]. Сообщи, когда готово, и отдельно перечисли, в чём не уверен.</p>
+</blockquote>
+<p>Последнюю фразу я добавил от себя. Просьба перечислить сомнения спасает от уверенной ошибки.</p>
+<h2 id="pyat-zadaniy-dlya-eksperta">Пять заданий для эксперта</h2>
+<p><strong>Пост.</strong> Миссия: привести людей в канал. Запрос: напиши пост по теме [тема]. Параметры: вот три моих поста как образец стиля, без длинных тире, без слов [список]. Форма: до 1000 знаков, два варианта первой строки.</p>
+<p><strong>Разбор заявок.</strong> Миссия: отвечать горячим за час. Запрос: оцени заявки из файла. Параметры: мои услуги и цены в файле [файл], не обещай скидок. Форма: таблица с оценкой 1-10 и черновиком ответа.</p>
+<p><strong>Контент-план.</strong> Миссия: продать продукт [продукт] через месяц. Запрос: составь план на 4 недели. Параметры: исследование аудитории в файле, 3 поста в неделю. Форма: таблица: тема, боль, крючок.</p>
+<p><strong>Конкуренты.</strong> Миссия: найти свободную цену. Запрос: сравни три предложения. Параметры: тексты конкурентов ниже, цены не выдумывай. Форма: таблица и один вывод.</p>
+<p><strong>Письмо клиенту.</strong> Миссия: вернуть пропавшего клиента. Запрос: напиши письмо. Параметры: история переписки ниже, без давления. Форма: до 500 знаков, с одним вопросом в конце.</p>
+<h2 id="priem-s-obucheniem-pokazom">Приём с обучением показом</h2>
+<p>Мартелл показывает ещё одну вещь: задачу можно не описывать, а показать. Включаешь запись, делаешь работу на экране один раз, останавливаешь, и агент повторяет. Он называет это методом видеокамеры.</p>
+<p>Если твой инструмент так не умеет, работает замена: запиши экран с голосом, расшифруй и отдай расшифровку как описание шагов.</p>
+<h2 id="mozg-svoy-modeli-v-arendu">«Мозг свой, модели в аренду»</h2>
+<p>Главная мысль ролика. Всё, что ИИ должен о тебе знать (кто ты, как говоришь, какие решения принял, что уже пробовал), должно лежать в одном месте, которое принадлежит тебе. Тогда любая новая модель подключается к этому месту и работает сразу.</p>
+<p>Мартелл предлагает для этого свой платный сервис. Но принцип работает и без него. У меня это папка с файлами: <a href="/g/three-setup-files/" class="ctx-link">правила проекта, память</a>, профиль голоса, заметки в Obsidian. Вышла новая модель, она читает те же файлы и продолжает с того же места.</p>
+<p>Как собрать такую папку, есть в статьях <a href="guide.html?id=claude-obsidian-vtoroy-mozg">Claude и Obsidian: второй мозг</a> и <a href="guide.html?id=project-memory-vs-chat">память проекта и память чата</a>.</p>
+<h2 id="kak-prevratit-udachnoe-zadanie-v-shablon">Как превратить удачное задание в шаблон</h2>
+<p>Когда задание по MAPS сработало, сохрани его в файл с понятным названием. В следующий раз меняешь только параметры.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="maps-luchshe-drugih-formul">MAPS лучше других формул?</h2>
+<p>Он не лучше, он короче. Суть у всех одна: цель, действие, ограничения, формат.</p>
+<h2 id="obyazatelno-pisat-vse-chetyre-chasti">Обязательно писать все четыре части?</h2>
+<p>Для мелочи хватит запроса и формы. Для задачи длиннее пяти минут пиши все четыре.</p>
+<h2 id="chto-delat-esli-ii-vse-ravno-delaet-ne-to">Что делать, если ИИ всё равно делает не то?</h2>
+<p>Чаще всего не хватает параметров. Добавь пример результата и список того, чего делать не надо.</p>
+<h2 id="prodolzhenie-v-telegram">Продолжение в Telegram</h2>
+<p>Как я ставлю задачи своей системе, показываю каждый день в Telegram-канале: рилсы, статьи, воронки и все грабли по ходу. Подписывайся, там продолжение этой темы: <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/claude-obsidian-vtoroy-mozg/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Claude прочитал все мои заметки и помнит меня в каждом чате. Как подключить Obsidian за вечер</span>
+            <span class="related-sub">Пошагово для тех, у кого заметок нет вообще: какие папки завести, готовый запрос на первое знакомство и что вписать в настройки, чтобы работало в каждом новом чате</span>
+          </a>
+          <a class="related-card" href="/g/claude-boli-klientov-iz-otzyvov/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Claude найдёт боли клиентов лучше маркетолога. Если дать ему отзывы, а не ссылку на сайт</span>
+            <span class="related-sub">Схема из разбора на 112 тысяч просмотров: запрос из пяти частей, исследование по отзывам, пять сегментов и конкуренты. Все запросы по-русски</span>
+          </a>
+          <a class="related-card" href="/g/dopros-claude-pered-zadachey/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">«Допроси меня»: приём, с которого стоит начинать любую задачу в Claude. Готовый запрос по-русски</span>
+            <span class="related-sub">Нейт Херк просит Claude сначала задать вопросы и только потом работать. Почему это чинит плохой первый ответ, мой вариант запроса и три задачи, которые стоит сделать с ним в выходные</span>
+          </a>
+          <a class="related-card" href="/g/chutye-mastera-ii-12-voprosov/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">ИИ научили чутью мастера. 12 вопросов, чтобы передать нейросети свой опыт эксперта</span>
+            <span class="related-sub">В Корее экскаватор без водителя чувствует камень под землёй: его учили на решениях опытных машинистов. Разбираю, как тот же приём работает для эксперта, и даю вопросы для распаковки</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

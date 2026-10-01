@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приём «допроси меня» для Claude: запрос и примеры — Евгений Толстобров</title>
+  <meta name="description" content="Приём grill me: Claude сначала задаёт вопросы, потом делает задачу. Готовый запрос по-русски, когда включать и три задачи для эксперта на выходные.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/dopros-claude-pered-zadachey/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Приём «допроси меня» для Claude: запрос и примеры — Евгений Толстобров">
+  <meta property="og:description" content="Приём grill me: Claude сначала задаёт вопросы, потом делает задачу. Готовый запрос по-русски, когда включать и три задачи для эксперта на выходные.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/dopros-claude-pered-zadachey/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Приём «допроси меня» для Claude: запрос и примеры — Евгений Толстобров">
+  <meta name="twitter:description" content="Приём grill me: Claude сначала задаёт вопросы, потом делает задачу. Готовый запрос по-русски, когда включать и три задачи для эксперта на выходные.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-10-01">
+  <meta property="article:modified_time" content="2026-10-01">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Приём «допроси меня» для Claude: запрос и примеры","name":"«Допроси меня»: приём, с которого стоит начинать любую задачу в Claude. Готовый запрос по-русски","description":"Приём grill me: Claude сначала задаёт вопросы, потом делает задачу. Готовый запрос по-русски, когда включать и три задачи для эксперта на выходные.","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-01","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/dopros-claude-pered-zadachey/"},"url":"https://tolstobrovevgeniy.ru/g/dopros-claude-pered-zadachey/","articleSection":"Инструкция","wordCount":714,"timeRequired":"PT6M","keywords":"grill me prompt, claude задаёт вопросы, как улучшить ответ нейросети, нейт херк claude code, промпт интервью claude"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"«Допроси меня»: приём, с которого стоит начинать любую задачу в Claude. Готовый запрос по-русски","item":"https://tolstobrovevgeniy.ru/g/dopros-claude-pered-zadachey/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько вопросов он задаёт?","acceptedAnswer":{"@type":"Answer","text":"Обычно от пяти до пятнадцати. Если их больше, попроси остановиться и пересказать, что уже понял."}},{"@type":"Question","name":"Работает ли это в обычном Claude, не в Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Да, в любом чате. В Claude Code ответы ещё и сохраняются в файлы проекта."}},{"@type":"Question","name":"А если я сам не знаю ответа на вопрос?","acceptedAnswer":{"@type":"Answer","text":"Так и скажи. Попроси предложить три варианта и выбери. Это тоже результат допроса."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>«Допроси меня»: приём, с которого стоит начинать любую задачу в Claude. Готовый запрос по-русски</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-10-01">1 октября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>«Допроси меня»: приём, с которого стоит начинать любую задачу в Claude. Готовый запрос по-русски</h1>
+      <p class="lead">Нейт Херк просит Claude сначала задать вопросы и только потом работать. Почему это чинит плохой первый ответ, мой вариант запроса и три задачи, которые стоит сделать с ним в выходные</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#intervyu-neyta-herka">Интервью Нейта Херка</a></li><li><a href="#v-chem-priem">В чём приём</a></li><li><a href="#pochemu-eto-rabotaet">Почему это работает</a></li><li><a href="#moy-variant-zaprosa">Мой вариант запроса</a></li><li><a href="#kogda-vklyuchat-a-kogda-net">Когда включать, а когда нет</a></li><li><a href="#tri-zadachi-na-vyhodnye">Три задачи на выходные</a></li><li><a href="#kak-eto-ustroeno-u-menya">Как это устроено у меня</a></li><li><a href="#chastaya-oshibka">Частая ошибка</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#skolko-voprosov-on-zadaet">Сколько вопросов он задаёт?</a></li><li><a href="#rabotaet-li-eto-v-obychnom-claude-ne-v-claude-code">Работает ли это в обычном Claude, не в Claude Code?</a></li><li><a href="#a-esli-ya-sam-ne-znayu-otveta-na-vopros">А если я сам не знаю ответа на вопрос?</a></li><li><a href="#prodolzhenie-v-telegram">Продолжение в Telegram</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я пообещал свой вариант запроса и три задачи на выходные. Сначала о том, откуда приём.</p>
+<h2 id="intervyu-neyta-herka">Интервью Нейта Херка</h2>
+<p>Нейт Херк ведёт один из самых заметных каналов про автоматизацию на ИИ. 28 сентября вышло его большое интервью в шоу Калума Джонсона (66 тысяч просмотров). В оглавлении выпуска сказано, что он построил на Claude бизнес на 250 тысяч долларов в месяц. Это слова из выпуска, проверить их я не могу.</p>
+<p>Интереснее другое. Первая же глава называется «Почему не нужно быть технарём, чтобы <a href="/g/kak-polzovatsya-claude-v-rossii/" class="ctx-link">пользоваться Claude</a> Code». А в описании выпуска лежит ссылка на его запрос «grill me», то есть «допроси меня».</p>
+<h2 id="v-chem-priem">В чём приём</h2>
+<p>Обычно мы пишем задание и ждём результат. Результат получается средним, мы правим, получаем второй вариант, снова правим.</p>
+<p>Здесь порядок обратный. Перед задачей ты просишь Claude задавать вопросы, пока он не поймёт всё, что нужно. Не ты сочиняешь длинное задание, а ИИ вытаскивает из тебя детали.</p>
+<h2 id="pochemu-eto-rabotaet">Почему это работает</h2>
+<p>В интервью есть отдельная глава: «Почему первый ответ <a href="/g/cex/" class="ctx-link">Claude Code</a> плохой и как это исправить». Причина плохого первого ответа почти всегда одна: модели не хватило контекста. Она не знает, для кого текст, что ты уже пробовал, что считаешь хорошим результатом. И заполняет пробелы средним по рынку.</p>
+<p>Допрос закрывает эту дыру. К тому же вопросы показывают, о чём ты сам не подумал. Половина ценности в том, что на третьем вопросе ты понимаешь: задача сформулирована не так.</p>
+<h2 id="moy-variant-zaprosa">Мой вариант запроса</h2>
+<blockquote>
+<p>Прежде чем делать задачу, допроси меня. Задавай по одному вопросу за раз. Спрашивай о цели, аудитории, ограничениях, о том, что я уже пробовал, и о том, как я пойму, что результат хороший. Если мой ответ размытый, переспроси. Когда поймёшь задачу, перескажи её одним абзацем и дождись моего «да». Только после этого начинай.</p>
+<p>Задача: [задача одной строкой]</p>
+</blockquote>
+<p>Три детали, которые я добавил после собственных проб.</p>
+<p><strong>По одному вопросу.</strong> Если ИИ выдаёт список из десяти вопросов, ты отвечаешь на три и устаёшь. По одному получается разговор.</p>
+<p><strong>Переспрашивать размытое.</strong> Без этого он примет «ну, для предпринимателей» и пойдёт дальше.</p>
+<p><strong>Пересказ и «да».</strong> Это ворота: работа не начинается, пока ты не подтвердил, что он понял верно.</p>
+<h2 id="kogda-vklyuchat-a-kogda-net">Когда включать, а когда нет</h2>
+<table>
+<thead>
+<tr>
+<th>Задача</th>
+<th>Допрос</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Оффер, лендинг, воронка</td>
+<td>обязательно</td>
+</tr>
+<tr>
+<td>Новый продукт или программа</td>
+<td>обязательно</td>
+</tr>
+<tr>
+<td>Контент-план на месяц</td>
+<td>да</td>
+</tr>
+<tr>
+<td>Сложное письмо клиенту</td>
+<td>да</td>
+</tr>
+<tr>
+<td>Пост на знакомую тему</td>
+<td>нет, хватит образца</td>
+</tr>
+<tr>
+<td>Сократить или поправить текст</td>
+<td>нет</td>
+</tr>
+</tbody></table>
+<p>Правило простое: если ошибка в понимании задачи стоит больше десяти минут, допрос окупается.</p>
+<h2 id="tri-zadachi-na-vyhodnye">Три задачи на выходные</h2>
+<p><strong>1. Распаковать свой продукт.</strong> Задача: «опиши мой продукт так, чтобы его понял человек с улицы». После допроса у тебя будет описание, которое ты сам не мог сформулировать годами. Сохрани его в файл.</p>
+<p><strong>2. Собрать ответы на частые вопросы клиентов.</strong> Задача: «составь ответы на 10 вопросов, которые мне задают перед покупкой». ИИ вытащит из тебя сами вопросы, а потом и ответы твоими словами.</p>
+<p><strong>3. Спроектировать один навык.</strong> В интервью есть главы про то, что делать при запуске <a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a> и как правильно собирать навык. Мой порядок такой: выбери работу, которую делаешь каждую неделю, попроси допросить тебя о каждом шаге, и из ответов собери инструкцию. Это и будет навык.</p>
+<p>Про сборку навыка подробно: <a href="guide.html?id=write-your-own-skill">как написать свой навык</a>.</p>
+<h2 id="kak-eto-ustroeno-u-menya">Как это устроено у меня</h2>
+<p>Допрос у меня зашит в правила проекта: на «создай сайт» или «сделай воронку» Claude не бросается делать, а сначала поднимает контекст и уточняет. Ответы на такие допросы сохраняются в память. Второй раз те же вопросы он уже не задаёт.</p>
+<p>Это и есть главный эффект: допрос, сохранённый в файл, работает дальше вместо тебя. Про то, куда складывать ответы, есть статья <a href="guide.html?id=three-setup-files">три файла, которые делают из Claude сотрудника</a>. А похожий приём с интервью для сценариев я разбирал в <a href="guide.html?id=plan-90-dney-uyti-s-raboty-claude">плане на 90 дней</a>.</p>
+<h2 id="chastaya-oshibka">Частая ошибка</h2>
+<p>Отвечать на вопросы односложно. Допрос работает, только если ты говоришь развёрнуто. Удобнее всего отвечать голосом.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="skolko-voprosov-on-zadaet">Сколько вопросов он задаёт?</h2>
+<p>Обычно от пяти до пятнадцати. Если их больше, попроси остановиться и пересказать, что уже понял.</p>
+<h2 id="rabotaet-li-eto-v-obychnom-claude-ne-v-claude-code">Работает ли это в обычном Claude, не в Claude Code?</h2>
+<p>Да, в любом чате. В Claude Code ответы ещё и сохраняются в файлы проекта.</p>
+<h2 id="a-esli-ya-sam-ne-znayu-otveta-na-vopros">А если я сам не знаю ответа на вопрос?</h2>
+<p>Так и скажи. Попроси предложить три варианта и выбери. Это тоже результат допроса.</p>
+<h2 id="prodolzhenie-v-telegram">Продолжение в Telegram</h2>
+<p>Как я ставлю задачи своей системе и что из этого выходит, показываю каждый день в Telegram-канале: рилсы, статьи, воронки и все грабли по ходу. Подписывайся, там продолжение этой темы: <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/formula-maps-zadanie-dlya-ii/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Формула MAPS: четыре буквы, по которым Дэн Мартелл ставит задачи ИИ. Шаблон по-русски с примерами</span>
+            <span class="related-sub">Миссия, запрос, параметры, форма. Разбираю формулу из ролика на 277 тысяч просмотров, даю шаблон и пять готовых заданий для эксперта. И почему «мозг свой, модели в аренду»</span>
+          </a>
+          <a class="related-card" href="/g/context-first-prompts/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Ты винишь модель. А дело в одном промпте</span>
+            <span class="related-sub">Почему «тупая нейронка» — это диагноз промпту, а не модели: один раз заложенный контекст превращает одиночные запросы в систему.</span>
+          </a>
+          <a class="related-card" href="/g/prompt-library-vs-context-file/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Не склад промптов, а файл о себе: что в нём должно лежать</span>
+            <span class="related-sub">Почему чужие промпты дают средний текст и какие 6 разделов записать в один файл, чтобы нейросеть писала под тебя. С шаблоном для заполнения и тремя ошибками, из-за которых файл не работает</span>
+          </a>
+          <a class="related-card" href="/g/six-prompting-moves/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Шесть приёмов промптинга, которые работают каждый день</span>
+            <span class="related-sub">Роль вместо задачи, план до работы, жёсткий формат, примеры вместо объяснений, запреты и файл правил — с готовыми формулировками и парами «до / после».</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
