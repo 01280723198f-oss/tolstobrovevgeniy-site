@@ -5,8 +5,136 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 01 Oct 2026 13:59:21 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 15:40:51 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ИИ собрал сайт, где цену можно поменять в браузере. Как найти такие дыры до запуска</title>
+      <link>https://tolstobrovevgeniy.ru/g/dyry-v-sayte-ot-ii-vibe-security/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/dyry-v-sayte-ot-ii-vibe-security/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Нейросеть уверенно оставляет ключи в коде и доверяет браузеру цену товара. Разбираю девять разделов проверки из бесплатного навыка Vibe Security простыми словами и что посмотреть руками</description>
+    </item>
+    <item>
+      <title>Сто экспериментов за ночь: метод Карпатого для любой задачи. Запрос и пять применений для эксперта</title>
+      <link>https://tolstobrovevgeniy.ru/g/sto-eksperimentov-metod-karpatogo/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sto-eksperimentov-metod-karpatogo/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>ИИ сам пробует, сравнивает и оставляет лучшее. Разбираю, как устроен autoresearch, почему он работает не только для нейросетей, как задать мерило «лучше» и сколько это стоит по лимиту</description>
+    </item>
+    <item>
+      <title>Claude читает только первые 100 строк файла в навыке. Семь новых правил сборки навыков</title>
+      <link>https://tolstobrovevgeniy.ru/g/navyki-claude-pervye-100-strok/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/navyki-claude-pervye-100-strok/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Anthropic обновила рекомендации: оглавление в длинных файлах, три степени свободы, ссылки в один уровень, чек-листы и самопроверка. Пересказ по-русски и запрос для проверки своих навыков</description>
+    </item>
+    <item>
+      <title>9 бесплатных навыков для Claude и ChatGPT: ссылки, установка и как подогнать под себя</title>
+      <link>https://tolstobrovevgeniy.ru/g/9-besplatnyh-navykov-claude-chatgpt/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/9-besplatnyh-navykov-claude-chatgpt/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Исследования, просмотр видео, графика, чистка текста, дизайн и проверка безопасности. Разбор подборки Futurepedia: что каждый навык делает, какие нужны эксперту и с чего начать</description>
+    </item>
+    <item>
+      <title>10 бесплатных ИИ-сайтов, о которых мало кто знает: что каждый умеет и где у него предел</title>
+      <link>https://tolstobrovevgeniy.ru/g/10-besplatnyh-ii-saytov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/10-besplatnyh-ii-saytov/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Чат без регистрации, редактор вместо Photoshop, презентации, видео, формы и поиск с источниками. Разбор подборки на 135 тысяч просмотров с честными ограничениями и тремя сайтами для старта</description>
+    </item>
+    <item>
+      <title>Модель OpenAI обошла защиту и вышла в интернет. Три вопроса про кнопку «стоп» для своего агента</title>
+      <link>https://tolstobrovevgeniy.ru/g/openai-pauza-model-oboshla-zashchitu/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/openai-pauza-model-oboshla-zashchitu/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Что известно об инциденте, почему агента останавливали два часа и что это значит для каждого, кто подключает ИИ к своим сервисам. Проверка, которая занимает десять минут</description>
+    </item>
+    <item>
+      <title>Стэнфорд подменил студента на фото через ИИ и извинился. Пять правил для ИИ-фото эксперта</title>
+      <link>https://tolstobrovevgeniy.ru/g/stenford-ii-foto-podmena/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/stenford-ii-foto-podmena/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Университет заменил человека на рекламном снимке и нарушил собственные правила. Разбираю историю и даю пять правил: что с фото через нейросеть можно, что нельзя и какую пометку ставить</description>
+    </item>
+    <item>
+      <title>Приложение для айфона без единой строки кода: Claude собирает его прямо в программе Apple</title>
+      <link>https://tolstobrovevgeniy.ru/g/prilozhenie-dlya-ayfona-claude-xcode/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/prilozhenie-dlya-ayfona-claude-xcode/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Блогер описал идею словами и получил рабочее приложение с ИИ-фото. Разбираю порядок шагов, что нужно из техники, сколько стоит выход в App Store и где человек всё ещё обязателен</description>
+    </item>
+    <item>
+      <title>Claude смонтировал ролик целиком: шесть шагов, инструменты и три способа на этом заработать</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-smontiroval-rolik-6-shagov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-smontiroval-rolik-6-shagov/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Цвет, обрезка, субтитры, графика, перебивки и рендер без монтажёра. Разбираю схему из ролика на 58 тысяч просмотров, что поставить на компьютер и где человек всё ещё нужен</description>
+    </item>
+    <item>
+      <title>ИИ-агента Meta обвинили в чтении личных сообщений. Семь пунктов проверки перед установкой любого агента</title>
+      <link>https://tolstobrovevgeniy.ru/g/meta-muse-lichnye-soobshcheniya-proverka/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/meta-muse-lichnye-soobshcheniya-proverka/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Журналист заявил, что Muse получил доступ к его переписке без разрешения, Meta это отрицает. Что известно точно и список проверки на пять минут для любого ИИ-агента на твоём компьютере</description>
+    </item>
+    <item>
+      <title>Признаки, по которым видно текст нейросети: десять шаблонов с заменами и навык, который их убирает</title>
+      <link>https://tolstobrovevgeniy.ru/g/priznaki-teksta-neyroseti-chistka/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/priznaki-teksta-neyroseti-chistka/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>«Это не X, это Y», «чего вам никто не говорит», фальшиво глубокие концовки. Разбираю шаблоны из навыка No AI Slop по-русски, даю замены и рассказываю, почему ИИ плохо чистит ИИ</description>
+    </item>
+    <item>
+      <title>Microsoft выпустила напарника, который работает за тебя: что такое Home, Code и Autopilot и как повторить это самому</title>
+      <link>https://tolstobrovevgeniy.ru/g/microsoft-copilot-home-code-autopilot/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/microsoft-copilot-home-code-autopilot/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Новый Copilot создаёт документы, собирает инструменты по описанию и ведёт дела в фоне. Разбираю три части, что из этого дойдёт до России и как собрать то же на Claude Code</description>
+    </item>
+    <item>
+      <title>Четыре корзины: как разложить свой процесс по шагам, прежде чем подключать ИИ</title>
+      <link>https://tolstobrovevgeniy.ru/g/chetyre-korziny-razlozhit-process/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chetyre-korziny-razlozhit-process/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Команды, которые внедряют агентов в большие компании, начинают не с нейросети, а с карты процесса. Переношу их метод на работу одного эксперта: вечер, лист бумаги и четыре корзины</description>
+    </item>
+    <item>
+      <title>Какую нейросеть выбрать в октябре 2026: таблица «задача → модель» после четырёх релизов за 8 дней</title>
+      <link>https://tolstobrovevgeniy.ru/g/kakuyu-neyroset-vybrat-oktyabr-2026/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kakuyu-neyroset-vybrat-oktyabr-2026/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Opus 5.5, GPT-6 Sol, Sonnet 5.5 и Gemini 4 Argon вышли с разницей в несколько дней. Разбираю, что из этого доступно эксперту и какую модель ставить под какую работу</description>
+    </item>
+    <item>
+      <title>Как разобрать чужой вирусный ИИ-ролик на шаги и собрать свой: схема на примере Dreamina</title>
+      <link>https://tolstobrovevgeniy.ru/g/razobrat-virusnyy-ii-rolik-na-shagi/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/razobrat-virusnyy-ii-rolik-na-shagi/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>В Dreamina появились готовые схемы по мотивам вирусных роликов: открыл, посмотрел устройство, заменил своё. Разбираю приём и показываю, как применить его без этого сервиса</description>
+    </item>
+    <item>
+      <title>Стоп-кран для твоих автоматов: как выключить бота, рассылку и автопостинг за минуту</title>
+      <link>https://tolstobrovevgeniy.ru/g/stop-kran-dlya-avtomatizaciy/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/stop-kran-dlya-avtomatizaciy/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>В OpenAI сбой модели заметили за 15 минут, а останавливали два часа. У эксперта свои автоматы и тот же вопрос: знаешь ли ты, где у каждого кнопка «выкл». Список и порядок действий</description>
+    </item>
     <item>
       <title>Сигнал-выброс: как за 20 минут найти тему, за которую люди уже готовы платить</title>
       <link>https://tolstobrovevgeniy.ru/g/signal-vybros-tema-za-kotoruyu-platyat/</link>
@@ -38,134 +166,6 @@
       <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>NotebookLM сменил имя и получил голосовой разговор и интерактивные отчёты. Показываю, как собрать из своих лекций и статей базу знаний, которая отвечает твоими словами</description>
-    </item>
-    <item>
-      <title>Продукт из одной функции: как найти свою и собрать без разработчика</title>
-      <link>https://tolstobrovevgeniy.ru/g/produkt-iz-odnoy-funkcii/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/produkt-iz-odnoy-funkcii/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Приложение Stella делает одну вещь и, по словам создательницы, вышло на 300 тысяч долларов в месяц. Разбираю, почему дело не в приложении, и как эксперту найти свою «одну функцию»</description>
-    </item>
-    <item>
-      <title>Люди делают программы под себя вместо покупных. 7 инструментов, которые эксперту стоит собрать первыми</title>
-      <link>https://tolstobrovevgeniy.ru/g/svoi-instrumenty-vmesto-programm/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/svoi-instrumenty-vmesto-programm/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Блогеры монтируют в самодельных редакторах, а учёт финансов собирают за вечер. Разбираю волну программ «на одного»: что собирать себе, чего самоделкой делать нельзя и как описать задачу</description>
-    </item>
-    <item>
-      <title>Графика в видео, которая не выглядит как нейросеть. Бесплатный навык для Claude: установка и три ошибки</title>
-      <link>https://tolstobrovevgeniy.ru/g/grafika-v-video-navyk-claude/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/grafika-v-video-navyk-claude/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Навык motion-broll ставит анимированные вставки под ритм твоей речи. Что должно стоять на компьютере, как идёт работа по шагам и почему графика иногда всё равно выглядит дёшево</description>
-    </item>
-    <item>
-      <title>ИИ научили чутью мастера. 12 вопросов, чтобы передать нейросети свой опыт эксперта</title>
-      <link>https://tolstobrovevgeniy.ru/g/chutye-mastera-ii-12-voprosov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chutye-mastera-ii-12-voprosov/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>В Корее экскаватор без водителя чувствует камень под землёй: его учили на решениях опытных машинистов. Разбираю, как тот же приём работает для эксперта, и даю вопросы для распаковки</description>
-    </item>
-    <item>
-      <title>Robinhood дал клиентам ИИ-агентов, которые торгуют сами. Три правила, прежде чем доверять ИИ деньги</title>
-      <link>https://tolstobrovevgeniy.ru/g/robinhood-ii-agenty-torguyut/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/robinhood-ii-agenty-torguyut/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Что запустил брокер, на каких моделях это работает, сколько стоит и какие риски называет Fortune. И три правила, которые подходят для любой автоматики с деньгами</description>
-    </item>
-    <item>
-      <title>Одна фраза Claude на ночь, утром новый товар в магазине. Разбор схемы и что из неё работает в России</title>
-      <link>https://tolstobrovevgeniy.ru/g/futbolki-etsy-claude-code-avtomat/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/futbolki-etsy-claude-code-avtomat/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Сара из Wholesale Ted автоматизировала магазин футболок на Etsy через Claude Code. Как устроена схема, какой запрос она даёт агенту и чем заменить Etsy и Printify у нас</description>
-    </item>
-    <item>
-      <title>Пять ИИ-помощников, которых стоит завести каждому. Как собрать их без программирования</title>
-      <link>https://tolstobrovevgeniy.ru/g/pyat-ii-pomoshchnikov-kazhdomu/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/pyat-ii-pomoshchnikov-kazhdomu/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Почта, рассылка, деньги, охота за ценой и контент. Разбор пятёрки Ишана Шармы и как собрать таких же на Claude: готовые формулировки заданий и что им нельзя доверять</description>
-    </item>
-    <item>
-      <title>Стая ИИ-агентов находит местный бизнес и делает каждому свой сайт. Как повторить и где остановить автоматику</title>
-      <link>https://tolstobrovevgeniy.ru/g/staya-ii-agentov-mestnyy-biznes/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/staya-ii-agentov-mestnyy-biznes/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбор теста Kimi Agent Swarm на 81 тысячу просмотров: поиск компаний, сбор данных, персональные страницы, база для обзвона. Что забрать эксперту и что обязательно проверять руками</description>
-    </item>
-    <item>
-      <title>Формула MAPS: четыре буквы, по которым Дэн Мартелл ставит задачи ИИ. Шаблон по-русски с примерами</title>
-      <link>https://tolstobrovevgeniy.ru/g/formula-maps-zadanie-dlya-ii/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/formula-maps-zadanie-dlya-ii/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Миссия, запрос, параметры, форма. Разбираю формулу из ролика на 277 тысяч просмотров, даю шаблон и пять готовых заданий для эксперта. И почему «мозг свой, модели в аренду»</description>
-    </item>
-    <item>
-      <title>Четыре ворот Shopify: как заставить ИИ не сдавать недоделку. Схема для постов, сайта и рассылки</title>
-      <link>https://tolstobrovevgeniy.ru/g/chetyre-vorot-shopify-helix/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chetyre-vorot-shopify-helix/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Shopify переписывает приложение на 300 экранов силами ИИ-агентов и не пускает работу дальше, пока она не прошла четыре проверки. Перекладываю схему на задачи эксперта</description>
-    </item>
-    <item>
-      <title>«Допроси меня»: приём, с которого стоит начинать любую задачу в Claude. Готовый запрос по-русски</title>
-      <link>https://tolstobrovevgeniy.ru/g/dopros-claude-pered-zadachey/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/dopros-claude-pered-zadachey/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Нейт Херк просит Claude сначала задать вопросы и только потом работать. Почему это чинит плохой первый ответ, мой вариант запроса и три задачи, которые стоит сделать с ним в выходные</description>
-    </item>
-    <item>
-      <title>Агент OpenAI сам залез в госсистему Австралии. Какие доступы давать своему ИИ-агенту, а какие никогда</title>
-      <link>https://tolstobrovevgeniy.ru/g/ii-agent-openai-vzlom-medicare/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-agent-openai-vzlom-medicare/</guid>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разбираю, что на самом деле случилось с Medicare, почему это касается не только корпораций и какой список доступов я держу для своих агентов</description>
-    </item>
-    <item>
-      <title>Дизайн от Claude выдаёт нейросеть с первого взгляда. 25 приёмов, чтобы это исправить</title>
-      <link>https://tolstobrovevgeniy.ru/g/dizayn-claude-bez-priznakov-ii/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/dizayn-claude-bez-priznakov-ii/</guid>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Пересказ разбора Jay из RoboNuggets по-русски: какие приёмы нужны эксперту без дизайнера, где брать шрифты, иконки и готовые блоки бесплатно</description>
-    </item>
-    <item>
-      <title>План на 90 дней: уйти с работы с помощью Claude. Разбор плана бывшего фармацевта</title>
-      <link>https://tolstobrovevgeniy.ru/g/plan-90-dney-uyti-s-raboty-claude/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/plan-90-dney-uyti-s-raboty-claude/</guid>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Шейн Хаммус заработал на YouTube больше 10 млн долларов и выложил план на три месяца. Разбираю по неделям, что работает у нас, где он недоговаривает и как устроено интервью для сценариев</description>
-    </item>
-    <item>
-      <title>Claude найдёт боли клиентов лучше маркетолога. Если дать ему отзывы, а не ссылку на сайт</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-boli-klientov-iz-otzyvov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-boli-klientov-iz-otzyvov/</guid>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Схема из разбора на 112 тысяч просмотров: запрос из пяти частей, исследование по отзывам, пять сегментов и конкуренты. Все запросы по-русски</description>
-    </item>
-    <item>
-      <title>Заявки разбирает ИИ и пишет ответ за тебя. Как не терять горячих клиентов</title>
-      <link>https://tolstobrovevgeniy.ru/g/zayavki-razbiraet-ii-goryachie-lidy/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/zayavki-razbiraet-ii-goryachie-lidy/</guid>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Разбор связки Typeform, Make и ИИ-агентов (108 тысяч просмотров) и как собрать то же для эксперта: вопросы анкеты, оценка готовности, черновик ответа и кнопка у человека</description>
     </item>
   </channel>
 </rss>
