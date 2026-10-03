@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 02 Oct 2026 15:40:51 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 16:02:26 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Моды в Claude Code: агента теперь можно перестроить изнутри. Пять модов для эксперта и проверка перед установкой</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-mody-dlya-eksperta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-mody-dlya-eksperta/</guid>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>1 октября Anthropic добавила моды: функции, которые меняют поведение агента, рисуют панели и ловят его действия. Что это простыми словами, какие моды нужны неразработчику и почему чужой мод опасен</description>
+    </item>
+    <item>
+      <title>Claude делает презентации и документы прямо в чате: как работают Claude Slides и Docs и что проверить перед показом</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-slides-docs-prezentacii-v-chate/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-slides-docs-prezentacii-v-chate/</guid>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Anthropic убрала отдельный Cowork и добавила документы и презентации, которые живут по ссылке. Разбираю, что умеют Slides и Docs, запрос на деку для эфира или продажи и порядок правок</description>
+    </item>
+    <item>
+      <title>Sonnet 5.5 почти догнал Opus 5.5 и стоит вдвое дешевле. Какую модель ставить на какую задачу эксперта</title>
+      <link>https://tolstobrovevgeniy.ru/g/sonnet-5-5-vs-opus-5-5-kakuyu-stavit/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sonnet-5-5-vs-opus-5-5-kakuyu-stavit/</guid>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Цифры сравнения, что говорят независимые замеры и разборы, таблица задач эксперта по двум моделям и проверка на себе за 15 минут</description>
+    </item>
+    <item>
+      <title>Юрфирмы превращаются в ИИ-фирмы. Что это значит для любого, кто продаёт услуги, и как разложить свою услугу</title>
+      <link>https://tolstobrovevgeniy.ru/g/yurfirmy-stanovyatsya-ii-firmami/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/yurfirmy-stanovyatsya-ii-firmami/</guid>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Claude for Legal, Freshfields на Claude и юрфирма, построенная на ИИ с нуля. Разбираю, что меняется в сфере услуг, и даю схему: что отдать ИИ, что оставить себе и чего клиенту не отдавать машине</description>
+    </item>
+    <item>
+      <title>ИИ за 36 часов сам собрал онлайн-игру за 2 175 долларов. Что из этого опыта повторить без такого бюджета</title>
+      <link>https://tolstobrovevgeniy.ru/g/opus-5-5-igra-za-36-chasov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/opus-5-5-igra-za-36-chasov/</guid>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Стефан из Stefan 3D AI оставил Claude Code на Opus 5.5 с полным доступом к ноутбуку и инструментам и не вмешивался. Разбираю, что получилось, во что обошлось и где такой автозапуск опасен</description>
+    </item>
     <item>
       <title>ИИ собрал сайт, где цену можно поменять в браузере. Как найти такие дыры до запуска</title>
       <link>https://tolstobrovevgeniy.ru/g/dyry-v-sayte-ot-ii-vibe-security/</link>
@@ -126,46 +166,6 @@
       <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>В Dreamina появились готовые схемы по мотивам вирусных роликов: открыл, посмотрел устройство, заменил своё. Разбираю приём и показываю, как применить его без этого сервиса</description>
-    </item>
-    <item>
-      <title>Стоп-кран для твоих автоматов: как выключить бота, рассылку и автопостинг за минуту</title>
-      <link>https://tolstobrovevgeniy.ru/g/stop-kran-dlya-avtomatizaciy/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/stop-kran-dlya-avtomatizaciy/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>В OpenAI сбой модели заметили за 15 минут, а останавливали два часа. У эксперта свои автоматы и тот же вопрос: знаешь ли ты, где у каждого кнопка «выкл». Список и порядок действий</description>
-    </item>
-    <item>
-      <title>Сигнал-выброс: как за 20 минут найти тему, за которую люди уже готовы платить</title>
-      <link>https://tolstobrovevgeniy.ru/g/signal-vybros-tema-za-kotoruyu-platyat/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/signal-vybros-tema-za-kotoruyu-platyat/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Один показатель, который видно на любом канале без сервисов и подписок. Пошагово: где искать, как считать и что делать с находкой</description>
-    </item>
-    <item>
-      <title>7 вопросов к ИИ, которыми проверяют «невозможную» идею. История Сэйлора и ChatGPT</title>
-      <link>https://tolstobrovevgeniy.ru/g/sem-voprosov-ii-nevozmozhnaya-ideya/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sem-voprosov-ii-nevozmozhnaya-ideya/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Майкл Сэйлор часами спорил с ChatGPT и придумал финансовый инструмент, под который привлекли около 15 млрд долларов. Разбираю приём и даю вопросы, которые работают на идеях обычного эксперта</description>
-    </item>
-    <item>
-      <title>Opus 5.5 или GPT-6 Sol для текстов: как самому сравнить две нейросети за 15 минут</title>
-      <link>https://tolstobrovevgeniy.ru/g/opus-5-5-vs-gpt-6-sol-teksty/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/opus-5-5-vs-gpt-6-sol-teksty/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Обе модели вышли 22 сентября, одна вдвое дешевле. Разбираю тест Пола Липски и даю способ проверить на своём посте, какая пишет ближе к тебе</description>
-    </item>
-    <item>
-      <title>Gemini Notebook для эксперта: что загрузить в блокнот и какие 5 материалов из него достать</title>
-      <link>https://tolstobrovevgeniy.ru/g/gemini-notebook-baza-znaniy-eksperta/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-notebook-baza-znaniy-eksperta/</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>NotebookLM сменил имя и получил голосовой разговор и интерактивные отчёты. Показываю, как собрать из своих лекций и статей базу знаний, которая отвечает твоими словами</description>
     </item>
   </channel>
 </rss>
