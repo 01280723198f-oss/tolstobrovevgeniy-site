@@ -5,8 +5,40 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 05 Oct 2026 20:06:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 20:31:37 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Примерка одежды в ChatGPT по одному селфи: где кнопка, как пользоваться и как эксперту сделать из этого контент</title>
+      <link>https://tolstobrovevgeniy.ru/g/chatgpt-primerka-odezhdy-po-selfi/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-primerka-odezhdy-po-selfi/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>1 октября OpenAI добавила в ChatGPT кнопку «Примерить»: загружаешь селфи и видишь вещь на себе. Пошаговая инструкция, где хранится твоё фото и пять способов использовать примерку в работе стилиста, блогера и продавца</description>
+    </item>
+    <item>
+      <title>Instagram тестирует сериалы из рилсов: как работает Series и 12 идей рубрик под твою нишу</title>
+      <link>https://tolstobrovevgeniy.ru/g/instagram-series-rubriki-dlya-eksperta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/instagram-series-rubriki-dlya-eksperta/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Instagram даёт части авторов собирать рилсы в серии с отдельным разделом в профиле и кнопкой «Смотреть дальше». Что известно о функции, как подготовить рубрики заранее и как сделать сериал уже сегодня, даже если кнопки у тебя нет</description>
+    </item>
+    <item>
+      <title>First Draft в Instagram: где найти функцию, которая монтирует рилс за 10 секунд, и как снимать под неё</title>
+      <link>https://tolstobrovevgeniy.ru/g/instagram-first-draft-montazh-za-10-sekund/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/instagram-first-draft-montazh-za-10-sekund/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Instagram выпустил «Первый черновик»: выбираешь несколько клипов, и приложение само обрезает лишнее, вырезает паузы и склеивает черновой монтаж. Где кнопка, что она делает и чего не делает, и как снимать, чтобы черновик получался почти готовым</description>
+    </item>
+    <item>
+      <title>ChatGPT научился сканировать документы в один PDF: как включить и 6 готовых запросов для договора, анкеты и чеков</title>
+      <link>https://tolstobrovevgeniy.ru/g/chatgpt-skan-dokumentov-v-pdf/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-skan-dokumentov-v-pdf/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>1 октября OpenAI добавила в ChatGPT на iPhone сканер: снимаешь страницы подряд, и он склеивает их в один PDF прямо в чате. Где кнопка, что можно и нельзя сканировать и шесть запросов, которые экономят эксперту часы</description>
+    </item>
     <item>
       <title>OpenAI выпустила dots: ИИ-помощник, который работает круглые сутки. Три задачи для эксперта и что ему нельзя поручать</title>
       <link>https://tolstobrovevgeniy.ru/g/openai-dots-pomoshchnik-24-7/</link>
@@ -134,38 +166,6 @@
       <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Что известно об инциденте, почему агента останавливали два часа и что это значит для каждого, кто подключает ИИ к своим сервисам. Проверка, которая занимает десять минут</description>
-    </item>
-    <item>
-      <title>Стэнфорд подменил студента на фото через ИИ и извинился. Пять правил для ИИ-фото эксперта</title>
-      <link>https://tolstobrovevgeniy.ru/g/stenford-ii-foto-podmena/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/stenford-ii-foto-podmena/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Университет заменил человека на рекламном снимке и нарушил собственные правила. Разбираю историю и даю пять правил: что с фото через нейросеть можно, что нельзя и какую пометку ставить</description>
-    </item>
-    <item>
-      <title>Приложение для айфона без единой строки кода: Claude собирает его прямо в программе Apple</title>
-      <link>https://tolstobrovevgeniy.ru/g/prilozhenie-dlya-ayfona-claude-xcode/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/prilozhenie-dlya-ayfona-claude-xcode/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Блогер описал идею словами и получил рабочее приложение с ИИ-фото. Разбираю порядок шагов, что нужно из техники, сколько стоит выход в App Store и где человек всё ещё обязателен</description>
-    </item>
-    <item>
-      <title>Claude смонтировал ролик целиком: шесть шагов, инструменты и три способа на этом заработать</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-smontiroval-rolik-6-shagov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-smontiroval-rolik-6-shagov/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Цвет, обрезка, субтитры, графика, перебивки и рендер без монтажёра. Разбираю схему из ролика на 58 тысяч просмотров, что поставить на компьютер и где человек всё ещё нужен</description>
-    </item>
-    <item>
-      <title>ИИ-агента Meta обвинили в чтении личных сообщений. Семь пунктов проверки перед установкой любого агента</title>
-      <link>https://tolstobrovevgeniy.ru/g/meta-muse-lichnye-soobshcheniya-proverka/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/meta-muse-lichnye-soobshcheniya-proverka/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Журналист заявил, что Muse получил доступ к его переписке без разрешения, Meta это отрицает. Что известно точно и список проверки на пять минут для любого ИИ-агента на твоём компьютере</description>
     </item>
   </channel>
 </rss>
