@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 03 Oct 2026 16:02:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 20:06:58 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenAI выпустила dots: ИИ-помощник, который работает круглые сутки. Три задачи для эксперта и что ему нельзя поручать</title>
+      <link>https://tolstobrovevgeniy.ru/g/openai-dots-pomoshchnik-24-7/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/openai-dots-pomoshchnik-24-7/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>29 сентября на DevDay OpenAI показала dots: агентов со своим облачным компьютером, которые держат твою цель и учатся на твоих правках. Что это простыми словами, сколько стоит и как начать без риска</description>
+    </item>
+    <item>
+      <title>Gemini 4 Argon: самый сильный ИИ Google, который пока никому не дают. Почему так и как решать, переходить ли на новую модель</title>
+      <link>https://tolstobrovevgeniy.ru/g/gemini-4-argon-kogda-dostup/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-4-argon-kogda-dostup/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>30 сентября Google DeepMind показала Gemini 4 Argon, но доступ получили только команды кибербезопасности. Что умеет модель, когда она дойдёт до обычных людей и чек-лист на 10 минут для выбора модели</description>
+    </item>
+    <item>
+      <title>Anthropic идёт на биржу: выручка выросла в 12 раз, убыток 42 млрд долларов. Что это значит для тех, кто работает в Claude</title>
+      <link>https://tolstobrovevgeniy.ru/g/anthropic-ipo-vyruchka-ubytok/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/anthropic-ipo-vyruchka-ubytok/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Reuters увидел проспект Anthropic: 4,6 млрд выручки за 2025 год, операционный убыток 8 млрд и два клиента, которые дают почти четверть денег. Разбираю цифры простыми словами и как застраховать свою работу от смены тарифов</description>
+    </item>
+    <item>
+      <title>Навыки в Gemini: объясняешь задачу один раз, дальше он делает сам. Три готовых навыка для эксперта и как перенести Gems до ноября</title>
+      <link>https://tolstobrovevgeniy.ru/g/gemini-navyki-vmesto-gems/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-navyki-vmesto-gems/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Google раскатывает Skills: с 5 октября в Workspace, с 13 октября в приложении Gemini, а Gems уберут 17 ноября. Что такое навык, как его собрать и три текста навыков, которые вставишь за 5 минут</description>
+    </item>
+    <item>
+      <title>Claude без подписки: что дают бесплатно, где потолок и как настроить его под свою нишу за 20 минут</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-besplatno-chto-dayut/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-besplatno-chto-dayut/</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Бесплатный Claude работает на Sonnet 5, умеет искать в интернете, создавать файлы, запускать код, держать проекты и навыки. Что из этого реально полезно эксперту, где упрёшься в лимит и что положить в первый проект</description>
+    </item>
     <item>
       <title>Моды в Claude Code: агента теперь можно перестроить изнутри. Пять модов для эксперта и проверка перед установкой</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-code-mody-dlya-eksperta/</link>
@@ -126,46 +166,6 @@
       <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Журналист заявил, что Muse получил доступ к его переписке без разрешения, Meta это отрицает. Что известно точно и список проверки на пять минут для любого ИИ-агента на твоём компьютере</description>
-    </item>
-    <item>
-      <title>Признаки, по которым видно текст нейросети: десять шаблонов с заменами и навык, который их убирает</title>
-      <link>https://tolstobrovevgeniy.ru/g/priznaki-teksta-neyroseti-chistka/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/priznaki-teksta-neyroseti-chistka/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>«Это не X, это Y», «чего вам никто не говорит», фальшиво глубокие концовки. Разбираю шаблоны из навыка No AI Slop по-русски, даю замены и рассказываю, почему ИИ плохо чистит ИИ</description>
-    </item>
-    <item>
-      <title>Microsoft выпустила напарника, который работает за тебя: что такое Home, Code и Autopilot и как повторить это самому</title>
-      <link>https://tolstobrovevgeniy.ru/g/microsoft-copilot-home-code-autopilot/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/microsoft-copilot-home-code-autopilot/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Новый Copilot создаёт документы, собирает инструменты по описанию и ведёт дела в фоне. Разбираю три части, что из этого дойдёт до России и как собрать то же на Claude Code</description>
-    </item>
-    <item>
-      <title>Четыре корзины: как разложить свой процесс по шагам, прежде чем подключать ИИ</title>
-      <link>https://tolstobrovevgeniy.ru/g/chetyre-korziny-razlozhit-process/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chetyre-korziny-razlozhit-process/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Команды, которые внедряют агентов в большие компании, начинают не с нейросети, а с карты процесса. Переношу их метод на работу одного эксперта: вечер, лист бумаги и четыре корзины</description>
-    </item>
-    <item>
-      <title>Какую нейросеть выбрать в октябре 2026: таблица «задача → модель» после четырёх релизов за 8 дней</title>
-      <link>https://tolstobrovevgeniy.ru/g/kakuyu-neyroset-vybrat-oktyabr-2026/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/kakuyu-neyroset-vybrat-oktyabr-2026/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Opus 5.5, GPT-6 Sol, Sonnet 5.5 и Gemini 4 Argon вышли с разницей в несколько дней. Разбираю, что из этого доступно эксперту и какую модель ставить под какую работу</description>
-    </item>
-    <item>
-      <title>Как разобрать чужой вирусный ИИ-ролик на шаги и собрать свой: схема на примере Dreamina</title>
-      <link>https://tolstobrovevgeniy.ru/g/razobrat-virusnyy-ii-rolik-na-shagi/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/razobrat-virusnyy-ii-rolik-na-shagi/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>В Dreamina появились готовые схемы по мотивам вирусных роликов: открыл, посмотрел устройство, заменил своё. Разбираю приём и показываю, как применить его без этого сервиса</description>
     </item>
   </channel>
 </rss>
