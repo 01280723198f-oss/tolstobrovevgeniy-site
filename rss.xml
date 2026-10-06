@@ -5,8 +5,48 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 05 Oct 2026 20:31:37 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 17:10:12 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Все заявки из почты, директа и таблиц на одном сайте: как мастер собрал его в ChatGPT за 15 минут и как повторить эксперту</title>
+      <link>https://tolstobrovevgeniy.ru/g/chatgpt-sayt-vse-zayavki-v-odnom-meste/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-sayt-vse-zayavki-v-odnom-meste/</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>OpenAI показала мебельщика из Филадельфии, у которого заявки терялись в сообщениях и письмах. Он подключил плагины, написал один запрос и получил сайт для команды. Разбираю по шагам и даю запрос, который подойдёт психологу, коучу и любому, кто ведёт клиентов сам</description>
+    </item>
+    <item>
+      <title>Три запроса к новому ChatGPT, которые стоит сохранить: мини-копия рабочего места, правка одной детали на фото и таблица всех подписок</title>
+      <link>https://tolstobrovevgeniy.ru/g/tri-zaprosa-k-novomu-chatgpt/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/tri-zaprosa-k-novomu-chatgpt/</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Мэтт Вулф показал, на что способен ChatGPT после выхода GPT-6 Astra и ChatGPT Images 2.5. Я выбрал три запроса, которые пригодятся не только программистам, перевёл их и объяснил, где каждый работает</description>
+    </item>
+    <item>
+      <title>Фото доски после планёрки превращается в готовый план: как ChatGPT делает схему по фирменному стилю, рассылает её и ставит встречу</title>
+      <link>https://tolstobrovevgeniy.ru/g/foto-doski-v-gotovyy-plan-chatgpt/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/foto-doski-v-gotovyy-plan-chatgpt/</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>OpenAI показала маркетолога, который после мозгового штурма закинул в ChatGPT фото доски и брендбук, выбрал одну из трёх схем и одной фразой разослал её команде. Разбираю по шагам и даю запрос целиком</description>
+    </item>
+    <item>
+      <title>Конспект из видео встречи, урока или эфира за минуту: как загрузить запись в Gemini и какой запрос писать эксперту</title>
+      <link>https://tolstobrovevgeniy.ru/g/gemini-konspekt-iz-video-vstrechi/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-konspekt-iz-video-vstrechi/</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Ролик Google про игроков, которые записали партию на видео и получили от Gemini подробные заметки, набрал 6 миллионов просмотров. Тот же приём работает для консультаций, уроков и эфиров. Разбираю, как загрузить видео, какие ограничения у бесплатного тарифа и даю запрос для конспекта</description>
+    </item>
+    <item>
+      <title>Поиск Google объясняет сложную тему живой схемой: как попросить наглядную картинку и где это пригодится учителю и эксперту</title>
+      <link>https://tolstobrovevgeniy.ru/g/google-poisk-interaktivnaya-skhema/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/google-poisk-interaktivnaya-skhema/</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>В новом режиме поиска Google можно попросить показать тему наглядно, и поиск соберёт интерактивную схему, которую можно крутить и менять. Что известно о функции, кому она доступна и примеры запросов для уроков и постов</description>
+    </item>
     <item>
       <title>Примерка одежды в ChatGPT по одному селфи: где кнопка, как пользоваться и как эксперту сделать из этого контент</title>
       <link>https://tolstobrovevgeniy.ru/g/chatgpt-primerka-odezhdy-po-selfi/</link>
@@ -126,46 +166,6 @@
       <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Нейросеть уверенно оставляет ключи в коде и доверяет браузеру цену товара. Разбираю девять разделов проверки из бесплатного навыка Vibe Security простыми словами и что посмотреть руками</description>
-    </item>
-    <item>
-      <title>Сто экспериментов за ночь: метод Карпатого для любой задачи. Запрос и пять применений для эксперта</title>
-      <link>https://tolstobrovevgeniy.ru/g/sto-eksperimentov-metod-karpatogo/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sto-eksperimentov-metod-karpatogo/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>ИИ сам пробует, сравнивает и оставляет лучшее. Разбираю, как устроен autoresearch, почему он работает не только для нейросетей, как задать мерило «лучше» и сколько это стоит по лимиту</description>
-    </item>
-    <item>
-      <title>Claude читает только первые 100 строк файла в навыке. Семь новых правил сборки навыков</title>
-      <link>https://tolstobrovevgeniy.ru/g/navyki-claude-pervye-100-strok/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/navyki-claude-pervye-100-strok/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Anthropic обновила рекомендации: оглавление в длинных файлах, три степени свободы, ссылки в один уровень, чек-листы и самопроверка. Пересказ по-русски и запрос для проверки своих навыков</description>
-    </item>
-    <item>
-      <title>9 бесплатных навыков для Claude и ChatGPT: ссылки, установка и как подогнать под себя</title>
-      <link>https://tolstobrovevgeniy.ru/g/9-besplatnyh-navykov-claude-chatgpt/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/9-besplatnyh-navykov-claude-chatgpt/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Исследования, просмотр видео, графика, чистка текста, дизайн и проверка безопасности. Разбор подборки Futurepedia: что каждый навык делает, какие нужны эксперту и с чего начать</description>
-    </item>
-    <item>
-      <title>10 бесплатных ИИ-сайтов, о которых мало кто знает: что каждый умеет и где у него предел</title>
-      <link>https://tolstobrovevgeniy.ru/g/10-besplatnyh-ii-saytov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/10-besplatnyh-ii-saytov/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Чат без регистрации, редактор вместо Photoshop, презентации, видео, формы и поиск с источниками. Разбор подборки на 135 тысяч просмотров с честными ограничениями и тремя сайтами для старта</description>
-    </item>
-    <item>
-      <title>Модель OpenAI обошла защиту и вышла в интернет. Три вопроса про кнопку «стоп» для своего агента</title>
-      <link>https://tolstobrovevgeniy.ru/g/openai-pauza-model-oboshla-zashchitu/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/openai-pauza-model-oboshla-zashchitu/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Что известно об инциденте, почему агента останавливали два часа и что это значит для каждого, кто подключает ИИ к своим сервисам. Проверка, которая занимает десять минут</description>
     </item>
   </channel>
 </rss>
