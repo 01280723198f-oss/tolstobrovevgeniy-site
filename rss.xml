@@ -5,8 +5,88 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 06 Oct 2026 17:10:12 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 09:41:08 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenAI подняла цены: Pro 500 за 500 долларов, а тариф за 200 урезали вдвое. Какой ChatGPT брать эксперту</title>
+      <link>https://tolstobrovevgeniy.ru/g/chatgpt-pro-500-tarif-kakoy-vybrat/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-pro-500-tarif-kakoy-vybrat/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>На DevDay OpenAI показала новый тариф Pro 500 и объявила, что с 30 октября Pro за 200 долларов даёт вдвое меньше. Разбираю, что изменилось, кому это касается и три вопроса, после которых понятно, сколько платить именно тебе</description>
+    </item>
+    <item>
+      <title>Claude теперь сам раздаёт задачи помощникам: как работают новые Проекты с координатором и потоками</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-proekty-koordinator-potoki/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-proekty-koordinator-potoki/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Anthropic переделала Проекты в Claude: появился чат-координатор, который делит задачу на потоки и раздаёт их отдельным помощникам в облаке. Разбираю, что внутри, где подвох с лимитами и даю готовую инструкцию для координатора под контент эксперта</description>
+    </item>
+    <item>
+      <title>Прототип лендинга за вечер без дизайнера: как дизайнер Anthropic работает в Claude Design</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-design-prototip-za-vecher/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-design-prototip-za-vecher/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Дизайнер Anthropic показал, как довести экран от сырой идеи до кликабельного прототипа: несколько вариантов, комментарии прямо на макете, правки руками. Повторяю этот путь для первого экрана лендинга эксперта и даю запрос плюс пять комментариев, которые чистят черновик</description>
+    </item>
+    <item>
+      <title>Браузер внутри ChatGPT работает вместо тебя: 8 задач с готовыми запросами на русском</title>
+      <link>https://tolstobrovevgeniy.ru/g/brauzer-chatgpt-8-zadach/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/brauzer-chatgpt-8-zadach/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>В ChatGPT Work встроен облачный браузер, который сам ходит по сайтам, собирает данные в таблицы и делает инструкции со скриншотами. Перевёл все 8 сценариев из разбора канала 9x на русский и отметил, какие задачи браузеру лучше не доверять</description>
+    </item>
+    <item>
+      <title>Отдел маркетинга из пяти ИИ-агентов в ChatGPT без кода: шаблон файла о бренде и порядок сборки</title>
+      <link>https://tolstobrovevgeniy.ru/g/otdel-marketinga-v-chatgpt-5-agentov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/otdel-marketinga-v-chatgpt-5-agentov/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Маркетолог Грейс Леунг показала, как собрать в ChatGPT команду из руководителя и пяти специалистов, научить их навыкам и запускать через личного помощника dots. Разбираю её схему и даю шаблон файла о бренде, с которого начинается любая такая команда</description>
+    </item>
+    <item>
+      <title>Реклама от ИИ, которая приносит заявки без бюджета: что показал Higgsfield после разбора 10 тысяч объявлений</title>
+      <link>https://tolstobrovevgeniy.ru/g/reklama-ii-higgsfield-zayavki-bez-byudzheta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/reklama-ii-higgsfield-zayavki-bez-byudzheta/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Команда Higgsfield разобрала 10 тысяч рекламных объявлений, сделала креативы на GPT-6 Astra и сначала проверила их бесплатно, обычными рилсами. Разбираю их путь по шагам: как искать живые объявления конкурентов, запрос для текста и как читать результат проверки</description>
+    </item>
+    <item>
+      <title>Половина людей не поняла, что говорит с нейросетью по видеосвязи: что показала Tavus Griffin и что это значит для эксперта</title>
+      <link>https://tolstobrovevgeniy.ru/g/tavus-griffin-ii-po-videosvyazi/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/tavus-griffin-ii-po-videosvyazi/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Tavus представила Griffin, ИИ, который в реальном времени рисует лицо, говорит и перебивает как человек. 48% участников теста решили, что говорили с живым собеседником. Разбираю тест без восторгов и рассказываю, что честно отдать цифровой копии уже сейчас</description>
+    </item>
+    <item>
+      <title>Google Flow делает ИИ-ролик на 40 секунд, и герой не меняет лицо: шаблон раскадровки на 4 сцены</title>
+      <link>https://tolstobrovevgeniy.ru/g/google-flow-rolik-40-sekund/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/google-flow-rolik-40-sekund/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>В Google Flow пришла Gemini Omni 1.1: сцена продлевается до 40 секунд, можно задать первый и последний кадр и выгрузить 4K. Разбираю, как автор короткого ИИ-фильма держит героя одинаковым от сцены к сцене, и даю шаблон раскадровки плюс запрос для опорного кадра</description>
+    </item>
+    <item>
+      <title>YouTube отказывает ИИ-каналам в монетизации: правило о неаутентичном контенте и чек-лист из 7 пунктов</title>
+      <link>https://tolstobrovevgeniy.ru/g/youtube-monetizaciya-ii-kanalov-pravila/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/youtube-monetizaciya-ii-kanalov-pravila/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Автору канала почти на 10 тысяч подписчиков несколько раз отказали в монетизации, ролик об этом собрал 233 тысячи просмотров. Разбираю, что на самом деле написано в правилах YouTube про ИИ, что запрещено, что можно, и даю чек-лист перед загрузкой</description>
+    </item>
+    <item>
+      <title>Владелец ИИ-агентства говорит, что его профессия скоро кончится: три вывода Ника Сараева для экспертов</title>
+      <link>https://tolstobrovevgeniy.ru/g/sarayev-chto-uchit-vmesto-ii-avtomatizacii/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sarayev-chto-uchit-vmesto-ii-avtomatizacii/</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Ник Сараев, у которого агентство ИИ-автоматизации, выпустил ролик о том, что учить вместо автоматизации в 2027 году. 164 тысячи просмотров за два дня. Разбираю три главных вывода и что из них взять тем, кто продаёт консультации и курсы</description>
+    </item>
     <item>
       <title>Все заявки из почты, директа и таблиц на одном сайте: как мастер собрал его в ChatGPT за 15 минут и как повторить эксперту</title>
       <link>https://tolstobrovevgeniy.ru/g/chatgpt-sayt-vse-zayavki-v-odnom-meste/</link>
@@ -86,86 +166,6 @@
       <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>29 сентября на DevDay OpenAI показала dots: агентов со своим облачным компьютером, которые держат твою цель и учатся на твоих правках. Что это простыми словами, сколько стоит и как начать без риска</description>
-    </item>
-    <item>
-      <title>Gemini 4 Argon: самый сильный ИИ Google, который пока никому не дают. Почему так и как решать, переходить ли на новую модель</title>
-      <link>https://tolstobrovevgeniy.ru/g/gemini-4-argon-kogda-dostup/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-4-argon-kogda-dostup/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>30 сентября Google DeepMind показала Gemini 4 Argon, но доступ получили только команды кибербезопасности. Что умеет модель, когда она дойдёт до обычных людей и чек-лист на 10 минут для выбора модели</description>
-    </item>
-    <item>
-      <title>Anthropic идёт на биржу: выручка выросла в 12 раз, убыток 42 млрд долларов. Что это значит для тех, кто работает в Claude</title>
-      <link>https://tolstobrovevgeniy.ru/g/anthropic-ipo-vyruchka-ubytok/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/anthropic-ipo-vyruchka-ubytok/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Reuters увидел проспект Anthropic: 4,6 млрд выручки за 2025 год, операционный убыток 8 млрд и два клиента, которые дают почти четверть денег. Разбираю цифры простыми словами и как застраховать свою работу от смены тарифов</description>
-    </item>
-    <item>
-      <title>Навыки в Gemini: объясняешь задачу один раз, дальше он делает сам. Три готовых навыка для эксперта и как перенести Gems до ноября</title>
-      <link>https://tolstobrovevgeniy.ru/g/gemini-navyki-vmesto-gems/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-navyki-vmesto-gems/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Google раскатывает Skills: с 5 октября в Workspace, с 13 октября в приложении Gemini, а Gems уберут 17 ноября. Что такое навык, как его собрать и три текста навыков, которые вставишь за 5 минут</description>
-    </item>
-    <item>
-      <title>Claude без подписки: что дают бесплатно, где потолок и как настроить его под свою нишу за 20 минут</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-besplatno-chto-dayut/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-besplatno-chto-dayut/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Бесплатный Claude работает на Sonnet 5, умеет искать в интернете, создавать файлы, запускать код, держать проекты и навыки. Что из этого реально полезно эксперту, где упрёшься в лимит и что положить в первый проект</description>
-    </item>
-    <item>
-      <title>Моды в Claude Code: агента теперь можно перестроить изнутри. Пять модов для эксперта и проверка перед установкой</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-code-mody-dlya-eksperta/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-mody-dlya-eksperta/</guid>
-      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>1 октября Anthropic добавила моды: функции, которые меняют поведение агента, рисуют панели и ловят его действия. Что это простыми словами, какие моды нужны неразработчику и почему чужой мод опасен</description>
-    </item>
-    <item>
-      <title>Claude делает презентации и документы прямо в чате: как работают Claude Slides и Docs и что проверить перед показом</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-slides-docs-prezentacii-v-chate/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-slides-docs-prezentacii-v-chate/</guid>
-      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Anthropic убрала отдельный Cowork и добавила документы и презентации, которые живут по ссылке. Разбираю, что умеют Slides и Docs, запрос на деку для эфира или продажи и порядок правок</description>
-    </item>
-    <item>
-      <title>Sonnet 5.5 почти догнал Opus 5.5 и стоит вдвое дешевле. Какую модель ставить на какую задачу эксперта</title>
-      <link>https://tolstobrovevgeniy.ru/g/sonnet-5-5-vs-opus-5-5-kakuyu-stavit/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/sonnet-5-5-vs-opus-5-5-kakuyu-stavit/</guid>
-      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Цифры сравнения, что говорят независимые замеры и разборы, таблица задач эксперта по двум моделям и проверка на себе за 15 минут</description>
-    </item>
-    <item>
-      <title>Юрфирмы превращаются в ИИ-фирмы. Что это значит для любого, кто продаёт услуги, и как разложить свою услугу</title>
-      <link>https://tolstobrovevgeniy.ru/g/yurfirmy-stanovyatsya-ii-firmami/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/yurfirmy-stanovyatsya-ii-firmami/</guid>
-      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Claude for Legal, Freshfields на Claude и юрфирма, построенная на ИИ с нуля. Разбираю, что меняется в сфере услуг, и даю схему: что отдать ИИ, что оставить себе и чего клиенту не отдавать машине</description>
-    </item>
-    <item>
-      <title>ИИ за 36 часов сам собрал онлайн-игру за 2 175 долларов. Что из этого опыта повторить без такого бюджета</title>
-      <link>https://tolstobrovevgeniy.ru/g/opus-5-5-igra-za-36-chasov/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/opus-5-5-igra-za-36-chasov/</guid>
-      <pubDate>Sat, 03 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Стефан из Stefan 3D AI оставил Claude Code на Opus 5.5 с полным доступом к ноутбуку и инструментам и не вмешивался. Разбираю, что получилось, во что обошлось и где такой автозапуск опасен</description>
-    </item>
-    <item>
-      <title>ИИ собрал сайт, где цену можно поменять в браузере. Как найти такие дыры до запуска</title>
-      <link>https://tolstobrovevgeniy.ru/g/dyry-v-sayte-ot-ii-vibe-security/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/dyry-v-sayte-ot-ii-vibe-security/</guid>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Нейросеть уверенно оставляет ключи в коде и доверяет браузеру цену товара. Разбираю девять разделов проверки из бесплатного навыка Vibe Security простыми словами и что посмотреть руками</description>
     </item>
   </channel>
 </rss>
