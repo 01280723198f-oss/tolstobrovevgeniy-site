@@ -5,8 +5,88 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 07 Oct 2026 09:41:08 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 10:57:42 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Бесплатные копии Photoshop, Lightroom и Premiere: что такое ArtCraft и можно ли уже отменить подписку Adobe</title>
+      <link>https://tolstobrovevgeniy.ru/g/artcraft-besplatnye-kopii-adobe/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/artcraft-besplatnye-kopii-adobe/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Разработчик Брендон Томас вместе с Claude собрал семь бесплатных программ на замену Adobe. Разбираю, что в них уже работает, где они ломаются и как за 15 минут понять, подходят ли они тебе</description>
+    </item>
+    <item>
+      <title>700 ИИ-агентов взломали Hugging Face ради невыполнимой задачи. Три строки, которые ставят границы твоему ИИ-помощнику</title>
+      <link>https://tolstobrovevgeniy.ru/g/hugging-face-agenty-granicy-dlya-ii-pomoshchnika/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/hugging-face-agenty-granicy-dlya-ii-pomoshchnika/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>История про агентов OpenAI, которые сговорились и взломали серверы, собрала десятки миллионов просмотров. Разбираю, что случилось по отчёту OpenAI, и что из этого взять в ежедневную работу с Claude или ChatGPT</description>
+    </item>
+    <item>
+      <title>Anthropic выкинула 80% инструкций из Claude Code и не потеряла в качестве. Как почистить свой промпт за 10 минут</title>
+      <link>https://tolstobrovevgeniy.ru/g/anthropic-urezala-instrukcii-claude-chistka-prompta/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/anthropic-urezala-instrukcii-claude-chistka-prompta/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Новые модели лучше работают с короткими инструкциями, чем с длинными сводами правил. Разбираю, что объявила Anthropic, и даю чек-лист чистки инструкции эксперта с примером до и после</description>
+    </item>
+    <item>
+      <title>Maia в Make: автоматизация словами без схем и модулей. Пять готовых формулировок для эксперта</title>
+      <link>https://tolstobrovevgeniy.ru/g/make-maia-avtomatizaciya-slovami/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/make-maia-avtomatizaciya-slovami/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>В конструктор Make встроили ИИ-помощницу Maia: описываешь процесс обычным языком, она собирает сценарий. Разбираю, как это работает, где подвох, и даю пять формулировок под заявки, оплаты, запись, рассылку и отчёт</description>
+    </item>
+    <item>
+      <title>С ИИ продукт собирается за вечер, а продаётся всё хуже. Четыре фильтра, которые нужно пройти до запуска</title>
+      <link>https://tolstobrovevgeniy.ru/g/chetyre-filtra-ii-produkta-do-zapuska/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chetyre-filtra-ii-produkta-do-zapuska/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>Сандип Свадиа называет это «искусственной иллюзией»: сделать легко, выиграть трудно. Разбираю его четыре фильтра и даю таблицу вопросов, через которую стоит прогнать любой продукт до того, как тратить на него месяц</description>
+    </item>
+    <item>
+      <title>Claude собирает видео без монтажной программы: что такое HyperFrames и как сделать первый ролик за 10 минут</title>
+      <link>https://tolstobrovevgeniy.ru/g/hyperframes-claude-video-kodom/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/hyperframes-claude-video-kodom/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>HeyGen открыл HyperFrames: Claude пишет ролик как веб-страницу с анимацией, а программа превращает её в mp4 на твоём компьютере. Разбираю, что так можно сделать эксперту, даю первый запрос и честно говорю, где CapCut пока удобнее</description>
+    </item>
+    <item>
+      <title>Claude разбирает почту, календарь и Google Диск: как подключить Google Workspace CLI и что доверить помощнику</title>
+      <link>https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Google Workspace CLI даёт ИИ-помощнику доступ к Gmail, Календарю, Диску и Таблицам. Разбираю, чем он удобнее обычного подключения, даю пошаговую установку через Claude, пять запросов для эксперта и список запретов на первый день</description>
+    </item>
+    <item>
+      <title>Навык /retro разбирает твою работу с ИИ и находит, где помощник молча буксовал. Мой запрос, который работает без установки</title>
+      <link>https://tolstobrovevgeniy.ru/g/retro-razbor-sessii-s-ii/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/retro-razbor-sessii-s-ii/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Мэтт Пококк выпустил /retro: навык читает всю сессию и предлагает, что поменять в настройке, чтобы ошибка не повторилась. Разбираю семь вопросов, по которым он ищет слабые места, и даю свой запрос для обычного Claude</description>
+    </item>
+    <item>
+      <title>Anthropic добавила 13 навыков в Claude для малого бизнеса: какие нужны эксперту и в каком порядке их включать</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-small-business-13-novyh-navykov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-small-business-13-novyh-navykov/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Разбор</category>
+      <description>В плагине Claude for Small Business теперь 44 навыка: продажи, маркетинг, финансы, найм и утренние сводки. Разбираю, что нового по обзору Остина Марчезе, какие навыки нужны эксперту, а какие офлайн-бизнесу, и как не запутать Claude</description>
+    </item>
+    <item>
+      <title>Claude пишет промпты для ИИ-видео как режиссёр: шаблон запроса и пример сцены для рекламы эксперта</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-rezhisser-promptov-dlya-ii-video/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-rezhisser-promptov-dlya-ii-video/</guid>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Higgsfield показал полный цикл рекламы на ИИ: персонажи, локации, видео в Seedance 2.5 и режиссёрские промпты от Claude. Разбираю, чем такой промпт отличается от обычного, и даю шаблон, по которому Claude пишет промпт под любой генератор</description>
+    </item>
     <item>
       <title>OpenAI подняла цены: Pro 500 за 500 долларов, а тариф за 200 урезали вдвое. Какой ChatGPT брать эксперту</title>
       <link>https://tolstobrovevgeniy.ru/g/chatgpt-pro-500-tarif-kakoy-vybrat/</link>
@@ -86,86 +166,6 @@
       <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Ник Сараев, у которого агентство ИИ-автоматизации, выпустил ролик о том, что учить вместо автоматизации в 2027 году. 164 тысячи просмотров за два дня. Разбираю три главных вывода и что из них взять тем, кто продаёт консультации и курсы</description>
-    </item>
-    <item>
-      <title>Все заявки из почты, директа и таблиц на одном сайте: как мастер собрал его в ChatGPT за 15 минут и как повторить эксперту</title>
-      <link>https://tolstobrovevgeniy.ru/g/chatgpt-sayt-vse-zayavki-v-odnom-meste/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-sayt-vse-zayavki-v-odnom-meste/</guid>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>OpenAI показала мебельщика из Филадельфии, у которого заявки терялись в сообщениях и письмах. Он подключил плагины, написал один запрос и получил сайт для команды. Разбираю по шагам и даю запрос, который подойдёт психологу, коучу и любому, кто ведёт клиентов сам</description>
-    </item>
-    <item>
-      <title>Три запроса к новому ChatGPT, которые стоит сохранить: мини-копия рабочего места, правка одной детали на фото и таблица всех подписок</title>
-      <link>https://tolstobrovevgeniy.ru/g/tri-zaprosa-k-novomu-chatgpt/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/tri-zaprosa-k-novomu-chatgpt/</guid>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Мэтт Вулф показал, на что способен ChatGPT после выхода GPT-6 Astra и ChatGPT Images 2.5. Я выбрал три запроса, которые пригодятся не только программистам, перевёл их и объяснил, где каждый работает</description>
-    </item>
-    <item>
-      <title>Фото доски после планёрки превращается в готовый план: как ChatGPT делает схему по фирменному стилю, рассылает её и ставит встречу</title>
-      <link>https://tolstobrovevgeniy.ru/g/foto-doski-v-gotovyy-plan-chatgpt/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/foto-doski-v-gotovyy-plan-chatgpt/</guid>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>OpenAI показала маркетолога, который после мозгового штурма закинул в ChatGPT фото доски и брендбук, выбрал одну из трёх схем и одной фразой разослал её команде. Разбираю по шагам и даю запрос целиком</description>
-    </item>
-    <item>
-      <title>Конспект из видео встречи, урока или эфира за минуту: как загрузить запись в Gemini и какой запрос писать эксперту</title>
-      <link>https://tolstobrovevgeniy.ru/g/gemini-konspekt-iz-video-vstrechi/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-konspekt-iz-video-vstrechi/</guid>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Ролик Google про игроков, которые записали партию на видео и получили от Gemini подробные заметки, набрал 6 миллионов просмотров. Тот же приём работает для консультаций, уроков и эфиров. Разбираю, как загрузить видео, какие ограничения у бесплатного тарифа и даю запрос для конспекта</description>
-    </item>
-    <item>
-      <title>Поиск Google объясняет сложную тему живой схемой: как попросить наглядную картинку и где это пригодится учителю и эксперту</title>
-      <link>https://tolstobrovevgeniy.ru/g/google-poisk-interaktivnaya-skhema/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/google-poisk-interaktivnaya-skhema/</guid>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>В новом режиме поиска Google можно попросить показать тему наглядно, и поиск соберёт интерактивную схему, которую можно крутить и менять. Что известно о функции, кому она доступна и примеры запросов для уроков и постов</description>
-    </item>
-    <item>
-      <title>Примерка одежды в ChatGPT по одному селфи: где кнопка, как пользоваться и как эксперту сделать из этого контент</title>
-      <link>https://tolstobrovevgeniy.ru/g/chatgpt-primerka-odezhdy-po-selfi/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-primerka-odezhdy-po-selfi/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>1 октября OpenAI добавила в ChatGPT кнопку «Примерить»: загружаешь селфи и видишь вещь на себе. Пошаговая инструкция, где хранится твоё фото и пять способов использовать примерку в работе стилиста, блогера и продавца</description>
-    </item>
-    <item>
-      <title>Instagram тестирует сериалы из рилсов: как работает Series и 12 идей рубрик под твою нишу</title>
-      <link>https://tolstobrovevgeniy.ru/g/instagram-series-rubriki-dlya-eksperta/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/instagram-series-rubriki-dlya-eksperta/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Instagram даёт части авторов собирать рилсы в серии с отдельным разделом в профиле и кнопкой «Смотреть дальше». Что известно о функции, как подготовить рубрики заранее и как сделать сериал уже сегодня, даже если кнопки у тебя нет</description>
-    </item>
-    <item>
-      <title>First Draft в Instagram: где найти функцию, которая монтирует рилс за 10 секунд, и как снимать под неё</title>
-      <link>https://tolstobrovevgeniy.ru/g/instagram-first-draft-montazh-za-10-sekund/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/instagram-first-draft-montazh-za-10-sekund/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Instagram выпустил «Первый черновик»: выбираешь несколько клипов, и приложение само обрезает лишнее, вырезает паузы и склеивает черновой монтаж. Где кнопка, что она делает и чего не делает, и как снимать, чтобы черновик получался почти готовым</description>
-    </item>
-    <item>
-      <title>ChatGPT научился сканировать документы в один PDF: как включить и 6 готовых запросов для договора, анкеты и чеков</title>
-      <link>https://tolstobrovevgeniy.ru/g/chatgpt-skan-dokumentov-v-pdf/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chatgpt-skan-dokumentov-v-pdf/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>1 октября OpenAI добавила в ChatGPT на iPhone сканер: снимаешь страницы подряд, и он склеивает их в один PDF прямо в чате. Где кнопка, что можно и нельзя сканировать и шесть запросов, которые экономят эксперту часы</description>
-    </item>
-    <item>
-      <title>OpenAI выпустила dots: ИИ-помощник, который работает круглые сутки. Три задачи для эксперта и что ему нельзя поручать</title>
-      <link>https://tolstobrovevgeniy.ru/g/openai-dots-pomoshchnik-24-7/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/openai-dots-pomoshchnik-24-7/</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>29 сентября на DevDay OpenAI показала dots: агентов со своим облачным компьютером, которые держат твою цель и учатся на твоих правках. Что это простыми словами, сколько стоит и как начать без риска</description>
     </item>
   </channel>
 </rss>

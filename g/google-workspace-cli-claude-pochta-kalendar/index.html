@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Workspace CLI и Claude: почта, календарь и Диск. Инструкция для эксперта</title>
+  <meta name="description" content="Как подключить Google Workspace CLI к Claude без программирования: разбор входящих, поиск окна под консультацию, заявки из писем в таблицу. Пять запросов и правила безопасности.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Google Workspace CLI и Claude: почта, календарь и Диск. Инструкция для эксперта">
+  <meta property="og:description" content="Как подключить Google Workspace CLI к Claude без программирования: разбор входящих, поиск окна под консультацию, заявки из писем в таблицу. Пять запросов и правила безопасности.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Workspace CLI и Claude: почта, календарь и Диск. Инструкция для эксперта">
+  <meta name="twitter:description" content="Как подключить Google Workspace CLI к Claude без программирования: разбор входящих, поиск окна под консультацию, заявки из писем в таблицу. Пять запросов и правила безопасности.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-10-12">
+  <meta property="article:modified_time" content="2026-10-12">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Google Workspace CLI и Claude: почта, календарь и Диск. Инструкция для эксперта","name":"Claude разбирает почту, календарь и Google Диск: как подключить Google Workspace CLI и что доверить помощнику","description":"Как подключить Google Workspace CLI к Claude без программирования: разбор входящих, поиск окна под консультацию, заявки из писем в таблицу. Пять запросов и правила безопасности.","inLanguage":"ru","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/"},"url":"https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/","articleSection":"Инструкция","wordCount":695,"timeRequired":"PT6M","keywords":"google workspace cli, claude gmail, claude google календарь, ии разбирает почту, claude google диск"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Claude разбирает почту, календарь и Google Диск: как подключить Google Workspace CLI и что доверить помощнику","item":"https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Нужно ли уметь программировать?","acceptedAnswer":{"@type":"Answer","text":"Нет. Claude сам выполняет команды, тебе нужно только войти в аккаунт и проверить результат."}},{"@type":"Question","name":"Это безопасно?","acceptedAnswer":{"@type":"Answer","text":"Настолько, насколько ты ограничишь доступ. Отдельный рабочий аккаунт и запрет на отправку и удаление закрывают главные риски."}},{"@type":"Question","name":"Работает ли с обычным Gmail, без платного Workspace?","acceptedAnswer":{"@type":"Answer","text":"Инструмент работает через API Google, и для обычного аккаунта это возможно, но часть функций администратора будет недоступна. Проверь на своём аккаунте."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Claude разбирает почту, календарь и Google Диск: как подключить Google Workspace CLI и что доверить помощнику</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-10-12">12 октября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Claude разбирает почту, календарь и Google Диск: как подключить Google Workspace CLI и что доверить помощнику</h1>
+      <p class="lead">Google Workspace CLI даёт ИИ-помощнику доступ к Gmail, Календарю, Диску и Таблицам. Разбираю, чем он удобнее обычного подключения, даю пошаговую установку через Claude, пять запросов для эксперта и список запретов на первый день</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-eto-takoe">Что это такое</a></li><li><a href="#chem-on-luchshe-obychnogo-podklyucheniya">Чем он лучше обычного подключения</a></li><li><a href="#vazhno-pro-status">Важно про статус</a></li><li><a href="#podklyuchenie-cherez-claude">Подключение через Claude</a></li><li><a href="#pyat-zaprosov-dlya-eksperta">Пять запросов для эксперта</a></li><li><a href="#chto-zapretit-s-pervogo-dnya">Что запретить с первого дня</a></li><li><a href="#kak-proverit-chto-pomoschnik-ne-oshibaetsya">Как проверить, что помощник не ошибается</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#nuzhno-li-umet-programmirovat">Нужно ли уметь программировать?</a></li><li><a href="#eto-bezopasno">Это безопасно?</a></li><li><a href="#rabotaet-li-s-obychnym-gmail-bez-platnogo-workspace">Работает ли с обычным Gmail, без платного Workspace?</a></li><li><a href="#prodolzhenie-v-telegram">Продолжение в Telegram</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я обещал пошаговое подключение, пять запросов и что запретить помощнику с первого дня. Всё ниже. Сначала о том, что это за инструмент и откуда о нём столько разговоров.</p>
+<h2 id="chto-eto-takoe">Что это такое</h2>
+<p>Google Workspace CLI, команда gws, это открытый инструмент от команды Google Workspace. Через него программа, в том числе ИИ-помощник, может работать с Gmail, Календарём, Диском, Документами, Таблицами и чатом Google.</p>
+<p>Вышел он ещё весной, но в октябре получил новую волну внимания. Нейт Херк проверил больше 100 репозиториев для Claude и оставил этот в шестёрке лучших. Ролик за пару дней собрал больше 100 тысяч просмотров.</p>
+<h2 id="chem-on-luchshe-obychnogo-podklyucheniya">Чем он лучше обычного подключения</h2>
+<p>Подключить Gmail к Claude можно и через стандартные коннекторы. Разница в том, сколько это стоит по лимиту.</p>
+<p>Обычное подключение загружает описания всех команд в память помощника заранее. По оценке сторонних разборов, в некоторых настройках это съедает десятки тысяч токенов ещё до <a href="/g/vibecoding-is-explaining/" class="ctx-link">первого вопроса</a>. Значит, лимит заканчивается быстрее, а помощник хуже держит длинный разговор.</p>
+<p>С gws помощник читает короткий файл-подсказку, выполняет одну команду и получает аккуратный ответ. Память не забивается. Плюс инструмент сам подтягивает новые возможности Google, когда они появляются.</p>
+<h2 id="vazhno-pro-status">Важно про статус</h2>
+<p>В VentureBeat пишут, что официальной поддержки Google у инструмента нет, хотя он лежит в репозитории команды Google Workspace. Вход идёт через твой аккаунт Google, и помощник получает доступ к тому, что ты разрешишь.</p>
+<p>Поэтому моё правило: подключать к отдельному рабочему аккаунту, а не к личной почте, где переписка с семьёй и банком.</p>
+<h2 id="podklyuchenie-cherez-claude">Подключение через Claude</h2>
+<p>Понадобится <a href="/g/cex/" class="ctx-link">Claude Code</a> на компьютере.</p>
+<ol>
+<li><strong>Открой Claude Code</strong> в рабочей папке.</li>
+<li><strong>Попроси:</strong> «Установи Google Workspace CLI из репозитория googleworkspace/cli и помоги мне войти в мой рабочий аккаунт Google через gws auth login». Claude выполнит установку и подскажет, что нажать.</li>
+<li><strong>В браузере откроется окно Google.</strong> Войди в рабочий аккаунт и выдай доступ. Внимательно прочитай, к чему просится доступ.</li>
+<li><strong>Проверь:</strong> «Покажи пять последних писем во входящих, только тему и отправителя». Если показал, всё работает.</li>
+</ol>
+<h2 id="pyat-zaprosov-dlya-eksperta">Пять запросов для эксперта</h2>
+<p><strong>1. Разбор входящих.</strong></p>
+<blockquote>
+<p>Посмотри непрочитанные письма за сегодня. Раздели их на три группы: заявки от клиентов, вопросы по оплате, остальное. Для заявок подготовь черновики ответов в моём стиле, но не отправляй.</p>
+</blockquote>
+<p><strong>2. Окно под консультацию.</strong></p>
+<blockquote>
+<p>Найди в моём календаре три свободных окна по часу на следующей неделе, только с 11 до 18. Напиши их списком, чтобы я мог отправить клиенту.</p>
+</blockquote>
+<p><strong>3. Заявки в таблицу.</strong></p>
+<blockquote>
+<p>Найди в почте письма за неделю со словом «консультация» и собери в Google Таблицу: имя, почта, дата, суть запроса одной строкой.</p>
+</blockquote>
+<p><strong>4. Поиск файла.</strong></p>
+<blockquote>
+<p>Найди на моём Диске договор с клиентом Ивановой и пришли ссылку.</p>
+</blockquote>
+<p><strong>5. Сводка на утро.</strong></p>
+<blockquote>
+<p>Каждое утро показывай: встречи на сегодня, письма от клиентов без ответа дольше суток и задачи с дедлайном на этой неделе.</p>
+</blockquote>
+<h2 id="chto-zapretit-s-pervogo-dnya">Что запретить с первого дня</h2>
+<p>Скажи это помощнику прямо и запиши в его постоянные инструкции:</p>
+<ul>
+<li><strong>Не отправлять письма без моего подтверждения.</strong> Только черновики.</li>
+<li><strong>Не удалять ничего.</strong> Ни письма, ни файлы, ни события.</li>
+<li><strong>Не пересылать документы наружу</strong> и не менять доступ к файлам.</li>
+<li><strong>Не принимать приглашения в календаре</strong> от моего имени.</li>
+</ul>
+<p>Через неделю, когда увидишь, что черновики выходят как надо, можно разрешить отправку простых ответов, например подтверждения записи.</p>
+<h2 id="kak-proverit-chto-pomoschnik-ne-oshibaetsya">Как проверить, что помощник не ошибается</h2>
+<p>Первую неделю сверяй результат руками. Попросил собрать заявки в таблицу, открой почту и посчитай сам, все ли попали. Попросил свободные окна, проверь календарь глазами. Ошибки обычно одинаковые: помощник пропускает письма с вложениями, путает часовой пояс или берёт события из чужого календаря, к которому у тебя есть доступ. Каждую такую ошибку записывай в его инструкцию одной строкой. Через неделю проверки можно делать выборочно, раз в несколько дней.</p>
+<p>Если пользуешься несколькими аккаунтами Google, каждый подключай отдельно и называй помощнику явно, с каким из них работать в конкретной задаче.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="nuzhno-li-umet-programmirovat">Нужно ли уметь программировать?</h2>
+<p>Нет. Claude сам выполняет команды, тебе нужно только войти в аккаунт и проверить результат.</p>
+<h2 id="eto-bezopasno">Это безопасно?</h2>
+<p>Настолько, насколько ты ограничишь доступ. Отдельный рабочий аккаунт и запрет на отправку и удаление закрывают главные риски.</p>
+<h2 id="rabotaet-li-s-obychnym-gmail-bez-platnogo-workspace">Работает ли с обычным Gmail, без платного Workspace?</h2>
+<p>Инструмент работает через API Google, и для обычного аккаунта это возможно, но часть функций администратора будет недоступна. Проверь на своём аккаунте.</p>
+<h2 id="prodolzhenie-v-telegram">Продолжение в Telegram</h2>
+<p>Как я отдаю рутину Claude и что из этого реально экономит время, показываю каждый день в Telegram-канале. Подписывайся: <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/chatgpt-developer-mode-plugins/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Режим разработчика в ChatGPT: как подключить свои приложения</span>
+            <span class="related-sub">Developer mode открывает полный доступ к MCP: ChatGPT не только читает данные сервиса, но и выполняет в нём действия. Разбираю настройку по шагам, тарифы и риски, о которых молчат в роликах</span>
+          </a>
+          <a class="related-card" href="/g/pyat-ii-pomoshchnikov-kazhdomu/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Пять ИИ-помощников, которых стоит завести каждому. Как собрать их без программирования</span>
+            <span class="related-sub">Почта, рассылка, деньги, охота за ценой и контент. Разбор пятёрки Ишана Шармы и как собрать таких же на Claude: готовые формулировки заданий и что им нельзя доверять</span>
+          </a>
+          <a class="related-card" href="/g/chatgpt-sayt-vse-zayavki-v-odnom-meste/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Все заявки из почты, директа и таблиц на одном сайте: как мастер собрал его в ChatGPT за 15 минут и как повторить эксперту</span>
+            <span class="related-sub">OpenAI показала мебельщика из Филадельфии, у которого заявки терялись в сообщениях и письмах. Он подключил плагины, написал один запрос и получил сайт для команды. Разбираю по шагам и даю…</span>
+          </a>
+          <a class="related-card" href="/g/brauzer-chatgpt-8-zadach/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Браузер внутри ChatGPT работает вместо тебя: 8 задач с готовыми запросами на русском</span>
+            <span class="related-sub">В ChatGPT Work встроен облачный браузер, который сам ходит по сайтам, собирает данные в таблицы и делает инструкции со скриншотами. Перевёл все 8 сценариев из разбора канала 9x на русский…</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

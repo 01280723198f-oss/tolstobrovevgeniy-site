@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tolstobrovevgeniy.ru/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/tema/instrukciya/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/tema/razbor/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -59,6 +59,66 @@
     <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/artcraft-besplatnye-kopii-adobe/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/hugging-face-agenty-granicy-dlya-ii-pomoshchnika/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/anthropic-urezala-instrukcii-claude-chistka-prompta/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/make-maia-avtomatizaciya-slovami/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/chetyre-filtra-ii-produkta-do-zapuska/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/hyperframes-claude-video-kodom/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/google-workspace-cli-claude-pochta-kalendar/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/retro-razbor-sessii-s-ii/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/claude-small-business-13-novyh-navykov/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/claude-rezhisser-promptov-dlya-ii-video/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/g/chatgpt-pro-500-tarif-kakoy-vybrat/</loc>
