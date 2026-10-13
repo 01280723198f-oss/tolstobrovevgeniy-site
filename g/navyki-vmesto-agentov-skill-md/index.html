@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKILL.md: как сделать навык для Claude. Шаблон и промпт-интервью</title>
+  <meta name="description" content="Что такое навыки Claude (SKILL.md), как работает прогрессивная загрузка, три способа собрать навык, шаблон для эксперта, промпт-интервью и правила безопасности для чужих навыков.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/navyki-vmesto-agentov-skill-md/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="SKILL.md: как сделать навык для Claude. Шаблон и промпт-интервью">
+  <meta property="og:description" content="Что такое навыки Claude (SKILL.md), как работает прогрессивная загрузка, три способа собрать навык, шаблон для эксперта, промпт-интервью и правила безопасности для чужих навыков.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/navyki-vmesto-agentov-skill-md/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SKILL.md: как сделать навык для Claude. Шаблон и промпт-интервью">
+  <meta name="twitter:description" content="Что такое навыки Claude (SKILL.md), как работает прогрессивная загрузка, три способа собрать навык, шаблон для эксперта, промпт-интервью и правила безопасности для чужих навыков.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-10-13">
+  <meta property="article:modified_time" content="2026-10-13">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"SKILL.md: как сделать навык для Claude. Шаблон и промпт-интервью","name":"Навыки вместо агентов: что такое SKILL.md, как собрать свой первый навык через интервью с Claude и где брать готовые","description":"Что такое навыки Claude (SKILL.md), как работает прогрессивная загрузка, три способа собрать навык, шаблон для эксперта, промпт-интервью и правила безопасности для чужих навыков.","inLanguage":"ru","datePublished":"2026-10-13","dateModified":"2026-10-13","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/navyki-vmesto-agentov-skill-md/"},"url":"https://tolstobrovevgeniy.ru/g/navyki-vmesto-agentov-skill-md/","articleSection":"Инструкция","wordCount":732,"timeRequired":"PT7M","keywords":"skill.md, навыки claude, claude skills, как сделать навык для ии, агент claude code"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Навыки вместо агентов: что такое SKILL.md, как собрать свой первый навык через интервью с Claude и где брать готовые","item":"https://tolstobrovevgeniy.ru/g/navyki-vmesto-agentov-skill-md/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Нужно ли уметь программировать?","acceptedAnswer":{"@type":"Answer","text":"Нет. Навык это текст. Скрипты внутри необязательны."}},{"@type":"Question","name":"Сколько навыков нужно эксперту?","acceptedAnswer":{"@type":"Answer","text":"Начни с одного, для самой частой рутины. Через месяц у тебя будет пять, и ты не будешь понимать, как работал без них."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Навыки вместо агентов: что такое SKILL.md, как собрать свой первый навык через интервью с Claude и где брать готовые</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-10-13">13 октября 2026</time>
+        <span>· 7 мин</span>
+      </div>
+      <h1>Навыки вместо агентов: что такое SKILL.md, как собрать свой первый навык через интервью с Claude и где брать готовые</h1>
+      <p class="lead">Инженеры Anthropic перестали собирать отдельного агента под каждую задачу и учат одного агента навыкам. Разбираю, как это работает, даю шаблон SKILL.md для эксперта и промпт-интервью</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#odin-agent-i-mnogo-navykov">Один агент и много навыков</a></li><li><a href="#kak-eto-rabotaet-iznutri">Как это работает изнутри</a></li><li><a href="#tri-sposoba-sobrat-navyk">Три способа собрать навык</a></li><li><a href="#shablon-skill-md-dlya-eksperta">Шаблон SKILL.md для эксперта</a></li><li><a href="#name-razbor-zayavok-description-razbiraet-vhodyaschuyu-zayav">name: разбор-заявок
+description: Разбирает входящую заявку клиента, определяет тип запроса и готовит черновик ответа. Используй, когда я присылаю текст заявки или прошу «разбери заявку».</a></li><li><a href="#chto-na-vhode">Что на входе</a></li><li><a href="#chto-sdelat">Что сделать</a></li><li><a href="#moy-stil">Мой стиль</a></li><li><a href="#chego-ne-delat">Чего не делать</a></li><li><a href="#chto-na-vyhode">Что на выходе</a></li><li><a href="#prompt-intervyu">Промпт-интервью</a></li><li><a href="#gde-hranit-i-kak-vyzyvat">Где хранить и как вызывать</a></li><li><a href="#gde-brat-gotovye-navyki">Где брать готовые навыки</a></li><li><a href="#pravilo-bezopasnosti">Правило безопасности</a></li><li><a href="#kakie-navyki-sdelat-ekspertu-pervymi">Какие навыки сделать эксперту первыми</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#nuzhno-li-umet-programmirovat">Нужно ли уметь программировать?</a></li><li><a href="#skolko-navykov-nuzhno-ekspertu">Сколько навыков нужно эксперту?</a></li><li><a href="#prodolzhenie-v-telegram">Продолжение в Telegram</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я обещал шаблон SKILL.md, промпт-интервью и места, где брать готовые навыки. Всё ниже. Сначала главная идея.</p>
+<h2 id="odin-agent-i-mnogo-navykov">Один агент и много навыков</h2>
+<p>Раньше под каждую задачу строили отдельного агента: один для писем, другой для отчётов, третий для анализа. Каждого надо настраивать, поддерживать, чинить.</p>
+<p>В Anthropic пошли другим путём: один агент и растущая библиотека навыков. Навык это инструкция, как выполнять конкретную повторяющуюся работу. Агент берёт нужный навык, когда задача совпала. Блогер Шарбел в свежем разборе называет навык приложением для ИИ, и это хорошая метафора.</p>
+<p>Формат SKILL.md понимают Claude, <a href="/g/cex/" class="ctx-link">Claude Code</a> и ряд других агентов, включая Cursor и Codex.</p>
+<h2 id="kak-eto-rabotaet-iznutri">Как это работает изнутри</h2>
+<p>Навык это папка с файлом SKILL.md. В начале файла название и короткое описание, когда навык применять. Дальше подробная инструкция, примеры, иногда скрипты.</p>
+<p>Хитрость в порядке загрузки. Агент сначала видит только название и описание всех навыков. Полную инструкцию он читает, только когда задача подходит. Поэтому навыков можно держать десятки, и они не забивают память разговора.</p>
+<h2 id="tri-sposoba-sobrat-navyk">Три способа собрать навык</h2>
+<p><strong>1. Написать вручную.</strong> Подходит, если ты уже точно знаешь процесс. Берёшь шаблон ниже и заполняешь.</p>
+<p><strong>2. Интервью с Claude.</strong> Самый удобный способ для эксперта. Claude задаёт вопросы, ты отвечаешь, он собирает файл. Промпт ниже.</p>
+<p><strong>3. Запись экрана.</strong> Делаешь задачу сам и записываешь экран, потом отдаёшь запись Claude, чтобы он описал процесс по шагам. Подходит для задач, которые проще показать, чем объяснить.</p>
+<h2 id="shablon-skill-md-dlya-eksperta">Шаблон SKILL.md для эксперта</h2>
+<p>Скопируй и заполни квадратные скобки.</p>
+<hr>
+<h2 id="name-razbor-zayavok-description-razbiraet-vhodyaschuyu-zayav">name: разбор-заявок
+description: Разбирает входящую заявку клиента, определяет тип запроса и готовит черновик ответа. Используй, когда я присылаю текст заявки или прошу «разбери заявку».</h2>
+<h1 id="razbor-zayavok">Разбор заявок</h1>
+<h2 id="chto-na-vhode">Что на входе</h2>
+<p>Текст заявки из [мессенджер или форма].</p>
+<h2 id="chto-sdelat">Что сделать</h2>
+<ol>
+<li>Определи тип запроса: [типы, например консультация, курс, вопрос].</li>
+<li>Оцени, насколько человек готов купить: холодный, тёплый, горячий.</li>
+<li>Напиши черновик ответа в моём стиле.</li>
+</ol>
+<h2 id="moy-stil">Мой стиль</h2>
+<p>[3–5 примеров моих ответов клиентам]</p>
+<h2 id="chego-ne-delat">Чего не делать</h2>
+<ul>
+<li>Не обещай результат и сроки.</li>
+<li>Не называй цену без моего подтверждения.</li>
+</ul>
+<h2 id="chto-na-vyhode">Что на выходе</h2>
+<p>Тип, <a href="/g/zayavki-razbiraet-ii-goryachie-lidy/" class="ctx-link">оценка готовности, черновик ответа</a>.</p>
+<h2 id="prompt-intervyu">Промпт-интервью</h2>
+<p>«Я хочу собрать навык для Claude в формате SKILL.md. Задача навыка: [описание]. Возьми у меня интервью: задавай вопросы по одному и жди ответа. Узнай, что на входе, какие шаги я делаю, какие бывают ошибки, как выглядит хороший результат и чего делать нельзя. Когда вопросов не останется, собери файл SKILL.md с коротким описанием в начале и подробной инструкцией ниже».</p>
+<p>Отвечай так, как объяснял бы новичку в команде. Подробно, с примерами, с исключениями. Чем подробнее ответы, тем лучше работает навык.</p>
+<h2 id="gde-hranit-i-kak-vyzyvat">Где хранить и как вызывать</h2>
+<p>В Claude Code навыки лежат в папке навыков, каждый в своей подпапке. Вызываешь по названию или просто описываешь задачу, и агент сам находит подходящий навык. В <a href="/g/produkt-iz-odnoy-funkcii/" class="ctx-link">приложении Claude</a> навыки загружаются в настройках.</p>
+<p>У меня так устроен весь контент-завод: десятки навыков на рилсы, карусели, статьи и разбор каналов. Один агент, разные инструкции. Когда что-то идёт не так, я правлю один файл, а не перестраиваю систему.</p>
+<h2 id="gde-brat-gotovye-navyki">Где брать готовые навыки</h2>
+<ul>
+<li><strong>Официальная библиотека Anthropic</strong> с примерами навыков.</li>
+<li><strong>GitHub:</strong> многие авторы выкладывают навыки открыто.</li>
+<li><strong>Каталоги и маркетплейсы навыков,</strong> которые собирают сообщества.</li>
+</ul>
+<h2 id="pravilo-bezopasnosti">Правило безопасности</h2>
+<p>Навык может содержать скрипты, то есть код, который запустится на твоём компьютере. Перед установкой чужого навыка:</p>
+<ol>
+<li><strong>Открой SKILL.md и прочитай,</strong> что он делает.</li>
+<li><strong>Посмотри папку со скриптами.</strong> Если не понимаешь код, попроси Claude объяснить, что он делает, и есть ли там отправка данных наружу.</li>
+<li><strong>Ставь только из понятных источников.</strong></li>
+</ol>
+<h2 id="kakie-navyki-sdelat-ekspertu-pervymi">Какие навыки сделать эксперту первыми</h2>
+<p>Если не знаешь, с чего начать, вот пять кандидатов. Каждый закрывает рутину, которая повторяется каждую неделю.</p>
+<ol>
+<li><strong>Пост в моём стиле.</strong> На входе тема, на выходе черновик с твоим крючком, структурой и призывом.</li>
+<li><strong>Разбор заявок.</strong> Шаблон выше.</li>
+<li><strong>Протокол консультации.</strong> На входе расшифровка встречи, на выходе итог и домашнее задание для клиента.</li>
+<li><strong>Ответ на возражение.</strong> На входе сообщение клиента, на выходе три варианта ответа в твоём тоне.</li>
+<li><strong>Идеи из комментариев.</strong> На входе комментарии за неделю, на выходе темы для контента.</li>
+</ol>
+<p>Делай по одному навыку в неделю и проверяй его на реальных задачах. Каждый раз, когда результат приходится править, допиши в навык строку, что сделать иначе. Так навык становится лучше с каждым использованием.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="nuzhno-li-umet-programmirovat">Нужно ли уметь программировать?</h2>
+<p>Нет. Навык это текст. Скрипты внутри необязательны.</p>
+<h2 id="skolko-navykov-nuzhno-ekspertu">Сколько навыков нужно эксперту?</h2>
+<p>Начни с одного, для самой частой рутины. Через месяц у тебя будет пять, и ты не будешь понимать, как работал без них.</p>
+<h2 id="prodolzhenie-v-telegram">Продолжение в Telegram</h2>
+<p>Какие навыки работают в моём контент-заводе и как я их собираю, показываю в Telegram-канале. Подписывайся: <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/gemini-navyki-vmesto-gems/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Навыки в Gemini: объясняешь задачу один раз, дальше он делает сам. Три готовых навыка для эксперта и как перенести Gems до ноября</span>
+            <span class="related-sub">Google раскатывает Skills: с 5 октября в Workspace, с 13 октября в приложении Gemini, а Gems уберут 17 ноября. Что такое навык, как его собрать и три текста навыков, которые вставишь за 5…</span>
+          </a>
+          <a class="related-card" href="/g/9-besplatnyh-navykov-claude-chatgpt/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">9 бесплатных навыков для Claude и ChatGPT: ссылки, установка и как подогнать под себя</span>
+            <span class="related-sub">Исследования, просмотр видео, графика, чистка текста, дизайн и проверка безопасности. Разбор подборки Futurepedia: что каждый навык делает, какие нужны эксперту и с чего начать</span>
+          </a>
+          <a class="related-card" href="/g/navyki-claude-pervye-100-strok/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Claude читает только первые 100 строк файла в навыке. Семь новых правил сборки навыков</span>
+            <span class="related-sub">Anthropic обновила рекомендации: оглавление в длинных файлах, три степени свободы, ссылки в один уровень, чек-листы и самопроверка. Пересказ по-русски и запрос для проверки своих навыков</span>
+          </a>
+          <a class="related-card" href="/g/otdel-marketinga-v-chatgpt-5-agentov/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Отдел маркетинга из пяти ИИ-агентов в ChatGPT без кода: шаблон файла о бренде и порядок сборки</span>
+            <span class="related-sub">Маркетолог Грейс Леунг показала, как собрать в ChatGPT команду из руководителя и пяти специалистов, научить их навыкам и запускать через личного помощника dots. Разбираю её схему и даю…</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ИИ декомпилирует игры: Minecraft в Elden Ring и выводы для эксперта</title>
+  <meta name="description" content="Как моддеры с Claude разбирают игры на исходный код, что из вирусных роликов правда, где юридическая граница и пошаговый план: как эксперту собрать свой сервис с Claude без чужого кода.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/ii-razbiraet-igry-na-ishodnyj-kod/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="ИИ декомпилирует игры: Minecraft в Elden Ring и выводы для эксперта">
+  <meta property="og:description" content="Как моддеры с Claude разбирают игры на исходный код, что из вирусных роликов правда, где юридическая граница и пошаговый план: как эксперту собрать свой сервис с Claude без чужого кода.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/ii-razbiraet-igry-na-ishodnyj-kod/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ИИ декомпилирует игры: Minecraft в Elden Ring и выводы для эксперта">
+  <meta name="twitter:description" content="Как моддеры с Claude разбирают игры на исходный код, что из вирусных роликов правда, где юридическая граница и пошаговый план: как эксперту собрать свой сервис с Claude без чужого кода.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-10-13">
+  <meta property="article:modified_time" content="2026-10-13">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"ИИ декомпилирует игры: Minecraft в Elden Ring и выводы для эксперта","name":"ИИ разбирает игры на исходный код: Minecraft внутри Elden Ring и что это значит для эксперта, который не программист","description":"Как моддеры с Claude разбирают игры на исходный код, что из вирусных роликов правда, где юридическая граница и пошаговый план: как эксперту собрать свой сервис с Claude без чужого кода.","inLanguage":"ru","datePublished":"2026-10-13","dateModified":"2026-10-13","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/ii-razbiraet-igry-na-ishodnyj-kod/"},"url":"https://tolstobrovevgeniy.ru/g/ii-razbiraet-igry-na-ishodnyj-kod/","articleSection":"Разбор","wordCount":743,"timeRequired":"PT7M","keywords":"ии декомпиляция игр, minecraft elden ring мод, claude моды, собрать сервис с claude, вайбкодинг для эксперта"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Разбор","item":"https://tolstobrovevgeniy.ru/tema/razbor/"},{"@type":"ListItem","position":3,"name":"ИИ разбирает игры на исходный код: Minecraft внутри Elden Ring и что это значит для эксперта, который не программист","item":"https://tolstobrovevgeniy.ru/g/ii-razbiraet-igry-na-ishodnyj-kod/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько стоит такой сервис?","acceptedAnswer":{"@type":"Answer","text":"Если это одна страница без сервера, по деньгам почти ничего: подписка на Claude, которая у тебя уже есть, и бесплатный хостинг. Время: от вечера до пары выходных."}},{"@type":"Question","name":"Что если что-то сломается?","acceptedAnswer":{"@type":"Answer","text":"Опиши поломку Claude, приложи скриншот. В девяти случаях из десяти он исправит с первого раза."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/razbor/">Разбор</a><span class="sep">/</span><span>ИИ разбирает игры на исходный код: Minecraft внутри Elden Ring и что это значит для эксперта, который не программист</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/razbor/">Разбор</a>
+        <time datetime="2026-10-13">13 октября 2026</time>
+        <span>· 7 мин</span>
+      </div>
+      <h1>ИИ разбирает игры на исходный код: Minecraft внутри Elden Ring и что это значит для эксперта, который не программист</h1>
+      <p class="lead">Моддеры с помощью Claude разбирают готовые игры обратно в код и смешивают их между собой. Разбираю, что правда, что монтаж, где юридический подвох и как эксперту повторить нужный сервис с Claude, не нарушая чужих прав</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-proishodit">Что происходит</a></li><li><a href="#kak-eto-sdelano">Как это сделано</a></li><li><a href="#chto-iz-rolikov-pravda-a-chto-montazh">Что из роликов правда, а что монтаж</a></li><li><a href="#gde-podvoh">Где подвох</a></li><li><a href="#chto-eto-znachit-dlya-tebya">Что это значит для тебя</a></li><li><a href="#poshagovyy-plan-svoy-servis-s-claude">Пошаговый план: свой сервис с Claude</a></li><li><a href="#chego-ne-delat">Чего не делать</a></li><li><a href="#primer-zaprosa-dlya-pervogo-servisa">Пример запроса для первого сервиса</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#skolko-stoit-takoy-servis">Сколько стоит такой сервис?</a></li><li><a href="#chto-esli-chto-to-slomaetsya">Что если что-то сломается?</a></li><li><a href="#prodolzhenie-v-telegram">Продолжение в Telegram</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В карусели я обещал пошаговый план: как эксперту повторить нужный сервис с Claude и не нарушить чужих прав. Он ниже. Сначала про сам тренд, потому что в нём много правды и много монтажа.</p>
+<h2 id="chto-proishodit">Что происходит</h2>
+<p>С конца сентября 2026 года соцсети завалены роликами, в которых игры смешаны между собой. Машины из Mario Kart едут по Call of Duty Zombies, персонажи Minecraft дерутся с боссами Elden Ring, Человек-паук летает по Готэму. Разбор этого тренда на канале Slop Architect за неделю собрал больше 228 тысяч просмотров, а ролик канала AI Search о том же явлении почти 940 тысяч.</p>
+<h2 id="kak-eto-sdelano">Как это сделано</h2>
+<p>Любая игра, которую ты покупаешь, это скомпилированная программа: машинный код, который человек прочитать не может. Декомпиляция это обратный процесс, когда из готовой программы восстанавливают исходный код, понятный человеку.</p>
+<p>Раньше это была работа на годы. Пример из той же истории: декомпиляция GoldenEye 007 для Nintendo 64 недавно дошла до ста процентов, и над ней годами работали волонтёры. По разным источникам, от пяти до девяти лет.</p>
+<p>Теперь моддеры дают готовую игру ИИ-агенту, чаще всего Claude, и он разбирает код функция за функцией. Разработчик Крис Льюис описал в своём блоге, что с Claude в фоновом режиме за три недели продвинулся в разборе Snowboard Kids 2 дальше, чем за три месяца до этого. Его процесс обработал больше тысячи функций.</p>
+<h2 id="chto-iz-rolikov-pravda-a-chto-montazh">Что из роликов правда, а что монтаж</h2>
+<p>Здесь важно не попасться. Японский обозреватель выяснил у автора самого вирусного ролика Minecraft × Elden Ring, что две игры там одновременно не запускались. При этом другие проекты, например смесь Minecraft со Skyrim и с GTA V, действительно работают и выложены с кодом.</p>
+<p>Правило простое: прежде чем пересказывать вирусный ролик, найди, где опубликован код проекта. Нет кода, значит, это может быть красивый монтаж.</p>
+<h2 id="gde-podvoh">Где подвох</h2>
+<p>Игры годами делали живые люди, часто за большие деньги. Декомпилированный код остаётся чужим трудом. Автор плагина для таких модов прямо пишет: пользоваться им можно только с играми, которые ты купил. Студии, юристы и сами игроки уже спорят, где проходит граница, и единого ответа пока нет.</p>
+<p>Для эксперта вывод однозначный: разбирать чужие программы, чтобы продавать их копию, не надо. Но сам тренд показывает кое-что гораздо более полезное.</p>
+<h2 id="chto-eto-znachit-dlya-tebya">Что это значит для тебя</h2>
+<p>Если ИИ способен разобрать на части целую игру, то собрать с нуля небольшой сервис под твою нишу для него несложная задача. Калькулятор стоимости услуг, квиз для подбора программы, трекер привычек для клиентов, бот с записью. Барьер «я не программист» больше не работает.</p>
+<p>И главное: тебе не нужен чужой код. Ты описываешь, что должен делать сервис, а Claude пишет его с нуля. Это твой продукт, без юридических вопросов.</p>
+<h2 id="poshagovyy-plan-svoy-servis-s-claude">Пошаговый план: свой сервис с Claude</h2>
+<p><strong>1. Выбери задачу, за которую сейчас платишь подписку или тратишь время.</strong>
+Например, считаешь стоимость пакета для каждого клиента вручную. Или пользуешься сервисом записи, из которого используешь одну функцию.</p>
+<p><strong>2. Опиши сервис словами, как для подрядчика.</strong>
+Кто пользуется, что вводит, что получает на выходе. Пример: «Калькулятор для клиента: выбирает количество консультаций и формат, видит цену и кнопку записаться в Telegram».</p>
+<p><strong>3. Попроси Claude собрать его как одну страницу.</strong>
+«Собери это одной HTML-<a href="/g/otvety-alisy-ai-dlya-eksperta/" class="ctx-link">страницей, которая</a> работает в браузере без сервера. Крупный шрифт, удобно с телефона». Простые сервисы так и живут: один файл, который можно выложить на бесплатный хостинг.</p>
+<p><strong>4. Проверь на трёх реальных сценариях.</strong>
+Возьми три настоящих случая из практики и прогони через сервис. Где ответ неверный, опиши Claude, что не так.</p>
+<p><strong>5. Покажи двум клиентам.</strong>
+Не друзьям, а тем, для кого делал. Их вопросы покажут, чего не хватает.</p>
+<p><strong>6. Выложи и дай ссылку.</strong>
+В шапке профиля, в закрепе, в ответе на частый вопрос.</p>
+<h2 id="chego-ne-delat">Чего не делать</h2>
+<ul>
+<li><strong>Не копировать чужие платные программы</strong> и не продавать копии.</li>
+<li><strong>Не собирать сложное с первого раза.</strong> Начни с одной функции.</li>
+<li><strong>Не хранить данные клиентов</strong> в самодельном сервисе без понимания, где они лежат и кто их видит.</li>
+</ul>
+<h2 id="primer-zaprosa-dlya-pervogo-servisa">Пример запроса для первого сервиса</h2>
+<p>«Я [кто ты]. Мои клиенты часто спрашивают [вопрос]. Собери одну HTML-страницу: человек отвечает на пять вопросов, в конце получает рекомендацию, какой формат работы ему подходит, и кнопку записаться в Telegram [ссылка]. Крупный шрифт, удобно с телефона, без внешних библиотек».</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="skolko-stoit-takoy-servis">Сколько стоит такой сервис?</h2>
+<p>Если это одна страница без сервера, по деньгам почти ничего: подписка на Claude, которая у тебя уже есть, и бесплатный хостинг. Время: от вечера до пары выходных.</p>
+<h2 id="chto-esli-chto-to-slomaetsya">Что если что-то сломается?</h2>
+<p>Опиши поломку Claude, приложи скриншот. В девяти случаях из десяти он исправит с первого раза.</p>
+<h2 id="prodolzhenie-v-telegram">Продолжение в Telegram</h2>
+<p>Какие сервисы я собрал с Claude вместо подписок и что из этого вышло, показываю в Telegram-канале. Подписывайся: <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/artcraft-besplatnye-kopii-adobe/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Бесплатные копии Photoshop, Lightroom и Premiere: что такое ArtCraft и можно ли уже отменить подписку Adobe</span>
+            <span class="related-sub">Разработчик Брендон Томас вместе с Claude собрал семь бесплатных программ на замену Adobe. Разбираю, что в них уже работает, где они ломаются и как за 15 минут понять, подходят ли они тебе</span>
+          </a>
+          <a class="related-card" href="/g/produkt-iz-odnoy-funkcii/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Продукт из одной функции: как найти свою и собрать без разработчика</span>
+            <span class="related-sub">Приложение Stella делает одну вещь и, по словам создательницы, вышло на 300 тысяч долларов в месяц. Разбираю, почему дело не в приложении, и как эксперту найти свою «одну функцию»</span>
+          </a>
+          <a class="related-card" href="/g/own-automations-on-code/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Закрыл подписки на автоматизацию. Что заменил своим кодом и где сервис всё ещё выгоднее</span>
+            <span class="related-sub">Claude Code собирает связки по описанию словами. Разбираю, что я перенёс на свой код, как считать стоимость Zapier и n8n и в каких случаях подписка остаётся разумным выбором</span>
+          </a>
+          <a class="related-card" href="/g/svoi-instrumenty-vmesto-programm/">
+            <span class="tag">Разбор</span>
+            <span class="related-title">Люди делают программы под себя вместо покупных. 7 инструментов, которые эксперту стоит собрать первыми</span>
+            <span class="related-sub">Блогеры монтируют в самодельных редакторах, а учёт финансов собирают за вечер. Разбираю волну программ «на одного»: что собирать себе, чего самоделкой делать нельзя и как описать задачу</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
