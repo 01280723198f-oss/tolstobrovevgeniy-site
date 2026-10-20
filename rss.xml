@@ -5,8 +5,32 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 20 Oct 2026 21:10:31 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 21:48:31 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Пять запросов для Gemini: фотосессия в пяти стилях из одного обычного фото</title>
+      <link>https://tolstobrovevgeniy.ru/g/gemini-5-zaprosov-fotosessiya-v-stilyah/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-5-zaprosov-fotosessiya-v-stilyah/</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Невесомость, сюрреализм, модный коллаж, двойная экспозиция и ретро 80-х. Все пять запросов целиком, как сделать, чтобы на всех кадрах был ты, и как превратить серию в карусель</description>
+    </item>
+    <item>
+      <title>Закат в глазах и горящее фото: два запроса для Gemini, после которых спрашивают, где ты снимался</title>
+      <link>https://tolstobrovevgeniy.ru/g/gemini-zakat-v-glazah-goryashchee-foto/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-zakat-v-glazah-goryashchee-foto/</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Два кадра-истории из одного фото: двойная экспозиция на закате и ночной город с горящей фотографией. Оба запроса целиком, что подкрутить, если вышло не то, и как сделать из кадра обложку рилса</description>
+    </item>
+    <item>
+      <title>Вид с дрона, туман и чиби из одного фото: 20 коротких запросов для Gemini с готовым текстом</title>
+      <link>https://tolstobrovevgeniy.ru/g/gemini-foto-vid-s-drona-20-zaprosov/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/gemini-foto-vid-s-drona-20-zaprosov/</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Загружаешь фото, пишешь пару слов, и Gemini строит целую сцену. Три запроса из ролика и ещё семнадцать: ракурсы, погода, стили, обложки и аватарки. Плюс как сделать, чтобы лицо осталось твоим</description>
+    </item>
     <item>
       <title>Кончились лимиты в Claude Code? Два бесплатных проекта, чтобы не останавливаться, и как переключаться туда и обратно</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/</link>
@@ -142,30 +166,6 @@
       <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Разработчик Брендон Томас вместе с Claude собрал семь бесплатных программ на замену Adobe. Разбираю, что в них уже работает, где они ломаются и как за 15 минут понять, подходят ли они тебе</description>
-    </item>
-    <item>
-      <title>700 ИИ-агентов взломали Hugging Face ради невыполнимой задачи. Три строки, которые ставят границы твоему ИИ-помощнику</title>
-      <link>https://tolstobrovevgeniy.ru/g/hugging-face-agenty-granicy-dlya-ii-pomoshchnika/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/hugging-face-agenty-granicy-dlya-ii-pomoshchnika/</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>История про агентов OpenAI, которые сговорились и взломали серверы, собрала десятки миллионов просмотров. Разбираю, что случилось по отчёту OpenAI, и что из этого взять в ежедневную работу с Claude или ChatGPT</description>
-    </item>
-    <item>
-      <title>Anthropic выкинула 80% инструкций из Claude Code и не потеряла в качестве. Как почистить свой промпт за 10 минут</title>
-      <link>https://tolstobrovevgeniy.ru/g/anthropic-urezala-instrukcii-claude-chistka-prompta/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/anthropic-urezala-instrukcii-claude-chistka-prompta/</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Новые модели лучше работают с короткими инструкциями, чем с длинными сводами правил. Разбираю, что объявила Anthropic, и даю чек-лист чистки инструкции эксперта с примером до и после</description>
-    </item>
-    <item>
-      <title>Maia в Make: автоматизация словами без схем и модулей. Пять готовых формулировок для эксперта</title>
-      <link>https://tolstobrovevgeniy.ru/g/make-maia-avtomatizaciya-slovami/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/make-maia-avtomatizaciya-slovami/</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>В конструктор Make встроили ИИ-помощницу Maia: описываешь процесс обычным языком, она собирает сценарий. Разбираю, как это работает, где подвох, и даю пять формулировок под заявки, оплаты, запись, рассылку и отчёт</description>
     </item>
   </channel>
 </rss>
