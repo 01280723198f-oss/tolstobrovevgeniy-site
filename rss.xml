@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 20 Oct 2026 22:42:06 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 22:59:37 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Меня в этом ролике никто не снимал: как сделать ИИ-персонажа из одного фото в Gemini и HeyGen</title>
+      <link>https://tolstobrovevgeniy.ru/g/ii-personazh-gemini-heygen-bez-semok/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-personazh-gemini-heygen-bez-semok/</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Фото в Gemini, аватар и клон голоса в HeyGen, текст и монтаж. Весь процесс по шагам с настройками, ценой и ошибками, на которых мы потеряли время</description>
+    </item>
     <item>
       <title>Заказчик просит «а можно как было?»: откат в Claude Code за две секунды</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Исследование на 725 тысячах сотрудников показало: после ИИ-агентов кода стало больше, а закрытых задач значимо не прибавилось. Разбираю, что нашли, какие оговорки, и как эксперту не попасть в ту же пробку</description>
-    </item>
-    <item>
-      <title>Фотосессия без фотографа: что изменилось в Nano Banana 2.1 и 7 промптов для экспертной съёмки</title>
-      <link>https://tolstobrovevgeniy.ru/g/nano-banana-2-1-fotosessiya-bez-fotografa/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/nano-banana-2-1-fotosessiya-bez-fotografa/</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Google выпустила Nano Banana 2.1: до 14 фото-референсов, до 4 персонажей без потери лица, разрешение до 4K. Разбираю, где найти модель, как не дать ей состарить лицо и даю 7 промптов для эксперта</description>
     </item>
   </channel>
 </rss>
