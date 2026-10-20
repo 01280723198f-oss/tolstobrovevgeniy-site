@@ -5,6 +5,7 @@
 const C = require("../config");
 const S = require("./schema");
 const A = require("./analytics");
+const L = require("./legal");
 const { escapeHtml } = require("./text");
 
 /** Внутренние ссылки ставим от корня: короче в HTML и не ломаются
@@ -63,9 +64,9 @@ const footer = (topics = []) => `
       ${topics.length ? `<nav class="footer-topics">${topics.map(t =>
         `<a href="${rel(t.url)}">${escapeHtml(t.name)}</a>`).join(" · ")}</nav>` : ""}
       <p>© <span>${new Date().getFullYear()}</span> ${escapeHtml(C.brand)} · Строим вместе 🔥<br>
-      <a href="${C.telegram}" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+      <a href="${C.telegram}" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>${L.footerLinks() ? "\n      " + L.footerLinks() : ""}
     </div>
-  </footer>
+  </footer>${L.cookieNote()}
   <script src="/assets/analytics.js" defer></script>
 </body>
 </html>`;
@@ -205,4 +206,17 @@ function card(p) {
       </a>`;
 }
 
-module.exports = { articlePage, indexPage, topicPage };
+/** Служебная страница (политика, согласие): без счётчиков в тексте, не в индексе поиска. */
+function legalPage({ slug, title, description, body }, topics = []) {
+  const url = `${C.origin}/${slug}/`;
+  return head({ title, description, canonical: url, robots: "noindex, follow", ogType: "website" }) + header() + `
+  <main class="wrap">
+    <article class="article legal">
+      ${crumbs([{ name: "Главная", url: C.origin + "/" }, { name: title, url }])}
+      <h1>${escapeHtml(title)}</h1>
+      ${body}
+    </article>
+  </main>` + footer(topics);
+}
+
+module.exports = { articlePage, indexPage, topicPage, legalPage };

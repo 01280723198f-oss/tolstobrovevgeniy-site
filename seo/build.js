@@ -14,6 +14,7 @@ const { render } = require("./lib/markdown");
 const { related, injectContextual } = require("./lib/links");
 const { slugify, words, clamp, toISO, plain, escapeHtml, tokens } = require("./lib/text");
 const P = require("./lib/page");
+const L = require("./lib/legal");
 
 const ROOT = path.resolve(__dirname, "..");
 const R = (...p) => path.join(ROOT, ...p);
@@ -313,6 +314,15 @@ function main() {
   for (const t of topics) written.push(write(`${C.paths.topic}/${t.slug}/index.html`, P.topicPage(t, t.pages, topics)));
 
   written.push(write("index.html", P.indexPage(pages, topics)));
+
+  // Политика и согласие — только когда оператор заполнен в config.js, иначе старые копии убираем.
+  for (const slug of ["privacy", "consent"]) if (!L.ready() && fs.existsSync(R(slug))) fs.rmSync(R(slug), { recursive: true, force: true });
+  if (L.ready()) {
+    written.push(write("privacy/index.html", P.legalPage({ slug: "privacy", title: "Политика конфиденциальности",
+      description: "Какие данные собирает сайт, зачем, кому передаёт и как отказаться.", body: L.privacyBody() }, topics)));
+    written.push(write("consent/index.html", P.legalPage({ slug: "consent", title: "Согласие на обработку персональных данных",
+      description: "Согласие посетителя сайта на обработку персональных данных.", body: L.consentBody() }, topics)));
+  }
   written.push(write("guide.html", redirectShim(pages)));
   written.push(write("404.html", notFound(pages, topics)));
   written.push(write("sitemap.xml", sitemap(pages, topics)));
@@ -328,6 +338,8 @@ function main() {
 
   console.log(`✓ Собрано: ${pages.length} статей, ${topics.length} тем, ${written.length} файлов`);
   console.log(`  Темы: ${topics.map(t => t.name + "(" + t.count + ")").join(", ")}`);
+  console.log(L.ready() ? "  Политика и согласие: /privacy/, /consent/ + плашка cookie"
+    : `  ⚠ Политика конфиденциальности НЕ собрана: заполни operator в seo/config.js (${L.missing().join(", ")})`);
   console.log(`  Счётчики: ${counters.length ? counters.join(", ") : "не подключены (заполни ~/.claude/secrets/site-analytics.env)"}`);
   const thin = pages.filter(p => p.words < C.seo.thinWords);
   if (thin.length) console.log(`  ⚠ Тонких статей (< ${C.seo.thinWords} слов): ${thin.length} — см. node seo/audit.js`);

@@ -17,6 +17,11 @@ module.exports = {
   },
   telegram: "https://t.me/Evgeniy_Tolstobrov",
 
+  // ── Оператор персональных данных (политика, согласие, плашка cookie) ─
+  // Пока name/status/email пустые — страницы /privacy/ и /consent/ не собираются, ссылок и плашки нет.
+  // status: "Индивидуальный предприниматель" | "Самозанятый" | "Физическое лицо"
+  operator: { name: "", status: "", inn: "", ogrnip: "", email: "", updated: "" },
+
   // ── Структура URL ───────────────────────────────────────────────
   // Статья:  /g/<slug>/          Тема: /tema/<slug>/
   paths: { article: "g", topic: "tema" },

@@ -67,3 +67,18 @@ a.tag:hover { color: var(--accent); }
   .page-h1 { font-size: 25px; }
   .related-list { grid-template-columns: 1fr; }
 }
+
+/* ── Политика, согласие, плашка cookie ─────────────────────────── */
+.footer-legal { font-size: 13px; margin-top: 10px; color: var(--muted-2); }
+.footer-legal a { color: var(--muted); }
+.legal h2 { font-size: 20px; margin-top: 28px; }
+.legal ul { padding-left: 20px; }
+.cookie-note { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 50; max-width: 560px; margin: 0 auto;
+  display: flex; gap: 12px; align-items: center; padding: 12px 14px; border-radius: 14px;
+  background: var(--card, #1c1c1c); color: inherit; border: 1px solid var(--border, #262932);
+  box-shadow: 0 8px 30px rgba(0,0,0,.25); font-size: 13.5px; line-height: 1.4; }
+.cookie-note[hidden] { display: none; }
+.cookie-note p { margin: 0; }
+.cookie-note a { color: inherit; text-decoration: underline; }
+.cookie-note button { flex: none; font: inherit; font-weight: 600; padding: 8px 14px; border-radius: 10px; border: 0; cursor: pointer;
+  background: var(--accent, #ff6a3d); color: #fff; }
