@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Откат в Claude Code: /rewind и Esc Esc, как вернуть прошлую версию</title>
+  <meta name="description" content="Как вернуть прошлую версию файлов в Claude Code: контрольные точки, Esc Esc и /rewind, варианты Restore code и conversation, ограничения (команды терминала, ручные правки) и зачем всё равно нужен git.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Откат в Claude Code: /rewind и Esc Esc, как вернуть прошлую версию">
+  <meta property="og:description" content="Как вернуть прошлую версию файлов в Claude Code: контрольные точки, Esc Esc и /rewind, варианты Restore code и conversation, ограничения (команды терминала, ручные правки) и зачем всё равно нужен git.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Откат в Claude Code: /rewind и Esc Esc, как вернуть прошлую версию">
+  <meta name="twitter:description" content="Как вернуть прошлую версию файлов в Claude Code: контрольные точки, Esc Esc и /rewind, варианты Restore code и conversation, ограничения (команды терминала, ручные правки) и зачем всё равно нужен git.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-10-21">
+  <meta property="article:modified_time" content="2026-10-21">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Откат в Claude Code: /rewind и Esc Esc, как вернуть прошлую версию","name":"Заказчик просит «а можно как было?»: откат в Claude Code за две секунды","description":"Как вернуть прошлую версию файлов в Claude Code: контрольные точки, Esc Esc и /rewind, варианты Restore code и conversation, ограничения (команды терминала, ручные правки) и зачем всё равно нужен git.","inLanguage":"ru","datePublished":"2026-10-21","dateModified":"2026-10-21","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/"},"url":"https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/","articleSection":"Инструкция","wordCount":717,"timeRequired":"PT6M","keywords":"откат claude code, rewind claude code, checkpoint claude code, вернуть версию claude, claude code для сайта на заказ"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Заказчик просит «а можно как было?»: откат в Claude Code за две секунды","item":"https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Нужно ли что-то настраивать?","acceptedAnswer":{"@type":"Answer","text":"Нет. Откат работает сразу. Настройка нужна, только если хочешь хранить снимки дольше 30 дней: для этого есть параметр cleanupPeriodDays."}},{"@type":"Question","name":"Откат удалит мои сообщения Claude?","acceptedAnswer":{"@type":"Answer","text":"Только если выберешь вариант с разговором. «Restore code» возвращает файлы и оставляет переписку как есть."}},{"@type":"Question","name":"Работает ли это в приложении, а не в терминале?","acceptedAnswer":{"@type":"Answer","text":"Команда /rewind есть в Claude Code. В обычном чате Claude на сайте такой кнопки нет: там правки делаются в разговоре."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Заказчик просит «а можно как было?»: откат в Claude Code за две секунды</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-10-21">21 октября 2026</time>
+        <span>· 6 мин</span>
+      </div>
+      <h1>Заказчик просит «а можно как было?»: откат в Claude Code за две секунды</h1>
+      <p class="lead">Claude Code сам сохраняет версию файлов перед каждым твоим сообщением. Как вернуть прошлый вариант сайта через Esc Esc или /rewind, как показать заказчику два варианта и где откат не спасёт</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-takoe-otkat-v-claude-code">Что такое откат в Claude Code</a></li><li><a href="#kak-otkatit-sayt-za-dve-sekundy">Как откатить сайт за две секунды</a></li><li><a href="#kak-pokazat-zakazchiku-dva-varianta">Как показать заказчику два варианта</a></li><li><a href="#gde-otkat-ne-spaset">Где откат не спасёт</a></li><li><a href="#chem-otkat-luchshe-chem-verni-kak-bylo-v-chate">Чем откат лучше, чем «верни как было» в чате</a></li><li><a href="#otkat-ne-rezervnaya-kopiya">Откат — не резервная копия</a></li><li><a href="#kak-eto-vyglyadit-v-rabote">Как это выглядит в работе</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#nuzhno-li-chto-to-nastraivat">Нужно ли что-то настраивать?</a></li><li><a href="#otkat-udalit-moi-soobscheniya-claude">Откат удалит мои сообщения Claude?</a></li><li><a href="#rabotaet-li-eto-v-prilozhenii-a-ne-v-terminale">Работает ли это в приложении, а не в терминале?</a></li><li><a href="#prodolzhenie-v-telegram">Продолжение в Telegram</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В мультике заказчик сначала просит «сделай как у Apple», а через минуту пишет «а можно как было?». Знакомо каждому, кто собирает сайты на заказ. Если сайт делает <a href="/g/cex/" class="ctx-link">Claude Code</a>, вернуть прошлую версию можно за пару нажатий. Ниже по шагам: как это работает, как показать заказчику два варианта и где откат не спасёт.</p>
+<h2 id="chto-takoe-otkat-v-claude-code">Что такое откат в Claude Code</h2>
+<p><a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a> сам запоминает состояние файлов <strong>перед каждым твоим сообщением</strong>. Это называется checkpoint, по-русски «контрольная точка». Ничего включать не нужно: точки создаются с первого запуска, хранятся вместе с разговором и доступны даже после того, как ты закрыл и снова открыл сессию.</p>
+<p>В одной <a href="/g/zarabotok-na-sessiyah-claude-code/" class="ctx-link">сессии Claude Code</a> держит снимки последних 100 точек. Сами снимки по умолчанию живут около 30 дней, потом удаляются при очистке.</p>
+<h2 id="kak-otkatit-sayt-za-dve-sekundy">Как откатить сайт за две секунды</h2>
+<ol>
+<li>Убедись, что поле ввода пустое.</li>
+<li>Дважды нажми <strong>Esc</strong>. Или напиши команду <strong>/rewind</strong> — откроется то же меню.</li>
+<li>В списке твоих сообщений выбери то, <strong>до</strong> которого нужно вернуться. Например, сообщение «сделай как у Apple».</li>
+<li>Выбери действие:<ul>
+<li><strong>Restore code</strong> — вернуть только файлы, разговор оставить;</li>
+<li><strong>Restore conversation</strong> — вернуть только разговор, файлы не трогать;</li>
+<li><strong>Restore code and conversation</strong> — вернуть и то и другое.</li>
+</ul>
+</li>
+</ol>
+<p>Для истории с заказчиком подходит первый вариант: сайт возвращается к прошлой версии, а Claude помнит всё, что вы обсуждали, и не нужно объяснять заново.</p>
+<p>Если в поле ввода есть текст, двойной Esc его очистит, а не откроет меню. Текст не пропадёт: стрелка вверх вернёт его из истории.</p>
+<h2 id="kak-pokazat-zakazchiku-dva-varianta">Как показать заказчику два варианта</h2>
+<p>Частая ситуация: заказчик сам не знает, что лучше, и хочет сравнить. Схема такая:</p>
+<ol>
+<li>Сделай первый вариант и <strong>сохрани скриншоты</strong> или ссылку на превью.</li>
+<li>Попроси Claude сделать второй вариант.</li>
+<li>Покажи оба. Если выбрали первый, откати код через /rewind к сообщению перед вторым вариантом.</li>
+</ol>
+<p>Если вариантов будет много, удобнее ветки: команда <strong>/branch</strong> создаёт копию сессии, и можно пробовать другой путь, не трогая основной. Это уже для тех, кто работает с Claude Code регулярно.</p>
+<h2 id="gde-otkat-ne-spaset">Где откат не спасёт</h2>
+<p>Тут важно знать ограничения, чтобы не потерять работу:</p>
+<ul>
+<li><strong>Изменения через терминал.</strong> Если Claude удалял, переименовывал или копировал файлы командами (rm, mv, cp), откат их не вернёт. Он видит только правки, которые Claude делал своими инструментами редактирования.</li>
+<li><strong>Твои ручные правки.</strong> Если ты сам поправил файл в другом редакторе, откат этого не знает.</li>
+<li><strong>Помощники Claude.</strong> Правки, которые делали субагенты в фоне, часто не попадают в точки отката.</li>
+<li><strong>Ярлыки и ссылки на файлы.</strong> Файлы-ссылки (symlink) откат пропускает и честно пишет, сколько пропустил.</li>
+</ul>
+<h2 id="chem-otkat-luchshe-chem-verni-kak-bylo-v-chate">Чем откат лучше, чем «верни как было» в чате</h2>
+<p>Можно, конечно, просто написать Claude: «верни прошлую версию». Но тогда он будет переписывать файлы заново по памяти, и мелочи могут не совпасть: отступы, тексты, порядок блоков. Откат возвращает файлы ровно такими, какими они были, байт в байт, и не тратит лимит на переписывание.</p>
+<h2 id="otkat-ne-rezervnaya-kopiya">Откат — не резервная копия</h2>
+<p>Сама Anthropic в справке пишет прямо: контрольные точки нужны для быстрого возврата внутри сессии, а для постоянной истории версий используй git. Для сайта на заказ это значит простое правило:</p>
+<ul>
+<li><strong>во время работы</strong> — откат через Esc Esc, быстро и без лишних шагов;</li>
+<li><strong>когда версия согласована</strong> — сохрани её в git или хотя бы сделай копию папки. Через месяц откат может уже не найти старые снимки.</li>
+</ul>
+<p>Если git пугает, попроси Claude: «сохрани текущую версию сайта в git с понятным описанием». Он сделает всё сам, а тебе останется нажать подтверждение.</p>
+<h2 id="kak-eto-vyglyadit-v-rabote">Как это выглядит в работе</h2>
+<p>Я держу такой порядок с любым сайтом: делаю правку → показываю → если не зашло, Esc Esc и назад → если зашло, сохраняю версию. Правки заказчика перестают пугать: любой эксперимент отменяется за пару секунд, и можно смело пробовать смелые варианты.</p>
+<p>Если только начинаешь с Claude Code, загляни в статьи <a href="/g/claude-code-mody-dlya-eksperta/">моды Claude Code для эксперта</a> и <a href="/g/claude-code-limit-besplatnye-tokeny/">что делать, если кончился лимит в Claude Code</a>.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="nuzhno-li-chto-to-nastraivat">Нужно ли что-то настраивать?</h2>
+<p>Нет. Откат работает сразу. Настройка нужна, только если хочешь хранить снимки дольше 30 дней: для этого есть параметр cleanupPeriodDays.</p>
+<h2 id="otkat-udalit-moi-soobscheniya-claude">Откат удалит мои сообщения Claude?</h2>
+<p>Только если выберешь вариант с разговором. «Restore code» возвращает файлы и оставляет переписку как есть.</p>
+<h2 id="rabotaet-li-eto-v-prilozhenii-a-ne-v-terminale">Работает ли это в приложении, а не в терминале?</h2>
+<p>Команда /rewind есть в Claude Code. В обычном чате Claude на сайте такой кнопки нет: там правки делаются в разговоре.</p>
+<h2 id="prodolzhenie-v-telegram">Продолжение в Telegram</h2>
+<p>Как я собираю сайты и рилсы в Claude Code и где он экономит часы, показываю в Telegram-канале: <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/claude-code-limit-besplatnye-tokeny/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Кончились лимиты в Claude Code? Два бесплатных проекта, чтобы не останавливаться, и как переключаться туда и обратно</span>
+            <span class="related-sub">FreeLLMAPI и OmniRoute собирают бесплатные тарифы десятков нейросетей в одну точку, и Claude Code работает дальше, когда лимит кончился. Пошаговая установка, какие сервисы подключить…</span>
+          </a>
+          <a class="related-card" href="/g/kak-polzovatsya-claude-v-rossii/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Как пользоваться Claude в России: доступ, регистрация и что ломается</span>
+            <span class="related-sub">Разбор по шагам — что нужно для входа, почему регистрация срывается на номере телефона, чем отличается веб-версия от приложения и терминала, и какие ошибки вылезают у всех.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-from-phone/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Claude Code с телефона: как управлять компьютером из кармана</span>
+            <span class="related-sub">Режим Remote Control связывает приложение Claude на телефоне с сеансом, который работает на твоём компьютере. Настройка за десять минут, разбор по шагам, границы и типичные ошибки</span>
+          </a>
+          <a class="related-card" href="/g/full-access-safety-net/">
+            <span class="tag">Build in public</span>
+            <span class="related-title">Полный доступ нейросети — вопрос отката, а не смелости</span>
+            <span class="related-sub">Пять узлов сетки безопасности, после которых можно выключить подтверждения и спать спокойно. В том порядке, в котором их надо ставить.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

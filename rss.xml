@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 20 Oct 2026 21:48:31 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 22:42:06 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Заказчик просит «а можно как было?»: откат в Claude Code за две секунды</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-otkat-rewind-kak-bylo/</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Claude Code сам сохраняет версию файлов перед каждым твоим сообщением. Как вернуть прошлый вариант сайта через Esc Esc или /rewind, как показать заказчику два варианта и где откат не спасёт</description>
+    </item>
     <item>
       <title>Пять запросов для Gemini: фотосессия в пяти стилях из одного обычного фото</title>
       <link>https://tolstobrovevgeniy.ru/g/gemini-5-zaprosov-fotosessiya-v-stilyah/</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Google выпустила Nano Banana 2.1: до 14 фото-референсов, до 4 персонажей без потери лица, разрешение до 4K. Разбираю, где найти модель, как не дать ей состарить лицо и даю 7 промптов для эксперта</description>
-    </item>
-    <item>
-      <title>Бесплатные копии Photoshop, Lightroom и Premiere: что такое ArtCraft и можно ли уже отменить подписку Adobe</title>
-      <link>https://tolstobrovevgeniy.ru/g/artcraft-besplatnye-kopii-adobe/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/artcraft-besplatnye-kopii-adobe/</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Разработчик Брендон Томас вместе с Claude собрал семь бесплатных программ на замену Adobe. Разбираю, что в них уже работает, где они ломаются и как за 15 минут понять, подходят ли они тебе</description>
     </item>
   </channel>
 </rss>
