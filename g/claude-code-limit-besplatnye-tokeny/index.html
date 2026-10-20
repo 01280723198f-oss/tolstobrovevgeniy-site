@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лимит Claude Code кончился: бесплатные токены через FreeLLMAPI и OmniRoute</title>
+  <meta name="description" content="Что делать, если кончился лимит в Claude Code: FreeLLMAPI и OmniRoute подключают бесплатные модели (Groq, Mistral, Gemini). Установка по шагам, переключение туда и обратно, подвохи и VPN.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Лимит Claude Code кончился: бесплатные токены через FreeLLMAPI и OmniRoute">
+  <meta property="og:description" content="Что делать, если кончился лимит в Claude Code: FreeLLMAPI и OmniRoute подключают бесплатные модели (Groq, Mistral, Gemini). Установка по шагам, переключение туда и обратно, подвохи и VPN.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Лимит Claude Code кончился: бесплатные токены через FreeLLMAPI и OmniRoute">
+  <meta name="twitter:description" content="Что делать, если кончился лимит в Claude Code: FreeLLMAPI и OmniRoute подключают бесплатные модели (Groq, Mistral, Gemini). Установка по шагам, переключение туда и обратно, подвохи и VPN.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-10-21">
+  <meta property="article:modified_time" content="2026-10-21">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Лимит Claude Code кончился: бесплатные токены через FreeLLMAPI и OmniRoute","name":"Кончились лимиты в Claude Code? Два бесплатных проекта, чтобы не останавливаться, и как переключаться туда и обратно","description":"Что делать, если кончился лимит в Claude Code: FreeLLMAPI и OmniRoute подключают бесплатные модели (Groq, Mistral, Gemini). Установка по шагам, переключение туда и обратно, подвохи и VPN.","inLanguage":"ru","datePublished":"2026-10-21","dateModified":"2026-10-21","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/"},"url":"https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/","articleSection":"Инструкция","wordCount":829,"timeRequired":"PT7M","keywords":"лимит claude code, claude code бесплатно, freellmapi, omniroute, бесплатные токены нейросеть, claude code другие модели"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Кончились лимиты в Claude Code? Два бесплатных проекта, чтобы не останавливаться, и как переключаться туда и обратно","item":"https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Это законно и безопасно?","acceptedAnswer":{"@type":"Answer","text":"Оба проекта открытые, код можно прочитать. Ты пользуешься бесплатными тарифами сервисов по их же правилам. Ключи хранятся у тебя на компьютере в зашифрованном виде. Правила каждого сервиса стоит прочитать: OmniRoute помечает сервисы с рискованными условиями и не отправляет туда запросы автоматически."}},{"@type":"Question","name":"Нужно ли уметь программировать?","acceptedAnswer":{"@type":"Answer","text":"Нет, но терминала не избежать: две три команды из этой статьи нужно вставить и нажать Enter. Если страшно, начни с приложения FreeLLMAPI — там почти всё мышкой."}},{"@type":"Question","name":"Будет ли так же умно, как Claude?","acceptedAnswer":{"@type":"Answer","text":"Нет. Бесплатные модели слабее на сложных задачах. Это способ не останавливаться, когда лимит кончился, а не замена Claude."}},{"@type":"Question","name":"Сколько это стоит?","acceptedAnswer":{"@type":"Answer","text":"Сами проекты бесплатные. Платишь только за VPN, если нужны сервисы, закрытые для России."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo">🔥</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+        📲 <span class="full">Telegram-канал</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Кончились лимиты в Claude Code? Два бесплатных проекта, чтобы не останавливаться, и как переключаться туда и обратно</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-10-21">21 октября 2026</time>
+        <span>· 7 мин</span>
+      </div>
+      <h1>Кончились лимиты в Claude Code? Два бесплатных проекта, чтобы не останавливаться, и как переключаться туда и обратно</h1>
+      <p class="lead">FreeLLMAPI и OmniRoute собирают бесплатные тарифы десятков нейросетей в одну точку, и Claude Code работает дальше, когда лимит кончился. Пошаговая установка, какие сервисы подключить первыми и честно о подвохах</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#chto-eto-za-dva-proekta">Что это за два проекта</a></li><li><a href="#gde-zdes-podvoh">Где здесь подвох</a></li><li><a href="#shag-1-postavit-freellmapi">Шаг 1. Поставить FreeLLMAPI</a></li><li><a href="#shag-2-postavit-omniroute">Шаг 2. Поставить OmniRoute</a></li><li><a href="#kakie-servisy-podklyuchit-pervymi">Какие сервисы подключить первыми</a></li><li><a href="#shag-3-pereklyuchat-claude-code-tuda-i-obratno">Шаг 3. Переключать Claude Code туда и обратно</a></li><li><a href="#kak-ya-delyu-zadachi">Как я делю задачи</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#eto-zakonno-i-bezopasno">Это законно и безопасно?</a></li><li><a href="#nuzhno-li-umet-programmirovat">Нужно ли уметь программировать?</a></li><li><a href="#budet-li-tak-zhe-umno-kak-claude">Будет ли так же умно, как Claude?</a></li><li><a href="#skolko-eto-stoit">Сколько это стоит?</a></li><li><a href="#prodolzhenie-v-telegram">Продолжение в Telegram</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В ролике я обещал два проекта и инструкцию, как переключать <a href="/g/cex/" class="ctx-link">Claude Code</a> туда и обратно. Всё ниже, по шагам. Сначала честно о том, что это такое, потому что в зарубежных роликах про «9 миллиардов бесплатных токенов» половину правды опускают.</p>
+<h2 id="chto-eto-za-dva-proekta">Что это за два проекта</h2>
+<p><strong>FreeLLMAPI</strong> и <strong>OmniRoute</strong> — открытые программы с GitHub, обе под лицензией MIT и бесплатные. Они делают одно и то же разными способами: собирают <a href="/g/claude-api-free/" class="ctx-link">бесплатные тарифы</a> десятков сервисов с нейросетями (Groq, Mistral, Gemini, DeepSeek и других) в одну точку подключения. Когда у одного сервиса кончается дневная квота, запрос сам уходит в следующий.</p>
+<p><a href="/g/easy-money-24h/" class="ctx-link">Claude Code</a> умеет работать не только с Claude, а с любой моделью через такую точку. Поэтому когда твой лимит в Claude кончился, работа не встаёт: Claude Code продолжает отвечать, но уже другими моделями.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>FreeLLMAPI</th>
+<th>OmniRoute</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Звёзд на GitHub</td>
+<td>~38 тыс.</td>
+<td>~79 тыс.</td>
+</tr>
+<tr>
+<td>Бесплатных токенов в месяц (оценка авторов)</td>
+<td>~7,4 млрд</td>
+<td>~1,62 млрд</td>
+</tr>
+<tr>
+<td>Сколько сервисов</td>
+<td>34 провайдера</td>
+<td>375 провайдеров, 150+ с бесплатным тарифом</td>
+</tr>
+<tr>
+<td>Как ставится</td>
+<td>приложение для Mac/Windows или Docker</td>
+<td><code>npm install -g omniroute</code></td>
+</tr>
+<tr>
+<td>Фишка</td>
+<td>один ключ на всё, маршрутизатор сам выбирает модель</td>
+<td>сжатие запросов: 15–95% экономии токенов</td>
+</tr>
+</tbody></table>
+<h2 id="gde-zdes-podvoh">Где здесь подвох</h2>
+<p>Цифры настоящие, но их легко понять не так. Четыре вещи, которые стоит знать до установки:</p>
+<ol>
+<li><strong>Токены не дарит сам проект.</strong> Это сумма бесплатных тарифов сторонних сервисов. На каждом нужно зарегистрироваться и получить свой ключ. Подключил три сервиса — получил три квоты, а не все девять миллиардов.</li>
+<li><strong>Модели не Claude.</strong> Claude Code продолжит работать, но думать будут Llama, Mistral, Gemini, DeepSeek. Для правок, черновиков и рутины их хватает. Сложную архитектуру лучше оставить Claude.</li>
+<li><strong>«До 95% экономии» — это потолок.</strong> Авторы OmniRoute сами пишут: в среднем около 89% и только на подходящих задачах, где много повторяющегося текста.</li>
+<li><strong>Россия.</strong> Часть сервисов (Google AI Studio, Groq и другие) из России без VPN не открывается, а где-то при регистрации просят зарубежный номер. FreeLLMAPI авторы прямо называют проектом для личных экспериментов, не для бизнеса на потоке.</li>
+</ol>
+<p>Если после этого списка всё ещё интересно — значит, проект тебе подходит. Поехали.</p>
+<h2 id="shag-1-postavit-freellmapi">Шаг 1. Поставить FreeLLMAPI</h2>
+<p>Самый простой путь — приложение. Зайди на страницу проекта на GitHub, раздел <strong>Releases</strong>, скачай <code>.dmg</code> для Mac или <code>.exe</code> для Windows и поставь как обычную программу. Аккаунт заводить не нужно.</p>
+<p>Если на компьютере уже есть Docker, хватит одной команды в терминале:</p>
+<pre><code>curl -fsSL https://freellmapi.co/install.sh | bash
+</code></pre>
+<p>Дальше открой <code>http://localhost:3001</code>, зайди на страницу <strong>Keys</strong> и добавь ключи сервисов, которые ты получил. Там же, в шапке страницы, лежит твой единый ключ — он понадобится на шаге 3.</p>
+<h2 id="shag-2-postavit-omniroute">Шаг 2. Поставить OmniRoute</h2>
+<p>Нужен Node.js (программа для запуска JavaScript, ставится с nodejs.org за пару минут). Потом в терминале:</p>
+<pre><code>npm install -g omniroute
+omniroute
+</code></pre>
+<p>Панель откроется на <code>http://localhost:20128</code>. Раздел <strong>Providers</strong> → выбираешь сервис → вставляешь его ключ. Если npm ругается на скрипты установки, в README проекта есть готовая команда с нужными разрешениями, её достаточно скопировать.</p>
+<h2 id="kakie-servisy-podklyuchit-pervymi">Какие сервисы подключить первыми</h2>
+<p>Не надо регистрироваться везде сразу. Для старта хватит двух-трёх:</p>
+<ul>
+<li><strong>Mistral</strong> — самая большая бесплатная квота в расчётах OmniRoute, около 1 млрд токенов.</li>
+<li><strong>Groq</strong> — очень быстрые ответы, хорошо для мелких правок.</li>
+<li><strong>Google AI Studio (Gemini)</strong> — сильные модели, но из России только через VPN.</li>
+</ul>
+<p>Подключил, проверил, что отвечает, — дальше добавляешь по одному.</p>
+<h2 id="shag-3-pereklyuchat-claude-code-tuda-i-obratno">Шаг 3. Переключать Claude Code туда и обратно</h2>
+<p>Здесь главное, что я хотел показать. Оба проекта умеют запускать Claude Code <strong>только на один сеанс</strong>, ничего не меняя в твоих настройках:</p>
+<pre><code>npx freellmapi launch
+</code></pre>
+<p>или</p>
+<pre><code>omniroute run claude --model &lt;модель из панели&gt;
+</code></pre>
+<p>Закрыл это окно — и обычный <code>claude</code> снова работает на твоей подписке Claude, как раньше. Никакой путаницы: в одном окне Claude Code на бесплатных моделях добивает рутину, в другом твой Claude решает сложное.</p>
+<p>Если хочешь, чтобы Claude Code ходил через FreeLLMAPI всегда, есть команда, которая сама пропишет настройки:</p>
+<pre><code>npx freellmapi setup-claude --url http://localhost:3001 --api-key &lt;твой единый ключ&gt;
+</code></pre>
+<p>Но я советую начать с разового запуска: так проще понять, где бесплатные модели справляются, а где нет.</p>
+<h2 id="kak-ya-delyu-zadachi">Как я делю задачи</h2>
+<p>Сложное — новый проект, архитектура, разбор незнакомого кода — оставляю Claude. Простое — переименовать, поправить текст на странице, разобрать файл, написать черновик — отдаю бесплатным моделям. Лимит Claude перестаёт сгорать на мелочах и остаётся на главное.</p>
+<p>Если пока выбираешь, какой Claude брать, загляни в разборы <a href="/g/claude-besplatno-chto-dayut/">что даёт бесплатный Claude</a> и <a href="/g/claude-haiku-5-5-besplatno/">Haiku 5.5 бесплатно</a>, а про режимы работы есть статья <a href="/g/claude-code-mody-dlya-eksperta/">моды Claude Code для эксперта</a>.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h2 id="eto-zakonno-i-bezopasno">Это законно и безопасно?</h2>
+<p>Оба проекта открытые, код можно прочитать. Ты пользуешься бесплатными тарифами сервисов по их же правилам. Ключи хранятся у тебя на компьютере в зашифрованном виде. Правила каждого сервиса стоит прочитать: OmniRoute помечает сервисы с рискованными условиями и не отправляет туда запросы автоматически.</p>
+<h2 id="nuzhno-li-umet-programmirovat">Нужно ли уметь программировать?</h2>
+<p>Нет, но терминала не избежать: две-три команды из этой статьи нужно вставить и нажать Enter. Если страшно, начни с приложения FreeLLMAPI — там почти всё мышкой.</p>
+<h2 id="budet-li-tak-zhe-umno-kak-claude">Будет ли так же умно, как Claude?</h2>
+<p>Нет. Бесплатные модели слабее на сложных задачах. Это способ не останавливаться, когда лимит кончился, а не замена Claude.</p>
+<h2 id="skolko-eto-stoit">Сколько это стоит?</h2>
+<p>Сами проекты бесплатные. Платишь только за VPN, если нужны сервисы, закрытые для России.</p>
+<h2 id="prodolzhenie-v-telegram">Продолжение в Telegram</h2>
+<p>Как я сам раскладываю задачи между Claude и бесплатными моделями и что из этого выходит в работе, показываю в Telegram-канале. Подписывайся: <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov</a></p>
+
+      </div>
+      
+      <section class="cta-block">
+        <h3>Это только фундамент. А дальше?</h3>
+        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
+        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/kak-polzovatsya-claude-v-rossii/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Как пользоваться Claude в России: доступ, регистрация и что ломается</span>
+            <span class="related-sub">Разбор по шагам — что нужно для входа, почему регистрация срывается на номере телефона, чем отличается веб-версия от приложения и терминала, и какие ошибки вылезают у всех.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-from-phone/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Claude Code с телефона: как управлять компьютером из кармана</span>
+            <span class="related-sub">Режим Remote Control связывает приложение Claude на телефоне с сеансом, который работает на твоём компьютере. Настройка за десять минут, разбор по шагам, границы и типичные ошибки</span>
+          </a>
+          <a class="related-card" href="/g/chatgpt-developer-mode-plugins/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Режим разработчика в ChatGPT: как подключить свои приложения</span>
+            <span class="related-sub">Developer mode открывает полный доступ к MCP: ChatGPT не только читает данные сервиса, но и выполняет в нём действия. Разбираю настройку по шагам, тарифы и риски, о которых молчат в роликах</span>
+          </a>
+          <a class="related-card" href="/g/hour-from-bare-to-factory/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Час, за который голый Claude Code превращается в работающий завод</span>
+            <span class="related-sub">Шесть блоков по 10 минут: установка, CLAUDE.md, память, первые скиллы, хуки и первый прогон — от голой установки до среды работы.</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>

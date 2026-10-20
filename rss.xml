@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 13 Oct 2026 17:43:57 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 21:10:31 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Кончились лимиты в Claude Code? Два бесплатных проекта, чтобы не останавливаться, и как переключаться туда и обратно</title>
+      <link>https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-code-limit-besplatnye-tokeny/</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>FreeLLMAPI и OmniRoute собирают бесплатные тарифы десятков нейросетей в одну точку, и Claude Code работает дальше, когда лимит кончился. Пошаговая установка, какие сервисы подключить первыми и честно о подвохах</description>
+    </item>
     <item>
       <title>Claude Motion: анимированные ролики из текста без генерации видео. Как получить такой же результат на любом тарифе</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-motion-animirovannye-roliki/</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>В конструктор Make встроили ИИ-помощницу Maia: описываешь процесс обычным языком, она собирает сценарий. Разбираю, как это работает, где подвох, и даю пять формулировок под заявки, оплаты, запись, рассылку и отчёт</description>
-    </item>
-    <item>
-      <title>С ИИ продукт собирается за вечер, а продаётся всё хуже. Четыре фильтра, которые нужно пройти до запуска</title>
-      <link>https://tolstobrovevgeniy.ru/g/chetyre-filtra-ii-produkta-do-zapuska/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/chetyre-filtra-ii-produkta-do-zapuska/</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Сандип Свадиа называет это «искусственной иллюзией»: сделать легко, выиграть трудно. Разбираю его четыре фильтра и даю таблицу вопросов, через которую стоит прогнать любой продукт до того, как тратить на него месяц</description>
     </item>
   </channel>
 </rss>
