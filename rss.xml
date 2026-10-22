@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 20 Oct 2026 22:59:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 10:15:54 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>6 Telegram-ботов для блогера: ссылки и схема, как собрать из них пост от идеи до ролика</title>
+      <link>https://tolstobrovevgeniy.ru/g/telegram-boty-dlya-bloggera-post-ot-idei-do-rolika/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/telegram-boty-dlya-bloggera-post-ot-idei-do-rolika/</guid>
+      <pubDate>Thu, 22 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Подборка</category>
+      <description>Claude и ChatGPT, видео-нейросети, ГигаЧат, скачивание референсов, голос в текст и уникализатор роликов. Где каждый бот стоит в работе над одним постом и что в них платно</description>
+    </item>
     <item>
       <title>Меня в этом ролике никто не снимал: как сделать ИИ-персонажа из одного фото в Gemini и HeyGen</title>
       <link>https://tolstobrovevgeniy.ru/g/ii-personazh-gemini-heygen-bez-semok/</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Клип LGTM целиком сделан ИИ: песню написал Suno, анимацию собрал Claude кодом. Разбираю, почему он разошёлся, что он говорит о работе с ИИ и даю промпты, чтобы собрать свой клип за вечер</description>
-    </item>
-    <item>
-      <title>Гарвард: ИИ-агенты дают на 30% больше кода, а готовых задач не прибавилось. Где пробка и мой чек-лист проверки из 5 пунктов</title>
-      <link>https://tolstobrovevgeniy.ru/g/garvard-ii-30-procentov-koda-bez-uskoreniya/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/garvard-ii-30-procentov-koda-bez-uskoreniya/</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Исследование на 725 тысячах сотрудников показало: после ИИ-агентов кода стало больше, а закрытых задач значимо не прибавилось. Разбираю, что нашли, какие оговорки, и как эксперту не попасть в ту же пробку</description>
     </item>
   </channel>
 </rss>
