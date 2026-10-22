@@ -37,6 +37,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tolstobrovevgeniy.ru/tema/podborka/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tolstobrovevgeniy.ru/tema/dnevnik-stroyki/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,12 +51,6 @@
   <url>
     <loc>https://tolstobrovevgeniy.ru/tema/build-in-public/</loc>
     <lastmod>2026-09-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tolstobrovevgeniy.ru/tema/podborka/</loc>
-    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -65,6 +65,12 @@
     <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tolstobrovevgeniy.ru/g/4-telegram-bota-rolik-s-golosom-bez-semok/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tolstobrovevgeniy.ru/g/telegram-boty-dlya-bloggera-post-ot-idei-do-rolika/</loc>
