@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 04 Nov 2026 19:44:11 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 20:22:09 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ролик набрал 200 просмотров: не удаляй, сделай копию и дай ему второй шанс</title>
+      <link>https://tolstobrovevgeniy.ru/g/unikalnaya-kopiya-rilsa-vtoroy-shans/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/unikalnaya-kopiya-rilsa-vtoroy-shans/</guid>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Почему одинаковые видео собирают разные просмотры, как сделать копию ролика, которую площадка считает новым файлом, и куда её выложить, чтобы не задеть подписчиков</description>
+    </item>
     <item>
       <title>Как пользоваться Claude из России и не получить бан: прогрев аккаунта по шагам</title>
       <link>https://tolstobrovevgeniy.ru/g/claude-iz-rossii-bez-bana-progrev-akkaunta/</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
       <category>Разбор</category>
       <description>Создатели бесплатного агента Hermes подняли 90 млн долларов. Разбираю, что умеет агент, лучший приём из ролика о нём, какие роли дать агентам в первую очередь и кому Hermes подходит больше, чем Claude</description>
-    </item>
-    <item>
-      <title>ИИ разбирает игры на исходный код: Minecraft внутри Elden Ring и что это значит для эксперта, который не программист</title>
-      <link>https://tolstobrovevgeniy.ru/g/ii-razbiraet-igry-na-ishodnyj-kod/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/ii-razbiraet-igry-na-ishodnyj-kod/</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Моддеры с помощью Claude разбирают готовые игры обратно в код и смешивают их между собой. Разбираю, что правда, что монтаж, где юридический подвох и как эксперту повторить нужный сервис с Claude, не нарушая чужих прав</description>
     </item>
   </channel>
 </rss>
