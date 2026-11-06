@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как я собрал микро-продукт за 1 990 ₽ и почему это спасло меня после бана сетки на 23 тысячи</title>
+<meta name="description" content="Честный разбор: 70 бесплатных диагностик и выгорание, микро-продукт по 1 990 ₽, 5 продаж в первый день и 42% перехода в основной продукт. И как этот же путь сегодня собирается на Claude Code за вечера">
+<meta property="og:title" content="Как я собрал микро-продукт за 1 990 ₽ и почему это спасло меня после бана сетки">
+<meta property="og:description" content="70 бесплатных диагностик, 4 продажи и выгорание. Потом микро-продукт: 5 продаж в первый день, 30 за неделю, 42% пошли дальше. Разбор со скринами">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#17161a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --bg:#f4efe6; --bg-soft:#faf7f1; --card:#ffffff; --card-hi:#faf7f1; --line:#ebe4d7; --line-hi:#ddd3c2; --text:#1f1b16; --body:#3a332b; --muted:#665d52; --dim:#6f665a; --amber:#f2b21b; --amber-hi:#845a00; --acc-ink:#2a1e00; --acc-soft:#fff3cf; --green:#16733a; --side:#17161a; --side-2:#232127; --side-ink:#e9e6e1; --side-muted:#8d8a92;
+  --wrap:720px; --r:16px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:18px/1.72 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,"Segoe UI",Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+h1{font-size:clamp(30px,5.6vw,46px);line-height:1.12;letter-spacing:-.025em;font-weight:800;margin:0 0 18px}
+h2{font-size:clamp(23px,4vw,31px);line-height:1.2;letter-spacing:-.02em;font-weight:700;margin:52px 0 16px}
+h3{font-size:19px;font-weight:650;margin:30px 0 10px;letter-spacing:-.01em}
+p{margin:0 0 20px;color:var(--body)}
+b,strong{color:var(--text);font-weight:650}
+a{color:var(--amber-hi)}
+.lead{font-size:clamp(18px,2.6vw,21px);line-height:1.55;color:var(--muted);margin-bottom:26px}
+.meta{font-size:14px;color:var(--dim);margin:0 0 30px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.meta span{display:inline-flex;align-items:center;gap:7px}
+.sep{width:3px;height:3px;border-radius:50%;background:var(--line-hi)}
+
+/* прогресс чтения */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:50;background:transparent}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--amber),var(--amber-hi));
+  transform-origin:left center;transition:width 120ms linear}
+
+header.top{padding:72px 0 0;position:relative;isolation:isolate}
+header.top::before{content:"";position:absolute;z-index:-1;inset:-40% 0 auto 0;height:640px;
+  background:radial-gradient(46% 40% at 50% 26%, rgba(242,178,27,.18), transparent 70%);
+  animation:breathe 16s var(--ease-in-out) infinite;pointer-events:none;will-change:transform,opacity}
+@keyframes breathe{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}
+
+figure{margin:30px 0}
+.shot{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;
+  box-shadow:0 18px 40px -26px rgba(40,30,10,.35)}
+.shot.dark{background:#fff}
+.shot.tall{max-height:560px;overflow:hidden;position:relative}
+.shot.tall::after{content:"";position:absolute;inset:auto 0 0 0;height:140px;
+  background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+figcaption{font-size:14.5px;color:var(--dim);margin-top:11px;line-height:1.5}
+.proof-pay{border-radius:var(--r);border:1px solid rgba(242,178,27,.28);overflow:hidden;
+  box-shadow:0 20px 60px -26px rgba(242,178,27,.5)}
+
+.callout{background:var(--card);border:1px solid var(--line);border-left:2px solid var(--amber);
+  border-radius:var(--r);padding:20px 22px;margin:28px 0}
+.callout p:last-child{margin:0}
+.callout h3{margin-top:0}
+
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0}
+@media(min-width:640px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 15px;
+  transition:border-color 200ms var(--ease-out), transform 200ms var(--ease-out)}
+@media(hover:hover) and (pointer:fine){.stat:hover{border-color:var(--line-hi);transform:translateY(-3px)}}
+.stat .n{font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1;
+  color:var(--text)}
+.stat .t{font-size:13px;color:var(--muted);margin-top:7px;line-height:1.35}
+
+ul.plain{list-style:none;padding:0;margin:0 0 22px}
+ul.plain li{padding:0 0 12px 26px;position:relative;color:var(--body)}
+ul.plain li::before{content:"";position:absolute;left:3px;top:11px;width:13px;height:7px;
+  border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
+ul.cross li::before{border:0;border-top:2px solid #c9bfae;transform:none;left:4px;top:14px;width:12px;height:0}
+
+.quote{border-left:2px solid var(--amber);padding:4px 0 4px 20px;margin:28px 0;font-size:18px;color:var(--body)}
+.quote span{display:block;color:var(--dim);font-size:14px;margin-top:9px}
+
+/* оффер в конце */
+.offer{background:#fff;border:2px solid var(--amber);
+  border-radius:22px;padding:30px 26px;margin:44px 0 0;
+  box-shadow:0 30px 80px -40px rgba(242,178,27,.5)}
+.offer h2{margin-top:0}
+.plans{display:grid;gap:14px;margin:22px 0 0}
+@media(min-width:640px){.plans{grid-template-columns:1fr 1fr}}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;
+  transition:border-color 200ms var(--ease-out), transform 200ms var(--ease-out)}
+.plan.best{border-color:rgba(242,178,27,.45);background:var(--card-hi)}
+@media(hover:hover) and (pointer:fine){.plan:hover{transform:translateY(-3px);border-color:var(--line-hi)}}
+.plan .p{font-size:30px;font-weight:800;letter-spacing:-.03em;margin:6px 0 4px}
+.plan .w{font-size:13.5px;color:var(--amber-hi);font-weight:600}
+.plan ul{list-style:none;padding:0;margin:14px 0 18px;font-size:14.5px;color:var(--muted);line-height:1.5}
+.plan ul li{padding:5px 0 5px 20px;position:relative}
+.plan ul li::before{content:"";position:absolute;left:2px;top:12px;width:10px;height:6px;
+  border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;width:100%;
+  text-decoration:none;font-weight:650;font-size:16px;padding:15px 22px;border-radius:13px;border:1px solid transparent;
+  transition:transform 160ms var(--ease-out), background-color 200ms var(--ease-out), border-color 200ms var(--ease-out), box-shadow 200ms var(--ease-out)}
+.btn-primary{background:var(--amber);color:var(--acc-ink);
+  box-shadow:0 6px 24px -8px rgba(242,178,27,.6)}
+.btn-ghost{background:var(--card);border-color:var(--line-hi);color:var(--text)}
+.btn:active{transform:scale(.97)}
+@media(hover:hover) and (pointer:fine){
+  .btn-primary:hover{box-shadow:0 10px 34px -8px rgba(242,178,27,.85);transform:translateY(-2px)}
+  .btn-ghost:hover{background:var(--card-hi);border-color:var(--line-hi);transform:translateY(-2px)}
+}
+.note{font-size:14px;color:var(--dim)}
+
+footer{padding:44px 0 60px;margin-top:50px;font-size:14px;color:var(--side-muted);background:var(--side)}
+footer a{color:var(--side-ink)}
+footer p{color:var(--side-muted)}
+
+.reveal{opacity:0;transform:translateY(14px);
+  transition:opacity 600ms var(--ease-out), transform 600ms var(--ease-out)}
+.reveal.in{opacity:1;transform:none}
+.stagger>*{opacity:0;transform:translateY(12px);
+  transition:opacity 520ms var(--ease-out), transform 520ms var(--ease-out)}
+.stagger.in>*{opacity:1;transform:none}
+.stagger.in>*:nth-child(1){transition-delay:0ms}
+.stagger.in>*:nth-child(2){transition-delay:60ms}
+.stagger.in>*:nth-child(3){transition-delay:120ms}
+.stagger.in>*:nth-child(4){transition-delay:180ms}
+.no-js .reveal,.no-js .stagger>*{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  header.top::before{animation:none;opacity:.75}
+  .reveal,.stagger>*{transform:none;transition:opacity 300ms ease}
+  .btn:active{transform:none}
+  @media(hover:hover) and (pointer:fine){
+    .btn-primary:hover,.btn-ghost:hover,.plan:hover,.stat:hover{transform:none}
+  }
+  .progress i{transition:none}
+}
+</style>
+<script>document.documentElement.classList.remove('no-js')</script>
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"accurateTrackBounce":true,"trackLinks":true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+</head>
+<body class="no-js">
+<div class="progress"><i id="bar"></i></div>
+
+<header class="top"><div class="wrap">
+  <div class="stagger in">
+    <p class="meta"><span>Разбор на своём примере</span><i class="sep"></i><span>~12 минут чтения</span><i class="sep"></i><span>все цифры со ссылками на посты</span></p>
+    <h1>Как я собрал микро-продукт за 1 990 ₽ и почему он оказался единственным, что осталось после бана сетки на 23 тысячи</h1>
+    <p class="lead">Честный разбор без красивых обобщений: сколько я потерял на бесплатных диагностиках, как собирал первый микро-продукт целый месяц, что он дал в цифрах и почему сегодня этот же путь занимает вечера, а не месяц</p>
+  </div>
+</div></header>
+
+<article><div class="wrap">
+
+  <div class="reveal">
+    <p>Начну с того, чем закончилось, потому что это честнее</p>
+    <p>18 мая у меня снесли сетку аккаунтов примерно на 23 тысячи человек. За один день. Не по предупреждению, не постепенно - просто утром аудитории больше не было</p>
+    <p>Уцелело ровно две вещи. База, которую я успел увести к себе. И то, что люди у меня <b>купили</b></p>
+    <p>Вот к этому короткому списку я и веду весь текст. Потому что подписчик - это не актив. Актив - это человек, который один раз у тебя заплатил, и точка, где он может это сделать</p>
+  </div>
+
+  <h2 class="reveal">Часть 1. Сколько мне стоило работать без своей точки продажи</h2>
+
+  <div class="reveal">
+    <p>До микро-продукта я закрывал людей единственным способом: бесплатными диагностиками. Заявка, созвон на час-полтора, попытка убедить, что мне можно доверить деньги</p>
+    <p>Вот счёт, который я публиковал у себя в канале и который до сих пор там лежит:</p>
+  </div>
+
+  <div class="stats stagger">
+    <div class="stat"><div class="n">70+</div><div class="t">бесплатных созвонов</div></div>
+    <div class="stat"><div class="n">4</div><div class="t">продажи по итогу</div></div>
+    <div class="stat"><div class="n">300k</div><div class="t">рублей заработано</div></div>
+    <div class="stat"><div class="n">2</div><div class="t">месяца вне блога после этого</div></div>
+  </div>
+
+  <div class="reveal">
+    <p>300 тысяч выглядят неплохо, пока не посмотришь, чем за них заплачено. Дикое выгорание, полное отсутствие желания с кем-либо разговаривать, выпал из блога на два месяца, и все заработанные деньги ушли на то, чтобы вытащить себя обратно</p>
+    <p>Конверсия из заявки в клиента - «дай бог 30%», и это ещё считалось хорошим результатом. То есть из десяти часовых созвонов семь были подарены в пустоту</p>
+  </div>
+
+  <figure class="reveal">
+    <div class="shot"><img src="img/hype-story.jpg" width="760" height="591" alt="Блок с лендинга: 70 бесплатных диагностик, 4 продажи, 300000 рублей, выгорание и депрессия" loading="lazy"></div>
+    <figcaption>Этот блок стоял у меня на лендинге. Я не стал его смягчать, потому что именно он попадал в читателя точнее любого обещания</figcaption>
+  </figure>
+
+  <figure class="reveal">
+    <div class="shot tall dark"><img src="img/post-344-diagnostiki.jpg" width="1138" height="3798" alt="Пост про бесплатные диагностики как мастхэв, конверсию дай бог 30 процентов и выгорание" loading="lazy"></div>
+    <figcaption>Пост целиком, с датой и реакциями<br><a href="https://t.me/Evgeniy_Tolstobrov/344" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov/344</a></figcaption>
+  </figure>
+
+  <div class="callout reveal">
+    <h3>Что здесь сломано</h3>
+    <p>Не воронка и не реклама. Сломано то, что <b>между «человек мной заинтересовался» и «человек мне заплатил» стоял только я сам</b>. Мой вечер, мой голос, моя энергия. Такая конструкция масштабируется ровно до количества свободных вечеров в неделе, а потом ломает владельца</p>
+  </div>
+
+  <h2 class="reveal">Часть 2. Что я поменял</h2>
+
+  <div class="reveal">
+    <p>Я убрал себя из середины. Между интересом и оплатой встал продукт за небольшие деньги, который человек может купить сам, без созвона со мной</p>
+    <p>Месяц ушёл на сборку. Собирал по исследованию американского маркетолога, соединяя его схему со своим опытом. Получилась «Хайп-воронка»: продукт за <b>1 990 ₽</b> плюс путь, по которому на него шли люди</p>
+    <p>Путь был такой:</p>
+    <ul class="plain">
+      <li>реклама ведёт на посадочную с одной-единственной кнопкой</li>
+      <li>кнопка запускает бота, бот просит подписаться на канал</li>
+      <li>после подписки бот отдаёт ссылку на статью-инструкцию</li>
+      <li>в статье я продаю микро-продукт</li>
+      <li>не купил сразу - включается цепочка сообщений</li>
+    </ul>
+    <p>Внутри продукта лежали инструкции (как сформировать микро-продукт, как собрать превосходное предложение, как запустить рекламу), бонусы и консультация по адаптации под конкретную ситуацию, которая действовала неделю после оплаты. Эта неделя была не милосердием, а дедлайном: она заставляла людей начать делать сразу</p>
+  </div>
+
+  <figure class="reveal">
+    <div class="shot"><img src="img/hype-landing.jpg" width="760" height="899" alt="Первый экран лендинга Хайп-воронки" loading="lazy"></div>
+    <figcaption>Первый экран той самой страницы. Ничего гениального, один оффер и одна кнопка</figcaption>
+  </figure>
+
+  <h2 class="reveal">Часть 3. Что из этого вышло в цифрах</h2>
+
+  <div class="reveal">
+    <p>Дальше только то, что подтверждается скринами из моего канала. Ничего округлённого в свою пользу</p>
+  </div>
+
+  <figure class="reveal">
+    <img class="proof-pay" src="img/proof-payments.jpg" width="1020" height="657" alt="Шесть уведомлений об оплате по 1990 рублей через tolstobrov.payform.ru" loading="lazy">
+    <figcaption>Уведомления об оплатах, шесть подряд по 1 990 ₽. Именно так выглядит «продукт принимает деньги без тебя»: я в этот момент гулял</figcaption>
+  </figure>
+
+  <div class="stats stagger">
+    <div class="stat"><div class="n">5</div><div class="t">продаж в первый день, на полном пассиве</div></div>
+    <div class="stat"><div class="n">30</div><div class="t">оплат за первую неделю</div></div>
+    <div class="stat"><div class="n">42%</div><div class="t">купивших пошли дальше в основной продукт</div></div>
+    <div class="stat"><div class="n">12%</div><div class="t">из активации бота в оплату по всей воронке</div></div>
+  </div>
+
+  <div class="reveal">
+    <p>Последняя цифра важнее остальных. <b>42% людей, купивших продукт за 1 990 ₽, потом купили основной</b>. Микро-продукт окупал себя не собственной выручкой, а тем, что превращал незнакомого человека в клиента. Дальше с клиентом разговор идёт совсем по-другому, и никаких бесплатных диагностик для этого уже не нужно</p>
+  </div>
+
+  <figure class="reveal">
+    <div class="shot tall dark"><img src="img/post-866-oplaty.jpg" width="1138" height="5410" alt="Пост: ИИ помог создать мини-продукт, 60 минут на основу статьи, через 2 часа первые оплаты, 5 продаж в первый день, 30 за неделю, 42 процента в основной продукт" loading="lazy"></div>
+    <figcaption>Пост, где я разбирал сборку и результаты<br><a href="https://t.me/Evgeniy_Tolstobrov/866" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov/866</a></figcaption>
+  </figure>
+
+  <figure class="reveal">
+    <div class="shot tall dark"><img src="img/post-399-zakrytie.jpg" width="1138" height="4648" alt="Пост о закрытии Хайп-воронки с разбором пути трафика и конверсией 12 процентов" loading="lazy"></div>
+    <figcaption>Закрыл продажи на заранее объявленном лимите в 50 человек. Ограничение было названо в самом начале, поэтому закрытие сработало как закрытие, а не как уловка<br><a href="https://t.me/Evgeniy_Tolstobrov/399" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov/399</a></figcaption>
+  </figure>
+
+  <h2 class="reveal">Часть 4. Главный сдвиг случился не в воронке, а в сборке</h2>
+
+  <div class="reveal">
+    <p>Первый микро-продукт я собирал месяц. Второй раз я собирал уже с ИИ, и вот тут цифры становятся неприличными</p>
+    <p>Я загрузил в систему свои наработки, структуру прогревающей статьи и ответы на ключевые вопросы. <b>Через 60 минут у меня была готовая основа продающей статьи.</b> Я внёс правки, оформил, записал видео. <b>Через 2 часа пошли первые оплаты</b></p>
+    <p>Сегодня на Claude Code этот путь ещё короче. Вот моя собственная запись про сегодняшний темп:</p>
+  </div>
+
+  <figure class="reveal">
+    <div class="shot tall dark"><img src="img/post-1819-legko.jpg" width="1138" height="2845" alt="Пост: собрать сайт за вечер легко, микропродукт за 2 дня от идеи до работающего лендинга с оплатой и выдачей доступа" loading="lazy"></div>
+    <figcaption>«Создать и упаковать микропродукт - легко. За 2 дня от идеи до работающего лендинга с оплатой и выдачей доступа»<br><a href="https://t.me/Evgeniy_Tolstobrov/1819" target="_blank" rel="noopener">t.me/Evgeniy_Tolstobrov/1819</a></figcaption>
+  </figure>
+
+  <div class="quote reveal">
+    Легко стало исполнение. Но не мышление. Микропродукт упаковать легко. А вот понять, какую именно трансформацию ты даёшь за эти деньги - это твоя работа
+    <span>из того же поста, и это самая честная фраза во всём тексте</span>
+  </div>
+
+  <div class="reveal">
+    <p>Здесь проходит граница, которую стоит понять до того, как потратишь деньги на любое обучение по нейросетям</p>
+    <p>Машина забирает на себя вёрстку, тексты, техническую возню, оформление, интеграции. Всё, что раньше требовало дизайнера, копирайтера и недели переписок. Она не забирает на себя решение о том, <b>что именно ты продаёшь и кому</b>. Это остаётся твоей работой, и никакой промпт её не сделает за тебя</p>
+    <p>Поэтому правильная постановка задачи звучит не «научите меня нейросетям», а «дайте инструмент, который снимет с меня исполнение, и маршрут, который не даст ошибиться в мышлении»</p>
+  </div>
+
+  <h2 class="reveal">Часть 5. Три ошибки, на которых я потерял больше всего</h2>
+
+  <div class="reveal">
+    <h3>Ошибка первая: делать микро-продукт выжимкой основного</h3>
+    <p>Соблазн выглядит логичным: взять большую программу, отрезать кусок и продать дешевле. На практике получается обрубок. Человек покупает, получает половину смысла и уходит с ощущением, что его обманули. Микро-продукт должен решать <b>одну маленькую задачу целиком</b>, а не большую наполовину</p>
+
+    <h3>Ошибка вторая: обещать 90%, а давать 10%</h3>
+    <p>Это ровно тот же механизм, только на уровне текста. Продающая страница обещает трансформацию, внутри лежит список ссылок. Продажи в первый день будут, возвраты и репутация придут потом</p>
+
+    <h3>Ошибка третья: собирать до того, как проверил спрос</h3>
+    <p>Самая дорогая. Месяц работы в стол, потому что тема казалась очевидной. Поэтому в маршруте, который я теперь прохожу сам и даю другим, проверка спроса стоит <b>до</b> сборки: пока три живых человека не сказали «хочу», продукт не собирается. Не сказали - меняем тему сегодня, а не через месяц</p>
+  </div>
+
+  <h2 class="reveal">Часть 6. Что делать тебе</h2>
+
+  <div class="reveal">
+    <p>Если у тебя есть аудитория - канал, база, активная личка, сарафан - и купить у тебя нечего, то ты сейчас в той же точке, в которой я был до 70 диагностик. Разница только в том, что тебе не придётся тратить месяц на сборку и год на понимание, что собирать</p>
+    <p>Маршрут, который я прошёл дважды, теперь разложен на восемь шагов, и под каждый шаг написан отдельный скилл для Claude Code:</p>
+    <ul class="plain">
+      <li>старт: разворачиваем твой проект, ставим систему</li>
+      <li>тема по методу «Тройное пересечение»: что горит у аудитории, что ты отдаёшь быстро, где у соседей дыра</li>
+      <li>оффер и предпродажа по «Правилу трёх «хочу»»: пока трое не попросили, не собираем</li>
+      <li>сборка: продукт собирается из твоей экспертизы за один-два вечера</li>
+      <li>упаковка: страница из готового каркаса, без дизайнера</li>
+      <li>оплата и автовыдача: человек платит картой, продукт приходит сам, а проверяем это «Покупкой у самого себя»</li>
+      <li>запуск: серия постов и дожим тех, кто сказал «хочу»</li>
+      <li>итоговый разбор: защищаешь проект и запускаешь его в продажу</li>
+    </ul>
+    <p>Это не теория про нейросети. Это один маршрут от пустого файла до кнопки, которая принимает деньги, и всё, что на нём не нужно, из него выкинуто</p>
+  </div>
+
+  <div class="offer reveal">
+    <h2 style="margin-top:0">Два способа пройти этот маршрут</h2>
+    <p class="note" style="margin-bottom:0">Скиллы и уроки в обоих одинаковые. В «Со мной» к ним добавляюсь я: лично разбираю твой продукт и за 30 дней довожу до запуска в продажу, плюс три бонусных урока по трафику. Потоков нет, начинаешь в день оплаты</p>
+
+    <div class="plans">
+      <div class="plan">
+        <p class="w">Если делаю сам</p>
+        <div class="p">1 990 ₽</div>
+        <ul>
+          <li>15 скиллов Claude Code</li>
+          <li>8 уроков</li>
+          <li>Шаблоны каждого шага</li>
+          <li>Уроки открыты 1 месяц, скиллы остаются навсегда</li>
+          <li>Возврат 30 дней без вопросов</li>
+        </ul>
+        <a class="btn btn-ghost" href="index.html#tarify">Забрать систему</a>
+      </div>
+      <div class="plan best">
+        <p class="w">Если хочешь за 30 дней выйти в продажи</p>
+        <div class="p">9 990 ₽</div>
+        <ul>
+          <li>Всё из первого тарифа</li><li>Доступ к урокам и записям эфиров на 1 год</li>
+          <li>30 дней ведения с дня оплаты</li><li>Живой эфир каждую неделю</li>
+          <li>Твой продукт разбираю лично</li>
+          <li>Общий чат со мной</li>
+          <li>Защита проекта и запуск в продажу</li><li>Бонус: 3 урока по трафику (Авито, рилс, Threads)</li><li>Гарантия результата</li>
+        </ul>
+        <a class="btn btn-primary" href="https://payform.ru/fdcXNYM/">Пойти со мной</a>
+      </div>
+    </div>
+
+    <p class="note" style="margin:18px 0 0">Начал с «Системы» и захотел дальше - 1 990 ₽ вычитаются в течение 30 дней, доплата 8 000 ₽<br>
+    <a href="index.html">Посмотреть полный состав и условия</a></p>
+    <p class="note" style="margin:10px 0 0">Нажимая кнопку оплаты, вы принимаете условия <a href="oferta.html">договора-оферты</a> и даёте <a href="consent.html">согласие на обработку персональных данных</a></p>
+  </div>
+
+  <div class="reveal" style="margin-top:36px">
+    <p class="note">Я не обещаю тебе конкретного числа продаж: оно зависит от твоей аудитории, а не от программы. Я обещаю продукт, который принимает деньги, страницу, на которую не стыдно вести, и объявленный запуск. Всё остальное в этом тексте - мои собственные цифры со ссылками на посты, которые можно открыть и проверить</p>
+  </div>
+
+</div></article>
+
+<footer><div class="wrap">
+  <p>ИП Толстобров Евгений Васильевич · ИНН 434547594316 · ОГРНИП 322435000006462</p>
+  <p><a href="index.html">Условия и тарифы</a> · <a href="oferta.html">Договор-оферта</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="consent.html">Согласие на обработку данных</a> · <a href="mailto:sfhk91@yandex.ru">sfhk91@yandex.ru</a></p>
+</div></footer>
+
+<script>
+(function(){
+  var targets = Array.prototype.slice.call(document.querySelectorAll('.reveal, .stagger'));
+
+  function show(el){ el.classList.add('in'); }
+
+  // подстраховка: всё, что уже выше нижней кромки экрана, показываем принудительно.
+  // быстрый флик пальцем может проскочить мимо observer, а невидимый блок на продающей
+  // странице это потерянные деньги
+  function sweep(){
+    var vh = window.innerHeight;
+    for (var i = targets.length - 1; i >= 0; i--) {
+      var el = targets[i];
+      if (el.classList.contains('in')) { targets.splice(i, 1); continue; }
+      if (el.getBoundingClientRect().top < vh * 0.92) { show(el); targets.splice(i, 1); }
+    }
+  }
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0 });
+    targets.forEach(function(t){ io.observe(t); });
+  } else {
+    targets.forEach(show);
+  }
+
+  var ticking = false;
+  function onScroll(){
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function(){ sweep(); ticking = false; });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  sweep();
+
+  // полоса прочитанного. свой флаг: общий с sweep гасил бы один из двух обработчиков
+  var bar = document.getElementById('bar');
+  var barTicking = false;
+  function draw(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? Math.min(100, (window.scrollY / h) * 100) : 0) + '%';
+    barTicking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if (!barTicking) { barTicking = true; window.requestAnimationFrame(draw); }
+  }, { passive: true });
+  window.addEventListener('resize', draw, { passive: true });
+  draw();
+})();
+</script>
+<div class="cookie" id="cookie" hidden>
+  <p>Сайт использует cookie и Яндекс Метрику, чтобы понимать, какие блоки полезны. Продолжая, вы соглашаетесь с <a href="privacy.html">политикой</a> и <a href="consent.html">обработкой данных</a></p>
+  <button type="button" id="cookie-ok">Понятно</button>
+</div>
+<style>
+.cookie{position:fixed;z-index:60;left:16px;right:16px;bottom:16px;max-width:520px;display:flex;gap:14px;align-items:center;
+  background:#17161a;color:#e9e6e1;border-radius:14px;padding:14px 16px;box-shadow:0 20px 50px -14px rgba(0,0,0,.5);font-size:13.5px;line-height:1.45}
+.cookie[hidden]{display:none}
+.cookie p{margin:0;color:#c9c4bb}
+.cookie a{color:#f2b21b}
+.cookie button{flex:none;border:0;border-radius:10px;padding:10px 16px;font:inherit;font-weight:700;background:#f2b21b;color:#2a1e00;cursor:pointer}
+</style>
+<script>(function(){try{if(localStorage.getItem("cookie-ok"))return}catch(e){}var n=document.getElementById("cookie");if(!n)return;n.hidden=false;
+document.getElementById("cookie-ok").onclick=function(){try{localStorage.setItem("cookie-ok",Date.now())}catch(e){}n.hidden=true}})();</script>
+</body>
+</html>

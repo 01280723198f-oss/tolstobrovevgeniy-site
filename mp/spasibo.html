@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Оплата прошла — забери доступ</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#17161a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --bg:#f4efe6; --bg-soft:#faf7f1; --card:#ffffff; --card-hi:#faf7f1; --line:#ebe4d7; --line-hi:#ddd3c2; --text:#1f1b16; --body:#3a332b; --muted:#665d52; --dim:#6f665a; --amber:#f2b21b; --amber-hi:#845a00; --acc-ink:#2a1e00; --acc-soft:#fff3cf; --green:#16733a; --side:#17161a; --side-2:#232127; --side-ink:#e9e6e1; --side-muted:#8d8a92;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--text);overflow-x:clip;
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,"Segoe UI",Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100svh;display:grid;place-items:center;padding:32px 20px}
+.wrap{max-width:560px;width:100%;position:relative;isolation:isolate}
+.wrap::before{content:"";position:absolute;z-index:-1;inset:-46% 0 auto 0;height:520px;
+  background:radial-gradient(46% 42% at 50% 30%, rgba(22,115,58,.16), transparent 70%);
+  animation:breathe 13s var(--ease-in-out) infinite;pointer-events:none;will-change:transform,opacity}
+@keyframes breathe{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}
+
+h1{font-size:clamp(28px,5.4vw,40px);line-height:1.12;letter-spacing:-.025em;font-weight:800;margin:0 0 14px}
+p{margin:0 0 16px;color:var(--body)}
+.lead{font-size:19px;color:var(--muted)}
+.note{font-size:14.5px;color:var(--dim)}
+b{color:var(--text);font-weight:650}
+
+.tick{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;margin:0 0 22px;
+  background:rgba(22,115,58,.12);border:1px solid rgba(22,115,58,.35)}
+.tick i{display:block;width:19px;height:10px;border-left:2.5px solid var(--green);
+  border-bottom:2.5px solid var(--green);transform:rotate(-45deg) translate(1px,-2px)}
+
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  text-decoration:none;font-weight:700;font-size:18px;padding:19px 24px;border-radius:15px;
+  background:var(--amber);color:var(--acc-ink);
+  box-shadow:0 8px 30px -10px rgba(242,178,27,.7);margin:26px 0 12px;
+  transition:transform 160ms var(--ease-out), box-shadow 200ms var(--ease-out)}
+.btn:active{transform:scale(.97)}
+@media(hover:hover) and (pointer:fine){
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px -10px rgba(242,178,27,.9)}
+}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:26px 0 0}
+.card h2{font-size:17px;margin:0 0 10px;letter-spacing:-.01em}
+ol{margin:0;padding-left:20px;color:var(--muted);font-size:15.5px}
+ol li{padding:4px 0}
+a{color:var(--amber-hi)}
+
+.in{animation:rise 560ms var(--ease-out) both}
+.in:nth-child(2){animation-delay:60ms}
+.in:nth-child(3){animation-delay:120ms}
+.in:nth-child(4){animation-delay:180ms}
+.in:nth-child(5){animation-delay:240ms}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion: reduce){
+  .wrap::before{animation:none;opacity:.8}
+  .in{animation:fade 300ms ease both}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .btn:active{transform:none}
+  @media(hover:hover) and (pointer:fine){.btn:hover{transform:none}}
+}
+</style>
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(112316546, "init", {"webvisor":true,"clickmap":true,"accurateTrackBounce":true,"trackLinks":true});
+ym(112316546, "reachGoal", "oplata-sistema");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+</head>
+<body>
+<div class="wrap">
+  <div class="tick in"><i></i></div>
+  <h1 class="in" id="ttl">Оплата прошла. Остался один шаг</h1>
+  <p class="lead in" id="lead">Доступ ко всем материалам выдаёт бот. Нажми кнопку, он откроется в Telegram и сразу пришлёт ссылку на уроки, скиллы и шаблоны</p>
+
+  <a class="btn in" id="go" href="https://t.me/podarki_zhenya_bot?start=kupil-sistema">Забрать доступ в Telegram</a>
+  <p class="note in" id="note">Заодно бот будет присылать по одному шагу в день семь дней: что сделать сегодня и каким скиллом. Отписаться можно в любой момент</p>
+
+  <div class="card in">
+    <h2>Если кнопка не сработала</h2>
+    <ol>
+      <li>Открой Telegram и найди бота вручную: <b>@podarki_zhenya_bot</b>, нажми Start</li>
+      <li>Если доступ не пришёл, значит бот не увидел метку оплаты. Это не страшно, выдам руками</li>
+      <li>Не помогло - напиши мне на <a href="mailto:sfhk91@yandex.ru">sfhk91@yandex.ru</a> с датой оплаты, открою доступ руками в течение дня</li>
+    </ol>
+  </div>
+</div>
+<script>
+// Продамус возвращает сюда с ?t=sistema | razbor | somnoy — метка уходит боту,
+// бот по ней решает, какой доступ выдать. Без параметра считаем «Систему»
+(function(){
+  var t = (new URLSearchParams(location.search).get('t') || 'sistema').toLowerCase();
+  if (!/^(sistema|razbor|somnoy)$/.test(t)) t = 'sistema';
+  document.getElementById('go').href = 'https://t.me/podarki_zhenya_bot?start=kupil-' + t;
+  if (t === 'somnoy') {
+    document.getElementById('ttl').textContent = 'Оплата прошла. Твои 30 дней начались сегодня';
+    document.getElementById('lead').textContent = 'Нажми кнопку: бот откроется в Telegram и пришлёт материалы, ссылку на общий чат со мной и расписание эфиров. В течение дня я напишу тебе лично про созвон установки';
+    document.getElementById('note').textContent = 'Эфиры по вторникам в 20:00 МСК. На ближайший приходи с тем шагом, на котором стоишь';
+  } else if (t === 'razbor') {
+    document.getElementById('note').textContent = 'Голосовой разбор темы тоже оплачен: бот расскажет, куда прислать файл темы после второго дня. А ещё семь дней будет присылать по одному шагу в день';
+  }
+})();
+</script>
+<p style="text-align:center;font-size:13px;color:var(--dim);margin:0 0 28px"><a href="oferta.html" style="color:inherit">Договор-оферта</a> · <a href="privacy.html" style="color:inherit">Политика конфиденциальности</a> · <a href="consent.html" style="color:inherit">Согласие на обработку данных</a></p>
+<div class="cookie" id="cookie" hidden>
+  <p>Сайт использует cookie и Яндекс Метрику, чтобы понимать, какие блоки полезны. Продолжая, вы соглашаетесь с <a href="privacy.html">политикой</a> и <a href="consent.html">обработкой данных</a></p>
+  <button type="button" id="cookie-ok">Понятно</button>
+</div>
+<style>
+.cookie{position:fixed;z-index:60;left:16px;right:16px;bottom:16px;max-width:520px;display:flex;gap:14px;align-items:center;
+  background:#17161a;color:#e9e6e1;border-radius:14px;padding:14px 16px;box-shadow:0 20px 50px -14px rgba(0,0,0,.5);font-size:13.5px;line-height:1.45}
+.cookie[hidden]{display:none}
+.cookie p{margin:0;color:#c9c4bb}
+.cookie a{color:#f2b21b}
+.cookie button{flex:none;border:0;border-radius:10px;padding:10px 16px;font:inherit;font-weight:700;background:#f2b21b;color:#2a1e00;cursor:pointer}
+</style>
+<script>(function(){try{if(localStorage.getItem("cookie-ok"))return}catch(e){}var n=document.getElementById("cookie");if(!n)return;n.hidden=false;
+document.getElementById("cookie-ok").onclick=function(){try{localStorage.setItem("cookie-ok",Date.now())}catch(e){}n.hidden=true}})();</script>
+</body>
+</html>
