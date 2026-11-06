@@ -82,7 +82,7 @@ ym(112316546, "reachGoal", "oplata-sistema");
 <div class="wrap">
   <div class="tick in"><i></i></div>
   <h1 class="in" id="ttl">Оплата прошла. Остался один шаг</h1>
-  <p class="lead in" id="lead">Доступ ко всем материалам выдаёт бот. Нажми кнопку, он откроется в Telegram и сразу пришлёт ссылку на уроки, скиллы и шаблоны</p>
+  <p class="lead in" id="lead">Доступ выдаёт бот. Нажми кнопку, он откроется в Telegram и попросит email, который ты указал при оплате. Сверит платёж и сразу пришлёт архив: уроки, скиллы и шаблоны</p>
 
   <a class="btn in" id="go" href="https://t.me/podarki_zhenya_bot?start=kupil-sistema">Забрать доступ в Telegram</a>
   <p class="note in" id="note">Заодно бот будет присылать по одному шагу в день семь дней: что сделать сегодня и каким скиллом. Отписаться можно в любой момент</p>
@@ -105,7 +105,7 @@ ym(112316546, "reachGoal", "oplata-sistema");
   document.getElementById('go').href = 'https://t.me/podarki_zhenya_bot?start=kupil-' + t;
   if (t === 'somnoy') {
     document.getElementById('ttl').textContent = 'Оплата прошла. Твои 30 дней начались сегодня';
-    document.getElementById('lead').textContent = 'Нажми кнопку: бот откроется в Telegram и пришлёт материалы, ссылку на общий чат со мной и расписание эфиров. В течение дня я напишу тебе лично про созвон установки';
+    document.getElementById('lead').textContent = 'Нажми кнопку: бот откроется в Telegram и попросит email, который ты указал при оплате. Сверит платёж и пришлёт материалы. В течение дня я напишу тебе лично: добавлю в общий чат и договоримся о созвоне установки';
     document.getElementById('note').textContent = 'Эфиры по вторникам в 20:00 МСК. На ближайший приходи с тем шагом, на котором стоишь';
   } else if (t === 'razbor') {
     document.getElementById('note').textContent = 'Голосовой разбор темы тоже оплачен: бот расскажет, куда прислать файл темы после второго дня. А ещё семь дней будет присылать по одному шагу в день';
