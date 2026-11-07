@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 04 Nov 2026 20:22:09 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 08:25:00 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Пять этапов блога, на которых Claude Code работает за тебя: вопросы, запросы и порядок запуска</title>
+      <link>https://tolstobrovevgeniy.ru/g/5-etapov-bloga-claude-code-nastroyki/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/5-etapov-bloga-claude-code-nastroyki/</guid>
+      <pubDate>Sat, 07 Nov 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Обещал в ролике все пять настроек. Здесь они целиком: 10 вопросов для голосового, запросы для шапки, радара тем, инструкции стиля и кадров, и в каком порядке это включать</description>
+    </item>
     <item>
       <title>Ролик набрал 200 просмотров: не удаляй, сделай копию и дай ему второй шанс</title>
       <link>https://tolstobrovevgeniy.ru/g/unikalnaya-kopiya-rilsa-vtoroy-shans/</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>Инженеры Anthropic перестали собирать отдельного агента под каждую задачу и учат одного агента навыкам. Разбираю, как это работает, даю шаблон SKILL.md для эксперта и промпт-интервью</description>
-    </item>
-    <item>
-      <title>Hermes Agent привлёк 90 млн долларов: как собрать команду ИИ-агентов в Telegram и чем Hermes отличается от Claude</title>
-      <link>https://tolstobrovevgeniy.ru/g/hermes-agent-komanda-v-telegram/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/hermes-agent-komanda-v-telegram/</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Разбор</category>
-      <description>Создатели бесплатного агента Hermes подняли 90 млн долларов. Разбираю, что умеет агент, лучший приём из ролика о нём, какие роли дать агентам в первую очередь и кому Hermes подходит больше, чем Claude</description>
     </item>
   </channel>
 </rss>

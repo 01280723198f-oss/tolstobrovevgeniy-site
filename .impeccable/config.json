@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "seo/review.js"
+        ],
+        "createdAt": "2026-10-16T19:01:32.713Z",
+        "reason": "Claude: регулярка /<img\\b[^>]*>/ в Node-скрипте проверки, а не разметка"
+      }
+    ]
+  }
+}
