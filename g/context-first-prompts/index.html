@@ -37,7 +37,7 @@ window.__METRIKA_ID__=112316546;
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
   <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Почему Claude плохо отвечает: дело в контексте, а не в модели","name":"Ты винишь модель. А дело в одном промпте","description":"Разбор, почему нейросеть даёт слабый результат: что такое контекст промпта, как заложить его один раз и получать стабильные ответы вместо угадывания.","inLanguage":"ru","datePublished":"2026-06-29","dateModified":"2026-09-05","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/Evgeniy_Tolstobrov"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/context-first-prompts/"},"url":"https://tolstobrovevgeniy.ru/g/context-first-prompts/","articleSection":"Claude Code","wordCount":1066,"timeRequired":"PT6M","keywords":"почему нейросеть плохо отвечает, контекст для нейросети, как правильно писать промпты, claude code контекст, промпт не работает","image":["/img/og/context-first-prompts.jpg"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Почему Claude плохо отвечает: дело в контексте, а не в модели","name":"Ты винишь модель. А дело в одном промпте","description":"Разбор, почему нейросеть даёт слабый результат: что такое контекст промпта, как заложить его один раз и получать стабильные ответы вместо угадывания.","inLanguage":"ru","datePublished":"2026-06-29","dateModified":"2026-09-05","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/+vXPYZdwTrKhmYzYy"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/context-first-prompts/"},"url":"https://tolstobrovevgeniy.ru/g/context-first-prompts/","articleSection":"Claude Code","wordCount":1064,"timeRequired":"PT6M","keywords":"почему нейросеть плохо отвечает, контекст для нейросети, как правильно писать промпты, claude code контекст, промпт не работает","image":["/img/og/context-first-prompts.jpg"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Claude Code","item":"https://tolstobrovevgeniy.ru/tema/claude-code/"},{"@type":"ListItem","position":3,"name":"Ты винишь модель. А дело в одном промпте","item":"https://tolstobrovevgeniy.ru/g/context-first-prompts/"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чем контекст отличается от промпта?","acceptedAnswer":{"@type":"Answer","text":"Промпт — это разовая просьба, она живёт одну сессию. Контекст — постоянные вводные о тебе и проекте, они читаются перед каждой задачей. Промпт отвечает на вопрос «что сделать», контекст — на вопросы «для кого, каким голосом и по каким правилам»."}},{"@type":"Question","name":"Сколько контекста давать, чтобы не перегрузить модель?","acceptedAnswer":{"@type":"Answer","text":"Ровно столько, сколько относится к типу задачи. Общие правила проекта — короткая страница, а не десять. Узкие детали лучше вынести в отдельные файлы, которые подтягиваются только когда тема всплыла. Перегруженный контекст вредит так же, как его отсутствие: важное тонет в неважном."}},{"@type":"Question","name":"Почему нейросеть выдумывает факты, даже когда я дал контекст?","acceptedAnswer":{"@type":"Answer","text":"Потому что в контексте не было запрета. Правило «нет факта в проекте — ставь пропуск, а не догадку» нужно написать явно. Без него модель заполняет дыры правдоподобным текстом, это её нормальное поведение."}},{"@type":"Question","name":"Нужно ли переписывать контекст под каждую новую задачу?","acceptedAnswer":{"@type":"Answer","text":"Нет. Общий слой пишется один раз и правится редко — когда меняется продукт или позиционирование. Под конкретные типы задач заводятся отдельные инструкции, и они дописываются по мере того, как ты натыкаешься на грабли."}}]}</script>
 </head>
@@ -48,7 +48,7 @@ window.__METRIKA_ID__=112316546;
         <span class="logo">🔥</span>
         <span>Евгений Толстобров</span>
       </a>
-      <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-header">
+      <a class="btn-channel" href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener" data-goal="tg-header">
         📲 <span class="full">Telegram-канал</span>
       </a>
     </div>
@@ -153,14 +153,14 @@ window.__METRIKA_ID__=112316546;
 <h2 id="zabrat-razbor">Забрать разбор</h2>
 <p>Хочешь перестать кидать одиночные промпты и начать давать Claude контекст так, чтобы он работал на полную мощность?</p>
 <p><strong>Напиши кодовое слово МОЩНОСТЬ</strong> — пришлю разбор по шагам.</p>
-<p>→ <strong><a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener">Перейти в Telegram-канал @Evgeniy_Tolstobrov</a></strong></p>
+<p>→ <strong><a href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener">Перейти в Telegram-канал</a></strong></p>
 
       </div>
       
       <section class="cta-block">
         <h3>Это только фундамент. А дальше?</h3>
         <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
-        <a class="btn-channel" href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+        <a class="btn-channel" href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
       </section>
       
       <section class="related">
@@ -176,15 +176,15 @@ window.__METRIKA_ID__=112316546;
             <span class="related-title">Как подготовить Claude Code к любому проекту</span>
             <span class="related-sub">Полная настройка с нуля: команды, файлы, скиллы и права. Те 20 минут, после которых Claude работает не на 10%, а на полную.</span>
           </a>
-          <a class="related-card" href="/g/claude-code-os/">
-            <span class="tag">Claude Code</span>
-            <span class="related-title">Claude Code — это не чат. Это операционная система твоего бизнеса</span>
-            <span class="related-sub">Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</span>
-          </a>
           <a class="related-card" href="/g/context-not-agent/">
             <span class="tag">Claude Code</span>
             <span class="related-title">Дело не в модели. Дело в контексте</span>
             <span class="related-sub">Почему ИИ-агент, прикрученный к бизнесу, не работает — и пять шагов, которые превращают его в систему.</span>
+          </a>
+          <a class="related-card" href="/g/claude-code-os/">
+            <span class="tag">Claude Code</span>
+            <span class="related-title">Claude Code — это не чат. Это операционная система твоего бизнеса</span>
+            <span class="related-sub">Почему большинство использует Claude Code на 10% — и как перевести его из режима чата в режим системы, которая делает работу за тебя.</span>
           </a></div>
       </section>
     </article>
@@ -194,7 +194,7 @@ window.__METRIKA_ID__=112316546;
       <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
       <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/podborka/">Подборка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
       <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
-      <a href="https://t.me/Evgeniy_Tolstobrov" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+      <a href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
     </div>
   </footer>
   <script src="/assets/analytics.js" defer></script>

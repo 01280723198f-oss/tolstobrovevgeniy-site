@@ -13,9 +13,9 @@ module.exports = {
   author: {
     name: "Евгений Толстобров",
     jobTitle: "Маркетолог, автор контент-завода на Claude Code",
-    sameAs: ["https://t.me/Evgeniy_Tolstobrov"]
+    sameAs: ["https://t.me/+vXPYZdwTrKhmYzYy"]
   },
-  telegram: "https://t.me/Evgeniy_Tolstobrov",
+  telegram: "https://t.me/+vXPYZdwTrKhmYzYy",
 
   // ── Оператор персональных данных (политика, согласие, плашка cookie) ─
   // Пока name/status/email пустые — страницы /privacy/ и /consent/ не собираются, ссылок и плашки нет.
