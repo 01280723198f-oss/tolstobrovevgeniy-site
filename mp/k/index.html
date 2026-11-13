@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Микро-продукт · Кабинет</title>
+<style>
+:root{
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --bg:#f4efe6;--bg-soft:#faf7f1;--card:#fff;--line:#ebe4d7;--line-hi:#ddd3c2;
+  --text:#1f1b16;--body:#3a332b;--muted:#665d52;--dim:#6f665a;
+  --amber:#f2b21b;--amber-hi:#845a00;--acc-ink:#2a1e00;--acc-soft:#fff3cf;--green:#16733a;
+  --side:#17161a;--side-2:#232127;--side-ink:#e9e6e1;--side-muted:#8d8a92;
+  --r:16px;--r-lg:22px;--mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,"Segoe UI",Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ——— каркас: тёмная боковая панель как в «Ботоделе» ——— */
+.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+aside{background:var(--side);color:var(--side-ink);position:sticky;top:0;height:100vh;overflow:auto;
+  padding:26px 16px;display:flex;flex-direction:column;gap:22px}
+.brand{display:flex;align-items:center;gap:12px;padding:0 8px}
+.brand i{width:40px;height:40px;border-radius:11px;background:var(--amber);display:grid;place-items:center;font-style:normal;font-size:21px;flex:none}
+.brand b{font-size:16px;letter-spacing:.02em;color:#fff;line-height:1.2}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:10px;color:var(--side-muted);text-transform:uppercase;letter-spacing:.08em;font-weight:500}
+.prog{padding:14px;background:var(--side-2);border-radius:14px}
+.prog-top{display:flex;justify-content:space-between;font-size:13px;color:var(--side-muted);margin-bottom:9px}
+.prog-top b{color:#fff}
+.bar{height:6px;border-radius:9px;background:#34323a;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:var(--amber);border-radius:9px;transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease-out)}
+nav{display:flex;flex-direction:column;gap:3px}
+nav .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--side-muted);padding:10px 10px 6px}
+nav a{display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:11px;text-decoration:none;color:var(--side-ink);font-size:15px;line-height:1.3;
+  transition:background-color .2s var(--ease-out)}
+nav a .n{width:28px;height:28px;border-radius:8px;background:var(--side-2);display:grid;place-items:center;font-size:13px;font-weight:700;color:var(--side-muted);flex:none}
+nav a .t{flex:1}
+nav a .ok{opacity:0;color:var(--amber);font-weight:700}
+nav a.done .ok{opacity:1}
+nav a.done .n{background:rgba(242,178,27,.16);color:var(--amber)}
+nav a.on{background:var(--side-2)}
+nav a.on .n{background:var(--amber);color:var(--acc-ink)}
+@media(hover:hover) and (pointer:fine){nav a:hover{background:#1f1e23}}
+.side-foot{margin-top:auto;font-size:13px;color:var(--side-muted);padding:0 8px;line-height:1.5}
+
+main{min-width:0}
+.wrap{max-width:860px;margin:0 auto;padding:0 28px}
+
+/* ——— первый экран ——— */
+.hero{background:var(--side);color:#fff;position:relative;overflow:hidden;isolation:isolate;padding:64px 0 56px}
+.hero::before{content:"";position:absolute;z-index:-1;inset:-40% 0 auto 0;height:760px;
+  background:radial-gradient(48% 42% at 80% 22%,rgba(242,178,27,.22),transparent 70%),radial-gradient(38% 36% at 18% 8%,rgba(242,178,27,.08),transparent 72%)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--amber);margin:0 0 14px}
+.hero h1{font-size:clamp(34px,5.6vw,54px);line-height:1.06;letter-spacing:-.025em;font-weight:800;margin:0 0 18px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p{color:#c9c4bb;font-size:clamp(17px,2.2vw,20px);line-height:1.5;margin:0 0 26px;max-width:640px}
+.term{background:#0f0e11;border:1px solid #2c2a31;border-radius:14px;overflow:hidden;max-width:620px}
+.term-bar{display:flex;gap:7px;align-items:center;padding:11px 14px;background:#1a191d;border-bottom:1px solid #2c2a31}
+.term-bar i{width:11px;height:11px;border-radius:50%;background:#3a383f}
+.term-bar i:nth-child(1){background:#ff5f57}.term-bar i:nth-child(2){background:#febc2e}.term-bar i:nth-child(3){background:#28c840}
+.term-bar span{margin-left:8px;font-size:12.5px;color:var(--side-muted);font-family:var(--mono)}
+.term pre{margin:0;padding:16px 18px;font:14px/1.75 var(--mono);color:#e9e6e1;white-space:pre-wrap}
+.term .c{color:var(--side-muted)} .term .a{color:var(--amber)}
+.route{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.route a{background:var(--side-2);border:1px solid #2f2d34;border-radius:13px;padding:12px 13px;text-decoration:none;color:#fff;font-size:14px;line-height:1.3;transition:transform .16s var(--ease-out),border-color .2s}
+.route a b{display:block;font-size:20px;color:var(--amber);margin-bottom:2px}
+.route a.done{border-color:rgba(242,178,27,.5)}
+@media(hover:hover) and (pointer:fine){.route a:hover{transform:translateY(-2px);border-color:#46434c}}
+
+/* ——— урок ——— */
+.lesson{padding:64px 0 40px;scroll-margin-top:60px;border-bottom:1px solid var(--line);scroll-margin-top:10px}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--amber-hi);margin-bottom:10px}
+.lesson h1{font-size:clamp(30px,4.8vw,44px);line-height:1.1;letter-spacing:-.02em;font-weight:800;margin:0 0 22px}
+.goal{background:var(--side);color:#fff;border-radius:var(--r-lg);padding:20px 22px;margin:0 0 26px}
+.goal-k{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--amber);font-weight:600;margin-bottom:6px}
+.goal code{background:#2a282e;color:var(--amber)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.chip{font:13px/1 var(--mono);color:var(--amber);background:var(--side-2);border:1px solid #34323a;border-radius:999px;padding:7px 11px}
+
+.deck{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px;margin:0 0 30px}
+.deck-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 4px 12px;font-size:15px}
+.deck-h span{font-size:13px;color:var(--dim)}
+.strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.sl{flex:0 0 240px;scroll-snap-align:start;border:1px solid var(--line);border-radius:10px;overflow:hidden;padding:0;background:var(--bg-soft);cursor:zoom-in;
+  transition:transform .16s var(--ease-out),border-color .2s}
+.sl:active{transform:scale(.97)}
+@media(hover:hover) and (pointer:fine){.sl:hover{border-color:var(--amber);transform:translateY(-2px)}}
+.sl img{aspect-ratio:16/9;object-fit:cover;width:100%}
+
+.prose h2{font-size:clamp(23px,3.4vw,30px);line-height:1.2;letter-spacing:-.015em;font-weight:700;margin:40px 0 14px}
+.prose h3{font-size:19px;line-height:1.3;font-weight:650;margin:28px 0 8px}
+.prose h4{display:inline-block;font-size:15px;font-weight:700;margin:22px 0 10px;padding:6px 12px;border-radius:999px;background:var(--side);color:#fff}
+.prose p,.prose li{color:var(--body)}
+.prose p{margin:0 0 16px}
+.prose ul,.prose ol{margin:0 0 18px;padding-left:24px}
+.prose li{margin:5px 0}
+.prose ol li::marker{color:var(--amber-hi);font-weight:700}
+.prose ul li::marker{color:var(--amber)}
+b,strong{color:var(--text);font-weight:650}
+code{font:.88em var(--mono);background:#ece6da;color:var(--acc-ink);border-radius:6px;padding:2px 6px}
+.callout{background:var(--acc-soft);border:1px solid rgba(242,178,27,.45);border-radius:var(--r);padding:16px 18px;margin:0 0 20px;color:var(--body)}
+.code{background:var(--side);color:var(--side-ink);border-radius:14px;padding:16px 18px;overflow-x:auto;font:14px/1.6 var(--mono);margin:0 0 20px}
+.code code{background:none;color:inherit;padding:0;font:inherit}
+.tbl{overflow-x:auto;margin:0 0 22px;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg-soft);font-weight:650;color:var(--text)}
+tr:last-child td{border-bottom:0}
+td{color:var(--body)}
+
+.done{display:flex;align-items:center;gap:12px;margin:30px 0 0;padding:16px 20px;border-radius:14px;background:var(--card);border:1px solid var(--line);cursor:pointer;font-weight:650;width:fit-content;
+  transition:background-color .2s,border-color .2s}
+.done input{width:22px;height:22px;accent-color:var(--amber);margin:0}
+.done:has(input:checked){background:var(--acc-soft);border-color:rgba(242,178,27,.6)}
+
+.tpls{padding:64px 0 80px}
+.tpls h2{font-size:clamp(25px,4vw,36px);letter-spacing:-.02em;margin:0 0 10px}
+.tpls>.wrap>p{color:var(--muted);margin:0 0 22px}
+.tpl{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 10px;overflow:hidden}
+.tpl summary{cursor:pointer;padding:15px 18px;font-weight:650;display:flex;justify-content:space-between;gap:10px;list-style:none}
+.tpl summary::-webkit-details-marker{display:none}
+.tpl summary span{font:13px var(--mono);color:var(--dim);font-weight:400}
+.tpl .code{margin:0;border-radius:0;white-space:pre-wrap}
+footer{padding:30px 0 50px;color:var(--dim);font-size:14px}
+
+/* ——— просмотр слайдов ——— */
+.lb{position:fixed;inset:0;background:rgba(15,14,17,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:min(1400px,100%);max-height:84vh;border-radius:12px;box-shadow:0 30px 80px -20px #000}
+.lb button{position:absolute;background:var(--side-2);color:#fff;border:1px solid #34323a;border-radius:12px;width:48px;height:48px;font-size:22px;cursor:pointer}
+.lb .x{top:18px;right:18px}.lb .p{left:18px}.lb .nx{right:18px}
+.lb .cnt{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:var(--side-muted);font-size:14px}
+
+@media(max-width:900px){
+  .app{grid-template-columns:minmax(0,1fr)}
+  aside{position:sticky;top:0;z-index:20;height:auto;padding:10px 12px;flex-direction:row;align-items:center;gap:10px;overflow:visible}
+  .brand small,.brand b,.prog,.side-foot,nav .lbl{display:none}
+  .brand{padding:0}
+  .brand i{width:34px;height:34px;font-size:18px}
+  nav{flex-direction:row;overflow-x:auto;gap:4px;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav a{padding:5px}
+  nav a .t,nav a .ok{display:none}
+  .wrap{padding:0 16px}
+  .route{grid-template-columns:repeat(2,1fr)}
+  .lb .p,.lb .nx{bottom:60px;top:auto}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="brand"><i>⚡</i><div><b>Микро-<span>продукт</span></b><small>тариф «Система» · кабинет</small></div></div>
+  <div class="prog"><div class="prog-top"><span>Пройдено</span><b id="pc">0 из 8</b></div><div class="bar"><i id="pb"></i></div></div>
+  <nav><div class="lbl">8 шагов до запуска</div><a href="#tpl" id="nav-tpl"><span class="n">📄</span><span class="t">Шаблоны</span><span class="ok"></span></a></nav>
+  <div class="side-foot">Отметки сохраняются в этом браузере. Застрял — <code>/микро-штурман</code> в Claude Code, потом бот, где ты получил материалы.</div>
+</aside>
+<main>
+  <header class="hero"><div class="wrap">
+    <div class="eyebrow">Добро пожаловать</div>
+    <h1>От идеи до кнопки, <em>которая принимает деньги</em></h1>
+    <p>8 шагов. Каждый заканчивается вещью, которую можно потрогать: темой, «хочу» от живых людей, продуктом, страницей, оплатой, запуском. Делаешь в своём темпе, ориентир 3 недели.</p>
+    <div class="term"><div class="term-bar"><i></i><i></i><i></i><span>Терминал · внутри папки микро-продукт</span></div>
+<pre><span class="c"># 0. папка микро-продукт — та, где лежит этот Кабинет.html</span>
+<span class="c">#    (архив mikro-produkt.zip из бота → двойной клик → папку на Рабочий стол)</span>
+cd ~/Desktop/микро-продукт
+<span class="c"># 1. поставить 15 скиллов и создать папку проекта</span>
+bash система/scripts/установить.sh
+<span class="c"># 2. открыть папку проекта в VSCode, запустить Claude Code</span>
+<span class="a">/микро-старт</span>
+<span class="c"># в любой момент: где я и что дальше</span>
+<span class="a">/микро-штурман</span></pre></div>
+    <div class="route" id="route"></div>
+  </div></header>
+
+<div id="lessons"></div>
+
+  <section class="tpls" id="tpl"><div class="wrap">
+    <div class="kicker">Шаблоны</div>
+    <h2>Шаблоны каждого шага</h2>
+    <p>Те же файлы лежат в папке <code>шаблоны/</code>. Скиллы заполняют их сами, здесь можно подсмотреть, что должно получиться.</p>
+    <div id="tpls"></div>
+  </div></section>
+  <footer><div class="wrap">Материалы только для тебя: не выкладывай их в открытый доступ. Скиллы и шаблоны остаются у тебя навсегда.</div></footer>
+</main>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-label="Слайды">
+  <button class="x" aria-label="Закрыть">×</button><button class="p" aria-label="Назад">←</button>
+  <button class="nx" aria-label="Дальше">→</button><div class="cnt"></div>
+</div>
+
+<script>
+/* Онлайн-кабинет: вставляется вместо {{ONLINE}} только в версию для сайта (encrypt-cabinet.mjs).
+   Ссылка из бота: /mp/k/?u=<метка>[&l=<урок>]#<ключ>
+   ключ  — расшифровывает уроки, на сервер и в Метрику не уходит
+   метка — личная, по ней бот видит в Метрике заходы, открытые уроки и отметки «Шаг сделан» */
+(function () {
+  const M = 112316546, STORE = "mp-cabinet-access";
+  const q = new URLSearchParams(location.search);
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(STORE)) || {}; } catch (e) {}
+  const K = location.hash.slice(1) || saved.k || "";
+  const U = ((q.get("u") || saved.u || "") + "").replace(/[^0-9a-f]/gi, "").slice(0, 20);
+  const L = (q.get("l") || "").replace(/\D/g, "").slice(0, 2);
+  const base = location.origin + location.pathname;
+
+  // Метрика без вебвизора: текст уроков в неё не попадает. defer + свой hit — чтобы в адрес не попал ключ
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+  ym(M, "init", { defer: true, webvisor: false, clickmap: false, trackLinks: true, accurateTrackBounce: true, trackHash: false });
+  const hit = extra => ym(M, "hit", base + "?u=" + (U || "none") + extra, { title: "Кабинет · Микро-продукт" });
+  window.cabHit = (l, e) => { if (U) hit("&l=" + l + "&e=" + e); };
+
+  const keyP = (async () => {
+    const raw = Uint8Array.from(atob(K.replace(/-/g, "+").replace(/_/g, "/")), c => c.charCodeAt(0));
+    return crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+  })();
+  async function dec(url) {
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(url + " " + r.status);
+    const buf = await r.arrayBuffer();
+    return crypto.subtle.decrypt({ name: "AES-GCM", iv: buf.slice(0, 12) }, await keyP, buf.slice(12));
+  }
+  const cache = {};
+  window.cabSrc = p => cache[p] || (cache[p] = dec(p).then(b => URL.createObjectURL(new Blob([b], { type: "image/jpeg" }))));
+
+  window.cabBoot = async start => {
+    hit(L ? "&l=" + L : "");
+    let parts;
+    try {
+      if (!K) throw new Error("нет ключа");
+      parts = JSON.parse(new TextDecoder().decode(await dec("c.bin?v=db6535f365")));
+    } catch (e) {
+      document.getElementById("lessons").innerHTML =
+        '<section class="lesson"><div class="wrap"><div class="kicker">Доступ</div>' +
+        '<h1>Кабинет открывается по личной ссылке</h1><div class="prose"><p>Открой его кнопкой ' +
+        '<b>«Открыть кабинет»</b> в боте <a href="https://t.me/podarki_zhenya_bot">@podarki_zhenya_bot</a>, ' +
+        'где ты получил материалы. Если кнопка не открывает, напиши туда, пришлю новую ссылку.</p></div></div></section>';
+      document.querySelector(".tpls").hidden = true;
+      if (U) hit("&e=fail");
+      return;
+    }
+    try { localStorage.setItem(STORE, JSON.stringify({ k: K, u: U })); } catch (e) {}
+    SLIDES = parts.slides;
+    document.querySelector("nav .lbl").insertAdjacentHTML("afterend", parts.nav);
+    document.getElementById("lessons").innerHTML = parts.lessons;
+    document.getElementById("tpls").innerHTML = parts.templates;
+
+    const lazy = new IntersectionObserver(es => es.forEach(en => {
+      if (!en.isIntersecting) return;
+      lazy.unobserve(en.target);
+      cabSrc(en.target.dataset.s).then(u => { en.target.src = u; });
+    }), { rootMargin: "400px" });
+    document.querySelectorAll("img[data-s]").forEach(i => lazy.observe(i));
+
+    start();
+
+    // какие уроки человек реально открыл: урок дошёл до середины экрана (уроки выше экрана, порог по доле не годится)
+    const seen = new Set();
+    const io = new IntersectionObserver(es => es.forEach(en => {
+      const l = en.target.id.slice(1);
+      if (en.isIntersecting && !seen.has(l)) { seen.add(l); cabHit(l, "open"); }
+    }), { rootMargin: "-45% 0px -45% 0px" });
+    document.querySelectorAll(".lesson[id]").forEach(s => io.observe(s));
+    document.addEventListener("change", e => {
+      if (e.target.dataset.done && e.target.checked) cabHit(e.target.dataset.done, "done");
+    });
+
+    // якоря меню не трогают адрес: иначе ключ после «#» пропадёт и закладка перестанет открываться
+    document.addEventListener("click", e => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const t = document.getElementById(a.getAttribute("href").slice(1));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: "smooth" }); }
+    });
+    if (L && document.getElementById("l" + L)) document.getElementById("l" + L).scrollIntoView();
+  };
+})();
+</script>
+
+<script>
+let SLIDES = {};
+const KEY = "mp-cabinet-done";
+const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } };
+const save = d => { try { localStorage.setItem(KEY, JSON.stringify(d)); } catch (e) {} };
+// В архиве слайды лежат рядом файлами. Онлайн-версия подменяет cabSrc и cabBoot (расшифровка уроков)
+const cabSrc = window.cabSrc || (p => Promise.resolve(p));
+
+function start() {
+const navLinks = [...document.querySelectorAll("nav a[data-l]")];
+
+document.getElementById("route").innerHTML = navLinks.map(a =>
+  `<a href="#l${a.dataset.l}" data-l="${a.dataset.l}"><b>${+a.dataset.l}</b>${a.querySelector(".t").textContent}</a>`).join("");
+
+function paint() {
+  const d = load(), n = Object.values(d).filter(Boolean).length;
+  document.querySelectorAll("[data-l]").forEach(a => a.classList.toggle("done", !!d[a.dataset.l]));
+  document.querySelectorAll("[data-done]").forEach(c => c.checked = !!d[c.dataset.done]);
+  document.getElementById("pc").textContent = `${n} из ${navLinks.length}`;
+  document.getElementById("pb").style.transform = `scaleX(${n / navLinks.length})`;
+}
+document.addEventListener("change", e => {
+  if (!e.target.dataset.done) return;
+  const d = load(); d[e.target.dataset.done] = e.target.checked; save(d); paint();
+});
+paint();
+
+const io = new IntersectionObserver(es => es.forEach(en => {
+  if (!en.isIntersecting) return;
+  const id = en.target.id.slice(1);
+  navLinks.forEach(a => a.classList.toggle("on", a.dataset.l === id));
+}), { rootMargin: "-40% 0px -55% 0px" });
+document.querySelectorAll(".lesson").forEach(s => io.observe(s));
+
+const lb = document.getElementById("lb"), img = document.createElement("img"), cnt = lb.querySelector(".cnt");
+img.alt = "Слайд урока"; lb.insertBefore(img, lb.querySelector(".nx"));
+let cur = null, idx = 0;
+function show() {
+  const want = SLIDES[cur][idx];
+  cnt.textContent = `${idx + 1} / ${SLIDES[cur].length}`;
+  cabSrc(want).then(u => { if (SLIDES[cur][idx] === want) img.src = u; });
+}
+function step(k) { idx = (idx + k + SLIDES[cur].length) % SLIDES[cur].length; show(); }
+document.querySelectorAll(".deck").forEach(dk => dk.addEventListener("click", e => {
+  const b = e.target.closest(".sl"); if (!b) return;
+  cur = dk.dataset.deck; idx = +b.dataset.i; show(); lb.classList.add("on");
+}));
+lb.querySelector(".x").onclick = () => lb.classList.remove("on");
+lb.querySelector(".p").onclick = () => step(-1);
+lb.querySelector(".nx").onclick = () => step(1);
+lb.addEventListener("click", e => { if (e.target === lb) lb.classList.remove("on"); });
+document.addEventListener("keydown", e => {
+  if (!lb.classList.contains("on")) return;
+  if (e.key === "Escape") lb.classList.remove("on");
+  if (e.key === "ArrowRight") step(1);
+  if (e.key === "ArrowLeft") step(-1);
+});
+}
+
+if (window.cabBoot) window.cabBoot(start); else start();
+</script>
+</body>
+</html>
