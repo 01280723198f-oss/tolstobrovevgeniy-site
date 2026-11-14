@@ -80,7 +80,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="cd06ae9592", KS="zavod-key", DONE="zavod-done";
+const VER="15a4dd89bb", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
