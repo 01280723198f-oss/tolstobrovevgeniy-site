@@ -115,7 +115,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="bfcb2edfbf", KS="zavod-key", DONE="zavod-done";
+const VER="01e3995831", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
@@ -142,7 +142,7 @@ function navHtml(cur){
  const weeks={};D.lessons.forEach(l=>(weeks[l.week]=weeks[l.week]||[]).push(l));
  const q=encodeURIComponent;
  let s=`<div class="brand"><div class="logo">🏭</div><div><b>Контент-<span>завод 2.0</span></b><small>Евгения Толстоброва · ${D.lessons.length} уроков</small></div></div>`;
- s+=`<div class="grp">Начало</div><a href="#d=${q("как-писать-запрос-claude.md")}" class="${cur==="d:как-писать-запрос-claude.md"?"on":""}"><span class="i">📘</span><span>Как писать запрос Claude</span></a>`;
+ s+=`<div class="grp">Начало</div><a href="#d=${q("установка-скиллов.md")}" class="${cur==="d:установка-скиллов.md"?"on":""}"><span class="i">⚙️</span><span>Установка и обновление скиллов</span></a><a href="#d=${q("как-писать-запрос-claude.md")}" class="${cur==="d:как-писать-запрос-claude.md"?"on":""}"><span class="i">📘</span><span>Как писать запрос Claude</span></a>`;
  for(const w of Object.keys(weeks)) s+=`<div class="grp">${w}. ${(D.blocks||{})[w]||"Блок "+w}</div>`+weeks[w].map(l=>`<a href="#l=${l.id}" class="${cur===l.id?"on":""}"><span class="i ${done.has(l.id)?"ok":""}">${done.has(l.id)?"✓":"○"}</span><span>${l.title}</span></a>`).join("");
  s+=`<div class="grp">Ещё</div><a href="#t=" class="${cur==="t"?"on":""}"><span class="i">🗂</span><span>Шаблоны</span></a><a href="#d=${q("словарь-терминов.md")}" class="${cur==="d:словарь-терминов.md"?"on":""}"><span class="i">📖</span><span>Словарь терминов</span></a>`;
  s+=`<div class="foot">Прогресс хранится в этом браузере</div>`;
