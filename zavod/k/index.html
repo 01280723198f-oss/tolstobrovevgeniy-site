@@ -22,12 +22,12 @@ header b{font-size:17px}header b span{color:var(--acc)}
 nav{width:300px;flex:none;padding:16px;border-right:1px solid var(--line);height:calc(100vh - 56px);overflow:auto;position:sticky;top:56px}
 nav h4{margin:18px 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 nav a{display:flex;gap:8px;padding:6px 8px;border-radius:8px;text-decoration:none;font-size:14px;line-height:1.35}
-nav a:hover{background:var(--card)}nav a.on{background:var(--card);box-shadow:inset 3px 0 var(--acc)}
+nav a:hover{background:var(--card)}nav a.on{background:var(--card);font-weight:600}
 nav a i{font-style:normal;width:16px;flex:none;color:var(--ok)}
 main{flex:1;min-width:0;padding:24px 32px 80px}
 .doc{max-width:760px}
 .doc h1{font-size:30px;line-height:1.2;margin:.2em 0 .5em}.doc h2{margin-top:2em}.doc h3{margin-top:1.6em}
-.doc blockquote{margin:1em 0;padding:10px 16px;border-left:4px solid var(--acc);background:var(--card);border-radius:0 10px 10px 0}
+.doc blockquote{margin:1em 0;padding:12px 16px;border:1px solid var(--line);background:var(--card);border-radius:12px}
 .doc pre{position:relative;background:var(--code);padding:44px 14px 14px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;border-radius:12px;overflow:auto;font-size:14px;line-height:1.5;white-space:pre-wrap}
 .doc pre .cp{position:absolute;top:8px;right:8px;font-size:12px;padding:4px 8px}
 .doc code{background:var(--code);padding:1px 5px;border-radius:5px;font-size:.92em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.doc pre code{background:none;padding:0}
@@ -49,7 +49,7 @@ main{flex:1;min-width:0;padding:24px 32px 80px}
 <div id="app"><div class="gate"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="5249280cdc", KS="zavod-key", DONE="zavod-done";
+const VER="51b4138757", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
