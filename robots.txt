@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /zavod/
 Allow: /
 Disallow: /seo/
 Disallow: /node_modules/

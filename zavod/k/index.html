@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Контент-завод — кабинет</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1b1b1f;--muted:#6b6b76;--line:#e4e2dc;--acc:#e8a317;--acc-ink:#1b1b1f;--code:#f0eee8;--ok:#2f9e5b}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121216;--card:#1b1b21;--ink:#ececf1;--muted:#9a9aa8;--line:#2b2b33;--acc:#f5c33a;--acc-ink:#121216;--code:#22222a;--ok:#4cc27e}}
+:root[data-theme=dark]{--bg:#121216;--card:#1b1b21;--ink:#ececf1;--muted:#9a9aa8;--line:#2b2b33;--acc:#f5c33a;--acc-ink:#121216;--code:#22222a;--ok:#4cc27e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+a{color:inherit}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;gap:12px}
+header b{font-size:17px}header b span{color:var(--acc)}
+.prog{margin-left:auto;font-size:13px;color:var(--muted);white-space:nowrap}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;font:inherit;font-size:14px;cursor:pointer}
+.btn.acc{background:var(--acc);color:var(--acc-ink);border-color:var(--acc);font-weight:600}
+.wrap{display:flex;max-width:1180px;margin:0 auto}
+nav{width:300px;flex:none;padding:16px;border-right:1px solid var(--line);height:calc(100vh - 56px);overflow:auto;position:sticky;top:56px}
+nav h4{margin:18px 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+nav a{display:flex;gap:8px;padding:6px 8px;border-radius:8px;text-decoration:none;font-size:14px;line-height:1.35}
+nav a:hover{background:var(--card)}nav a.on{background:var(--card);box-shadow:inset 3px 0 var(--acc)}
+nav a i{font-style:normal;width:16px;flex:none;color:var(--ok)}
+main{flex:1;min-width:0;padding:24px 32px 80px}
+.doc{max-width:760px}
+.doc h1{font-size:30px;line-height:1.2;margin:.2em 0 .5em}.doc h2{margin-top:2em}.doc h3{margin-top:1.6em}
+.doc blockquote{margin:1em 0;padding:10px 16px;border-left:4px solid var(--acc);background:var(--card);border-radius:0 10px 10px 0}
+.doc pre{position:relative;background:var(--code);padding:44px 14px 14px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;border-radius:12px;overflow:auto;font-size:14px;line-height:1.5;white-space:pre-wrap}
+.doc pre .cp{position:absolute;top:8px;right:8px;font-size:12px;padding:4px 8px}
+.doc code{background:var(--code);padding:1px 5px;border-radius:5px;font-size:.92em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.doc pre code{background:none;padding:0}
+.doc table{border-collapse:collapse;display:block;overflow-x:auto;font-size:14px;margin:1em 0}
+.doc th,.doc td{border:1px solid var(--line);padding:6px 10px;vertical-align:top;text-align:left}
+.doc img.pic{display:block;max-width:100%;border-radius:12px;margin:12px 0 4px;background:var(--card);min-height:60px}
+.doc video.vid{display:block;width:100%;max-width:360px;aspect-ratio:9/16;border-radius:14px;background:#000;margin:12px 0 24px}
+.doc img.pic+em,.doc p>img.pic+em{display:block;color:var(--muted);font-size:14px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0;padding-top:18px;border-top:1px solid var(--line)}
+.meta{color:var(--muted);font-size:14px}
+.gate{max-width:520px;margin:12vh auto;padding:24px;text-align:center}
+.menu{display:none}
+@media (max-width:860px){nav{position:fixed;top:56px;left:0;bottom:0;height:auto;background:var(--bg);z-index:4;transform:translateX(-100%);transition:transform .2s;width:86vw;max-width:340px}
+ nav.open{transform:none;box-shadow:0 0 40px #0006}.menu{display:inline-block}main{padding:16px 16px 80px}.doc h1{font-size:25px}}
+</style>
+</head>
+<body>
+<header><button class="btn menu" id="menu" aria-label="Уроки">☰</button><b>Контент-<span>завод</span></b><span class="prog" id="prog"></span><button class="btn" id="theme" title="Тема">◐</button></header>
+<div id="app"><div class="gate"><p>Открываю кабинет…</p></div></div>
+<script>
+(()=>{
+const VER="5249280cdc", KS="zavod-key", DONE="zavod-done";
+const $=s=>document.querySelector(s), app=$("#app");
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
+$("#theme").onclick=()=>{const d=document.documentElement;const cur=d.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");d.dataset.theme=cur==="dark"?"light":"dark";store.set("zavod-theme",d.dataset.theme)};
+// ключ: из ссылки (#ключ) → запоминаем; дальше адрес после # — это маршрут урока
+let h=location.hash.slice(1);
+if(/^[A-Za-z0-9_-]{43}$/.test(h)){store.set(KS,h);history.replaceState(null,"",location.pathname+"#l=00")}
+const raw=store.get(KS)||(/^[A-Za-z0-9_-]{43}$/.test(h)?h:null);
+const fail=t=>app.innerHTML=`<div class="gate"><h2>Кабинет закрыт</h2><p>${t}</p><p class="meta">Открой ссылку из письма с доступом целиком — ключ спрятан в её конце, после знака #.</p></div>`;
+if(!raw) return fail("В ссылке нет ключа доступа.");
+const b64=s=>Uint8Array.from(atob(s.replace(/-/g,"+").replace(/_/g,"/")),c=>c.charCodeAt(0));
+let K, D, done=new Set(JSON.parse(store.get(DONE)||"[]"));
+const dec=async buf=>new Uint8Array(await crypto.subtle.decrypt({name:"AES-GCM",iv:buf.slice(0,12)},K,buf.slice(12)));
+(async()=>{
+ try{K=await crypto.subtle.importKey("raw",b64(raw),"AES-GCM",false,["decrypt"]);
+  const r=await fetch("c.bin?v="+VER);D=JSON.parse(new TextDecoder().decode(await dec(new Uint8Array(await r.arrayBuffer()))));
+ }catch(e){return fail("Ключ не подошёл или ссылка обрезана.")}
+ app.innerHTML=`<div class="wrap"><nav id="nav"></nav><main><div class="doc" id="doc"></div></main></div>`;
+ $("#menu").onclick=()=>$("#nav").classList.toggle("open");
+ addEventListener("hashchange",show);show();
+})();
+function navHtml(cur){
+ const weeks={};D.lessons.forEach(l=>(weeks[l.week]=weeks[l.week]||[]).push(l));
+ let s=`<a href="#d=${encodeURIComponent("как-писать-запрос-claude.md")}">📘 Как писать запрос Claude</a>`;
+ for(const w of Object.keys(weeks)) s+=`<h4>Неделя ${w}</h4>`+weeks[w].map(l=>`<a href="#l=${l.id}" class="${cur===l.id?"on":""}"><i>${done.has(l.id)?"✓":""}</i><span>${l.title}</span></a>`).join("");
+ s+=`<h4>Ещё</h4><a href="#t=">🗂 Шаблоны</a><a href="#d=${encodeURIComponent("словарь-терминов.md")}">📖 Словарь терминов</a>`;
+ $("#nav").innerHTML=s;$("#prog").textContent=`пройдено ${done.size} из ${D.lessons.length}`;
+}
+function show(){
+ const m=/^#([ltd])=(.*)$/.exec(location.hash), doc=$("#doc");let cur=null;
+ if(!m||m[1]==="l"){const id=m?decodeURIComponent(m[2]):D.lessons[0].id;const i=D.lessons.findIndex(l=>l.id===id);const l=D.lessons[i<0?0:i];cur=l.id;
+  const p=D.lessons[i-1],n=D.lessons[i+1];
+  doc.innerHTML=`<p class="meta">Неделя ${l.week}</p>`+l.html+`<div class="bar"><button class="btn acc" id="done">${done.has(l.id)?"✓ Урок пройден":"Отметить урок пройденным"}</button>${p?`<a class="btn" href="#l=${p.id}">← ${p.id}</a>`:""}${n?`<a class="btn" href="#l=${n.id}">${n.id} →</a>`:""}</div>`;
+  $("#done").onclick=()=>{done.has(l.id)?done.delete(l.id):done.add(l.id);store.set(DONE,JSON.stringify([...done]));show()};
+ } else if(m[1]==="t"){const f=decodeURIComponent(m[2]);const t=D.templates.find(x=>x.file===f);
+  doc.innerHTML=t?`<p class="meta"><a href="#t=">← все шаблоны</a></p><div class="bar" style="border:0;margin-top:0;padding-top:0"><button class="btn acc" id="dl">Скачать .md</button><button class="btn" id="cpall">Скопировать текст</button></div>`+t.html
+   :`<h1>Шаблоны</h1><p>Скачай файл и положи в свой проект — или скопируй текст и попроси Claude заполнить его вместе с тобой.</p><ul>`+D.templates.map(x=>`<li><a href="#t=${encodeURIComponent(x.file)}">${x.title}</a> <span class="meta">${x.file}</span></li>`).join("")+`</ul>`;
+  if(t){$("#dl").onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t.md],{type:"text/markdown"}));a.download=t.file;a.click()};$("#cpall").onclick=e=>copy(t.md,e.target)}
+ } else {const f=decodeURIComponent(m[2]);const d=D.docs.find(x=>x.file===f)||D.docs[0];doc.innerHTML=d.html}
+ navHtml(cur);$("#nav").classList.remove("open");scrollTo(0,0);
+ doc.querySelectorAll("pre").forEach(pre=>{const b=document.createElement("button");b.className="btn cp";b.textContent="Скопировать";const txt=pre.innerText.trim();b.onclick=()=>copy(txt,b);pre.appendChild(b)});
+ lazy(doc);
+}
+function copy(text,btn){const ok=()=>{const t=btn.textContent;btn.textContent="Скопировано ✓";setTimeout(()=>btn.textContent=t,1500)};
+ (navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(ok,()=>{const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();ok()})}
+const cache={};
+async function load(el){const id=el.dataset.m;if(!id||el.dataset.ok)return;el.dataset.ok=1;
+ try{cache[id]=cache[id]||URL.createObjectURL(new Blob([await dec(new Uint8Array(await (await fetch(id+"?v="+VER)).arrayBuffer()))],{type:D.types[id]}));el.src=cache[id]}catch(e){el.alt="не загрузилось"}}
+function lazy(root){const els=root.querySelectorAll("[data-m]");
+ if(!("IntersectionObserver" in window)){els.forEach(load);return}
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);load(e.target)}}),{rootMargin:"600px"});els.forEach(e=>io.observe(e))}
+})();
+</script>
+</body>
+</html>
