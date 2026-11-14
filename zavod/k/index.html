@@ -76,13 +76,46 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
   aside.open{transform:none;box-shadow:0 0 40px rgba(0,0,0,.45)}
   .menu{display:inline-block}header{padding:10px 16px}.wrap{padding:14px 12px 60px}.card{padding:18px 16px}.doc h1{font-size:23px}
 }
+
+/* Человечек-помощник: рисует схемы и показывает на важное */
+.doc blockquote.callout{position:relative;padding-right:92px;min-height:86px}
+.doc blockquote.callout.warning{background:#fbe9e5;color:#7a2a1c}
+.doc blockquote.callout.tip,.doc blockquote.callout.note{background:var(--acc-soft);color:var(--hint-ink)}
+:root[data-theme=dark] .doc blockquote.callout.warning{background:#3a1f1a;color:#f4c3b8}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .doc blockquote.callout.warning{background:#3a1f1a;color:#f4c3b8}}
+.sch{position:relative;margin:14px 0 30px}
+.sch img.pic{margin:0;clip-path:inset(0 100% 0 0);transition:clip-path 2.2s linear}
+.sch.go img.pic{clip-path:inset(0 0 0 0)}
+.mascot{position:absolute;width:58px;height:76px;pointer-events:none;z-index:2}
+.sch .mascot{left:-6px;bottom:-34px;transition:left 2.2s linear}
+.sch.go .mascot{left:calc(100% - 44px)}
+.mascot svg{width:100%;height:100%;overflow:visible}
+.mascot .lg{transform-origin:50% 0;transform-box:fill-box}
+.mascot.walk .lg1{animation:mstep .32s ease-in-out infinite alternate}
+.mascot.walk .lg2{animation:mstep .32s ease-in-out infinite alternate-reverse}
+.mascot.walk .bd{animation:mbob .32s ease-in-out infinite alternate}
+.mascot .arm{transform-origin:0 0;transform-box:fill-box}
+.mascot.walk .arm{animation:mdraw .25s ease-in-out infinite alternate}
+.mascot.wave .arm{animation:mwave .5s ease-in-out 3 alternate}
+.callout .mascot{right:10px;top:50%;transform:translateY(-40%) scale(.2);opacity:0;transition:transform .45s cubic-bezier(.3,1.6,.5,1),opacity .3s}
+.callout.in .mascot{transform:translateY(-40%) scale(1);opacity:1}
+.callout.in .mascot .arm{animation:mpoint .6s ease-in-out 4 alternate}
+.mbub{position:absolute;right:62px;top:-14px;background:#17161a;color:#fff;font:600 12px/1 -apple-system,Inter,sans-serif;padding:6px 9px;border-radius:10px;white-space:nowrap;opacity:0;transform:translateY(6px);transition:all .3s .35s}
+.callout.in .mbub{opacity:1;transform:none}
+@keyframes mstep{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
+@keyframes mbob{from{transform:translateY(0)}to{transform:translateY(-2px)}}
+@keyframes mdraw{from{transform:rotate(-12deg)}to{transform:rotate(14deg)}}
+@keyframes mwave{from{transform:rotate(-30deg)}to{transform:rotate(25deg)}}
+@keyframes mpoint{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){.sch img.pic{clip-path:none!important;transition:none}.mascot,.mascot *{animation:none!important;transition:none!important}.sch .mascot{left:calc(100% - 44px)}.callout .mascot{opacity:1;transform:translateY(-40%)}}
+@media (max-width:860px){.doc blockquote.callout{padding-right:70px}.callout .mascot{width:46px;height:60px}}
 </style>
 </head>
 <body>
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="d2129dc3cd", KS="zavod-key", DONE="zavod-done";
+const VER="660595798d", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
@@ -128,11 +161,31 @@ function show(){
  } else {const f=decodeURIComponent(m[2]);const d=D.docs.find(x=>x.file===f)||D.docs[0];cur="d:"+d.file;$("#ttl").textContent=d.title;doc.innerHTML=d.html}
  navHtml(cur);$("#nav").classList.remove("open");scrollTo(0,0);
  doc.querySelectorAll("pre").forEach(pre=>{const b=document.createElement("button");b.className="copy";b.textContent="Скопировать";const txt=pre.innerText.trim();b.onclick=()=>copy(txt,b);pre.appendChild(b)});
- lazy(doc);
+ lazy(doc); mascots(doc);
  // чек-листы: галочки ставятся и запоминаются в этом браузере (для каждого урока отдельно)
  const page=(location.hash||"#l=00").slice(1);
  doc.querySelectorAll('input[type=checkbox]').forEach((cb,i)=>{const k="zavod-cb:"+page+":"+i;cb.disabled=false;cb.checked=store.get(k)==="1";
   cb.onchange=()=>store.set(k,cb.checked?"1":"0");const li=cb.closest("li");if(li){li.classList.add("task");li.onclick=e=>{if(e.target!==cb){cb.checked=!cb.checked;cb.onchange()}}}});
+}
+
+// ── человечек-помощник ──
+const MASCOT='<svg viewBox="0 0 64 84" aria-hidden="true"><g class="lg lg1"><line x1="26" y1="58" x2="24" y2="78" stroke="#1f1b16" stroke-width="4" stroke-linecap="round"/></g><g class="lg lg2"><line x1="38" y1="58" x2="40" y2="78" stroke="#1f1b16" stroke-width="4" stroke-linecap="round"/></g><g class="bd"><line x1="32" y1="22" x2="32" y2="12" stroke="#1f1b16" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="9" r="5" fill="#f2b21b"/><ellipse cx="32" cy="42" rx="19" ry="21" fill="#E07B4F"/><ellipse cx="32" cy="46" rx="11" ry="10" fill="#F2A27E" opacity=".55"/><circle cx="25" cy="37" r="3.2" fill="#1f1b16"/><circle cx="39" cy="37" r="3.2" fill="#1f1b16"/><circle cx="26" cy="36" r="1" fill="#fff"/><circle cx="40" cy="36" r="1" fill="#fff"/><path d="M26 46 Q32 51 38 46" stroke="#1f1b16" stroke-width="2.5" fill="none" stroke-linecap="round"/><line x1="14" y1="44" x2="6" y2="52" stroke="#1f1b16" stroke-width="4" stroke-linecap="round"/><g class="arm"><line x1="50" y1="42" x2="60" y2="32" stroke="#1f1b16" stroke-width="4" stroke-linecap="round"/><rect x="57" y="22" width="5" height="12" rx="1.5" fill="#2F5D50" transform="rotate(35 59 28)"/></g></g></svg>';
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+function mascots(root){
+ if(!("IntersectionObserver" in window))return;
+ root.querySelectorAll("img.scheme").forEach(img=>{
+  if(img.parentElement.classList.contains("sch"))return;
+  const w=document.createElement("div");w.className="sch";img.replaceWith(w);w.appendChild(img);
+  const m=document.createElement("div");m.className="mascot";m.innerHTML=MASCOT;w.appendChild(m);
+  const io=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;io.disconnect();
+   const start=()=>{if(RM){w.classList.add("go");return}m.classList.add("walk");requestAnimationFrame(()=>w.classList.add("go"));
+    setTimeout(()=>{m.classList.remove("walk");m.classList.add("wave")},2300)};
+   const wait=()=>img.complete&&img.naturalWidth?start():setTimeout(wait,150);wait()},{threshold:.35});
+  io.observe(w)});
+ root.querySelectorAll("blockquote.callout").forEach(q=>{
+  if(q.querySelector(".mascot"))return;
+  const m=document.createElement("div");m.className="mascot";m.innerHTML=MASCOT+'<div class="mbub">'+(q.classList.contains("warning")?"Важно!":q.classList.contains("tip")?"Совет":"Заметь")+'</div>';q.appendChild(m);
+  const io=new IntersectionObserver(es=>{if(es[0].isIntersecting){io.disconnect();q.classList.add("in")}},{threshold:.6});io.observe(q)});
 }
 function copy(text,btn){const ok=()=>{const t=btn.textContent;btn.textContent="Скопировано ✓";setTimeout(()=>btn.textContent=t,1500)};
  (navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(ok,()=>{const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();ok()})}
