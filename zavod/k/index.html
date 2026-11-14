@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
-<title>Контент-завод — кабинет</title>
+<title>Контент-завод 2.0 Евгения Толстоброва</title>
 <style>
 /* Стиль «Ботодела»: тёмное меню, тёплый фон, жёлтый акцент, белые карточки */
 :root{
@@ -54,6 +54,8 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 .doc hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 .doc blockquote{margin:1em 0;padding:12px 16px;background:var(--acc-soft);color:var(--hint-ink);border-radius:12px}
 .doc blockquote p{margin:.3em 0}
+.doc li.task{list-style:none;margin-left:-22px;cursor:pointer;padding:3px 0}
+.doc li.task input{width:18px;height:18px;margin:0 10px 0 0;vertical-align:-3px;accent-color:var(--acc);cursor:pointer}
 .doc pre{position:relative;background:var(--code);border:1px solid var(--line);padding:46px 16px 16px;border-radius:12px;overflow:auto;font:13.5px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap}
 .doc pre .copy{position:absolute;top:10px;right:10px}
 .doc code{background:var(--code);padding:1px 6px;border-radius:6px;font:.9em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
@@ -80,7 +82,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="97e65a640a", KS="zavod-key", DONE="zavod-done";
+const VER="d2129dc3cd", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
@@ -106,7 +108,7 @@ const dec=async buf=>new Uint8Array(await crypto.subtle.decrypt({name:"AES-GCM",
 function navHtml(cur){
  const weeks={};D.lessons.forEach(l=>(weeks[l.week]=weeks[l.week]||[]).push(l));
  const q=encodeURIComponent;
- let s=`<div class="brand"><div class="logo">🏭</div><div><b>Контент-<span>завод</span></b><small>${D.lessons.length} уроков · 10 блоков</small></div></div>`;
+ let s=`<div class="brand"><div class="logo">🏭</div><div><b>Контент-<span>завод 2.0</span></b><small>Евгения Толстоброва · ${D.lessons.length} уроков</small></div></div>`;
  s+=`<div class="grp">Начало</div><a href="#d=${q("как-писать-запрос-claude.md")}" class="${cur==="d:как-писать-запрос-claude.md"?"on":""}"><span class="i">📘</span><span>Как писать запрос Claude</span></a>`;
  for(const w of Object.keys(weeks)) s+=`<div class="grp">${w}. ${(D.blocks||{})[w]||"Блок "+w}</div>`+weeks[w].map(l=>`<a href="#l=${l.id}" class="${cur===l.id?"on":""}"><span class="i ${done.has(l.id)?"ok":""}">${done.has(l.id)?"✓":"○"}</span><span>${l.title}</span></a>`).join("");
  s+=`<div class="grp">Ещё</div><a href="#t=" class="${cur==="t"?"on":""}"><span class="i">🗂</span><span>Шаблоны</span></a><a href="#d=${q("словарь-терминов.md")}" class="${cur==="d:словарь-терминов.md"?"on":""}"><span class="i">📖</span><span>Словарь терминов</span></a>`;
@@ -127,6 +129,10 @@ function show(){
  navHtml(cur);$("#nav").classList.remove("open");scrollTo(0,0);
  doc.querySelectorAll("pre").forEach(pre=>{const b=document.createElement("button");b.className="copy";b.textContent="Скопировать";const txt=pre.innerText.trim();b.onclick=()=>copy(txt,b);pre.appendChild(b)});
  lazy(doc);
+ // чек-листы: галочки ставятся и запоминаются в этом браузере (для каждого урока отдельно)
+ const page=(location.hash||"#l=00").slice(1);
+ doc.querySelectorAll('input[type=checkbox]').forEach((cb,i)=>{const k="zavod-cb:"+page+":"+i;cb.disabled=false;cb.checked=store.get(k)==="1";
+  cb.onchange=()=>store.set(k,cb.checked?"1":"0");const li=cb.closest("li");if(li){li.classList.add("task");li.onclick=e=>{if(e.target!==cb){cb.checked=!cb.checked;cb.onchange()}}}});
 }
 function copy(text,btn){const ok=()=>{const t=btn.textContent;btn.textContent="Скопировано ✓";setTimeout(()=>btn.textContent=t,1500)};
  (navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(ok,()=>{const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();ok()})}
