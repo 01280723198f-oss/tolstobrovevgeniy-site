@@ -1,9 +1,7 @@
 User-agent: *
-Disallow: /zavod/
 Allow: /
 Disallow: /seo/
 Disallow: /node_modules/
 Disallow: /m/
-Disallow: /mp/k/
 
 Sitemap: https://tolstobrovevgeniy.ru/sitemap.xml
