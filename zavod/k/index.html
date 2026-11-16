@@ -85,11 +85,11 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 :root[data-theme=dark] .doc blockquote.callout.warning{background:#3a1f1a;color:#f4c3b8}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]) .doc blockquote.callout.warning{background:#3a1f1a;color:#f4c3b8}}
 .sch{position:relative;margin:14px 0 30px}
-.sch img.pic{margin:0;clip-path:inset(0 100% 0 0);transition:clip-path 2.2s linear}
-.sch.go img.pic{clip-path:inset(0 0 0 0)}
+.sch img.pic{margin:0;transition:filter .9s ease}
+.sch.drawing img.pic{filter:grayscale(1) contrast(1.25) brightness(1.05)}
+.sch .mascot{left:0;top:0;width:80px;height:84px;transform-origin:0 0;will-change:transform}
+.sch .mascot.home{transition:transform .7s cubic-bezier(.3,1.3,.5,1)}
 .mascot{position:absolute;width:72px;height:94px;pointer-events:none;z-index:2}
-.sch .mascot{left:-6px;bottom:-40px;transition:left 2.2s linear}
-.sch.go .mascot{left:calc(100% - 44px)}
 .mascot svg{width:100%;height:100%;overflow:visible}
 .mascot .lg{transform-origin:50% 0;transform-box:fill-box}
 .mascot.walk .lg1{animation:mstep .32s ease-in-out infinite alternate}
@@ -97,6 +97,9 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 .mascot.walk .bd{animation:mbob .32s ease-in-out infinite alternate}
 .mascot .arm{transform-origin:0 0;transform-box:fill-box}
 .mascot.walk .arm{animation:mdraw .25s ease-in-out infinite alternate}
+.mascot .pen{transform-origin:0 0;transform-box:fill-box}
+.mascot.walk .pen{animation:mdraw .18s ease-in-out infinite alternate}
+.mascot.wave .pen{animation:mwave .5s ease-in-out 3 alternate}
 .mascot.wave .arm{animation:mwave .5s ease-in-out 3 alternate}
 .callout .mascot{right:10px;top:50%;transform:translateY(-40%) scale(.2);opacity:0;transition:transform .45s cubic-bezier(.3,1.6,.5,1),opacity .3s}
 .callout.in .mascot{transform:translateY(-40%) scale(1);opacity:1}
@@ -108,7 +111,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 @keyframes mdraw{from{transform:rotate(-12deg)}to{transform:rotate(14deg)}}
 @keyframes mwave{from{transform:rotate(-30deg)}to{transform:rotate(25deg)}}
 @keyframes mpoint{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
-@media (prefers-reduced-motion:reduce){.sch img.pic{clip-path:none!important;transition:none}.mascot,.mascot *{animation:none!important;transition:none!important}.sch .mascot{left:calc(100% - 44px)}.callout .mascot{opacity:1;transform:translateY(-40%)}}
+@media (prefers-reduced-motion:reduce){.sch img.pic{clip-path:none!important;filter:none!important;transition:none}.mascot,.mascot *{animation:none!important;transition:none!important}.callout .mascot{opacity:1;transform:translateY(-40%)}}
 @media (max-width:860px){.doc blockquote.callout{padding-right:70px}.callout .mascot{width:46px;height:60px}}
 </style>
 </head>
@@ -116,7 +119,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="abe50a3fa2", KS="zavod-key", DONE="zavod-done";
+const VER="a1f928fda0", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
@@ -172,16 +175,41 @@ function show(){
 // ── человечек-помощник ──
 const MASCOT='<svg viewBox="0 0 64 84" shape-rendering="crispEdges" aria-hidden="true"><g class="lg lg1"><rect x="17" y="56" width="5" height="14" fill="#D97757"/><rect x="36" y="56" width="5" height="14" fill="#D97757"/></g><g class="lg lg2"><rect x="26" y="56" width="5" height="14" fill="#D97757"/><rect x="45" y="56" width="5" height="14" fill="#D97757"/></g><g class="bd"><rect x="14" y="24" width="38" height="33" fill="#D97757"/><rect x="6" y="38" width="9" height="9" fill="#D97757"/><rect x="22" y="33" width="5" height="6" fill="#1f1b16"/><rect x="39" y="33" width="5" height="6" fill="#1f1b16"/><g class="arm"><rect x="51" y="38" width="9" height="9" fill="#D97757"/><rect x="57" y="27" width="4" height="13" fill="#2F5D50" transform="rotate(25 59 33)"/></g></g></svg>';
 const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+// человечек с карандашом: рисует схему построчно змейкой, сначала карандашом (серым), в конце раскрашивает
+const DRAWER='<svg viewBox="0 0 80 84" shape-rendering="crispEdges" aria-hidden="true"><g class="lg lg1"><rect x="17" y="56" width="5" height="14" fill="#D97757"/><rect x="36" y="56" width="5" height="14" fill="#D97757"/></g><g class="lg lg2"><rect x="26" y="56" width="5" height="14" fill="#D97757"/><rect x="45" y="56" width="5" height="14" fill="#D97757"/></g><g class="bd"><rect x="14" y="24" width="38" height="33" fill="#D97757"/><rect x="6" y="38" width="9" height="9" fill="#D97757"/><rect x="22" y="33" width="5" height="6" fill="#1f1b16"/><rect x="39" y="33" width="5" height="6" fill="#1f1b16"/><g class="pen"><rect x="50" y="38" width="9" height="9" fill="#D97757"/><g transform="translate(55 42) rotate(50)"><rect x="-3" y="-2.5" width="5" height="5" fill="#e88aa0"/><rect x="2" y="-2.5" width="2" height="5" fill="#9aa0a6"/><rect x="4" y="-2.5" width="16" height="5" fill="#f2b21b"/><rect x="4" y="-.5" width="16" height="1" fill="#c98d00"/><polygon points="20,-2.5 26,0 20,2.5" fill="#e9c99a"/><polygon points="24,-.9 27,0 24,.9" fill="#1f1b16"/></g></g></g></svg>';
+const TIP=[72,63];
+function drawScheme(w,img,m){
+ const W=img.clientWidth,H=img.clientHeight,s=W<500?.8:1.35;
+ const place=(x,y,flip)=>{m.style.transform=`translate(${flip?x+TIP[0]*s:x-TIP[0]*s}px,${y-TIP[1]*s}px) scale(${flip?-s:s},${s})`};
+ const home=()=>{m.classList.add("home");place(W-30*s,H+18*s,false);m.classList.remove("walk");m.classList.add("wave")};
+ m.style.opacity=1;
+ if(RM){img.style.clipPath="none";home();return}
+ const rows=Math.max(2,Math.min(5,Math.round(H/W*5))),per=W<500?1600:2300,total=rows*per,t0=performance.now();
+ w.classList.add("drawing");m.classList.add("walk");
+ const step=now=>{
+  const p=Math.min(1,(now-t0)/total),pr=p*rows,r=Math.min(rows-1,Math.floor(pr)),f=p>=1?1:pr-r;
+  const yT=H*r/rows,yB=H*(r+1)/rows,ltr=r%2===0,x=ltr?W*f:W*(1-f);
+  img.style.clipPath=ltr
+   ?`polygon(0 0,${W}px 0,${W}px ${yT}px,${x}px ${yT}px,${x}px ${yB}px,0 ${yB}px)`
+   :`polygon(0 0,${W}px 0,${W}px ${yB}px,${x}px ${yB}px,${x}px ${yT}px,0 ${yT}px)`;
+  // штриховка: кончик карандаша ходит вверх-вниз внутри строки
+  const y=yT+(yB-yT)*(.5+.38*Math.sin(now/55));
+  place(x,y,!ltr);
+  if(p<1)requestAnimationFrame(step);
+  else{img.style.clipPath="none";w.classList.remove("drawing");setTimeout(home,250)}
+ };
+ requestAnimationFrame(step);
+}
+
 function mascots(root){
  if(!("IntersectionObserver" in window))return;
  root.querySelectorAll("img.scheme").forEach(img=>{
   if(img.parentElement.classList.contains("sch"))return;
   const w=document.createElement("div");w.className="sch";img.replaceWith(w);w.appendChild(img);
-  const m=document.createElement("div");m.className="mascot";m.innerHTML=MASCOT;w.appendChild(m);
+  img.style.clipPath="inset(0 100% 0 0)";
+  const m=document.createElement("div");m.className="mascot";m.innerHTML=DRAWER;m.style.opacity=0;w.appendChild(m);
   const io=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;io.disconnect();
-   const start=()=>{if(RM){w.classList.add("go");return}m.classList.add("walk");requestAnimationFrame(()=>w.classList.add("go"));
-    setTimeout(()=>{m.classList.remove("walk");m.classList.add("wave")},2300)};
-   const wait=()=>img.complete&&img.naturalWidth?start():setTimeout(wait,150);wait()},{threshold:.35});
+   const wait=()=>img.complete&&img.naturalWidth?drawScheme(w,img,m):setTimeout(wait,150);wait()},{threshold:.35});
   io.observe(w)});
  root.querySelectorAll("blockquote.callout").forEach(q=>{
   if(q.querySelector(".mascot"))return;
