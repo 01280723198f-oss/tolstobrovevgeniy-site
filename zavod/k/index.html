@@ -65,6 +65,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 .doc td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 .doc tr:last-child td{border-bottom:0}
 .doc img.pic{display:block;max-width:100%;border-radius:12px;border:1px solid var(--line);margin:14px 0 6px;background:var(--panel-2);min-height:60px}
+.doc img.banner{width:100%;aspect-ratio:8/3;object-fit:cover;border:0;margin:0 0 20px;background:#17161a}
 .doc video.vid{display:block;width:100%;max-width:360px;aspect-ratio:9/16;border-radius:14px;background:#000;margin:14px 0 24px}
 .doc p>em:only-child{display:block;color:var(--muted);font-size:13.5px}
 .bar{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0;padding-top:20px;border-top:1px solid var(--line)}
@@ -115,7 +116,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="6891db7ed1", KS="zavod-key", DONE="zavod-done";
+const VER="abe50a3fa2", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
@@ -152,7 +153,7 @@ function show(){
  const m=/^#([ltd])=(.*)$/.exec(location.hash), doc=$("#doc");let cur=null;
  if(!m||m[1]==="l"){const id=m?decodeURIComponent(m[2]):D.lessons[0].id;const i=D.lessons.findIndex(l=>l.id===id);const l=D.lessons[i<0?0:i];cur=l.id;
   const p=D.lessons[i-1],n=D.lessons[i+1];
-  $("#ttl").textContent=l.title;doc.innerHTML=`<span class="pill week">${l.week}. ${(D.blocks||{})[l.week]||"Блок "+l.week}</span>`+l.html+`<div class="bar"><button class="btn main" id="done">${done.has(l.id)?"✓ Урок пройден":"Отметить урок пройденным"}</button>${p?`<a class="btn" href="#l=${p.id}">← ${p.id}</a>`:""}${n?`<a class="btn" href="#l=${n.id}">${n.id} →</a>`:""}</div>`;
+  $("#ttl").textContent=l.title;doc.innerHTML=(l.html.startsWith('<img class="pic banner"')?"":`<span class="pill week">${l.week}. ${(D.blocks||{})[l.week]||"Блок "+l.week}</span>`)+l.html+`<div class="bar"><button class="btn main" id="done">${done.has(l.id)?"✓ Урок пройден":"Отметить урок пройденным"}</button>${p?`<a class="btn" href="#l=${p.id}">← ${p.id}</a>`:""}${n?`<a class="btn" href="#l=${n.id}">${n.id} →</a>`:""}</div>`;
   $("#done").onclick=()=>{done.has(l.id)?done.delete(l.id):done.add(l.id);store.set(DONE,JSON.stringify([...done]));show()};
  } else if(m[1]==="t"){const f=decodeURIComponent(m[2]);cur="t";$("#ttl").textContent="Шаблоны";const t=D.templates.find(x=>x.file===f);
   doc.innerHTML=t?`<p class="meta"><a href="#t=">← все шаблоны</a></p><div class="bar" style="border:0;margin-top:0;padding-top:0"><button class="btn main" id="dl">Скачать .md</button><button class="btn" id="cpall">Скопировать текст</button></div>`+t.html
