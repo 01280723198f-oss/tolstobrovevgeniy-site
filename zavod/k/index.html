@@ -67,6 +67,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 .doc img.pic{display:block;max-width:100%;border-radius:12px;border:1px solid var(--line);margin:14px 0 6px;background:var(--panel-2);min-height:60px}
 .doc img.banner{width:100%;aspect-ratio:8/3;object-fit:cover;border:0;margin:0 0 20px;background:#17161a}
 .doc video.vid{display:block;width:100%;max-width:360px;aspect-ratio:9/16;border-radius:14px;background:#000;margin:14px 0 24px}
+.doc video.vid.wide{max-width:100%;aspect-ratio:16/9}
 .doc p>em:only-child{display:block;color:var(--muted);font-size:13.5px}
 .bar{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0;padding-top:20px;border-top:1px solid var(--line)}
 .meta{color:var(--muted);font-size:13px;margin:0 0 6px}
@@ -119,7 +120,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="f4917594a3", KS="zavod-key", DONE="zavod-done";
+const VER="1452cfd41a", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
