@@ -120,7 +120,7 @@ header h1{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow
 <div id="app"><div class="gate card"><p>Открываю кабинет…</p></div></div>
 <script>
 (()=>{
-const VER="36faa8ce75", KS="zavod-key", DONE="zavod-done";
+const VER="697c70d8f5", KS="zavod-key", DONE="zavod-done";
 const $=s=>document.querySelector(s), app=$("#app");
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const th=store.get("zavod-theme"); if(th) document.documentElement.dataset.theme=th;
@@ -147,14 +147,14 @@ function navHtml(cur){
  const weeks={};D.lessons.forEach(l=>(weeks[l.week]=weeks[l.week]||[]).push(l));
  const q=encodeURIComponent;
  let s=`<div class="brand"><div class="logo">🏭</div><div><b>Контент-<span>завод 2.0</span></b><small>Евгения Толстоброва · ${D.lessons.length} уроков</small></div></div>`;
- s+=`<div class="grp">Начало</div><a href="#d=${q("установка-скиллов.md")}" class="${cur==="d:установка-скиллов.md"?"on":""}"><span class="i">⚙️</span><span>Установка и обновление скиллов</span></a><a href="#d=${q("как-писать-запрос-claude.md")}" class="${cur==="d:как-писать-запрос-claude.md"?"on":""}"><span class="i">📘</span><span>Как писать запрос Claude</span></a><a href="#d=${q("покупка-аккаунта-инстаграм.md")}" class="${cur==="d:покупка-аккаунта-инстаграм.md"?"on":""}"><span class="i">📱</span><span>Покупка аккаунта Instagram</span></a>`;
+ s+=`<div class="grp">Начало</div><a href="#d=${q("установка-скиллов.md")}" class="${cur==="d:установка-скиллов.md"?"on":""}"><span class="i">⚙️</span><span>Установка и обновление скиллов</span></a><a href="#d=${q("как-писать-запрос-claude.md")}" class="${cur==="d:как-писать-запрос-claude.md"?"on":""}"><span class="i">📘</span><span>Как писать запрос Claude</span></a><a href="#d=${q("покупка-аккаунта-инстаграм.md")}" class="${cur==="d:покупка-аккаунта-инстаграм.md"?"on":""}"><span class="i">📱</span><span>Покупка аккаунта Instagram</span></a>`+(D.hooks?`<a href="#h=" class="${cur==="h"?"on":""}"><span class="i">🔥</span><span>Банк хуков</span></a>`:"");
  for(const w of Object.keys(weeks)) s+=`<div class="grp">${w}. ${(D.blocks||{})[w]||"Блок "+w}</div>`+weeks[w].map(l=>`<a href="#l=${l.id}" class="${cur===l.id?"on":""}"><span class="i ${done.has(l.id)?"ok":""}">${done.has(l.id)?"✓":"○"}</span><span>${l.title}</span></a>`).join("");
  s+=`<div class="grp">Ещё</div><a href="#t=" class="${cur==="t"?"on":""}"><span class="i">🗂</span><span>Шаблоны</span></a><a href="#d=${q("словарь-терминов.md")}" class="${cur==="d:словарь-терминов.md"?"on":""}"><span class="i">📖</span><span>Словарь терминов</span></a>`;
  s+=`<div class="foot">Прогресс хранится в этом браузере</div>`;
  $("#nav").innerHTML=s;$("#prog").textContent=`${done.size} из ${D.lessons.length}`;
 }
 function show(){
- const m=/^#([ltd])=(.*)$/.exec(location.hash), doc=$("#doc");let cur=null;
+ const m=/^#([ltdh])=(.*)$/.exec(location.hash), doc=$("#doc");let cur=null;
  if(!m||m[1]==="l"){const id=m?decodeURIComponent(m[2]):D.lessons[0].id;const i=D.lessons.findIndex(l=>l.id===id);const l=D.lessons[i<0?0:i];cur=l.id;
   const p=D.lessons[i-1],n=D.lessons[i+1];
   $("#ttl").textContent=l.title;doc.innerHTML=(l.html.startsWith('<img class="pic banner"')?"":`<span class="pill week">${l.week}. ${(D.blocks||{})[l.week]||"Блок "+l.week}</span>`)+l.html+`<div class="bar"><button class="btn main" id="done">${done.has(l.id)?"✓ Урок пройден":"Отметить урок пройденным"}</button>${p?`<a class="btn" href="#l=${p.id}">← ${p.id}</a>`:""}${n?`<a class="btn" href="#l=${n.id}">${n.id} →</a>`:""}</div>`;
@@ -163,6 +163,9 @@ function show(){
   doc.innerHTML=t?`<p class="meta"><a href="#t=">← все шаблоны</a></p><div class="bar" style="border:0;margin-top:0;padding-top:0"><button class="btn main" id="dl">Скачать .md</button><button class="btn" id="cpall">Скопировать текст</button></div>`+t.html
    :`<h1>Шаблоны</h1><p>Скачай файл и положи в свой проект — или скопируй текст и попроси Claude заполнить его вместе с тобой.</p><ul>`+D.templates.map(x=>`<li><a href="#t=${encodeURIComponent(x.file)}">${x.title}</a> <span class="meta">${x.file}</span></li>`).join("")+`</ul>`;
   if(t){$("#dl").onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t.md],{type:"text/markdown"}));a.download=t.file;a.click()};$("#cpall").onclick=e=>copy(t.md,e.target)}
+ } else if(m[1]==="h"&&D.hooks){cur="h";$("#ttl").textContent="Банк хуков";
+  doc.innerHTML=`<p class="meta">Первые фразы роликов, которые залетели: 26 формул с реальными примерами и готовыми идеями. Подставляй свою нишу и снимай.</p><iframe id="hb" title="Банк хуков" style="width:100%;height:calc(100vh - 150px);min-height:600px;border:1px solid #ebe4d7;border-radius:16px;background:#f4efe6"></iframe>`;
+  $("#hb").srcdoc=D.hooks;
  } else {const f=decodeURIComponent(m[2]);const d=D.docs.find(x=>x.file===f)||D.docs[0];cur="d:"+d.file;$("#ttl").textContent=d.title;doc.innerHTML=d.html}
  navHtml(cur);$("#nav").classList.remove("open");scrollTo(0,0);
  doc.querySelectorAll("pre").forEach(pre=>{const b=document.createElement("button");b.className="copy";b.textContent="Скопировать";const txt=pre.innerText.trim();b.onclick=()=>copy(txt,b);pre.appendChild(b)});
