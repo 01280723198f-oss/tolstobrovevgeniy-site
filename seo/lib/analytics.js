@@ -16,7 +16,7 @@ function metrika() {
 m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
-ym(${id}, "init", ${opts});
+if (location.protocol !== "file:") ym(${id}, "init", ${opts});
 window.__METRIKA_ID__=${id};
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/${id}" style="position:absolute;left:-9999px" alt=""></div></noscript>`;

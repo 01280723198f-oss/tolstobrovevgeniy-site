@@ -23,6 +23,11 @@
   
   
   <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <meta name="theme-color" content="#17161a">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/assets/seo.css">
   <meta name="yandex-verification" content="dc9bc410e1761e4d">
@@ -32,7 +37,7 @@
 m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
-ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+if (location.protocol !== "file:") ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
 window.__METRIKA_ID__=112316546;
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
@@ -44,11 +49,11 @@ window.__METRIKA_ID__=112316546;
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/">
-        <span class="logo">🔥</span>
+        <span class="logo" aria-hidden="true">Т</span>
         <span>Евгений Толстобров</span>
       </a>
-      <a class="btn-channel" href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener" data-goal="tg-header">
-        📲 <span class="full">Telegram-канал</span>
+      <a class="btn-channel" href="https://t.me/podarki_zhenya_bot?start=seo-jev-model-dlya-bystryh-reshenii" target="_blank" rel="noopener" data-goal="gift-header">
+        🎁 <span class="full">Промпт в подарок</span><span class="short">Подарок</span>
       </a>
     </div>
   </header>
@@ -81,6 +86,11 @@ window.__METRIKA_ID__=112316546;
 <p>Есть узнаваемая боль: половину времени в <a href="/g/ai-agent-10-minutes/" class="ctx-link">Claude Code</a> уходит не на сам код, а на то, чтобы решить, какой из вариантов реализации выбрать, какой файл трогать первым, стоит ли переписывать функцию или патчить точечно.</p>
 <p>Каждое такое микро-решение стоит денег (токены дорогой модели), времени (модель &quot;думает&quot; над тем, что можно решить правилом) и, честно говоря, твоего терпения — ты ждёшь ответа на вопрос, который сам мог бы решить за секунду, если бы не было пятнадцати похожих вопросов до этого за день.</p>
 <p>Идея Jev ровно про снятие этой боли: дешёвая быстрая модель разгружает дорогую от мелочи, а дорогая модель наконец занимается только тем, ради чего её и держат — сложной работой.</p>
+
+<aside class="cta-inline" aria-label="Подарок">
+  <span class="cta-inline-icon">🎁</span>
+  <p><strong>Пока читаешь:</strong> промпт «Что продать своей аудитории» за 15 минут найдёт три темы первого продукта под твою нишу. <a href="https://t.me/podarki_zhenya_bot?start=seo-jev-model-dlya-bystryh-reshenii" target="_blank" rel="noopener" data-goal="gift-inline">Забрать бесплатно в Telegram →</a></p>
+</aside>
 <h2 id="kak-eto-sootnositsya-s-tem-chto-ya-delayu-v-skillah">Как это соотносится с тем, что я делаю в скиллах</h2>
 <p>По сути, это тот же принцип, что я уже использую у себя в скиллах контент-завода: не гонять дорогую модель туда, где хватит короткого правила, скрипта на Python или дешёвого прогона. Гейт тишины в сборке роликов, проверка длины текста, фильтр клише — всё это специально вынесено в обычный код, чтобы не тратить дорогие токены на то, что решается if-ом.</p>
 <p>Jev делает похожую вещь, но на уровне отдельной модели, а не скрипта: там, где раньше приходилось звать большую модель ради простого выбора, теперь можно позвать маленькую и быструю.</p>
@@ -103,10 +113,12 @@ window.__METRIKA_ID__=112316546;
 
       </div>
       
-      <section class="cta-block">
-        <h3>Это только фундамент. А дальше?</h3>
-        <p>Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.</p>
-        <a class="btn-channel" href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+      <section class="cta-block cta-gift">
+        <p class="cta-kicker">Бесплатно · в Telegram</p>
+        <h3>Что продать своей аудитории? Промпт найдёт ответ за 15 минут</h3>
+        <p>Ты отвечаешь на пять вопросов о своей нише, а промпт предлагает три темы первого микро-продукта и выбирает из них лучшую. Работает в ChatGPT и в Claude. Чтобы забрать, подпишись на канал в боте, и промпт придёт сразу.</p>
+        <a class="btn-channel btn-gift" href="https://t.me/podarki_zhenya_bot?start=seo-jev-model-dlya-bystryh-reshenii" target="_blank" rel="noopener" data-goal="gift-cta">🎁 Забрать промпт бесплатно</a>
+        <p class="cta-next">Хочешь сразу собрать продукт с приёмом оплаты? <a href="/mp/?utm_source=site&utm_medium=article&utm_campaign=jev-model-dlya-bystryh-reshenii" data-goal="mp-cta">Микро-продукт за вечер — от&nbsp;1&nbsp;990&nbsp;₽&nbsp;→</a></p>
       </section>
       
       <section class="related">

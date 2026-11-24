@@ -37,6 +37,11 @@ const head = ({ title, description, canonical, robots, ogType, ogImage, publishe
   ${prev ? `<link rel="prev" href="${prev}">` : ""}
   ${next ? `<link rel="next" href="${next}">` : ""}
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(C.siteName)}" href="${C.origin}/rss.xml">
+  <meta name="theme-color" content="#17161a">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/assets/seo.css">
   ${A.head()}
@@ -44,15 +49,23 @@ const head = ({ title, description, canonical, robots, ogType, ogImage, publishe
 </head>
 <body>`;
 
-const header = () => `
+/* Ссылка в бот-подарок с меткой места: seo-<статья> | seo-home | seo-tema.
+   Telegram пускает в start только [A-Za-z0-9_-] и не длиннее 64. */
+const giftLink = (place = "home") =>
+  `${C.giftBot}?start=${("seo-" + place).toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 64)}`;
+
+const mpLink = place =>
+  `${C.microProduct}?utm_source=site&utm_medium=article&utm_campaign=${encodeURIComponent(place)}`;
+
+const header = (place = "home") => `
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/">
-        <span class="logo">🔥</span>
+        <span class="logo" aria-hidden="true">Т</span>
         <span>${escapeHtml(C.brand)}</span>
       </a>
-      <a class="btn-channel" href="${C.telegram}" target="_blank" rel="noopener" data-goal="tg-header">
-        📲 <span class="full">Telegram-канал</span>
+      <a class="btn-channel" href="${giftLink(place)}" target="_blank" rel="noopener" data-goal="gift-header">
+        🎁 <span class="full">Промпт в подарок</span><span class="short">Подарок</span>
       </a>
     </div>
   </header>`;
@@ -78,12 +91,31 @@ const crumbs = items => `
           : `<a href="${rel(it.url)}">${escapeHtml(it.name)}</a><span class="sep">/</span>`).join("")}
       </nav>`;
 
-const cta = (heading, text) => `
-      <section class="cta-block">
-        <h3>${heading}</h3>
-        <p>${text}</p>
-        <a class="btn-channel" href="${C.telegram}" target="_blank" rel="noopener" data-goal="tg-cta">📲 Зайти в канал и идти рядом 🔥</a>
+/* Главный блок: бесплатный промпт в боте → база → цепочка → микро-продукт.
+   Обещание сверено с подарком в ~/.business/growth/tg-gift-bot/gifts.json (intro / gift_text). */
+const cta = (place = "home") => `
+      <section class="cta-block cta-gift">
+        <p class="cta-kicker">Бесплатно · в Telegram</p>
+        <h3>Что продать своей аудитории? Промпт найдёт ответ за 15 минут</h3>
+        <p>Ты отвечаешь на пять вопросов о своей нише, а промпт предлагает три темы первого микро-продукта и выбирает из них лучшую. Работает в ChatGPT и в Claude. Чтобы забрать, подпишись на канал в боте, и промпт придёт сразу.</p>
+        <a class="btn-channel btn-gift" href="${giftLink(place)}" target="_blank" rel="noopener" data-goal="gift-cta">🎁 Забрать промпт бесплатно</a>
+        <p class="cta-next">Хочешь сразу собрать продукт с приёмом оплаты? <a href="${mpLink(place)}" data-goal="mp-cta">Микро-продукт за вечер — от&nbsp;1&nbsp;990&nbsp;₽&nbsp;→</a></p>
       </section>`;
+
+/* Короткий блок посреди статьи: до конца дочитывают единицы. */
+const ctaInline = place => `
+<aside class="cta-inline" aria-label="Подарок">
+  <span class="cta-inline-icon">🎁</span>
+  <p><strong>Пока читаешь:</strong> промпт «Что продать своей аудитории» за 15 минут найдёт три темы первого продукта под твою нишу. <a href="${giftLink(place)}" target="_blank" rel="noopener" data-goal="gift-inline">Забрать бесплатно в Telegram →</a></p>
+</aside>
+`;
+
+/* Вставляем перед третьим разделом h2, если разделов хотя бы четыре. */
+function withInlineCta(html, place) {
+  const at = [...html.matchAll(/<h2[\s>]/g)].map(m => m.index);
+  if (at.length < 4) return html;
+  return html.slice(0, at[2]) + ctaInline(place) + html.slice(at[2]);
+}
 
 /* ── Страница статьи ───────────────────────────────────────────── */
 function articlePage(p, { topics }) {
@@ -118,7 +150,7 @@ function articlePage(p, { topics }) {
     title: p.metaTitle, description: p.description, canonical: p.url,
     published: p.iso, modified: p.isoModified, ogImage: p.image,
     extraHead: ld.map(S.tag).join("\n  ")
-  }) + header() + `
+  }) + header(p.id) + `
   <main class="wrap">
     <article class="article">
       ${crumbs(bc)}
@@ -131,10 +163,9 @@ function articlePage(p, { topics }) {
       <p class="lead">${escapeHtml(p.subtitle)}</p>
       ${toc}
       <div class="content">
-${p.html}
+${withInlineCta(p.html, p.id)}
       </div>
-      ${cta("Это только фундамент. А дальше?",
-        "Как собрать первый скилл под себя, построить контент-завод, привести трафик и превратить подписчика в оплату — разбираю по шагам в Telegram. Честный дневник стройки с нуля.")}
+      ${cta(p.id)}
       ${related}
     </article>
   </main>` + footer(topics);
@@ -163,8 +194,7 @@ function indexPage(pages, topics) {
       ${pages.map(card).join("")}
     </div>
 
-    ${cta("Хочешь видеть весь путь?",
-      "Инструкции — это выжимка. Живой дневник стройки, разборы и анонсы новых инструментов — в Telegram-канале.")}
+    ${cta("home")}
   </main>` + footer(topics);
 }
 
@@ -187,7 +217,7 @@ function topicPage(topic, pages, topics) {
       <div class="guides">
         ${pages.map(card).join("")}
       </div>
-      ${cta("Свежее — в канале", "Новые разборы и инструменты выходят в Telegram раньше, чем попадают сюда.")}
+      ${cta("tema")}
     </article>
   </main>` + footer(topics);
 }

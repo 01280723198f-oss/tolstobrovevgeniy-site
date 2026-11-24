@@ -13,7 +13,7 @@ h1 { font-size: 34px; line-height: 1.2; margin: 6px 0 14px; letter-spacing: -0.0
 .page-lead { color: var(--muted); max-width: 62ch; margin: 0 0 26px; }
 
 .toc {
-  background: var(--bg-soft); border: 1px solid var(--border);
+  background: var(--card); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 18px 22px; margin: 26px 0 30px;
 }
 .toc-title { margin: 0 0 10px; font-size: 13px; letter-spacing: .08em;
@@ -22,14 +22,15 @@ h1 { font-size: 34px; line-height: 1.2; margin: 6px 0 14px; letter-spacing: -0.0
 .toc li { margin: 5px 0; }
 .toc a { color: var(--text); text-decoration: none; }
 .toc a:hover { color: var(--accent-2); }
+.toc li::marker { color: var(--accent-2); font-weight: 700; }
 
 .content a.ctx-link {
   color: var(--accent-2);
   text-decoration: underline;
-  text-decoration-color: var(--accent-soft);
+  text-decoration-color: rgba(154,106,0,.35);
   text-underline-offset: 3px;
 }
-.content a.ctx-link:hover { text-decoration-color: var(--accent); }
+.content a.ctx-link:hover { text-decoration-color: var(--accent-2); }
 
 .topics-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 34px; }
 .topic-chip {
@@ -39,11 +40,11 @@ h1 { font-size: 34px; line-height: 1.2; margin: 6px 0 14px; letter-spacing: -0.0
   color: var(--text); font-size: 14px; text-decoration: none;
   transition: border-color .15s, background .15s;
 }
-.topic-chip:hover { border-color: var(--accent); background: var(--card-hover); text-decoration: none; }
+.topic-chip:hover { border-color: var(--accent); text-decoration: none; }
 .topic-chip span { color: var(--muted-2); font-size: 12px; }
 
 a.tag { text-decoration: none; }
-a.tag:hover { color: var(--accent); }
+a.tag:hover { background: var(--accent); color: var(--accent-ink); }
 
 .related { margin: 46px 0 10px; }
 .related h2 { font-size: 21px; margin: 0 0 16px; }
@@ -54,7 +55,7 @@ a.tag:hover { color: var(--accent); }
   border-radius: 14px; background: var(--card); text-decoration: none;
   transition: border-color .15s, background .15s, transform .15s;
 }
-.related-card:hover { border-color: var(--accent); background: var(--card-hover); transform: translateY(-2px); text-decoration: none; }
+.related-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
 .related-card .tag { font-size: 11px; }
 .related-title { color: var(--text); font-weight: 600; line-height: 1.35; }
 .related-sub { color: var(--muted-2); font-size: 14px; line-height: 1.45; }
@@ -75,10 +76,10 @@ a.tag:hover { color: var(--accent); }
 .legal ul { padding-left: 20px; }
 .cookie-note { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 50; max-width: 560px; margin: 0 auto;
   display: flex; gap: 12px; align-items: center; padding: 12px 14px; border-radius: 14px;
-  background: var(--card, #1c1c1c); color: inherit; border: 1px solid var(--border, #262932);
-  box-shadow: 0 8px 30px rgba(0,0,0,.25); font-size: 13.5px; line-height: 1.4; }
+  background: var(--card, #fff); color: inherit; border: 1px solid var(--border, #ebe4d7);
+  box-shadow: 0 8px 30px rgba(40,30,10,.15); font-size: 13.5px; line-height: 1.4; }
 .cookie-note[hidden] { display: none; }
 .cookie-note p { margin: 0; }
 .cookie-note a { color: inherit; text-decoration: underline; }
 .cookie-note button { flex: none; font: inherit; font-weight: 600; padding: 8px 14px; border-radius: 10px; border: 0; cursor: pointer;
-  background: var(--accent, #ff6a3d); color: #fff; }
+  background: var(--accent, #f2b21b); color: var(--accent-ink, #2a1e00); }

@@ -81,14 +81,25 @@ function ensureNoOrphans(pages, out, ranking, count) {
 /** Контекстные ссылки прямо в тексте: первое подходящее словосочетание → ссылка.
     Сравнение идёт по основам слов, поэтому «скиллы Claude Code» находится
     и в форме «скиллов Claude Code» — русская морфология не ломает перелинковку. */
-function injectContextual(html, targets, max = 3) {
-  const prepared = targets.map(t => ({
-    url: t.url,
-    anchors: (t.anchors || [])
+// Кэши: без них сборка 265 страниц шла 20+ минут (стемминг одних и тех же слов сотни миллионов раз).
+const STEM = new Map();
+const cstem = w => { let s = STEM.get(w); if (s === undefined) { s = stem(w); STEM.set(w, s); } return s; };
+const PREP = new Map();
+const prepTarget = t => {
+  let p = PREP.get(t);
+  if (!p) {
+    p = { url: t.url, anchors: (t.anchors || [])
       .map(a => ({ text: a, stems: tokens(a) }))
       .filter(a => a.stems.length >= 2 && a.stems.length <= 5)
-      .sort((x, y) => y.stems.length - x.stems.length)
-  }));
+      .sort((x, y) => y.stems.length - x.stems.length) };
+    PREP.set(t, p);
+  }
+  return p;
+};
+
+function injectContextual(html, targets, max = 3) {
+  const prepared = targets.map(prepTarget);
+  WORDS.clear();
 
   let placed = 0;
   const usedTargets = new Set();
@@ -129,16 +140,26 @@ function injectContextual(html, targets, max = 3) {
 }
 
 /** Ищет подряд идущие слова, чьи основы совпадают с основами якоря. */
-function findStems(text, stems) {
+const WORDS = new Map();   // текст куска → слова с основами; чистится на каждой странице
+function wordsOf(text) {
+  let found = WORDS.get(text);
+  if (found) return found;
   const re = /[A-Za-zА-Яа-яЁё0-9]+/g;
-  const found = [];
+  found = [];
   let m;
-  while ((m = re.exec(text))) found.push({ w: m[0], start: m.index, end: m.index + m[0].length });
+  while ((m = re.exec(text))) found.push({ s: cstem(m[0]), start: m.index, end: m.index + m[0].length });
+  WORDS.set(text, found);
+  return found;
+}
+
+function findStems(text, stems) {
+  const found = wordsOf(text);
+  if (found.length < stems.length) return null;
 
   for (let i = 0; i + stems.length <= found.length; i++) {
     let ok = true;
     for (let j = 0; j < stems.length; j++) {
-      if (stem(found[i + j].w) !== stems[j]) { ok = false; break; }
+      if (found[i + j].s !== stems[j]) { ok = false; break; }
     }
     if (ok) return { start: found[i].start, end: found[i + stems.length - 1].end };
   }

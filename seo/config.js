@@ -16,6 +16,10 @@ module.exports = {
     sameAs: ["https://t.me/+vXPYZdwTrKhmYzYy"]
   },
   telegram: "https://t.me/+vXPYZdwTrKhmYzYy",
+  // Бот-подарок (tg-gift-bot): метка seo-<статья> → «Сайт (СЕО) · <статья>» в сводке бота,
+  // дальше подписка → промпт → цепочка дожима → /mp/. Главная конверсия сайта.
+  giftBot: "https://t.me/podarki_zhenya_bot",
+  microProduct: "/mp/",
 
   // ── Оператор персональных данных (политика, согласие, плашка cookie) ─
   // Пока name/status/email пустые — страницы /privacy/ и /consent/ не собираются, ссылок и плашки нет.

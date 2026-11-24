@@ -45,7 +45,7 @@ const YESTERDAY = shift(-1);
 /* ── Сеть ──────────────────────────────────────────────────────────── */
 
 async function get(url, headers) {
-  const r = await fetch(url, { headers: headers || {} });
+  const r = await fetch(url, { headers: headers || {}, signal: AbortSignal.timeout(20000) });
   const text = await r.text();
   let body; try { body = JSON.parse(text); } catch { body = text; }
   if (!r.ok) throw new Error(`${r.status} ${typeof body === "string" ? body.slice(0, 120) : (body.error_message || body.message || "")}`);
@@ -141,7 +141,7 @@ async function webmaster() {
   if (!hosts.hosts || !hosts.hosts.length) return { error: "сайт не добавлен в Вебмастер" };
   const host = hosts.hosts[0];
   const out = { host: host.unicode_host_url, verified: host.verified };
-  const base = `https://api.webmaster.yandex.net/v4/user/${uid}/hosts/${host.host_id}`;
+  const base = `https://api.webmaster.yandex.net/v4/user/${uid}/hosts/${encodeURIComponent(host.host_id)}`;
   try {
     const s = await get(`${base}/summary`, h);
     out.summary = { inSearch: s.searchable_pages_count, excluded: s.excluded_pages_count, sqi: s.sqi, problems: s.site_problems };
@@ -166,9 +166,10 @@ function siteState() {
     loadAnalyticsSecrets();
     const { GUIDES } = loadGuides();
     const semcore = loadSemcore();
-    const pages = buildPages(GUIDES, semcore);
+    // без buildPages: полная пересборка 265 страниц идёт минуты и вешала отчёт
     const { words } = require("./lib/text");
-    const w = pages.map(p => p.words || words(p.plainBody || ""));
+    const pages = GUIDES.map(g => ({ ...g, words: words(g.markdown || ""), cluster: semcore.byPage && semcore.byPage[g.id] }));
+    const w = pages.map(p => p.words);
     out.articles = pages.length;
     out.words = w.reduce((a, b) => a + b, 0);
     out.avgWords = Math.round(out.words / (pages.length || 1));
@@ -200,7 +201,7 @@ async function liveCheck() {
   const urls = ["https://tolstobrovevgeniy.ru/", "https://tolstobrovevgeniy.ru/sitemap.xml", "https://tolstobrovevgeniy.ru/rss.xml"];
   const res = [];
   for (const u of urls) {
-    try { const r = await fetch(u, { method: "GET" }); res.push([u, r.status]); }
+    try { const r = await fetch(u, { method: "GET", signal: AbortSignal.timeout(20000) }); res.push([u, r.status]); }
     catch (e) { res.push([u, "нет ответа"]); }
   }
   return res;
