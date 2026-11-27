@@ -5,8 +5,16 @@
     <link>https://tolstobrovevgeniy.ru/</link>
     <description>Маркетолог, автор контент-завода на Claude Code</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 25 Nov 2026 12:01:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 07:21:34 GMT</lastBuildDate>
     <atom:link href="https://tolstobrovevgeniy.ru/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Промт, который проверяет пост по системе Альбукерке до публикации</title>
+      <link>https://tolstobrovevgeniy.ru/g/proverka-posta-po-albukerke/</link>
+      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/proverka-posta-po-albukerke/</guid>
+      <pubDate>Fri, 27 Nov 2026 09:00:00 GMT</pubDate>
+      <category>Инструкция</category>
+      <description>Обещал в рилсе. Одна вера, три проверки идеи и десять вопросов читателя в одном промте для Claude, плюс честный прогон моего реального поста: 7 из 10 и три правки</description>
+    </item>
     <item>
       <title>Заявки из ВКонтакте в 4 раза дешевле, чем у таргетологов: разбор воронки со скринами</title>
       <link>https://tolstobrovevgeniy.ru/g/reklama-vk-zayavki-v-4-raza-deshevle/</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
       <category>Инструкция</category>
       <description>OpenAI и Google выпустили агентов, которые продолжают работу в облаке, когда ты спишь. Разбираю, что умеет каждый, как задать им границы и как собрать ночную смену на обычном Claude или ChatGPT</description>
-    </item>
-    <item>
-      <title>Claude Haiku 5.5 бесплатно: где найти переключатель, какие задачи ей отдавать и сколько стоит бот на Haiku</title>
-      <link>https://tolstobrovevgeniy.ru/g/claude-haiku-5-5-besplatno/</link>
-      <guid isPermaLink="true">https://tolstobrovevgeniy.ru/g/claude-haiku-5-5-besplatno/</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
-      <category>Инструкция</category>
-      <description>Anthropic выпустила Haiku 5.5 на всех тарифах, включая бесплатный, но по умолчанию она не включена. Показываю, как её выбрать, даю таблицу задач эксперта и считаю цену бота на тысячу клиентов</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Промт для проверки продающего поста: система Альбукерке «одна вера + 10 вопросов» в Claude</title>
+  <meta name="description" content="Готовый промт для Claude, который проверяет продающий пост по книге Эвальдо Альбукерке «The 16-Word Sales Letter»: одна вера, три проверки идеи и 10 вопросов читателя. Пример прогона реального поста с правками.">
+  <link rel="canonical" href="https://tolstobrovevgeniy.ru/g/proverka-posta-po-albukerke/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Инструкции по Claude Code и контент-заводу">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Промт для проверки продающего поста: система Альбукерке «одна вера + 10 вопросов» в Claude">
+  <meta property="og:description" content="Готовый промт для Claude, который проверяет продающий пост по книге Эвальдо Альбукерке «The 16-Word Sales Letter»: одна вера, три проверки идеи и 10 вопросов читателя. Пример прогона реального поста с правками.">
+  <meta property="og:url" content="https://tolstobrovevgeniy.ru/g/proverka-posta-po-albukerke/">
+  <meta property="og:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Промт для проверки продающего поста: система Альбукерке «одна вера + 10 вопросов» в Claude">
+  <meta name="twitter:description" content="Готовый промт для Claude, который проверяет продающий пост по книге Эвальдо Альбукерке «The 16-Word Sales Letter»: одна вера, три проверки идеи и 10 вопросов читателя. Пример прогона реального поста с правками.">
+  <meta name="twitter:image" content="https://tolstobrovevgeniy.ru/img/cover-sistema.png">
+  <meta property="article:published_time" content="2026-11-27">
+  <meta property="article:modified_time" content="2026-11-27">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Инструкции по Claude Code и контент-заводу" href="https://tolstobrovevgeniy.ru/rss.xml">
+  <meta name="theme-color" content="#17161a">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/seo.css">
+  <meta name="yandex-verification" content="dc9bc410e1761e4d">
+  
+  <script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+if (location.protocol !== "file:") ym(112316546, "init", {"webvisor":true,"clickmap":true,"ecommerce":"dataLayer","accurateTrackBounce":true,"trackLinks":true});
+window.__METRIKA_ID__=112316546;
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112316546" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <script>window.__OWN_ANALYTICS__={"url":"https://ngtuyxhlqppyjoezczse.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ndHV5eGhscXBweWpvZXpjenNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NjM5NzEsImV4cCI6MjEwMjEzOTk3MX0.suoSnQw2UUbEmm92oJp2qh0Kdp7Gmo48DyVTANb5AXY","table":"site_events"};</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Промт для проверки продающего поста: система Альбукерке «одна вера + 10 вопросов» в Claude","name":"Промт, который проверяет пост по системе Альбукерке до публикации","description":"Готовый промт для Claude, который проверяет продающий пост по книге Эвальдо Альбукерке «The 16-Word Sales Letter»: одна вера, три проверки идеи и 10 вопросов читателя. Пример прогона реального поста с правками.","inLanguage":"ru","datePublished":"2026-11-27","dateModified":"2026-11-27","author":{"@type":"Person","name":"Евгений Толстобров","jobTitle":"Маркетолог, автор контент-завода на Claude Code","url":"https://tolstobrovevgeniy.ru/","sameAs":["https://t.me/+vXPYZdwTrKhmYzYy"]},"publisher":{"@type":"Organization","name":"Евгений Толстобров","url":"https://tolstobrovevgeniy.ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tolstobrovevgeniy.ru/g/proverka-posta-po-albukerke/"},"url":"https://tolstobrovevgeniy.ru/g/proverka-posta-po-albukerke/","articleSection":"Инструкция","wordCount":876,"timeRequired":"PT7M","keywords":"продающий пост, как написать продающий текст, промт для проверки текста, эвальдо альбукерке, 16-word sales letter, письмо из 16 слов, промт для claude, копирайтинг с нейросетью"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tolstobrovevgeniy.ru/"},{"@type":"ListItem","position":2,"name":"Инструкция","item":"https://tolstobrovevgeniy.ru/tema/instrukciya/"},{"@type":"ListItem","position":3,"name":"Промт, который проверяет пост по системе Альбукерке до публикации","item":"https://tolstobrovevgeniy.ru/g/proverka-posta-po-albukerke/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Подойдёт ли промт для ChatGPT или другой нейросети?","acceptedAnswer":{"@type":"Answer","text":"Да, промт не завязан на Claude. Но Claude аккуратнее держит запрет на выдуманные цифры, а для проверки продающего текста это главное."}},{"@type":"Question","name":"Нужно ли читать саму книгу Альбукерке?","acceptedAnswer":{"@type":"Answer","text":"Для проверки постов хватит промта. Если пишешь длинные продающие письма или лендинги, книгу стоит прочитать: в ней разобрано, как найти механизм и новую возможность, а промт только проверяет, есть ли они в тексте."}},{"@type":"Question","name":"Что делать, если пост получил низкую оценку?","acceptedAnswer":{"@type":"Answer","text":"Начни с одной веры. Чаще всего низкая оценка значит, что в тексте нет одной главной мысли, и правки отдельных строк это не исправят."}},{"@type":"Question","name":"Можно ли проверять так не только посты?","acceptedAnswer":{"@type":"Answer","text":"Да: описания рилсов, письма, первый экран лендинга. Чем короче текст, тем меньше из десяти вопросов он закроет. Для рилса достаточно веры, трёх проверок идеи и вопросов 1, 2 и 9."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true">Т</span>
+        <span>Евгений Толстобров</span>
+      </a>
+      <a class="btn-channel" href="https://t.me/podarki_zhenya_bot?start=seo-proverka-posta-po-albukerke" target="_blank" rel="noopener" data-goal="gift-header">
+        🎁 <span class="full">Промпт в подарок</span><span class="short">Подарок</span>
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="article">
+      
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span class="sep">/</span><a href="/tema/instrukciya/">Инструкция</a><span class="sep">/</span><span>Промт, который проверяет пост по системе Альбукерке до публикации</span>
+      </nav>
+      <div class="meta">
+        <a class="tag" href="/tema/instrukciya/">Инструкция</a>
+        <time datetime="2026-11-27">27 ноября 2026</time>
+        <span>· 7 мин</span>
+      </div>
+      <h1>Промт, который проверяет пост по системе Альбукерке до публикации</h1>
+      <p class="lead">Обещал в рилсе. Одна вера, три проверки идеи и десять вопросов читателя в одном промте для Claude, плюс честный прогон моего реального поста: 7 из 10 и три правки</p>
+      
+      <nav class="toc" aria-label="Содержание">
+        <p class="toc-title">В этой инструкции</p>
+        <ol><li><a href="#kto-takoy-evaldo-albukerke">Кто такой Эвальдо Альбукерке</a></li><li><a href="#odna-vera-chto-eto-na-praktike">Одна вера: что это на практике</a></li><li><a href="#tri-proverki-idei">Три проверки идеи</a></li><li><a href="#desyat-voprosov-chitatelya">Десять вопросов читателя</a></li><li><a href="#promt-kopiruy-celikom">Промт: копируй целиком</a></li><li><a href="#chestnyy-progon-moy-post-pro-botodel">Честный прогон: мой пост про «Ботодел»</a></li><li><a href="#gde-stavit-proverku">Где ставить проверку</a></li><li><a href="#chastye-voprosy">Частые вопросы</a></li><li><a href="#chto-dalshe">Что дальше</a></li></ol>
+      </nav>
+      <div class="content">
+<p>В рилсе я обещал промт, который проверяет любой пост ещё до публикации. Ниже он целиком, его можно скопировать и вставить в Claude. Но сначала коротко о том, откуда он взялся, потому что без этого промт работает вполовину.</p>
+<h2 id="kto-takoy-evaldo-albukerke">Кто такой Эвальдо Альбукерке</h2>
+<p>Альбукерке пишет продающие письма для американского издательства Agora Financial. В 2019 году он выпустил книгу «The 16-Word Sales Letter», в переводе «Письмо из 16 слов». Издатель пишет, что за два года система принесла компании больше 120 миллионов долларов.</p>
+<p>Главная мысль книги простая: продающий текст начинается не со слов. Сначала ты находишь <strong>одну веру</strong>, то есть одну мысль, в которую человек должен поверить, чтобы купить. Всё остальное в тексте работает только на неё.</p>
+<h2 id="odna-vera-chto-eto-na-praktike">Одна вера: что это на практике</h2>
+<p>Формула из книги звучит так: «новая возможность — ключ к желанию читателя, и она возможна только через мой механизм».</p>
+<p>Например, для эксперта, который <a href="/g/sarayev-chto-uchit-vmesto-ii-avtomatizacii/" class="ctx-link">продаёт консультации</a>: «Заявки из соцсетей можно получать без ежедневных сторис, и это возможно через одну автоворонку с кодовым словом». Если человек в это поверил, кнопка «купить» становится логичным шагом, а не уговором.</p>
+<p>Самая частая ошибка, которую я вижу у себя и у учеников: в посте сразу две или три веры. «Это просто», «это дёшево» и «тебе это нужно» тянут читателя в разные стороны, и он не верит ни в одну.</p>
+
+<aside class="cta-inline" aria-label="Подарок">
+  <span class="cta-inline-icon">🎁</span>
+  <p><strong>Пока читаешь:</strong> промпт «Что продать своей аудитории» за 15 минут найдёт три темы первого продукта под твою нишу. <a href="https://t.me/podarki_zhenya_bot?start=seo-proverka-posta-po-albukerke" target="_blank" rel="noopener" data-goal="gift-inline">Забрать бесплатно в Telegram →</a></p>
+</aside>
+<h2 id="tri-proverki-idei">Три проверки идеи</h2>
+<p>Прежде чем писать текст, я гоняю идею через три вопроса. Этих проверок нет в книге Альбукерке, их часто добавляют к его системе как фильтр на входе, и он отсекает слабые темы ещё до черновика.</p>
+<ol>
+<li><strong>Цепляет эмоцией?</strong> Страх потерять, выгода или любопытство. Если идея вызывает «ну ок», дальше можно не писать.</li>
+<li><strong>Понятно за 3 секунды?</strong> Человек листает ленту. Если смысл требует объяснения терминов, его пролистают.</li>
+<li><strong>Звучит как новое?</strong> «Нейросеть экономит время» читатель слышал сто раз. «Claude заметил, что мой бот падал 42 раза» он не слышал.</li>
+</ol>
+<p>Не прошла хотя бы одна проверка, и текст дальше просто не читают, как бы хорошо он ни был написан.</p>
+<h2 id="desyat-voprosov-chitatelya">Десять вопросов читателя</h2>
+<p>Когда идея прошла, текст должен ответить на вопросы, которые читатель задаёт себе молча. У Альбукерке их десять, и с каждым закрытым вопросом у человека остаётся меньше причин сказать «нет»:</p>
+<ol>
+<li>Чем это отличается от всего, что я видел?</li>
+<li>Что конкретно мне это даст?</li>
+<li>Как я пойму, что это правда?</li>
+<li>Что мне мешает сейчас?</li>
+<li>Почему у меня не получилось раньше?</li>
+<li>Как это работает?</li>
+<li>Почему тебе можно верить?</li>
+<li>Смогу ли я сам?</li>
+<li>Почему нужно сейчас?</li>
+<li>Что я теряю, если попробую?</li>
+</ol>
+<p>Держать в голове все десять, когда пишешь пост, невозможно. Поэтому я отдал эту проверку Claude.</p>
+<h2 id="promt-kopiruy-celikom">Промт: копируй целиком</h2>
+<p>Вставь в Claude, а после слова «ПОСТ:» вставь свой текст.</p>
+<pre><code>Ты — редактор продающих текстов. Проверь мой пост по системе «одна вера + 10 вопросов» (по мотивам книги Эвальдо Альбукерке «The 16-Word Sales Letter») и по трём проверкам идеи. Пиши по-русски, коротко, без воды.
+
+ШАГ 1. ОДНА ВЕРА
+Сформулируй одной фразой, во что читатель должен поверить, чтобы сделать нужное действие. Формула: «[новая возможность] — ключ к [желанию читателя], и это возможно только через [мой механизм]».
+Если в посте такой веры нет или их несколько — скажи прямо.
+
+ШАГ 2. ТРИ ПРОВЕРКИ ИДЕИ
+Оцени главную идею поста по трём пунктам (✅ / ⚠️ / ❌ и одна строка почему):
+1. Цепляет эмоцией: страх потерять, выгода, любопытство?
+2. Легко понять: смысл ясен за 3 секунды, без терминов?
+3. Звучит как новое: читатель не слышал это сто раз?
+Если хоть одна проверка ❌ — предложи, как переформулировать идею.
+
+ШАГ 3. ДЕСЯТЬ ВОПРОСОВ ЧИТАТЕЛЯ
+Для каждого вопроса: ✅ есть ответ (процитируй строку) / ⚠️ слабо / ❌ нет ответа.
+1. Чем это отличается от всего, что я видел?
+2. Что конкретно мне это даст?
+3. Как я пойму, что это правда?
+4. Что мне мешает сейчас?
+5. Почему у меня не получилось раньше?
+6. Как это работает?
+7. Почему тебе можно верить?
+8. Смогу ли я сам?
+9. Почему нужно сейчас?
+10. Что я теряю, если попробую?
+
+ШАГ 4. ИТОГ
+— Оценка поста из 10
+— Три самые сильные правки: было → стало (конкретные строки, не советы вообще)
+— Новый первый абзац, в котором вера читается сразу
+
+Не выдумывай факты, цифры и кейсы за меня: если правке нужна цифра, которой нет в посте, пиши [ЦИФРА].
+
+ПОСТ:
+</code></pre>
+<p>Последняя строка про цифры важна. Без неё Claude охотно допишет в пост «уже 300 учеников» или «рост в 5 раз», которых у тебя нет.</p>
+<h2 id="chestnyy-progon-moy-post-pro-botodel">Честный прогон: мой пост про «Ботодел»</h2>
+<p>Чтобы не рассказывать на словах, я прогнал через промт свой реальный пост от 6 ноября: я дал Claude скрин чужой панели для ботов, и через 20 минут такая же панель работала у меня.</p>
+<p>Claude поставил <strong>7 из 10</strong>. Вот что он нашёл:</p>
+<ul>
+<li><strong>В посте две веры.</strong> «Админку не надо заказывать разработчику» и «тебе нужна такая панель». Они конкурируют, и механизм (сам скилл) назван только в конце.</li>
+<li><strong>Нет ответа на «почему сейчас».</strong> «Отдаю бесплатно» без срока, лимита и причины.</li>
+<li><strong>Пост про меня, а не про читателя.</strong> «Я не написал ни строчки кода» — это моя победа. Читателю нужно увидеть свою.</li>
+</ul>
+<p>И три правки «было → стало». Самая сильная из них превращает мою же деталь в страх потерять. Было: «А я даже не замечал 🙈». Стало: «Сколько таких молчаливых падений сейчас у твоих ботов? Ты не узнаешь, пока не откроешь терминал».</p>
+<p>Обидно? Немного. Но этот пост я писал сам и считал хорошим, а промт за минуту показал три места, где читатель уходил.</p>
+<h2 id="gde-stavit-proverku">Где ставить проверку</h2>
+<p>Ставь её последним шагом перед публикацией, после того как текст уже прошёл чистку от нейросетевых оборотов (про неё <a href="guide.html?id=priznaki-teksta-neyroseti-chistka">отдельный разбор</a>). Если пост получает меньше 7, правь веру и первый абзац, а не переписывай всё.</p>
+<p>Для более глубокой доводки у меня есть ещё <a href="guide.html?id=six-copywriting-lenses">шесть линз великих копирайтеров</a>: Альбукерке отвечает на вопрос «во что поверить», линзы правят, как это сказано.</p>
+<h2 id="chastye-voprosy">Частые вопросы</h2>
+<h3 id="podoydet-li-promt-dlya-chatgpt-ili-drugoy-neyroseti">Подойдёт ли промт для ChatGPT или другой нейросети?</h3>
+<p>Да, промт не завязан на Claude. Но Claude аккуратнее держит запрет на выдуманные цифры, а для проверки продающего текста это главное.</p>
+<h3 id="nuzhno-li-chitat-samu-knigu-albukerke">Нужно ли читать саму книгу Альбукерке?</h3>
+<p>Для проверки постов хватит промта. Если пишешь длинные продающие письма или лендинги, книгу стоит прочитать: в ней разобрано, как найти механизм и новую возможность, а промт только проверяет, есть ли они в тексте.</p>
+<h3 id="chto-delat-esli-post-poluchil-nizkuyu-ocenku">Что делать, если пост получил низкую оценку?</h3>
+<p>Начни с одной веры. Чаще всего низкая оценка значит, что в тексте нет одной главной мысли, и правки отдельных строк это не исправят.</p>
+<h3 id="mozhno-li-proveryat-tak-ne-tolko-posty">Можно ли проверять так не только посты?</h3>
+<p>Да: описания рилсов, письма, первый экран лендинга. Чем короче текст, тем меньше из десяти вопросов он закроет. Для рилса достаточно веры, трёх проверок идеи и вопросов 1, 2 и 9.</p>
+<h2 id="chto-dalshe">Что дальше</h2>
+<p>Промт выше работает вручную: скопировал, вставил, прочитал. Следующий шаг, который я сейчас собираю, это скилл для Claude Code, чтобы проверка запускалась сама перед каждой публикацией. Как он встанет в мой контент-завод и что ломается по дороге, пишу в канале: <a href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener">вступить в канал</a></p>
+
+      </div>
+      
+      <section class="cta-block cta-gift">
+        <p class="cta-kicker">Бесплатно · в Telegram</p>
+        <h3>Что продать своей аудитории? Промпт найдёт ответ за 15 минут</h3>
+        <p>Ты отвечаешь на пять вопросов о своей нише, а промпт предлагает три темы первого микро-продукта и выбирает из них лучшую. Работает в ChatGPT и в Claude. Чтобы забрать, подпишись на канал в боте, и промпт придёт сразу.</p>
+        <a class="btn-channel btn-gift" href="https://t.me/podarki_zhenya_bot?start=seo-proverka-posta-po-albukerke" target="_blank" rel="noopener" data-goal="gift-cta">🎁 Забрать промпт бесплатно</a>
+        <p class="cta-next">Хочешь сразу собрать продукт с приёмом оплаты? <a href="/mp/?utm_source=site&utm_medium=article&utm_campaign=proverka-posta-po-albukerke" data-goal="mp-cta">Микро-продукт за вечер — от&nbsp;1&nbsp;990&nbsp;₽&nbsp;→</a></p>
+      </section>
+      
+      <section class="related">
+        <h2>Читайте дальше</h2>
+        <div class="related-list">
+          <a class="related-card" href="/g/council-of-masters/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Совет из 21 мастера вместо одного мнения</span>
+            <span class="related-sub">Шесть опор, на которых держится продающий текст, правило обязательного спора и разбор заголовка до и после — как я заставляю систему возражать, а не поддакивать.</span>
+          </a>
+          <a class="related-card" href="/g/proverka-raboty-ii-spisok/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Как заставить ИИ проверять свою работу: готовый список проверки для постов</span>
+            <span class="related-sub">Anthropic советует дать модели способ проверить результат. Для кода это тесты, для текстов список проверки. Даю готовый и показываю, как подключить</span>
+          </a>
+          <a class="related-card" href="/g/content-department-build-order/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Семь ролей ИИ-отдела: в каком порядке нанимать и где он ломается</span>
+            <span class="related-sub">Карусель показала витрину из семи ИИ-сотрудников. Здесь — порядок сборки (начинать не с той роли, что важнее, а с той, что ест часы) и шесть граблей, на которых мой завод реально вставал.</span>
+          </a>
+          <a class="related-card" href="/g/priznaki-teksta-neyroseti-chistka/">
+            <span class="tag">Инструкция</span>
+            <span class="related-title">Признаки, по которым видно текст нейросети: десять шаблонов с заменами и навык, который их убирает</span>
+            <span class="related-sub">«Это не X, это Y», «чего вам никто не говорит», фальшиво глубокие концовки. Разбираю шаблоны из навыка No AI Slop по-русски, даю замены и рассказываю, почему ИИ плохо чистит ИИ</span>
+          </a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-tagline">🚀 Строим Telegram-канал. Строим контент-завод.</p>
+      <nav class="footer-topics"><a href="/tema/instrukciya/">Инструкция</a> · <a href="/tema/razbor/">Разбор</a> · <a href="/tema/claude-code/">Claude Code</a> · <a href="/tema/kontent-zavod/">Контент-завод</a> · <a href="/tema/voronka/">Воронка</a> · <a href="/tema/podborka/">Подборка</a> · <a href="/tema/dnevnik-stroyki/">Дневник стройки</a> · <a href="/tema/build-in-public/">Build in public</a> · <a href="/tema/obuchenie/">Обучение</a> · <a href="/tema/sistema/">Система</a></nav>
+      <p>© <span>2026</span> Евгений Толстобров · Строим вместе 🔥<br>
+      <a href="https://t.me/+vXPYZdwTrKhmYzYy" target="_blank" rel="noopener" data-goal="tg-footer">Telegram-канал</a></p>
+    </div>
+  </footer>
+  <script src="/assets/analytics.js" defer></script>
+</body>
+</html>
